@@ -43,7 +43,8 @@
 		ChromeBorderItem {
 			render {}
 			render_bg {
-				0="image_tiled(x0,y0,x1,y1,graphics/gamegrid/bg)"
+			// I'd love to use a semi-transparent black overlay... but the fade-in animation Valve applied makes it break and look REALLY laggy.
+			//	0="image_tiled(x0,y0,x1,y1,graphics/gamegrid/bg)"
 			}			
 		}	
 

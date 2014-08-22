@@ -1071,7 +1071,6 @@
 		grouper {
 			bgcolor=none
 			render {
-				//0="fill(x0,y0,x1,y1, red)"
 				1="image(x0, y0, x0+8, y0+25, graphics/search/left)"
 				2="image(x1-12, y0, x1, y0+25, graphics/search/right)"
 				3="image_tiled(x0+22, y0, x1-12, y0+25, graphics/search/inner)"

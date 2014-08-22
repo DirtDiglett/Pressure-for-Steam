@@ -1,0 +1,121 @@
+"window_controls.styles" { 
+	colors {
+	}
+	
+	styles {
+
+// *********************************************** 
+// Resize Grabber
+// ***********************************************	
+			
+	    FrameBRGripPanel {
+	      image="graphics/window_controls/grabber"
+	    }
+	    
+	    FrameBRGripPanel:hover {
+	      image="graphics/window_controls/grabber"
+	    }
+
+// ******************************************************************************************************** 
+// Close Button
+// ********************************************************************************************************
+ 
+	 FrameCloseButton {
+	 	padding-top=3px
+	 	image = "graphics/window_controls/windows/close"
+	 }
+	 
+	 	FrameCloseButton:hover {
+	 		image = "graphics/window_controls/windows/close_hover"
+	 	}
+	 	
+	 	FrameCloseButton:active {
+	 		image = "graphics/window_controls/windows/close_active"
+	 	}
+	 	
+	 	FrameCloseButton:disabled {
+	 		image = "graphics/window_controls/windows/disabled"
+	 	}
+	 
+	 	FrameCloseButton:framefocus {
+	 		image = "graphics/window_controls/windows/close"
+	 	}
+	 	
+	 		FrameCloseButton:framefocus:hover {
+	 			image = "graphics/window_controls/windows/close_hover"
+	 		}
+	 		
+	 		FrameCloseButton:framefocus:active {
+	 			image = "graphics/window_controls/windows/close_active"
+	 		}
+ 
+// ******************************************************************************************************** 
+// Maximize Button
+// ********************************************************************************************************
+ 
+	 FrameMaximizeButton {
+	 	padding-top=3px
+	 	image = "graphics/window_controls/windows/maximize"
+	 }
+	 
+	 	FrameMaximizeButton:hover {
+	 		image = "graphics/window_controls/windows/maximize_hover"
+	 	}
+	 	
+	 	FrameMaximizeButton:active {
+	 		image = "graphics/window_controls/windows/maximize_active"
+	 	}
+	 	
+	 	FrameMaximizeButton:disabled {
+	 		image = "graphics/window_controls/windows/disabled"
+	 	}
+	 
+	 	FrameMaximizeButton:framefocus {
+	 		image = "graphics/window_controls/windows/maximize"
+	 	}
+	 	
+	 		FrameMaximizeButton:framefocus:hover {
+	 			image = "graphics/window_controls/windows/maximize_hover"
+	 		}
+	 		
+	 		FrameMaximizeButton:framefocus:active {
+	 			image = "graphics/window_controls/windows/maximize_active"
+	 		}
+
+// ******************************************************************************************************** 
+// Minimize Button
+// ********************************************************************************************************
+ 
+	 FrameMinimizeButton {
+	 	padding-top=3px
+	 	image = "graphics/window_controls/windows/minimize"
+	 }
+	 
+	 	FrameMinimizeButton:hover {
+	 		image = "graphics/window_controls/windows/minimize_hover"
+	 	}
+	 	
+	 	FrameMinimizeButton:active {
+	 		image = "graphics/window_controls/windows/minimize_active"
+	 	}
+	 	
+	 	FrameMinimizeButton:disabled {
+	 		image = "graphics/window_controls/windows/disabled"
+	 	}
+	 
+	 	FrameMinimizeButton:framefocus {
+	 		image = "graphics/window_controls/windows/minimize"
+	 	}
+	 	
+	 		FrameMinimizeButton:framefocus:hover {
+	 			image = "graphics/window_controls/windows/minimize_hover"
+	 		}
+	 		
+	 		FrameMinimizeButton:framefocus:active {
+	 			image = "graphics/window_controls/windows/minimize_active"
+	 		}
+  
+ 
+ 
+ }
+}

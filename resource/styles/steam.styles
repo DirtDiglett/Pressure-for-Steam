@@ -11,7 +11,7 @@ steam.styles {
  	include "includes/tooltip.styles"
  	//include "includes/window_controls.styles"
  	include [$OSX] "includes/osxframebuttons.styles"
- 	//include [!$OSX] "includes/windowsframebuttons.styles"
+ 	include [!$OSX] "includes/windowsframebuttons.styles"
  	
 
 colors {	
@@ -1123,26 +1123,12 @@ styles {
     
     "CFriendsDialog SectionedListPanel" {
       bgcolor  = "none"
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      textcolor  = "Text"
-      selectedtextcolor  = "TextSelected"
-      selectedbgcolor  = "Focus"
-      render_bg 
-      {
-       	// background fill
-	   		0  = "gradient( x0 + 1, y0, x1 - 1, y0 + 140, blue, almostblack )"
-	   		1  = "fill( x0 + 1, y0 + 140, x1 - 1, y1-1, almostblack )"
-	   		
-	   		//lines around, special due to tabs at top
-	   		2  = "gradient( x1 - 1, y0 -1, x1, y1 -1, dialogbg, ButtonBorderDisabled )"  // right
-	   		3  = "gradient( x0, y0, x0 + 1, y1 - 2, dialogbg, ButtonBorderDisabled )"  // left
-	   		//single pixel fills
-	   		4  = "fill( x0, y1-1, x0 + 1, y1, dialogbg )"
-				5  = "fill( x1-1, y1-1, x1, y1, dialogbg )"
-
-	   		
+      
+     // padding-top=20
+      
+      render_bg {
+       		// background fill to overwrite the normal listPanel background
+	   		0  = "fill( x0, y0, x1, y1, darkestGrey)"
       }    
     }
     
