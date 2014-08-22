@@ -1,0 +1,1528 @@
+steam.styles { 
+ 	include "includes/colors.styles"
+ 	include "includes/settings.styles"
+ 	include "includes/scrollbars.styles"
+ 	include "includes/buttons.styles"
+ 	include "includes/controls.styles"
+ 	include "includes/notifications.styles"
+ 	include "includes/html.styles"
+ 	include "includes/friendsandchat.styles"
+ 	include "includes/listpanels.styles"	
+ 	include "includes/tooltip.styles"
+ 	//include "includes/window_controls.styles"
+ 	include [$OSX] "includes/osxframebuttons.styles"
+ 	//include [!$OSX] "includes/windowsframebuttons.styles"
+ 	
+
+colors {	
+	
+	
+		// Friends List colors (Having them in an include seems to break it)
+	    Friends.InGameColor       "green"
+	    Friends.OnlineColor       "blue"
+	    Friends.OfflineColor      "greyHighlight"
+	    Friends.PanelDefault      "Label"
+	    Friends.PanelOver       "Text"
+	    Friends.PanelSelected     "ClientBG"
+	    Friends.SectionHeader     "Label"
+	    Friends.NoAvatarOver      "Text"
+	    Friends.IgnoredColor      "red"
+	    
+	    
+    
+       
+		MessageBox.ButtonHeight		24
+    
+        ChatDialog.URLColor       "blue"
+	    ChatOwnTextColor        "white"
+		ChatDialog.HistoryColor	"greyHighlight"
+	    ChatGradientTop         "darkestGrey"
+	    ChatGradientBottom        "darkestGrey"	
+	
+	
+	 
+// DEFAULT STEAM BELOW:	 
+
+    almostBlack  = "darkestGrey"
+
+    offwhite  = "white"
+    dullgreen  = "darkestGreen"
+    maize  = "203 191 87 255"
+    darkblue  = "darkestBlue"
+
+    darkred  = "red"
+    darkpurple  = "64 0 64 255"
+    
+    dark_blue "darkestBlue"
+	med_blue "blue"
+	bg_blue "blue"
+    
+    // control colors
+    bordercolor  = "133 130 113 255"
+    darkcorner  = "77 73 71 255"
+    buttontext=Text
+    buttontextactive=Text
+    
+    // new control colors
+    ButtonFace  = "105 102 99 200"
+    ButtonFace2  = "92 89 86 255" // for use in main client list panel column header, some button states
+    ButtonFace3  = "95 92 90 255" // button cornering pixels
+    ButtonFaceDisabled  = "none"
+    ButtonFaceHover  = "105 102 99  240"   /// hover!
+    ButtonFaceActive  = "105 102 99  240"  // not sure what this state is...
+    ButtonFaceFocus  = "105 102 99  240"  //  keyboard focus
+    ButtonFaceActiveFocus  = "105 102 99  255"  // this is the default choice
+    
+    ButtonBorder  = "112 109 105 255"
+    ButtonBorderSubtle  = "82 79 77 255"
+    ButtonBorderPage  = "128 124 120 255"
+    ButtonBorderDisabled  = "77 75 72 255"
+    ButtonBorderDisabled2  = "67 65 63 255"  //cornering pixels
+    ButtonBorderActive  = "140 135 129 255"
+    ButtonBorderFocus  = "153 147 141 255"
+    ButtonBorderFocusSubtle  = "128 122 117 255"
+    
+    Text  = "209 207 205 255"
+    Text2  = "184 180 176 255"
+    TextDisabled  = "102 99 96 255"
+    TextHover  = "229 226 223 255"
+    TextSelected  = "242 239 235 255"
+    TextentrySelected  = "240 237 235 235" // color of any selected text
+    TextSelectedBG  = "64 90 128 255" // background color of any selected text 
+    TextGlowHover  = "128 124 120 255"
+    TextGlowSelected  = "171 169 166 255"
+    TextGlowHoverSm  = "128 123 120 255"
+    TextGlowSelectedSm  = "145 142 140 255"
+    
+    NavLabel  = "158 153 149 255"
+    Label  = "166 164 161 255"
+    Label2  = "115 111 108 255"
+    LabelDisabled  = "138 135 132 255"
+    LabelFocus  = "199 196 194 255"
+    
+    ScrollGlyph  = "204 198 192 255"  // the color of the scroll bar arrows
+    ScrollGlyphDisabled  = "77 74 72 255"
+    ScrollGlyphFocus  = "242 242 242 255"
+    
+    ScrollBG  = "77 74 72 255" // the color of the scroll bar gutter
+    
+    HeaderClient  = "57 53 49 255" // the color of the List box header in the main client window
+    HeaderDialog  = "95 92 90 255" // the color of the list box header in other windows
+    
+    TitleBar  = "86 81 78 50"
+    TitleBarFocus  = "176 169 162 50"
+    
+    Focus  = "49 66 89 255"  		// background color of any selected menu or list item
+    Focus2  = "85 121 171 255"		// background color of view buttons and anything else in focus that needs more 'punch'
+    Focus3  = "62 92 133 255"		// background color of highlighted friends 
+    FocusGrid  = "85 117 161 240"  	// background color of any grid item
+    Highlight  = "82 119 171 120" 	// same as focus
+    Highlight1  = "204 185 88 255"    // installing hover color
+    Highlight2  = "181 164 78 255" 	// installing color 
+    Highlight3  = "173 69 71 255"    	// red for errors, blocked, etc.
+    Highlight5  = "77 103 140 255" 	// blue 
+    Highlight5a  = "83 117 166 255" 	// lighter version of highlight5
+    Highlight5b  = "59 75 97 255" 	// as highlight5 but darker, for non-focused window borders
+
+    BackgroundStartSubtle  = "20 20 20 155" 
+    BackgroundStartSubtle  = "31 31 31 45" [$OSX]
+    BackgroundStartSubtlest  = "23 22 20 100"
+    BackgroundStart  = "23 22 20 180"
+    BackgroundStartOpaque  = "36 35 34 255"
+    
+    ClientBG  = "25 25 25 255"
+    DialogBG  = "25 25 25 255"
+
+    DarkClientBG  = "36 35 34 255"
+    DarkDialogBG  = "56 54 53 255"
+    DarkClientBGTransparent  = "36 35 34 19"
+    DarkDialogBGTransparent  = "56 55 53 170"
+
+    GameDetailsBlueTransparent  = "blue"
+    GameDetailsGreenTransparent  = "green"
+    GameDetailsRedTransparent  = "red"
+
+    GameDetailsBlue  = "blue"
+    GameDetailsGreen  = "green"
+    GameDetailsRed  = "red"
+
+    PropertySheetBG  = "74 72 70 255"
+    InteriorColor  = "64 62 60 255"
+    
+    DialogBorder  = "119 117 115 255" // border color around any dialog
+    
+    FillBG1  = "64 62 60 255" //gradient colors
+    FillBG2  = "71 69 67 255"
+    
+    MenuBG1  = "92 89 86 255" //gradient colors
+    MenuBG2  = "61 59 58 255"
+    
+    Divider  = "107 104 101 255"
+    SuperDivider  = "61 61 61 255"
+    DarkImageBorder  = "47 48 43 255"
+    DarkImageOverlay  = "0 0 0 80"
+
+    // colors pulled from steamscheme.res
+    "ClayBG"      "70 70 70 255"
+    "ClayButtonBG"      "87 88 88 255"        
+    "ClayEnabled"     "85 88 82 255"
+    "ClayKeyFocus"      "89 92 77 255"
+    "ClayMouseDown"     "85 85 85 255"
+    "ClayDisabledText"    "128 134 126 255"
+    "ClayLightGreen"    "173 181 168 255" // frame button (close X) etc
+    "ClayDimLightGreen"   "166 172 162 255" // frame button and title without focus etc
+    "LightClayBG"     "104 106 101 255" // property sheet interior, active tab
+    "LightClayButtonBG"   "125 128 120 255" // buttons on property sheet interior, active tab
+    "DarkClayBG"      "47 49 45 255"    // shadow
+    "p_ClayMouseDown"   "94 94 94 255"
+    "ClaySheetBottom"   "92 90 87 255"
+    "MaizeBG"     "145 134 60 255"  // background color of any selected text or menu item
+    "GreenBG"     "76 88 68 255"
+    "LightGreenBG"      "90 106 80 255"   // darker background color
+    "DarkGreenBG"     "62 70 55 255"    // background color of text edit panes (chat, text Entries, etc.)
+    "LightGrayBG"     "121 126 121 255"
+    "GrayBG"      "77 73 71 255"
+    "GrayBG2"     "39 37 35 255"
+    "TempGradientTop" "53 52 51 255"
+    
+    
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+   
+
+    ListPanel.TextColor       grey
+    ListPanel.BgColor       none  
+    ListPanel.SelectedTextColor     white
+    ListPanel.SelectedBgColor     blue
+    ListPanel.SelectedOutOfFocusBgColor   blue
+    ListPanel.DisabledTextColor     darkestGrey
+    ListPanel.DisabledSelectedTextColor   darkestGrey
+    ListPanel.EmptyListInfoTextColor    lightestGrey
+    ListPanel.PerPixelScrolling     1
+    ListPanel.PostSectionLeading	10
+
+
+
+	
+ 
+
+    RichText.InsetX         1
+    RichText.InsetY         1
+
+    TextEntry.IMEBGColor        "225 225 225 255"
+    TextEntry.IMEFGColor        "black"
+        
+    GiftOnlyInfo.ImagePanelColor  "GrayBG"    
+
+} // END OF COLORS
+  
+
+
+
+styles {
+
+
+	downarrow {
+		image  = "graphics/icon_down_default"    
+	}
+
+		downarrow:hover {
+      			image  = "graphics/icon_down_hover"
+		}
+
+	uparrow {
+		image  = "graphics/icon_up_default"    
+	}
+	
+	rightarrow {
+		image  = "graphics/icon_right_default"   
+	}
+		
+		rightarrow:hover {
+			image  = "graphics/icon_right_hover"    
+		}
+	
+    
+
+
+
+
+
+
+
+ 
+
+
+    
+         
+ 
+
+    
+
+    
+    
+
+    
+    Divider
+    {
+      bgcolor  = "none"
+      render
+      {
+       0  = "gradient_horizontal( x0, y1 - 1, x1 + 1, y1, divider, propertysheetbg )"     
+      }
+
+    }
+    
+    
+    
+    
+    
+    Frame {
+    	bgcolor  = "darkestGrey" // Only affects the login window and Preferences from testing.
+		
+		render {
+			// Create the 1px border around every window.
+        	0  = "fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"     
+			1  = "fill( x1 - 1, y0, x1, y1, darkestGrey )" 
+			2  = "fill( x0, y0, x1, y0 + 1, darkestGrey )"
+			3  = "fill( x0, y0, x0 + 1, y1, darkestGrey )"
+		}
+    } 
+    
+	    Frame:FrameFocus {
+			bgcolor  = "darkestGrey"
+		    render {
+				// Create the 1px border around every window.
+		        0  = "fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"     
+		        1  = "fill( x1 - 1, y0, x1, y1, darkestGrey )" 
+		        2  = "fill( x0, y0, x1, y0 + 1, darkestGrey )"
+		        3  = "fill( x0, y0, x0 + 1, y1, darkestGrey )"
+			}
+	    } 
+    
+    
+
+	// Frames Titlebar when NOT in focus. (Doesn't seem to affect the main client)
+    FrameTitle {
+		font-family=basefont
+		inset  = "5 2 0 0"
+		inset  = "0 4 0 0" [$OSX]
+		padding-left  = "0"
+		padding-right  = "64"
+		padding-right  = "0" [$OSX]
+		font-size=14
+		font-weight=400
+		textcolor  = "lightestGrey"
+		bgcolor  = "none"
+		
+		render_bg {
+			0  = "gradient( x0, y0, x1, y0 + 24, grey, lightGreyEnd )"
+			1 = "fill( x0, y0, x1, y0 + 1, greyHighlight )"
+	     	2="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		}
+    }
+
+	    FrameTitle:framefocus {
+			font-family=basefont
+			inset  = "0 4 0 0" [$OSX]
+			font-size=14
+			font-weight=400
+			bgcolor  = "none"
+			textcolor  = "texthover"
+			textcolor  = "texthover" [$OSX]
+		    render_bg {
+		        0  = "gradient( x0, y0, x1, y0+24, grey, lightGreyEnd)"
+		      	1 = "fill( x0, y0, x1, y0 + 1, greyHighlight)"
+		      	2="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		    }
+	    }
+    
+   
+	"CFriendsDialog SectionedListPanelInterior"
+	{
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "Text"
+		selectedtextcolor  = "TextSelected"
+		selectedbgcolor  = "Focus"
+		shadowtextcolor  = "TextDisabled"	// the color of disabled line items		
+		render
+		{
+			//gradient to obscure content at top of scrolling region 
+			0  = "fill( x0+2, y0, x1, y0 + 2, dialogbg )"
+			1  = "gradient( x0+2, y0+2, x1, y0 + 12, dialogbg, none  )"
+			
+			//gradient to obscure content at bottom of scrolling region 
+			2  = "gradient( x0+1, y1 - 18, x1, y1-3, none, almostblack )"
+			3  = "fill( x0+1, y1 - 4, x1, y1-1, almostblack )"
+		}
+		render_bg 
+		{	
+			// background gradient
+			0  = "gradient( x0, y0, x1, y0 + 149, dialogbg, AlmostBlack )"
+			1  = "fill( x0, y0 + 149, x1, y1 + 1, AlmostBlack )" 
+		}
+	}
+	
+        		
+    GraphPanel
+    {
+		textcolor=Highlight5
+		bgcolor=none
+		inset  = "0 -3 0 0"
+		render_bg 
+		{
+			// lines around
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+        
+			// single pixel fills in the corners
+		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+        }
+    }
+    
+    // Appears to be used by the WebPanels (Store, Community, etc.)
+    HTML { 
+		bgcolor  = "none"
+		render_bg {}
+       // inset  = "2 2 2 2" 
+    }
+    
+    
+    Label {
+		textcolor  = "Label"
+		selectedtextcolor  = "Text"
+		bgcolor  = "none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+    }
+   
+    ListPanel {
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "text2"
+		selectedtextcolor  = "TextSelected"
+		selectedbgcolor  = "Focus"
+		shadowtextcolor  = "TextDisabled"	// the color of disabled line items
+		inset  = "0 -1 1 1"
+		render {}       
+		render_bg {
+			// background gradient        
+			0  = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, green, almostblack )"
+			1  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 31, backgroundstartsubtle, none )"
+
+			// lines around
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+
+			// single pixel fills in the corners
+
+			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+		}
+	}
+      
+    "Page ListPanel"
+	{
+		
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "Text2"
+		selectedtextcolor  = "TextSelected"
+		selectedbgcolor  = "Focus"
+		inset  = "0 -1 1 1"
+		bgcolor=none
+	        render_bg
+	        {     
+		   // background fill
+	        0  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 80, Propertysheetbg, BackgroundStartOpaque )"
+	        1  = "fill( x0 + 1, y0 + 80, x1 - 1, y1 - 1, BackgroundStartOpaque )"
+	        2  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
+	          
+	        // lines around
+		3  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+		4  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		5  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		6  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+	        
+	        // single pixel fills in the corners
+		7  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+		8  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+		9  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+		10  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+	      }
+	}
+    
+    "CGamesListPanel" {
+      font-family=basefont
+	  bgcolor  = "darkestGrey"
+      font-size=13
+      font-weight=400
+      textcolor  = "white"
+      selectedtextcolor  = "trueWhite"
+      selectedbgcolor  = "blue"
+      shadowtextcolor  = "grey"
+      inset  = "0 -3 0 0"
+      
+      padding-right=0
+      
+      render {
+      	0="gradient(x0, y0, x1, y0+4, black65, none)"
+      	1="gradient(x0, y1-4, x1, y1, none, black65)"
+      }
+      
+      render_bg {}
+    }
+  
+	// Games in Details List + List View that are not installed.
+    "GameItem_Uninstalled" {
+      textcolor  = "grey"
+      selectedtextcolor  = "white"
+      selectedbgcolor = "blue"
+    }
+	    "GameItem_Uninstalled:hover" {
+    	    textcolor  = "grey"
+			selectedtextcolor  = "white"
+		}
+ 
+    "GameItem_Installed" {
+    	textcolor  = "white"
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor = "blue"
+    }
+      
+		"GameItem_Installed:hover" {
+        	textcolor  = "white"
+			selectedtextcolor  = "trueWhite"
+			selectedbgcolor = "blue"
+		}
+    
+    
+    "GameItem_Updating" {
+    	padding-left=10
+    	textcolor  = "orange"
+    	selectedtextcolor  = "orange"
+    	selectedbgcolor = "blue"
+    }
+    
+    	"GameItem_Updating:hover" {
+    		textcolor  = "orange"
+    		selectedtextcolor  = "orange"
+    		selectedbgcolor = "blue"
+		}
+    
+		"GameItem_Updating:selected" {
+ 			textcolor  = "orange"
+ 			selectedtextcolor  = "orange"
+ 			selectedbgcolor = "blue"
+ 		}
+    
+    
+    
+    "GameItem_Shortcut" {
+      textcolor  = "white"
+      selectedtextcolor  = "trueWhite"
+    }
+      
+	    "GameItem_Shortcut:hover" {
+	        textcolor  = "white"
+	        selectedtextcolor  = "trueWhite"
+	    }
+    
+    "GameItem_Mod" {
+      textcolor  = "white"
+      selectedtextcolor  = "trueWhite"
+      }
+      
+	    "GameItem_Mod:hover" {
+	        textcolor  = "white"
+	        selectedtextcolor  = "trueWhite"
+	    }
+    
+    "GameItem_Decrypting" {
+    	textcolor  = "orange"
+    	selectedtextcolor  = "orange"
+    }
+    
+	    "GameItem_Decrypting:hover" {
+	    	textcolor  = "orange"
+	    	selectedtextcolor  = "orange"
+	    }
+    
+	    "GameItem_Decrypting:selected" {
+	    	textcolor  = "orange"
+	    	selectedtextcolor  = "orange"
+	    }
+    
+    "GameItem_Syncing" {
+    	textcolor  = "orange"
+    	selectedtextcolor  = "orange"
+    }
+    
+	    "GameItem_Syncing:hover" {
+	    	textcolor  = "orange"
+	    	selectedtextcolor  = "orange"
+	    }
+	    
+	    "GameItem_Syncing:selected" {
+	    	textcolor  = "orange"
+	    	selectedtextcolor  = "orange"
+	    }
+    
+   
+    "GameColumn_BigText" {
+		font-family=basefont
+		font-size=17
+		font-weight=700
+		textcolor  = "green"
+    }
+    
+   
+    
+	MainNav {
+		textcolor  = "Label"
+		selectedtextcolor  = "Text"
+		bgcolor  = "none"
+		font-family=basefont
+		font-size=21
+		font-weight=700
+		font-style  = "uppercase"
+    }
+
+	Menu {
+		bgcolor  = "none"
+		inset="0 4 0 4"
+		padding=8
+      
+		render_bg {
+					0="gradient(x0, y0, x1, y1, grey, darkGreyEnd)"
+					1="fill(x0, y0, x0+1, y1, darkGreyEnd)" // Left
+					2="fill(x1-1, y0, x1, y1, darkGreyEnd)" // Right
+					3="fill(x0, y0, x1, y0+1, darkGreyEnd)" // Top
+					4="fill(x0, y1-1, x1, y1, darkGreyEnd)" // Bottom
+					
+					5="fill(x0+1, y0+1, x0+2, y1-1, white10)" // Left
+					6="fill(x1-2, y0+1, x1-1, y1-1, white10)" // Right
+					7="fill(x0+1, y0+1, x1-1, y0+2, greyHighlight)" // Top
+					8="fill(x0+2, y1-2, x1-2, y1-1, white10)" // Bottom
+				}
+      
+		render {}
+    }
+    
+    
+    MenuBar
+    {
+		bgcolor=dialogbg
+		padding-right=1
+		padding-left=6
+		padding-top=2
+		padding-bottom=-2
+    }
+    
+    "Page MenuBar"
+    {
+		bgcolor=none
+    }
+    
+    
+	"MenuBar MenuButton" 
+	{
+		textcolor  = "buttonborder"
+		padding-right=-2
+		inset  = "-2 0 2 0"
+	}
+	
+ 	"MenuBar MenuButton:frameFocus" 
+	{
+		textcolor  = "labeldisabled"
+	}
+	
+	"MenuBar MenuButton:frameFocus:hover" {
+		textcolor  = "texthover"
+		bgcolor=none
+		
+        render_bg
+   		{    
+			// background 
+		    0  = "gradient( x0 + 1, y0 + 3, x1 - 5, y1 - 3, orange, focus )"
+		        	
+		    // lines around
+		    1  = "fill( x0 + 2, y0 + 2, x1 - 6, y0 + 3, textdisabled )"  // top
+		    2  = "fill( x0 + 2, y1 - 3, x1 - 6, y1 - 2, focus )"  // bottom
+		    3  = "gradient( x0, y0 + 4, x0 + 1, y1 - 4, textdisabled, focus )"  // left
+		    4  = "gradient( x1 - 5, y0 + 4, x1 - 4, y1 - 4, textdisabled, focus )"  // right
+   		}
+	}
+	
+	"MenuBar MenuButton:frameFocus:selected" 
+	{
+		textcolor  = "texthover"
+		bgcolor=none
+		
+        render_bg
+   		{    
+		    // background 
+		    0  = "gradient( x0 + 1, y0 + 3, x1 - 5, y1 - 3, textdisabled, focus )"
+		        	
+		    // lines around
+		    1  = "fill( x0 + 2, y0 + 2, x1 - 6, y0 + 3, textdisabled )"  // top
+		    2  = "fill( x0 + 2, y1 - 3, x1 - 6, y1 - 2, focus )"  // bottom
+		    3  = "gradient( x0, y0 + 4, x0 + 1, y1 - 4, textdisabled, focus )"  // left
+		    4  = "gradient( x1 - 5, y0 + 4, x1 - 4, y1 - 4, textdisabled, focus )"  // right
+   		}
+	}
+	
+	MenuButton
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor  = "scrollglyph"
+      bgcolor  = "none"
+      render_bg {}
+       
+    }  
+   
+    MenuButton:hover
+    {
+      textcolor  = "white"
+    }
+    
+   
+    MenuButton:selected
+    {
+		textcolor  = "white"
+    }
+        
+	MenuItem {
+		font-family=basefont
+		textcolor  = white
+		font-size=14
+		inset  = "-4 0 0 0"
+		padding=6
+		bgcolor  = "none"
+		font-style="outerglow"
+		font-outerglow-color="darkestGrey"
+		font-outerglow-offset=1
+		font-outerglow-filtersize=3
+		
+		render_bg {}
+    }
+   
+    MenuItem:selected {
+		textcolor  = "white"
+		bgcolor  = "none"
+    }
+	
+    MenuItem:hover {
+		textcolor  = trueWhite
+		font-style="none"
+		
+		render_bg {
+			0="gradient(x0+1, y0, x1-1, y1, blue, darkestBlue)"
+			1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
+		}
+		
+	}
+    
+    MenuItem:disabled {
+		textcolor  = "darkestGrey"
+		font-style="none"
+		shadowtextcolor=none
+    }
+    
+    MenuItem:disabled:hover {
+		textcolor  = "labeldisabled"
+		shadowtextcolor=none
+    }
+   
+   
+    MenuSeparator {
+		inset  = "2 0 6 0"
+		textcolor  = "grey50"
+		bgcolor=none
+    }
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    Page {
+		bgcolor  = "none"
+		render_bg
+		{
+			// background gradient
+			0  = "gradient( x0, y0 + 18, x1, y1, green, orange )"
+		}
+    }
+
+    "CSteamRootDialog Page"
+    {
+		bgcolor  = "none"
+		render_bg {}
+    }
+    
+    
+    
+    
+    
+    
+    "Page RadioButtonList"
+    {
+		bgcolor  = "DialogBG"
+    }
+      
+	PageTab {
+		textcolor  = "Label"
+		font-family=basefont
+		font-size=13
+		
+		font-weight=400
+		inset  = "0 -2 0 0"
+        render_bg {
+			// background gradient
+			0  = "fill( x0, y0 , x1, y1 - 4, PropertySheetBG )"
+			1  = "fill(x0, y1-2, x1+3000, y1 -1, divider )"
+			
+		}
+    }
+
+    
+    PageTab:selected
+    {
+		textcolor  = "texthover"
+		font-family=basefont
+		font-size=13
+		
+		font-weight=400
+		inset  = "0 -2 0 0"
+		bgcolor  = "none"
+	    render_bg
+			{
+				// background gradient
+				0  = "gradient( x0, y0 , x1, y1, divider, dialogbg )"
+		    1  = "fill(x1, y1-2, x1+3000, y1 - 1, orange )"
+			}
+    }
+
+    
+ 	PageTab:hover
+    {
+		textcolor  = "texthover"
+		font-family=basefont
+		font-size=13
+		
+		font-weight=400
+		inset  = "0 -2 0 0"
+		render_bg
+			{
+				// background gradient
+				0  = "fill( x0, y0 , x1, y1 - 4, buttonfacehover )"
+				1  = "fill(x0, y1-2, x1+3000, y1 -1, divider )"
+			}
+    }
+  
+    PageTab:selected:hover
+    {
+		textcolor  = "texthover"
+		font-family=basefont
+		font-size=13
+		
+		font-weight=400
+		inset  = "0 -2 0 0"
+		bgcolor  = "none"
+	    render_bg
+			{
+				// background gradient
+				0  = "gradient( x0, y0 , x1, y1, divider, dialogbg )"
+		    1  = "fill(x1, y1-2, x1+3000, y1 - 1, divider )"
+			}
+    }
+      
+  PageTab:Focus
+	  {
+		textcolor  = "Texthover"
+    }
+
+	"PageDragFrame PageTab"
+	{
+		font-size=14
+		font-style  = ""
+	}
+
+
+    
+    Panel { 
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "white"
+		bgcolor  = "none"
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+		ProgressBox {
+			bgcolor=darkestGrey
+			render {
+				1="image( x0+122, y0+33, x1, y0, graphics/login_logo )"
+			}
+		}
+		"ProgressBox Label"
+		{
+			inset="0 0 0 10"
+			textcolor=none
+			font-size=14
+			font-family=basefont
+			font-weight=300
+		}
+		
+		"ProgressBox FrameCloseButton"
+		{
+			render_bg {}
+		}
+		
+		"ProgressBox Button"
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg {}
+		}
+    
+    
+    
+    
+    
+    
+         	
+    ProgressBar
+    {
+		textcolor  = "green"
+		font-size=9
+		bgcolor  = "red"
+		render {
+			// lines around
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+        
+			// single pixel fills in the corners
+		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorder )"
+		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"
+		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorder )"
+		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"
+			9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+		}   
+	}
+    
+	"Page ProgressBar" {
+		textcolor  = "green"
+		bgcolor  = "none"
+		render
+		{
+			// lines around
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderPage )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderPage )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderPage )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderPage )"  // right
+        
+			// single pixel fills in the corners
+	   	5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderPage )"
+		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderPage )"
+		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderPage )"
+		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderPage )"
+			9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+		}   
+    }
+	
+    PropertyPage {
+		bgcolor  = "PropertySheetBG"
+    }
+    
+    "CFriendsDialog PropertySheet"
+    {
+		bgcolor  = "none"
+    }
+    
+    
+        
+    RichText {
+		textcolor  = "darkestGrey"
+		selectedtextcolor  = "white"	
+		selectedbgcolor = blue	
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		inset  = "0 -1 0 0"
+		render_bg {
+			-1  = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, darkestYellow )"
+        
+			// lines around
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+        
+			// single pixel fills in the corners
+		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+		}     
+    }
+         
+    RichTextInterior {
+		bgcolor=none
+    }
+    
+	// style of links in a rich text control
+	
+	"RichText url" {
+		font-size=13
+		textcolor  = "blue"
+		selectedtextcolor  = "white"
+		font-style=underline
+	}
+	
+		"RichText url:hover" {
+			textcolor  = "lightestBlue"
+		}
+	
+	
+	"CFriendPanel RichText URL" {
+		textcolor  = "blue"
+		font-style=underline
+		font-size=13
+	}
+	
+	// style of bold text in a rich text control
+	"RichText bold" {
+		font-size=13
+		font-weight=1000
+	}
+	
+	"RichText emphasis" {
+		font-size=13
+		font-style=italic
+	}
+
+	
+    SectionedListPanel
+    {
+		bgcolor  = "propertysheetbg"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "Text"
+		selectedtextcolor  = "TextSelected"
+		selectedbgcolor  = "Focus"
+		bgcolor  = "none"
+		render_bg 
+		{
+			// lines around
+			1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, red )"  // top
+			2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+			3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+			4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+        
+			// single pixel fills in the corners
+			5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+			6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+			7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+			8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+			// background gradient
+			0  = "gradient( x0 + 1, y0 + 1, x1, y0 + 1, orange, BackgroundStartOpaque)"
+		}
+        inset  = "1 -1 1 1"  
+    }
+    
+    "CFriendsDialog SectionedListPanel" {
+      bgcolor  = "none"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor  = "Text"
+      selectedtextcolor  = "TextSelected"
+      selectedbgcolor  = "Focus"
+      render_bg 
+      {
+       	// background fill
+	   		0  = "gradient( x0 + 1, y0, x1 - 1, y0 + 140, blue, almostblack )"
+	   		1  = "fill( x0 + 1, y0 + 140, x1 - 1, y1-1, almostblack )"
+	   		
+	   		//lines around, special due to tabs at top
+	   		2  = "gradient( x1 - 1, y0 -1, x1, y1 -1, dialogbg, ButtonBorderDisabled )"  // right
+	   		3  = "gradient( x0, y0, x0 + 1, y1 - 2, dialogbg, ButtonBorderDisabled )"  // left
+	   		//single pixel fills
+	   		4  = "fill( x0, y1-1, x0 + 1, y1, dialogbg )"
+				5  = "fill( x1-1, y1-1, x1, y1, dialogbg )"
+
+	   		
+      }    
+    }
+    
+    SectionedlistpanelCollapser
+    {
+      render_bg {}
+      bgcolor=none
+      image  = "graphics/icon_collapse"
+      inset  = "2 1 0 0"
+    } 
+    
+    SectionedListPanelCollapser:hover
+    {
+      image  = "graphics/icon_collapse_over"
+    }
+    
+    SectionedListPanelCollapser:selected
+    {
+      image  = "graphics/icon_expand"
+    }
+    
+    SectionedListPanelCollapser:selected:hover
+    {
+      image  = "graphics/icon_expand_over"
+    }
+    
+
+  
+
+	    
+    
+    StatusLabel
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor  = "labelfocus"
+      
+      
+    }
+
+    StatusLabel:hover
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor  = "white"
+      
+    }   
+    
+
+ 
+	
+    
+
+   	
+    TreeNode
+    {
+      bgcolor=none
+      render_bg {}
+    }
+    
+    TreeNodeImage
+    {
+      bgcolor=none
+    }
+    
+    TreeViewSubPanel
+    {
+      bgcolor=none
+
+    }
+  
+    TreeNodeText
+    {
+      font-family=basefont
+      font-size=13
+      textcolor  = "Text"
+      selectedtextcolor  = "TextSelected"
+      selectedbgcolor  = "TextSelectedBG"
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+  
+    TreeView
+    {
+      render_bg
+      {
+        -1  = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+
+        // lines around
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+        
+        // single pixel fills in the corners
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+
+      }     
+    }
+    
+
+
+    
+    // Steam-specific styles
+
+    
+    GameColumnHeaderFavorites
+    {
+      image  = "steam/cached/fav_remove"
+
+    }
+    
+    CGamesListFavoritesToggle
+    {
+      image  = "steam/cached/fav_addTo"
+    }
+    
+    CGamesListFavoritesToggle:hover
+    {
+      image  = "steam/cached/fav_addTo_ovr"
+    }
+    
+    CGamesListFavoritesToggle:selected
+    {
+      image  = "steam/cached/fav_remove"
+    }
+
+    CGamesListFavoritesToggle:selected:hover
+    {
+      image  = "steam/cached/fav_remove_ovr"
+    }
+
+    WrapPanel
+    {
+      inset  = "0 0 0 0"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor  = "Text"
+      selectedtextcolor  = "TextSelected"
+      selectedbgcolor  = "Focus"
+      bgcolor=none
+      render_bg {
+
+        // lines around
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+        
+        // single pixel fills in the corners
+		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+        
+        // background gradient
+        8  = "gradient( x0 + 1, y0 + 1, x1, y0 + 240, propertysheetbg, DarkDialogBG )"
+        9  = "fill( x0, y0 + 240, x1, y1, DarkDialogBG )"
+            }
+        inset  = "1 -1 1 1"  
+    }
+   
+    
+    
+    
+    
+  
+		gamedetails-headerlabel {
+			font-size  = "36"
+			font-family=headerfont
+			textcolor  = "white"
+			font-weight=100
+		}
+	
+		gamedetails-headerlabel-red {
+			font-size  = "36"
+			font-family=headerfont
+			textcolor  = "white"
+			font-weight=100
+		}
+		
+		gamedetails-headerlabel-green {
+			font-size  = "36"
+			textcolor  = "white"
+			font-family=headerfont
+			font-weight=100
+		}
+	
+		gamedetails-headerlabel-blue {
+			font-size  = "36"
+			textcolor  = "white"
+			font-family=headerfont
+			font-weight=100
+		}
+	
+	
+	
+	
+ 
+		
+
+    CConsoleHistory {
+      font-family  = "Lucida Console"
+      font-size=9
+      font-family  = "Menlo" [$OSX]
+      font-size=14 [$OSX]
+      textcolor  = "grey"
+      selectedtextcolor  = "white"
+    }	
+	
+	console_text_error {
+		textcolor  = "red"
+		font-size=14
+		font-family  = "Menlo" [$OSX]
+      	font-size=16 [$OSX]
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor  = "blue"
+	}
+	
+	console_text {
+ 		font-family  = "Lucida Console"
+		font-size=9
+		font-family  = "Menlo" [$OSX]
+      	font-size=14 [$OSX]
+	    textcolor  = "white"
+		selectedtextcolor  = "trueWhite"	
+		selectedbgcolor  = "blue"
+	}
+	
+
+	
+	Chat_MenuButton_withChrome
+	{
+		font-family=basefont
+		font-style  = "uppercase"
+		font-size  = "13"
+		font-weight=400
+		textcolor  = "text"
+		bgcolor  = "none"
+		render_bg 
+		{     
+			// background fill
+			0  = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, red, propertysheetbg )"
+                
+			// lines around
+			1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+			2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+			3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+			4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+
+			// single pixel fills in the corners
+			5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorder )"
+			6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"
+			7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorder )"
+			8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"
+			9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+		}
+		minimum-width=120
+	}
+	
+	Chat_MenuButton_withChrome::disabled
+  {
+      textcolor  = "LabelDisabled"
+      render_bg
+      {     
+        // background fill
+        0  = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+                
+        // lines around
+		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, buttonborderdisabled )"  // top
+		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+
+        // single pixel fills in the corners
+        5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+        6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+        7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+        8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+        			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+        
+      }
+    }    
+    
+	
+
+   	
+   	TabPageCloseButton {
+   		padding-right=16
+   	}
+
+	SuperNavMenu
+	{
+		padding-left=8
+		padding-right=8
+
+		render {}
+
+		render_bg
+		{
+			// top area and graphic
+			//0  = "image_tiled( x0, y0, x1, y0+275, graphics/dd_texture)"
+			1  = "fill( x0, y0+0, x0+1, y1, black )"
+			2  = "fill( x1-1, y0+0, x1, y1, black )"
+			2  = "fill( x0, y1-1, x1, y1, black )"
+		}
+	}
+
+	SuperNavMenuItem
+	{
+		padding = 4
+		font-size = 14
+		bgcolor = none
+		font-style  = "uppercase"
+	}
+
+	SuperNavMenuItem:selected
+	{
+		textcolor  = "84 146 205 255"
+	}
+
+	SuperNavMenuItem:hover
+	{
+		textcolor  = "84 146 205 255"
+	}
+
+	"SuperNavMenuDivider"
+	{
+		textcolor  = "none"
+		render {
+			0  = "fill( x0+6, y0, x1-6, y0+1, black )"
+			1  = "fill( x0+6, y0+1, x1-6, y0+2, red )"
+		}
+	}
+	
+	"NotifyRemoteClientTitle" {
+		textcolor  = "LabelDisabled"
+	}
+	
+	"NotifyRemoteClientInfo"
+	{
+		textcolor  = "176 172 165 255"
+	}
+
+  }
+} 

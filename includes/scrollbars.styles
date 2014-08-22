@@ -1,0 +1,290 @@
+"scrollbars.styles" { 
+	
+	colors {
+    	ScrollBar.Wide          11 //19 (11 Seems to make it more akin to iOS Scrollbars)
+	}
+	
+	styles {
+
+		// *********************************************** 
+		// ScrollBars
+		// ***********************************************
+			
+		ScrollBar {
+			inset="0 -12 0 -10"
+		}
+		
+		ScrollBarButton.up {
+			bgcolor=none
+			render_bg {} // Nullifies the default background
+		}
+		
+			ScrollBarButton.up:hover {
+				bgcolor=none
+				render_bg {} // Nullifies the default background
+			}
+			
+			ScrollBarButton.up:active {
+				render_bg {} // Nullifies the default background
+			}
+		
+			ScrollBarButton.up:disabled {
+				render_bg {} // Nullifies the default background
+			}
+		
+		ScrollBarButton.down {
+			bgcolor=none
+			render_bg {} // Nullifies the default background
+		}
+		
+			ScrollBarButton.down:hover {
+				render_bg {} // Nullifies the default background
+			}
+			
+			ScrollBarButton.down:active {
+				render_bg {} // Nullifies the default background
+			}
+			
+			
+			ScrollBarButton.down:disabled {
+				render_bg {} // Nullifies the default background
+			}
+		
+		ScrollBarButton.left {
+			bgcolor=none
+			render_bg {} // Nullifies the default background
+		}
+		
+			ScrollBarButton.left:hover {
+				render_bg {} // Nullifies the default background
+			}
+		
+		ScrollBarButton.right {
+			bgcolor=none
+			render_bg {} // Nullifies the default background
+		}
+			
+			ScrollBarButton.right:hover {
+				render_bg {} // Nullifies the default background
+			}
+		
+		ScrollBarHandle { //vertical scrollbar thumb
+			bgcolor=none
+			
+			render_bg {
+				0="image_tiled( x1 - 10, y0, x1 - 2, y0 + 4, graphics/scrollbar/top )"
+				1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/middle_vertical )"
+				2="image_tiled( x1 - 10, y1 - 4, x1 - 2, y1, graphics/scrollbar/bottom )"
+			}
+		}
+		   
+			"ScrollBarHandle:hover" {
+				render_bg {
+					0="image_tiled( x1 - 10, y0, x1 - 2, y0 + 4, graphics/scrollbar/hover/top )"
+					1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
+					2="image_tiled( x1 - 10, y1 - 4, x1 - 2, y1, graphics/scrollbar/hover/bottom )"
+				}
+			}
+			
+			"ScrollBarHandle:active" {
+				render_bg {
+					0="image_tiled( x1 - 10, y0, x1 - 2, y0 + 4, graphics/scrollbar/hover/top )"
+					1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
+					2="image_tiled( x1 - 10, y1 - 4, x1 - 2, y1, graphics/scrollbar/hover/bottom )"
+				}
+			}
+		
+		
+		 
+		"SliderHoriz" { //horizontal scrollbar thumb  
+			render_bg {
+				0="image_tiled( x0 - 10, y0 + 7, x0 - 6, y0 + 15, graphics/scrollbar/left )"
+				1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 15, graphics/scrollbar/middle_horizontal )"
+				2="image_tiled( x1 + 6, y0 + 7, x1 + 10, y0 + 15, graphics/scrollbar/right )"
+			}
+		}
+			
+			"SliderHoriz:hover" {
+				render_bg {
+					0="image_tiled( x0 - 10, y0 + 7, x0 - 6, y0 + 15, graphics/scrollbar/hover/left )"
+					1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 15, graphics/scrollbar/hover/middle_horizontal )"
+					2="image_tiled( x1 + 6, y0 + 7, x1 + 10, y0 + 15, graphics/scrollbar/hover/right )"
+				}
+			}
+			
+			"SliderHoriz:active" {
+				render_bg {
+					0="image_tiled( x0 - 10, y0 + 7, x0 - 6, y0 + 15, graphics/scrollbar/hover/left )"
+					1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 15, graphics/scrollbar/hover/middle_horizontal )"
+					2="image_tiled( x1 + 6, y0 + 7, x1 + 10, y0 + 15, graphics/scrollbar/hover/right )"
+				}
+			}
+		
+		
+		ScrollBarSlider { // gutter 
+			bgcolor="none"
+			
+			render_bg {}
+		}
+		
+		ScrollBarSliderHoriz { // gutter 
+			bgcolor="none"
+			
+			render_bg {}
+		}
+		
+		   
+		"GamesPage_Details ListPanel ScrollBarSlider" { // gutter in games list detail view
+			bgcolor="none"
+		
+			render_bg {}
+		}
+		
+		
+		ScrollBarSlider:disabled  {
+			bgcolor="none"
+			render_bg {}
+		}
+		
+		"ScrollBar SliderHoriz" { // gutter
+			bgcolor="none"
+		}
+		
+		"HTML ScrollBar" {
+			bgcolor="none"
+			
+			render_bg {}
+		}
+		
+		"HTML ScrollBar.Horizontal" {
+			bgcolor="none"
+			
+			render_bg {}
+		}
+		
+		"HTML ScrollBarSlider.Horizontal" {
+			bgcolor=none
+			
+			render_bg {}
+		
+		}
+		
+		"HTML SliderHoriz" {
+			bgcolor=none
+			render_bg {}
+		}
+		 
+		"Page ListPanelInterior:scrollbar" {
+			inset="3 1 -1 0"
+			bgcolor=none
+			
+			render {}
+			render_bg {}
+		}
+		
+		
+		"Csteamrootdialog ListPanelInterior:scrollbar" { 
+			inset="3 0 -1 0"
+			bgcolor=none
+			
+			render {}   
+			render_bg {}
+		}
+		
+		ListPanelInterior:scrollbar { 
+			bgcolor=none
+			inset="3 1 -1 0"
+			textcolor="text2"
+			
+			render {}
+			
+			render_bg {}
+		} 
+		
+		CheckButtonList:scrollbar {
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			
+			render {
+				//gradient to obscure content at top of scrolling region 
+				0="gradient( x0+1, y0, x1+1, y0 + 6, dialogbg, none  )"
+				
+				//gradient to obscure content at bottom of scrolling region 
+				1="gradient( x0, y1 - 9, x1+1, y1-1, none, almostblack )"
+			}
+			
+			render_bg { 
+				// background fill
+				0="gradient( x0 + 1, y0 + 1, x1 - 1, y0 +80, dialogbg, BackgroundStartOpaque )"
+				1="fill( x0 + 1, y0 + 80, x1 - 1, y1 - 1, BackgroundStartOpaque )"
+				2="gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
+				  
+				// lines around
+				3="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+				4="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+				5="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+				6="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+				
+				
+				// single pixel fills in the corners
+				7="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+				9="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+				10="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+				11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+				12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+				13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+				14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+				15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+				16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+				17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+				18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+			}
+			  
+		} 
+		
+		"Page CheckButtonList:scrollbar" {
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			
+			render {
+				//gradient to obscure content at top of scrolling region 
+				0="gradient( x0+1, y0, x1+1, y0 + 6, dialogbg, none  )"
+				
+				//gradient to obscure content at bottom of scrolling region 
+				1="gradient( x0, y1 - 9, x1+1, y1-1, none, almostblack )"
+			}   
+			
+			render_bg { 
+				// background fill
+				0="gradient( x0 + 1, y0 + 1, x1 - 1, y0 +80, dialogbg, BackgroundStartOpaque )"
+				1="fill( x0 + 1, y0 + 80, x1 - 1, y1 - 1, BackgroundStartOpaque )"
+				2="gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
+				  
+				// lines around
+				3="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+				4="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+				5="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+				6="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+				
+				
+				// single pixel fills in the corners
+				7="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+				9="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+				10="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+				11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+				12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+				13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+				14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+				15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+				16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+				17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+				18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+			}
+			  
+		}		
+	}
+}

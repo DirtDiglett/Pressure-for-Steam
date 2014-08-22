@@ -1,0 +1,109 @@
+"html.styles" { 
+	colors {
+
+		    HTML.SearchInsetY 5
+		    HTML.SearchInsetX 10
+		    HTML.SearchWide 348
+		    HTML.SearchTall 38
+		    HTML.SearchAnimationTime 0.25
+		
+		    HTML.IMEInsetY 5
+		    HTML.IMEInsetX 10
+		    HTML.IMEWide 348
+		    HTML.IMETall 38
+		    HTML.IMEAnimationTime 0.25
+
+			html.secureurl "green"
+			html.insecureurl "red"	
+
+	}
+	
+	
+	styles {
+	
+		
+ 	"html-findbar"
+ 	{
+		font-family=basefont
+		font-size=14
+		textcolor  = "text2"
+		font-weight=400
+		bgcolor  = "DarkClientBG"
+		selectedtextcolor  = "TextEntrySelected"
+		selectedbgcolor  = "TextSelectedBG"
+		shadowtextcolor  = "Text"	// this is the cursor color
+		inset-left=0
+		inset-top=0
+		
+			render
+		      {
+		        // lines around
+		        0  = "fill( x0 + 1, y0 + 2, x0 + 2, y1 + 1, ButtonBorder )"
+		        1  = "gradient_horizontal( x0 + 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder, none )" 
+		        2  = "gradient_horizontal( x0 + 2, y1 + 1, x1 - 1, y1 +2, ButtonBorder, none )"
+		      }     	
+	}
+		
+ 	"html-imebar"
+ 	{
+		font-family=basefont
+		font-size=14
+		textcolor  = "text2"
+		font-weight=400
+		bgcolor  = "DarkClientBG"
+		selectedtextcolor  = "TextEntrySelected"
+		selectedbgcolor  = "TextSelectedBG"
+		shadowtextcolor  = "Text"	// this is the cursor color
+		inset-left=0
+		inset-top=0
+		
+			render
+		      {
+		        // lines around
+		        0  = "fill( x0 + 1, y0 + 2, x0 + 2, y1 + 1, ButtonBorder )"
+		        1  = "gradient_horizontal( x0 + 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder, none )" 
+		        2  = "gradient_horizontal( x0 + 2, y1 + 1, x1 - 1, y1 +2, ButtonBorder, none )"
+		      }     	
+	}
+	
+	
+	URLLabel {
+      textcolor  = "blue"
+      bgcolor  = "none"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=underline
+    }
+    
+   	URLLabel:Hover {
+	 textcolor  = "lightestBlue"
+	 font-size=14
+	}
+	
+	URLLabelSimple {
+      textcolor  = "blue"
+      bgcolor  = "none"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=regular
+    }
+
+	URLLabelSimple [$OSX] {
+      textcolor  = "blue"
+      bgcolor  = "none"
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      font-style=regular
+    }
+    
+    URLLabelSimple:Hover {
+      font-style=underline
+      textcolor  = "lightestBlue"
+    }  
+	
+	}
+	
+}

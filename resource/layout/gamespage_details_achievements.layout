@@ -1,0 +1,114 @@
+"resource/layout/gamespage_details_achievements.layout" {
+	controls {
+		achievementsdetails { 
+			controlname="CGamesPage_Details_Achievements" 
+			style="achievementsdetails" 
+		}
+
+		headerlabel { 
+			controlname="Label" 
+			style="gamedetails-headerlabel" 
+			labeltext="#Steam_Achievements" 
+		}
+		
+		mostrecent_area { 
+			controlname="CAchievementsMostRecentPanel" 
+		}
+		
+		everythinglabel { 
+			controlname="Label" 
+			style="everythinglabel" 
+			labeltext="#Steam_EverythingAchieved" 
+		}
+		
+		locked_area { 
+			controlname="CAchievementsLockedPanel" 
+		}	
+
+		viewall	{ 
+			controlname="Button" 
+			labeltext="#Steam_ViewAllAchievements" 
+			command="ViewAllAchievements" 
+		}
+	}
+
+	colors {
+		// Extra spacing beyond the flowing elements to account for header and button at the bottom
+		GameDetailsAchievements.ExtraVerticalSpacing "10"
+
+		// This is additional extra vertical spacing when the "You've unlocked everything" label is set
+		// You should test with a game with everything unlocked if you change vertical spacing as this may
+		// need adjustment.
+		GameDetailsAchievements.EverythingExtraSpacing "6"
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+	}
+
+	styles {
+		// This overrides the default button.
+		button {
+			textcolor=blue
+			padding=0
+			
+			render_bg {
+				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
+			}
+		}
+		
+			button:hover {
+				textcolor=lightestBlue
+			}
+			
+		// This is the background
+		achievementsdetails { 
+			bgcolor=black65
+		}
+		
+		// The label for "You've unlocked everything!"
+		everythinglabel {
+			textcolor="white"
+			font-size=13
+		}	
+
+	}
+
+	layout {
+		region { 
+			name=body 
+			margin=20
+			margin-right=30
+			width=max 
+			height=max 
+		}
+
+		place { 
+			region=body 
+			control=headerlabel 
+			width=max 
+		}
+		
+		place { 
+			region=body 
+			control=mostrecent_area,everythinglabel 
+			dir=down 
+			y=35 
+			width=max 
+		}
+		
+		place {
+			control=locked_area
+			y=50
+			x=300
+			width=max
+			height=45
+		}
+
+		place { 
+			region=body 
+			control=viewall 
+			align=bottom 
+			margin-bottom=0 
+			margin-left=-6
+		}
+	}
+}

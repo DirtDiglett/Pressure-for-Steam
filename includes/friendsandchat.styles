@@ -1,0 +1,159 @@
+"friendsandchat.styles" { 
+	colors {
+		
+
+
+	}
+	
+	
+	styles {
+	
+	   CFriendsListSectionAffordance
+    {     
+      inset="0 0 0 0"
+      font-size=14
+      font-weight=400
+      textcolor="Label"
+    }
+    
+    CFriendsListSectionHeader
+    {
+      bgcolor=none
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      textcolor="texthover"
+      inset="0 2 0 0"
+      render_bg
+		{
+			0="gradient_horizontal( x0-21, y0+1, x0+230, y1+1, buttonface2, none )"
+		}
+    }
+            
+    CFriendPanel
+    {
+      inset="0 2 0 0"
+      bgcolor=none
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      textcolor="label"
+    }
+    
+    	friends_chat_text
+	{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"	
+		SelectedBgColor="focus"
+		font-size=16
+	}
+	
+	friends_chat_text_self
+	{
+		textcolor="ChatOwnTextColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	friends_chat_history
+	{
+		textcolor="ChatDialog.HistoryColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+	
+	friends_chat_event
+	{
+		textcolor="Text"
+		font-size=16
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+	}
+
+	friends_chat_bright_event
+	{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"
+		font-size=16
+		font-weight=1000
+	}
+
+	friends_chat_url
+	{
+		textcolor="text"
+   		SelectedBgColor="focus"
+		font-style=underline
+		font-size=16
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+	}
+	
+	friends_chat_name_ingame
+	{
+		textcolor="Friends.InGameColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+
+	}
+	
+	friends_chat_self
+	{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+	
+	friends_chat_name
+	{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		font-size=16
+	}
+	
+	friends_chat_accountid
+	{
+		selectedtextcolor="TextentrySelected"	
+		selectedbgcolor="focus"
+		textcolor="text"
+		font-size=16
+	}
+	
+	friends_chat_securitylink
+	{
+		textcolor="text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=16
+		font-weight=400
+		font-style=underline
+		selectedtextcolor="TextSelected"	
+		selectedbgcolor="Focus"
+	}
+	
+	   	// used in friends tooltip and friends list for overriding regular styles with custom colors
+   	friends_offline
+   	{
+   		textcolor="Friends.OfflineColor"
+   	}
+   	friends_online
+   	{
+   		textcolor="Friends.OnlineColor"
+   	}
+   	friends_ingame
+   	{
+   		textcolor="Friends.InGameColor"
+   	}
+   	friends_ignored
+   	{
+   		textcolor="Friends.IgnoredColor"
+   	}
+	
+	}
+}

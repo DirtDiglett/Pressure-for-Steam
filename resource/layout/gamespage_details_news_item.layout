@@ -1,0 +1,98 @@
+"resource/layout/gamespage_details_news_item.layout" {
+	controls {
+		newsitem_title { 
+			controlname="Label" 
+			style="title_label" 
+		}
+		
+		newsitem_dateandauthor { 
+			controlname="Label" 
+			style="date_and_author" 
+		}
+		
+		newsitem_body { 
+			controlname="RichText" 
+			style="newsitem_body" 
+		}
+		
+		newsitem_more { 
+			controlname="URLLabel" 
+			style="more_link" 
+			labeltext="#steam_newscontinued" 
+		}
+	}
+	
+	colors {
+		// The extra space needed vertical beyond the autocomputed size of the blurb contents
+		// this is used in code to make the vertical size of the panel fit the title/author/morelink
+		// and should be updated if you change vertical padding/margins/layout.
+		GameDetailsNewsItem.ExtraVerticalSpacing "76"
+
+		// Override base style rich text x inset inside this control
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+	}
+	
+	styles {
+		title_label {
+			font-size=18
+			textcolor="white"
+			padding-top=20
+		}
+
+		date_and_author {
+			font-size=11
+			textcolor="grey"
+		}
+
+		newsitem_body {
+			textcolor="white"
+			selectedtextcolor="trueWhite"	
+			render_bg {}
+			font-size=13
+			font-family=basefont
+		}
+		
+		"newsitem_body url" {
+			font-size=13
+			font-style="underline"
+			textcolor=blue
+			selectedtextcolor="blue"	
+		}
+		
+		"newsitem_body url:hover" {
+			font-size=13
+			font-style="underline"
+			textcolor="lightestBlue"
+			selectedtextcolor="label"	
+		}
+		
+		"newsitem_body bold" {
+			font-weight=1000
+			textcolor="white"
+			selectedtextcolor="trueWhite"	
+		}
+		
+		more_link {
+			font-size=13
+			font-style="none"
+			font-weight=400
+			font-family=basefont
+			textcolor="blue"
+			selectedtextcolor="blue"	
+		}
+		
+		more_link:hover {
+			font-style="none"
+			textcolor="lightestBlue"
+		}
+	}
+
+	layout {
+		region { name=body margin=0 width=max }
+		place { region=body control=newsitem_title x=0 y=0 width=max height=44 }
+		place { region=body y=37 control=newsitem_dateandauthor width=max height=24}
+		place { region=body y=58 control=newsitem_body width=max }
+		place { region=body control=newsitem_more align=bottom }
+	}
+}

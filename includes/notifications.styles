@@ -1,0 +1,56 @@
+"notifications.styles" { 
+	colors {
+		
+		// *********************************************** 
+		// "Pressure" Notifications
+		// ***********************************************	
+		Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+		Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
+		Notifications.SlideDirection    "Vertical"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
+		Notifications.FadeInTime      "0.33"    // Controls the time it takes to slide/fade into view
+		Notifications.FadeOutTime     "0.33"    // Controls the time it takes to slide/fade out of view
+		Notifications.DisplayTime     "4.0"     // Controls the length of time at steady state after fade in and before fade out
+		Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
+		
+		
+		
+		
+  
+
+    
+		AchievementPopup.TitleColor   "Text"
+		AchievementPopup.DescriptionColor "180 180 180 255"
+		
+
+	}
+	
+	styles {
+	
+		Notification {
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			bgcolor=none
+			render_bg {
+				0  = "gradient( x0+1, y0, x1-1, y0+80, green, blue )"
+	        
+				0  = "gradient_horizontal( x0 + 1, y1 - 1, x1 -1, y1, ClientBG, Highlight5 )"    // bottom
+				1  = "gradient( x1 - 1, y0 + 1, x1, y1 - 1, ClientBG, Highlight5 )" // right
+				2  = "fill( x0 + 1, y0, x1 - 1, y0 + 1, ClientBG )"  // top
+				3  = "fill( x0, y0 + 1, x0 + 1, y1 - 1, ClientBG )" // left
+	     
+				// single pixel fills in the corners
+				4  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ClientBG )"
+				5  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ClientBG )"
+				6  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ClientBG )"
+				7  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, Highlight5a )"
+			}
+	      
+			render {}
+			corner_rounding=6
+	    }
+    
+	
+	}
+	
+}

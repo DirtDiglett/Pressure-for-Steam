@@ -1,0 +1,149 @@
+"resource/layout/gamespage_grid_chrome.layout" {
+
+// This file handles the PLAY/DETAILS bit on top of each grid item
+
+	controls {
+		"chromeborder" {
+			ControlName=Panel
+			style=ChromeBorderItem
+			mouseinputenabled=0
+		}
+		
+		
+		"launch" {
+			zpos="1"
+			// this control's text and command will be clobbered by code based on the installation state
+			ControlName=URLLabel
+			labelText="#steam_launch"
+			style=CUILaunchButton
+			command=launch
+		}
+		
+				
+		"divider" {
+			zpos="1"
+			ControlName="Label"
+			labelText=""
+			style="GridNavDivider"
+
+		}
+		
+		"details" {
+			zpos="1"
+			ControlName=URLLabel
+			labelText="#steam_details"
+			style=CUIDetailsButton
+			command=details
+		}
+	}
+
+	styles {
+		
+		// Hide it.
+		ChromeBorderItem {
+			render {}
+			render_bg {
+				0="image_tiled(x0,y0,x1,y1,graphics/gamegrid/bg)"
+			}			
+		}	
+
+		// Hide it.
+		GridNavDivider {
+			textcolor="none"
+			bgcolor="none"
+			font-family=basefont
+		}
+		
+		
+		
+		CUILaunchButton {   
+	      font-family=basefont
+	      font-size=16
+	      font-weight=400
+	      textcolor="Text"
+	      font-style=uppercase
+	      bgcolor=none   
+	      padding-left=23
+	      padding-top=1
+	      render {
+	       	1="image( x0, y0 + 1, x1, y1, graphics/icon_play )"
+	       	2="fill(x0,y0,x1,y1, green)"
+	      }
+      
+		}
+		
+			CUILaunchButton:Hover {   
+			      font-family=basefont
+				  font-size=16
+				  font-weight=400
+				  textcolor="white"
+				  font-style=uppercase
+				  padding-top=1
+				  bgcolor=none   
+	      
+		      render {
+		       	1="image( x0, y0 + 1, x1, y1, graphics/icon_play_hover )"
+		      }
+			}
+	
+	CUIDetailsButton {   
+
+
+      font-family=basefont
+      font-size=16
+      font-weight=400
+      textcolor="Text"
+      font-style=uppercase
+      bgcolor=none   
+      padding-left=22
+      padding-top=1
+      
+      render {
+       	1="image( x0, y0 + 1, x1, y1, graphics/icon_details )"
+       	2="fill(x0,y0,x1,y1,orange)"
+      }
+      
+		}
+		
+		CUIDetailsButton:Hover {   
+
+
+      font-family=basefont
+      font-size=16
+      font-weight=400
+      textcolor="white"
+      font-style=uppercase
+      bgcolor=none   
+      padding-top=1
+      render
+      {
+       	1="image( x0, y0 + 1, x1, y1, graphics/icon_details_hover )"
+      }
+		}
+	
+
+		"GameItem_Updating CUINavButton:hover"
+		{
+			textcolor="Text"
+		}
+	}
+
+	
+	layout {
+		region { name="actions" align=bottom width=max height=50 x=0 y=210 margin-bottom=0}
+		
+		place {
+			control=chromeborder x=0 y=0 width=max height=max
+		}
+
+		place {
+			control="divider,details"	region="actions"		align=top-center //spacing=7 margin-bottom=18 margin-left=0 margin-top=8
+		}
+		
+		place {
+			control="launch"
+			align=top-center
+		}
+		
+	}
+}

@@ -1,0 +1,86 @@
+"resource/layout/gamespage_details_communityfiles.layout" {
+	controls {
+		communityfilesdetails { 
+			controlname="CGamesPage_Details_CommunityFiles" 
+			style="communityfilesdetails" 
+		}
+		
+		workshopdetails { 
+			controlname="CWorkshopDetailsPanel" 
+		}
+		
+		viewall	{ 
+			controlname="Button" 
+			labeltext="#steam_community_files_view_all" 
+			command="ViewWorkshop" 
+		}
+	}
+
+	colors {
+		GameDetailsCommunityFiles.ExtraVerticalSpacing "150"
+		GameDetailsCommunityFiles.PanelSpacing "15"
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+	}
+
+	styles {
+	
+			// This overrides the default button.
+		button {
+			textcolor=blue
+			padding=0
+			
+			render_bg {
+				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
+			}
+		}
+		
+			button:hover {
+				textcolor=lightestBlue
+			}
+	
+		communityfilesdetails { 
+			bgcolor=black65
+		}
+		
+		infolabel {
+			font-size=13
+			textcolor=white
+		}	
+	}
+
+	layout {
+		region { 
+			name=body 
+			margin=20 
+			width=max 
+			height=max 
+		}
+
+		place {
+			region=body
+			width=max
+			y=10
+			control=workshopdetails
+			dir=right
+			spacing=8
+			margin=0
+		}
+		
+		place {
+			control=*communityfile
+			width=max
+			y=105
+			x=23
+			dir=right
+			spacing=4
+		}		
+		
+		place { 
+			region=body 
+			control=viewall 
+			align=bottom 
+			margin-bottom=5 
+		}
+	}
+}

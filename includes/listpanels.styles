@@ -1,0 +1,392 @@
+"listpanels.styles" { 
+	
+	styles {
+		
+	ListPanelCheckBox
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "Label"
+		image  = "graphics/chkUnselStd_Sm"
+		inset  = "0 5 0 0"
+    }   
+
+    
+    ListPanelCheckBox:selected
+    {
+		image  = "graphics/chkSelStd_Sm"    
+    }
+
+	ListPanelCheckBox:focus
+    {
+		textcolor  = "Text"
+		bgcolor=none
+		image  = "graphics/chkUnselFocus_Sm"  
+    }
+
+    ListPanelCheckBox:selected:focus
+    {
+		textcolor  = "Text"
+		render_bg {}
+		bgcolor=none
+		image  = "graphics/chkSelFocus_Sm"
+    }
+    
+    ListPanelCheckBox:disabled
+    {
+		textcolor  = "TextDisabled"
+		bgcolor=none
+		image  = "graphics/chkUnselDis_Sm"
+    }
+    
+    ListPanelCheckBox:disabled:select
+    {
+		textcolor  = "TextDisabled"
+		bgcolor=none
+		//!! bug - this needs to look disabled
+		image  = "graphics/chkUnselDis"
+    }
+    
+    "ListPanelColumnheader ListPanelCheckBox"
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "Label"
+		image  = "graphics/chkUnSelFocus_Sm"
+		inset  = "4 0 0 0"  
+	}
+
+     
+	"ListPanelColumnHeader ListPanelCheckBox:selected"
+    {
+		inset  = "4 0 0 0"
+		image  = "graphics/chkUnSelStd_Sm"    
+    }
+	
+	"ListPanelColumnheader ListPanelCheckBox:focus"
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor  = "TextHover"
+      image  = "graphics/chkUnSelFocus_Sm"
+      inset  = "4 0 0 0"  
+	}
+
+	"ListPanelColumnheader ListPanelCheckBox:selected:focus"
+    {
+      textcolor  = "TextHover"
+      render_bg {}
+      bgcolor=none
+      image  = "graphics/chkSelFocus_Sm"
+      inset  = "4 0 0 0"  
+    }
+    
+    
+    ListPanelColumnheader
+    {
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor  = "label"
+		font-style  = "uppercase"
+		bgcolor  = "none"
+		inset  = "1 3 0 0"
+
+		render_bg    
+		{
+			// fill
+			0  = "fill (x0, y0 + 3, x1, y1 + 1, red )" // bg fill
+		}   
+	}
+    
+    ListPanelColumnHeader:hover
+    {
+		textcolor  = "Texthover"
+    }
+      
+	"Csteamrootdialog ListPanelColumnheader"
+    {
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor  = "label"
+		font-style  = "uppercase"
+		bgcolor  = "none"
+		inset  = "0 0 0 0"
+		inset  = "0 1 0 0" [$OSX]
+		padding-top=5
+
+		render_bg    
+		{
+			// fill
+			0  = "fill (x0, y0 + 1, x1, y1, green )" // bg fill
+		}   
+	}
+
+   
+    "Csteamrootdialog ListPanelColumnHeader:hover"
+    {
+		textcolor  = "TextHover"
+    }
+    
+   	"Csteamrootdialog ListPanelSectionCollapser"
+	{
+		inset = "0 1 0 1"
+		bgcolor=none
+		render_bg
+		{
+			1  = "fill( x0 , y0, x1, y1 - 1, buttonface2  )"
+		}    
+	}
+	
+	  "CGamesPage_Mini ListPanelSectionCollapser"
+	{
+		inset = "0 1 0 1"
+		bgcolor=none
+		render_bg
+		{
+			1  = "fill( x0 , y0, x1, y1 - 1, buttonface2  )"
+		}    
+	}
+    
+
+ 
+	ListPanelColumnSelectButton // the games list column chooser  
+    {
+        inset  = "0 0 0 0"
+        render {
+          // background fill
+          1  = "fill( x0, y0 + 1, x1 - 1, y1, orange )"  
+          
+          // lines around
+          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
+          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
+          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
+          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+        }   
+        render_bg {}
+	}
+    
+    ListPanelColumnSelectButton:hover
+     {
+        inset  = "0 3 0 0"
+        render
+        {
+          // lines around
+          1  = "fill( x0, y0 + 1, x1 - 1, y1, buttonborderdisabled)"
+          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
+          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
+          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
+          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }   
+        render_bg {}
+	}
+      
+    ListPanelColumnSelectButton:selected
+    {
+        inset  = "0 3 0 0"
+        render
+        {
+          // lines around
+          1  = "fill( x0, y0 + 1, x1 - 1, y1, buttonborderdisabled)"
+          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
+          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
+          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
+          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }   
+        render_bg {}
+	}
+
+
+	
+	"CGamesListPanel ListPanelColumnSelectButton"   
+	{
+        inset  = "0 3 0 0"
+        render
+        {
+          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+        }   
+        render_bg {
+        1  = "fill( x0 + 1, y0, x1 - 1, y1, green )"
+        }
+	}
+	"CGamesListPanel ListPanelColumnSelectButton:hover"   
+	{
+        inset  = "0 3 0 0"
+        render
+        {
+          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }   
+
+	}
+	"CGamesListPanel ListPanelColumnSelectButton:selected"   
+	{
+        inset  = "0 3 0 0"
+        render
+        {
+          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }   
+
+	}
+   
+    ListPanelDragger
+	{
+		bgcolor  = "none"
+		render 
+		{
+			//fill makes dragger visible
+			0  = "fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )" // left
+			1  = "fill (x0, y0, x0+1, y0+3, buttonborderdisabled )" //dot
+		}
+    }
+    
+    ListPanelInterior
+    {     
+		inset  = "3 1 0 0"
+		font-size=15
+		textcolor  = "text2"
+		bgcolor  = "none" 
+      	render
+			{
+				//gradient to obscure content at top of scrolling region 
+				1  = "gradient( x0+1, y0+0, x1-1, y0 + 3, blue, none  )"
+				
+				//gradient to obscure content at bottom of scrolling region 
+				2  = "gradient( x0, y1 - 12, x1, y1-0, none, almostblack )"
+			}
+		
+		render_bg {}
+    } 
+    
+    
+
+	"CSteamRootDialog ListPanel"
+	{
+		padding-left=2
+		padding-right=2
+	}
+    
+     "Csteamrootdialog ListPanelInterior"
+    {     
+       	inset  = "0 0 0 0"
+		bgcolor=none
+		render_bg {}
+	}
+	
+	
+	
+	"Page ListPanelInterior"
+	{
+		inset  = "0 0 0 0"
+		font-size=15
+		bgcolor=none
+		render_bg {}
+	}
+	
+
+      
+    ListPanelSectionHeader {     
+				inset="0 2 0 0"
+			textcolor=white
+			
+			font-style="outerglow"
+			font-outerglow-color="darkGreyEnd"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			
+						
+			render_bg {
+				0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
+				1="fill(x0, y0, x1, y0+1, greyHighlight)"
+			}  
+    } 
+    
+    ListPanelSectionHeader:hover
+    {     
+        textcolor=texthover
+    } 
+    
+    
+    
+	"ListPanel RichText"
+	{
+		textcolor  = "Text"
+		font-family=basefont
+		font-size=15
+		bgcolor=none
+		render_bg {} 
+	}
+
+
+	"ListPanel RichText url" {
+		font-size=13
+		textcolor  = "blue"
+		font-style=underline
+	}
+
+    "ListPanel RichTextInterior"
+    {
+      bgcolor=DarkDialogBG
+      render_bg {} 
+      bgcolor=none
+    }
+    
+    ListPanelSectionCollapser [!$OSX]
+    {
+      
+      bgcolor=none
+      render_bg {}
+      image  = "graphics/icon_collapse" 
+      inset  = "-4 0 0 0"
+      padding-top=-2
+      padding-bottom=-2
+    }
+    
+    ListPanelSectionCollapser [$OSX]
+    {
+      
+      bgcolor=none
+      render_bg {}   
+      image  = "graphics/icon_collapse_osx" 
+      inset  = "0 0 0 0"
+      padding-top=0
+      padding-bottom=-2
+    }
+    
+    ListPanelSectionCollapser:hover [!$OSX]
+    {
+      image  = "graphics/icon_collapse_over" 
+    }
+    
+    ListPanelSectionCollapser:hover [$OSX]
+    {
+      image  = "graphics/icon_collapse_over_osx" 
+    }
+    
+    ListPanelSectionCollapser:selected [!$OSX]
+    {
+      image  = "graphics/icon_expand" 
+    }
+    
+    ListPanelSectionCollapser:selected [$OSX]
+    {
+      image  = "graphics/icon_expand_osx" 
+    }
+    
+    ListPanelSectionCollapser:selected:hover [!$OSX]
+    {
+      image  = "graphics/icon_expand_over" 
+    }
+    
+     ListPanelSectionCollapser:selected:hover [$OSX]
+    {
+      image  = "graphics/icon_expand_over_osx" 
+    }
+		
+	}
+}

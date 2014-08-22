@@ -1,0 +1,73 @@
+"colors.styles" { // "Pressure" by Dirt Diglett
+	colors {
+
+  
+// *********************************************** 
+// "Pressure" Colors
+// ***********************************************
+ 
+		none="0 0 0 0"
+	 
+		// Greyscale
+		trueWhite="255 255 255 255"
+		white="251 251 251 255"
+		
+		lightestGrey="139 139 139 255"
+		lightestGreyHighlight="113 113 113 255"
+		greyHighlight="85 85 85 255"
+		grey="60 60 60 255"
+		lightGreyEnd="42 42 42 255"
+		darkGreyEnd="25 25 25 255"
+		darkestGrey="8 8 8 255"
+		black="0 0 0 255"
+		black75="0 0 0 191" // 75% Opacity Black
+		black65="0 0 0 165" // 65% Opacity Black
+		white10="255 255 255 25" // 10% Opacity White
+		grey50="60 60 60 165" // 65% Opacity Grey
+		grey25="60 60 60 70" // 25%
+		grey10="60 60 60 25 // 10%"
+		darkestGrey50="8 8 8 100" // 65% Opacity Grey
+		
+		// Greens	
+		lightestGreen="209 248 48 255"
+		green="175 218 28 255"
+		darkestGreen="136 172 19 255"
+		
+		// Blues
+		lightestBlue="91 225 252 255"
+		blue="47 198 236 255"
+		darkestBlue="35 175 210 255"
+	
+		// Oranges
+		lightestOrange="255 151 58 255"
+		orange="255 120 0 255"
+		darkestOrange="194 94 6 255"
+		
+		// Reds
+		red="209 0 0 255"
+		
+		// Golds
+		lightestYellow="231 200 1 255"
+		yellow="210 178 1 255"
+		darkestYellow="160 132 1 255"
+		
+		
+		// SPECIAL
+		
+		// Normal Button
+		darkCornerPixels = "8 8 8 200"
+		topLightPixels = "62 62 62 255"
+		bottomDarkPixels = "38 38 38 255"
+		greyHighlightFake="85 85 85 127"
+		darkestGreyFake="8 8 8 105"	
+	
+		// Highlighted Button
+		topLightPixelsHighlighted = "103 103 103 255"
+		bottomDarkPixelsHighlighted = "57 57 57 255"
+		
+		// Disabled Button
+		bottomDarkPixelsDisabled = "24 24 24 255"
+		
+		
+	}
+}
