@@ -42,9 +42,13 @@
 		// Hide it.
 		ChromeBorderItem {
 			render {}
+			
 			render_bg {
-			// I'd love to use a semi-transparent black overlay... but the fade-in animation Valve applied makes it break and look REALLY laggy.
-			//	0="image_tiled(x0,y0,x1,y1,graphics/gamegrid/bg)"
+				// I'd love to use a semi-transparent black overlay... but the fade-in animation Valve applied makes it break and look REALLY laggy.
+				//	0="image_tiled(x0,y0,x1,y1,graphics/gamegrid/bg)"
+			
+				// 
+				0="fill(x0, y0, x1,y1, darkestGrey)"
 			}			
 		}	
 
@@ -56,7 +60,7 @@
 		}
 		
 		
-		
+		// The Play/Install/Stream button... I wish I could change it to be colored like the details page, but alas, we cannot.
 		CUILaunchButton {   
 	      font-family=basefont
 	      font-size=16
@@ -66,6 +70,7 @@
 	      bgcolor=none   
 	      padding-left=23
 	      padding-top=1
+	      
 	      render {
 	       	1="image( x0, y0 + 1, x1, y1, graphics/icon_play )"
 	       	2="fill(x0,y0,x1,y1, green)"
