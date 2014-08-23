@@ -354,33 +354,6 @@ styles {
 	    }
     
    
-	"CFriendsDialog SectionedListPanelInterior"
-	{
-		bgcolor=none
-		font-family=basefont
-		font-size=14
-		font-weight=400
-		textcolor  = "Text"
-		selectedtextcolor  = "TextSelected"
-		selectedbgcolor  = "Focus"
-		shadowtextcolor  = "TextDisabled"	// the color of disabled line items		
-		render
-		{
-			//gradient to obscure content at top of scrolling region 
-			0  = "fill( x0+2, y0, x1, y0 + 2, dialogbg )"
-			1  = "gradient( x0+2, y0+2, x1, y0 + 12, dialogbg, none  )"
-			
-			//gradient to obscure content at bottom of scrolling region 
-			2  = "gradient( x0+1, y1 - 18, x1, y1-3, none, almostblack )"
-			3  = "fill( x0+1, y1 - 4, x1, y1-1, almostblack )"
-		}
-		render_bg 
-		{	
-			// background gradient
-			0  = "gradient( x0, y0, x1, y0 + 149, dialogbg, AlmostBlack )"
-			1  = "fill( x0, y0 + 149, x1, y1 + 1, AlmostBlack )" 
-		}
-	}
 	
         		
     GraphPanel
@@ -922,6 +895,7 @@ styles {
 				1="image( x0+122, y0+33, x1, y0, graphics/login_logo )"
 			}
 		}
+		
 		"ProgressBox Label"
 		{
 			inset="0 0 0 10"
@@ -931,13 +905,11 @@ styles {
 			font-weight=300
 		}
 		
-		"ProgressBox FrameCloseButton"
-		{
+		"ProgressBox FrameCloseButton" {
 			render_bg {}
 		}
 		
-		"ProgressBox Button"
-		{
+		"ProgressBox Button" {
 			textcolor=none
 			bgcolor=none
 			render_bg {}
@@ -1008,8 +980,7 @@ styles {
 		bgcolor  = "PropertySheetBG"
     }
     
-    "CFriendsDialog PropertySheet"
-    {
+    "CFriendsDialog PropertySheet" {
 		bgcolor  = "none"
     }
     
@@ -1084,8 +1055,7 @@ styles {
 	}
 
 	
-    SectionedListPanel
-    {
+    SectionedListPanel {
 		bgcolor  = "propertysheetbg"
 		font-family=basefont
 		font-size=14
@@ -1121,16 +1091,7 @@ styles {
         inset  = "1 -1 1 1"  
     }
     
-    "CFriendsDialog SectionedListPanel" {
-      bgcolor  = "none"
-      
-     // padding-top=20
-      
-      render_bg {
-       		// background fill to overwrite the normal listPanel background
-	   		0  = "fill( x0, y0, x1, y1, darkestGrey)"
-      }    
-    }
+
     
     SectionedlistpanelCollapser
     {

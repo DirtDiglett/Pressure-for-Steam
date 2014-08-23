@@ -95,13 +95,13 @@
 		CFriendPanel:selected //avatar view
 		{
 			render_bg {
-				0="gradient_horizontal( x0 + 2, y0 + 4 , x1-1, y1, focus3, none  )"  //top
-				1="gradient_horizontal( x0, y0 + 5 , x1, y1-1, focus3, none  )"  //fill
-				2="gradient_horizontal( x0 + 2, y1-1 , x1-1, y1, focus3, none  )"  //btm
-				3="fill( x0 - 1, y0 + 7, x0, y1 - 3, focus3 )"  //left
+				//0="gradient_horizontal( x0 + 2, y0 + 4 , x1-1, y1, focus3, none  )"  //top
+				//1="gradient_horizontal( x0, y0 + 5 , x1, y1-1, focus3, none  )"  //fill
+				//2="gradient_horizontal( x0 + 2, y1-1 , x1-1, y1, focus3, none  )"  //btm
+				//3="fill( x0 - 1, y0 + 7, x0, y1 - 3, focus3 )"  //left
 				//single-pixel fills
-				4="fill( x0, y0 + 5, x0 + 1, y0 + 6, focus4 )"  
-				5="fill( x0, y1 - 2, x0 + 1, y1 - 1, focus4 )"  
+				//4="fill( x0, y0 + 5, x0 + 1, y0 + 6, focus4 )"  
+				//5="fill( x0, y1 - 2, x0 + 1, y1 - 1, focus4 )"  
 			}	
 		}
 		
@@ -113,13 +113,23 @@
 		namestyle {
 			font-family=basefont
 			font-size=15
-			font-weight=1000
+			font-weight=600
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3		
 		}
 		
 		nameInstanceStyle {
 			font-family=basefont
 			textcolor="grey"
 			font-size=14
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3	
 		}
 		
 		menuButtonStyle {
@@ -147,6 +157,11 @@
 		statusStyle {
 			font-family=basefont
 			font-size=12
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3	
 		}
 		
 		inviteLinkStyle {

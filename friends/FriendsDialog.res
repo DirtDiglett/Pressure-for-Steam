@@ -130,7 +130,7 @@
 			"paintbackground"   "1"
 		}
 		
-		friends_search { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="FriendsSearch" unicode=1 tabposition=2 }
+		friends_search { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="FriendsSearch" unicode=1 tabposition=2 zpos=9}
 		friends_search_icon	{ ControlName=Label style="FriendsSearchIcon" zpos="4" }		
 		
 	}
@@ -138,48 +138,105 @@
   
 	styles {
 	
+		CFriendsDialog {
+			minimum-width=330
+		}
+	
 		FrameTitle {
 			font-family=basefont
-			inset  = "5 2 0 0"
-			inset  = "0 4 0 0" [$OSX]
-			padding-left  = "0"
-			padding-right  = "64"
-			padding-right  = "0" [$OSX]
-			font-size=14
+			font-size=1
 			font-weight=400
-			textcolor  = "lightestGrey"
 			bgcolor  = "none"
-			
+			textcolor  = "none"
+
 			render_bg {
-				0  = "gradient( x0, y0, x1, y0 + 80, grey, lightGreyEnd )"
-				1="fill(x0,y0,x1,y0+2, blue)"
-				2 = "fill( x0, y0+80, x1, y0+115, red )"
+// Creates the top section
+					0="gradient( x0+1, y0+1, x1-1, y0 + 86, grey, darkGreyEnd )"
+					
+					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
+					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
+					
+					3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
+					4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
+					
+					5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
+					6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
+					
+					// Create the 1px Highlight on top
+					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
+					
+					// 1px Dark line
+					
+					
+					
+					
+					// Creates the section.
+					//2="gradient( x0+1, y0+88, x1-1, y0+125, grey, lightGreyEnd )"
+					//3="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
+					//4="fill(x0+1,y0+88, x1-1, y0+89, greyHighlight)"
+					
+					8="image_tiled(x0+1, y0+87, x1-1, y0+125, graphics/subnav_bg)"
+					
+					9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
+					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
+					
+					11="fill(x0+1, y0+125, x1-1, y=+126, darkestGrey)"
 			}
 	    }
 	
 		    FrameTitle:framefocus {
 				font-family=basefont
 				inset  = "0 4 0 0" [$OSX]
-				font-size=14
+				font-size=1
 				font-weight=400
 				bgcolor  = "none"
-				textcolor  = "none"
-				textcolor  = "none" [$OSX]
+				textcolor="none"
 
 				render_bg {
+					
+					
 					// Creates the top section
-					0="gradient( x0, y0, x1, y0 + 86, grey, darkGreyEnd )"
-					1="fill(x0,y0,x1,y0+1, greyHighlight)"
+					0="gradient( x0+1, y0+1, x1-1, y0 + 86, grey, darkGreyEnd )"
+					
+					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
+					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
+					
+					3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
+					4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
+					
+					5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
+					6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
+					
+					// Create the 1px Highlight on top
+					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
+					
+					// 1px Dark line
+					
+					
+					
 					
 					// Creates the section.
-					2="gradient( x0, y0+87, x1, y0+124, grey, lightGreyEnd )"
-					3="fill(x0,y0+87, x1, y0+88, greyHighlight)"
+					//2="gradient( x0+1, y0+88, x1-1, y0+125, grey, lightGreyEnd )"
+					//3="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
+					//4="fill(x0+1,y0+88, x1-1, y0+89, greyHighlight)"
+					
+					8="image_tiled(x0+1, y0+87, x1-1, y0+125, graphics/subnav_bg)"
+					
+					9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
+					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
+					
+					11="fill(x0+1, y0+125, x1-1, y0+126, darkestGrey)"
 				}
 			  }
 	
+		// Used to push the friends section down lower for trickery.
+		Page {
+			inset="0 10 0 0"
+		}
+	
 	
 		SectionedlistpanelCollapser {
-			inset="-6 0 0 0"
+			//inset="-6 0 0 0"
 			image="graphics/icon_collapse"
 			padding-top=0
 			padding-bottom=0
@@ -200,47 +257,57 @@
 		// So far, can't work out a way to move the pagetabs higher from their current position to make the button look.
 		PageTab {
 		
-			//minimum-height=35
+			minimum-height=34
 			//padding-bottom=20
 		
 			textcolor=white
 			
+			//inset="0 -5 0 0"
+			
 			render_bg {
-				//0="fill(x0,y0,x1,y1, blue)"
+				0="fill(x0,y0,x1,y1, blue)"
 			}
 			
 		}
 		
 			PageTab:hover {
-				textcolor=white
-				
-				font-style="outerglow"
-				font-outerglow-color="255 255 255 100"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3				
+				textcolor=white			
 			}
 			
 			PageTab:selected {
 				textcolor=blue
-
-				font-style="outerglow"
-				font-outerglow-color="darkestGrey"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3	
 			}
 		
-	
-		FriendsPanel {			
+		
+	"CFriendsDialog SectionedListPanel" {
+      bgcolor  = "none"
+      
+     // padding-top=20
+      
+      
+      
+      render_bg {
+       		// background fill to overwrite the normal listPanel background
+	   		//0  = "fill( x0, y0, x1, y1, darkestGrey)"
+	   		
+      }    
+    }
+		
+		// The actual whole dialog window itself.
+		FriendsPanel {	
 			bgcolor="none"
 			
-			render {
-				0="gradient(x0,y1-4, x1, y1, none, 8 8 8 100)"
-			}
+			render {}
 			
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
+				//0="fill(x0,y0,x1,y1,green)"
 			}
 		}	
+		
+		"CFriendsDialog SectionedListPanel" {
+			//inset="0 30 0 0"
+		}
 		
 		AddFriendsButton  {
 			font-family=basefont
@@ -265,7 +332,7 @@
 
 				
 		FriendsTitle {
-			inset="0 0 0 0"
+			//inset="0 0 0 0"
 		}
 
 		FriendsTitle [$OSX] {
@@ -274,7 +341,7 @@
 			font-weight=400
 			textcolor="lightestGray"
 			bgcolor="none"
-			inset="0 9 0 0"
+			//inset="0 9 0 0"
 		}
 
 			FriendsTitle:FrameFocus [$OSX] {
@@ -283,7 +350,7 @@
 				font-weight=400
 				textcolor="trueWhite"
 				bgcolor="none"
-				inset="0 9 0 0"
+				//inset="0 9 0 0"
 			}
 		
 		"MenuBar MenuButton"
@@ -367,7 +434,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 + 2, y0 - 1, x1 + 2, y1 +3, dialogbg )"
+				0="fill( x0 + 2, y0 - 1, x1 + 2, y1 +3, red )"
 			}
 		}
 		
@@ -381,9 +448,42 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, dialogbg )"
+				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, blue )"
 			}
 		}		
+		
+		
+		// This will only affect the HEADERS inside it for some reason
+		"CFriendsDialog SectionedListPanelInterior" {
+		
+		inset="0 -3 0 0"
+		
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "white"
+		selectedtextcolor  = "blue"
+		selectedbgcolor  = "green"
+		shadowtextcolor  = "darkGreyEnd"	// the color of disabled line items		
+		render {
+			0="fill(x0,y0,x1,y0+1, darkestGrey)"
+			
+		}
+		render_bg {
+			1="fill(x0,y0+2,x1,y1, grey)"
+		}
+	}
+	
+	"CFriendsDialog SectionedListPanelInterior:scrollbar" {
+		padding-right=15
+	}
+	
+	"CFriendsListSubPanel" {
+		//padding-top=20
+	}
+		
+		
 		
 		
 	}
@@ -399,7 +499,14 @@
 		
 	
 		
-		place { control="friends_search" y=100 align=left margin-left=150 width=180 height=25 }	
+		place { 
+			control="friends_search" 
+			y=100 
+			align=left 
+			margin-left=145 
+			width=180 
+			height=25 
+		}	
 		
 		place { 
 			control="FriendPanelSelf" 
@@ -419,12 +526,15 @@
 		
 		
 		place { control="friends_search_icon" margin-left=-2 start=FriendPanelSelf dir=down margin-top=5 height=25 }
-		place { control="friends_search" start=friends_search_icon dir=right margin-right=9 y=-2 margin-bottom=38 width=max height=25 }
+		place { control="friends_search" dir=right margin-left=150 y=95 min-width=175 height=25 }
 
 		
 		place {
 			control="FriendsDialogSheet"
-			y=97
+			//y=97
+			y=85
+			//y=150
+			
 			width=max
 			height=max
 			dir=down
