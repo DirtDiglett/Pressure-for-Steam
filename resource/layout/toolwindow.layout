@@ -1,0 +1,112 @@
+"resource/layout/toolwindow.layout"
+{
+	controls
+	{
+		// the container
+		ToolWindowSheet	{	controlname="PropertySheet" }
+	} 
+	
+		
+	styles
+	{
+	
+		ToolWindow
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y0+40, FrameBorder )"
+				1="fill( x0, y0, x1, y0+39, Header_Dark )"
+			}
+		}
+
+		PageTab:selected
+    {
+			bgcolor="ClientBG"
+    }
+		
+		Button
+	  {     
+	  	textcolor="none"
+			bgcolor="none"
+			//minimum-width=24
+			//minimum-height=24
+			render_bg 
+			{
+				0="image(x0+8,y0+8,x1,y1,graphics/new_tab)"
+			}
+	  }
+	  
+	  Button:hover
+		{
+			render_bg 
+			{
+				0="image(x0+8,y0+8,x1,y1,graphics/new_tab_hover)"
+			}
+		}
+
+	  MenuButton
+	  {
+	  	padding-right=8
+			minimum-width=24
+			minimum-height=24
+		 	bgcolor=none
+			render_bg {}
+		}
+	  
+	  TabMenuButtonFlash
+	  { 
+			render_bg
+			{
+				0="fill(x0+6,y0+6,x1-6,y1-6,Focus)"
+			}
+	  }
+	  
+	  TabMenuItemFlash
+	  {
+	  	textcolor="Focus"
+	  }
+		
+		FrameButton
+    {
+			//image="graphics/tab_close_def"
+			//inset-left=-6
+			//inset-top=0
+    }
+		FrameButton:hover
+    {
+			//bgcolor=white12
+		}
+		
+		FrameButton:active
+    {
+			//bgcolor=white24
+		}
+		
+		FrameMinimizeButton
+		{
+			//render_bg {}
+		}
+		FrameMaximizeButton
+		{
+			//render_bg {}   
+		}   
+		FrameMinimizeButton
+		{
+			//render_bg {}
+		}
+		FrameCloseButton
+		{
+			//render_bg {}
+		}
+	}
+
+	layout
+	{
+		//Original
+		place { control="frame_minimize,frame_maximize,frame_close" align=right width=34 height=27 }
+		//WIP
+		//place { control="frame_minimize,frame_maximize,frame_close" align=right width=16 height=16 spacing=0 y=5 margin-right=5 }
+		place { control="frame_captiongrip" height=40 width=max }
+		place { control="ToolWindowSheet" x=0 y=16 height=max width=max margin-top=-4 }
+	}
+}

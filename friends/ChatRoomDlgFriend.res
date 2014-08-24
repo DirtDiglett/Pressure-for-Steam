@@ -18,7 +18,7 @@
 			"ControlName"		"RichText"
 			"maxchars"		"-1"
 			"ScrollBar"		"1"
-			style="ChatListPanel"
+			style="ListPanel"
 		}
 		
 		"SendButton" {
@@ -39,8 +39,7 @@
 		"TitlePanel" {
 			"ControlName"		"CFriendPanel"
 			"zpos"		"-2"
-			paintbackgroundenabled=0
-			
+			paintbackgroundenabled=0	
 		}
 		
 		"VoiceBar" {
@@ -63,126 +62,203 @@
 	}	
 
 	styles {
+		CChatRoomDlg {	
+				
+			bgcolor="none"
+			render_bg {
+		       	// The top section.
+		        0="fill( x0, y0-1, x1, y0, red )"
+		        1="fill( x0, y0, x1, y0+57, red )"
+		        2="fill( x0, y0, x1, y0+56, red )"
+
+
+				// The status Label area.
+				5="fill( x0, y1-80, x1, y1, darkestGrey )"
+				
+				// The chat Input area.
+				4="gradient( x0, y1-50, x1, y1, grey, lightGreyEnd)"
+				5="fill(x0,y1-50,x1,y1-49, greyHighlight)"
+				
+				// Dark corner pixels for the Chat Input area.
+				6="fill(x0,y1-1,x0+1,y1, darkestGrey)"
+				7="fill(x1-1,y1-1,x1,y1, darkestGrey)"
+				8="fill(x0,y1-2,x0+1,y1-1, bottomDarkPixels)" // Bottom Left
+				9="fill(x0+1,y1-1,x0+2,y1, bottomDarkPixels)" // Bottom Left
+				10="fill(x1-2,y1-1,x1-1,y1, bottomDarkPixels)" // Bottom Right
+				11="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
+      }
+		}
 		
+		// Pretty sure this is only used for the status label on the chat.
 		label {
-		font-size=14
+			font-size=12
+			textcolor=grey
+			font-style=none
+		}
+		
+		TextEntry {
+			font-size=14
+			
+			textcolor="darkestGrey"
+			
+			padding-top=14
+			padding-bottom=5
+			inset="0 10 0 0"
+			
+			render {}
+			render_bg {
+				0="image(x0, y0, x0+3, y0+25, graphics/textEntryleft)"
+				1="image_tiled(x0+3,y0, x1, y0+25, graphics/inner)"
+			}  
+		}
+		
+		
+		CChatActionsButton {
+			//image="graphics/metro/icons/chat/cog"
+			render {
+			0="image(x0,y0,x1,y1,graphics/metro/icons/chat/cog)"
+			}
+		}
+		
+			CChatActionsButton:hover {
+				render {
+					0="image(x0,y0,x1,y1,graphics/metro/icons/chat/cog_h)"
+				}
+			}
+
+		CChatActionsButton:selected {
+			render {
+				0="image(x0,y0,x1,y1,graphics/metro/icons/chat/cog_p)"
+			}
 		}
 		
 		controlbutton {
-			minimum-width=120
-		}
-		
-		RichText {
-			render_bg {
-				0="fill(x0,y0,x1,y1, darkestGrey)"
+			textcolor=none
+			bgcolor=none
+			render_bg
+			{
+				0="image(x0,y0,x1,y1,graphics/tab_close_def)"
 			}
-		}
-		
-		Textentryfocus_chat {
 			render
 			{
-				// lines around
-				0="fill( x0, y0, x0 + 1, y1, ButtonBorderDisabled )"
-				1="fill(  x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorderDisabled )"
-				2="fill( x0 + 1, y0, x1, y0 + 1, ButtonBorderDisabled )"
-				3="fill( x0, y1 - 1, x1, y1, ButtonBorderDisabled )"	
-			}     
+				1="fill(x0,y0-4,x1+4,y0+50,white10)"
+			}
+    }
 
-			font-size=16
+		controlbutton:hover
+    {
+			bgcolor=White12
+			render_bg
+			{
+				0="image(x0,y0,x1,y1,graphics/tab_close_def)"
+			}
+    }
+		
+		controlbutton:active
+		{
+			bgcolor=White24
+			render_bg
+			{
+				0="image(x0,y0,x1,y1,graphics/tab_close_hov)"
+			}
 		}
-
+		
+		Button {
+		//bgcolor=focus
+		}
+		
+		// Used to create the Chat itself.
+		RichText {
+			bgcolor=darkestGrey
+			
+			inset="8 8 8 0"
+			
+			render {
+				0="gradient(x0,y1-9,x1,y1, none, darkestGrey)"
+			}
+			render_bg {}
+		}
+		
+		"RichText url" {
+	//		font-style=none
+	//		font-family=basefont
+		}
+		
+		// The styling for the Text Entry
+		textentryfocus_chat {
+			inset="10 10 0 0"
+		}
+		
 		CEmoticonButton {
-			padding-left=4
-			image="graphics/icon_emoticon"
-			
-			render_bg {
-				// lines around
-				0="fill( x0, y0, x0 + 1, y1, ButtonBorderDisabled )"
-				1="fill(  x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorderDisabled )"
-				2="fill( x0 + 1, y0, x1, y0 + 1, ButtonBorderDisabled )"
-				3="fill( x0, y1 - 1, x1, y1, ButtonBorderDisabled )"	
-			}
-		}
-
-		CEmoticonButton:hover {
-			image="graphics/icon_emoticon_hover"
-		}
-
-		CEmoticonButton:selected {
-			image="graphics/icon_emoticon_hover"
-		}
-
-		EmoticonMenuItemStyle {
-			font-size=24
-			bgcolor=none
-		}
-		
-		EmoticonMenuItemStyle:hover {
-			textcolor=white
-			bgcolor=none
-		}
-		
-		EmoticonMenuItemStyle:selected {
-			textcolor=white
-			bgcolor=none
-		}
-		
-		CChatActionsButton {
-			image="graphics/mega_btn_off"
-		}
-		
-		CChatActionsButton:hover {
-			image="graphics/mega_btn_on"
-		}
-
-		CChatActionsButton:selected {
-			image="graphics/mega_btn_on"
-		}
-
-		GridMenu {
-			font-size=16
-		}
-		
-		CChatRoomDlg {
-			padding=0
-			padding-left=0
-			padding-right=0
+			//32 x 25
 			
 			render {
-				0="fill(x0,y1,x1,y1,red)"
+				0="image(x0,y0,x1,y1, graphics/emote_button)"
 			}
 		}
 		
-		Panel {
+			CEmoticonButton:hover {
+				//32 x 25
+				
+				render {
+					0="image(x0,y0,x1,y1, graphics/emote_button_hover)"
+				}
+			}		
 			
-			render {
-				//0="fill(x0,y0,x1,y1, blue)"
-			}
-		}
 	}
 	
 	layout {
-		place { control="VoiceChat,ChatActionsButton" y=6 width=36 margin-right=8 align=right spacing=8 dir=right }
-		place { control="TitlePanel" margin-left=6 y=2 height=50 width=max margin-right=6 end-right=VoiceChat }
-		place { control="VoiceBar" y=34 height=24 width=max margin-left=8 margin-right=52 }
-		place { control="GameInviteBar,TradeInviteBar,ChatInfoBar" height=54 }
-		
-		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,ChatHistory" y=60 margin-left=0 margin-right=0 width=max height=max align=right dir=down margin-bottom=74 spacing=3 }
+		// Voice Chat Close Button
+		place { control="VoiceChat" y=57 align=right margin=4 width=16 height=16 dir=right }
 
+		place { control="ChatActionsButton" height=34 width=34 margin=12 margin-top=11 align=right dir=right }
+		
+		place { control="TitlePanel" x=5 y=3 height=56 width=max margin-right=16 end-right=ChatActionsButton }
+		place { control="GameInviteBar,TradeInviteBar,ChatInfoBar,VoiceBar" height=54 }
+		
+		place { control="VoiceBar" y=57 width=max height=54 dir=down end-right=VoiceChat }
+		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,ChatHistory" start=VoiceBar y=0 width=max height=max align=right dir=down margin-bottom=81 margin-right=1 }
+		
 		region { 
-			name="chathistorybottom" 
-			y=60 
-			margin-left=0
-			margin-right=0 
-			width=max 
-			height=234 
+			name=bottom1 
 			align=bottom 
-			margin-bottom=74 
+			height=75 
+			width=max 
+			margin=8 
 		}
 		
-		region { name=bottomrow align=bottom height=76 }
-		place { control="EmoticonButton,SendButton" region=bottomrow spacing=8 height=42 align=right margin-top=8 margin-right=8 }
-		place { control="TextEntry" region=bottomrow end-right="EmoticonButton" height=42 width=max margin-right=8 margin-right=8 margin-left=8 margin-top=8 }
-		place { control="StatusLabel" region=bottomrow align=bottom width=max margin-left=8 margin-bottom=7 }
+		region { 
+			name=bottom 
+			align=bottom 
+			height=50 
+		}
+
+		place { 
+			control="TextEntry" 
+			region=bottom 
+			height=25
+			width=max 
+			
+			margin-top=13
+			margin-left=13
+			
+			end-right=EmoticonButton 
+		}
+		
+		place { 
+			control="EmoticonButton" 
+			region=bottom
+			width=32 
+			height=25 
+			align=right 
+		}
+		
+		place { 
+			control="StatusLabel" 
+			region=bottom1 
+			height=15 
+		}
+		
+		place { control="SendButton" height=0 width=0 }
 	}
 }

@@ -606,7 +606,7 @@
 			margin-right=-1
 			
 			render {
-				0="gradient(x0,y1-6,x1,y1, none, darkestGrey)"
+				0="gradient(x0,y1-10,x1,y1, none, darkestGrey)"
 			}
 		}
 		
