@@ -130,18 +130,31 @@
 			"paintbackground"   "1"
 		}
 		
-		friends_search { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="FriendsSearch" unicode=1 tabposition=2 zpos=9}
-		friends_search_icon	{ ControlName=Label style="FriendsSearchIcon" zpos="4" }		
+		friends_search { 
+			ControlName=TextEntry 
+			maxchars=16 
+			hintText="#steam_library_search" 
+			style="FriendsSearch" 
+			unicode=1 
+			tabposition=2 
+			zpos=9
+		}
 		
+		friends_search_icon	{ 
+			ControlName=Label 
+			style="FriendsSearchIcon" 
+			zpos=4 
+		}		
 	}
 
-  
 	styles {
-	
+		// Here we force-set the minimum width to ensure that the search bar is not cut off.
 		CFriendsDialog {
 			minimum-width=330
+			maximum-width=500
 		}
 	
+		
 		FrameTitle {
 			font-family=basefont
 			font-size=1
@@ -150,7 +163,7 @@
 			textcolor  = "none"
 
 			render_bg {
-// Creates the top section
+					// Creates the top section
 					0="gradient( x0+1, y0+1, x1-1, y0 + 86, grey, darkGreyEnd )"
 					
 					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
@@ -165,12 +178,8 @@
 					// Create the 1px Highlight on top
 					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 					
-					// 1px Dark line
 					
-					
-					
-					
-					// Creates the section.
+					// Creates the section for Friends/Groups + Search Bar
 					//2="gradient( x0+1, y0+88, x1-1, y0+125, grey, lightGreyEnd )"
 					//3="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
 					//4="fill(x0+1,y0+88, x1-1, y0+89, greyHighlight)"
@@ -193,8 +202,6 @@
 				textcolor="none"
 
 				render_bg {
-					
-					
 					// Creates the top section
 					0="gradient( x0+1, y0+1, x1-1, y0 + 86, grey, darkGreyEnd )"
 					
@@ -210,11 +217,6 @@
 					// Create the 1px Highlight on top
 					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 					
-					// 1px Dark line
-					
-					
-					
-					
 					// Creates the section.
 					//2="gradient( x0+1, y0+88, x1-1, y0+125, grey, lightGreyEnd )"
 					//3="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
@@ -226,17 +228,25 @@
 					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
 					
 					11="fill(x0+1, y0+125, x1-1, y0+126, darkestGrey)"
+					
+					
+					
+					// Search Input Background
+					12="image_tiled(x0+145,y0+94,x0+295,y0+119, graphics/search/inner)"
+					13="image(x0+145, y0+94, x0+167, y0+119, graphics/search/left)"
+					14="image(x0+295, y0+94, x0+307, y0+119, graphics/search/right)"
+					
+					
 				}
 			  }
 	
-		// Used to push the friends section down lower for trickery.
+		// Used to push the friends section down lower for trickery with the PageTabs.
 		Page {
 			inset="0 10 0 0"
 		}
 	
 	
 		SectionedlistpanelCollapser {
-			//inset="-6 0 0 0"
 			image="graphics/icon_collapse"
 			padding-top=0
 			padding-bottom=0
@@ -256,18 +266,12 @@
 		// Overriding the default styling for these controls.
 		// So far, can't work out a way to move the pagetabs higher from their current position to make the button look.
 		PageTab {
-		
 			minimum-height=34
-			//padding-bottom=20
-		
 			textcolor=white
-			
-			//inset="0 -5 0 0"
 			
 			render_bg {
 				0="fill(x0,y0,x1,y1, blue)"
 			}
-			
 		}
 		
 			PageTab:hover {
@@ -276,19 +280,17 @@
 			
 			PageTab:selected {
 				textcolor=blue
+				
+				render_bg {}
 			}
 		
 		
 	"CFriendsDialog SectionedListPanel" {
       bgcolor  = "none"
       
-     // padding-top=20
-      
-      
-      
       render_bg {
        		// background fill to overwrite the normal listPanel background
-	   		//0  = "fill( x0, y0, x1, y1, darkestGrey)"
+	   		0  = "fill( x0, y0, x1, y1, darkestGrey)"
 	   		
       }    
     }
@@ -301,13 +303,15 @@
 			
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
-				//0="fill(x0,y0,x1,y1,green)"
 			}
 		}	
+		
 		
 		"CFriendsDialog SectionedListPanel" {
 			//inset="0 30 0 0"
 		}
+		
+		
 		
 		AddFriendsButton  {
 			font-family=basefont
@@ -326,6 +330,7 @@
 				render_bg {}
 			}	  	
 		
+		
 		RootMenu {
 			bgcolor="none"
 		} 
@@ -335,23 +340,24 @@
 			//inset="0 0 0 0"
 		}
 
+		// Hide the word "Friends" on the title area.
 		FriendsTitle [$OSX] {
 			font-family=basefont
-			font-size=15
+			font-size=1
 			font-weight=400
-			textcolor="lightestGray"
+			textcolor="none"
 			bgcolor="none"
-			//inset="0 9 0 0"
 		}
 
 			FriendsTitle:FrameFocus [$OSX] {
 				font-family=basefont
-				font-size=15
+				font-size=1
 				font-weight=400
-				textcolor="trueWhite"
+				textcolor="none"
 				bgcolor="none"
-				//inset="0 9 0 0"
 			}
+		
+		
 		
 		"MenuBar MenuButton"
 		{
@@ -378,68 +384,59 @@
 			}
 		}
 		
+		
 		FriendsSearch {
-			padding-left=-4
-			padding-top=1
 			font-family=basefont
 			font-size=14
 			font-weight=400	
-			textcolor="text"	
-			render { }	
+			textcolor="darkestGrey"	
 			bgcolor=none
+			
+			render {}	
 			render_bg {
 				// background fill
-				0="fill( x0, y0, x1, y1, white )"
-	     
-
+				//0="fill(x0,y0,x1,y1, red)"
+				
 				// single pixel fills in the corners
 				
 			}
 		}
 		
-		FriendsSearch:empty
-		{
+		FriendsSearch:empty {
 			font-style=italic
-			textcolor="LabelDisabled"
+			textcolor="grey"
 			
 		}
 		
-		FriendsSearch:hover
-		{	
-			textcolor="texthover"	
+		FriendsSearch:hover {	
+			textcolor="darkGreyEnd"	
 		}
 		
-		FriendsSearch:empty:hover
-		{
+		FriendsSearch:empty:hover {
 			font-style=italic
-			textcolor="texthover"
+			textcolor="lightGreyEnd"
 			
 		}
 			
-		FriendsSearch:disabled
-		{
+		FriendsSearch:disabled {
 			font-style=italic
 			textcolor="None"
 			
 		}
 			
-		FriendsSearchIcon
-		{
+		FriendsSearchIcon {
 			bgcolor="none"
-			inset="4 2 0 0"
-			image="graphics/icon_button_search"
-			padding-left=0
-			padding-right=-1
-			padding-top=-1
-			render_bg
-			{
-				// background fill
-				0="fill( x0 + 2, y0 - 1, x1 + 2, y1 +3, red )"
+			textcolor=none
+			
+			render_bg {
+				//0="fill( x0, y0, x1-12, y1, white )"
+				//0="image_tiled(x0,y0,x1-12,y1, graphics/search/inner)"
+				//1="image(x0, y0, x0+22, y1, graphics/search/left)"
+				//2="image(x1-12, y0, x1, y1, graphics/search/right)"
 			}
 		}
 		
-		FriendsSearchIcon:disabled
-		{
+		FriendsSearchIcon:disabled {
 			bgcolor="none"
 			inset="1 0 0 0"
 			image="none"
@@ -499,14 +496,14 @@
 		
 	
 		
-		place { 
-			control="friends_search" 
-			y=100 
-			align=left 
-			margin-left=145 
-			width=180 
-			height=25 
-		}	
+//		place { 
+//			control="friends_search" 
+//			y=100 
+//			align=left 
+//			margin-left=145 
+//			width=180 
+//			height=25 
+//		}	
 		
 		place { 
 			control="FriendPanelSelf" 
@@ -525,8 +522,15 @@
 		
 		
 		
-		place { control="friends_search_icon" margin-left=-2 start=FriendPanelSelf dir=down margin-top=5 height=25 }
-		place { control="friends_search" dir=right margin-left=150 y=95 min-width=175 height=25 }
+		
+		place { 
+			control="friends_search" 
+			dir=right 
+			margin-left=160 
+			y=95 
+			width=144 
+			height=25 
+		}
 
 		
 		place {
@@ -543,7 +547,8 @@
 		}
 		
 		
-		
+		// Use this for cleverness to make the buttons.
+		place { control="friends_search_icon" margin-left=1 dir=right y=0 height=0 width=0 }
 	
 	
 		place { control="addFriendsButton" align=bottom margin-left=0 margin-right=0 margin-bottom=0 height=0 }
