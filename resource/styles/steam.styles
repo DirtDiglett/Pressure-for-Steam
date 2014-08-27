@@ -804,11 +804,10 @@ styles {
     
     
     Page {
-		bgcolor  = "none"
-		render_bg
-		{
+		bgcolor  = "darkestGrey"
+		render_bg {
 			// background gradient
-			0  = "gradient( x0, y0 + 18, x1, y1, green, orange )"
+			//0  = "gradient( x0, y0 + 18, x1, y1, green, orange )"
 		}
     }
 
@@ -859,7 +858,7 @@ styles {
 			{
 				// background gradient
 				0  = "gradient( x0, y0 , x1, y1, divider, dialogbg )"
-		    1  = "fill(x1, y1-2, x1+3000, y1 - 1, orange )"
+				//1  = "fill(x1, y1-2, x1+3000, y1 - 1, orange )"
 			}
     }
 
@@ -875,8 +874,8 @@ styles {
 		render_bg
 			{
 				// background gradient
-				0  = "fill( x0, y0 , x1, y1 - 4, buttonfacehover )"
-				1  = "fill(x0, y1-2, x1+3000, y1 -1, divider )"
+				//0  = "fill( x0, y0 , x1, y1 - 4, buttonfacehover )"
+				//1  = "fill(x0, y1-2, x1+3000, y1 -1, divider )"
 			}
     }
   
@@ -892,8 +891,8 @@ styles {
 	    render_bg
 			{
 				// background gradient
-				0  = "gradient( x0, y0 , x1, y1, divider, dialogbg )"
-		    1  = "fill(x1, y1-2, x1+3000, y1 - 1, divider )"
+			//	0  = "gradient( x0, y0 , x1, y1, divider, dialogbg )"
+		  //  1  = "fill(x1, y1-2, x1+3000, y1 - 1, divider )"
 			}
     }
       

@@ -1,30 +1,33 @@
-"resource/layout/toolwindow.layout"
-{
-	controls
-	{
+"resource/layout/toolwindow.layout" {
+	controls {
 		// the container
 		ToolWindowSheet	{	controlname="PropertySheet" }
 	} 
 	
 		
-	styles
-	{
+	styles {
 	
-		ToolWindow
-		{
-			render_bg
-			{
-				0="fill( x0, y0, x1, y0+40, FrameBorder )"
-				1="fill( x0, y0, x1, y0+39, Header_Dark )"
+		ToolWindow {
+			render_bg {
+			
+				// Creates the top section
+				0="gradient( x0+1, y0+1, x1-1, y0 + 86, grey, darkGreyEnd )"
+				
+				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
+				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
+				
+				3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
+				4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
+				
+				5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
+				6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
+				
+				// Create the 1px Highlight on top
+				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 			}
 		}
-
-		PageTab:selected
-    {
-			bgcolor="ClientBG"
-    }
 		
-		Button
+	Button
 	  {     
 	  	textcolor="none"
 			bgcolor="none"
@@ -53,60 +56,122 @@
 			render_bg {}
 		}
 	  
-	  TabMenuButtonFlash
-	  { 
+	  TabMenuButtonFlash { 
 			render_bg
 			{
 				0="fill(x0+6,y0+6,x1-6,y1-6,Focus)"
 			}
 	  }
 	  
-	  TabMenuItemFlash
-	  {
-	  	textcolor="Focus"
+	  TabMenuItemFlash {
+	  	textcolor="orange"
 	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  		
+	PageTab {
+		minimum-height=30
 		
-		FrameButton
-    {
-			//image="graphics/tab_close_def"
-			//inset-left=-6
-			//inset-top=0
+		textcolor  = "blue"
+		font-family=basefont
+		font-size=13
+		
+		font-style="none"
+		
+		font-weight=400
+		inset  = "0 0 0 0"
+        
+        bgcolor=red
+        
+        render_bg {
+        
+        }
     }
-		FrameButton:hover
-    {
-			//bgcolor=white12
-		}
+
+    
+    PageTab:selected {
+		textcolor  = "red"
+		font-family=basefont
+		font-size=13
 		
-		FrameButton:active
-    {
-			//bgcolor=white24
-		}
+	
 		
-		FrameMinimizeButton
-		{
-			//render_bg {}
-		}
-		FrameMaximizeButton
-		{
-			//render_bg {}   
-		}   
-		FrameMinimizeButton
-		{
-			//render_bg {}
-		}
-		FrameCloseButton
-		{
-			//render_bg {}
-		}
+		font-weight=400
+		inset  = "0 0 0 0"
+		bgcolor  = "none"
+	    render_bg {
+	    	0="image(x0,y0,x0+3,y0+30,graphics/tabs/active/left)"
+	    	1="image_tiled(x0+3,y0,x1-3,y0+30, graphics/tabs/active/inner)"
+	    	2="image(x1-3,y0,x1,y0+30, graphics/tabs/active/right)"
+	    }
+    }
+
+    
+ 	PageTab:hover
+    {
+		textcolor  = "green"
+		font-family=basefont
+		font-size=13
+		
+		font-weight=400
+		inset  = "0 -2 0 0"
+		render_bg {}
+    }
+  
+    PageTab:selected:hover
+    {
+		textcolor  = "orange"
+		font-family=basefont
+		font-size=13
+		
+		font-weight=400
+		inset  = "0 -2 0 0"
+		bgcolor  = "none"
+	    render_bg {}
+    }
+      
+  PageTab:Focus
+	  {
+		textcolor  = "Texthover"
+    }	
+	  
+	  
+	  
 	}
 
-	layout
-	{
+	layout {
 		//Original
-		place { control="frame_minimize,frame_maximize,frame_close" align=right width=34 height=27 }
-		//WIP
-		//place { control="frame_minimize,frame_maximize,frame_close" align=right width=16 height=16 spacing=0 y=5 margin-right=5 }
-		place { control="frame_captiongrip" height=40 width=max }
-		place { control="ToolWindowSheet" x=0 y=16 height=max width=max margin-top=-4 }
+		place [!$OSX] { 
+			control="frame_minimize,frame_maximize,frame_close" 
+			align=right
+			width=34 
+			height=27 
+		}
+		
+		place [!$OSX] { 
+			control="frame_captiongrip" 
+			height=40 
+			width=max 
+		}
+		
+		place [$OSX] { 
+			control="frame_captiongrip" 
+			height=50 
+			width=max 
+		}
+		
+		place { 
+			control="ToolWindowSheet" 
+			x=0 
+			y=25 
+			height=max
+			width=max 
+			margin-top=-4 
+		}
 	}
 }
