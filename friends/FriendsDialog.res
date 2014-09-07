@@ -277,6 +277,8 @@
 			
 			font-style="none"
 			
+			bgcolor=none
+			
 			render {
 				0="gradient(x0,y1-6,x1,y1, none, darkestGrey)"
 			}

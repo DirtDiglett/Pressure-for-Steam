@@ -29,6 +29,8 @@
 // ***********************************************		
 	  TabCloseButton {
 		render_bg {}
+		
+		inset="-4 7 0 0"
 		image  = "graphics/tab_close"
     }
 
