@@ -338,7 +338,7 @@
 		place 	{ control=headerimageb width=1024 height=550 x=220 y=0 }
 
 		// Header text
-		place 	{ control=gametitleheader region=headertext dir=down x=20 y=20 height=46 align=left margin-right=260 }
+		place 	{ control=gametitleheader region=headertext dir=down x=20 y=20 height=46 align=left margin-right=280 }
 		place	{ control=gamesubheader region=headertext dir=down margin-right=20 align=right y=0 height=75}
 		
 		
