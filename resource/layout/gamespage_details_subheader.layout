@@ -700,15 +700,22 @@
 
 	layout {
 		// Y offset here should match the vertical padding value above in the colors section
-		region { name="header" y=0 x=0 width=max height=max }
+		region { 
+			name="header" 
+			y=0 
+			x=0 
+			width=max 
+			height=max 
+		}
 
 		place { 
 			//start=clientlist
 			control=subheaderlabels
+			
 			region=header
 			dir=left
 			align=left
-			margin-left=10
+			margin-left=100
 			margin-right=0
 			spacing=10
 			

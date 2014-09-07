@@ -12,8 +12,8 @@
 		Notifications.DisplayTime     "4.0"     // Controls the length of time at steady state after fade in and before fade out
 		Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
     
-		AchievementPopup.TitleColor   "Text"
-		AchievementPopup.DescriptionColor "8 8 8 255"
+		AchievementPopup.TitleColor   "white"
+		AchievementPopup.DescriptionColor "lightestGrey"
 		
 
 	}
