@@ -88,7 +88,7 @@
 	}
 	
 	colors {
-		backgroundOverlayTop="255 0 0 255"
+		backgroundOverlayTop="0 0 0 0"
 	}
 	
 	styles {
@@ -98,34 +98,34 @@
 			textcolor=red
 		}
 		
+		// Emptied.
 		topfade {
 			render_bg {
-				0="gradient( x0, y0, x1, y1, backgroundOverlayTop, none )"
+				0="fill(x0,y0,x1,y0+100, black90)"
 			}
 		}
 		
-		bottomfade {
-			render_bg {
-				0="gradient( x0, y0, x1, y1, none, blue )"
-			}
-		}	
+		// Emptied.
+		bottomfade {}	
 		
 		overlaymain {
-			bgcolor = "0 255 0 90"
+			bgcolor = black75
 		}	
 		
 		clocksuffix {
+			font-family=headerfont
 			font-size=24
 			padding-top=10
 			//textcolor=red
 			font-weight=400
-			font-style=uppercase;
+			font-style=normal;
 		}
 		
 		topbar {
+			font-family=headerfont
 			font-size=36
 			
-			textcolor=text
+			textcolor=white
 		}
 				
 		OverlayURLLabel {
@@ -144,9 +144,9 @@
 		}
 		
 		timeStrings {
-			font-size="17"
-			textcolor="label"
-			font-family=basefont
+			font-size=24
+			textcolor=white
+			font-family=headerfont
 			font-weight=700
 		}
 	}
