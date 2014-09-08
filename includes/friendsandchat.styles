@@ -23,7 +23,7 @@
 	      font-size=14
 	      font-size=13 [$OSX]
 	      font-weight=400
-	      textcolor="label"
+	      textcolor="white"
 	    }
 	    
 	    friends_chat_text {

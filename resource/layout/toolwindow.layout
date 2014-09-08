@@ -115,6 +115,7 @@
 			align=right
 			width=34 
 			height=27 
+			spacing=0
 		}
 		
 		place [!$OSX] { 

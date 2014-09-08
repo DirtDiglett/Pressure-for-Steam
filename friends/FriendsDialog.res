@@ -158,7 +158,7 @@
 		}
 		
 		ListPanelSectionHeader {
-			font-style="outerglow"
+			font-style="outerglow,normal"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
@@ -312,7 +312,7 @@
 			
 			inset="6 0 0 0"
 			
-			font-style="outerglow"
+			font-style="outerglow,normal"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
