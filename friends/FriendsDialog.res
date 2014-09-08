@@ -154,10 +154,12 @@
 		CFriendsDialog {
 			minimum-width=330
 			maximum-width=500
+			font-family=basefont
 			font-style="normal"
 		}
 		
 		ListPanelSectionHeader {
+			font-family=basefont
 			font-style="outerglow,normal"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
@@ -312,7 +314,7 @@
 			textcolor=white
 			
 			inset="6 0 0 0"
-			
+			font-family=basefont
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -347,7 +349,7 @@
 		
 	"CFriendsDialog SectionedListPanel" {
       bgcolor  = "none"
-      
+      font-family=basefont
       font-style="none"
       
       render_bg {
@@ -362,7 +364,7 @@
 			textcolor=white
 			
 			
-			
+			font-family=basefont
 			font-style="outerglow"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
@@ -388,6 +390,7 @@
 		
 		
 		"CFriendsDialog SectionedListPanel" {
+			font-family=basefont
 			font-style="none"
 			//inset="0 30 0 0"
 		}
@@ -416,7 +419,8 @@
 		
 		
 		RootMenu {
-			bgcolor="none"
+			bgcolor="Red" //Test
+
 		} 
 
 				
@@ -443,12 +447,14 @@
 		
 		
 		
+
+			
 		"MenuBar MenuButton"
 		{
 			padding-right=14
 			render
 			{
-				0="image( x1-18, y0 + 8, x1-0, y1, graphics/icon_down_default )"
+				0="fill( x1-18, y0 + 8, x1-0, y1, Blue )"
 			}
 		}
 
@@ -456,7 +462,7 @@
 		{
 			render
 			{
-				0="image( x1-18, y0 + 8, x1-0, y1, graphics/icon_down_hover )"
+				0="fill( x1-18, y0 + 8, x1-0, y1, Red )"
 			}
 		}
 
@@ -464,7 +470,7 @@
 		{
 			render
 			{
-				0="image( x1-18, y0 + 8, x1-0, y1, graphics/icon_down_hover )"
+				0="fill( x1-18, y0 + 8, x1-0, y1, White )"
 			}
 		}
 		
@@ -487,6 +493,7 @@
 		}
 		
 		FriendsSearch:empty {
+			font-family=basefont
 			font-style=italic
 			textcolor="lightestGrey"
 			
@@ -497,6 +504,7 @@
 		}
 		
 		FriendsSearch:empty:hover {
+			font-family=basefont
 			font-style=italic
 			textcolor="lightGreyEnd"
 			
@@ -533,6 +541,7 @@
 		// This will only affect the HEADERS inside it for some reason
 		"CFriendsDialog SectionedListPanelInterior" {
 			
+			font-family=basefont
 			font-style="outerglow"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
@@ -578,7 +587,10 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=38 }
-		place [!$OSX] { control="MenuBar" margin-left=0 height=24 margin-top=2 }
+		
+		place [!$OSX] { 
+			control="MenuBar" 
+			margin-left=8 height=20 margin-top=1 }
 		
 		place { 
 			control="FriendPanelSelf" 

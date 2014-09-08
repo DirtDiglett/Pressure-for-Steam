@@ -746,7 +746,6 @@
 			width=80 
 			
 			margin-top=13
-			
 			margin-left=13
 			margin-right=13
 		}
