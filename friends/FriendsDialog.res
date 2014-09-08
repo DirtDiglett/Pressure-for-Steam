@@ -154,7 +154,7 @@
 		CFriendsDialog {
 			minimum-width=330
 			maximum-width=500
-			font-style="none"
+			font-style="normal"
 		}
 		
 		ListPanelSectionHeader {
@@ -289,6 +289,7 @@
 			image="graphics/icon_collapse"
 			padding-top=0
 			padding-bottom=-5
+			font-style="normal"
 			
 			inset="-4 -5 0 0"
 			
@@ -312,7 +313,7 @@
 			
 			inset="6 0 0 0"
 			
-			font-style="outerglow,normal"
+			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1

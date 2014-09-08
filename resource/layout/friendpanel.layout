@@ -138,6 +138,7 @@
 		controlPanelLinkStyle {
 			font-family=basefont
 			font-size=14
+			font-style="normal"
 		}
 		
 			controlPanelLinkStyle:hover {
@@ -157,12 +158,11 @@
 		
 		inviteLinkStyle {
 			font-style=""
-			textcolor=Text2
+			textcolor=blue
 		}
 	
 			inviteLinkStyle:hover {
-				textcolor=White
-				font-style=underline
+				textcolor=lightestBlue
 			}
 		
 		WebStatusStyle {
@@ -209,12 +209,12 @@
 		place { control="GameLabel" x=50 y=30 }
 
 		// these controls are shown for friendship requests
-		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=31 spacing=8 }
+		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=27 spacing=10 }
 		
 		// this control is shown in the invite-to-game dialog in the overlay
 		place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
 		
-		place { control="ControlPanelLink" x=50 y=31 }
+		place { control="ControlPanelLink" x=50 y=27 }
 
 		place { control="SuggestedImage,SuggestedLabel" x=50 y=19 spacing=4 }
 		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=31 spacing=8 }

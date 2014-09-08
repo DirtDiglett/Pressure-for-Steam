@@ -832,7 +832,7 @@ styles {
 		font-family=basefont
 		font-size=13
 		
-		font-style="none"
+		font-style="normal"
 		
 		font-weight=400
 		inset  = "0 -2 0 0"
@@ -904,7 +904,7 @@ styles {
 	"PageDragFrame PageTab"
 	{
 		font-size=14
-		font-style  = ""
+		font-style  = "normal"
 		
 		font-style="none"
 	}
