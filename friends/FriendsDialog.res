@@ -563,7 +563,16 @@
  	
  	layout
  	{
-		place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
+		
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-8 
+		}
+
+place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 		place 	[!$OSX] { control="frame_title" visible=0 x=0 y=0 width=max height=0 }
 
  		// the title bar is missing, so increase the size of the grip

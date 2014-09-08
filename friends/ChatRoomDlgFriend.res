@@ -638,7 +638,10 @@
 	} // end of styles
 	
 	layout {
-		// Voice Chat Close Button
+		
+
+
+// Voice Chat Close Button
 		place { 
 			control="VoiceChat" 
 			y=57 

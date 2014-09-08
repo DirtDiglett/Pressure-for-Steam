@@ -110,12 +110,12 @@
 
 	layout {
 		//Original
-		place [!$OSX] { 
+		place [!$OSX]  { 
 			control="frame_minimize,frame_maximize,frame_close" 
-			align=right
-			width=34 
-			height=27 
-			spacing=0
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-8 
 		}
 		
 		place [!$OSX] { 

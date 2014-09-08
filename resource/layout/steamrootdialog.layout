@@ -740,9 +740,9 @@
 		place [!$OSX]  { 
 			control="frame_minimize,frame_maximize,frame_close" 
 			align=right 
-			margin-top=7 
+			margin-top=-2 
 			margin-right=6 
-			spacing=-5 
+			spacing=-8 
 		}
 		
 		
