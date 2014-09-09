@@ -276,7 +276,7 @@
 		// Used to push the friends section down lower for trickery with the PageTabs.
 		Page {
 			inset="0 10 0 0"
-			
+			font-family=basefont
 			font-style="none"
 			
 			bgcolor=none
@@ -291,6 +291,7 @@
 			image="graphics/icon_collapse"
 			padding-top=0
 			padding-bottom=-5
+			font-family=basefont
 			font-style="normal"
 			
 			inset="-4 -5 0 0"
@@ -514,6 +515,7 @@
 		}
 			
 		FriendsSearch:disabled {
+			font-family=basefont
 			font-style=italic
 			textcolor="None"
 			
@@ -553,7 +555,7 @@
 			inset="0 -3 0 0"
 			
 			bgcolor=none
-			font-family=basefont
+			
 			font-size=14
 			font-weight=400
 			textcolor  = "white"
@@ -569,6 +571,7 @@
 		}
 	
 			"CFriendsDialog SectionedListPanelInterior:scrollbar" {
+				font-family=basefont
 				font-style="none"
 				padding-right=15
 			}	

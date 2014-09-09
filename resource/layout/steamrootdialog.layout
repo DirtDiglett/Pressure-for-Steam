@@ -712,7 +712,7 @@
 		place [!$OSX] { 
 			control="MenuBar" 
 			align=top 
-			margin-top=2 
+			margin-top=0 
 			margin-left=2 
 		}
 			
@@ -874,7 +874,10 @@
 			height=133 
 			margin-top=-10 
 			margin-right=0
-		}	
+		}
+		
+		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Potential Fix for an odd bug
+		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Potential Fix for an odd bug
 	
 	
  		// the title bar is missing, so increase the size of the grip
