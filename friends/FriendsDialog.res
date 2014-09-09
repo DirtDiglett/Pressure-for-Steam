@@ -449,7 +449,7 @@
 		
 		
 
-		MenuButton
+		"MenuBar MenuButton"
 		{
 			textcolor="none"
 			render_bg {
@@ -458,7 +458,7 @@
 			}
 		}
 
-		MenuButton:hover
+		"MenuBar MenuButton:hover"
 		{
 			textcolor="none"
 			render_bg {
@@ -467,7 +467,7 @@
 			}
 		}
 		
-		MenuButton:selected
+		"MenuBar MenuButton:selected"
 		{
 			textcolor="none"
 			render_bg {
@@ -582,7 +582,7 @@
 			align=right 
 			margin-top=-2 
 			margin-right=6 
-			spacing=-8 
+			spacing=-9 
 		}
 
 place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
