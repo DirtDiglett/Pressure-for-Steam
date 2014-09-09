@@ -192,25 +192,6 @@ colors {
     
     
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-   
-
     ListPanel.TextColor       grey
     ListPanel.BgColor       none  
     ListPanel.SelectedTextColor     white
@@ -224,9 +205,6 @@ colors {
 
 
 
-	
- 
-
     RichText.InsetX         1
     RichText.InsetY         1
 
@@ -237,7 +215,6 @@ colors {
 
 } // END OF COLORS
   
-
 
 
 styles {
@@ -265,25 +242,6 @@ styles {
 	
     
 
-
-
-
-
-
-
- 
-
-
-    
-         
- 
-
-    
-
-    
-    
-
-    
     Divider
     {
       bgcolor  = "none"
@@ -424,7 +382,7 @@ styles {
         }
     }
     
-    // Appears to be used by the WebPanels (Store, Community, etc.)
+    // Used by the WebPanels (Store, Community, etc.)
     HTML { 
 		bgcolor  = "none"
 		render_bg {}

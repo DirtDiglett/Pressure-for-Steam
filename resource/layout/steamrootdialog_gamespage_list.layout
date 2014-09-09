@@ -14,8 +14,6 @@
        		inset="13 2 0 0"
        		padding-left=0
        		padding-right=0
-       		maximum-width=8
-       		maximum-height=8
        		bgcolor=none
         	render {
           		5="image( x0 + 9, y0 + 5, x1, y1, graphics/cog )"

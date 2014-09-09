@@ -32,13 +32,15 @@
 			SelectedBgColor="blue"
 			font-size=14
 		}
-		
+
 		friends_chat_text_self {
-			textcolor="trueWhite"
-			selectedtextcolor="trueWhite"	
+			textcolor="white" //changed to white to fix ingame not hovering
+			selectedtextcolor="trueWhite" 	
 			selectedbgcolor="blue"
 			font-size=14
 		}
+		
+
 	
 		friends_chat_history {
 			textcolor="ChatDialog.HistoryColor"
@@ -63,8 +65,7 @@
 	
 		friends_chat_url {
 			textcolor="blue"
-	   		SelectedBgColor="blue"
-			font-style=underline
+	   		font-style=underline
 			font-size=14
 			selectedtextcolor="trueWhite"
 			selectedbgcolor="blue"
@@ -106,7 +107,7 @@
 			font-size=14
 			font-weight=400
 			font-style=none
-			selectedtextcolor="orange"	
+			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
 		}
 		

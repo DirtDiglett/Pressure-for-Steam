@@ -11,10 +11,11 @@
 		// Greyscale
 		trueWhite="255 255 255 255"
 		white="251 251 251 255"
-		
+
 		lightestGrey="139 139 139 255"
 		lightestGreyHighlight="113 113 113 255"
 		greyHighlight="85 85 85 255"
+		
 		grey="60 60 60 255"
 		lightGreyEnd="42 42 42 255"
 		darkGreyEnd="25 25 25 255"
@@ -23,6 +24,8 @@
 		black90="0 0 0 220" // 90% Opacity
 		black75="0 0 0 191" // 75% Opacity Black
 		black65="0 0 0 165" // 65% Opacity Black
+		black40="0 0 0 102" // 40% Opacity Black
+
 		white10="255 255 255 25" // 10% Opacity White
 		grey50="60 60 60 165" // 65% Opacity Grey
 		grey25="60 60 60 70" // 25%
@@ -33,6 +36,8 @@
 		lightestGreen="209 248 48 255"
 		green="175 218 28 255"
 		darkestGreen="136 172 19 255"
+
+		darkgreen18="14 68 0 46" //18% opacity used for Downloads Bar
 		
 		// Blues
 		lightestBlue="91 225 252 255"
