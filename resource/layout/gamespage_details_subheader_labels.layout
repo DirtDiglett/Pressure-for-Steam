@@ -19,7 +19,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=13
-			textcolor=grey
+			textcolor=lightestGreyHighlight
 		}
 
 		headertext-red {
@@ -27,7 +27,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=13
-			textcolor=grey
+			textcolor=lightestGreyHighlight
 		}
 
 		headertext-green {
@@ -35,7 +35,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=13
-			textcolor=grey
+			textcolor=lightestGreyHighlight
 		}
 
 		headertext-blue {
@@ -43,7 +43,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=13
-			textcolor=grey
+			textcolor=lightestGreyHighlight
 		}
 
 		valuetext {
@@ -51,7 +51,7 @@
 			padding-bottom=1
 			padding-top=0
 			font-size=13
-			textcolor=grey
+			textcolor=lightestGreyHighlight
 		}
 	}
 

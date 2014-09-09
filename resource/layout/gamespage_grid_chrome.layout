@@ -132,13 +132,13 @@
 			
 			PlayActiveGradientStart "131 176 20 255"
 			PlayActiveGradientEnd "99 130 14 255"		
-	
+			GreyT "8 8 8 120"
 	}
 
 	styles {
 		
 		ChromeBorderItem {
-			bgcolor=black75
+			bgcolor=GreyT //black75
 		}
 
 		GridNavDivider {
@@ -160,6 +160,7 @@
 			padding-left=10
 			
 			textcolor=white
+			
 			
 			render {
 				1="image( x0 + 10, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
@@ -312,6 +313,7 @@
 		}
 		
 		CUILaunchButton {
+			
 			inset="22 7 0 0"
 			font-family=headerfont
 			font-size=28
@@ -649,21 +651,31 @@
 
 	
 	layout {
-		place { 
-			control=chromeborder 
-			height=76 
-			align=left-center 
+		region { name="actions" align=bottom width=max height=78 x=0 y=210 margin-bottom=0}
+		
+		place
+		{
+			control=chromeborder	
+			region=actions			
+			x=0 
+			y=0 
 			width=max 
-			height=max 
+			height=max
+			margin-bottom=0
+			margin-right=0
 		}
 
-		place { 
-			control="launch,details" 
-			align=top-center 
+		place
+		{
+			control="launch,details"	
+			region="actions"		
+			align=top-center
 			spacing=16 
-			margin-top=45 
-			height=40 
-			width=100 
+			margin-bottom=24 
+			margin-left=0 
+			margin-top=18
+			height=40
+			width=100
 		}
 		
 		place { 

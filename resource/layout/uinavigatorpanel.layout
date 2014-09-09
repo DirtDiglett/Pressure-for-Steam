@@ -229,6 +229,32 @@
 			group=views 
 		}
 		
+		library_music_menu { 
+			ControlName=MenuButton 
+			labelText="#Music_Nav_Menu_Artists" 
+			style="NavLabel2" 
+			showDownArrow=0 
+			align=left 
+			group=music 
+		}
+
+		library_music_player_icon {
+			ControlName=URLLabel 
+			style="MusicPlayerIcon" 
+			tooltiptext="#music_tooltip_view_player" 
+			URLtext="steam://open/musicplayer" 
+			align=right 
+			group=music 
+		}
+
+		library_music_add_button {	
+			ControlName=Button 
+			labelText=""	
+			tooltiptext="#Music_Playlist_Details_Menu_Add" 
+			style="MusicAddButton" 
+			group=music_add_button 
+			visible=false
+		}
 		
 		emailreminderbar { 
 			zpos=1 
@@ -1077,40 +1103,99 @@
 			}	
 		}
 		
-		// When things are typed in.
-		LibrarySearch {
+				// When things are typed in.
+
+		LibrarySearch [!$OSX]
+		{
 			font-family=basefont
 			font-size=14
 			font-weight=400	
-			textcolor="grey"
+			textcolor="darkestGrey"
+			padding-left=4
+			padding-right=20
 			
+			render_bg{}
+		}
+
+		
+		LibrarySearch [$OSX]
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400	
+			textcolor="darkestGrey"
+			padding-left=0
 			padding-right=20
 			
 			render_bg{}
 		}
 		
-			// Typed in, as well as hovered.
-			LibrarySearch:hover {
-					
-				textcolor="grey"	
-				render_bg {}
-			}
+		// Typed in, as well as hovered.
 		
-		// Default State when nothing in it.
-		LibrarySearch:empty {
-			font-style=italic
-			textcolor="grey"	
+		LibrarySearch:hover [!$OSX]
+		{
+					
+			textcolor="darkGreyEnd"
+			padding-left=4	
+			render_bg {}
+		}
+
+		LibrarySearch:hover [$OSX]
+		{
+					
+			textcolor="darkGreyEnd"
+			padding-left=0	
+			render_bg {}
 		}
 		
-			LibrarySearch:empty:hover {
+		// Default State when nothing in it.
+		
+		LibrarySearch:empty [!$OSX]
+		{
+			font-family=basefont
+			font-style=italic
+			textcolor="lightestGrey"
+			padding-left=4	
+		}
+		
+		LibrarySearch:empty [$OSX]
+		{
+			font-family=basefont
+			font-style=italic
+			textcolor="lightestGrey"
+			padding-left=0	
+		}
+		
+		LibrarySearch:empty:hover [!$OSX] 
+		{
 				font-style=italic
-				textcolor="grey"
+				textcolor="lightGreyEnd"
+				padding-left=4
 				render_bg {}
 			}
 			
-		LibrarySearch:disabled {
+		LibrarySearch:empty:hover [$OSX] 
+		{
+				font-style=italic
+				textcolor="lightGreyEnd"
+				padding-left=0
+				render_bg {}
+		}
+
+		LibrarySearch:disabled [!$OSX] 
+		{
+			font-family=basefont
 			font-style=italic
 			textcolor="None"
+			padding-left=4
+		}
+			
+		LibrarySearch:disabled [$OSX] 
+		{
+			font-family=basefont
+			font-style=italic
+			textcolor="None"
+			padding-left=0
 		}
 			
 		
@@ -1744,6 +1829,65 @@
 				textcolor  = "none"
 				render {}
 			}
+	
+// ******************************************************************************************************** 
+// Music
+// ********************************************************************************************************	
+
+		MusicAddButton
+		{
+			font-size=14
+			font-size=13 [$OSX]
+			font-family=basefont
+			textcolor="labelfocus"
+			font-style=uppercase
+			render_bg
+			{
+				0="image( x0, y0 + 2, x1, y1, graphics/icon_collapse )"
+			}
+		}
+		
+		MusicAddButton:hover
+		{
+			textcolor="white"
+			render_bg
+			{
+				0="image( x0, y0 + 2, x1, y1, graphics/icon_collapse_over )"
+			}
+		}			
+		
+		MusicPlayerIcon
+		{
+			bgcolor="none"
+			inset="-1 0 0 0"
+			render_bg={}
+			image="graphics/icon_music_player"
+			padding-left=0
+			padding-right=-1
+			padding-top=-1
+		}
+		
+		MusicPlayerIcon:hover
+		{
+			bgcolor="none"
+			inset="-1 0 0 0"
+			render_bg={}
+			image="graphics/icon_music_player_hover"
+			padding-left=0
+			padding-right=-1
+			padding-top=-1
+		}
+		
+		MusicPlayerIcon:selected
+		{
+			bgcolor="none"
+			inset="-1 0 0 0"
+			render_bg={}
+			image="graphics/icon_music_player_selected"
+			padding-left=0
+			padding-right=-1
+			padding-top=-1
+		}
 
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	
@@ -1762,7 +1906,7 @@
 		} 
 
 		place { 
-			control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" 
+						control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" 
 			x="84" 
 			y="20" 
 			x="10" 
@@ -1925,6 +2069,28 @@
 			spacing=6
 		}
 
+		place [!$OSX] { 
+			control="library_music_menu,library_music_add_button" 
+			align=left 
+			x=4 
+			y=3
+			height=20 
+			spacing=3
+			start="library_filters" 
+			
+		 }
+
+		place [$OSX] { 
+			control="library_music_menu,library_music_add_button"
+			align=left 
+			x=4 
+			y=3 
+			height=20 
+			spacing=3
+			start="library_filters"
+			 
+			}
+
 
 // ******************************************************************************************************** 
 // NULL ZONE - Nullify certain controls.
@@ -1954,8 +2120,8 @@
  	  	place {
  	  		control=emailreminderbar 
  	  		margin-top=81 
- 	  		margin-left=8 
- 	  		margin-right=8 
+ 	  		margin-left=0 
+ 	  		margin-right=0 
  	  		width=max 
  	  		height=48 
  	  	}
@@ -1968,7 +2134,7 @@
 			width=max 
 			height=max 
 			margin-top=-5 
-			margin-left=-8 
+			margin-left=-1 
 			margin-right=0 
 			margin-bottom=0 
 			start=emailreminderbar 
@@ -1980,7 +2146,7 @@
 			width=max 
 			height=max 
 			margin-top=-3 
-			margin-left=-9 
+			margin-left=-1 
 			margin-right=0 
 			margin-bottom=0 
 			start=emailreminderbar 
@@ -1992,7 +2158,7 @@
 			width=max 
 			height=max 
 			margin-top=-2 
-			margin-left=-9 
+			margin-left=-1 
 			margin-right=0 
 			margin-bottom=1 
 			start=emailreminderbar 
@@ -2004,7 +2170,7 @@
 			width=max 
 			height=max 
 			margin-top=-5 
-			margin-left=-9 
+			margin-left=-1 
 			margin-right=0 
 			margin-bottom=0 
 			start=emailreminderbar 
@@ -2016,7 +2182,7 @@
 			width=max 
 			height=max 
 			margin-top=79 
-			margin-left=-8 
+			margin-left=0 
 			margin-right=0 
 			margin-bottom=1 
 			dir=down 
@@ -2027,7 +2193,7 @@
 			width=max 
 			height=max 
 			margin-top=-5 
-			margin-left=-8 
+			margin-left=0 
 			margin-right=0 
 			margin-bottom=0 
 			start=emailreminderbar 
@@ -2039,8 +2205,8 @@
 			width=max 
 			height=max 
 			margin-top=-5 
-			margin-left=0 
-			margin-right=-8 
+			margin-left=-1 
+			margin-right=0 
 			margin-bottom=0 
 			start=emailreminderbar 
 			dir=down 
@@ -2051,14 +2217,33 @@
 			width=max 
 			height=max 
 			margin-top=-5 
-			margin-left=0 
-			margin-right=-8 
+			margin-left=-1 
+			margin-right=0 
 			margin-bottom=0 
 			start=emailreminderbar 
 			dir=down 
 		}
 
+		place { 
+			control=MusicPage_Details 
+			width=max 
+			height=max 
+			margin-top=-5 
+			margin-left=-1 
+			margin-right=0 
+			margin-bottom=0 
+			start=emailreminderbar 
+			dir=down 
+		}
+		
+		place { 
+			control="library_music_player_icon"
+			align=right 
+			y=52 
+			height=16 
+			width=16 
+			margin-right=198 }
+
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 
 } // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-

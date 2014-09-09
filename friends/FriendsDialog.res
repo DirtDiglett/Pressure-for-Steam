@@ -276,7 +276,7 @@
 		// Used to push the friends section down lower for trickery with the PageTabs.
 		Page {
 			inset="0 10 0 0"
-			
+			font-family=basefont
 			font-style="none"
 			
 			bgcolor=none
@@ -315,7 +315,7 @@
 			textcolor=white
 			
 			inset="6 0 0 0"
-			
+			font-family=basefont
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -350,7 +350,6 @@
 		
 	"CFriendsDialog SectionedListPanel" {
       bgcolor  = "none"
-      
       font-family=basefont
       font-style="none"
       
@@ -365,8 +364,8 @@
 			inset="0 0 0 0"
 			textcolor=white
 			
-			font-family=basefont
 			
+			font-family=basefont
 			font-style="outerglow"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
@@ -393,7 +392,7 @@
 		
 		"CFriendsDialog SectionedListPanel" {
 			font-family=basefont
-			font-style="normal"
+			font-style="none"
 			//inset="0 30 0 0"
 		}
 		
@@ -414,14 +413,16 @@
 		}
 		   
 
-			AddFriendsButton:hover {
-				textcolor="none"
-				render_bg {}
-			}	  	
+		AddFriendsButton:hover {
+			textcolor="none"
+			render_bg {}
+		}	  	
 		
 		
 		RootMenu {
-			bgcolor="none"
+			textcolor="none"
+			bgcolor="none" 
+
 		} 
 
 				
@@ -448,50 +449,61 @@
 		
 		
 		
+
 		"MenuBar MenuButton"
 		{
-			padding-right=14
-			render
-			{
-				0="image( x1-18, y0 + 8, x1-0, y1, graphics/icon_down_default )"
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/normal )"
 			}
 		}
 
 		"MenuBar MenuButton:hover"
 		{
-			render
-			{
-				0="image( x1-18, y0 + 8, x1-0, y1, graphics/icon_down_hover )"
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/hover )"
 			}
 		}
-
+		
 		"MenuBar MenuButton:selected"
 		{
-			render
-			{
-				0="image( x1-18, y0 + 8, x1-0, y1, graphics/icon_down_hover )"
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/active )"
 			}
-		}
+		}		
 		
-		
-		FriendsSearch {
+		FriendsSearch [!$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
 			textcolor="darkestGrey"	
 			bgcolor=none
+			padding-left=2
+			selectedbgcolor="blue"
 			
 			render {}	
-			render_bg {
-				// background fill
-				//0="fill(x0,y0,x1,y1, red)"
-				
-				// single pixel fills in the corners
-				
-			}
+			render_bg {}
+		}
+		
+		FriendsSearch [$OSX] {
+			font-family=basefont
+			font-size=14
+			font-weight=400	
+			textcolor="darkestGrey"	
+			bgcolor=none
+			selectedbgcolor="blue"
+			
+			render {}	
+			render_bg {}
 		}
 		
 		FriendsSearch:empty {
+			font-family=basefont
 			font-style=italic
 			textcolor="lightestGrey"
 			
@@ -499,15 +511,18 @@
 		
 		FriendsSearch:hover {	
 			textcolor="darkGreyEnd"	
+			
 		}
 		
 		FriendsSearch:empty:hover {
+			font-family=basefont
 			font-style=italic
 			textcolor="lightGreyEnd"
 			
 		}
 			
 		FriendsSearch:disabled {
+			font-family=basefont
 			font-style=italic
 			textcolor="None"
 			
@@ -538,6 +553,7 @@
 		// This will only affect the HEADERS inside it for some reason
 		"CFriendsDialog SectionedListPanelInterior" {
 			
+			font-family=basefont
 			font-style="outerglow"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
@@ -546,7 +562,7 @@
 			inset="0 -3 0 0"
 			
 			bgcolor=none
-			font-family=basefont
+			
 			font-size=14
 			font-weight=400
 			textcolor  = "white"
@@ -562,6 +578,7 @@
 		}
 	
 			"CFriendsDialog SectionedListPanelInterior:scrollbar" {
+				font-family=basefont
 				font-style="none"
 				padding-right=15
 			}	
@@ -583,7 +600,10 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=38 }
-		place [!$OSX] { control="MenuBar" margin-left=0 height=24 margin-top=2 }
+		
+		place [!$OSX] { 
+			control="MenuBar" 
+			margin-left=2 width=62 height=24 margin-top=-1 }
 		
 		place { 
 			control="FriendPanelSelf" 
@@ -650,5 +670,3 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
  	}
  	
 }
-
-
