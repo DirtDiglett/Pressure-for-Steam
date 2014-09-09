@@ -412,14 +412,15 @@
 		}
 		   
 
-			AddFriendsButton:hover {
-				textcolor="none"
-				render_bg {}
-			}	  	
+		AddFriendsButton:hover {
+			textcolor="none"
+			render_bg {}
+		}	  	
 		
 		
 		RootMenu {
-			bgcolor="Red" //Test
+			textcolor="none"
+			bgcolor="none" 
 
 		} 
 
@@ -448,31 +449,33 @@
 		
 		
 
-			
-		"MenuBar MenuButton"
+		MenuButton
 		{
-			padding-right=14
-			render
-			{
-				0="fill( x1-18, y0 + 8, x1-0, y1, Blue )"
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/normal )"
 			}
 		}
 
-		"MenuBar MenuButton:hover"
+		MenuButton:hover
 		{
-			render
-			{
-				0="fill( x1-18, y0 + 8, x1-0, y1, Red )"
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/hover )"
 			}
 		}
-
-		"MenuBar MenuButton:selected"
+		
+		MenuButton:selected
 		{
-			render
-			{
-				0="fill( x1-18, y0 + 8, x1-0, y1, White )"
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/active )"
 			}
-		}
+		}		
+		
 		
 		
 		FriendsSearch {
@@ -590,7 +593,7 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 		
 		place [!$OSX] { 
 			control="MenuBar" 
-			margin-left=8 height=20 margin-top=1 }
+			margin-left=2 width=62 height=24 margin-top=-1 }
 		
 		place { 
 			control="FriendPanelSelf" 

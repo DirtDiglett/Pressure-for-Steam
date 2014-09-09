@@ -44,7 +44,7 @@
 		{
 			render_bg 
 			{
-				0="image( x0+8, y0+8, x1, y1, graphics/new_tab_hover)"
+				0="image( x0+8, y0+8, x1, y1, graphics/new_tab)"
 			}
 		}
 
@@ -89,7 +89,7 @@
         	1="image(x0,y0,x0+3,y0+28,graphics/tabs/inactive/left)"
 	    	
 	    	2="image(x1-1,y0,x1+2,y0+28, graphics/tabs/inactive/right)"
-	    	3="image_tiled(x0+3,y0,x1-1,y0+11, graphics/tabs/inactive/inner)" // For some weird reason, tiled images are tripled in height. So using y0+30 will cause the image to appear multiple times...
+	    	3="image_scale(x0+3,y0,x1-1,y1-2, graphics/tabs/inactive/inner)" // For some weird reason, tiled images are tripled in height. So using y0+30 will cause the image to appear multiple times...
         }
     }
   
@@ -98,14 +98,14 @@
 			
 		    render_bg {
 		    	0="fill(x0+1,y0+27,x1-1,y0+30, grey)" // Overlaps the highlight
-		    	0="fill(x0+1, y0+1, x1+2, y1, grey)"
+		    	1="fill(x0+1, y0+1, x1+2, y1, grey)"
 			
-		    	1="fill(x1+1, y0+30,x1+2, y0+31, greyHighlight)"
+		    	2="fill(x1+1, y0+30,x1+2, y0+31, greyHighlight)"
 		    	
-		    	1="image(x0,y0,x0+3,y0+30,graphics/tabs/active/left)"
+		    	3="image(x0,y0,x0+3,y0+30,graphics/tabs/active/left)"
 		    	
-		    	2="image(x1-1,y0,x1+2,y0+30, graphics/tabs/active/right)"
-		    	3="image_tiled(x0+3,y0,x1-1,y0+11, graphics/tabs/active/inner)" // For some weird reason, tiled images are tripled in height. So using y0+30 will cause the image to appear multiple times...
+		    	4="image(x1-1,y0,x1+2,y0+30, graphics/tabs/active/right)"
+		    	5="image_scale(x0+3,y0,x1-1,y1, graphics/tabs/active/inner)" // For some weird reason, tiled images are tripled in height. So using y0+30 will cause the image to appear multiple times...
 
 			6="fill(x0, y1, x1+2, y1+1, Grey)" //Fix for Ingame Web Browser - No visual change anywhere else
 		    }
