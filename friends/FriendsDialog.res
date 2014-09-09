@@ -154,10 +154,12 @@
 		CFriendsDialog {
 			minimum-width=330
 			maximum-width=500
+			font-family=basefont
 			font-style="normal"
 		}
 		
 		ListPanelSectionHeader {
+			font-family=basefont
 			font-style="outerglow,normal"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
@@ -289,6 +291,7 @@
 			image="graphics/icon_collapse"
 			padding-top=0
 			padding-bottom=-5
+			font-family=basefont
 			font-style="normal"
 			
 			inset="-4 -5 0 0"
@@ -348,6 +351,7 @@
 	"CFriendsDialog SectionedListPanel" {
       bgcolor  = "none"
       
+      font-family=basefont
       font-style="none"
       
       render_bg {
@@ -361,7 +365,7 @@
 			inset="0 0 0 0"
 			textcolor=white
 			
-			
+			font-family=basefont
 			
 			font-style="outerglow"
 			font-outerglow-color="red"
@@ -388,7 +392,8 @@
 		
 		
 		"CFriendsDialog SectionedListPanel" {
-			font-style="none"
+			font-family=basefont
+			font-style="normal"
 			//inset="0 30 0 0"
 		}
 		
