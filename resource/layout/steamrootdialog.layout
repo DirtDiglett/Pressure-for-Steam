@@ -135,7 +135,7 @@
 
 		// Got no idea what this is for.
 		RootMenu {
-			//bgcolor="orange"
+			bgcolor="none" //Background Behind Menu Button
 		}
 
 		// Never seen this in action, what's it do?
@@ -660,14 +660,36 @@
 				
 			}
 
-
-
-
-
-
-
+// ******************************************************************************************************** 
+// Menu
+// ********************************************************************************************************	
 		
+		"MenuBar MenuButton"
+		{
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/client/normal )"
+			}
+		}
+
+		"MenuBar MenuButton:hover"
+		{
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/client/hover )"
+			}
+		}
 		
+		"MenuBar MenuButton:selected"
+		{
+			textcolor="none"
+			render_bg {
+				
+				0="image( x0, y0, x1,y1, graphics/supermenus/client/active )"
+			}
+		}	
 
 		
 		
@@ -712,13 +734,10 @@
 		place [!$OSX] { 
 			control="MenuBar" 
 			align=top 
-			margin-top=0 
-			margin-left=2 
+			margin-top=-1 
+			margin-left=2
+			width=62 
 		}
-			
-
-		
-
 		
 		place { 
 			control="ParentalLockButton" 
