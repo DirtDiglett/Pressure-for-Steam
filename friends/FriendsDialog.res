@@ -477,23 +477,29 @@
 			}
 		}		
 		
-		
-		
-		FriendsSearch {
+		FriendsSearch [!$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
 			textcolor="darkestGrey"	
 			bgcolor=none
+			padding-left=2
+			selectedbgcolor="blue"
 			
 			render {}	
-			render_bg {
-				// background fill
-				//0="fill(x0,y0,x1,y1, red)"
-				
-				// single pixel fills in the corners
-				
-			}
+			render_bg {}
+		}
+		
+		FriendsSearch [$OSX] {
+			font-family=basefont
+			font-size=14
+			font-weight=400	
+			textcolor="darkestGrey"	
+			bgcolor=none
+			selectedbgcolor="blue"
+			
+			render {}	
+			render_bg {}
 		}
 		
 		FriendsSearch:empty {
@@ -505,6 +511,7 @@
 		
 		FriendsSearch:hover {	
 			textcolor="darkGreyEnd"	
+			
 		}
 		
 		FriendsSearch:empty:hover {

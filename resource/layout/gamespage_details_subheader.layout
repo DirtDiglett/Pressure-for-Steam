@@ -709,9 +709,7 @@
 		}
 
 		place { 
-			//start=clientlist
 			control=subheaderlabels
-			
 			region=header
 			dir=left
 			align=left
@@ -720,8 +718,7 @@
 			y=35
 			
 			width=140
-			height=30
-			
+						
 			end-right=launchbutton
 		}
 

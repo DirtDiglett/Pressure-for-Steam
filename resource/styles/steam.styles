@@ -42,6 +42,11 @@ colors {
 	
 	 
 // DEFAULT STEAM BELOW:	 
+    
+    launch0 = "none"
+    launch1 = "none"
+    launch2 = "none"
+    launch3 = "none" // Temp Set to none until using
 
     almostBlack  = "darkestGrey"
 
