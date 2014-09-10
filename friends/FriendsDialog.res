@@ -670,5 +670,3 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
  	}
  	
 }
-
-
