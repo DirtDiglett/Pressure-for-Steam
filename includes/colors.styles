@@ -20,6 +20,9 @@
 		lightGreyEnd="42 42 42 255"
 		darkGreyEnd="25 25 25 255"
 		darkestGrey="8 8 8 255"
+		
+		groupGrey="14 14 14 255"// Group Chat Related Only
+
 		black="0 0 0 255"
 		black90="0 0 0 220" // 90% Opacity
 		black75="0 0 0 191" // 75% Opacity Black

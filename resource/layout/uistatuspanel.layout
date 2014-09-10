@@ -36,7 +36,10 @@
       			font-size=13
       			font-weight=400
       			textcolor="white"
-      			font-style=normal
+      			font-style="normal;outerglow"
+			font-outerglow-color="darkGreyEnd"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
 			
 			render_bg {  
 				0="fill( x0-20, y0, x0+1, y1, none )"
@@ -49,7 +52,10 @@
       				font-size=13
       				font-weight=400
       				textcolor="trueWhite"
-      				font-style=normal
+      				font-style="normal;outerglow"
+				font-outerglow-color="darkGreyEnd"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=1
 
 			render_bg {  
 				0="fill( x0-20, y0, x0+1, y1, none )"

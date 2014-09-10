@@ -1419,7 +1419,7 @@ styles {
 				24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, bottomDarkPixels )" // Bottom Left
 				25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, bottomDarkPixels )" // Bottom Left			
 			}
-		minimum-width=80
+		
 	}
 	
 	Chat_MenuButton_withChrome::disabled {
