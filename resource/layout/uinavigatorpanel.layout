@@ -1938,12 +1938,12 @@
 	
 		place { 
 			control="PageLoadThrobber" 
+			start=URLBar 
+			y=0 
+			width=24 
+			height=24 
 			align=right 
-			y=48 
-			height=20 
-			width=20  
-			margin-right=188 
-			margin-top=1 
+			margin-right=160 
 		}
 		
 		place { 
