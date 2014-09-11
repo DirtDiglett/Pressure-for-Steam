@@ -40,6 +40,10 @@
 			}
 		}
 		
+		Chat_MenuButton_withChrome {
+			minimum-width=80
+					  }
+
 		status_label {
 			font-family=basefont
 			textcolor=white

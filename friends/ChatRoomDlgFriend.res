@@ -73,7 +73,6 @@
 		        0="fill(x0, y0+4, x1,y0+5, darkGreyEnd)"
 		        1="fill( x0, y0+6, x1, y0+59, darkestGrey )"
 		        2="gradient( x0, y0+6, x1, y0+58, grey, lightGreyEnd)"
-//52
 
 				// The status Label area.
 				5="fill( x0, y1-60, x1, y1, darkestGrey )"
@@ -91,22 +90,9 @@
 				11="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
       }
 		}
+				
 		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		// Pretty sure this is only used for the status label on the chat.
+		// Used for the status label on the chat only
 		label {
 			font-size=12
 			textcolor=grey
@@ -304,13 +290,18 @@
 			font-style=none
 			
 			render_bg {
-		       	0="gradient(x0-1,y0+1,x1,y1-12, red, darkestRed)"
-			   	1="fill(x0-1,y0+1,x1,y0+2, lightestRed)"
 		       	
-		       	2="image(x0+2,y0+22,x1,y1, graphics/game_invite_close)"
+				0="gradient(x0-1,y0+3,x1,y1-12, red, darkestRed)"
+			   			       	
+		       		2="image(x0+2,y0+22,x1,y1, graphics/game_invite_close)"
 		       	
-		       	3="fill(x0-1,y0+1,x0,y1-12, darkestRed)"
-		       	4="fill(x0-2,y0+1,x0-1,y1-12, darkestGrey)"
+		       		3="fill(x0-1,y0+1,x0,y1-12, darkestRed)"
+		       		4="fill(x0-2,y0+1,x0-1,y1-12, darkestGrey)"
+
+				5="fill(x0-2,y0+1,x0-1,y1-12, darkestGrey)"
+				6="fill(x0-2,y0,x1,y0+1, darkestGrey)"
+				7="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
+				8="fill(x0-1,y0+2,x1,y0+3, lightestRed)"
 			}
 		}
 
@@ -320,6 +311,9 @@
 		
 		// Used to create the Chat itself.
 		RichText {
+			textcolor="ChatDialog.HistoryColor"
+			selectedbgcolor="blue"
+			selectedtextcolor="trueWhite"
 			bgcolor=darkestGrey
 			
 			inset="8 8 8 0"
@@ -632,8 +626,13 @@
 				
 				}
 			}
-		
-		
+
+			//A fix Regarding Ingame Chat Issues
+	    		
+			ListPanel {			
+				textcolor="ChatDialog.HistoryColor"
+				selectedbgcolor="blue"
+			}
 			
 	} // end of styles
 	
@@ -746,7 +745,6 @@
 			width=80 
 			
 			margin-top=13
-			
 			margin-left=13
 			margin-right=13
 		}
