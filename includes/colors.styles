@@ -46,7 +46,9 @@
 		lightestBlue="91 225 252 255"
 		blue="47 198 236 255"
 		darkestBlue="35 175 210 255"
-	
+
+		listselectedBlue="51 168 227 255" //Potential Blue to suggest for Selected List/Items?
+
 		// Oranges
 		lightestOrange="255 151 58 255"
 		orange="255 120 0 255"
