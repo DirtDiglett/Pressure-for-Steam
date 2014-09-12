@@ -730,6 +730,8 @@ styles {
 		font-outerglow-filtersize=3
 		
 		render_bg {}
+
+		minimum-width=160
     }
    
     MenuItem:selected {
