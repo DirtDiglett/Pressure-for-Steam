@@ -73,7 +73,7 @@
 		// Literally the label that says "Most Recent"
 		mostrecent_label {
 			font-size=13
-			textcolor="grey"
+			textcolor="greyhighlight"
 		}
 		
 		mostrecent_name {

@@ -34,7 +34,7 @@
 		friendlabelmore {
 			inset="-3 0 0 0"
 			font-size=13
-			textcolor="grey"
+			textcolor="greyhighlight"
 			font-family=basefont
 		    
 		    render_bg {}			
@@ -67,7 +67,7 @@
 			name=images 
 			region=body 
 			x=0 
-			y=15 
+			y=18 
 			margin=2 
 			width=max 
 		}

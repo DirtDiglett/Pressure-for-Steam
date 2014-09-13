@@ -49,7 +49,7 @@
 		achievementlabelmore {
 			inset="-3 0 0 0"
 			font-size=13
-			textcolor="grey"
+			textcolor="greyhighlight"
 			font-family=basefont
 		    
 		    render_bg {}

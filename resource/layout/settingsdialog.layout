@@ -17,19 +17,22 @@
 			minimum-width="740"
 			minimum-height="585"
 			bgcolor=none
+			
+			render
+			{
+				0="fill( x0, y0+25, x0+194, y0 +33, darkestGrey )" //Fixes a bug
+			}
 			render_bg
 			{     
 
-      	 		0="fill( x0, y0, x1, y1, grey)"
-			
-			1="fill( x0, y0+27, x0+194, y0+32, groupGrey )"
-			2="fill( x0+194, y0+27, x1, y0+32, darkestGrey )"
-  			
-			3="fill( x0, y1-46, x1, y1-45, darkGreyEnd )"
-			4="fill( x0, y1-45, x1, y1-44, greyHighlight )"
-			5="fill( x0, y1-44, x1, y1, Lightgreyend )"
-			6="fill( x0+1, y1-2, x0+2, y1-1, darkGreyEnd )"
-			7="fill( x1-2, y1-2, x1-1, y1-1, darkGreyEnd )"
+      	 			0="fill( x0, y0, x1, y1, darkestGrey )" //grey
+				1="fill( x0, y0+27, x0+194, y0+32, groupGrey )"
+				2="fill( x0+194, y0+27, x1, y0+32, darkestGrey )"
+  				3="fill( x0, y1-51, x1, y1-50, darkGreyEnd )"
+				4="fill( x0, y1-50, x1, y1-49, greyHighlight )"
+				5="fill( x0, y1-49, x1, y1, Lightgreyend )"
+				6="fill( x0+1, y1-2, x0+2, y1-1, darkGreyEnd )"
+				7="fill( x1-2, y1-2, x1-1, y1-1, darkGreyEnd )"
 			}
 
 		}
@@ -42,10 +45,11 @@
 			bgcolor=none
 			render_bg
 			{
-
+			1="fill( x0, y0+1, x1, y1, darkGreyEnd )"
 			}
 
 		}
+
 		"SettingsList"
 		{
 			inset="-4 -14 4 0" //inset="6 -14 4 0" 
@@ -64,7 +68,7 @@
    		 render
 			{				
      			//line to hide a bug here
-     			1="fill( x0, y0-1, x0+194, y0+5, groupGrey )"
+     			1="fill( x0, y0-6, x0+194, y0+5, darkestGrey )"
 			
       		 	//gradient to obscure content at bottom of scrolling region 
 			//2="gradient( x0+1, y1 - 16, x1-1, y1, none, almostblack )"
@@ -72,7 +76,7 @@
 
 		render_bg 
 			{				
-			0="fill( x0, y0, x1, y1, groupGrey)"
+			0="fill( x0, y0, x1, y1, darkestGrey)"
 			}
     } 
 		
@@ -80,8 +84,8 @@
 	}
 	layout
 	{
-		region { name="buttons" width=max height=36 align="bottom" }
-		region { name="body" margin-left=0 margin-right=-1 margin-bottom=46 margin-top=-20 }		
+		region { name="buttons" width=max height=44 align="bottom" }
+		region { name="body" margin-left=0 margin-right=-1 margin-bottom=51 margin-top=-20 }		
 		
 		
 		place [!$OSX]  { 
@@ -117,7 +121,10 @@
 		        width=92 
 			height=25 
 			align=right
-			margin-right=10 margin-top=0
-			margin-bottom=2 spacing=10 }
+			margin-right=10 
+			margin-top=6
+			margin-bottom=5 
+			spacing=10
+		}
 	}
 }

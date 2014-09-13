@@ -458,10 +458,10 @@ styles {
 	        //2  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
 	          
 	        // lines around
-		3  = "fill( x0 , y0 - 1, x1, y0 , GreyHighlight )"  // top
-		4  = "fill( x0 , y1 - 1, x1, y1, GreyHighlight )"  // bottom
-		5  = "fill( x0, y0 , x0 + 1, y1 - 1, GreyHighlight )"  // left
-		6  = "fill( x1 - 1, y0, x1, y1 - 1, GreyHighlight )"  // right
+		3  = "fill( x0 , y0 - 1, x1, y0 , DarkestGrey )"  // top
+		4  = "fill( x0 , y1 - 1, x1, y1, DarkestGrey  )"  // bottom
+		5  = "fill( x0, y0 , x0 + 1, y1 - 1, DarkestGrey  )"  // left
+		6  = "fill( x1 - 1, y0, x1, y1 - 1, DarkestGrey  )"  // right
 	        }
 	}
     
@@ -479,8 +479,9 @@ styles {
       padding-right=0
       
       render {
-      	0="gradient(x0, y0, x1, y0+4, black65, none)"
-      	1="gradient(x0, y1-4, x1, y1, none, black65)"
+      	0="fill( x0, y0-1, x1, y0, darkestgrey)" //0="gradient( x0, y0, x1, y0+4, black65, none)" 
+      	1="fill( x0, y1-1, x1, y1, darkestgrey)"
+	
       }
       
       render_bg {}
@@ -779,7 +780,7 @@ styles {
     
     
     Page {
-		bgcolor  = "darkestGrey"
+		bgcolor  = "darkGreyEnd"
 		render_bg {
 			// background gradient
 			//0  = "gradient( x0, y0 + 18, x1, y1, green, orange )"
@@ -904,7 +905,8 @@ styles {
 		ProgressBox {
 			bgcolor=darkestGrey
 			render {
-				1="image( x0+122, y0+33, x1, y0, graphics/login_logo )"
+		1="gradient( x0+1,y0+26, x1, y1, grey, lightGreyEnd )" //Added for more consistancy		
+		2="image( x0+122, y0+39, x1, y0, graphics/login_logo )"
 			}
 		}
 		
