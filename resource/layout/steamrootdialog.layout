@@ -220,7 +220,6 @@
 // Main Client's Background
 		CSteamRootDialog {
 			bgcolor=none
-
 			render_bg {
 				// top area and graphic
 				0="gradient( x0, y0, x1, y0+90, grey, darkGreyEnd )"	
@@ -242,13 +241,12 @@
 				// 1px Dark line
 				8="fill(x0, y0+90, x1, y0+91, darkestGrey)"
 				
-
 				// Create the Status Bar
 				9="gradient(x0, y1-32, x1, y1, grey, lightGreyEnd)"
 				
 				// 1px Highlight
 				10="fill(x0, y1-32, x1, y1-31, greyHighlight)"
-				10="fill(x0, y1-33, x1, y1-32, darkestGrey)"
+				10="fill(x0, y1-33, x1, y1-32, darkestGrey)"//darkestGrey
 				
 				11="fill(x0+1, y1-2, x0+2, y1-1, darkestGreyFake)" // Bottom Left Dark Pixel
 				12="fill(x1-2, y1-2, x1-1, y1-1, darkestGreyFake)" // Bottom Right Dark Pixel
@@ -263,6 +261,8 @@
 				18="image_tiled(x0, y0+52, x1-194, y0+88, graphics/subnav_bg)"
 				19="image(x1-194, y0+52, x1-190, y0+88, graphics/subnav_right)"
 				20="fill(x0+1, y0+54, x0+2, y0+89, grey50 )"
+
+				21="fill( x0+2, y0+88, x1-194, y0+90, lightGreyEnd)" //Fix for random bar showing
 			}
 		}	
 
@@ -895,8 +895,8 @@
 			margin-right=0
 		}
 		
-		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Potential Fix for an odd bug
-		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Potential Fix for an odd bug
+		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
+		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
 	
 	
  		// the title bar is missing, so increase the size of the grip

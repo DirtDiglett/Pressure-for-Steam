@@ -205,7 +205,19 @@
 		place {	control="Clanstatusimage"			x=20  width=15 }
 		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" x=50 y=7  }
 
-		place { control="StatusLabel,BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame" x=50 y=20 }
+		place { 		
+			control="StatusLabel"
+			x=50 
+			y=20 
+		}
+
+		place { 		
+			control="BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"
+			start="StatusLabel"
+			x=2
+			y=5 
+		}
+
 		place { control="GameLabel" x=50 y=30 }
 
 		// these controls are shown for friendship requests

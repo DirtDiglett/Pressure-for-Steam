@@ -30,7 +30,9 @@
 	  TabCloseButton {
 		render_bg {}
 		
-		inset="-4 7 0 0"
+		inset="-4 7 0 0" [$OSX]
+		inset="-7 7 0 0"  // Adjusted for windows to match screenshots
+
 		image  = "graphics/tab_close"
     }
 

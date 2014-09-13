@@ -404,9 +404,9 @@ styles {
 		font-family=basefont
 		font-size=14
 		font-weight=400
-		textcolor  = "text2"
-		selectedtextcolor  = "TextSelected"
-		selectedbgcolor  = "Focus"
+		textcolor  = "white"
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor  = "Blue"
 		shadowtextcolor  = "TextDisabled"	// the color of disabled line items
 		inset  = "0 -1 1 1"
 		render {}       
@@ -439,30 +439,30 @@ styles {
 		font-family=basefont
 		font-size=14
 		font-weight=400
-		textcolor  = "Text2"
-		selectedtextcolor  = "TextSelected"
-		selectedbgcolor  = "Focus"
+		textcolor  = "white"
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor  = "Blue"
 		inset  = "0 -1 1 1"
 		bgcolor=none
-	        render_bg
+	        
+		render
+		{
+		1  = "fill( x0 + 1, y0, x1 - 1, y0+1, Grey )"
+		}
+
+		render_bg
 	        {     
 		   // background fill
-	        0  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 80, Propertysheetbg, BackgroundStartOpaque )"
-	        1  = "fill( x0 + 1, y0 + 80, x1 - 1, y1 - 1, BackgroundStartOpaque )"
-	        2  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
+	        0  = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 -30, grey, lightGreyEnd )"
+	        1  = "fill( x0 + 1, y1 - 30, x1 - 1, y1 - 1, Lightgreyend )"
+	        //2  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
 	          
 	        // lines around
-		3  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-		4  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-		5  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-		6  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-	        
-	        // single pixel fills in the corners
-		7  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
-		8  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
-		9  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
-		10  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
-	      }
+		3  = "fill( x0 , y0 - 1, x1, y0 , DarkestGrey )"  // top
+		4  = "fill( x0 , y1 - 1, x1, y1, DarkestGrey  )"  // bottom
+		5  = "fill( x0, y0 , x0 + 1, y1 - 1, DarkestGrey  )"  // left
+		6  = "fill( x1 - 1, y0, x1, y1 - 1, DarkestGrey  )"  // right
+	        }
 	}
     
     "CGamesListPanel" {
@@ -472,15 +472,16 @@ styles {
       font-weight=400
       textcolor  = "white"
       selectedtextcolor  = "trueWhite"
-      selectedbgcolor  = "blue"
+      selectedbgcolor  = "blue" //blue
       shadowtextcolor  = "grey"
       inset  = "0 -3 0 0"
       
       padding-right=0
       
       render {
-      	0="gradient(x0, y0, x1, y0+4, black65, none)"
-      	1="gradient(x0, y1-4, x1, y1, none, black65)"
+      	0="fill( x0, y0-1, x1, y0, darkestgrey)" //0="gradient( x0, y0, x1, y0+4, black65, none)" 
+      	1="fill( x0, y1-1, x1, y1, darkestgrey)"
+	
       }
       
       render_bg {}
@@ -490,7 +491,7 @@ styles {
     "GameItem_Uninstalled" {
       textcolor  = "grey"
       selectedtextcolor  = "white"
-      selectedbgcolor = "blue"
+      selectedbgcolor = "blue" //blue
     }
 	    "GameItem_Uninstalled:hover" {
     	    textcolor  = "grey"
@@ -500,13 +501,13 @@ styles {
     "GameItem_Installed" {
     	textcolor  = "white"
 		selectedtextcolor  = "trueWhite"
-		selectedbgcolor = "blue"
+		selectedbgcolor = "blue" //blue
     }
       
 		"GameItem_Installed:hover" {
         	textcolor  = "white"
 			selectedtextcolor  = "trueWhite"
-			selectedbgcolor = "blue"
+			selectedbgcolor = "blue" //blue
 		}
     
     
@@ -514,19 +515,19 @@ styles {
     	padding-left=10
     	textcolor  = "orange"
     	selectedtextcolor  = "trueWhite"
-    	selectedbgcolor = "blue"
+    	selectedbgcolor = "blue" //blue
     }
     
     	"GameItem_Updating:hover" {
     		textcolor  = "orange"
     		selectedtextcolor  = "trueWhite"
-    		selectedbgcolor = "blue"
+    		selectedbgcolor = "blue" //blue
 		}
     
 		"GameItem_Updating:selected" {
  			textcolor  = "orange"
  			selectedtextcolor  = "trueWhite"
- 			selectedbgcolor = "blue"
+ 			selectedbgcolor = "blue" //blue
  		}
     
     
@@ -534,61 +535,61 @@ styles {
     "GameItem_Shortcut" {
       textcolor  = "white"
       selectedtextcolor  = "trueWhite"
-      selectedbgcolor = "blue"
+      selectedbgcolor = "blue" //blue
     }
       
 	    "GameItem_Shortcut:hover" {
 	        textcolor  = "white"
 	        selectedtextcolor  = "trueWhite"
-		selectedbgcolor = "blue"
+		selectedbgcolor = "blue" //blue
 	    }
     
     "GameItem_Mod" {
       textcolor  = "white"
       selectedtextcolor  = "trueWhite"
-      selectedbgcolor = "blue"
+      selectedbgcolor = "blue" //blue
       }
       
 	    "GameItem_Mod:hover" {
 	        textcolor  = "white"
 	        selectedtextcolor  = "trueWhite"
-		selectedbgcolor = "blue"
+		selectedbgcolor = "blue" //blue
 	    }
     
     "GameItem_Decrypting" {
     	textcolor  = "orange"
     	selectedtextcolor  = "trueWhite"
-	selectedbgcolor = "blue"
+	selectedbgcolor = "blue" //blue
     }
     
 	    "GameItem_Decrypting:hover" {
 	    	textcolor  = "orange"
 	    	selectedtextcolor  = "trueWhite"
-		selectedbgcolor = "blue"
+		selectedbgcolor = "blue" //blue
 	    }
     
 	    "GameItem_Decrypting:selected" {
 	    	textcolor  = "orange"
 	    	selectedtextcolor  = "trueWhite"
-		selectedbgcolor = "blue"
+		selectedbgcolor = "blue" //blue
 	    }
     
     "GameItem_Syncing" {
     	textcolor  = "orange"
     	selectedtextcolor  = "trueWhite"
-	selectedbgcolor = "blue"
+	selectedbgcolor = "blue" //blue
     }
     
 	    "GameItem_Syncing:hover" {
 	    	textcolor  = "orange"
 	    	selectedtextcolor  = "trueWhite"
-		selectedbgcolor = "blue"
+		selectedbgcolor = "blue" //blue
 	    }
 	    
 	    "GameItem_Syncing:selected" {
 	    	textcolor  = "orange"
 	    	selectedtextcolor  = "trueWhite"
-		selectedbgcolor = "blue"
+		selectedbgcolor = "blue" //blue
 	    }
     
    
@@ -730,6 +731,8 @@ styles {
 		font-outerglow-filtersize=3
 		
 		render_bg {}
+
+		minimum-width=160
     }
    
     MenuItem:selected {
@@ -777,7 +780,7 @@ styles {
     
     
     Page {
-		bgcolor  = "darkestGrey"
+		bgcolor  = "darkGreyEnd"
 		render_bg {
 			// background gradient
 			//0  = "gradient( x0, y0 + 18, x1, y1, green, orange )"
@@ -902,7 +905,8 @@ styles {
 		ProgressBox {
 			bgcolor=darkestGrey
 			render {
-				1="image( x0+122, y0+33, x1, y0, graphics/login_logo )"
+		1="gradient( x0+1,y0+26, x1, y1, grey, lightGreyEnd )" //Added for more consistancy		
+		2="image( x0+122, y0+39, x1, y0, graphics/login_logo )"
 			}
 		}
 		
@@ -997,8 +1001,8 @@ styles {
     
         
     RichText {
-		textcolor  = "darkestGrey"
-		selectedtextcolor  = "white"	
+		textcolor  = "white"
+		selectedtextcolor  = "trueWhite"	
 		selectedbgcolor = blue	
 		font-family=basefont
 		font-size=13
@@ -1006,27 +1010,9 @@ styles {
 		inset  = "0 -1 0 0"
 		
 		render_bg {
-			-1  = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, darkestYellow )"
+			-1  = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
         
-			// lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-        
-			// single pixel fills in the corners
-		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
-		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
-		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
-		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
-			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+
 		}     
     }
          
@@ -1544,6 +1530,6 @@ styles {
 	{
 		textcolor  = "176 172 165 255"
 	}
-
   }
-} 
+}
+

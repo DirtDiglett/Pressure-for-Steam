@@ -90,14 +90,17 @@
 		font-size=14
 		font-size=13 [$OSX]
 		font-weight=400
-		textcolor  = "red"
+		textcolor  = "white"
 		font-style  = "none"
 		bgcolor  = "none"
 		inset  = "1 3 0 0"
 
 		render_bg {
 			// fill
-			0  = "fill (x0, y0 + 3, x1, y1 + 1, red )" // bg fill
+			0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
+			1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, greyHighlight )"
+			2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill
+			3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
 		}   
 	}
     
@@ -235,8 +238,23 @@
 		render 
 		{
 			//fill makes dragger visible
-			0  = "fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )" // left
+			0  = "fill( x0, y0 + 2, x0 + 1, y1 - 3, red )" // left
 			1  = "fill (x0, y0, x0+1, y0+3, buttonborderdisabled )" //dot
+			3 = "fill ( x0-1, y1-2, x0 + 1, y1-1, darkGreyEnd )"
+		}
+    }
+
+    "Page ListPanelDragger"
+	{
+		bgcolor  = "none"
+		render 
+		{
+			//fill makes dragger visible
+
+			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-1, grey, lightGreyEnd )"
+			2="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkGreyEnd )" // left
+			
+			3="fill ( x0-1, y1-1, x0 + 1, y1, darkGreyEnd )"
 		}
     }
     
@@ -245,14 +263,15 @@
 		inset  = "3 1 0 0"
 		font-size=15
 		textcolor  = "text2"
+		selectedbgcolor= "blue"
 		bgcolor  = "none" 
       	render
 			{
 				//gradient to obscure content at top of scrolling region 
-				1  = "gradient( x0+1, y0+0, x1-1, y0 + 3, blue, none  )"
+				1  = "gradient( x0+1, y0+0, x1-1, y0 + 3, none, none  )"
 				
 				//gradient to obscure content at bottom of scrolling region 
-				2  = "gradient( x0, y1 - 12, x1, y1-0, none, almostblack )"
+				//2 = "gradient( x0+1, y1 - 12, x1-1, y1-0, none, almostblack )"
 			}
 		
 		render_bg {}
@@ -270,6 +289,7 @@
     {     
        	inset  = "0 0 0 0"
 		bgcolor=none
+		selectedbgcolor= "blue"
 		render_bg {}
 	}
 	
@@ -280,6 +300,7 @@
 		inset  = "0 0 0 0"
 		font-size=15
 		bgcolor=none
+		selectedbgcolor= "blue"
 		render_bg {}
 	}
 	

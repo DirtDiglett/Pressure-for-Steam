@@ -177,7 +177,8 @@
 		"Page ListPanelInterior:scrollbar" {
 			inset="3 1 -1 0"
 			bgcolor=none
-			
+			selectedbgcolor="blue"
+			selectedtextcolor="red" //test
 			render {}
 			render_bg {}
 		}
@@ -186,6 +187,7 @@
 		"Csteamrootdialog ListPanelInterior:scrollbar" { 
 			inset="3 0 -1 0"
 			bgcolor=none
+			selectedbgcolor="blue"
 			
 			render {}   
 			render_bg {}
@@ -195,6 +197,8 @@
 			bgcolor=none
 			inset="3 1 -1 0"
 			textcolor="text2"
+			selectedtextcolor="red" //test
+			selectedbgcolor="blue"
 			
 			render {}
 			
