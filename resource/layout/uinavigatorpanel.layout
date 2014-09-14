@@ -484,7 +484,7 @@
 			textcolor="grey"
 			font-weight=400
 			bgcolor="none"
-			selectedtextcolor="white"
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			shadowtextcolor="darkestGrey"  // this is the cursor color
 	
@@ -511,7 +511,7 @@
 			font-size=12
 			textcolor="grey"
 			bgcolor="none"
-			selectedtextcolor="white"
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			shadowtextcolor="grey"	// this is the cursor color	
 		}

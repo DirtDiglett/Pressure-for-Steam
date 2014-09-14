@@ -194,7 +194,7 @@ colors {
 
     ListPanel.TextColor       grey
     ListPanel.BgColor       none  
-    ListPanel.SelectedTextColor     white
+    ListPanel.SelectedTextColor     darkestGrey
     ListPanel.SelectedBgColor     blue
     ListPanel.SelectedOutOfFocusBgColor   blue
     ListPanel.DisabledTextColor     darkestGrey
@@ -405,7 +405,7 @@ styles {
 		font-size=14
 		font-weight=400
 		textcolor  = "white"
-		selectedtextcolor  = "trueWhite"
+		selectedtextcolor  = "darkestGrey"
 		selectedbgcolor  = "Blue"
 		shadowtextcolor  = "TextDisabled"	// the color of disabled line items
 		inset  = "0 -1 1 1"
@@ -440,7 +440,7 @@ styles {
 		font-size=14
 		font-weight=400
 		textcolor  = "white"
-		selectedtextcolor  = "trueWhite"
+		selectedtextcolor  = "darkestGrey"
 		selectedbgcolor  = "Blue"
 		inset  = "0 -1 1 1"
 		bgcolor=none
@@ -471,7 +471,7 @@ styles {
       font-size=13
       font-weight=400
       textcolor  = "white"
-      selectedtextcolor  = "trueWhite"
+      selectedtextcolor  = "darkestGrey"
       selectedbgcolor  = "blue" //blue
       shadowtextcolor  = "grey"
       inset  = "0 -3 0 0"
@@ -490,7 +490,7 @@ styles {
 	// Games in Details List + List View that are not installed.
     "GameItem_Uninstalled" {
       textcolor  = "grey"
-      selectedtextcolor  = "white"
+      selectedtextcolor  = "darkestGrey"
       selectedbgcolor = "blue" //blue
     }
 	    "GameItem_Uninstalled:hover" {
@@ -500,13 +500,13 @@ styles {
  
     "GameItem_Installed" {
     	textcolor  = "white"
-		selectedtextcolor  = "trueWhite"
+		selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = "blue" //blue
     }
       
 		"GameItem_Installed:hover" {
         	textcolor  = "white"
-			selectedtextcolor  = "trueWhite"
+			selectedtextcolor  = "darkestGrey"
 			selectedbgcolor = "blue" //blue
 		}
     
@@ -514,19 +514,19 @@ styles {
     "GameItem_Updating" {
     	padding-left=10
     	textcolor  = "orange"
-    	selectedtextcolor  = "trueWhite"
+    	selectedtextcolor  = "darkestGrey"
     	selectedbgcolor = "blue" //blue
     }
     
     	"GameItem_Updating:hover" {
     		textcolor  = "orange"
-    		selectedtextcolor  = "trueWhite"
+    		selectedtextcolor  = "darkestGrey"
     		selectedbgcolor = "blue" //blue
 		}
     
 		"GameItem_Updating:selected" {
  			textcolor  = "orange"
- 			selectedtextcolor  = "trueWhite"
+ 			selectedtextcolor  = "darkestGrey"
  			selectedbgcolor = "blue" //blue
  		}
     
@@ -534,61 +534,61 @@ styles {
     
     "GameItem_Shortcut" {
       textcolor  = "white"
-      selectedtextcolor  = "trueWhite"
+      selectedtextcolor  = "darkestGrey"
       selectedbgcolor = "blue" //blue
     }
       
 	    "GameItem_Shortcut:hover" {
 	        textcolor  = "white"
-	        selectedtextcolor  = "trueWhite"
+	        selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = "blue" //blue
 	    }
     
     "GameItem_Mod" {
       textcolor  = "white"
-      selectedtextcolor  = "trueWhite"
+      selectedtextcolor  = "darkestGrey"
       selectedbgcolor = "blue" //blue
       }
       
 	    "GameItem_Mod:hover" {
 	        textcolor  = "white"
-	        selectedtextcolor  = "trueWhite"
+	        selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = "blue" //blue
 	    }
     
     "GameItem_Decrypting" {
     	textcolor  = "orange"
-    	selectedtextcolor  = "trueWhite"
+    	selectedtextcolor  = "darkestGrey"
 	selectedbgcolor = "blue" //blue
     }
     
 	    "GameItem_Decrypting:hover" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = "blue" //blue
 	    }
     
 	    "GameItem_Decrypting:selected" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = "blue" //blue
 	    }
     
     "GameItem_Syncing" {
     	textcolor  = "orange"
-    	selectedtextcolor  = "trueWhite"
+    	selectedtextcolor  = "darkestGrey"
 	selectedbgcolor = "blue" //blue
     }
     
 	    "GameItem_Syncing:hover" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = "blue" //blue
 	    }
 	    
 	    "GameItem_Syncing:selected" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = "blue" //blue
 	    }
     
@@ -1002,7 +1002,7 @@ styles {
         
     RichText {
 		textcolor  = "white"
-		selectedtextcolor  = "trueWhite"	
+		selectedtextcolor  = "darkestGrey"
 		selectedbgcolor = blue	
 		font-family=basefont
 		font-size=13
@@ -1025,7 +1025,7 @@ styles {
 	"RichText url" {
 		font-size=13
 		textcolor  = "blue"
-		selectedtextcolor  = "white"
+		selectedtextcolor  = "darkestGrey"
 		font-style=underline
 	}
 	
@@ -1325,7 +1325,7 @@ styles {
 		font-size=14
 		font-family  = "Menlo" [$OSX]
       	font-size=16 [$OSX]
-		selectedtextcolor  = "trueWhite"
+		selectedtextcolor  = "darkestGrey"
 		selectedbgcolor  = "blue"
 	}
 	
@@ -1335,7 +1335,7 @@ styles {
 		font-family  = "Menlo" [$OSX]
       	font-size=14 [$OSX]
 	    textcolor  = "white"
-		selectedtextcolor  = "trueWhite"	
+		selectedtextcolor  = "darkestGrey"
 		selectedbgcolor  = "blue"
 	}
 	

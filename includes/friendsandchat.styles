@@ -28,14 +28,14 @@
 	    
 	    friends_chat_text {
 			textcolor="lightestGrey"
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			SelectedBgColor="blue"
 			font-size=14
 		}
 
 		friends_chat_text_self {
 			textcolor="white" //changed to white to fix ingame not hovering
-			selectedtextcolor="trueWhite" 	
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			font-size=14
 		}
@@ -44,7 +44,7 @@
 	
 		friends_chat_history {
 			textcolor="ChatDialog.HistoryColor"
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			font-size=14
 		}
@@ -52,13 +52,13 @@
 		friends_chat_event {
 			textcolor="blue"
 			font-size=14
-			selectedtextcolor="trueWhite"
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 		}
 	
 		friends_chat_bright_event {
 			textcolor="white"
-			selectedtextcolor="trueWhite"
+			selectedtextcolor="darkestGrey"
 			font-size=14
 			font-weight=1000
 		}
@@ -67,13 +67,13 @@
 			textcolor="blue"
 	   		font-style=underline
 			font-size=14
-			selectedtextcolor="trueWhite"
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 		}
 		
 		friends_chat_name_ingame {
 			textcolor="Friends.InGameColor"
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			font-size=14
 	
@@ -81,20 +81,20 @@
 		
 		friends_chat_self {
 			textcolor="Friends.OnlineColor"
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			font-size=14
 		}
 		
 		friends_chat_name {
 			textcolor="Friends.OnlineColor"
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			font-size=14
 		}
 		
 		friends_chat_accountid {
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			textcolor="grey"
 			font-size=14
@@ -107,7 +107,7 @@
 			font-size=14
 			font-weight=400
 			font-style=none
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 		}
 		

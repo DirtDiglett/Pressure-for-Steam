@@ -473,7 +473,7 @@
       textcolor  = "Text"
       font-weight=400
       bgcolor  = "none"
-      selectedtextcolor  = "white"
+      selectedtextcolor  = "darkestGrey"
       selectedbgcolor  = "TextSelectedBG"
       shadowtextcolor  = "Text"  // this is the cursor color
 
