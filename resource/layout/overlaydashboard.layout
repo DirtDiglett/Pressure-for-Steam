@@ -163,6 +163,7 @@
 			height=100 
 			margin-top=10 
 			align=left 
+			margin-left=30
 		}
 		
 		region { 
@@ -181,6 +182,7 @@
 			height=100 
 			margin-top=10
 			align=right 
+			margin-right=30
 		}
 		
 		place { 
@@ -204,10 +206,11 @@
 		
 		place { 
 			control="SessionText,TwoWeeksText,ForeverText" 
-			dir=down 
+			dir=right 
 			region=left 
-			y=3 
-			start=gamename
+			y=35
+			x=0
+			spacing=10 
 		}
 		
 		region	{ 
