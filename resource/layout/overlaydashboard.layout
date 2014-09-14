@@ -114,18 +114,14 @@
 		
 		clocksuffix {
 			font-family=headerfont
-			font-size=24
-			padding-top=10
-			//textcolor=red
-			font-weight=400
-			font-style=normal;
+			font-size=42			
+			textcolor=white
 		}
 		
 		// The game's name
 		topbar {
 			font-family=headerfont
-			font-size=42
-			
+			font-size=42			
 			textcolor=white
 		}
 		
@@ -134,6 +130,10 @@
 		OverlayURLLabel {
 			image=graphics/overlay/close
 		}
+		
+			OverlayURLLabel:hover {
+				image=graphics/overlay/close_hover
+			}
 		
 		LabelOverlay {
 			font-size=14
@@ -188,6 +188,7 @@
 			region=left 
 			align=left 
 			dir=left
+			end-right=SessionText
 		}
 		
 		place { 
