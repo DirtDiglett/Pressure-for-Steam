@@ -418,11 +418,12 @@
 		// Items in dropdown menu that are UNREAD
 		inboxmenuitem_active {
 			textcolor=orange
+			
 			render_bg {}
 		}
 			
 			inboxmenuitem_active:hover {
-				textcolor  = orange
+				textcolor  = trueWhite
 					
 				font-style="none"
 				font-outerglow-color="0 102 128 255"
