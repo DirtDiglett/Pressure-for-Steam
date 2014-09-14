@@ -75,39 +75,35 @@
 		region 	{
 			name=bottom 
 			align=top-center
-			width=max
+			width=300
 			height=100 
 		}
 		
 		place { 
 			control="TaskbarPanel"  
-			width=max 
+			width=300 
 			align=top-center
 			height=100 
 		}
 		
-		//place { 
-		//	control="SteamLogo"  
-		//	x=0 
-		//	y=0 
-		//	width=0 
-		//	height=0 
-		//}
+		place { 
+			control="SteamLogo"  
+			x=0 
+			y=50 
+			width=12 
+			height=12 
+		}
+		
+		
 		
 		place { 
-			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" 
+			controls="WebBrowserButton,online_friends,SettingsButton" 
 			//x=225 
 			dir=right 
-			height=32 
 			spacing=0 
 			align=top-center 
 			margin-bottom=20 
-			y=35
-		}	
-		
-		place {
-			controls=WebBrowserButton,SettingsButton
-			margin-right=20
+			y=50
 		}
 
 		place { 
