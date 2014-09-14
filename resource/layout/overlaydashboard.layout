@@ -38,7 +38,7 @@
 			controlname="Label"
 			labeltext="%gamename%"
 			style=topbar
-			textalignment=east
+			textalignment=west
 		}
 		
 		PowerMeterDim {
@@ -94,14 +94,14 @@
 	styles {
 		hotkey {
 			font-size=14
-			font-style=uppercase
+			font-style=none
 			textcolor=red
 		}
 		
 		// Emptied.
 		topfade {
 			render_bg {
-				0="fill(x0,y0,x1,y0+100, black90)"
+				0="fill(x0,y0,x1,y0+100, black75)"
 			}
 		}
 		
@@ -109,72 +109,137 @@
 		bottomfade {}	
 		
 		overlaymain {
-			bgcolor = black75
+			bgcolor = black40
 		}	
 		
 		clocksuffix {
 			font-family=headerfont
-			font-size=24
-			padding-top=10
-			//textcolor=red
-			font-weight=400
-			font-style=normal;
-		}
-		
-		topbar {
-			font-family=headerfont
-			font-size=36
-			
+			font-size=42			
 			textcolor=white
 		}
-				
-		OverlayURLLabel {
-			font-size=15
-			textcolor=text
+		
+		// The game's name
+		topbar {
+			font-family=headerfont
+			font-size=42			
+			textcolor=white
 		}
 		
-			OverlayURLLabel:Hover {
-				font-size=15
-				textcolor=white
+		
+		// Close button		
+		OverlayURLLabel {
+			image=graphics/overlay/close
+		}
+		
+			OverlayURLLabel:hover {
+				image=graphics/overlay/close_hover
 			}
 		
 		LabelOverlay {
 			font-size=14
-			textcolor=text2
+			textcolor=orange
 		}
 		
 		timeStrings {
-			font-size=24
-			textcolor=white
-			font-family=headerfont
-			font-weight=700
+			font-size=13
+			textcolor=grey
+			font-family=basefont
 		}
 	}
 	
 	layout {
-		region { name=overlay width=1010 align=top-center margin-top=10 margin-bottom=10 }
+		region { 
+			name=overlay 
+			width=max 
+			align=top-center 
+			margin-top=10 
+			margin-bottom=10 
+		}
 	
-		region	 { name="left" region=overlay width=400 height=max margin-top=10 align=left }
-		region	 { name="mid" region=overlay width=400 height=max margin-top=2 align=top-center }
-		region	 { name="right" region=overlay width=400 height=max margin-top=10 align=right }
+		region { 
+			name="left" 
+			region=overlay 
+			width=800 
+			height=100 
+			margin-top=10 
+			align=left 
+			margin-left=30
+		}
 		
-		region	{ name="detailpanels" region=overlay align=bottom width=max height=360 margin-bottom=100 }
+		region { 
+			name="mid" 
+			region=overlay 
+			width=250 
+			height=100 
+			margin-top=10 
+			align=top-center 
+		}
+		
+		region { 
+			name="right" 
+			region=overlay 
+			width=230 
+			height=100 
+			margin-top=10
+			align=right 
+			margin-right=30
+		}
+		
+		place { 
+			controls="gamename" 
+			region=left 
+			align=left 
+			dir=left
+		}
+		
+		place { 
+			control="Clock,ClockSuffix" 
+			region=mid 
+			align=top-center
+		}
+		
+		place { 
+			control="CloseButton" 
+			region=right 
+			align=right 
+			margin-top=10
+		}
+		
+		place { 
+			control="SessionText,TwoWeeksText,ForeverText" 
+			dir=right 
+			region=left 
+			y=35
+			x=0
+			spacing=10 
+		}
+		
+		region	{ 
+			name="detailpanels" 
+			//region=overlay 
+			align=bottom 
+			width=max 
+			height=360 
+			margin-bottom=100 
+		}
+		
 		region 	{ name="topbar" region=overlay width="max" height=50 }
-		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
+		region	{ name="taskbar" region=overlay width=700 height=100 align=top-center }
 		region	{ name="above_taskbar" region=overlay align=bottom width=max height=110 margin-bottom=75 }
 		region 	{ name="powermeter" region=above_taskbar align=right width=200 }
 		
+		
+		
 		place { control="TopFadePanel" align=top width=max height=600 }
-		place { control="BottomFadePanel" align=bottom width=max height=130 }
+		place { control="BottomFadePanel" align=bottom width=max height=0 }
 				
-		place { control="Clock,ClockSuffix" region=topbar }
 		
-		place { control="CloseButton" region=mid align=top-center }
-		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=14 spacing=5 }
+		// Get rid of the "SHIFT + TAB Closes the overlay" string.
+		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=0 height=0 width=0 }
 		
-		place { control="SessionText,TwoWeeksText,ForeverText" dir=down region=overlay y=35 }
+
 		
-		place { controls="gamename" region=topbar align=right width=400 }
+
 		
 		place { control="PowerMeterDim" region=powermeter align=right }
 		
