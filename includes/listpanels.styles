@@ -87,22 +87,27 @@
     
     ListPanelColumnheader {
 		font-family=basefont
-		font-size=14
+		font-size=13
 		font-size=13 [$OSX]
 		font-weight=400
 		textcolor  = "white"
-		font-style  = "none"
+		font-style  = "regular"
 		bgcolor  = "none"
 		inset  = "1 3 0 0"
 
-		render_bg {
-			// fill
-			//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
-			//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
-			2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
-			3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
-		}   
-	}
+			render {
+				1 = "fill ( x0 + 1, y0 , x1 - 1, y0 + 1, greyHighlight )" //greyHighlight
+			}
+				
+			render_bg {
+				// fill
+				//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
+				//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
+				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
+				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
+			}   
+		}
+
     
     ListPanelColumnHeader:hover
     {
@@ -232,31 +237,36 @@
 
 	}
    
-    ListPanelDragger
+    	ListPanelDragger
 	{
 		bgcolor  = "none"
-		render 
-		{
-			//fill makes dragger visible
-			0  = "fill( x0, y0 + 2, x0 + 1, y1 - 3, red )" // left
-			1  = "fill (x0, y0, x0+1, y0+3, buttonborderdisabled )" //dot
-			3 = "fill ( x0-1, y1-2, x0 + 1, y1-1, darkGreyEnd )"
-		}
-    }
-
-    "Page ListPanelDragger"
-	{
-		bgcolor  = "none"
-		render 
-		{
+			render 
+			{
 			//fill makes dragger visible
 
 			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-1, grey, lightGreyEnd )"
-			2="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkGreyEnd )" // left
+			2="fill( x0-1, y0, x1, y0+1, greyHighlight )"
+			3="fill( x0, y0, x0 + 1, y1, darkGreyEnd )" // left
+			4="fill( x0-1, y1-1, x0, y1, darkGreyEnd )"
 			
-			3="fill ( x0-1, y1-1, x0 + 1, y1, darkGreyEnd )"
-		}
-    }
+			}
+    	}
+	
+
+	    	"Page ListPanelDragger"
+		{
+			bgcolor  = "none"
+			render 
+			{
+			//fill makes dragger visible
+
+			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-1, grey, lightGreyEnd )"
+			2="fill( x0-1, y0, x1, y0+1, greyHighlight )"
+			3="fill( x0, y0, x0 + 1, y1, darkGreyEnd )" // left
+			4="fill( x0-1, y1-1, x0, y1, darkGreyEnd )"
+			
+			}
+    		}
     
     ListPanelInterior
     {     
