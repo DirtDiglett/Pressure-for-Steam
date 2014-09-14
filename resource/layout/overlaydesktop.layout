@@ -52,7 +52,7 @@
 			region=overlay 
 			width=400 
 			height=100 
-			align=top-center 
+			align=top 
 		}
 
 		place { 

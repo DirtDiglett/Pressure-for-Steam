@@ -1,0 +1,129 @@
+"resource/layout/overlaytaskbar.layout" {
+	controls {
+		TaskbarPanel {
+			controlname="EditablePanel"
+		}
+		
+		SettingsButton {
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_Settings"
+			style=taskbar
+		}
+		
+		WebBrowserButton {
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_WebBrowser"
+			style=taskbar
+		}
+
+		SteamLogo { 
+			controlname="ImagePanel" 
+			zpos=1 
+			image="graphics/overlay/webbrowser"
+			scaleimage=1
+		}
+		
+		view_friends {
+			ControlName=URLLabel
+			labelText="#Steam_ViewFriends"
+			command="OpenFriendsDialog"
+			
+			style="view_friends"
+			textAlignment=east
+		}
+		
+		online_friends {
+			ControlName=Label
+			labelText="#Steam_OnlineFriends"
+			style="online_friends"
+			textAlignment=east
+		}	
+	}
+	
+	styles {
+		taskbar {
+			font-size=13
+			font-family=basefont
+			font-style=none
+			textcolor=blue
+		}
+		
+			taskbar:hover {
+				textcolor=lightblue
+			}
+		
+		taskbar:hover {
+			textcolor=Text
+		}
+		
+		view_friends {
+			textcolor="none"
+			bgcolor="none"
+		}
+		
+			view_friends:Hover {
+				 textcolor="none"
+			}
+
+		online_friends {
+			textcolor=none
+			image=graphics/overlay/settings
+		}		
+	}
+	
+	layout {
+		region 	{
+			name=bottom 
+			align=top-center
+			width=max
+			height=100 
+		}
+		
+		place { 
+			control="TaskbarPanel"  
+			width=max 
+			align=top-center
+			height=100 
+		}
+		
+		place { 
+			control="SteamLogo"  
+			x=0 
+			y=50 
+			width=12 
+			height=12 
+		}
+		
+		
+		
+		place { 
+			controls="WebBrowserButton,online_friends,SettingsButton" 
+			//x=225 
+			dir=right 
+			spacing=0 
+			align=top-center 
+			margin-bottom=20 
+			y=50
+		}
+
+		place { 
+			control="FriendPanel,view_friends" 
+			height=0
+			width=0 
+			align=left
+			y=0
+			x=0
+		}
+		
+		place { control="view_friends" height=12 y=12 align=right dir=right margin-right=60 }
+		
+		//place { 
+		//	control="online_friends" 
+		//	height=12 
+		//	y=26 
+		//	align=right 
+		//	dir=right 
+		//	margin-right=60 
+		//}
+	}	
+}

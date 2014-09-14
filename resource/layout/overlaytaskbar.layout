@@ -3,27 +3,34 @@
 		TaskbarPanel {
 			controlname="EditablePanel"
 		}
-		
 		SettingsButton {
 			controlname="URLLabel"
 			labeltext="#Overlay_Taskbar_Settings"
 			style=taskbar
 		}
-		
-		WebBrowserButton {
+		WebBrowserButton
+		{
 			controlname="URLLabel"
 			labeltext="#Overlay_Taskbar_WebBrowser"
 			style=taskbar
 		}
-
-		SteamLogo { 
-			controlname="ImagePanel" 
-			zpos=1 
-			image="graphics/overlay/webbrowser"
-			scaleimage=1
+		MusicPlayerButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_Music"
+			style=taskbar
 		}
 		
-		view_friends {
+		SteamLogo	
+		{ 
+			controlname="ImagePanel" 
+			zpos=1 
+			image="resource/steam_logo_big"
+			scaleimage=0
+		}
+		
+		view_friends
+		{
 			ControlName=URLLabel
 			labelText="#Steam_ViewFriends"
 			command="OpenFriendsDialog"
@@ -31,8 +38,8 @@
 			style="view_friends"
 			textAlignment=east
 		}
-		
-		online_friends {
+		online_friends
+		{
 			ControlName=Label
 			labelText="#Steam_OnlineFriends"
 			style="online_friends"
@@ -44,86 +51,56 @@
 		taskbar {
 			font-size=13
 			font-family=basefont
-			font-style=none
+			font-style=regular
 			textcolor=blue
 		}
 		
 			taskbar:hover {
-				textcolor=lightblue
+				textcolor=lightestBlue
 			}
-		
-		taskbar:hover {
-			textcolor=Text
-		}
 		
 		view_friends {
-			textcolor="none"
+			textcolor="Text"
 			bgcolor="none"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=regular
 		}
-		
-			view_friends:Hover {
-				 textcolor="none"
-			}
+		view_friends:Hover
+		{
+			 textcolor="textHover"
+		}
 
 		online_friends {
-			textcolor=none
+			textcolor="none"
+			bgcolor="none"
 			image=graphics/overlay/settings
 		}		
 	}
 	
 	layout {
+		
+		place { control="TaskbarPanel" width=700 height=100 align=top-center }
+		place { control="SteamLogo"  x=225 margin-top=50 width=16 height=16 }
+		
 		region 	{
-			name=bottom 
+			name=toparea 
 			align=top-center
-			width=max
+			width=400
 			height=100 
 		}
 		
-		place { 
-			control="TaskbarPanel"  
-			width=max 
-			align=top-center
-			height=100 
-		}
-		
-		place { 
-			control="SteamLogo"  
-			x=0 
-			y=50 
-			width=12 
-			height=12 
-		}
-		
-		
-		
-		place { 
-			controls="WebBrowserButton,online_friends,SettingsButton" 
-			//x=225 
-			dir=right 
-			spacing=0 
-			align=top-center 
-			margin-bottom=20 
-			y=50
-		}
+		place { controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" region=toparea x=0 dir=right spacing=3 align=top-center margin-top=50}	
 
-		place { 
-			control="FriendPanel,view_friends" 
-			height=0
-			width=0 
-			align=left
-			y=0
-			x=0
-		}
+		//place { controls="" region=toparea x=0 dir=right spacing=3 align=left margin-top=50}	
 		
-		place { control="view_friends" height=12 y=12 align=right dir=right margin-right=60 }
-		
-		//place { 
-		//	control="online_friends" 
-		//	height=12 
-		//	y=26 
-		//	align=right 
-		//	dir=right 
-		//	margin-right=60 
-		//}
+		place { controls="MusicPlayerButton,ScreenshotsButton" x=0 dir=right spacing=3 align=right margin-top=50}
+
+
+		//place { control="FriendPanel" height=48 width=48 align=right margin-right=6 margin-top=4 }
+		place { control="view_friends" height=0 y=0 align=right dir=right margin-right=60 }
+		//place { control="online_friends" height=12 y=26 align=right dir=right margin-right=60 }
+		place { control="FriendPanel" height=0 width=0 y=0 x=0}
 	}	
 }
