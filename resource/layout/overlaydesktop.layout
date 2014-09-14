@@ -24,7 +24,8 @@
 	
 	colors {}
 	
-	styles {		
+	styles {	
+			
 		sidemenu {
 			font-size=15
 			textcolor=orange
@@ -47,7 +48,16 @@
 		region { name="detailpanels2" region=overlay align=bottom width=max height=210 margin-bottom=100 }
 		region { name="taskbar" region=overlay width="max" height=75 align=bottom }
 
-		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" y=50 align=right region=overlay dir=right spacing=10 }
+		place { 
+			controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" 
+			y=0 
+			align=right 
+			region=overlay 
+			dir=right 
+			spacing=10 
+			width=0 
+			height=0
+		}
 		
 		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
 		place { controls="ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=detailpanels2 width=330 height=240 spacing=10 }

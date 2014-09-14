@@ -150,7 +150,7 @@
 	layout {
 		region { 
 			name=overlay 
-			width=1280 
+			width=max 
 			align=top-center 
 			margin-top=10 
 			margin-bottom=10 
