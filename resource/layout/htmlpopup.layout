@@ -422,13 +422,7 @@
 			textcolor="Red"
 		}
 
-		CHTMLPopup
-		{
-			render_bg
-			{
-				0="gradient( x0, y0+20, x1, y0+70, grey, lightgreyend )"
-			}
-		}
+
 	}
 	
 	layout
@@ -454,7 +448,7 @@
 		place { 
 			control="BackButton,ForwardButton" 
 			x=7 
-			y=35 
+			y=36 
 			width=28 
 			height=25 
 			spacing=-1 
