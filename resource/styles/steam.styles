@@ -310,7 +310,7 @@ styles {
 					7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 		      	
 		      	
-		      	8="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		      	//8="gradient(x0,y0+25, x1, y0+31, black65, none)"
 		      	
 		      	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		      	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
@@ -342,7 +342,7 @@ styles {
 					7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 		      	
 		      	
-		      	8="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		      	//8="gradient(x0,y0+25, x1, y0+31, black65, none)"
 		      	
 		      	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		      	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
