@@ -19,7 +19,7 @@
 		SteamLogo { 
 			controlname="ImagePanel" 
 			zpos=1 
-			image="resource/steam_logo_big"
+			image="graphics/overlay/webbrowser"
 			scaleimage=1
 		}
 		
@@ -42,12 +42,15 @@
 	
 	styles {
 		taskbar {
-			font-size=16
-			font-weight=700
+			font-size=13
 			font-family=basefont
-			font-style=uppercase
-			textcolor=Label
+			font-style=none
+			textcolor=blue
 		}
+		
+			taskbar:hover {
+				textcolor=lightblue
+			}
 		
 		taskbar:hover {
 			textcolor=Text
@@ -67,11 +70,7 @@
 		}
 
 		online_friends {
-			textcolor="label2"
-			bgcolor="none"
-			font-family=basefont
-			font-size=14
-			font-style=regular
+			image=graphics/overlay/settings
 		}		
 	}
 	
@@ -89,16 +88,16 @@
 			height=100 
 		}
 		
-		place { 
-			control="SteamLogo"  
-			x=0 
-			y=0 
-			width=0 
-			height=0 
-		}
+		//place { 
+		//	control="SteamLogo"  
+		//	x=0 
+		//	y=0 
+		//	width=0 
+		//	height=0 
+		//}
 		
 		place { 
-			controls="WebBrowserButton,SettingsButton,ScreenshotsButton" 
+			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" 
 			x=225 
 			dir=right 
 			height=32 
@@ -107,8 +106,24 @@
 			margin-bottom=20 
 		}	
 
-		place { control="FriendPanel" height=48 width=48 align=right margin-right=6 margin-top=4 }
+		place { 
+			control="FriendPanel,view_friends" 
+			height=0
+			width=0 
+			align=left
+			y=-99
+			x=-99
+		}
+		
 		place { control="view_friends" height=12 y=12 align=right dir=right margin-right=60 }
-		place { control="online_friends" height=12 y=26 align=right dir=right margin-right=60 }
+		
+		//place { 
+		//	control="online_friends" 
+		//	height=12 
+		//	y=26 
+		//	align=right 
+		//	dir=right 
+		//	margin-right=60 
+		//}
 	}	
 }
