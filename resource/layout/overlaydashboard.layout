@@ -121,6 +121,7 @@
 			font-style=normal;
 		}
 		
+		// The game's name
 		topbar {
 			font-family=headerfont
 			font-size=36
@@ -144,9 +145,9 @@
 		}
 		
 		timeStrings {
-			font-size=24
-			textcolor=white
-			font-family=headerfont
+			font-size=13
+			textcolor=lightestGrey
+			font-family=basefont
 			font-weight=700
 		}
 	}
@@ -164,7 +165,7 @@
 			name="left" 
 			region=overlay 
 			width=800 
-			height=max 
+			height=100 
 			margin-top=10 
 			align=left 
 		}
@@ -182,7 +183,7 @@
 			name="right" 
 			region=overlay 
 			width=400 
-			height=max 
+			height=100 
 			margin-top=10
 			align=right 
 		}
@@ -201,10 +202,31 @@
 		region	{ name="above_taskbar" region=overlay align=bottom width=max height=110 margin-bottom=75 }
 		region 	{ name="powermeter" region=above_taskbar align=right width=200 }
 		
+		region {
+			name="nameregion"
+			region="left"
+			margin-left=20
+			margin-top=20
+			width=max
+			height=45
+		}
+		
+		region {
+			name="clockregion"
+			region="mid"
+			height=30
+			width=max
+			align=top-center
+			margin-top=30
+		}
+		
 		place { control="TopFadePanel" align=top width=max height=600 }
 		place { control="BottomFadePanel" align=bottom width=max height=130 }
 				
-		place { control="Clock,ClockSuffix" region=topbar }
+		place { 
+			control="Clock,ClockSuffix" 
+			region=clockregion 
+		}
 		
 		place { 
 			control="CloseButton" 
@@ -214,9 +236,19 @@
 		
 		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=14 spacing=5 }
 		
-		place { control="SessionText,TwoWeeksText,ForeverText" dir=down region=overlay y=35 }
+		place { 
+			control="SessionText,TwoWeeksText,ForeverText" 
+			dir=down 
+			region=nameregion 
+			y=3 
+		}
 		
-		place { controls="gamename" region=topbar align=right width=400 }
+		place { 
+			controls="gamename" 
+			region=nameregion 
+			align=left 
+			width=700 
+		}
 		
 		place { control="PowerMeterDim" region=powermeter align=right }
 		
