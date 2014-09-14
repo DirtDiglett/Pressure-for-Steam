@@ -109,7 +109,7 @@
 		bottomfade {}	
 		
 		overlaymain {
-			bgcolor = black75
+			bgcolor = black40
 		}	
 		
 		clocksuffix {
@@ -188,7 +188,6 @@
 			region=left 
 			align=left 
 			dir=left
-			end-right=SessionText
 		}
 		
 		place { 
@@ -208,6 +207,7 @@
 			dir=down 
 			region=left 
 			y=3 
+			start=gamename
 		}
 		
 		region	{ 
