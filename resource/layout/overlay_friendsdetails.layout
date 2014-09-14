@@ -29,11 +29,29 @@
 	colors {}	
 	
 	styles {
-	
+		
+		// Used for the friend's Icon
+		label {
+			textcolor=none
+			image=graphics/overlay/friends
+			
+			inset="15 7 0 0"
+		}
+		
+		// Used for the Players Icon
+		detailsboxtitle {
+			textcolor=none
+			image=graphics/overlay/players
+			inset="15 8 0 0"
+		}
+		
 		button {
 			textcolor=blue
 			font-size=13
 			font-style=regular
+			
+			padding=0
+			padding-right=10
 			
 			render {}
 			render_bg {}
@@ -48,9 +66,7 @@
 		
 		FriendsGrid {
 			// Nerf the outline, etc that the main UI WrapPanel defines.	
-			render_bg 
-			{
-			}
+			render_bg {}
 		}	
 		
 		highlight {
@@ -59,15 +75,19 @@
 	}
 	
 	layout {
-		region { name=box margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=max }
-		region { name=friendspanels margin-top=75 margin-bottom=50 }
+		region { name=box width=0 height=0 }
+		region { name=friendspanels height=0 width=0 }
 		
-		place { control="TitleText" region=box }
-		
-		place { controls=TextThisManyFriends region=box y=40 }
+		//place { control="TitleText" region=box width=0 height=0 }
 	
-		place { controls=grid region=friendspanels width=max height=max margin-left=7 }
+		place { controls=grid region=friendspanels width=0 height=0 }
 		
-		place { controls=AllFriendsButton,ViewPlayersButton spacing=10 align=top-center margin-bottom=4  }
+		place { 
+			controls=TextThisManyFriends,AllFriendsButton,TitleText,ViewPlayersButton 
+			spacing=-5 
+			align=left 
+			margin-top=55 
+			margin-left=-16//-7
+		}
 	}
 }

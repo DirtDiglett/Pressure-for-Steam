@@ -66,7 +66,18 @@
 			height=0
 		}
 		
-		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
+		place {
+			controls="FriendsDetailPanel"
+			width=330
+			height=100
+			spacing=10
+			
+			region=overlay
+			align=left
+			margin-left=30
+		}
+		
+		place { controls="NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
 		place { controls="ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=detailpanels2 width=330 height=240 spacing=10 }
 	}
 	
