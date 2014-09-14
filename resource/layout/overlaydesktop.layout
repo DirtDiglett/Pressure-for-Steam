@@ -1,10 +1,6 @@
-
-"resource/layout/overlaydesktop.layout"
-{
-	controls
-	{
-		BaseDesktopPanel
-		{ 
+"resource/layout/overlaydesktop.layout" {
+	controls {
+		BaseDesktopPanel { 
 			controlname="EditablePanel"
 		}		
 		
@@ -26,36 +22,30 @@
 		CommunityDiscussionsDetailPanel { controlname="COverlay_Details_CommunityDiscussions_Panel" style="detailsbox" }
 	}
 	
-	colors
-	{
-	}
+	colors {}
 	
-	styles
-	{		
-		sidemenu
-		{
+	styles {		
+		sidemenu {
 			font-size=15
-			textcolor=texthover
+			textcolor=orange
 		}
 		
-		sidemenu:hover
-		{
+		sidemenu:hover {
 			font-size=15
-			textcolor=text
+			textcolor=green
 		}
 	}
 	
-	layout
-	{
+	layout {
 		region { name=overlay width=1010 align=top-center margin-top=10 margin-bottom=10 }
 	
-		region	 { name="left" region=overlay width=400 height=max margin-top=10 align=left }
-		region	 { name="mid" region=overlay width=400 height=max margin-top=2 align=top-center }
-		region	 { name="right" region=overlay width=400 height=max margin-top=10 align=right }
+		region { name="left" region=overlay width=400 height=max margin-top=10 align=left }
+		region { name="mid" region=overlay width=400 height=max margin-top=2 align=top-center }
+		region { name="right" region=overlay width=400 height=max margin-top=10 align=right }
 		
-		region	{ name="detailpanels" region=overlay align=bottom width=max height=466 margin-bottom=206 }
-		region	{ name="detailpanels2" region=overlay align=bottom width=max height=210 margin-bottom=100 }
-		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
+		region { name="detailpanels" region=overlay align=bottom width=max height=466 margin-bottom=206 }
+		region { name="detailpanels2" region=overlay align=bottom width=max height=210 margin-bottom=100 }
+		region { name="taskbar" region=overlay width="max" height=75 align=bottom }
 
 		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" y=50 align=right region=overlay dir=right spacing=10 }
 		
