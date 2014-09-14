@@ -187,7 +187,6 @@
 			controls="gamename" 
 			region=left 
 			align=left 
-			width=700 
 			dir=left
 		}
 		
@@ -205,7 +204,7 @@
 		place { 
 			control="SessionText,TwoWeeksText,ForeverText" 
 			dir=down 
-			region=nameregion 
+			region=left 
 			y=3 
 		}
 		
