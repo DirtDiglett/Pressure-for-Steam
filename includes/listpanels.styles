@@ -120,19 +120,25 @@
 		font-size=14
 		font-size=13 [$OSX]
 		font-weight=400
-		textcolor  = "red"
+		textcolor  = "white"
 		font-style  = "none"
 		bgcolor  = "none"
 		inset  = "0 0 0 0"
 		inset  = "0 1 0 0" [$OSX]
 		padding-top=5
 
-		render_bg {
-			// fill
-			0  = "fill (x0, y0 + 1, x1, y1, green )" // bg fill
-		}   
-	}
-
+			render {
+				1 = "fill ( x0 + 1, y0 , x1 - 1, y0 + 1, greyHighlight )" //greyHighlight
+			}
+				
+			render_bg {
+				// fill
+				//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
+				//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
+				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
+				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
+			}   
+		}
    
     "Csteamrootdialog ListPanelColumnHeader:hover" {
 		textcolor  = "TextHover"
@@ -160,19 +166,23 @@
 
  
 	ListPanelColumnSelectButton // the games list column chooser  
-    {
-        inset  = "0 0 0 0"
-        render {
-          // background fill
-          1  = "fill( x0, y0 + 1, x1 - 1, y1, orange )"  
-          
-          // lines around
-          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
-          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
-          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
-          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-        }   
-        render_bg {}
+    	{
+        	inset  = "0 0 0 0"
+       
+			render {
+				1 = "fill ( x0 + 1, y0 , x1 - 1, y0 + 1, greyHighlight )" //greyHighlight
+			}
+				
+			render_bg {
+				// fill
+				//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
+				//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
+				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
+				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
+
+         			5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+        		}   
+        		render_bg {}
 	}
     
     ListPanelColumnSelectButton:hover
@@ -252,7 +262,20 @@
 			}
     	}
 	
+	"Csteamrootdialog ListPanelDragger"
+	{
+		bgcolor  = "none"
+			render 
+			{
+			//fill makes dragger visible
 
+			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-3, grey, lightGreyEnd )"
+			2="fill( x0-1, y0, x1, y0+1, greyHighlight )"
+			3="fill( x0, y0, x0 + 1, y1-2, darkGreyEnd )" // left
+			4="fill( x0-1, y1-3, x0, y1-2, darkGreyEnd )"
+			
+			}
+    	}
 	    	"Page ListPanelDragger"
 		{
 			bgcolor  = "none"
