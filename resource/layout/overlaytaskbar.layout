@@ -75,13 +75,13 @@
 		region 	{
 			name=bottom 
 			align=top-center
-			width=300
+			width=max
 			height=100 
 		}
 		
 		place { 
 			control="TaskbarPanel"  
-			width=300 
+			width=max 
 			align=top-center
 			height=100 
 		}
