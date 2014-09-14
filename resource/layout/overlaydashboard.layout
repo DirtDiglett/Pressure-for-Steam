@@ -223,7 +223,7 @@
 		}
 		
 		region 	{ name="topbar" region=overlay width="max" height=50 }
-		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
+		region	{ name="taskbar" region=overlay width="max" height=100 align=top-center }
 		region	{ name="above_taskbar" region=overlay align=bottom width=max height=110 margin-bottom=75 }
 		region 	{ name="powermeter" region=above_taskbar align=right width=200 }
 		

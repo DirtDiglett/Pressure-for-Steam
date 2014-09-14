@@ -52,7 +52,7 @@
 			region=overlay 
 			width="max" 
 			height=100 
-			align=top 
+			align=top-center 
 		}
 
 		place { 
