@@ -743,7 +743,7 @@
 			control="ParentalLockButton" 
 			align=right 
 			margin-top=1 
-			margin-right=10 
+			margin-right=160 
 			height=26 
 		}
 		

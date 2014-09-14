@@ -447,14 +447,14 @@ styles {
 	        
 		render
 		{
-		1  = "fill( x0 + 1, y0, x1 - 1, y0+1, Grey )"
+		//1  = "fill( x0 + 1, y0, x1 - 1, y0+1, Grey )"
 		}
 
 		render_bg
 	        {     
 		   // background fill
-	        0  = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 -30, grey, lightGreyEnd )"
-	        1  = "fill( x0 + 1, y1 - 30, x1 - 1, y1 - 1, Lightgreyend )"
+	        0  = "fill( x0 + 1, y0 + 1, x1 - 1, y1, darkestGrey)"
+	        //1  = "fill( x0 + 1, y1 - 30, x1 - 1, y1 - 1, Lightgreyend )"
 	        //2  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
 	          
 	        // lines around
