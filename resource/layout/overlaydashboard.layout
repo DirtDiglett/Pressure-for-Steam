@@ -94,7 +94,7 @@
 	styles {
 		hotkey {
 			font-size=14
-			font-style=uppercase
+			font-style=none
 			textcolor=red
 		}
 		
@@ -124,38 +124,33 @@
 		// The game's name
 		topbar {
 			font-family=headerfont
-			font-size=36
+			font-size=42
 			
 			textcolor=white
 		}
-				
-		OverlayURLLabel {
-			font-size=15
-			textcolor=green
-		}
 		
-			OverlayURLLabel:Hover {
-				font-size=15
-				textcolor=white
-			}
+		
+		// Close button		
+		OverlayURLLabel {
+			image=graphics/overlay/close
+		}
 		
 		LabelOverlay {
 			font-size=14
-			textcolor=text2
+			textcolor=orange
 		}
 		
 		timeStrings {
 			font-size=13
-			textcolor=lightestGrey
+			textcolor=grey
 			font-family=basefont
-			font-weight=700
 		}
 	}
 	
 	layout {
 		region { 
 			name=overlay 
-			width=1010 
+			width=1280 
 			align=top-center 
 			margin-top=10 
 			margin-bottom=10 
@@ -174,33 +169,22 @@
 			name="mid" 
 			region=overlay 
 			width=250 
-			height=max 
-			margin-top=2 
+			height=100 
+			margin-top=10 
 			align=top-center 
 		}
 		
 		region { 
 			name="right" 
 			region=overlay 
-			width=400 
+			width=230 
 			height=100 
 			margin-top=10
 			align=right 
 		}
 		
-		region	{ 
-			name="detailpanels" 
-			region=overlay 
-			align=bottom 
-			width=max 
-			height=360 
-			margin-bottom=100 
-		}
 		
-		region 	{ name="topbar" region=overlay width="max" height=50 }
-		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
-		region	{ name="above_taskbar" region=overlay align=bottom width=max height=110 margin-bottom=75 }
-		region 	{ name="powermeter" region=above_taskbar align=right width=200 }
+		
 		
 		region {
 			name="nameregion"
@@ -220,9 +204,14 @@
 			margin-top=30
 		}
 		
-		place { control="TopFadePanel" align=top width=max height=600 }
-		place { control="BottomFadePanel" align=bottom width=max height=130 }
-				
+		
+		place { 
+			controls="gamename" 
+			region=nameregion 
+			align=left 
+			width=700 
+		}
+		
 		place { 
 			control="Clock,ClockSuffix" 
 			region=clockregion 
@@ -234,8 +223,6 @@
 			align=right 
 		}
 		
-		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=14 spacing=5 }
-		
 		place { 
 			control="SessionText,TwoWeeksText,ForeverText" 
 			dir=down 
@@ -243,12 +230,32 @@
 			y=3 
 		}
 		
-		place { 
-			controls="gamename" 
-			region=nameregion 
-			align=left 
-			width=700 
+		region	{ 
+			name="detailpanels" 
+			//region=overlay 
+			align=bottom 
+			width=max 
+			height=360 
+			margin-bottom=100 
 		}
+		
+		region 	{ name="topbar" region=overlay width="max" height=50 }
+		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
+		region	{ name="above_taskbar" region=overlay align=bottom width=max height=110 margin-bottom=75 }
+		region 	{ name="powermeter" region=above_taskbar align=right width=200 }
+		
+		
+		
+		place { control="TopFadePanel" align=top width=max height=600 }
+		place { control="BottomFadePanel" align=bottom width=max height=130 }
+				
+		
+		// Get rid of the "SHIFT + TAB Closes the overlay" string.
+		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=0 height=0 width=0 }
+		
+
+		
+
 		
 		place { control="PowerMeterDim" region=powermeter align=right }
 		
