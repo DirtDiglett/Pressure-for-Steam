@@ -207,14 +207,14 @@
 		
 		place { 
 			controls="gamename" 
-			region=nameregion 
+			region=left 
 			align=left 
 			width=700 
 		}
 		
 		place { 
 			control="Clock,ClockSuffix" 
-			region=clockregion 
+			region=mid 
 		}
 		
 		place { 
