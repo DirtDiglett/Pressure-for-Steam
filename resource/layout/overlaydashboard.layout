@@ -231,7 +231,7 @@
 		
 		
 		place { control="TopFadePanel" align=top width=max height=600 }
-		place { control="BottomFadePanel" align=bottom width=max height=130 }
+		place { control="BottomFadePanel" align=bottom width=max height=0 }
 				
 		
 		// Get rid of the "SHIFT + TAB Closes the overlay" string.
