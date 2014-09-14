@@ -38,7 +38,7 @@
 			controlname="Label"
 			labeltext="%gamename%"
 			style=topbar
-			textalignment=east
+			textalignment=west
 		}
 		
 		PowerMeterDim {
@@ -130,7 +130,7 @@
 				
 		OverlayURLLabel {
 			font-size=15
-			textcolor=text
+			textcolor=green
 		}
 		
 			OverlayURLLabel:Hover {
@@ -152,13 +152,50 @@
 	}
 	
 	layout {
-		region { name=overlay width=1010 align=top-center margin-top=10 margin-bottom=10 }
+		region { 
+			name=overlay 
+			width=1010 
+			align=top-center 
+			margin-top=10 
+			margin-bottom=10 
+		}
 	
-		region	 { name="left" region=overlay width=400 height=max margin-top=10 align=left }
-		region	 { name="mid" region=overlay width=400 height=max margin-top=2 align=top-center }
-		region	 { name="right" region=overlay width=400 height=max margin-top=10 align=right }
+		region { 
+			name="left" 
+			region=overlay 
+			width=800 
+			height=max 
+			margin-top=10 
+			align=left 
+		}
 		
-		region	{ name="detailpanels" region=overlay align=bottom width=max height=360 margin-bottom=100 }
+		region { 
+			name="mid" 
+			region=overlay 
+			width=250 
+			height=max 
+			margin-top=2 
+			align=top-center 
+		}
+		
+		region { 
+			name="right" 
+			region=overlay 
+			width=400 
+			height=max 
+			margin-top=10
+			align=right 
+		}
+		
+		region	{ 
+			name="detailpanels" 
+			region=overlay 
+			align=bottom 
+			width=max 
+			height=360 
+			margin-bottom=100 
+		}
+		
 		region 	{ name="topbar" region=overlay width="max" height=50 }
 		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
 		region	{ name="above_taskbar" region=overlay align=bottom width=max height=110 margin-bottom=75 }
@@ -169,7 +206,12 @@
 				
 		place { control="Clock,ClockSuffix" region=topbar }
 		
-		place { control="CloseButton" region=mid align=top-center }
+		place { 
+			control="CloseButton" 
+			region=right 
+			align=right 
+		}
+		
 		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=14 spacing=5 }
 		
 		place { control="SessionText,TwoWeeksText,ForeverText" dir=down region=overlay y=35 }
