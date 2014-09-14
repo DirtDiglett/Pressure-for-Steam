@@ -200,6 +200,7 @@
 			control="CloseButton" 
 			region=right 
 			align=right 
+			margin-top=10
 		}
 		
 		place { 
