@@ -30,6 +30,10 @@
 	
 	styles {
 		
+		detailsbox {
+			//bgcolor=red
+		}
+		
 		// Used for the friend's Icon
 		label {
 			textcolor=none
