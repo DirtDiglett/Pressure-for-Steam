@@ -87,9 +87,22 @@
 			
 			start=FriendsDetailPanel
 		}
+
+		place {
+			controls="ScreenshotsDetailPanel"
+			height=100
+			spacing=10
+			width=150
+			region=overlay
+			align=left
+			margin-left=0
+			
+			start=AchievementsDetailPanel
+		}		
+		
 		
 		place { controls="NewsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
-		place { controls="ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=detailpanels2 width=330 height=240 spacing=10 }
+		place { controls="CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=detailpanels2 width=330 height=240 spacing=10 }
 	}
 	
 }
