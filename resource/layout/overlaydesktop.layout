@@ -68,17 +68,65 @@
 		
 		place {
 			controls="FriendsDetailPanel"
-			width=330
 			height=100
 			spacing=10
-			
+			width=250
 			region=overlay
 			align=left
 			margin-left=30
 		}
+
+		place {
+			controls="AchievementsDetailPanel"
+			height=100
+			spacing=10
+			width=150
+			region=overlay
+			align=left
+			margin-left=0
+			
+			start=FriendsDetailPanel
+		}
+
+		place {
+			controls="ScreenshotsDetailPanel"
+			height=100
+			spacing=10
+			width=125
+			region=overlay
+			align=left
+			margin-left=0
+			
+			start=AchievementsDetailPanel
+		}		
+
+		place {
+			controls="CommunityHubDetailPanel"
+			height=100
+			spacing=10
+			width=175
+			region=overlay
+			align=left
+			margin-left=0
+			
+			start=ScreenshotsDetailPanel
+		}
+
+		place {
+			controls="GuidesDetailPanel"
+			height=100
+			spacing=10
+			width=150
+			region=overlay
+			align=left
+			margin-left=0
+			
+			start=CommunityHubDetailPanel
+		}		
 		
-		place { controls="NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
-		place { controls="ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=detailpanels2 width=330 height=240 spacing=10 }
+		//place { controls="NewsDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
+		
+		place { controls="CommunityDiscussionsDetailPanel,NewsDetailPanel" region=detailpanels2 width=0 height=0 }
 	}
 	
 }

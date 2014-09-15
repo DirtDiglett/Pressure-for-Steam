@@ -171,7 +171,7 @@
 			region=overlay 
 			width=250 
 			height=100 
-			margin-top=10 
+			margin-top=20 
 			align=top-center 
 		}
 		

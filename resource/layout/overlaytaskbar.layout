@@ -76,6 +76,7 @@
 			textcolor="none"
 			bgcolor="none"
 			image=graphics/overlay/settings
+			inset="0 1 0 0"
 		}		
 	}
 	
@@ -91,7 +92,18 @@
 			height=100 
 		}
 		
-		place { controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" region=toparea x=0 dir=right spacing=3 align=top-center margin-top=50}	
+		//place { controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" region=toparea x=0 dir=right spacing=3 align=top-center margin-top=50}		
+
+		place { 
+			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" 
+			region=toparea 
+			x=0 
+			dir=right 
+			spacing=3 
+			align=top-center
+			margin-top=5
+		}		
+
 
 		//place { controls="" region=toparea x=0 dir=right spacing=3 align=left margin-top=50}	
 		
