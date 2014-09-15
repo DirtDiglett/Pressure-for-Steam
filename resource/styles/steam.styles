@@ -310,7 +310,7 @@ styles {
 					7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 		      	
 		      	
-		      	8="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		      	8="gradient(x0,y0+25, x1, y0+27, black65, none)"
 		      	
 		      	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		      	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
@@ -342,7 +342,7 @@ styles {
 					7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 		      	
 		      	
-		      	8="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		      	8="gradient(x0,y0+25, x1, y0+27, black65, none)"
 		      	
 		      	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		      	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
@@ -447,14 +447,14 @@ styles {
 	        
 		render
 		{
-		1  = "fill( x0 + 1, y0, x1 - 1, y0+1, Grey )"
+		//1  = "fill( x0 + 1, y0, x1 - 1, y0+1, Grey )"
 		}
 
 		render_bg
 	        {     
 		   // background fill
-	        0  = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 -30, grey, lightGreyEnd )"
-	        1  = "fill( x0 + 1, y1 - 30, x1 - 1, y1 - 1, Lightgreyend )"
+	        0  = "fill( x0 + 1, y0 + 1, x1 - 1, y1, darkestGrey)"
+	        //1  = "fill( x0 + 1, y1 - 30, x1 - 1, y1 - 1, Lightgreyend )"
 	        //2  = "gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
 	          
 	        // lines around
@@ -905,7 +905,7 @@ styles {
 		ProgressBox {
 			bgcolor=darkestGrey
 			render {
-		1="gradient( x0+1,y0+26, x1, y1, grey, lightGreyEnd )" //Added for more consistancy		
+		1="fill( x0+1,y0+26, x1-1, y1, grey)" //Added for more consistancy		
 		2="image( x0+122, y0+39, x1, y0, graphics/login_logo )"
 			}
 		}

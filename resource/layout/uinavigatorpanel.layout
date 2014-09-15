@@ -2102,21 +2102,13 @@
 		}
 		
 		place { 
-			control="fullscreen, label_library_view, label_search_icon,EVCert" 
+			control="fullscreen, label_library_view, label_search_icon, EVCert, label_community_new" 
 			width=0 
 			height=0 
+			x=0
 			y=0
 		}
 		
-		place { 
-			control="label_community_new" 
-			start="label_community" 
-			y="-40" 
-			x="0" 
-			width=0 
-			height=0 
-		}
-
  	  	place {
  	  		control=emailreminderbar 
  	  		margin-top=81 

@@ -1,31 +1,39 @@
-"steam/cached/overlaywebbrowser.layout"
+"resource/layout/htmlpopup.layout"
 {
 	controls
 	{
-		WebBrowser { controlname="COverlayWebBrowser" frametitle="#Overlay_WebBrowserTitle" }
-		HTMLField	{ controlname="HTML" zpos=1 }
-		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage"  }
+		HTMLPopup { controlname="HTMLPopup" frametitle="" }
+		htmlpopupchild	{ controlname="HTML" zpos=1 }
+		URLBar		{ controlname="TextEntry" style="TextEntryURL" enabled=false }
 		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }
-		URLBar		{ controlname="TextEntry" style="TextEntryURL" }
-		StatusText { controlname="Label"  }
+		StatusText { controlname="Label" }
 		
-		HomeButton	{ controlname="Button" command="WebHome" labeltext="" style="HomeButton" }
+		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage"  }
 		StopButton	{ controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
 		ReloadButton	{ controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
 		ForwardButton	{ controlname="Button" command="WebForward" labeltext="" style="ForwardButtonSm" }
 		BackButton	{ controlname="Button" command="WebBack" style="BackButtonSm" }
-		
 		PageLoadThrobber { controlname="ImagePanel" image="graphics/rampDown_4" }
 	}
 	
 	styles
 	{
-		Label {
-			font-size=12
-			textcolor="White"
+		
+		Frame {
+			bgcolor=none
+			render_bg {
+				0="gradient( x0, y0+20, x1, y0+70, grey, lightgreyend )"
+			}
+			
 		}
-		
-		
+
+		HTML{
+			render
+			{
+			0="gradient( x0, y0, x1, y0+4, lightGreyEnd, None )"
+			}
+		}
+
 		BackButtonSm {
 			image=none
 			bgcolor="none"
@@ -382,129 +390,108 @@
 			
 			textcolor="textdisabled"
 		}
-		
+			
 		LabelEVCert
 		{
 			font-family=basefont
 			font-size=14
 			textcolor="darkclientbg"
+			font-weight=400
 			bgcolor="html.secureurl"
 			inset-left=4
 			inset-right=4
 			inset-top=-1		
 		}
-			
+		
 		URLStatusImage
 		{
 			bgcolor=none
 			inset="0 0 0 0"
 			render_bg={}
 			image="graphics/html_lock_disabled"
- 			scaling=panel
- 		}
+		}
 
 		URLBarSecure
 		{
-		textcolor="Black"
-		font-size=14
+			textcolor="Black"
+			font-size=14
 		}
 
 		URLBarBrokenSecure
 		{
-		textcolor="Red"
+			textcolor="Red"
 		}
-	
 
-		COverlayWebBrowser
-		{
-			bgcolor=grey
-			render_bg
-			{
-				0="fill( x0, y0, x1, y0+5, lightGreyEnd )"
-				1="fill( x0, y0+5, x1, y0+6, darkGreyEnd )"
-				2="fill( x0, y0+6, x1, y0+7, greyHighlight )"
-				3="gradient( x0, y0+7, x1, y0+47, grey, lightGreyEnd )"
-				4="fill( x0, y0+47, x1, y0+48, darkGreyEnd )"
-				5="fill( x0, y1-21, x1, y1-20, grey )"
-				6="fill( x0, y1-20, x1, y1-19, greyHighlight )"
-				7="gradient( x0, y1-19, x1, y1, grey, lightGreyEnd )"
-				8="fill( x0, y1-1, x0+1, y1, darkGreyEnd )"
-				9="fill( x1-1, y1-1, x1, y1, darkGreyEnd )"
-			}
-		}
-		HTML
-		{
-			render
-			{
-			0="gradient( x0, y0, x1, y0+4, lightGreyEnd, None )"	
-			1="gradient( x0, y1-4, x1, y1, None, Grey )"
-			}
-		}
+
 	}
-
+	
 	layout
 	{
-		///// HTML Browser /////
+		place [!$OSX]  { 
+			control="frame_minimize,frame_maximize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-8 
+		}
 
 		place { 
-			control="HTMLField"   	
+			control="htmlpopupchild"  	
 			width=max 
 			height=max 
-			margin-top=48 
+			margin-top=70 
 			margin-left=1 
-			margin-right=1
-			margin-bottom=21
+			margin-right=1 
+			margin-bottom=1 
 		}
 
-		///// The Text down the bottom /////
-
-		place { 
-			control="StatusText"
-			align=bottom 
-			height=24
-			margin-left=8 
-			margin-bottom=-1 
-		}
-		
-		///// Web Controls /////
-
-		place { 
-			control="URLStatusImage" 
-			align=right
-			margin-top=16 
-			margin-right=14 
-			width=20 
-			height=20 
-		}	
-		
 		place { 
 			control="BackButton,ForwardButton" 
 			x=7 
-			y=14 
+			y=36 
 			width=28 
 			height=25 
 			spacing=-1 
 		}
-		
+
 		place { 
-			control="ReloadButton,StopButton,HomeButton" 
+			control="ReloadButton,StopButton" 
 			x=8
 			width=28 
 			height=25 
 			spacing=0 
 			start="ForwardButton" 
 		}
-
+		
 		place { 
 			control="URLBar" 
 			height=25 
 			width=max 
-			start="HomeButton" 
-			margin-right=9 }
-		
+			start="StopButton" 
+			margin-right=7 
+		}
+
+		place { 
+			control="URLStatusImage" 
+			align=right
+			margin-top=35 
+			margin-right=14 
+			width=20 
+			height=20 
+		}
+				
+				
 		///// Null Zone /////
 
-		place { control="EVCert,PageLoadThrobber" x=0 y=0 width=0 height=0 }
+		place { 
+			control="EVCert,PageLoadThrobber,StatusText"
+			x=0 
+			y=0 
+			width=0 
+			height=0 
+		}
+
+
 	}
 	
 }

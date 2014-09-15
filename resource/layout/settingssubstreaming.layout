@@ -1,0 +1,142 @@
+"resource/layout/settingssubstreaming.layout"
+{
+	controls
+	{
+		"DescriptionLabel"
+		{
+			ControlName="Label"
+			fieldName="DescriptionLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_Description"
+		}
+		"RemoteClientList"
+		{
+			ControlName="ListPanel"
+			style="RemoteClientList"
+			tall=140
+		}
+		"EnableStreaming" { ControlName="CheckButton" fieldName="EnableStreaming" labelText="#Steam_Settings_Streaming_EnableStreaming" }
+
+		"HostDivider" { ControlName="divider" }
+		"HostLabel"
+		{
+			ControlName="Label"
+			fieldName="HostLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_HostLabel"
+		}
+		
+		"UnsupportedPlatform"
+		{
+			ControlName="Label"
+			fieldName="UnsupportedPlatform"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_UnsupportedPlatform"
+		}
+		
+		"AdvancedHostOptions" { ControlName="Button" fieldName="AdvancedHostOptions" command="AdvancedHostOptions" labelText="#Steam_Settings_Streaming_AdvancedHostOptions" }
+
+		"ClientDivider" { ControlName="divider" }
+		"ClientLabel"
+		{
+			ControlName="Label"
+			fieldName="ClientLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_ClientLabel"
+		}
+		
+		"QualityFast" { ControlName="RadioButton" fieldName="QualityFast" labelText="#Steam_Settings_Streaming_QualityFast" }
+		"QualityBalanced" { ControlName="RadioButton" fieldName="QualityBalanced" labelText="#Steam_Settings_Streaming_QualityBalanced" }
+		"QualityBeautiful" { ControlName="RadioButton" fieldName="QualityBeautiful" labelText="#Steam_Settings_Streaming_QualityBeautiful" }
+		
+		"AdvancedClientOptions" { ControlName="Button" fieldName="AdvancedClientOptions" command="AdvancedClientOptions" labelText="#Steam_Settings_Streaming_AdvancedClientOptions" }
+		
+		"SupportInformationLabel"
+		{
+			ControlName="URLLabel"
+			fieldName="SupportInformationLabel"
+			labelText="#Steam_Settings_Streaming_StreamingSupport"
+			URLText="https://support.steampowered.com/kb_article.php?ref=3629-RIAV-1617"
+		}
+	}
+	
+	styles
+	{
+	    	ListPanelColumnheader {
+			font-family=basefont
+			font-size=13
+			font-size=13 [$OSX]
+			font-weight=400
+			textcolor  = "white"
+			font-style="regular"
+			bgcolor  = "none"
+			inset  = "1 3 0 0"
+
+			render {
+				1 = "fill ( x0 + 1, y0 , x1 - 1, y0 + 1, greyHighlight )" //greyHighlight
+			}
+				
+			render_bg {
+				// fill
+				//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
+				//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
+				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
+				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
+			}   
+		}
+
+	    	"Page ListPanelDragger"
+		{
+			bgcolor  = "none"
+			render 
+			{
+			//fill makes dragger visible
+
+			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-1, grey, lightGreyEnd )"
+			2="fill( x0-1, y0, x1, y0+1, greyHighlight )"
+			3="fill( x0, y0, x0 + 1, y1, darkGreyEnd )" // left
+			4="fill( x0-1, y1-1, x0, y1, darkGreyEnd )"
+			
+			}
+    		}
+	}
+	
+	layout
+	{
+		region { name=bottom margin-top=240  width=275 height=max }
+
+		place
+		{
+			control="DescriptionLabel,RemoteClientList,EnableStreaming"
+			dir=down
+			align=top
+			width=max
+			margin-left=20
+			margin-right=20
+			margin-top=20
+			spacing=10
+		}
+		
+		place { region=bottom control=HostDivider width=max x=20 y=0 }
+		place { region=bottom control=HostLabel width=max x=20 y=10 }
+		place { region=bottom control=UnsupportedPlatform width=max x=20 y=35 }
+		place { region=bottom control=AdvancedHostOptions x=20 y=35 }
+		
+		place { region=bottom control=ClientDivider width=max x=20 y=70 }
+		place { region=bottom control=ClientLabel width=max x=20 y=80 }
+		place
+		{
+			control="QualityFast,QualityBalanced,QualityBeautiful"
+			region=bottom
+			dir=right
+			align=top
+			width=max
+			spacing=10
+			x=20
+			y=100
+		}
+		place { region=bottom control=AdvancedClientOptions x=20 y=140 }
+		
+		place { region=bottom control=SupportInformationLabel x=20 y=230 }
+	}
+}
