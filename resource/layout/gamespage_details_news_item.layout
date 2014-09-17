@@ -47,7 +47,7 @@
 
 		newsitem_body {
 			textcolor="white"
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 			render_bg {}
 			font-size=13
 			font-family=basefont
@@ -70,7 +70,7 @@
 		"newsitem_body bold" {
 			font-weight=1000
 			textcolor="white"
-			selectedtextcolor="trueWhite"	
+			selectedtextcolor="darkestGrey"
 		}
 		
 		more_link {

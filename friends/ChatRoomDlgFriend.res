@@ -105,7 +105,7 @@
 			textcolor="darkestGrey"
 			
 			selectedbgcolor="blue"
-			selectedtextcolor="trueWhite"
+			selectedtextcolor="darkestGrey"
 			
 			padding-top=14
 			padding-bottom=5
@@ -313,7 +313,7 @@
 		RichText {
 			textcolor="ChatDialog.HistoryColor"
 			selectedbgcolor="blue"
-			selectedtextcolor="trueWhite"
+			selectedtextcolor="darkestGrey"
 			bgcolor=darkestGrey
 			
 			inset="8 8 8 0"

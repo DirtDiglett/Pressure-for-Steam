@@ -360,7 +360,7 @@
 			font-size=14
 			textcolor="grey"
 			bgcolor="none"
-			selectedtextcolor="white"
+			selectedtextcolor="darkestGrey"
 			selectedbgcolor="blue"
 			shadowtextcolor="grey"	// this is the cursor color
 			padding-top=9
