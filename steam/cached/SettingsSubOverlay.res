@@ -237,8 +237,24 @@
 		"unicode"	"1"
 		"Default"		"0"
 	}
-	layout
-	{
+	
+	styles {
+		pagetab {
+			textcolor=red
+			bgcolor=green
+		}
+		
+		page {
+			bgcolor=orange
+		}
+		
+		label {
+			textcolor=red
+			font-family=headerfont
+		}
+	}
+	
+	layout {
 		//Steam Community
 		place { control=Label2,EnableOverlayCheck x=8 y=60 width=max spacing=8 dir=down }
 		
