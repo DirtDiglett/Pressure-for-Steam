@@ -316,7 +316,7 @@
 			
 			inset="6 0 0 0"
 			font-family=basefont
-			font-style="outerglow"
+			font-style="outerglow,regular"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
@@ -351,7 +351,7 @@
 	"CFriendsDialog SectionedListPanel" {
       bgcolor  = "none"
       font-family=basefont
-      font-style="none"
+      font-style="regular"
       
       render_bg {
        		// background fill to overwrite the normal listPanel background
@@ -366,10 +366,7 @@
 			
 			
 			font-family=basefont
-			font-style="outerglow"
-			font-outerglow-color="red"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
+			font-style="regular"
 						
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
@@ -392,7 +389,7 @@
 		
 		"CFriendsDialog SectionedListPanel" {
 			font-family=basefont
-			font-style="none"
+			font-style="regular"
 			//inset="0 30 0 0"
 		}
 		

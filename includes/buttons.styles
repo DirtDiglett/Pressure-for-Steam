@@ -16,7 +16,7 @@
 			font-size=13
 			textcolor="white"
 
-			textcolor="red" [$OSX] //Test for Mac to see if we can define in same styles option
+			//textcolor="red" [$OSX] //Test for Mac to see if we can define in same styles option
 			
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"

@@ -801,7 +801,7 @@ layout {
 			control="VoiceBar" 
 			y=58 
 			width=max 
-			height=54 
+			height=24 
 			dir=down 
 			end-right=VoiceChat 
 		}
