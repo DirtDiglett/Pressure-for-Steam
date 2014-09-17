@@ -1,7 +1,5 @@
-"resource/layout/uistatuspanel.layout"
-{
-	controls
-	{
+"resource/layout/uistatuspanel.layout" {
+	controls {
 		StatusDownloading { controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
 		StatusPaused{ controlname=URLLabel style="StatusLabelDim" labelText="" URLText="steam://open/downloads" }
 		StatusComplete { controlname=URLLabel style="StatusLabelDim" labelText="" URLText="steam://open/downloads" }
@@ -9,10 +7,8 @@
 	}
 	
 	
-	styles
-	{
-		SlimProgressBar
-		{
+	styles {
+		SlimProgressBar {
 			textcolor="lightestGreen"
 			
 			render	{
@@ -26,12 +22,11 @@
 				1="image( x0+114, y0-17, x0+130, y0-3, graphics/icons/downloads )" 
 
 				2="fill( x0-1, y1+1, x1+1, y1+2, greyHighlight )" //Bottom Highlight
-      			}
+      		}
     
 		}
 		
-		StatusLabel
-    		{
+		StatusLabel {
       			font-family=basefont
       			font-size=13
       			font-weight=400
@@ -44,7 +39,7 @@
 			render_bg {  
 				0="fill( x0-20, y0, x0+1, y1, none )"
 			} 
-    		}
+    	}
     			
 			StatusLabel:hover
     			{
@@ -84,8 +79,7 @@
 		
 	}
 	
-	layout
-	{
+	layout {
 	  
 		region { 
 			name="ProgressRegion" 
