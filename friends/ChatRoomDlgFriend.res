@@ -301,7 +301,7 @@
 				5="fill(x0-2,y0+1,x0-1,y1-12, darkestGrey)"
 				6="fill(x0-2,y0,x1,y0+1, darkestGrey)"
 				7="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
-				8="fill(x0-1,y0+2,x1,y0+3, lightestRed)"
+				//8="fill(x0-1,y0+2,x1,y0+3, lightestRed)"
 			}
 		}
 
@@ -320,8 +320,10 @@
 			
 			render {
 				// For some weird ready, this appears DARKER than the rest of darkestGrey
-				0="gradient(x0,y1-9,x1,y1, none, darkestGrey)"
-				1="fill(x0,y0,x1,y0+1, darkestGrey)"
+				//0="gradient(x0,y1-9,x1,y1, none, red)"
+				//1="fill(x0,y0,x1,y0+1, darkestGrey)"
+			
+				0="image_tiled(x0,y1-9,x1,y1, graphics/chatbottom)"
 			}
 			render_bg {}
 		}

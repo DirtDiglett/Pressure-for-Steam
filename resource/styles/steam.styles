@@ -903,9 +903,9 @@ styles {
     
     
 		ProgressBox {
-			bgcolor=darkestGrey
+			//bgcolor=lightGreyEnd
 			render {
-		1="gradient( x0+1,y0+26, x1, y1, grey, lightGreyEnd )" //Added for more consistancy		
+		1="fill( x0+1,y0+26, x1, y1, darkGreyEnd )" //Added for more consistancy		
 		2="image( x0+122, y0+39, x1, y0, graphics/login_logo )"
 			}
 		}
@@ -935,9 +935,8 @@ styles {
     
     
          	
-    ProgressBar
-    {
-		textcolor  = "green"
+    ProgressBar {
+		textcolor  = "trueWhite"
 		font-size=9
 		bgcolor  = "red"
 		render {
