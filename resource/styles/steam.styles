@@ -634,8 +634,7 @@ styles {
     }
     
     
-    MenuBar
-    {
+    MenuBar {
 		bgcolor=dialogbg
 		padding-right=1
 		padding-left=6
@@ -731,8 +730,6 @@ styles {
 		font-outerglow-filtersize=3
 		
 		render_bg {}
-
-		minimum-width=160
     }
    
     MenuItem:selected {
