@@ -27,26 +27,34 @@
 			}
 		}
 		
-	Button
-	  {     
+	Button {     
 	  	textcolor="none"
 			bgcolor="none"
 			
 			minimum-width=27
 			//minimum-height=24
-			render_bg 
-			{
-				0="image( x0+8, y0+8, x1, y1, graphics/new_tab)"
+			render_bg {
+				0="image( x0+8, y0+11, x1, y1, graphics/new_tab)"
 			}
 	  }
 	  
-	  Button:hover
-		{
-			render_bg 
-			{
-				0="image( x0+8, y0+8, x1, y1, graphics/new_tab)"
+	  Button:hover {
+			render_bg {
+				0="image( x0+8, y0+11, x1, y1, graphics/new_tab_hover)"
 			}
 		}
+
+	Button:active {
+			render_bg {
+				0="image( x0+8, y0+11, x1, y1, graphics/new_tab_active)"
+			}
+		}
+		
+	Button:selected {
+			render_bg {
+				0="image( x0+8, y0+11, x1, y1, graphics/new_tab_active)"
+			}
+		}	
 
 	  MenuButton
 	  {

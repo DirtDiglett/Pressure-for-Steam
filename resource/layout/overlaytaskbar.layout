@@ -83,7 +83,7 @@
 	layout {
 		
 		place { control="TaskbarPanel" width=700 height=100 align=top-center }
-		place { control="SteamLogo"  x=225 margin-top=50 width=16 height=16 }
+		place { control="SteamLogo"  x=225 margin-top=50 width=12 height=12 }
 		
 		region 	{
 			name=toparea 
@@ -93,6 +93,7 @@
 		}
 		
 		//place { controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" region=toparea x=0 dir=right spacing=3 align=top-center margin-top=50}		
+
 
 		place { 
 			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" 
