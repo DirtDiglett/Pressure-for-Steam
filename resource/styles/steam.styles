@@ -219,7 +219,6 @@ colors {
 
 styles {
 
-
 	downarrow {
 		image  = "graphics/icon_down_default"    
 	}

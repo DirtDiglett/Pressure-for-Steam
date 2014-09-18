@@ -2125,7 +2125,7 @@
 			control=DownloadsPage 		
 			width=max 
 			height=max 
-			margin-top=-5 
+			margin-top=-3 
 			margin-left=-1 
 			margin-right=0 
 			margin-bottom=0 
