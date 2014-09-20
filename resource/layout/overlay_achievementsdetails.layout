@@ -35,12 +35,12 @@
 		
 		detailsboxtitle {
 			font-size=13
-			textcolor=blue
+			textcolor=none
 			font-style=regular
 		}
 		
 		button {
-			textcolor=none
+			textcolor=blue
 			font-size=13
 			font-style=regular
 			
@@ -60,7 +60,7 @@
 		highlight {
 			textcolor=none
 			image=graphics/overlay/achievements
-			inset="0 1 0 0"
+			inset="10 11 0 0"
 		}
 		
 		progressbackground
@@ -99,15 +99,15 @@
 		}
 		
 		place { 
-			control=ProgressTextEarned,TitleText 
+			control=ProgressTextEarned,ViewAchievementsButton  
 			region=box 
 			dir=right
-			y=61
+			y=55
 			spacing=3
 		}
 		
 		place { 
-			controls=ViewAchievementsButton 
+			controls=TitleText
 			region=box 
 			y=55
 		}

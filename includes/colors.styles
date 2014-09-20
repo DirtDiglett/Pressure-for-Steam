@@ -16,6 +16,8 @@
 		lightestGreyHighlight="113 113 113 255"
 		greyHighlight="85 85 85 255"
 		
+		lighterGrey="70 70 70 255"
+		
 		grey="60 60 60 255"
 		lightGreyEnd="42 42 42 255"
 		darkGreyEnd="25 25 25 255"

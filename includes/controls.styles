@@ -466,152 +466,173 @@
 // TextEntry
 // ***********************************************
 
-   TextEntry
-    {
+   TextEntry {
       font-family=basefont
-      font-size=14
-      textcolor  = "Text"
-      font-weight=400
+      font-size=13
+      textcolor  = "darkestGrey"
       bgcolor  = "none"
       selectedtextcolor  = "white"
-      selectedbgcolor  = "TextSelectedBG"
-      shadowtextcolor  = "Text"  // this is the cursor color
+      selectedbgcolor  = "blue"
+      shadowtextcolor  = "darkestGrey"  // this is the cursor color
 
       inset-left=4
       inset-top=0
-      render
-      {
-        // lines around
-          1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
-        
-        // single pixel fills in the corners
-		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorder )"
-		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"
-		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorder )"
-		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"
-			9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
-			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
-			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
-			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
-			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
-			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
-			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
-			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
-      }     
+      
+      render_bg {
+      	0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+
+	  	// TOP
+	  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+	  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+	  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+	  	
+	  	// LEFT
+	  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+	  	
+	  	// RIGHT
+	  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+	  	
+	  	// BOTTOM
+      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
+      	
+      }
+         
     }
     
-	"Page TextEntry"
-    {
-      render
-      {
-        // lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderPage )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderPage )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderPage )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderPage )"  // right
-        
-        // single pixel fills in the corners
-		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderPage )"
-		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderPage )"
-		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderPage )"
-		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderPage )"
-			9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
-			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
-			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
-			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
-			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
-			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
-			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
-			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
-      }     
+	"Page TextEntry" {
+           font-family=basefont
+      font-size=13
+      textcolor  = "darkestGrey"
+      bgcolor  = "none"
+      selectedtextcolor  = "white"
+      selectedbgcolor  = "blue"
+      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+
+      inset-left=4
+      inset-top=0
+      
+      render_bg {
+      	0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+
+	  	// TOP
+	  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+	  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+	  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+	  	
+	  	// LEFT
+	  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+	  	
+	  	// RIGHT
+	  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+	  	
+	  	// BOTTOM
+      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
+      	
+      } 
     }
     
-    TextEntry:focus
-    {     
-		textcolor  = "TextHover"
-		bgcolor=none
-		render
-		{
-			// lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
-        
-			// single pixel fills in the corners
-	   	5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus )"
-	   	6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
-	   	7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus )"
-	   	8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
-	   		9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
-			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
-			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
-			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
-			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
-			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
-			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
-			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
-		}     
+    TextEntry:focus {     
+          font-family=basefont
+	      font-size=13
+	      textcolor  = "darkestGrey"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	
+	      inset-left=4
+	      inset-top=0
+	      
+	      render_bg {
+		      	0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+		
+			  	// TOP
+			  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+			  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+			  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+			  	
+			  	// LEFT
+			  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+			  	
+			  	// RIGHT
+			  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+			  	
+			  	// BOTTOM
+		      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+		      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+		      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"	
+	      }   
     }
        
-    "Page TextEntry:focus"
-    {     
-      textcolor  = "TextHover"
-      render
-      {
-        // lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
-        
-        // single pixel fills in the corners
-	   	5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus )"
-	   	6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
-	   	7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus )"
-	   	8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
-	   		9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
-			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
-			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
-			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
-			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
-			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
-			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
-			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
-
-      }     
+    "Page TextEntry:focus" {     
+         font-family=basefont
+	      font-size=13
+	      textcolor  = "darkestGrey"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	
+	      inset-left=4
+	      inset-top=0
+	      
+	      render_bg {
+		      	0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+		
+			  	// TOP
+			  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+			  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+			  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+			  	
+			  	// LEFT
+			  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+			  	
+			  	// RIGHT
+			  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+			  	
+			  	// BOTTOM
+		      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+		      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+		      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"	
+	      }              
     }
     
     
-    TextEntry:disabled
-    {     
-      textcolor  = "TextDisabled"
-      bgcolor  = "ButtonFaceDisabled"
-      render
-      {
-        // lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-        
-        // single pixel fills in the corners
-		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
-		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
-		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
-		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
-			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-      }     
+    TextEntry:disabled {     
+          font-family=basefont
+	      font-size=13
+	      textcolor  = "lightestGreyHighlight"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	
+	      inset-left=4
+	      inset-top=0
+	      
+	      render_bg {
+		      	0="fill(x0+2,y0+2,x1-2,y1-2, lighterGrey)"
+		
+			  	// TOP
+			  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/hover/topLeft)"
+			  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/hover/topMiddle)"
+			  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/hover/topRight)"
+			  	
+			  	// LEFT
+			  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/hover/leftMiddle)"
+			  	
+			  	// RIGHT
+			  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/hover/rightMiddle)"
+			  	
+			  	// BOTTOM
+		      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/hover/bottomLeft)"
+		      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/hover/bottomMiddle)"
+		      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/hover/bottomRight)"	
+	      } 
     }
     
 	// The 'empty' style is used for 'hint text' in text entry fields.
@@ -624,97 +645,95 @@
 		textcolor=LabelDisabled
 	}
 	
-    TextEntryLarge
-    {
-      font-family=basefont
-      font-size=24
-      textcolor  = "Text"
-      font-weight=400
-      bgcolor  = "none"
-      selectedtextcolor  = "TextEntrySelected"
-      selectedbgcolor  = "TextSelectedBG"
-      shadowtextcolor  = "Text"  // this is the cursor color
-
-      inset-left=4
-      inset-top=5
-      inset-bottom=5
-      render
-      {
-        // lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
-        
-        // single pixel fills in the corners
-		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorder )"
-		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"
-		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorder )"
-		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"
-			9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
-			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
-			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
-			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
-			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
-			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
-			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
-			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
-      }     
+    TextEntryLarge {
+         font-family=basefont
+	      font-size=24
+	      textcolor  = "darkestGrey"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	
+	      inset-left=4
+	      inset-top=0
+	      
+	      render_bg {
+		      	0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+		
+			  	// TOP
+			  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+			  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+			  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+			  	
+			  	// LEFT
+			  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+			  	
+			  	// RIGHT
+			  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+			  	
+			  	// BOTTOM
+		      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+		      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+		      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"	
+	      }       
     }
 
-    TextEntryLarge:focus
-    {     
-      textcolor  = "TextHover"
-      render
-      {
-        // lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
-        
-        // single pixel fills in the corners
-	   	5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus )"
-	   	6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
-	   	7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus )"
-	   	8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
-	   		9  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
-			10  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
-			11  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
-			12  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
-			13  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
-			14  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
-			15  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
-			16  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
-      }     
+    TextEntryLarge:focus {     
+		font-family=basefont
+	      font-size=24
+	      textcolor  = "darkestGrey"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	      
+	      render_bg {
+		      	0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+		
+			  	// TOP
+			  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+			  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+			  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+			  	
+			  	// LEFT
+			  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+			  	
+			  	// RIGHT
+			  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+			  	
+			  	// BOTTOM
+		      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+		      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+		      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"	
+	      }     
     }
     
-    TextEntryLarge:disabled
-    {     
-      textcolor  = "TextDisabled"
-      bgcolor  = "ButtonFaceDisabled"
-      render
-      {
-        // lines around
-		1  = "fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-		2  = "fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-		3  = "fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-		4  = "fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-        
-        // single pixel fills in the corners
-		5  = "fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
-		6  = "fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
-		7  = "fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
-		8  = "fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
-			11  = "fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-			12  = "fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-			13  = "fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-			14  = "fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-			15  = "fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-			16  = "fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-			17  = "fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-			18  = "fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-      }     
+    TextEntryLarge:disabled {     
+	      textcolor  = "lightestGreyHighlight"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	      
+	      render_bg {
+		      	0="fill(x0+2,y0+2,x1-2,y1-2, lighterGrey)"
+		
+			  	// TOP
+			  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/hover/topLeft)"
+			  	2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/hover/topMiddle)"
+			  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/hover/topRight)"
+			  	
+			  	// LEFT
+			  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/hover/leftMiddle)"
+			  	
+			  	// RIGHT
+			  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/hover/rightMiddle)"
+			  	
+			  	// BOTTOM
+		      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/hover/bottomLeft)"
+		      	7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/hover/bottomMiddle)"
+		      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/hover/bottomRight)"	
+	      }     
     }
     
     TextEntryURL
@@ -775,20 +794,17 @@
 	      image="graphics/chkUnselStd"
 	    }
 	  
-	    CheckButton:selected
-	    {
+	    CheckButton:selected {
 	      image="graphics/chkSelStd"    
 	    }
 	
-	    CheckButton:focus
-	    {
+	    CheckButton:focus {
 	      textcolor="Text"
 	      bgcolor=none
 	      image="graphics/chkUnselFocus"  
 	    }
 	
-	    CheckButton:selected:focus
-	    {
+	    CheckButton:selected:focus {
 	      textcolor="Text"
 	      render_bg {}
 	      bgcolor=none
