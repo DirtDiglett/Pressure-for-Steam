@@ -263,7 +263,7 @@
 			bgcolor  = "none" 
 	      	render {
 					//gradient to obscure content at top of scrolling region 
-					1  = "gradient( x0+1, y0+0, x1-1, y0 + 3, none, none  )"
+					1  = "gradient( x0+1, y0+0, x1-1, y0 + 3, red, blue  )"
 					
 					//gradient to obscure content at bottom of scrolling region 
 					//2 = "gradient( x0+1, y1 - 12, x1-1, y1-0, none, almostblack )"
@@ -323,6 +323,40 @@
 
 		// ________________________________________________________________	    
 	    
+		
+		
+		"Page ListPanelInterior:scrollbar" {
+			inset="3 1 -1 0"
+			bgcolor=none
+			selectedbgcolor="blue"
+			selectedtextcolor="red" //test
+			render {}
+			render_bg {}
+		}
+		
+		
+		"Csteamrootdialog ListPanelInterior:scrollbar" { 
+			inset="3 0 -1 0"
+			bgcolor=none
+			selectedbgcolor="red"
+			
+			render {}   
+			render_bg {}
+		}
+		
+		ListPanelInterior:scrollbar { 
+			bgcolor=none
+			inset="3 1 -1 0"
+			textcolor="text2"
+			selectedtextcolor="red" //test
+			selectedbgcolor="blue"
+			
+			render {}
+			
+			render_bg {}
+		} 
+		
+		
 		"ListPanel RichText" {
 			textcolor  = white
 			font-family=basefont

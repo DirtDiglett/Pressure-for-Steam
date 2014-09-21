@@ -818,7 +818,7 @@ styles {
 	}
       
     COverlaySettingsDialog {
-		bgcolor=darkestGrey
+		bgcolor=red
 		
 		render_bg {
 			0="fill( x0, y0, x1, y1, darkGreyEnd )"
