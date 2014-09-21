@@ -543,7 +543,7 @@
 	    }
 	    
 	    "Page ComboBox:focus:hover" {
-	      		textcolor="blue"
+	      		textcolor="trueWhite"
 				font-style="none"
 				
 				padding-left=3
