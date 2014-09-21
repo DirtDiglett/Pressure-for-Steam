@@ -3,9 +3,26 @@
 	}
 	
 	layout {
-		place { control="frame_minimize,frame_maximize,frame_close" align=right width=34 height=27 }
+		//Original
+		place [!$OSX]  { 
+			control="frame_minimize,frame_maximize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-8 
+		}
 		
 		region { name="right" align=right height=max width=192 margin=8 margin-top=0 }
-		place { control="OKButton,CancelButton" region=right align=bottom width=84 height=28 spacing=8 margin=0 }
+		place { 
+			control="OKButton,CancelButton" 
+			region=right 
+			align=bottom
+			margin-bottom=5
+			width=92 
+			height=25 
+			spacing=8 
+			margin=0 
+			margin-right=12
+		}
 	}
 }

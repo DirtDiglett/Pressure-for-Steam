@@ -80,8 +80,7 @@
 			controls="AchievementsDetailPanel"
 			height=100
 			spacing=10
-			width=200
-			region=overlay
+			width=200			region=overlay
 			align=left
 			margin-left=0
 			

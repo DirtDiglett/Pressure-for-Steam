@@ -60,7 +60,7 @@
 		highlight {
 			textcolor=none
 			image=graphics/overlay/achievements
-			inset="10 11 0 0"
+			inset="15 9 0 0"
 		}
 		
 		progressbackground
@@ -102,14 +102,14 @@
 			control=ProgressTextEarned,ViewAchievementsButton  
 			region=box 
 			dir=right
-			y=53
-			spacing=3
+			y=55
+			spacing=-7
 		}
 		
 		place { 
 			controls=TitleText
 			region=box 
-			y=0
+			y=55
 		}
 
 		place { 
