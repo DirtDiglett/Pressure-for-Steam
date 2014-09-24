@@ -2096,7 +2096,7 @@
 // NULL ZONE - Nullify certain controls.
 // ********************************************************************************************************
 		region { 
-			name="bigpicture" 
+			name="fullscreen" 
 			width=0 
 			height=0 
 		}
