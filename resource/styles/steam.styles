@@ -284,7 +284,7 @@ styles {
 	// Frames Titlebar when NOT in focus. (Doesn't seem to affect the main client)
     FrameTitle {
 		font-family=basefont
-		inset  = "5 2 0 0"
+		inset  = "2 -3 0 0"
 		inset  = "0 4 0 0" [$OSX]
 		padding-left  = "0"
 		padding-right  = "64"
@@ -320,12 +320,13 @@ styles {
 
 	    FrameTitle:framefocus {
 			font-family=basefont
+			inset="2 -3 0 0"
 			inset  = "0 4 0 0" [$OSX]
 			font-size=14
 			font-weight=400
 			bgcolor  = "none"
-			textcolor  = "texthover"
-			textcolor  = "texthover" [$OSX]
+			textcolor  = "white"
+			
 		    render_bg {
 		        0  = "gradient( x0, y0, x1, y0+24, grey, lightGreyEnd)"
 					
@@ -385,8 +386,7 @@ styles {
     // Used by the WebPanels (Store, Community, etc.)
     HTML { 
 		bgcolor  = "none"
-		render_bg {}
-       // inset  = "2 2 2 2" 
+		render_bg {} 
     }
     
     
