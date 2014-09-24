@@ -702,7 +702,7 @@
 // ********************************************************************************************************
 
 		place { 
-			control="add_game, account_URL, universe_label, account_balance_seperator, fullscreen" 
+			control="add_game, account_URL, universe_label, account_balance_seperator, fullscreen,New" 
 			x=0
 			y=-50 
 			region=bottom 
@@ -896,8 +896,8 @@
 			margin-right=0
 		}
 		
-		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
-		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
+	//	place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
+	//	place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
 	
 	
  		// the title bar is missing, so increase the size of the grip
