@@ -317,7 +317,7 @@
 		
 		// Body contents
 		place { 
-			control=welcomedetails,friendsdetails,achievementsdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
+			control=friendsdetails,achievementsdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
 			region=detailsbody
 			dir=down
 			width=max
@@ -326,6 +326,16 @@
 			margin-left=0
 			spacing=30
 			margin-bottom=10 
+		}
+		
+		// Hide the useless-as-balls "Get Info" bit.
+		
+		place {
+			control="welcomedetails"
+			y=0
+			x=0
+			height=0
+			width=0
 		}
 
 		
