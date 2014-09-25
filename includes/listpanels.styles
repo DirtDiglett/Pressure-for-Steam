@@ -91,10 +91,8 @@
 	
 			render_bg {
 				// fill
-				0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
-				1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, greyHighlight )"
-				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill
-				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
+				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}   
 		}
 	    
@@ -102,7 +100,8 @@
 			textcolor  = "white"
 			
 			render_bg {
-				0="fill(x0,y0,x1,y1, red)"
+				0="gradient(x0,y0,x1,y1, lighterGrey, grey)"
+				1="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 			}
 	    }
 	    
@@ -198,46 +197,14 @@
 	
 	
 		
-		"CGamesListPanel ListPanelColumnSelectButton" {
-	        inset  = "0 3 0 0"
-	        
-	        render {
-	          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-	        }   
-	        
-	        render_bg {
-	        	1  = "fill( x0 + 1, y0, x1 - 1, y1, green )"
-	        }
-		}
 		
-			"CGamesListPanel ListPanelColumnSelectButton:hover" {
-		        inset  = "0 3 0 0"
-		        render
-		        {
-		          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-		        }   
-		
-			}
-		
-			"CGamesListPanel ListPanelColumnSelectButton:selected" {
-		        inset  = "0 3 0 0"
-		        render
-		        {
-		          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-		        }   
-		
-			}
-
-
 		// ________________________________________________________________
 	   
 	    ListPanelDragger {
 			bgcolor  = "none"
 			render {
 				//fill makes dragger visible
-				0  = "fill( x0, y0 + 2, x0 + 1, y1 - 3, red )" // left
-				1  = "fill (x0, y0, x0+1, y0+3, buttonborderdisabled )" //dot
-				3 = "fill ( x0-1, y1-2, x0 + 1, y1-1, darkGreyEnd )"
+				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
 			}
 	    }
 	
@@ -246,33 +213,20 @@
 			
 			render {
 				//fill makes dragger visible
-	
-				1="gradient( x0-1 , y0 + 1, x1 - 1, y1-1, grey, lightGreyEnd )"
-				2="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkGreyEnd )" // left
-				
-				3="fill ( x0-1, y1-1, x0 + 1, y1, darkGreyEnd )"
+				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
 			}
 	    }
 	    
 	    
 	    ListPanelInterior {     
-			inset  = "3 1 0 0"
-			font-size=15
-			textcolor  = "text2"
+			inset  = "10 10 0 0"
+			font-size=13
+			textcolor  = "white"
 			selectedbgcolor= "blue"
 			bgcolor  = "none" 
-	      	render {
-					//gradient to obscure content at top of scrolling region 
-					1  = "gradient( x0+1, y0+0, x1-1, y0 + 3, red, blue  )"
-					
-					//gradient to obscure content at bottom of scrolling region 
-					//2 = "gradient( x0+1, y1 - 12, x1-1, y1-0, none, almostblack )"
-			}
-			
-			render_bg {
-				0="fill(x0,y0,x1,y1,green)"
-				1="fill(x0,y1-1,x1,y1, red)"
-			}
+	      	
+			render {}
+			render_bg {}
 	    } 
 	    
 	    
@@ -291,9 +245,11 @@
 		
 		"Page ListPanelInterior" {
 			inset  = "0 0 0 0"
-			font-size=15
+			font-size=13
 			bgcolor=none
-			selectedbgcolor= "blue"
+			
+			textcolor=green
+			selectedbgcolor= "trueWhite"
 			render_bg {}
 		}
 		
@@ -317,17 +273,114 @@
 	    } 
 	    
 		    ListPanelSectionHeader:hover {     
-		        textcolor=texthover
+		        textcolor=trueWhite
 		    } 
 	    
 
-		// ________________________________________________________________	    
+	// ________________________________________________________________	    
 	    
+	ListPanel {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "white"
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor  = "Blue"
+		bgcolor=darkestGrey
+	        
+		render {}
+
+		render_bg {    
+			0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+			// Lines around
+			0="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+			1="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+			2="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+			3="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+			
+			// Corner pixels
+			4="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+			5="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+			6="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+			7="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+			8="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+			9="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+			10="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+			11="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+			
+			// Bottom Pixel Highlight
+			12="fill(x0-1,y1,x0,y1+1, grey25)"
+			13="fill(x0,y1+1,x1,y1+2, grey50)"
+			14="fill(x1,y1,x1+1,y1+1, grey25)"
+			
+		}
+	}
+      
+    "Page ListPanel" {
 		
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "white"
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor  = "Blue"
+		bgcolor=darkestGrey
+	        
+		render {}
+
+		render_bg {    
+			0="fill(x0,y0,x1,y1, yellow)"
+			
+			// Lines around
+			0="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+			1="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+			2="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+			3="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+			
+			// Corner pixels
+			4="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+			5="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+			6="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+			7="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+			8="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+			9="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+			10="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+			11="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+			
+			// Bottom Pixel Highlight
+			12="fill(x0-1,y1,x0,y1+1, grey25)"
+			13="fill(x0,y1+1,x1,y1+2, grey50)"
+			14="fill(x1,y1,x1+1,y1+1, grey25)"
+			
+		}
+	}
+    
+    "CGamesListPanel" {
+      font-family=basefont
+	  bgcolor  = "darkestGrey"
+      font-size=13
+      font-weight=400
+      textcolor  = "white"
+      selectedtextcolor  = "trueWhite"
+      selectedbgcolor  = "blue" //blue
+      shadowtextcolor  = "grey"
+      inset  = "0 -3 0 0"
+      
+      padding-right=0
+      
+      render {
+      	0="fill( x0, y0-1, x1, y0, darkestgrey)" //0="gradient( x0, y0, x1, y0+4, black65, none)" 
+      	1="fill( x0, y1-1, x1, y1, darkestgrey)"
+	
+      }
+      
+      render_bg {}
+    }
 		
 		"Page ListPanelInterior:scrollbar" {
-			inset="3 1 -1 0"
-			bgcolor=none
+			inset="10 10 10 10"
+			bgcolor=darkestGrey
 			selectedbgcolor="blue"
 			selectedtextcolor="red" //test
 			render {}
@@ -376,10 +429,18 @@
 			}
 	
 	    "ListPanel RichTextInterior" {
-	      bgcolor=darkestGrey
+	      bgcolor=none
 	      render_bg {} 
 	      bgcolor=none
 	    }
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 	    
 	    ListPanelSectionCollapser [!$OSX]
 	    {
