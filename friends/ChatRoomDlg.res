@@ -1,5 +1,4 @@
-"friends/ChatRoomDlg.res"
-{
+"friends/ChatRoomDlg.res" {
 	controls
 	{
 		"ChatRoomDlg"
@@ -729,7 +728,7 @@
 				render_bg {
 				//0="image( x0, y0, x1, y1, graphics/icon_collapse)"
 				1="gradient( x0-2, y0+1, x0, y1, grey, lightGreyEnd)"
-				2="fill( x0, y0, x1, y0+1, greyHighlight)"				
+				2="fill( x0+2, y0, x1, y0+1, greyHighlight)"				
 				}   
 			}
 		
