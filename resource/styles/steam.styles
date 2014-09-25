@@ -269,7 +269,7 @@ styles {
     } 
     
 	    Frame:FrameFocus {
-			bgcolor  = "darkestGrey"
+			bgcolor  = "darkGreyEnd"
 		    render {
 				// Create the 1px border around every window.
 		        0  = "fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"     
