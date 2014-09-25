@@ -68,27 +68,29 @@
 				
 			bgcolor="none"
 			render_bg {
+		       	-1="fill(x0,y0+20,x1,y1, darkestGrey)"
+		       	
 		       	// The top section.
 		        0="fill( x0, y0+5, x1, y0+6, greyHighlight )"
-		        0="fill(x0, y0+4, x1,y0+5, darkGreyEnd)"
-		        1="fill( x0, y0+6, x1, y0+59, darkestGrey )"
-		        2="gradient( x0, y0+6, x1, y0+58, grey, lightGreyEnd)"
+		        1="fill(x0, y0+4, x1,y0+5, darkGreyEnd)"
+		        2="fill( x0, y0+6, x1, y0+59, darkestGrey )"
+		        3="gradient( x0, y0+6, x1, y0+58, grey, lightGreyEnd)"
 
 				// The status Label area.
-				5="fill( x0, y1-60, x1, y1, darkestGrey )"
+				4="fill( x0, y1-60, x1, y1, darkestGrey )"
 				
 				// The chat Input area.
-				4="gradient( x0, y1-50, x1, y1, grey, lightGreyEnd)"
-				5="fill(x0,y1-50,x1,y1-49, greyHighlight)"
+				5="gradient( x0, y1-50, x1, y1, grey, lightGreyEnd)"
+				6="fill(x0,y1-50,x1,y1-49, greyHighlight)"
 				
 				// Dark corner pixels for the Chat Input area.
-				6="fill(x0,y1-1,x0+1,y1, darkestGrey)"
-				7="fill(x1-1,y1-1,x1,y1, darkestGrey)"
-				8="fill(x0,y1-2,x0+1,y1-1, bottomDarkPixels)" // Bottom Left
-				9="fill(x0+1,y1-1,x0+2,y1, bottomDarkPixels)" // Bottom Left
-				10="fill(x1-2,y1-1,x1-1,y1, bottomDarkPixels)" // Bottom Right
-				11="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
-      }
+				7="fill(x0,y1-1,x0+1,y1, darkestGrey)"
+				8="fill(x1-1,y1-1,x1,y1, darkestGrey)"
+				9="fill(x0,y1-2,x0+1,y1-1, bottomDarkPixels)" // Bottom Left
+				10="fill(x0+1,y1-1,x0+2,y1, bottomDarkPixels)" // Bottom Left
+				11="fill(x1-2,y1-1,x1-1,y1, bottomDarkPixels)" // Bottom Right
+				12="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
+			}
 		}
 				
 		
