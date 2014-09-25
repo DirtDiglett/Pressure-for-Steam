@@ -55,5 +55,37 @@
 		}
 	}
 
-	layout{}
+
+	layout {
+		region { 
+			name="subheaderlabels" 
+			align=right 
+			y=0 
+			x=0 
+			width=max 
+			height=max 
+		}
+
+		place { 
+			control=totalplaytimeheader,totalplaytimevalue
+			align=right
+			region=subheaderlabels
+		}
+		
+		place { 
+			align=bottom
+			control=gameplayedheader,gameplayedvalue
+			region=subheaderlabels
+		}
+		
+		place {
+			control=streamheader,streamvalue
+			width=0
+			height=0
+			x=0
+			y=0
+			margin-top=-999
+		}
+	}
+
 }
