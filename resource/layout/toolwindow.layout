@@ -34,25 +34,25 @@
 			minimum-width=27
 			minimum-height=24
 			render_bg {
-				0="image( x0+4, y0+7, x1, y1, graphics/new_tab)"
+				0="image( x0, y0+7, x1, y1, graphics/new_tab)"
 			}
 	  }
 	  
 	  Button:hover {
 			render_bg {
-				0="image( x0+4, y0+7, x1, y1, graphics/new_tab_hover)"
+				0="image( x0, y0+7, x1, y1, graphics/new_tab_hover)"
 			}
 		}
 
 	Button:active {
 			render_bg {
-				0="image( x0+4, y0+7, x1, y1, graphics/new_tab_active)"
+				0="image( x0, y0+7, x1, y1, graphics/new_tab_active)"
 			}
 		}
 		
 	Button:selected {
 			render_bg {
-				0="image( x0+4, y0+7, x1, y1, graphics/new_tab_active)"
+				0="image( x0, y0+7, x1, y1, graphics/new_tab_active)"
 			}
 		}	
 
@@ -115,7 +115,7 @@
 		    	4="image(x1-1,y0,x1+2,y0+30, graphics/tabs/active/right)"
 		    	5="image_scale(x0+3,y0,x1-1,y1, graphics/tabs/active/inner)" // For some weird reason, tiled images are tripled in height. So using y0+30 will cause the image to appear multiple times...
 
-			6="fill(x0, y1, x1+2, y1+1, Grey)" //Fix for Ingame Web Browser - No visual change anywhere else
+				6="fill(x0, y1, x1+2, y1+1, Grey)" //Fix for Ingame Web Browser - No visual change anywhere else
 		    }
 		}
 
