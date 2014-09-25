@@ -138,7 +138,7 @@
 	styles {
 		
 		ChromeBorderItem {
-			bgcolor=GreyT //black75
+			bgcolor= black75
 		}
 
 		GridNavDivider {
@@ -163,7 +163,7 @@
 			
 			
 			render {
-				1="image( x0 + 10, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
+				1="image( x0 + 10, y0 + 12, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
 			render_bg {
 				// Background
@@ -329,7 +329,7 @@
 			textcolor=white
 			
 			render {
-				1="image( x0 + 10, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
+				1="image( x0 + 10, y0 + 7, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
 			render_bg {
 				// Background
@@ -494,7 +494,7 @@
 			textcolor=white
 			
 			render {
-				1="image( x0 + 10, y0 + 12, x1, y1, graphics/gamedetails/details/details_icon )"
+				1="image( x0 + 10, y0 + 10, x1, y1, graphics/gamedetails/details/details_icon )"
 			}
 			render_bg {
 				// Background
