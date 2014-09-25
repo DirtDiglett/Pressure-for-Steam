@@ -728,7 +728,7 @@
 			dir=right
 			align=right
 			margin-left=10
-			margin-right=0
+			margin-right=10
 			
 			margin-bottom=5
 			
@@ -739,14 +739,19 @@
 			height=42
 		}
 		place { 
-			start=launchbutton
-			
 			control=clientlist
+			
+			y=0
+			x=0
+			
+			height=0
+			width=0
+			
 			region=header
 			dir=right
-			align=middle
 			margin-left=0
 			margin-right=0
+			margin-top=-999
 			spacing=0
 		}
 		
