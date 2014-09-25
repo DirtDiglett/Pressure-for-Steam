@@ -145,7 +145,7 @@
 		place { 
 			control="PrevButton,NextButton" 
 			region=bottom 
-			align=top-center
+			align=right
 			height=24
 			width=92 
 			spacing=8
