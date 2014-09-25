@@ -1,0 +1,75 @@
+"resource/layout/chattitlepanel.layout" {
+	controls {
+		 "AvatarImage" { ControlName="ImagePanel" }
+	     "NameLabel" { ControlName="Label" }
+	     "StatusLabel" { ControlName="Label" style="statuslabel" }
+	     "LockImage" { ControlName="ImagePanel" }
+	     "MenuButton" { ControlName= "CChatTitlePanelAffordance" style="menuButtonStyle"}
+	}
+	
+	styles {
+		menuButtonStyle {
+			minimum-width=14
+			padding-top=3
+			padding-bottom=4
+			padding-right=5
+			padding-left=6
+		}
+		
+		menuButtonStyle:hover {
+			render_bg {}
+		}
+		
+		Label {
+			font-family=basefont
+			font-size=14
+			font-weight=600
+			
+			textcolor=white
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+		}
+		
+		statuslabel {
+			font-family=basefont
+			textcolor=lightestGrey
+			font-size=12
+			
+			font-style="normal,regular,outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+		}
+	
+	}
+	
+	layout {
+		place {	control="AvatarImage" x=2 y=7 align=left dir=right spacing=8 }
+		
+		place {	
+			control="NameLabel,MenuButton" 
+			x=66 
+			y=11 
+			align=left 
+			dir=right 
+			spacing=0 
+		}
+		
+		place { 
+			control="LockImage" 
+			x=47 
+			y=10 
+			width=16
+		}
+		
+		place {	
+			control="StatusLabel" 
+			align=left 
+			x=47 
+			y=29
+		}
+	}
+}
