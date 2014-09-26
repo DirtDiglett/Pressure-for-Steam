@@ -21,8 +21,9 @@
 	}	
 	
 	styles {
-		highlight {
+		label {
 			textcolor=white
+			font-size=18
 		}	
 		
 		frame {
