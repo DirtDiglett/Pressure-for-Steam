@@ -318,7 +318,7 @@
 			selectedtextcolor="trueWhite"
 			bgcolor=darkestGrey
 			
-			inset="8 8 8 0"
+			inset="8 8 0 0"
 			
 			render {
 				// For some weird ready, this appears DARKER than the rest of darkestGrey
