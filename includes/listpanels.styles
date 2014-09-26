@@ -9,6 +9,8 @@
 			textcolor  = "Label"
 			image  = "graphics/chkUnselStd_Sm"
 			inset  = "0 5 0 0"
+			
+			bgcolor=red
 	    }   
 	
 	    
@@ -50,7 +52,8 @@
 			font-weight=400
 			textcolor  = "Label"
 			image  = "graphics/chkUnSelFocus_Sm"
-			inset  = "4 0 0 0"  
+			inset  = "4 0 0 0"
+			  
 		}
 	
 	     
