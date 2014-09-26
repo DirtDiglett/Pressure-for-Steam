@@ -117,6 +117,8 @@
 			textcolor="lightestGrey"
 			font-size=12
 			
+			inset="0 2 0 0"
+			
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
