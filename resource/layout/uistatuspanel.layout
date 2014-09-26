@@ -28,6 +28,8 @@
 		
 		StatusLabel {
       			font-family=basefont
+      			
+      			inset="0 2 0 0"
       			font-size=13
       			font-weight=400
       			textcolor="white"
@@ -41,8 +43,9 @@
 			} 
     	}
     			
-			StatusLabel:hover
-    			{
+			StatusLabel:hover {
+      				
+      				
       				font-family=basefont
       				font-size=13
       				font-weight=400
@@ -57,21 +60,27 @@
 			} 
     		}  
     
-    		StatusLabelDim
-    		{
+    		StatusLabelDim {
+      			inset="0 2 0 0"
+      			
       			font-family=basefont
       			font-size=13
       			font-weight=400
       			textcolor="white" //
-      			font-style=normal   
+      			font-style="normal;outerglow"
+				font-outerglow-color="darkGreyEnd"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=1  
     		}
-			 StatusLabelDim:hover
-    			{
+			 StatusLabelDim:hover {
       				font-family=basefont
       				font-size=13
       				font-weight=400
       				textcolor="trueWhite" //
-      				font-style=normal   
+      				font-style="normal;outerglow"
+				font-outerglow-color="darkGreyEnd"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=1  
     			}
 
 
@@ -99,7 +108,7 @@
 		place { 
 			control=StatusProgressbar 
 			region="ProgressRegion" 
-			y=20 
+			y=23 
 			width=450 
 			height=2 
 			region=bottom 
@@ -109,7 +118,7 @@
 		place { 
 			control="StatusDownloading, StatusPaused, StatusComplete"
 			region="statusRegion" 
-			y=1 
+			y=4
 			align="top-center" 
 		}
 	}
