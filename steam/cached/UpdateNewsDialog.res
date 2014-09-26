@@ -4,7 +4,7 @@
 		"fieldName"		"ProductMarketingDialog"
 		"xpos"		"610"
 		"ypos"		"519"
-		"wide"		"570"
+		"wide"		"500"
 		"tall"		"844"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
@@ -21,7 +21,7 @@
 		"fieldName"		"HTMLSellPage"
 		"xpos"		"8"
 		"ypos"		"48"
-		"wide"		"570"
+		"wide"		"500"
 		"tall"		"731"
 		"AutoResize"		"3"
 		"PinCorner"		"0"
@@ -133,7 +133,13 @@
 			spacing=-9 
 		}
 		
-		place { control="HTMLSellPage" margin-top=26 margin-bottom=51 width=max height=max }
+		place { 
+			control="HTMLSellPage" 
+			margin-top=26 
+			margin-bottom=51 
+			width=max 
+			height=max 
+		}
 		
 		region { 
 			name="bottom" 
@@ -149,7 +155,7 @@
 			height=24
 			width=92 
 			spacing=8
-			margin-top=12 
+			margin-bottom=8 
 		}
 	
 		place {
