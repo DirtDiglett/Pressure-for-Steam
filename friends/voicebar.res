@@ -42,7 +42,7 @@
 		
 		Chat_MenuButton_withChrome {
 			minimum-width=80
-					  }
+		}
 
 		status_label {
 			font-family=basefont
@@ -279,7 +279,7 @@
 		place { 
 			control="VoiceImage" 
 			x=10 
-			y=18
+			y=8
 			width=24 
 			height=24 
 		}
