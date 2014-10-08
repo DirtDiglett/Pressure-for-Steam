@@ -175,7 +175,7 @@
 
 			render_bg {
 				// Creates the top section
-				0="gradient( x0+1, y0+1, x1-1, y0 + 86, grey, darkGreyEnd )"
+				0="gradient( x0+1, y0+1, x1-1, y0 + 87, grey, darkGreyEnd )"
 				
 				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
@@ -647,6 +647,20 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			y=95 
 			height=22 
 			width=1
+		}
+		
+		place {
+			control="DownLabel"
+			margin-top=135
+			height=max
+			margin-left=8
+		}
+		
+		place {
+			control="NoFriendsAddFriendButton"
+			margin-top=165
+			margin-left=8
+			width=120
 		}
  	}
  	
