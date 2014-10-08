@@ -199,7 +199,7 @@
 				9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
 				10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
 				
-				11="fill(x0+1, y0+125, x1-1, y0+126, darkestGrey)"
+				11="fill(x0+1, y0+126, x1-1, y0+127, darkestGrey)"
 				
 				
 				
@@ -603,24 +603,6 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			margin-left=2 width=62 height=24 margin-top=-1 }
 		
 		place { 
-			control="FriendPanelSelf" 
-			y=24 
-			align=left 
-			margin-left=12 
-			margin-right=0 
-			margin-top=2 
-			margin-bottom=0 
-			width=max 
-			height=max 
-			dir=down 
-			spacing=3 
-		}	
-		
-		
-		
-		
-		
-		place { 
 			control="friends_search" 
 			dir=right 
 			margin-left=167 
@@ -629,21 +611,23 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			height=25 
 		}
 
-		
-		place {
-			control="FriendsDialogSheet"
-			y=85
-			width=max
-			height=max
-			dir=down
-			margin-left=-1
-			margin-right=-1
-			
-			render {
-				0="gradient(x0,y1-10,x1,y1, none, darkestGrey)"
-			}
+		place { 
+			control="FriendPanelSelf" 
+			x=12
+			y=26
 		}
-		
+	
+		place { 
+			control="FriendsDialogSheet" 
+			y=85 
+			align=left 
+			margin-left=-1 
+			margin-right=0 
+			margin-top=0 
+			margin-bottom=0 
+			width=max 
+			height=max 
+		}
 		
 		// Use this for cleverness to make the buttons.
 		place { 
@@ -655,7 +639,7 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			width=1
 		}
 	
-	
+		
 		place { 
 			control="addFriendsButton" 
 			margin-left=145 
