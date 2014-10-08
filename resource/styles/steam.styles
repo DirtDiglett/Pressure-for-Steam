@@ -100,7 +100,7 @@ colors {
     TextGlowSelectedSm  = "145 142 140 255"
     
     NavLabel  = "158 153 149 255"
-    Label  = "166 164 161 255"
+    Label  = "255 255 255 255"
     Label2  = "115 111 108 255"
     LabelDisabled  = "138 135 132 255"
     LabelFocus  = "199 196 194 255"

@@ -9,8 +9,6 @@
 			textcolor  = "Label"
 			image  = "graphics/chkUnselStd_Sm"
 			inset  = "0 5 0 0"
-			
-			bgcolor=red
 	    }   
 	
 	    
@@ -297,25 +295,25 @@
 			0="fill(x0,y0,x1,y1, darkestGrey)"
 			
 			// Lines around
-			0="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
-			1="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
-			2="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
-			3="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+			1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+			2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+			3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+			4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
 			
 			// Corner pixels
-			4="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
-			5="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
-			6="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
-			7="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
-			8="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
-			9="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
-			10="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
-			11="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+			5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+			6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+			7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+			8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+			9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+			10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+			11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+			12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
 			
 			// Bottom Pixel Highlight
-			12="fill(x0-1,y1,x0,y1+1, grey25)"
-			13="fill(x0,y1+1,x1,y1+2, grey50)"
-			14="fill(x1,y1,x1+1,y1+1, grey25)"
+			13="fill(x0-1,y1,x0,y1+1, grey25)"
+			14="fill(x0,y1+1,x1,y1+2, grey50)"
+			15="fill(x1,y1,x1+1,y1+1, grey25)"
 			
 		}
 	}
@@ -333,31 +331,163 @@
 		render {}
 
 		render_bg {    
-			0="fill(x0,y0,x1,y1, yellow)"
+			0="fill(x0,y0,x1,y1, darkestGrey)"
 			
 			// Lines around
-			0="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
-			1="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
-			2="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
-			3="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+			1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+			2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+			3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+			4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
 			
 			// Corner pixels
-			4="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
-			5="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
-			6="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
-			7="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
-			8="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
-			9="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
-			10="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
-			11="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+			5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+			6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+			7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+			8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+			9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+			10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+			11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+			12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
 			
 			// Bottom Pixel Highlight
-			12="fill(x0-1,y1,x0,y1+1, grey25)"
-			13="fill(x0,y1+1,x1,y1+2, grey50)"
-			14="fill(x1,y1,x1+1,y1+1, grey25)"
+			13="fill(x0-1,y1,x0,y1+1, grey25)"
+			14="fill(x0,y1+1,x1,y1+2, grey50)"
+			15="fill(x1,y1,x1+1,y1+1, grey25)"
 			
 		}
 	}
+	
+	CheckButtonList:scrollbar {
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			
+			render {}
+			
+			render_bg { 
+				0="fill(x0,y0,x1,y1, darkestGrey)"
+				
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+			}
+			  
+		} 
+		
+		"Page CheckButtonList:scrollbar" {
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			
+			render {}   
+			
+			render_bg { 
+			 	0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+			}
+			  
+		}
+		
+		CheckButtonList {
+	        inset="1 1 1 1"
+	        textcolor="white"
+	        bgcolor=none
+	        
+	        render_bg {     
+					0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+	         }
+	    } 
+	    
+	    
+	    
+	    "Page CheckButtonList" {
+	        inset="1 1 1 1"
+	        textcolor="white"
+	        bgcolor=none
+	        
+	        render_bg {     
+					0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+	         }
+	    }
     
     "CGamesListPanel" {
       font-family=basefont
