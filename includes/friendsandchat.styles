@@ -27,14 +27,14 @@
 	    }
 	    
 	    friends_chat_text {
-			textcolor="lightestGrey"
+			textcolor="white"
 			selectedtextcolor="trueWhite"	
 			SelectedBgColor="blue"
 			font-size=14
 		}
 
 		friends_chat_text_self {
-			textcolor="white" //changed to white to fix ingame not hovering
+			textcolor="lightestGrey" //changed to white to fix ingame not hovering
 			selectedtextcolor="trueWhite" 	
 			selectedbgcolor="blue"
 			font-size=14
