@@ -312,11 +312,11 @@
 		//Button
 		place { 
 			control="action2" 
-			height=24 
-			margin=14 
+			height=24
+			margin=8 
 			margin-right=10 
 			align=right 
-			y=5
+			y=0
 		}
 	}
 }
