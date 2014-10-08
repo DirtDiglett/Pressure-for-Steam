@@ -1,0 +1,83 @@
+"friends/setnicknamedialog.layout" {
+	controls {
+		FriendAliasesDialog {
+			title			"#friends_setnickname_title"
+			wide			"388"
+			tall			"148"
+		}
+
+		CloseButton {
+			ControlName 	"Button"
+			labelText		"#vgui_close"
+			Command			"Close"
+		}
+
+		OKButton {
+			ControlName 	"Button"
+			labelText		"#vgui_ok"
+			Command			"Apply"
+			default			"1"
+		}
+
+		Details {
+			ControlName		"Label"
+			labelText		"#friends_setnickname_info"
+			wrap			"1"
+		}
+		
+		NicknameEdit {
+			ControlName		"TextEntry"
+			tabposition		"1"
+			unicode			"1"
+		}
+		
+	}
+	
+	styles {
+		Button {
+			minimum-width=80
+		}
+	}
+
+	layout {
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+	
+		region { 
+			name="bottomrow" 
+			align=bottom 
+			height=36 
+		}
+		
+		place { 
+			control="OKButton,CloseButton" 
+			region=bottomrow 
+			align=right 
+			spacing=8 
+			margin-right=8
+			margin-bottom=-1 
+		}
+		
+		place { 
+			control=Details 
+			y=34 
+			width=max
+			margin=8 
+			height=40 
+		}
+		
+		place { 
+			control=NicknameEdit 
+			y=70
+			width=max
+			margin=8 
+			height=24 
+		}
+	}
+}
+
