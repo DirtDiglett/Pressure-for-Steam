@@ -28,4 +28,4 @@ Because the skin is still in development, you can only download the skin here on
 4. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
 
 ### Staying up-to-date with the Skin's progress
-We recommend staying up-to-date with the skin's progress, so that way you can get updates about the skin and how the skin's development is coming along. To do that, make sure you join the "Pressure" Skin group on Steam by going to this address: http://steamcommunity.com/groups/pressureskin
+We recommend staying up-to-date with the skin's progress, so that way you can get updates about the skin and how the skin's development is coming along. To do that, make sure you join the "Pressure" Skin group on Steam by going to this link, signing into your Steam account, and clicking on the "Join group" button: http://steamcommunity.com/groups/pressureskin
