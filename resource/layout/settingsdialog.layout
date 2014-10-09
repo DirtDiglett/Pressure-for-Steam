@@ -15,7 +15,9 @@
 			bgcolor=none
 			
 			render {
-				0="fill( x0, y0+25, x0+194, y0 +33, darkestGrey )" //Fixes a bug
+				0="fill( x0, y0+25, x0+194, y0+33, darkestGrey )" //Fixes a bug
+				
+				1="fill(x0+194,y0,x1,y0+40, red)"
 			}
 			
 			render_bg {     
@@ -394,7 +396,7 @@
 		place { 
 			control="okbutton,cancelbutton" 
 			region="buttons"
-		        width=92 
+		    width=92 
 			height=25 
 			align=right
 			margin-right=10 
