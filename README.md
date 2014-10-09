@@ -27,4 +27,5 @@ Because the skin is still in development, you can only download the skin here on
 3. Open up Steam and open up the Steam Settings Window. Click on the Interface tab, and under the option that says "Select the skin you wish Steam to use (requires Steam to restart)", click on the dropdown, and select "Pressure-for-Steam-master". 
 4. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
 
-## Keeping the Skin up-to-date
+### Staying up-to-date with the Skin's progress
+We recommend staying up-to-date with the skin's progress, so that way you can get updates about the skin and how the skin's development is coming along. To do that, make sure you join the "Pressure" Skin group on Steam by going to this address: http://steamcommunity.com/groups/pressureskin
