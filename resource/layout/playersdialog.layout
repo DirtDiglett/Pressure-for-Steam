@@ -1,0 +1,37 @@
+"resource/layout/playersdialog.layout" {
+	controls {
+	}
+	
+	styles {
+	}
+	
+	layout {
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+		
+		place { 
+			control="frame_captiongrip" 
+			width=max 
+			height=54 
+		}
+
+		//Bottom
+		region { name=bottom align=bottom height=44 }
+		place {	
+			control="OKButton,CancelButton" 
+			region=bottom 
+			width=92 
+			height=25 
+			align=right
+			margin-right=10 
+			margin-top=6
+			margin-bottom=5 
+			
+		}
+	}
+}
