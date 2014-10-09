@@ -26,3 +26,5 @@ Because the skin is still in development, you can only download the skin here on
 2. Extract the files in the ZIP folder to the Program Files (x86)/Steam/skins folder. You should also go ahead and install the BebasNeue font by double-clicking on the BEBASNEUE.OTF file and clicking "Install" on the window that pops up showing you what the font looks like, as that will make sure the skin displays properly. 
 3. Open up Steam and open up the Steam Settings Window. Click on the Interface tab, and under the option that says "Select the skin you wish Steam to use (requires Steam to restart)", click on the dropdown, and select "Pressure-for-Steam-master". 
 4. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
+
+## Keeping the Skin up-to-date
