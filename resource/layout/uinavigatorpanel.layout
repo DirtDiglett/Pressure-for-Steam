@@ -1929,7 +1929,7 @@
 // Controls that appear on the WebPanel pages.
 // ********************************************************************************************************		
 		place {
-			control="refresh,stop,home"
+			control="refresh,stop"
 			x=68
 			y=47
 			height=25
@@ -1962,7 +1962,7 @@
 			y=47
 			height=28
 			width=max
-			margin-left=124
+			margin-left=94
 			margin-right=195
 		}
  	
