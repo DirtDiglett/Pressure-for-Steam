@@ -23,7 +23,7 @@
         	}
 		}
 		
-				ListPanelSectionCollapser {
+		ListPanelSectionCollapser {
 			inset="-6 0 0 0"
 			image="graphics/icon_collapse"
 			padding-top=0
@@ -59,20 +59,34 @@
 			font-size=14
 			font-size=13 [$OSX]
 			font-weight=400
-			textcolor  = white
-			font-style=none
+			textcolor  = "white"
+			font-style  = "regular,normal"
 			bgcolor  = "none"
-			inset  = "0 0 0 0"
-			inset  = "0 1 0 0" [$OSX]
-			padding-top=7
-			padding-bottom=4
+			inset  = "0 1 0 0"
 	
 			render_bg {
 				// fill
-				0  = "fill (x0, y0, x1, y1-1, black90 )" // bg fill
-				1="fill(x0,y1-1,x1,y1, grey50)"
-			}   
+				0="gradient(x0,y0,x1,y1+1, grey, lightGreyEnd)"
+				1="fill(x0,y0+3,x1,y0+4, greyHighlight)"
+			}  
 		}
+		
+			"Csteamrootdialog ListPanelColumnheader:hover" {
+				textcolor  = "white"
+			
+			render_bg {
+				0="gradient(x0,y0,x1,y1, lighterGrey, grey)"
+				1="fill(x0,y0+3,x1,y0+4, lightestGreyHighlight)"
+			}
+			}
+		
+		ListPanelDragger {
+			bgcolor  = "none"
+			render {
+				//fill makes dragger visible
+				2="fill( x0, y0, x0 + 1, y1-2, darkestGrey )" // left
+			}
+	    }
 		
 		
 	}
