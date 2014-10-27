@@ -306,8 +306,8 @@
 		region	{ name="list" y=0 x=0 width=320 height=max margin-bottom=-5 }
 		region	{ name="details" y=0 x=320 width=max height=max overflow=scroll-vertical margin-left=0 margin-top=0 margin-bottom=0 margin-right=-1}
 		region	{ name="headertext" region=details y=0 x=0 width=max height=max margin-right=-10 }
-		region	{ name="rightcolumn" region=details y=171 height=max width=1156 margin-right=0 margin-top=1 margin-bottom=1 overflow=allow-vertical }
-		region  { name="detailsbody" region=details y=174 height=max width=1156 margin-right=-10 overflow=allow-vertical }
+		region	{ name="rightcolumn" region=details y=171 height=max width=0 margin-right=0 margin-top=1 margin-bottom=1 overflow=allow-vertical }
+		region  { name="detailsbody" region=details y=174 height=max width=max margin-right=-10 overflow=allow-vertical }
 
 		// Empty list text, which goes across regions
 		place	{ control=emptylisttext x=0 y=0 width=max height=max margin=10 }
