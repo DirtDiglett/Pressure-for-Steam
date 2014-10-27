@@ -364,7 +364,7 @@
 		
 		region	{ 
 			name="gamedata" 
-			y=80 
+			y=70 
 			x=20 
 			width=max 
 			height=50 
