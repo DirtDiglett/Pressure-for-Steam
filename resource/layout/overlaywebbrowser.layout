@@ -436,8 +436,8 @@
 		{
 			render
 			{
-			0="gradient( x0, y0, x1, y0+4, lightGreyEnd, None )"	
-			1="gradient( x0, y1-5, x1, y1, None, Grey )"
+			0="gradient( x0, y0, x1, y0+4, black75, None )"	
+			1="gradient( x0, y1-5, x1, y1, None, black75 )"
 			}
 		}
 	}
