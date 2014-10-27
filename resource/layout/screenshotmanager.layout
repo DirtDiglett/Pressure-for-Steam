@@ -132,7 +132,7 @@
 
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkGreyEnd)"
-				1="fill(x1-1,y0,x1,y1, darkestGrey)"
+				1="fill(x1-1,y0-50,x1,y1, darkestGrey)"
 				2="fill(x1,y0,x1+1,y1, grey50)"
 			}
 		}
