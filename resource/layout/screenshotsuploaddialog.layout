@@ -1,0 +1,96 @@
+"resource/layout/screenshotsuploaddialog.layout"
+{
+	controls
+	{
+		ScreenshotsUploadDialog { title="#steam_screenshotsupload_title" }
+
+		upload_question { controlname="Label" labeltext="#steam_upload_a_screenshot" }
+		upload_size { controlname="Label" labeltext="#steam_upload_size" }
+		storage_remaining { controlname="Label" labeltext="#steam_remaining_storage" }
+		upload_size_info { controlname="Label" labeltext="#steam_upload_size_info" }
+		storage_remaining_info { controlname="Label" labeltext="#steam_remaining_storage_info" }
+		visiblity_label { controlname="Label" labeltext="#steam_visibility" }
+		visibility_options { controlname="ComboBox" style=visibility_options editable=0 }
+		upload_button { controlname="Button" labeltext="#steam_upload" command="upload" }
+		cancel_button { controlname="Button" labeltext="#vgui_cancel" command="cancel" }
+		
+		upload_progress { controlname="ProgressBar" style="SlimProgressBar" visible=0 barinset=0 continuous=1 } 
+		error_info { controlname="Label" labeltext="#steam_screenshots_error_info" visible="0" wrap="1" }
+		upload_info { controlname="Label" labeltext="#steam_screenshot_upload_info" visible="0" wrap="1" }
+
+		shared_to_facebook_ok_label { controlname="Label" labeltext="#Overlay_ToBeSharedToFacebook" visible="1" wrap="1" }
+		shared_to_facebook_no_multi_label { controlname="Label" labeltext="#Overlay_WontBeSharedToFacebook" visible="1" wrap="1" }
+		shared_to_facebook_no_private_label { controlname="Label" labeltext="#Overlay_PrivateScreenshot" visible="1" wrap="1" }
+
+		share_to_facebook_check_button { controlname="CheckButton" labeltext="#Overlay_Share" visible="1" command="changesharetofacebook" }
+	}
+	
+	
+	styles {
+		CScreenshotUploadDialog {
+			minimum-width=465	
+			minimum-height=300
+			
+			render_bg {
+				1="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+				2="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
+				3="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
+			}
+		}
+
+		visibility_options {
+			minimum-width=100
+		}
+		
+		SlimProgressBar {
+			textcolor=green
+			
+			render_bg {
+			        0="fill( x0, y0, x1, y1, black )"
+			        1="fill(x0,y1,x1,y1+1, grey50)"
+			}
+			render {
+			}      
+		}
+		
+		SlimProgressBarError {
+			textcolor="red"
+		}
+	}
+	
+	layout {
+		place { control="upload_question" x=175 y=45 }
+		place { control="upload_info" x=175 y=40 width=max  }
+		place { control="error_info" x=175 y=40 width=max }
+		place { control="upload_progress" y=85 width=max margin-left=175 margin-right=25 height=2 }
+		
+		place { control="upload_size" x=175 y=70 }
+		place { control="storage_remaining" x=175 y=85 }
+		place { control="upload_size_info" x=295 y=70 }
+		place { control="storage_remaining_info" x=295 y=85 }
+		place { control="visiblity_label" x=175 y=130 }
+		place { control="visibility_options" start="visiblity_label" y=-5 x=25 dir=right }
+		place { control="share_to_facebook_check_button" x=175 y=160 }
+		place { control="facebook_logo" start="share_to_facebook_check_button" x=-4 y=8 }
+		place { control="shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label" x=175 y=195 margin-left=4 width=275 }
+		
+		region {
+			name="bottom"
+			height=44
+			align=bottom
+		}
+		
+		place { 
+			control="cancel_button,upload_button" 
+			region="bottom"
+			align=right 
+			margin-right=12
+			spacing=8 
+			dir=right 
+			height=24
+			width=90
+			margin-top=6
+		}
+	}
+
+}
