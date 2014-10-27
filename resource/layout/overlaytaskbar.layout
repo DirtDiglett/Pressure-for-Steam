@@ -103,7 +103,7 @@
 
 
 		place [$OSX] { 
-			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" 
+			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton,MusicPlayerButton" 
 			region=toparea 
 			x=0 
 			dir=right 
@@ -123,7 +123,7 @@
 		}
 
 		place [!$OSX] { 
-			controls="WebBrowserButton,online_friends,SettingsButton" 
+			controls="WebBrowserButton,online_friends,SettingsButton,MusicPlayerButton" 
 			region=toparea 
 			x=0 
 			dir=right 
@@ -135,7 +135,7 @@
 
 		//place { controls="" region=toparea x=0 dir=right spacing=3 align=left margin-top=50}	
 		
-		place { controls="MusicPlayerButton,ScreenshotsButton" x=0 dir=right spacing=3 align=right margin-top=50}
+		place { controls=",ScreenshotsButton" x=0 dir=right spacing=3 align=right margin-top=50}
 
 
 		//place { control="FriendPanel" height=48 width=48 align=right margin-right=6 margin-top=4 }
