@@ -17,7 +17,7 @@
 			render {
 				0="fill( x0, y0+25, x0+194, y0+33, darkestGrey )" //Fixes a bug
 				
-				1="gradient(x0+194,y0+25, x1, y0+31, black65, none)"
+				1="gradient(x0+194,y0+25, x1, y0+31, black40, none)"
 			}
 			
 			render_bg {     
