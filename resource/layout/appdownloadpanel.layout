@@ -36,79 +36,108 @@
 		
 	}
 	
-	colors
-	{
-		dark_blue_grad = "8 8 8 255"
-		light_blue_grad = "8 8 8 255"
+	colors {
+		// Play Button Normal
+		PlayAntiAliasingTop "121 144 29 255"
+		PlayAntiAliasingBottom "88 109 18 255"
+		
+		PlayLineTop "209 248 48 255"
+		PlayLineTopAntiAliasing "190 230 37 255"
+		
+		PlayCornerRoundingBottom "129 163 19 255"
+		
+		PlayGradientStart "175 217 28 255"
+		PlayGradientEnd "136 173 19 255"
+				
+			// Hover
+			PlayHoverAntiAliasingTop "138 147 39 255"
+			PlayHoverAntiAliasingBottom "113 132 22 255"
+			
+			PlayHoverLineTop "238 254 66 255"
+			PlayHoverLineTopAntiAliasing "227 248 51 255"
+			
+			PlayHoverCornerRoundingBottom "170 201 25 255"
+			
+			PlayHoverGradientStart "216 242 38 255"
+			PlayHoverGradientEnd "180 214 26 255"	
+						
+			// Active	
+			PlayActiveAntiAliasingTop "97 133 22 255"
+			PlayActiveAntiAliasingBottom "67 85 15 255"
+			
+			PlayActiveLineTop "140 190 24 255"
+			PlayActiveLineTopAntiAliasing "137 186 23 255"
+			
+			PlayActiveCornerRoundingBottom "94 123 14 255"
+			
+			PlayActiveGradientStart "131 176 20 255"
+			PlayActiveGradientEnd "99 130 14 255"	
+		
 	}
 	
-	styles
-	{
-		panelStyle
-		{
+	styles {
+		panelStyle {
 			bgcolor=none
 			
 		}
 		
-		panelStyleHighlight
-		{
-			render_bg
-			{
-				0="gradient( x0, y0, x1, y1, dark_blue_grad, light_blue_grad )"
-				//2="image( x0, y0 - 55, x1, y1+8, graphics/clienttexture2b)"
-			}			
+		panelStyleHighlight {
+			render_bg {}			
 		}
 
-		links
-		{
-			font-size=14
+		links {
+			font-size=13
 			font-style=normal
-			textcolor="text"
+			textcolor="blue"
 			font-family=basefont
-			font-style="uppercase"
+			font-style="regular"
 			padding-left=0
 			padding-top=0
 			padding-bottom=0
+		
+			render_bg {
+				0="image(x1+3,y0,x1+17,y1, graphics/news)"
+			}
 		}
 		
-		links:hover
-		{
-			font-size=14
-			font-style=normal
-			textcolor="white"
-			font-family=basefont
-			font-style="uppercase"
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
-		}
+			links:hover {
+				font-size=13
+				font-style=normal
+				textcolor="lightestBlue"
+				font-family=basefont
+				font-style="regular"
+			}
 
-		links:disabled
-		{
-			textcolor="TextDisabled"
+			links:disabled {
+				textcolor="grey"
+			}
+		
+		label {
+			font-size=13
+			
 		}
 		
-		settingslink
-		{
-			font-size=14
-			font-style=normal
-			textcolor="text"
+		// For the "Auto-Updates Enabled"
+		settingslink {
+			font-size=13
+			font-style=regular
+			textcolor="blue"
 			font-family=basefont
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
+			
+			render_bg {
+				0="image(x1+3, y0, x1+17, y1, graphics/auto_downloads)"
+			}
 		}
 		
-		settingslink:hover
-		{
-			font-size=14
-			font-style=normal
-			textcolor="white"
-			font-family=basefont
-			padding-left=0
-			padding-top=0
-			padding-bottom=0
-		}
+			settingslink:hover {
+				font-size=13
+				font-style=regular
+				textcolor="lightestBlue"
+				font-family=basefont
+				padding-left=0
+				padding-top=0
+				padding-bottom=0
+			}
 
 		settingslink:disabled
 		{
@@ -121,14 +150,12 @@
 		}
 		
 
-		label2
-		{
+		// The "Downloaded" label
+		label2 {
 			bgcolor			none
-			font-size		"14"
-			textcolor		"label2"
-			padding-top		"0"
-			font-style="uppercase"
-
+			font-size		"13"
+			textcolor		"lightestGrey"
+			font-style="regular"
 		}
 
 
@@ -136,20 +163,20 @@
 		ModuleHeading {
 			font-family=headerfont
 			bgcolor="none"
-			font-size="18"
+			font-size="38"
 			textcolor="white"
 		}	
 		
-		ModuleHeading2
-		{
+		// Contains the "Update Required" text.
+		ModuleHeading2 {
 			font-family	basefont
 			bgcolor="none"
-			font-size	"18"
-			textcolor	"red"
-			padding-top	"0"
-			font-weight	"400"
+			font-size	"13"
+			textcolor	"orange"
 		}								
 		
+		
+		// Doesn't seem to be used for anything?
 		panelBgColorActive {
 			bgcolor=none
 		}
@@ -161,7 +188,7 @@
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="gradient(x0,y1,x1,y1+4, red, none)"
+				0="gradient(x0+4,y1-8,x1-4,y1-4, black90, none)"
 			}
 			
 			render {}
@@ -175,75 +202,165 @@
 		}					
 		
 		
-		DetailsLaunchButton
-		{   
-
-			inset="23 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor="white"
-			font-style="uppercase"
-			bgcolor=none
-
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_play )"
-			}
-			render_bg
-			{
-				// background fill
-				0="gradient( x0, y0-1, x1, y1, launch1, launch2 )"
-
-
 		
+		
+		DetailsLaunchButton {  
+			inset="0 0 0 0"
+			font-family=basefont
+			font-size=1
+			
+			font-style="none"
+			padding-right=10
+			padding-left=10
+			
+			textcolor=none
+			
+			render {
+				1="image( x0 + 4, y0 + 4, x1, y1, graphics/game_small )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,PlayGradientStart, PlayGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, PlayGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, PlayAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, PlayAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, PlayAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, PlayAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, PlayAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, PlayAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, PlayAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, PlayAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, PlayLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, PlayCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, PlayCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, PlayCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, PlayCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, PlayCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, PlayCornerRoundingBottom)"
 			}	
 		}
-	
-		DetailsLaunchButton:Hover
-		{   
-			inset="23 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor="white"
-			font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_play )"
-			}
-			render_bg
-			{
-				// background fill
-				0="gradient( x0, y0-1, x1, y1, launch0, launch2 )"
-
-
-			}	
-		}
 		
-		DetailsLaunchButton:Disabled
-		{   
-			inset="23 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor="LabelDisabled"
-			font-style=uppercase
-			bgcolor=none   
-
-			render
-			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
+			DetailsLaunchButton:Hover {  
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,PlayHoverGradientStart, PlayHoverGradientEnd)"
+					1="fill(x0+2,y1-1,x1-2,y1, PlayHoverGradientEnd)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, PlayHoverAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, PlayHoverAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, PlayHoverAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, PlayHoverAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, PlayHoverAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, PlayHoverAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, PlayHoverAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, PlayHoverAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, PlayHoverLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, PlayHoverLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, PlayHoverLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, PlayHoverLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, PlayHoverLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, PlayHoverLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, PlayHoverLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, PlayHoverCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, PlayHoverCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, PlayHoverCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, PlayHoverCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, PlayHoverCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, PlayHoverCornerRoundingBottom)"
+				}		
 			}
-			render_bg
-			{
-				// background fill
-				0="fill( x0, y0-1, x1, y1, buttonfacedisabled )"
-
+			
+			DetailsLaunchButton:Selected {
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,PlayActiveGradientEnd, PlayActiveGradientStart)"
+					1="fill(x0+2,y1-1,x1-2,y1, PlayActiveGradientStart)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, PlayActiveAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, PlayActiveAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, PlayActiveAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, PlayActiveAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, PlayActiveAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, PlayActiveAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, PlayActiveAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, PlayActiveAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, PlayActiveLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, PlayActiveCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, PlayActiveCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, PlayActiveCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, PlayActiveCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, PlayActiveCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, PlayActiveCornerRoundingBottom)"
+				}
 			}
-		}
+			
+			
+			DetailsLaunchButton:Active {
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,PlayActiveGradientEnd, PlayActiveGradientStart)"
+					1="fill(x0+2,y1-1,x1-2,y1, PlayActiveGradientStart)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, PlayActiveAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, PlayActiveAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, PlayActiveAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, PlayActiveAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, PlayActiveAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, PlayActiveAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, PlayActiveAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, PlayActiveAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, PlayActiveLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, PlayActiveLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, PlayActiveCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, PlayActiveCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, PlayActiveCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, PlayActiveCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, PlayActiveCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, PlayActiveCornerRoundingBottom)"
+				}
+			}
 
 		
 				
@@ -258,12 +375,11 @@
 			bgcolor=none
 
 			render {
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/move_top )"
+				1="image( x0+4, y0+5, x1, y1, graphics/move_top )"
 			}
 		}			
 		
-		SmRemoveButton
-		{   
+		SmRemoveButton {   
 		
 			inset="0 0 0 0"
 			font-family=basefont
@@ -275,7 +391,7 @@
 
 			render
 			{
-				1="image( x0 + 5, y0 + 4, x1, y1, graphics/remove_download )"
+				1="image( x0+4, y0+5, x1, y1, graphics/remove_download )"
 			}
 		}
 		
@@ -289,7 +405,7 @@
 				bgcolor=none   
 				
 				render {
-					1="image( x0 + 5, y0 + 4, x1, y1, graphics/remove_download )"
+					1="image( x0+4, y0+5, x1, y1, graphics/remove_download )"
 				}
 	
 			}
@@ -311,33 +427,66 @@
 
 	layout
 	{
-		region	{ name="bottom" width="1262" y=75 height=60 width=400 }
+		region	{ name="bottom" width="max" height=20 align=bottom}
 		
 		region { name="column1" x=0 width=200 }
 		region { name="column2" x=210 width=max }
-		region { name="column3" x=500 width=max }
 		region { name="column4" x=700 width=max overflow=allow-horizontal }
 		
+		
+		
+		
+		
 		// left column
-		place { control="gameimage" region="column1" margin-left=8 margin-top=16 width=200 height=85 }
+		place { 
+			control="gameimage" 
+			region="column1" 
+			margin-left=16 
+			margin-top=16 
+			width=200 
+			height=85 
+		}
+		
+		place { 
+			control="downloadprogressbar" 
+			region=bottom
+			dir=right
+			height=2 
+			width=max 
+			margin-left=16
+			margin-right=16
+		}
 		
 		// left-mid column
-		place { control="namelabel" region="column2" margin-top=16 margin-left=0 }
-		place { control="launchbutton" region=column2 start=namelabel dir=down margin-top=10 }
-		place { control="downloadprogressbar" region=column2 start=launchbutton margin-top=5 dir=down spacing=10 height=3 width=150 }
-		place { control="settingslink" region=column2 start=downloadprogressbar dir=down margin-top=5 margin-left=0 }
+		place { control="namelabel" region="column2" margin-top=20 margin-left=0 }
+		place { control="updatetypelabel" region="column2" margin-top=47 align=left}
+		place { control="downloadtotallabel,downloadtotalfield" region="column2" align=left margin-top=58 spacing=4 }
+		
+		place { control="starttimelabel,starttimefield" region="column2" dir="right" align=left spacing=4 margin-top=71 x=0 }
+		place { control="timecompletedlabel,timecompletedfield" region="column2" x=0 align=left margin-top=71 spacing=4 }
+		place { control="timeremaininglabel,timeremainingfield" region="column2" x=0 align=left margin-top=83 spacing=4 }
 
-		// right-mid column
-		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=43 spacing=6 }
-		place { control="starttimelabel,starttimefield" region="column3" dir="right" align=top spacing=6 margin-top=63 x=0 }
-		place { control="timecompletedlabel,timecompletedfield" region="column3" x=0 align=top margin-top=63 spacing=6 }
-		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=83 spacing=6 }
-				
+		
+
+	
 		// right column
-		place { control="updatetypelabel" region="column4" spacing=10 margin-top=22 align=right margin-right=16 }
-		place { control="topofqueuebutton,removefromqueuebutton" region="column4" height=22 width=26 dir=right spacing=10 margin-top=50 align=right margin-right=16 }
-		place { control="newslink" region="column4" spacing=10 margin-top=80 align=right	margin-right=16 }
-
+				
+		
+		place { 
+			control="launchbutton,topofqueuebutton,removefromqueuebutton" 
+			region="column4" 
+			height=33 
+			width=33 
+			dir=right 
+			spacing=10 
+			margin-top=20 
+			align=right 
+			margin-right=16 
+		}
+		
+		
+		place { control="newslink" region="column4" spacing=10 margin-top=64 align=right	margin-right=34 }
+		place { control="settingslink" region=column4 dir=right margin-top=80 align=right margin-right=34 }
 		// put the buttons along the bottom
 		
 	}

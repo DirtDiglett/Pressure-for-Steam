@@ -149,18 +149,24 @@
 
 		throttleLabel {
 			bgcolor	   none
-			font-size   "15"
+			font-size   "13"
 			textcolor   "white"
 			padding-top	"0"
-			font-style="regular"
+			font-style="outerglow,regular"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=4
 	    } 
 	    
 		throttleValue {
 			bgcolor	   none
-			font-size   "15"
+			font-size   "13"
 			textcolor   "orange"
 			padding-top	"0"
-			font-style="uppercase"
+			font-style="outerglow,uppercase"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=2
+			font-outerglow-filtersize=4
 		}
 		
 		container {
@@ -170,22 +176,32 @@
 		bigtext {
 		 font-family=basefont
 		 font-size=14
-		 font-style="regular"
-		 font-weight=bold
+		 font-style="outerglow,regular"
+		 font-outerglow-color="8 8 8 255"
+		 font-outerglow-offset=1
+		 font-outerglow-filtersize=4
+		 font-weight=700
 		 textcolor="white"
+		 
 		}
 
 		bigtextlabel {
 		 font-family=basefont
 		 font-size=14
-		 font-style="regular"
+		 font-style="outerglow,regular"
+		 font-outerglow-color="8 8 8 255"
+		 font-outerglow-offset=1
+		 font-outerglow-filtersize=4
 		 textcolor="lightestGreyHighlight"
 		}
 		
 		bigtextHeader {
 		 font-family=basefont
 		 font-size=17
-		 font-style="uppercase"
+		 font-style="outerglow,uppercase"
+		 font-outerglow-color="8 8 8 255"
+		 font-outerglow-offset=1
+		 font-outerglow-filtersize=4
 		 textcolor="red"
 		}
 	
@@ -575,7 +591,7 @@
 		place { control="GraphPanel" width=max height=max margin-top=13 }
 
 		//Universal Pause/Resume Button
-		place { control="pauseresumeallbutton" width=118 height=43 align=right y=24 margin-right=24 }
+		place { control="pauseresumeallbutton" width=118 height=43 align=right y=24 margin-right=12 }
 		
 		//Network Values
 		place { 
@@ -586,22 +602,22 @@
 			width=0 
 		}
 
-		place { control="download_rate_value" x=24 spacing=8 height=30 y=16 }
+		place { control="download_rate_value" x=12 spacing=8 height=30 y=16 }
 		place { control="download_rate" start="download_rate_value" x=3 height=30 }
 
-		place { control="peak_download_rate_value" x=24 spacing=8 height=30 y=46 }
+		place { control="peak_download_rate_value" x=12 spacing=8 height=30 y=46 }
 		place { control="peak_download_rate" start="peak_download_rate_value" x=3 height=30 }
 
 
-		place { control="total_downloaded_value" x=24 spacing=8 height=30 y=76	}
+		place { control="total_downloaded_value" x=12 spacing=8 height=30 y=76	}
 		place { control="total_downloaded" start="total_downloaded_value" x=3 height=30 }
 
 		//Disk Usage
 		place { control="disk_status_image,disk_status_label" y=106 height=40 spacing=8 align=right margin-right=16 }
 		
 		// Blackout/Throttling Values - Right
-		place { control="blackout_label,blackout_value," y=70 spacing=4 align=right height=30 margin-right=24  }
-		place { control="throttling_label,throttling_value" y=90 spacing=4 align=right height=30 margin-right=24  }
+		place { control="blackout_label,blackout_value," y=65 spacing=4 align=right height=30 margin-right=12  }
+		place { control="throttling_label,throttling_value" y=80 spacing=4 align=right height=30 margin-right=12  }
 	}
 }
 
