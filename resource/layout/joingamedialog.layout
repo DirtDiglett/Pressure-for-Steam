@@ -32,6 +32,9 @@
 			render_bg {
 				0="image(x0+20, y0+60, x1, y1, graphics/dialogs/gameLaunch)"
 			}
+			
+			minimum-width=550
+			minimum-height=250
 		}
 		
 	}
@@ -66,8 +69,30 @@
 		place { controls="Progress" region=box start=ReadyToPlayInfoLabel margin-top=10 width=max dir=down }
 		place { controls="OverrideThrottleCheckBox" region=box start=Progress margin-top=10 width=max height=15 dir=down }
 		place { controls="AutoLaunchCheckBox" region=box start=OverrideThrottleCheckBox margin-top=10 height=15 width=max dir=down }
-		place { controls="NewsButton" region=box start=AutoLaunchCheckBox margin-top=10 width=135 height=25 dir=down margin-right=0 align=right }
-		place { controls="PlayButton" region=box start=NewsButton margin-top=10 width=135 height=25 dir=down align=right }
+		
+		
+		place { 
+			controls="NewsButton" 
+			region=box
+			margin-left=25
+			margin-top=10 width=135 
+			height=25 
+			dir=down 
+			
+			align=left 
+		}
+		
+		place { 
+			controls="PlayButton" 
+			region=box 
+			margin-top=10 
+			width=135 
+			height=25 
+			dir=down 
+			align=right 
+		}
+		
+		
 		place { controls="SkipUpdateLabel" region=box start=AutoLaunchCheckBox dir=down width=max margin-right=145 margin-top=46 }
 		
 		place { controls="Divider,SSAUpdateLabel,SSAUpdateURL" region=ssa margin-top=10 spacing=5 width=max dir=down }
