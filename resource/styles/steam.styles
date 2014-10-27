@@ -403,6 +403,7 @@ styles {
   
 	// Games in Details List + List View that are not installed.
     "GameItem_Uninstalled" {
+      padding-left=10
       textcolor  = "grey"
       selectedtextcolor  = "white"
       selectedbgcolor = "blue" //blue
