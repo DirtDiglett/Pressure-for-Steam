@@ -77,11 +77,11 @@
 		        3="gradient( x0, y0+6, x1, y0+58, grey, lightGreyEnd)"
 
 				// The status Label area.
-				4="fill( x0, y1-60, x1, y1, darkestGrey )"
+				4="fill( x0, y1-90, x1, y1, darkestGrey )"
 				
 				// The chat Input area.
-				5="gradient( x0, y1-50, x1, y1, grey, lightGreyEnd)"
-				6="fill(x0,y1-50,x1,y1-49, greyHighlight)"
+				5="gradient( x0, y1-58, x1, y1, grey, lightGreyEnd)"
+				6="fill(x0,y1-58,x1,y1-57, greyHighlight)"
 				
 				// Dark corner pixels for the Chat Input area.
 				7="fill(x0,y1-1,x0+1,y1, darkestGrey)"
@@ -92,7 +92,24 @@
 				12="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
 			}
 		}
-				
+		
+		button {
+			textcolor="none"
+			font-style="none"
+			
+			render {
+				0="image(x0+3,y0+7,x1,y1, graphics/send_button)"
+			}
+		}
+		
+		button:active {
+			textcolor="none"
+			font-style="none"
+			
+			render {
+				0="image(x0+3,y0+7,x1,y1, graphics/send_button_active)"
+			}
+		}
 		
 		// Used for the status label on the chat only
 		label {
@@ -102,23 +119,40 @@
 		}
 		
 		TextEntry {
-			font-size=14
-			
-			textcolor="darkestGrey"
-			
-			selectedbgcolor="blue"
-			selectedtextcolor="trueWhite"
-			
-			padding-top=14
-			padding-bottom=5
-			inset="0 10 0 0"
-			
-			render {}
-			render_bg {
-				0="image(x0, y0-4, x0+3, y0+21, graphics/textEntryleft)"
-				1="image_tiled(x0+3,y0-4, x1, y0+21, graphics/inner)"
-			}  
-		}
+	      font-family=basefont
+	      font-size=13
+	      textcolor  = "darkestGrey"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	
+	      inset-left=4
+	      inset-top=6
+	      inset-right=6
+	      
+	      render_bg {
+	      	0="fill(x0+2,y0+2,x1+32,y1-2, white)"
+	
+		  	// TOP
+		  	1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+		  	2="image_tiled(x0+3,y0,x1+32,y0+4, graphics/textEntry/topMiddle)"
+		  	3="image(x1+32,y0,x1+35,y0+4, graphics/textEntry/topRight)"
+		  	
+		  	// LEFT
+		  	4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+		  	
+		  	// RIGHT
+		  	5="image_tiled(x1+32,y0+4,x1+35,y1-3, graphics/textEntry/rightMiddle)"
+		  	
+		  	// BOTTOM
+	      	6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+	      	7="image_tiled(x0+3,y1-2,x1+32,y1+1, graphics/textEntry/bottomMiddle)"
+	      	8="image(x1+32,y1-3,x1+35,y1+1, graphics/textEntry/bottomRight)"
+	      	
+	      }
+	         
+	    }
 		
 		
 		CChatActionsButton {
@@ -328,18 +362,13 @@
 			textcolor="ChatDialog.HistoryColor"
 			selectedbgcolor="blue"
 			selectedtextcolor="trueWhite"
-			bgcolor=darkestGrey
+			bgcolor=none
 			
 			inset="8 8 0 0"
 			
 			render {
-				// For some weird ready, this appears DARKER than the rest of darkestGrey
-				//0="gradient(x0,y1-9,x1,y1, none, red)"
-				//1="fill(x0,y0,x1,y0+1, darkestGrey)"
-			
-				0="image_tiled(x0,y1-9,x1,y1, graphics/chatbottom)"
+				0="image_tiled(x0,y1-14,x1,y1, graphics/chatbottom)"
 			}
-			render_bg {}
 		}
 		
 		"RichText url" {}
@@ -420,7 +449,7 @@
 		
 		place { 
 			control="VoiceBar" 
-			y=57 
+			y=60 
 			width=max 
 			height=40 
 			dir=down 
@@ -435,14 +464,14 @@
 			height=max 
 			align=right 
 			dir=down 
-			margin-bottom=69 
+			margin-bottom=75 
 			margin-right=1 
 		}
 		
 		region { 
 			name=bottom1 
 			align=bottom 
-			height=67
+			height=79
 			width=max
 		}
 		
@@ -455,11 +484,11 @@
 		place { 
 			control="TextEntry" 
 			region=bottom 
-			height=25
+			height=40
 			width=max 
 			
-			margin-top=17
-			margin-left=13
+			margin-left=8
+			margin-bottom=6
 			
 			end-right=EmoticonButton 
 		}
@@ -470,7 +499,7 @@
 			width=32 
 			height=25 
 			align=right 
-			margin-top=13
+			margin-top=9
 			
 			end-right=sendbutton
 		}
@@ -481,12 +510,12 @@
 			
 			align=right
 			
-			height=25 
-			width=80 
+			height=40 
+			width=40 
 			
-			margin-top=13
-			margin-left=13
-			margin-right=13
+			margin-left=8
+			margin-right=8
+			margin-bottom=6
 		}
 		
 		place { 
@@ -495,7 +524,7 @@
 			height=20
 			align=top 
 			margin-left=8
-			margin-top=-4
+			margin-top=0
 		}
 		
 		
