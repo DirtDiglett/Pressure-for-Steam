@@ -50,10 +50,16 @@
 			}
 		
 
-		highlight {
+		highlight [$OSX] {
 			textcolor=none
 			image=graphics/overlay/guides
 			inset="10 7 0 0"
+		}
+		
+		highlight [!$OSX] {
+			textcolor=none
+			image=graphics/overlay/guides
+			inset="10 10 0 0"
 		}
 	}
 	

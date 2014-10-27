@@ -37,10 +37,16 @@
 			}
 		
 
-		highlight {
+		highlight [$OSX] {
 			textcolor=none
 			image=graphics/overlay/screenshots
 			inset="0 7 0 0"
+		}
+		
+		highlight [!$OSX] {
+			textcolor=none
+			image=graphics/overlay/screenshots
+			inset="0 10 0 0"
 		}
 	}
 	

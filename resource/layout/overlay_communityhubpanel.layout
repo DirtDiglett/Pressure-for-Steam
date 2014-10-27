@@ -39,10 +39,16 @@
 			}
 
 
-		detailsboxtitle {
+		detailsboxtitle [$OSX] {
 			textcolor=none
 			image=graphics/overlay/communityhub
 			inset="15 7 0 0"
+		}
+
+		detailsboxtitle [!$OSX] {
+			textcolor=none
+			image=graphics/overlay/communityhub
+			inset="15 10 0 0"
 		}
 
 		DarkRegion {
