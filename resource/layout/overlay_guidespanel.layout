@@ -59,7 +59,7 @@
 		highlight [!$OSX] {
 			textcolor=none
 			image=graphics/overlay/guides
-			inset="10 10 0 0"
+			inset="10 9 0 0"
 		}
 	}
 	

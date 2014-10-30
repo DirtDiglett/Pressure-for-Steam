@@ -112,24 +112,21 @@
 			margin-top=5
 		}		
 
-		place [!$OSX] {
-			controls="SteamLogo"
-			x=0
-			y=0
-			margin-top=5
-			dir=right
-			
-			end-right=WebBrowserButton
-		}
-
 		place [!$OSX] { 
-			controls="WebBrowserButton,online_friends,SettingsButton,MusicPlayerButton" 
+			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" 
 			region=toparea 
 			x=0 
 			dir=right 
 			spacing=3 
 			align=top-center
 			margin-top=5
+		}
+		
+		place [!$OSX] {
+			controls="MusicPlayerButton"
+			region=toparea
+			start=SettingsButton
+			margin-left=15
 		}
 
 

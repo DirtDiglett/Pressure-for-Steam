@@ -48,7 +48,7 @@
 		detailsboxtitle [!$OSX] {
 			textcolor=none
 			image=graphics/overlay/communityhub
-			inset="15 10 0 0"
+			inset="15 9 0 0"
 		}
 
 		DarkRegion {

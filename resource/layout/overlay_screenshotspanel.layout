@@ -46,7 +46,7 @@
 		highlight [!$OSX] {
 			textcolor=none
 			image=graphics/overlay/screenshots
-			inset="0 10 0 0"
+			inset="0 9 0 0"
 		}
 	}
 	

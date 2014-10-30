@@ -46,7 +46,7 @@
 			textcolor=none
 			image=graphics/overlay/friends
 			
-			inset="15 10 0 0"
+			inset="15 9 0 0"
 		}
 		
 		// Used for the Players Icon
@@ -59,7 +59,7 @@
 		detailsboxtitle [!$OSX] {
 			textcolor=none
 			image=graphics/overlay/players
-			inset="15 11 0 0"
+			inset="15 10 0 0"
 		}
 		
 		button {
