@@ -229,7 +229,7 @@
 
 				render_bg {
 					// Creates the top section
-					0="gradient( x0+1, y0+1, x1-1, y0 + 86, grey, darkGreyEnd )"
+					0="gradient( x0+1, y0+1, x1-1, y0 + 87, grey, darkGreyEnd )"
 					
 					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
