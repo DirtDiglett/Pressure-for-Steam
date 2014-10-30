@@ -3,7 +3,7 @@
 		FriendAliasesDialog {
 			title			"#friends_setnickname_title"
 			wide			"388"
-			tall			"148"
+			tall			"158"
 		}
 
 		CloseButton {
@@ -34,8 +34,14 @@
 	}
 	
 	styles {
+		
+		frame {
+			
+			minimum-height=175
+		}
+		
 		Button {
-			minimum-width=80
+			minimum-width=92
 		}
 	}
 
@@ -51,7 +57,7 @@
 		region { 
 			name="bottomrow" 
 			align=bottom 
-			height=36 
+			height=50 
 		}
 		
 		place { 
@@ -59,15 +65,18 @@
 			region=bottomrow 
 			align=right 
 			spacing=8 
-			margin-right=8
-			margin-bottom=-1 
+			margin-right=10
+			margin-top=13 
+			height=24
 		}
 		
 		place { 
 			control=Details 
 			y=34 
 			width=max
-			margin=8 
+			margin=8
+			margin-left=16
+			margin-right=16 
 			height=40 
 		}
 		
@@ -75,7 +84,7 @@
 			control=NicknameEdit 
 			y=70
 			width=max
-			margin=8 
+			margin=16 
 			height=24 
 		}
 	}
