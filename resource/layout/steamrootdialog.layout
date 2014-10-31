@@ -779,13 +779,13 @@
 			dir=right 
 			margin-right=59 
 			width=75
-			margin-top=29
+			margin-top=28
 		}
 		
 		place [!$OSX] { 
 			control="online_friends" 
 			height=12 
-			y=48 
+			y=47 
 			align=right 
 			dir=right
 			margin-right=59 
