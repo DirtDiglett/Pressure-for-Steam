@@ -97,11 +97,19 @@
 	}
 
 	layout {
-		place { 
+		place [$OSX]{ 
 			region=body 
 			control=communityfile_name 
 			x=3 
 			y=70 
+			width=186 
+		}
+		
+		place [!$OSX]{ 
+			region=body 
+			control=communityfile_name 
+			x=3 
+			y=67 
 			width=186 
 		}
 		
