@@ -121,7 +121,10 @@
 
 		CGamesPage_Details {
 			bgcolor="darkestGrey"
-			render {}
+			render {
+				
+				0="gradient_horizontal(x0+320,y0,x0+326,y1, black40, none)"
+			}
 			render_bg {}
 		}
 
