@@ -1,15 +1,15 @@
-"friends/FriendInGameNotification.res"
+"friends/AchievementNotification.res"
 {
-	
 	controls {
-		"FriendIngameNotification"
+	
+		"AchievementNotification"
 		{
-			"ControlName"		"CFriendInGameNotification"
-			"fieldName"		"FriendIngameNotification"
+			"ControlName"		"CAchievmentNotification"
+			"fieldName"		"AchievementNotification"
 			"xpos"		"0"
 			"ypos"		"0"
 			"wide"		"240"
-			"tall"		"98"
+			"tall"		"94"
 			"AutoResize"		"0"
 			"PinCorner"		"0"
 			"visible"		"1"
@@ -18,14 +18,25 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"ImageAvatar"
+		"DarkenedRegion"
+		{
+			"controlname"	"imagepanel"
+			"fieldname"		"DarkenedRegion"
+			"xpos"		"1"
+			"ypos"		"74"
+			"wide"		"238"
+			"tall"		"23"
+			"fillcolor"	"ClientBG"
+			"zpos"		"-1"
+		}
+		"AchievementIcon"
 		{
 			"ControlName"		"ImagePanel"
-			"fieldName"		"ImageAvatar"
-			"xpos"		"16"
-			"ypos"		"16"
-			"wide"		"42"
-			"tall"		"42"
+			"fieldName"		"AchievementIcon"
+			"xpos"		"14"
+			"ypos"		"14"
+			"wide"		"64"
+			"tall"		"64"
 			"AutoResize"		"0"
 			"PinCorner"		"0"
 			"visible"		"1"
@@ -35,15 +46,15 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		"NotificationClickPanel"
+		"IconBorder"
 		{
-			"ControlName"		"CNotificationClickPanel"
-			"fieldName"		"NotificationClickPanel"
-			"xpos"		"0"
-			"ypos"		"0"
-			"zpos"		"1"
-			"wide"		"64"
-			"tall"		"24"
+			"ControlName"		"Panel"
+			"fieldName"		"IconBorder"
+			"xpos"		"13"
+			"ypos"		"13"
+			"zpos"		"0"
+			"wide"		"66"
+			"tall"		"66"
 			"AutoResize"		"0"
 			"PinCorner"		"0"
 			"visible"		"1"
@@ -51,97 +62,47 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelSender"
+		"LabelTitle"
 		{
 			"ControlName"		"Label"
-			"fieldName"		"LabelSender"
-			"xpos"		"64"
-			"ypos"		"16"
-			"wide"		"172"
-			"tall"		"14"
+			"fieldName"		"LabelTitle"
+			"xpos"		"88"
+			"ypos"		"25"
+			"wide"		"144"
+			"tall"		"28"
 			"AutoResize"		"0"
 			"PinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"%name%"
-			"textAlignment"		"north-west"
-			"wrap"		"0"
-			"font"		FriendsSmall
-		}
-		"LabelInfo"
-		{
-			"ControlName"		"Label"
-			"fieldName"		"LabelInfo"
-			"xpos"		"64"
-			"ypos"		"30"
-			"wide"		"172"
-			"tall"		"14"
-			"AutoResize"		"0"
-			"PinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"		"0"
-			"paintbackground"		"1"
-			"labelText"		"#Friends_InGameNotification_Info"
-			"textAlignment"		"north-west"
-			"wrap"		"0"
-			"font"		FriendsSmall
-		}
-		"LabelGame"
-		{
-			"ControlName"		"Label"
-			"fieldName"		"LabelGame"
-			"xpos"		"64"
-			"ypos"		"44"
-			"wide"		"172"
-			"tall"		"14"
-			"AutoResize"		"0"
-			"PinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"		"0"
-			"paintbackground"		"1"
-			"labelText"		"%game%"
-			"textAlignment"		"north-west"
-			"wrap"		"0"
-			"font"		FriendsSmall
-		}
-		"DarkenedRegion"
-		{
-			"controlname"	"imagepanel"
-			"fieldname"		"DarkenedRegion"
-			"xpos"		"0"
-			"ypos"		"74"
-			"wide"		"240"
-			"tall"		"24"
-			"fillcolor"	"Black"
-			"zpos"		"-1"
-		}
-		"LabelHotkey"
-		{
-			"ControlName"		"Label"
-			"fieldName"		"LabelHotkey"
-			"xpos"		"0"
-			"ypos"		"74"
-			"wide"		"240"
-			"tall"		"24"
-			"AutoResize"		"0"
-			"PinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"		"0"
-			"paintbackground"		"1"
-			"labelText"		"#Friends_OnlineNotification_Hotkey"
+			"labelText"		"%title%"
 			"textAlignment"		"center"
-			"wrap"		"0"
+			"wrap"		"1"
+			"font"		FriendsSmall
+		}
+		"LabelDescription"
+		{
+			"ControlName"		"Label"
+			"fieldName"		"LabelText"
+			"xpos"		"88"
+			"ypos"		"53"
+			"wide"		"144"
+			"tall"		"28"
+			"AutoResize"		"0"
+			"PinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"		"0"
+			"paintbackground"		"1"
+			"labelText"		"%text%"
+			"textAlignment"		"north-west"
+			"wrap"		"1"
 			"font"		FriendsSmall
 		}
 	}
 	
 	styles {
-		
 		Notification [!$OSX] {
 			font-family=basefont
 			font-size=15
@@ -170,7 +131,7 @@
 				// Grey Highlight
 				10="fill(x0+3,y0+1,x1-3,y0+2, greyHighlight)"
 				
-				11="image(x1-110,y0,x1,y1, graphics/notifications/game)"
+				11="image(x1-110,y0,x1,y1, graphics/notifications/achievement)"
 			}
 	      
 			render {}
@@ -204,11 +165,10 @@
 				// Grey Highlight
 				10="fill(x0+3,y0,x1-3,y0+1, greyHighlight)"
 				
-				11="image(x1-110,y0,x1,y1, graphics/notifications/game)"
+				11="image(x1-110,y0,x1,y1, graphics/notifications/achievement)"
 			}
 	      
 			render {}
 	    }
-		
 	}
 }

@@ -1,11 +1,10 @@
-"friends/FriendInGameNotification.res"
+"friends/GiftReceivedNotification.res"
 {
-	
 	controls {
-		"FriendIngameNotification"
+		"GiftReceivedNotification"
 		{
-			"ControlName"		"CFriendInGameNotification"
-			"fieldName"		"FriendIngameNotification"
+			"ControlName"		"GiftReceivedNotification"
+			"fieldName"		"GiftReceivedNotification"
 			"xpos"		"0"
 			"ypos"		"0"
 			"wide"		"240"
@@ -18,10 +17,10 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"ImageAvatar"
+		"GiftImage"
 		{
 			"ControlName"		"ImagePanel"
-			"fieldName"		"ImageAvatar"
+			"fieldName"		"GiftImage"
 			"xpos"		"16"
 			"ypos"		"16"
 			"wide"		"42"
@@ -34,6 +33,7 @@
 			"paintbackground"		"1"
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
+			"image" "graphics/icon_toast_gift"
 		}
 		"NotificationClickPanel"
 		{
@@ -84,26 +84,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"#Friends_InGameNotification_Info"
-			"textAlignment"		"north-west"
-			"wrap"		"0"
-			"font"		FriendsSmall
-		}
-		"LabelGame"
-		{
-			"ControlName"		"Label"
-			"fieldName"		"LabelGame"
-			"xpos"		"64"
-			"ypos"		"44"
-			"wide"		"172"
-			"tall"		"14"
-			"AutoResize"		"0"
-			"PinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"		"0"
-			"paintbackground"		"1"
-			"labelText"		"%game%"
+			"labelText"		"#friends_giftreceived_info"
 			"textAlignment"		"north-west"
 			"wrap"		"0"
 			"font"		FriendsSmall
@@ -133,7 +114,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"#Friends_OnlineNotification_Hotkey"
+			"labelText"		"#Friends_InviteNotification_Hotkey"
 			"textAlignment"		"center"
 			"wrap"		"0"
 			"font"		FriendsSmall
@@ -141,7 +122,6 @@
 	}
 	
 	styles {
-		
 		Notification [!$OSX] {
 			font-family=basefont
 			font-size=15
@@ -170,7 +150,7 @@
 				// Grey Highlight
 				10="fill(x0+3,y0+1,x1-3,y0+2, greyHighlight)"
 				
-				11="image(x1-110,y0,x1,y1, graphics/notifications/game)"
+				11="image(x1-110,y0,x1,y1, graphics/notifications/gift)"
 			}
 	      
 			render {}
@@ -204,11 +184,10 @@
 				// Grey Highlight
 				10="fill(x0+3,y0,x1-3,y0+1, greyHighlight)"
 				
-				11="image(x1-110,y0,x1,y1, graphics/notifications/game)"
+				11="image(x1-110,y0,x1,y1, graphics/notifications/gift)"
 			}
 	      
 			render {}
 	    }
-		
 	}
 }

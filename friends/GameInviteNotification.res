@@ -1,11 +1,10 @@
-"friends/FriendInGameNotification.res"
+"friends/GameInviteNotification.res"
 {
-	
 	controls {
-		"FriendIngameNotification"
+		"GameInviteNotification"
 		{
-			"ControlName"		"CFriendInGameNotification"
-			"fieldName"		"FriendIngameNotification"
+			"ControlName"		"CGameInvitationNotification"
+			"fieldName"		"GameInviteNotification"
 			"xpos"		"0"
 			"ypos"		"0"
 			"wide"		"240"
@@ -84,7 +83,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"#Friends_InGameNotification_Info"
+			"labelText"		"#Friends_GameInvitation_Info"
 			"textAlignment"		"north-west"
 			"wrap"		"0"
 			"font"		FriendsSmall
@@ -133,7 +132,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"#Friends_OnlineNotification_Hotkey"
+			"labelText"		"#Friends_InviteNotification_Hotkey"
 			"textAlignment"		"center"
 			"wrap"		"0"
 			"font"		FriendsSmall
@@ -141,7 +140,6 @@
 	}
 	
 	styles {
-		
 		Notification [!$OSX] {
 			font-family=basefont
 			font-size=15
@@ -209,6 +207,5 @@
 	      
 			render {}
 	    }
-		
 	}
 }

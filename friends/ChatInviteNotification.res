@@ -1,11 +1,10 @@
-"friends/FriendInGameNotification.res"
+"friends/ChatInviteNotification.res"
 {
-	
 	controls {
-		"FriendIngameNotification"
+			"ChatInvitationNotification"
 		{
-			"ControlName"		"CFriendInGameNotification"
-			"fieldName"		"FriendIngameNotification"
+			"ControlName"		"CChatInvitationNotification"
+			"fieldName"		"ChatInvitationNotification"
 			"xpos"		"0"
 			"ypos"		"0"
 			"wide"		"240"
@@ -84,15 +83,15 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"#Friends_InGameNotification_Info"
+			"labelText"		"#Friends_ChatInvitation_Info"
 			"textAlignment"		"north-west"
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelGame"
+		"LabelChat"
 		{
 			"ControlName"		"Label"
-			"fieldName"		"LabelGame"
+			"fieldName"		"LabelChat"
 			"xpos"		"64"
 			"ypos"		"44"
 			"wide"		"172"
@@ -103,7 +102,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"%game%"
+			"labelText"		"%chat%"
 			"textAlignment"		"north-west"
 			"wrap"		"0"
 			"font"		FriendsSmall
@@ -133,7 +132,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"paintbackground"		"1"
-			"labelText"		"#Friends_OnlineNotification_Hotkey"
+			"labelText"		"#Friends_InviteNotification_Hotkey"
 			"textAlignment"		"center"
 			"wrap"		"0"
 			"font"		FriendsSmall
@@ -141,7 +140,6 @@
 	}
 	
 	styles {
-		
 		Notification [!$OSX] {
 			font-family=basefont
 			font-size=15
@@ -170,7 +168,7 @@
 				// Grey Highlight
 				10="fill(x0+3,y0+1,x1-3,y0+2, greyHighlight)"
 				
-				11="image(x1-110,y0,x1,y1, graphics/notifications/game)"
+				11="image(x1-110,y0,x1,y1, graphics/notifications/claninvite)"
 			}
 	      
 			render {}
@@ -204,11 +202,10 @@
 				// Grey Highlight
 				10="fill(x0+3,y0,x1-3,y0+1, greyHighlight)"
 				
-				11="image(x1-110,y0,x1,y1, graphics/notifications/game)"
+				11="image(x1-110,y0,x1,y1, graphics/notifications/claninvite)"
 			}
 	      
 			render {}
 	    }
-		
 	}
 }
