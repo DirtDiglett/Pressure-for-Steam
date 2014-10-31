@@ -535,7 +535,7 @@
 			}	
 
 		// Currently has Notifications
-		inbox_button_active {
+		inbox_button_active [$OSX] {
 			font-family=basefont
 			font-size=12
 			textcolor=orange
@@ -553,10 +553,35 @@
 			}	
 		}
 		
-			inbox_button_active:hover {
+		inbox_button_active [!$OSX] {
+			font-family=basefont
+			font-size=12
+			textcolor=orange
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			
+			padding-right=13
+			
+			render {}
+			
+			render_bg {
+				1="image(x1-17, y0+1, x1-1, y0+13, graphics/icons/notifications)"
+			}	
+		}
+		
+			inbox_button_active:hover [$OSX] {
 				render {}
 				render_bg {
 					1="image(x1-17, y0, x1-1, y0+12, graphics/icons/notifications)"
+				}	
+			}
+			
+			inbox_button_active:hover [!$OSX] {
+				render {}
+				render_bg {
+					1="image(x1-17, y0+1, x1-1, y0+13, graphics/icons/notifications)"
 				}	
 			}
 				
