@@ -285,7 +285,7 @@
 			bgcolor=none
 			
 			render {
-				0="gradient(x0,y1-6,x1,y1, none, darkestGrey)"
+				0="fill(x0,y1-1,x1,y1, darkestGrey)"
 			}
 		}
 	
