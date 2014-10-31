@@ -64,6 +64,7 @@
 		
 		Divider {} // ________________________________________________________________________________________________________________________
 		
+		AddFunds { text="Add Funds to Steam Wallet" shellcmd="steam://openurl/http://store.steampowered.com/steamaccount/addfunds"}
 		RedeemWalletVoucher				{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
 		ManageGuestPasses	{ text="#Steam_ManageGuestPasses"				command="ManageGuestPasses" }
 		
