@@ -4,9 +4,11 @@
 		text = [$OSX]	"#SteamRootAccount"
 		
 		SkinVersion {
-			text="Pressure WIP - Alpha-ish"
-			shellcmd="" 
+			text="Pressure Alpha"
+			command="About" 
 		}
+		
+		About							{	text="#steam_about"						command="About" }
 		
 		Divider {} // ________________________________________________________________________________________________________________________
 		CheckForUpdates	{	
@@ -37,7 +39,7 @@
 		
 		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"		command="gooffline" }
 		Divider {} // ________________________________________________________________________________________________________________________
-		MiniMode		{	text="#steam_menu_minimode"		shellcmd="steam://open/minigameslist" }
+		//MiniMode		{	text="#steam_menu_minimode"		shellcmd="steam://open/minigameslist" }
 		LargeMode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
 		BigPicture		{	text="Big Picture"			shellcmd="steam://open/bigpicture" }
 		Divider {} // ________________________________________________________________________________________________________________________
