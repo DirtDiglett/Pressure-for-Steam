@@ -75,7 +75,7 @@
 				textcolor  = "white"
 			
 			render_bg {
-				0="gradient(x0,y0,x1,y1, lighterGrey, grey)"
+				0="gradient(x0,y0,x1,y1+1, lighterGrey, grey)"
 				1="fill(x0,y0+3,x1,y0+4, lightestGreyHighlight)"
 			}
 			}
