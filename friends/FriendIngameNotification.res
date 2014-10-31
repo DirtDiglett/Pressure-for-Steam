@@ -96,7 +96,7 @@
 			"xpos"		"64"
 			"ypos"		"44"
 			"wide"		"172"
-			"tall"		"14"
+			"tall"		"24"
 			"AutoResize"		"0"
 			"PinCorner"		"0"
 			"visible"		"1"
