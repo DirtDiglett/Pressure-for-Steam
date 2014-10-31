@@ -121,29 +121,9 @@
 			}
 	    }
 	    
-	    // Copy the ListPanelColumnheader above  
-		"Csteamrootdialog ListPanelColumnheader" {
-			font-family=basefont
-			font-size=14
-			font-size=13 [$OSX]
-			font-weight=400
-			textcolor  = "red"
-			font-style  = "none"
-			bgcolor  = "none"
-			inset  = "0 0 0 0"
-			inset  = "0 1 0 0" [$OSX]
-			padding-top=5
-	
-			render_bg {
-				// fill
-				0  = "fill (x0, y0 + 1, x1, y1, green )" // bg fill
-			}   
-		}
-	
-	   
-		    "Csteamrootdialog ListPanelColumnHeader:hover" {
-				textcolor  = "TextHover"
-		    }
+	    // Copy the ListPanelColumnheader above 
+	    // This is used for the Tool's page. 
+		
 	    
 
 		// ________________________________________________________________
@@ -169,46 +149,48 @@
 		// ________________________________________________________________	
 	 
 		ListPanelColumnSelectButton {
-	        inset  = "0 0 0 0"
-	        render {
-	          // background fill
-	          1  = "fill( x0, y0 + 1, x1 - 1, y1, orange )"  
-	          
-	          // lines around
-	          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
-	          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
-	          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
-	          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-	        }   
-	        render_bg {}
+	        inset="13 2 0 0"
+       		padding-left=0
+       		padding-right=0
+       		manimum-width=8
+       		manimum-height=8
+       		bgcolor=none
+        	render {
+          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
+        	}   
+        	render_bg {
+        		0="fill(x0,y0,x1,y1, darkestGrey)"
+        	}
 		}
 	    
 		    ListPanelColumnSelectButton:hover {
-		        inset  = "0 3 0 0"
-		        render
-		        {
-		          // lines around
-		          1  = "fill( x0, y0 + 1, x1 - 1, y1, buttonborderdisabled)"
-		          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
-		          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
-		          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
-		          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-		        }   
-		        render_bg {}
+		        inset="13 2 0 0"
+	       		padding-left=0
+	       		padding-right=0
+	       		manimum-width=8
+	       		manimum-height=8
+	       		bgcolor=none
+	        	render {
+	          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
+	        	}   
+	        	render_bg {
+	        		0="fill(x0,y0,x1,y1, darkestGrey)"
+	        	}
 			}
 	      
 		    ListPanelColumnSelectButton:selected {
-		        inset  = "0 3 0 0"
-		        render
-		        {
-		          // lines around
-		          1  = "fill( x0, y0 + 1, x1 - 1, y1, buttonborderdisabled)"
-		          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
-		          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
-		          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
-		          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-		        }   
-		        render_bg {}
+		       inset="13 2 0 0"
+	       		padding-left=0
+	       		padding-right=0
+	       		manimum-width=8
+	       		manimum-height=8
+	       		bgcolor=none
+	        	render {
+	          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog_active )"
+	        	}   
+	        	render_bg {
+	        		0="fill(x0,y0,x1,y1, darkestGrey)"
+	        	}
 			}
 	
 	
