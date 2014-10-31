@@ -147,7 +147,6 @@
 			font-size=15
 			font-weight=400
 			
-			
 			bgcolor=none
 			
 			render_bg {
