@@ -4,9 +4,11 @@
 		text = [$OSX]	"#SteamRootAccount"
 		
 		SkinVersion {
-			text="Pressure Alpha"
-			command="About" 
+			text="Pressure BETA"
+			shellcmd="steam://openurl/http://github.com/DirtDiglett/Pressure-for-Steam/"
 		}
+		
+		Website			{	text="Official Steam Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/pressureskin" }
 		
 		About							{	text="#steam_about"						command="About" }
 		
