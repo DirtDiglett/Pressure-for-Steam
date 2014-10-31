@@ -167,6 +167,8 @@
 				textcolor=lightestBlue
 			}
 		
+		
+		
 		WebStatusStyle {
 			image="graphics/icon_status_web"
 			padding-left=4
@@ -187,14 +189,12 @@
 			padding-left=4
 		}
 	
-		BigPictureStatusStyleInGame
-		{
+		BigPictureStatusStyleInGame {
 			image="graphics/icon_status_bigpic_ingame"
 			padding-left=4
 		}
 		
-		MobileStatusStyleInGame
-		{
+		MobileStatusStyleInGame {
 			image="graphics/icon_status_mobile_ingame"
 			padding-left=4
 		}
