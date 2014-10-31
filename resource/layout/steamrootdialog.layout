@@ -764,7 +764,7 @@
 			control="account_balance" 
 			align=right 
 			dir=right
-			margin-top=34 
+			margin-top=32 
 			margin-right=59  
 			height=12
 		}
@@ -779,7 +779,7 @@
 			dir=right 
 			margin-right=59 
 			width=75
-			margin-top=30
+			margin-top=29
 		}
 		
 		place [!$OSX] { 

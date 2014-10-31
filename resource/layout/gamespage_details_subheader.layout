@@ -202,8 +202,61 @@
 
 
 		
-		DetailsLaunchButton {  
+		DetailsLaunchButton [$OSX] {  
 			inset="25 7 0 0"
+			font-family=headerfont
+			font-size=30
+			
+			font-style="outerglow"
+			font-outerglow-color="97 141 21 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,PlayGradientStart, PlayGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, PlayGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, PlayAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, PlayAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, PlayAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, PlayAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, PlayAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, PlayAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, PlayAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, PlayAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, PlayLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, PlayCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, PlayCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, PlayCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, PlayCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, PlayCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, PlayCornerRoundingBottom)"
+			}	
+		}
+		
+		DetailsLaunchButton [!$OSX] {  
+			inset="25 3 0 0"
 			font-family=headerfont
 			font-size=30
 			
@@ -372,8 +425,61 @@
 		
 		
 				
-		DetailsInstallButton {  
+		DetailsInstallButton [$OSX] {  
 			inset="25 7 0 0"
+			font-family=headerfont
+			font-size=30
+			
+			font-style="outerglow"
+			font-outerglow-color="11 143 176 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 14, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,InstallGradientStart, InstallGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, InstallGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, InstallAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, InstallAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, InstallAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, InstallAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, InstallAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, InstallAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, InstallAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, InstallAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, InstallLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, InstallCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, InstallCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, InstallCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, InstallCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, InstallCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, InstallCornerRoundingBottom)"
+			}	
+		}
+		
+		DetailsInstallButton [!$OSX] {  
+			inset="25 3 0 0"
 			font-family=headerfont
 			font-size=30
 			
@@ -535,8 +641,61 @@
 			}
 		
 		
-		DetailsBuyButton {   
+		DetailsBuyButton [$OSX] {   
 			inset="25 7 0 0"
+			font-family=headerfont
+			font-size=30
+			
+			font-style="outerglow"
+			font-outerglow-color="85 71 0 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/buy/buy_icon )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,BuyGradientStart, BuyGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, BuyGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, BuyAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, BuyAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, BuyAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, BuyAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, BuyAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, BuyAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, BuyAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, BuyAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, BuyLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, BuyLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, BuyLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, BuyLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, BuyLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, BuyLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, BuyLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, BuyCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, BuyCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, BuyCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, BuyCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, BuyCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, BuyCornerRoundingBottom)"
+			}	
+		}
+		
+		DetailsBuyButton [!$OSX] {   
+			inset="25 3 0 0"
 			font-family=headerfont
 			font-size=30
 			
