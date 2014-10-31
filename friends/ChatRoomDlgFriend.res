@@ -62,6 +62,66 @@
 	}	
 
 	styles {
+		
+		
+	Menu {
+		bgcolor  = "none"
+		inset="0 0 0 4"
+		//padding=8
+      
+		render_bg {
+					0="gradient(x0, y0, x1, y1, grey, darkGreyEnd)"
+					1="fill(x0, y0, x0+1, y1, darkGreyEnd)" // Left
+					2="fill(x1-1, y0, x1, y1, darkGreyEnd)" // Right
+					3="fill(x0, y0, x1, y0+1, darkGreyEnd)" // Top
+					4="fill(x0, y1-1, x1, y1, darkGreyEnd)" // Bottom
+					
+					5="fill(x0+1, y0+1, x0+2, y1-1, white10)" // Left
+					6="fill(x1-2, y0+1, x1-1, y1-1, white10)" // Right
+					7="fill(x0+1, y0+1, x1-1, y0+2, greyHighlight)" // Top
+					8="fill(x0+2, y1-2, x1-2, y1-1, white10)" // Bottom
+				}
+      
+		render {}
+    }
+    
+    MenuItem {
+		font-family=basefont
+		textcolor  = white
+		font-size=14
+		inset  = "-9 0 0 0"
+		padding=6
+		bgcolor  = "none"
+		font-style="outerglow"
+		font-outerglow-color="darkestGrey"
+		font-outerglow-offset=1
+		font-outerglow-filtersize=3
+		
+		render_bg {}
+    }
+   
+    MenuItem:selected {
+		textcolor  = "white"
+		bgcolor  = "none"
+    }
+	
+    MenuItem:hover {
+		textcolor  = trueWhite
+		font-style="none"
+		
+		render_bg {
+			0="gradient(x0+1, y0, x1-1, y1, blue, darkestBlue)"
+			1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
+		}
+		
+	}
+	
+	MenuItem:disabled {
+		textcolor  = "darkestGrey"
+		font-style="none"
+		shadowtextcolor=none
+    }
+		
 		CChatRoomDlg {	
 				
 			inset="0 0 0 0"	
