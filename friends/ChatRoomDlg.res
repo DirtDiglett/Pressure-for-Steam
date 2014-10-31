@@ -344,31 +344,47 @@
 				}
 		}
 		
+		
 		Chat_MenuButton_withChrome {
 			bgcolor=none
 			textcolor=none
 			
 			font-style=none
 			
+			
+			render {}
+			
 			render_bg {
 		       	
-				0="gradient(x0-1,y0+3,x1,y1-12, red, darkestRed)"
+				0="gradient(x0-1,y0+2,x1,y0+39, grey, lightGreyEnd)"
 			   			       	
-		       		2="image(x0+2,y0+22,x1,y1, graphics/game_invite_close)"
-		       	
-		       		3="fill(x0-1,y0+1,x0,y1-12, darkestRed)"
-		       		4="fill(x0-2,y0+1,x0-1,y1-12, darkestGrey)"
-
-				5="fill(x0-2,y0+1,x0-1,y1-12, darkestGrey)"
-				6="fill(x0-2,y0,x1,y0+1, darkestGrey)"
-				7="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
-				8="fill(x0-1,y0+2,x1,y0+3, lightestRed)"
+		       	1="image(x0+2,y0+16,x1,y1, graphics/tab_close)"
+				2="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
+				3="fill(x0-2,y0,x1,y0+1, darkestGrey)"
 			}
 		}
 
-		Chat_MenuButton_withChrome:hover {}
-		
-		Chat_MenuButton_withChrome:active  {}
+			Chat_MenuButton_withChrome:hover {
+				render_bg {
+			       	
+					0="gradient(x0-1,y0+2,x1,y0+39, grey, lightGreyEnd)"
+				   			       	
+			       	1="image(x0+2,y0+16,x1,y1, graphics/tab_close_hover)"
+					2="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
+					3="fill(x0-2,y0,x1,y0+1, darkestGrey)"
+				}
+			}
+			
+			Chat_MenuButton_withChrome:active  {
+				render_bg {
+			       	
+					0="gradient(x0-1,y0+2,x1,y0+39, grey, lightGreyEnd)"
+				   			       	
+			       	1="image(x0+2,y0+16,x1,y1, graphics/tab_close_active)"
+					2="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
+					3="fill(x0-2,y0,x1,y0+1, darkestGrey)"
+				}
+			}
 		
 		// Used to create the Chat itself.
 		RichText {
@@ -574,22 +590,23 @@ layout {
 		
 		place { 
 			control="VoiceBar" 
-			y=58 
+			y=57 
 			width=max 
-			height=24 
+			height=40 
 			dir=down 
 			end-right=VoiceChat 
 		}
 		
 		place { 
 			control="TradeInviteBar,GameInviteBar,ChatInfoBar,ChatHistory" 
-			start=VoiceBar			
+			start=VoiceBar
+			y=0 
 			width=max 
 			height=max 
 			align=right 
 			dir=down 
-			margin-bottom=69 
-			margin-right=0
+			margin-bottom=75 
+			margin-right=1 
 			end-right=UserList
 		}
 		
@@ -598,7 +615,7 @@ layout {
 		region { 
 			name=bottom1 
 			align=bottom 
-			height=67
+			height=79
 			width=max
 		}
 		
@@ -651,7 +668,7 @@ layout {
 			height=20
 			align=top 
 			margin-left=8
-			margin-top=-4
+			margin-top=0
 		}
 		
 		

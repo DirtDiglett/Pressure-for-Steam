@@ -325,6 +325,9 @@
 			
 			font-style=none
 			
+			
+			render {}
+			
 			render_bg {
 		       	
 				0="gradient(x0-1,y0+2,x1,y0+39, grey, lightGreyEnd)"
