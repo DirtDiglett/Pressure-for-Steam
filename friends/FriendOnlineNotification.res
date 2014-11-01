@@ -192,4 +192,23 @@
 	}
 	
 	
+	
+	layout {
+		place { 
+			control="ImageAvatar" 
+			x=16 
+			y=16 
+		}
+		
+		place { 
+			control="LabelSender,LabelInfo" 
+			x=70
+			width=160 
+			dir=down 
+			margin-top=15 
+			margin-bottom=0 
+		}
+		
+	}
+	
 }
