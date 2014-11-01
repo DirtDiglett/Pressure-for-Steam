@@ -153,6 +153,7 @@
 		// Here we force-set the minimum width to ensure that the search bar is not cut off.
 		CFriendsDialog {
 			minimum-width=330
+			minimum-height=400
 			maximum-width=500
 			font-family=basefont
 			font-style="normal"
