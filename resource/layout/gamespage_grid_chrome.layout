@@ -73,8 +73,8 @@
 			InstallActiveGradientEnd "26 131 168 255"				
 		
 		// Details Button Normal
-		DetailsAntiAliasingTop "46 46 46 255"
-		DetailsAntiAliasingBottom "34 34 34 255"
+		DetailsAntiAliasingTop "grey50"
+		DetailsAntiAliasingBottom "grey25"
 		
 		DetailsLineTop "87 87 87 255"
 		DetailsLineTopAntiAliasing "78 78 78 255"
@@ -85,8 +85,8 @@
 		DetailsGradientEnd "51 51 51 255"
 				
 			// Hover
-			DetailsHoverAntiAliasingTop "63 63 63 255"
-			DetailsHoverAntiAliasingBottom "47 47 47 255"
+			DetailsHoverAntiAliasingTop "grey50"
+			DetailsHoverAntiAliasingBottom "grey25"
 			
 			DetailsHoverLineTop "119 119 119 255"
 			DetailsHoverLineTopAntiAliasing "107 107 107 255"
@@ -97,8 +97,8 @@
 			DetailsHoverGradientEnd "70 70 70 255"	
 						
 			// Active	
-			DetailsActiveAntiAliasingTop "46 46 46 255"
-			DetailsActiveAntiAliasingBottom "34 34 34 255"
+			DetailsActiveAntiAliasingTop "grey50"
+			DetailsActiveAntiAliasingBottom "grey25"
 			
 			DetailsActiveLineTop "87 87 87 255"
 			DetailsActiveLineTopAntiAliasing "78 78 78 255"
