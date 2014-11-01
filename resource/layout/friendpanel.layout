@@ -115,9 +115,9 @@
 		nameInstanceStyle {
 			font-family=basefont
 			textcolor="lightestGrey"
-			font-size=12
+			font-size=13
 			
-			inset="0 2 0 0"
+			inset="0 0 0 0"
 			
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
@@ -213,14 +213,22 @@
 			y=20 
 		}
 
+		
+
+		place { 
+			control="GameLabel" 
+			x=50 
+			y=30 
+		}
+		
 		place { 		
 			control="BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"
-			start="StatusLabel"
-			x=2
-			y=5 
+			start="GameLabel"
+			margin-left=-5
+			y=-5
+			width=20
+			height=16
 		}
-
-		place { control="GameLabel" x=50 y=30 }
 
 		// these controls are shown for friendship requests
 		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=27 spacing=10 }
