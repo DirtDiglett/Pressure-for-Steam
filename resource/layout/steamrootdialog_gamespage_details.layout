@@ -115,7 +115,7 @@
 
 		emptylisttext {
 			textcolor="lightestGrey"
-			font-size=3
+			font-size=14
 			render_bg {}
 		}
 
