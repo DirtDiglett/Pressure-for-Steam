@@ -505,7 +505,7 @@
     "CGamesListPanel" {
       font-family=basefont
 	  bgcolor  = "darkestGrey"
-      font-size=13
+      font-size=14
       font-weight=400
       textcolor  = "white"
       selectedtextcolor  = "trueWhite"
