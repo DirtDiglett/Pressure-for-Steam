@@ -840,6 +840,14 @@ styles {
 				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
 	}
+	
+	CBackupWizard {
+		render_bg {
+				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
+				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
+		}
+	}
       
 // END OF HAX     
       

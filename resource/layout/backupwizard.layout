@@ -1,0 +1,40 @@
+"resource/layout/backupwizard.layout" {
+	controls {}
+
+	styles {}
+
+	layout {
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+		
+		place { 
+			control="Label1,AppChecklist,Label2" 
+			y=40 
+			margin-top=8 
+			dir=down 
+			spacing=8 
+		}
+
+		//Footer
+		region { 
+			name=bottom 
+			align=bottom 
+			height=51
+		}
+		
+		place { 
+			control="PrevButton,NextButton,FinishButton,CancelButton" 
+			region=bottom 
+			align=right 
+			height=24 
+			spacing=8 
+			margin-right=13
+			margin-top=13
+		}
+	}
+}
