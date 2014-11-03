@@ -440,7 +440,7 @@
 		place {
 			control="BackButton,ForwardButton" 
 			x=7 
-			y=14 
+			y=32 
 			width=28 
 			height=25 
 			spacing=-1 
@@ -459,7 +459,7 @@
 			control="URLBar" 
 			height=25 
 			width=max 
-			start="HomeButton" 
+			start="StopButton" 
 			margin-right=9 }
 		
 		///// Null Zone /////
