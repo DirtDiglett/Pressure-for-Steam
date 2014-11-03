@@ -1,0 +1,16 @@
+"resource/layout/dialogsettings_managesecuritywizard.layout" {
+	controls {}
+
+ 	layout {
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+	}
+ 	
+}
+
+
