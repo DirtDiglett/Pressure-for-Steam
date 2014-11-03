@@ -410,13 +410,61 @@
 			spacing=-9 
 		}
 		
-		place { control="htmlpopupchild"  	width=max height=max margin-top=60 margin-left=0 margin-right=0 margin-bottom=26 }
-		place { control="StatusText" align=bottom height=24 margin-left=9 margin-bottom=1 }
-		place { control="PageLoadThrobber" align=right margin-top=28 margin-right=10 width=20 height=20 }	
+		place { 
+			control="htmlpopupchild"  	
+			width=max 
+			height=max 
+			margin-top=60 
+			margin-left=0 
+			margin-right=0 
+			margin-bottom=0 
+		}
+		
+		place { 
+			control="StatusText" 
+			align=bottom 
+			height=24 
+			margin-left=9 
+			margin-bottom=1
+		}
+		
+		place { 
+			control="PageLoadThrobber" 
+			align=right 
+			margin-top=28 
+			margin-right=10 
+			width=20 
+			height=20 
+		}	
 	
-		place { control="BackButton,ForwardButton,ReloadButton,StopButton,URLStatusImage,EVCert,URLBar" x=0 y=34 height=22 width=max spacing=5 margin-right=10 }
+		place {
+			control="BackButton,ForwardButton" 
+			x=7 
+			y=14 
+			width=28 
+			height=25 
+			spacing=-1 
+		}
+	
+		place {
+			control="ReloadButton,StopButton" 
+			x=8
+			width=28 
+			height=25 
+			spacing=0 
+			start="ForwardButton"
+		}
+	
+		place { 
+			control="URLBar" 
+			height=25 
+			width=max 
+			start="HomeButton" 
+			margin-right=9 }
+		
+		///// Null Zone /////
 
-
+		place { control="EVCert,PageLoadThrobber" x=0 y=0 width=0 height=0 }
 	}
 	
 }
