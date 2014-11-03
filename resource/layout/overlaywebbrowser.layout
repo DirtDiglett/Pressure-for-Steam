@@ -530,7 +530,7 @@
 
 		place { 
 			control="URLBar" 
-			height=25 
+			height=24 
 			width=max 
 			start="HomeButton" 
 			margin-right=9 }
