@@ -25,7 +25,7 @@
 		{ 
 			controlname="ImagePanel" 
 			zpos=1 
-			image="resource/steam_logo_big"
+			//image="resource/steam_logo_big"
 			scaleimage=0
 		}
 		
@@ -75,14 +75,14 @@
 		online_friends [$OSX] {
 			textcolor="none"
 			bgcolor="none"
-			image=graphics/overlay/settings
+			//image=graphics/overlay/settings
 			inset="0 1 0 0"
 		}		
 	
 		online_friends [!$OSX] {
 			textcolor="none"
 			bgcolor="none"
-			image=graphics/overlay/settings
+			//image=graphics/overlay/settings
 			inset="0 4 0 0"
 		}
 	}
@@ -103,30 +103,32 @@
 
 
 		place [$OSX] { 
-			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton,MusicPlayerButton" 
+			controls="WebBrowserButton,SettingsButton,MusicPlayerButton" 
 			region=toparea 
 			x=0 
 			dir=right 
-			spacing=3 
+			spacing=8
 			align=top-center
 			margin-top=5
 		}		
 
 		place [!$OSX] { 
-			controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" 
+			controls="WebBrowserButton,SettingsButton,MusicPlayerButton" 
 			region=toparea 
 			x=0 
 			dir=right 
-			spacing=3 
+			spacing=8 
 			align=top-center
 			margin-top=5
 		}
 		
-		place [!$OSX] {
-			controls="MusicPlayerButton"
-			region=toparea
-			start=SettingsButton
-			margin-left=15
+		// TEMPORARY NULL ZONE
+		place {
+			control="SteamLogo,online_friends"
+			width=0
+			height=0
+			y=-100
+			x=-100
 		}
 
 
