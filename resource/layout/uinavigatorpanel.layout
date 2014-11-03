@@ -1744,8 +1744,7 @@
 			CUINavButton:disabled {
 				textcolor="darkestGrey"
 				bgcolor="none"
-				font-family=basefont
-				font-size=26
+				font-size=46
 			}
 	
 				CUINavButton:disabled:hover {
