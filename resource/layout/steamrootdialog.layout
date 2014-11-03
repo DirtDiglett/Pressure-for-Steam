@@ -169,7 +169,7 @@
 				render {}
 				render_bg {
 					0="fill(x0,y0,x1,y0+1, lightestRed)"
-					1="gradient(x0,y0+1,x1,y1, lightestRed, red
+					1="gradient(x0,y0+1,x1,y1, lightestRed, red)"
 				}
 			}
 		
@@ -874,6 +874,8 @@
 			margin-top=1
 			margin-left=1 
 			height=24 
+			width=0
+			height=0
 		}
 	
 	
