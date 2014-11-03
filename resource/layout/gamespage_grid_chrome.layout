@@ -372,7 +372,11 @@
 			}
 			
 			"GameItem_Uninstalled CUILaunchButton:disabled" {
-				image=graphics/install_d
+				render {}
+				render_bg {}
+				
+				font-size=1
+				textcolor=none
 			}
 		
 		CUILaunchButton [$OSX] {
