@@ -3,7 +3,10 @@ Pressure for Steam
 
 Pressure is a skin for Valve's Steam client that seeks to improve the visuals and aesthetics of Steam beyond the default skin. 
 
-Pressure for Steam is currently a Work-In-Progress so expect it to change a lot between now and the official public release of the skin.
+Pressure for Steam is currently a Work-In-Progress so expect it to change a lot between now and the official public release of the skin. Pressure is currently in BETA so expect bugs. Please report them on the Issues page.
+
+###IMPORTANT
+It is extremely important you follow the instructions below, and absolutely critical that you install the Bebas Neue Bold font by FontFabric or this skin will not look as intended.
 
 
 ###Images
@@ -23,8 +26,8 @@ Because the skin is still in development, you can only download the skin here on
 1. Click on the *"Download ZIP"* button under the *"Clone in Desktop"* button on this GitHub page. That will download the skin's files as well as the font you need to install for the skin to display properly.
 2. Extract the files in the ZIP folder to:
 	* Windows: the `Program Files (x86)/Steam/skins` folder
-	* Mac: inside `Steam.app` - `/Applications/Steam.app/Contents/MacOS/skins`
-3. You should also go ahead and install the BebasNeue font by double-clicking on the `BEBASNEUE.OTF` file and clicking *"Install"* on the window that pops up showing you what the font looks like, as that will make sure the skin displays properly. 
+	* Mac: right-click `Steam.app` and choose `show package contents` then go to - `/Contents/MacOS/skins`
+3. You should also go ahead and install the Bebas Neue Bold font download it directly from [**FontFabric.com**](http://fontfabric.com/downfont/bebas.zip). Click *"Install"* on the window that pops up showing you what the font looks like, as that will make sure the skin displays properly. 
 4. Open up Steam and open up the Steam Settings Window. Click on the Interface tab, and under the option that says *"Select the skin you wish Steam to use (requires Steam to restart)"*, click on the dropdown, and select *"Pressure-for-Steam-master"*. 
 5. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
 
