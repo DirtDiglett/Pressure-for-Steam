@@ -427,7 +427,7 @@
 			selectedtextcolor="trueWhite"
 			bgcolor=none
 			
-			inset="8 8 0 0"
+			inset="0 8 0 0"
 			
 			render {
 				0="image_tiled(x0,y1-14,x1,y1, graphics/chatbottom)"
@@ -528,7 +528,7 @@
 			align=right 
 			dir=down 
 			margin-bottom=75 
-			margin-right=1 
+			margin-left=8 
 		}
 		
 		region { 
