@@ -152,7 +152,7 @@
 	styles {
 		// Here we force-set the minimum width to ensure that the search bar is not cut off.
 		CFriendsDialog {
-			minimum-width=330
+			minimum-width=294
 			minimum-height=400
 			maximum-width=500
 			font-family=basefont
@@ -207,9 +207,9 @@
 				
 				
 				// Search Input Background
-				12="image_tiled(x0+155,y0+94,x0+305,y0+119, graphics/search/inner)"
+				12="image_tiled(x0+155,y0+94,x0+275,y0+119, graphics/search/inner)"
 				13="image(x0+155, y0+94, x0+177, y0+119, graphics/search/left)"
-				14="image(x0+305, y0+94, x0+317, y0+119, graphics/search/right)"
+				14="image(x0+275, y0+94, x0+287, y0+119, graphics/search/right)"
 				
 				
 				// Background for the pageTabs
@@ -261,9 +261,9 @@
 					
 					
 					// Search Input Background
-					12="image_tiled(x0+155,y0+94,x0+305,y0+119, graphics/search/inner)"
+					12="image_tiled(x0+155,y0+94,x0+275,y0+119, graphics/search/inner)"
 					13="image(x0+155, y0+94, x0+177, y0+119, graphics/search/left)"
-					14="image(x0+305, y0+94, x0+317, y0+119, graphics/search/right)"
+					14="image(x0+275, y0+94, x0+287, y0+119, graphics/search/right)"
 					
 					
 					// Background for the pageTabs
@@ -605,7 +605,7 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			dir=right 
 			margin-left=167 
 			y=95 
-			width=151 
+			width=117 
 			height=25 
 		}
 
