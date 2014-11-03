@@ -41,6 +41,15 @@
 	
 	layout
 	{
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+		
+		
 		region { name="top" width=max height=260 margin=10 margin-top=40}
 		region { name="middle" width=max height=150 y=100 margin=10 }
 		region { name="bottom" width=max align=bottom height=36 align="bottom" }
