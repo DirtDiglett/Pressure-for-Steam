@@ -107,7 +107,7 @@
 			region=toparea 
 			x=0 
 			dir=right 
-			spacing=8
+			spacing=16
 			align=top-center
 			margin-top=5
 		}		
@@ -117,7 +117,7 @@
 			region=toparea 
 			x=0 
 			dir=right 
-			spacing=8 
+			spacing=16 
 			align=top-center
 			margin-top=5
 		}
