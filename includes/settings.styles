@@ -7,7 +7,7 @@
 		basefont = "Segoe UI"
 		semibold = "Segoe UI Semibold"
 			
-		headerfont = "Bebas Neue"
+		headerfont = "Bebas Neue Bold"
 			
 		basefont = "Helvetica" [$OSX]
 		semibold = "Helvetica Bold" [$OSX]
