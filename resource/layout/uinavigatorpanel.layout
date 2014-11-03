@@ -1758,8 +1758,8 @@
 			CUINavButton:hover {
 				textcolor="white"
 				font-style="outerglow"
-				font-outerglow-color="white10"
-				font-outerglow-offset=1
+				font-outerglow-color="lightestGrey"//white10"
+				font-outerglow-offset=0
 				font-outerglow-filtersize=3
 			}
 			
@@ -1775,8 +1775,8 @@
 			CUINavButton:selected {
 				textcolor="trueWhite"
 				font-style="outerglow"
-				font-outerglow-color="white20"
-				font-outerglow-offset=1
+				font-outerglow-color="lightestGrey"
+				font-outerglow-offset=0
 				font-outerglow-filtersize=3
 			
 				render_bg {
