@@ -205,12 +205,23 @@
 		place {	control="AvatarOverlayImage"	x=2 y=5 width=40 height=40		}
 		place {	control="AvatarImage"			x=6 y=9 width=32 height=32		}
 		place {	control="Clanstatusimage"			x=20  width=15 }
-		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" x=50 y=7  }
+		
+		place [$OSX] { 
+			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" 
+			x=50 
+			y=5 
+		}
+
+		place [!$OSX] { 
+			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" 
+			x=50 
+			y=2  
+		}
 
 		place { 		
 			control="StatusLabel"
 			x=50 
-			y=20 
+			y=18 
 		}
 
 		
@@ -223,10 +234,9 @@
 		
 		place { 		
 			control="BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"
-			start="GameLabel"
-			margin-left=-5
-			y=-5
-			width=20
+			start="StatusLabel"
+			margin-left=0
+			y=0
 			height=16
 		}
 
