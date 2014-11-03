@@ -157,6 +157,8 @@
 			maximum-width=500
 			font-family=basefont
 			font-style="normal"
+			
+			
 		}
 		
 		ListPanelSectionHeader {
@@ -284,10 +286,6 @@
 			font-style="none"
 			
 			bgcolor=none
-			
-			render {
-				0="fill(x0,y1-1,x1,y1, darkestGrey)"
-			}
 		}
 	
 	
@@ -387,6 +385,11 @@
 			
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
+				
+				1="fill( x0, y1-16, x1, y1-15, darkestGrey )"
+				2="fill( x0+1, y1-15, x1-1, y1-14, greyHighlight )"
+				3="gradient( x0+1, y1-14, x1-1, y1-1, grey, lightGreyEnd )"
+			
 			}
 		}	
 		
@@ -555,10 +558,7 @@
 		"CFriendsDialog SectionedListPanelInterior" {
 			
 			font-family=basefont
-			font-style="outerglow"
-			font-outerglow-color="red"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
+			font-style="regular"
 			
 			inset="0 -3 0 0"
 			
@@ -570,12 +570,7 @@
 			selectedtextcolor  = "blue"
 			selectedbgcolor  = "green"
 			shadowtextcolor  = "darkGreyEnd"	// the color of disabled line items		
-			render {
-				0="fill(x0,y0,x1,y0+1, darkestGrey)"
-			}
-			render_bg {
-				//1="fill(x0,y0+2,x1,y1, darkestGrey)"
-			}
+			
 		}
 	
 			"CFriendsDialog SectionedListPanelInterior:scrollbar" {
@@ -585,8 +580,7 @@
 			}	
 	}
  	
- 	layout
- 	{
+ 	layout {
 		
 		place [!$OSX]  { 
 			control="frame_minimize,frame_close" 
@@ -629,7 +623,7 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			margin-left=-1 
 			margin-right=0 
 			margin-top=0 
-			margin-bottom=0 
+			margin-bottom=16 
 			width=max 
 			height=max 
 		}
