@@ -31,7 +31,9 @@
 		black65="0 0 0 165" // 65% Opacity Black
 		black40="0 0 0 102" // 40% Opacity Black
 
+		white20="255 255 255 65"
 		white10="255 255 255 25" // 10% Opacity White
+		
 		grey50="60 60 60 165" // 65% Opacity Grey
 		grey25="60 60 60 110" // 25%
 		grey10="60 60 60 25 // 10%"
