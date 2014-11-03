@@ -17,8 +17,8 @@
 			bgcolor=none
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
-				1="gradient(x0+1,y0+1,x1,y1-1, green, darkestGreen)"
-				2="fill(x0+1,y0+1,x1,y0+2, lightestGreen)"
+				1="gradient(x0-9,y0+1,x1,y1-1, green, darkestGreen)"
+				2="fill(x0-9,y0+1,x1,y0+2, lightestGreen)"
 			}
 		}
 

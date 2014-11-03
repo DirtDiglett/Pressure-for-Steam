@@ -127,6 +127,8 @@
 	   	friends_ignored {
 	   		textcolor="Friends.IgnoredColor"
 	   	}
+	   	
+	   	
 	
 	}
 }
