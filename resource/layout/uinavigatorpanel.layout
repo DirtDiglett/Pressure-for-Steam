@@ -1727,7 +1727,7 @@
 			textcolor="darkestGrey"
 			bgcolor="none"
 			font-family=headerfont
-			font-size=46
+			font-size=36
 			
 			padding-left=10
 			padding-right=10
@@ -1743,8 +1743,6 @@
 			
 			CUINavButton:disabled {
 				textcolor="darkestGrey"
-				bgcolor="none"
-				font-size=46
 			}
 	
 				CUINavButton:disabled:hover {

@@ -702,7 +702,13 @@
 		place { control="GraphPanel" width=max height=max margin-top=13 }
 
 		//Universal Pause/Resume Button
-		place { control="pauseresumeallbutton" height=43 align=right y=24 margin-right=12 }
+		place { 
+			control="pauseresumeallbutton" 
+			height=43 
+			align=right 
+			y=24 
+			margin-right=12 
+		}
 		
 		//Network Values
 		place { 

@@ -20,7 +20,7 @@
 		CDetailsGameTitleHeaderPanel {}
 
 		headertextlarge {
-			font-size=54
+			font-size=48
 			textcolor=white
 			font-family=headerfont
 			bgcolor=none

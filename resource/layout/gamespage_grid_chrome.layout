@@ -161,7 +161,7 @@
 		"GameItem_Uninstalled CUILaunchButton" [$OSX] {
 			inset="22 7 0 0"
 			font-family=headerfont
-			font-size=30
+			font-size=22
 			
 			font-style="none"
 			
@@ -212,7 +212,7 @@
 		"GameItem_Uninstalled CUILaunchButton" [!$OSX] {
 			inset="22 3 0 0"
 			font-family=headerfont
-			font-size=30
+			font-size=20
 			
 			font-style="outerglow"
 			font-outerglow-color="11 143 176 255"
@@ -378,7 +378,7 @@
 		CUILaunchButton [$OSX] {
 			inset="22 7 0 0"
 			font-family=headerfont
-			font-size=28
+			font-size=22
 			
 			font-style="none"
 			
@@ -428,7 +428,7 @@
 		CUILaunchButton [!$OSX] {
 			inset="22 3 0 0"
 			font-family=headerfont
-			font-size=28
+			font-size=20
 			
 			font-style="outerglow"
 			font-outerglow-color="97 141 21 255"
@@ -593,7 +593,7 @@
 		CUIDetailsButton [$OSX] {
 			inset="22 7 0 0"
 			font-family=headerfont
-			font-size=28
+			font-size=22
 			
 			font-style="none"
 			
@@ -643,7 +643,7 @@
 		CUIDetailsButton [!$OSX] {
 			inset="22 3 0 0"
 			font-family=headerfont
-			font-size=28
+			font-size=20
 			
 			font-style="outerglow"
 			font-outerglow-color="41 41 41 255"
@@ -813,10 +813,17 @@
 
 	
 	layout {
-		region { name="actions" align=bottom width=max height=78 x=0 y=210 margin-bottom=0}
+		region { 
+			name="actions" 
+			align=bottom 
+			width=max 
+			height=78 
+			x=0 
+			y=210 
+			margin-bottom=0
+		}
 		
-		place
-		{
+		place {
 			control=chromeborder	
 			region=actions			
 			x=0 
@@ -834,10 +841,10 @@
 			align=top-center
 			spacing=16 
 			margin-bottom=24 
-			margin-left=0 
+			margin-left=8
+			margin-right=8 
 			margin-top=18
 			height=40
-			width=100
 		}
 		
 		place { 
