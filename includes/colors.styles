@@ -36,7 +36,7 @@
 		
 		grey50="60 60 60 165" // 65% Opacity Grey
 		grey25="60 60 60 110" // 25%
-		grey10="60 60 60 25 // 10%"
+		grey10="60 60 60 25" // 10%"
 		darkestGrey50="8 8 8 100" // 65% Opacity Grey
 		
 		// Greens	
