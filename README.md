@@ -27,7 +27,8 @@ Because the skin is still in development, you can only download the skin here on
 2. Extract the files in the ZIP folder to:
 	* Windows: the `Program Files (x86)/Steam/skins` folder
 	* Mac: right-click `Steam.app` and choose `show package contents` then go to - `/Contents/MacOS/skins`
-3. You should also go ahead and install the Bebas Neue Bold font download it directly from [**FontFabric.com**](http://fontfabric.com/downfont/bebas.zip). Click *"Install"* on the window that pops up showing you what the font looks like, as that will make sure the skin displays properly. 
+	* Linux: the `~/.local/share/Steam/skins/` folder
+3. You should also go ahead and install the Bebas Neue Bold font download it directly from [**FontFabric.com**](http://fontfabric.com/downfont/bebas.zip). Click *"Install"* on the window that pops up showing you what the font looks like, as that will make sure the skin displays properly. On Linux you may need to "install" the font manually instead by copying it to `/usr/share/fonts` (to install it system-wide) or `~/.fonts` (to install it only for the current user) and executing `fc-cache -fv` in a terminal.
 4. Open up Steam and open up the Steam Settings Window. Click on the Interface tab, and under the option that says *"Select the skin you wish Steam to use (requires Steam to restart)"*, click on the dropdown, and select *"Pressure-for-Steam-master"*. 
 5. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
 
