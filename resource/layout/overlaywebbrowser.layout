@@ -356,14 +356,14 @@
 		
 		TextEntryURL {
 			font-family=basefont
-	      font-size=13
-	      textcolor  = "darkestGrey"
+	      font-size=14
+	      textcolor  = "grey"
 	      bgcolor  = "none"
 	      selectedtextcolor  = "white"
 	      selectedbgcolor  = "blue"
 	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
 	
-	      inset-left=4
+	      inset-left=2
 	      inset-top=0
 	      
 	      render_bg {
@@ -385,12 +385,12 @@
 		
 		TextEntryURL:hover {
 			
-			textcolor="darkestGrey"
+			textcolor="darkGreyEnd"
 		}   			
 		
 		TextEntryURL:Disabled {
 			 font-family=basefont
-		      font-size=13
+		      font-size=14
 		      textcolor  = "lightestGreyHighlight"
 		      bgcolor  = "none"
 		      selectedtextcolor  = "white"
