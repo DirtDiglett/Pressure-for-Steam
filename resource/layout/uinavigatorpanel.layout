@@ -506,29 +506,62 @@
 			}   
 		
 		TextEntryURL {
-			padding-top=6
 			font-family=basefont
-			font-size=12
-			textcolor="grey"
-			bgcolor="none"
-			selectedtextcolor="white"
-			selectedbgcolor="blue"
-			shadowtextcolor="grey"	// this is the cursor color	
+		    font-size=13
+		    textcolor  = "lightestGreyHighlight"
+		    bgcolor  = "none"
+		    selectedtextcolor  = "white"
+		    selectedbgcolor  = "blue"
+		    shadowtextcolor  = "darkestGrey"  // this is the cursor color
+		
+		    inset-left=4
+		    inset-top=0
+		      
+		    render_bg {
+				0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
+			
+				  	// TOP
+				1="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
+				2="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
+				 	// RIGHT
+				3="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+				  	
+				  	// BOTTOM
+			      	7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+			      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+		      } 
 		}
 		
 		"CSteamRootDialog TextEntryURL" {
-			padding-top=8
-			padding-left=4	
+			font-family=basefont
+		    font-size=13
+		    textcolor  = "lightestGreyHighlight"
+		    bgcolor  = "none"
+		    selectedtextcolor  = "white"
+		    selectedbgcolor  = "blue"
+		    shadowtextcolor  = "darkestGrey"  // this is the cursor color
+		
+		    inset-left=4
+		    inset-top=0
+		      
+		    render_bg {
+				0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
 			
-			render_bg {
-				1="image_tiled(x0, y0, x1-4, y0+25, graphics/inner)"
-				2="image(x1-4, y0, x1, y0+25, graphics/textEntryRight)"
-			}	
+				  	// TOP
+				1="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
+				2="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
+				 	// RIGHT
+				3="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+				  	
+				  	// BOTTOM
+			      	7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+			      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+			      	
+			      	9="fill(x0,y0,x0+1,y1, darkestGrey)"
+		      } 
 		}
 		
-			"CSteamRootDialog TextEntryURL:hover" {
-				textcolor="darkestGrey"
-			}		
+			"CSteamRootDialog TextEntryURL:hover" {}		
 	
 	
 // ******************************************************************************************************** 
@@ -1979,9 +2012,9 @@
 			control="URLBar"
 			align=left
 			y=47
-			height=28
+			height=24
 			width=max
-			margin-left=94
+			margin-left=96
 			margin-right=195
 		}
  	
