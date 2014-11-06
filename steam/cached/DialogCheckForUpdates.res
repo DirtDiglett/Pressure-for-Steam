@@ -131,7 +131,7 @@
 			control=Button1
 			region=bottom
 			align=right
-			margin-top=10
+			margin-top=7
 			margin-right=13
 			height=24
 		}

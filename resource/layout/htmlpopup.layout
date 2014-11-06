@@ -354,6 +354,7 @@
 	
 	      inset-left=4
 	      inset-top=0
+	      inset=right=4
 	      
 	      render_bg {
 		      	0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
@@ -457,7 +458,7 @@
 	
 		place { 
 			control="URLBar" 
-			height=25 
+			height=24 
 			width=max 
 			start="StopButton" 
 			margin-right=9 }

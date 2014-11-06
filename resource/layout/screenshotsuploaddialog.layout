@@ -59,6 +59,14 @@
 	}
 	
 	layout {
+		place [!$OSX]  { 
+			control="frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+		
 		place { control="upload_question" x=175 y=45 }
 		place { control="upload_info" x=175 y=40 width=max  }
 		place { control="error_info" x=175 y=40 width=max }
