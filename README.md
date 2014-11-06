@@ -6,7 +6,7 @@ Pressure is a skin for Valve's Steam client that seeks to improve the visuals an
 Pressure for Steam is currently a Work-In-Progress so expect it to change a lot between now and the official public release of the skin. Pressure is currently in BETA so expect bugs. Please report them on the Issues page.
 
 ###IMPORTANT
-It is extremely important you follow the instructions below, and absolutely critical that you install the Bebas Neue Bold font by FontFabric or this skin will not look as intended.
+It is extremely important you follow the instructions below, and absolutely critical that you install the Bebas Neue Bold font by FontFabric or this skin will not look as intended. FontFabric have generously given me permission to include it in the Git Download so you can install it there or via their website.
 
 
 ###Images
@@ -28,12 +28,22 @@ Because the skin is still in development, you can only download the skin here on
 	* Windows: the `Program Files (x86)/Steam/skins` folder
 	* Mac: right-click `Steam.app` and choose `show package contents` then go to - `/Contents/MacOS/skins`
 	* Linux: the `~/.local/share/Steam/skins/` folder
-3. You should also go ahead and install the Bebas Neue Bold font download it directly from [**FontFabric.com**](http://fontfabric.com/downfont/bebas.zip). Click *"Install"* on the window that pops up showing you what the font looks like, as that will make sure the skin displays properly. On Linux you may need to "install" the font manually instead by copying it to `/usr/share/fonts` (to install it system-wide) or `~/.fonts` (to install it only for the current user) and executing `fc-cache -fv` in a terminal.
-4. Open up Steam and open up the Steam Settings Window. Click on the Interface tab, and under the option that says *"Select the skin you wish Steam to use (requires Steam to restart)"*, click on the dropdown, and select *"Pressure-for-Steam-master"*. 
+3. You should also go ahead and install the Bebas Neue Bold font download it directly from [**FontFabric.com**](http://fontfabric.com/downfont/bebas.zip). 
+	* Windows: Right-Click the font file and choose "Install".
+	* Mac: Double-Click the font file. Click "Install".
+	* Linux: you may need to "install" the font manually instead by copying it to `/usr/share/fonts` (to install it system-wide) or `~/.fonts` (to install it only for the current user) and executing `fc-cache -fv` in a terminal.
+4. Open up Steam then open up the Steam Settings Window. Click on the Interface tab, and under the option that says *"Select the skin you wish Steam to use (requires Steam to restart)"*, click on the dropdown, and select *"Pressure-for-Steam-master"*. 
 5. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
 
 ### Pro Tip™: Keep Pressure up-to-date via git
 
+**Windows**
+Using the GitHub application for Windows from [GitHub](https://windows.github.com) you'll be able to keep the skin up-to-date all the time.
+
+**Mac**
+You can install the Git application from [GitHub](https://mac.github.com) to keep the repo in sync without having to return to the site each time.
+
+**LINUX**
 If [git](https://git-scm.com/) is installed on your system you can also use that to download Pressure, which will allow you update it more easily. The following guide assumes that git is in your PATH.
 
 1. Install the skin using git
@@ -46,6 +56,7 @@ If [git](https://git-scm.com/) is installed on your system you can also use that
    2. `cd` into your Steam skin folder (you can find it in step 2 of the tutorial above)
    3. Make sure you have write permissions in the skin folder and execute the command `git pull`
    4. Restart Steam
+   
 
 ## Staying up-to-date with the skin's progress
 We recommend staying up-to-date with the skin's progress, so that you can get updates on how the skin is coming along. To do that, make sure you join the ["Pressure" Skin group on Steam](http://steamcommunity.com/groups/pressureskin) by clicking on the link, signing into your Steam account, and clicking on the *"Join group"* button.
