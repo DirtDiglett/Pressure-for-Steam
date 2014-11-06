@@ -1,7 +1,7 @@
 "menubar" {
 	Steam {
 		text = [!$OSX]	"#steam_menu_file"
-		text = [$OSX]	"#steam_menu_file"
+		text = [$OSX]	"Menu"
 		
 		SkinVersion {
 			text="Pressure BETA"
