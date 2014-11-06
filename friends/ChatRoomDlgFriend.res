@@ -173,8 +173,8 @@
 		
 		// Used for the status label on the chat only
 		label {
-			font-size=12
-			textcolor=grey
+			font-size=13
+			textcolor=lighterGrey
 			font-style=none
 		}
 		
