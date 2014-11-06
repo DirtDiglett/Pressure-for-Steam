@@ -1162,6 +1162,8 @@
 			padding-left=0
 			padding-right=20
 			
+			//bgcolor=red
+			
 			render_bg{}
 		}
 		
@@ -1942,6 +1944,11 @@
 			padding-right=-1
 			padding-top=-1
 		}
+		
+		
+		ClearButton {
+			bgcolor=blue
+		}
 
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	
@@ -2035,14 +2042,14 @@
 			margin-left=20
 		}
 		
-		place {
-			control="library_filters" 
-			align=left
-			y=47
-			x=300
-			height=25
-			width=150  
-		}
+		//place {
+		//	control="library_filters" 
+		//	align=left
+		//	y=47
+		//	x=300
+		//	height=25
+		//	width=150  
+		//}
  
 		place { 
 			control="library_zoom"
@@ -2108,19 +2115,29 @@
 			align=left 
 			y=47 
 			height=25 
-			width=224 
+			width=152 
 			x=68 
 		}
 		
 		place { 
 			control="library_search" 
-			width=90
-			margin-right=20 
-			align=left 
+			width=110
+			margin-right=40 
+			align=left
+			dir=right 
 			y=48 
 			height=25 
 			x=85
-			spacing=6
+			spacing=60
+		}
+		
+		place {
+			control="library_filters"
+			start="library_search"
+			dir=right
+			x=30
+			height=24
+			width=160
 		}
 
 		place [!$OSX] { 
