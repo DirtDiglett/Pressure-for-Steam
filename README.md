@@ -32,5 +32,20 @@ Because the skin is still in development, you can only download the skin here on
 4. Open up Steam and open up the Steam Settings Window. Click on the Interface tab, and under the option that says *"Select the skin you wish Steam to use (requires Steam to restart)"*, click on the dropdown, and select *"Pressure-for-Steam-master"*. 
 5. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
 
+### Pro Tip™: Keep Pressure up-to-date via git
+
+If [git](https://git-scm.com/) is installed on your system you can also use that to download Pressure, which will allow you update it more easily. The following guide assumes that git is in your PATH.
+
+1. Install the skin using git
+   1. Open a command prompt / terminal.
+   2. Go into your Steam skin folder (you can find it in step 2 of the tutorial above) by executing the command `cd "<your skin folder>"`
+   3. Make sure you have write permissions in the skin folder and execute the command `git clone https://github.com/DirtDiglett/Pressure-for-Steam.git`
+   4. Now continue with step 3 of the default tutorial above
+2. Update the skin using git
+   1. Open a command prompt / terminal.
+   2. `cd` into your Steam skin folder (you can find it in step 2 of the tutorial above)
+   3. Make sure you have write permissions in the skin folder and execute the command `git pull`
+   4. Restart Steam
+
 ## Staying up-to-date with the skin's progress
 We recommend staying up-to-date with the skin's progress, so that you can get updates on how the skin is coming along. To do that, make sure you join the ["Pressure" Skin group on Steam](http://steamcommunity.com/groups/pressureskin) by clicking on the link, signing into your Steam account, and clicking on the *"Join group"* button.
