@@ -65,20 +65,26 @@
 		
 		place { controls="ThrobberThrobberThrobber" region=box start=InfoLabel dir=down align=left margin-top=15 }
 		place { controls="ReadyToPlayInfoLabel,ReadyToPlayTimeLabel" region=box start=InfoLabel margin-top=10 width=max dir=down spacing=8 }
-		place { controls="Progress" region=box start=ReadyToPlayInfoLabel margin-top=10 width=max dir=down }
+		place { controls="Progress" region=box start=ReadyToPlayTimeLabel margin-top=10 width=max dir=down }
 		place { controls="OverrideThrottleCheckBox" region=box start=Progress margin-top=10 width=max height=15 dir=down }
 		place { controls="AutoLaunchCheckBox" region=box start=OverrideThrottleCheckBox margin-top=10 height=15 width=max dir=down }
 		
 		
+		region {
+			name=bottom
+			align=bottom
+			height=51
+			width=max
+		}
+		
 		place { 
 			controls="NewsButton,PlayButton" 
-			region=box 
-			margin-bottom=16 
+			region=bottom 
 			width=135 
-			height=25 
-			dir=down 
-			align=bottom
-			margin-right=16 
+			height=24
+			align=right
+			margin-right=13
+			margin-top=13
 			spacing=8
 		}
 		

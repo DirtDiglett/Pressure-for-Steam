@@ -458,7 +458,7 @@
 		}
 		
 		// left-mid column
-		place { control="namelabel" region="column2" margin-top=20 margin-left=0 }
+		place { control="namelabel" region="column2" margin-top=17 margin-left=0 }
 		place { control="updatetypelabel" region="column2" margin-top=47 align=left}
 		place { control="downloadtotallabel,downloadtotalfield" region="column2" align=left margin-top=58 spacing=4 }
 		
