@@ -1,77 +1,124 @@
 "menubar" {
 	Steam {
 		text = [!$OSX]	"#steam_menu_file"
-		text = [$OSX]	"#SteamRootAccount"
+		text = [$OSX]	"#steam_menu_file"
 		
 		SkinVersion {
 			text="Pressure BETA"
-			shellcmd="steam://openurl/http://github.com/DirtDiglett/Pressure-for-Steam/"
+			shellcmd="steam://openurl/http://steamcommunity.com/groups/pressureskin"
 		}
 		
-		Website			{	text="Official Steam Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/pressureskin" }
-		
-		About							{	text="#steam_about"						command="About" }
-		
-		Divider {} // ________________________________________________________________________________________________________________________
-		CheckForUpdates	{	
-			text="#steam_menu_checkforupdates"		
-			command="CheckForUpdates" 
-		}
-		
-		// one of these will be invisible
-		UpdateVideoDrivers	[$WINDOWS]	{	
-			text="#steam_menu_updatevendorgraphicscard"		
-			command="CheckForVideoDriverUpdates" 
-		}
-		
-		CheckForVideoDriverUpdates	[$WINDOWS]	{	
-			text="#steam_menu_checkforvideodriverupdates"	
-			command="CheckForVideoDriverUpdates" 
+		About {	
+			text="#steam_about"
+			command="About" 
 		}
 		
 		Divider {} // ________________________________________________________________________________________________________________________
 		
-		ChangeUser		{	text="#steam_menu_changeuser"				command="ChangeUser" }
-		MyAccount		{	text="#steam_menu_account_details" shellcmd="steam://url/StoreAccount/" }		
-		MyProfile		{	text="#steam_menu_account_view_profile" shellcmd="steam://url/SteamIDMyProfile" }		
-		GoOnline		{	
+		ChangeUser {
+			text="#steam_menu_changeuser"
+			command="ChangeUser" 
+		}
+		
+		MyAccount {
+			text="#steam_menu_account_details"
+			shellcmd="steam://url/StoreAccount/" 
+		}
+				
+		Divider {} // ________________________________________________________________________________________________________________________
+		
+		BigPictureMode {
+			text="#steam_menu_bigpicturemode"
+			shellcmd="steam://open/bigpicture" 
+		} 
+		
+		Divider {} // ________________________________________________________________________________________________________________________
+		
+		MusicDetails {
+			text="#steam_menu_view_music_details"
+			shellcmd="steam://nav/music/details" 
+		}
+		
+		MusicPlayer {
+			text="#steam_menu_view_musicplayer"
+			shellcmd="steam://open/musicplayer" 
+		}
+		
+		Divider {} // ________________________________________________________________________________________________________________________
+		
+		Friends {
+			text="#steam_menu_friends"
+			shellcmd="steam://open/friends"
+		}
+		
+		ViewPlayerList {
+			text="#steam_menu_view_players"
+			shellcmd="steam://friends/players" 
+		}
+		
+		Servers {
+			text="#steam_menu_servers"
+			shellcmd="steam://open/servers" 
+		}
+		
+		Divider {} // ________________________________________________________________________________________________________________________
+		
+		ActivateRetail {
+			text="#Steam_RegisterProductCode"
+			command="ActivateRetail"
+		}
+		
+		AddShortcut {
+			text="#Steam_menu_AddShortcut"
+			shellcmd="steam://AddNonSteamGame"
+		}
+		
+		BackupGames {
+			text="#steam_menu_backupgames"
+			command="backupgames"
+		}
+		
+		Divider {} // ________________________________________________________________________________________________________________________
+		
+		AddFunds {
+			text="Add Funds to Steam Wallet" 
+			shellcmd="steam://openurl/http://store.steampowered.com/steamaccount/addfunds"
+		}
+		
+		RedeemWalletVoucher {
+			text="#Steam_RedeemWalletVoucher"
+			shellcmd="steam://url/RedeemWalletVoucher" 
+		}
+		
+		ManageGuestPasses {
+			text="#Steam_ManageGuestPasses"
+			command="ManageGuestPasses"
+		}
+		
+		Divider {} // ________________________________________________________________________________________________________________________
+		
+		Settings {
+			text="#steam_menu_settings"
+			command="Settings"
+		}
+		
+		GoOnline {	
 			text="#SteamUI_OfflineMode_GoOnline"		
 			command="goonline" 
 		}
+		GoOffline {
+			text="#SteamUI_OfflineMode_GoOffline"
+			command="gooffline" 
+		}
 		
-		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"		command="gooffline" }
-		Divider {} // ________________________________________________________________________________________________________________________
-		//MiniMode		{	text="#steam_menu_minimode"		shellcmd="steam://open/minigameslist" }
-		LargeMode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
-		BigPicture		{	text="Big Picture"			shellcmd="steam://open/bigpicture" }
-		Divider {} // ________________________________________________________________________________________________________________________
-		MusicDetails					{	text="#steam_menu_view_music_details"			shellcmd="steam://nav/music/details" }
-		MusicPlayer						{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
+		Restart	[$WINDOWS] {
+			text="#Steam_MustRestart_Button"
+			command="RestartSteam"
+		}
 		
-		Divider {} // ________________________________________________________________________________________________________________________
-		
-		Friends							{	text="#steam_menu_friends"				shellcmd="steam://open/friends" }
-		ViewPlayerList					{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
-		Servers							{	text="#steam_menu_servers"				shellcmd="steam://open/servers" }
-		Screenshots						{	text="#steam_screenshots"				command="Screenshots" }
-		Downloads						{	text="#steam_menu_downloads"			shellcmd="steam://nav/downloads" }
-		
-		Divider {} // ________________________________________________________________________________________________________________________
-		
-		ActivateRetail		{ text="#Steam_RegisterProductCode"				command="ActivateRetail" }
-		AddShortcut			{ text="#Steam_menu_AddShortcut"				shellcmd="steam://AddNonSteamGame" }
-		BackupGames						{	text="#steam_menu_backupgames"			command="backupgames" }
-		
-		Divider {} // ________________________________________________________________________________________________________________________
-		
-		AddFunds { text="Add Funds to Steam Wallet" shellcmd="steam://openurl/http://store.steampowered.com/steamaccount/addfunds"}
-		RedeemWalletVoucher				{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
-		ManageGuestPasses	{ text="#Steam_ManageGuestPasses"				command="ManageGuestPasses" }
-		
-		Divider {} // ________________________________________________________________________________________________________________________
-		
-		Settings		{	text="#steam_menu_settings"		command="Settings" }
-		Restart	[$WINDOWS]	{	text="#Steam_MustRestart_Button"				command="RestartSteam" }
-		Exit			{	text="#Steam_ExitSteam"					command="Exit" }	
+		Exit {
+			text="#Steam_ExitSteam"
+			command="Exit"
+		}	
 	}
 }
