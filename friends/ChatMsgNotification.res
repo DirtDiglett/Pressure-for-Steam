@@ -223,7 +223,7 @@
 			width=160 
 			dir=down 
 			margin-top=15 
-			margin-bottom=0 
+			margin-bottom=15 
 		}
 		
 	}
