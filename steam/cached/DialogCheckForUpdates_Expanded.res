@@ -189,7 +189,7 @@
 		region { 
 			name=bottom 
 			align=bottom 
-			height=50
+			height=51
 		}
 		
 		place {	
@@ -197,8 +197,7 @@
 			region=bottom 
 			align=right 
 			spacing=8 
-			height=24 
-			width=90
+			height=24
 			margin-right=10
 			margin-top=13 
 		}
