@@ -69,7 +69,6 @@
 		
 		place {
 			control=*communityfile
-			width=max
 			y=105
 			x=23
 			dir=right

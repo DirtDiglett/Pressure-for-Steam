@@ -102,7 +102,8 @@
 			control=communityfile_name 
 			x=3 
 			y=70 
-			width=186 
+			width=max
+			margin-right=3
 		}
 		
 		place [!$OSX]{ 
@@ -110,7 +111,8 @@
 			control=communityfile_name 
 			x=3 
 			y=68 
-			width=186 
+			width=max
+			margin-right=3 
 		}
 		
 		place { 
@@ -136,7 +138,8 @@
 			control=communityfile_rating_image_background 
 			x=3 
 			y=87 
-			width=186 
+			width=max
+			margin-right=3
 			height=22 
 		}
 		
@@ -145,7 +148,8 @@
 			control=communityfile_rating_image 
 			x=8 
 			y=92 
-			width=81 
+			width=max
+			margin-right=3 
 			height=11 
 		}
 		
