@@ -430,7 +430,7 @@
 		NavLabelZoom {
 			textcolor="none"
 			render_bg {
-				0="image(x0, y0, x1, y1, graphics/icons/zoom_out)"
+				0="image(x0+14, y0+4, x1, y1, graphics/icons/zoom_out)"
 			}
 		}
 		
@@ -439,7 +439,7 @@
 		LibrarySeparator {
 			textcolor="none"
 			render_bg {
-				0="image(x0, y0, x1, y1, graphics/icons/zoom)"
+				0="image(x0+4, y0+5, x1, y1, graphics/icons/zoom)"
 			}
 		}
 		
@@ -1132,16 +1132,15 @@
 		grouper {
 			bgcolor=none
 			render {
-				1="image(x0, y0, x0+8, y0+25, graphics/search/left)"
-				2="image(x1-12, y0, x1, y0+25, graphics/search/right)"
-				3="image_tiled(x0+22, y0, x1-12, y0+25, graphics/search/inner)"
+			//	1="image(x0, y0, x0+8, y0+25, graphics/search/left)"
+			//	2="image(x1-12, y0, x1, y0+25, graphics/search/right)"
+			//	3="image_tiled(x0+22, y0, x1-12, y0+25, graphics/search/inner)"
 			}	
 		}
 		
 				// When things are typed in.
 
-		LibrarySearch [!$OSX]
-		{
+		LibrarySearch [!$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
@@ -1149,22 +1148,31 @@
 			padding-left=4
 			padding-right=20
 			
-			render_bg{}
+			minimum-width=150
+			
+			render_bg {
+				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/left)"
+				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/right)"
+				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/inner)"
+			}
 		}
 
 		
-		LibrarySearch [$OSX]
-		{
+		LibrarySearch [$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
 			textcolor="darkestGrey"
-			padding-left=0
-			padding-right=20
+			
+			minimum-width=150
 			
 			//bgcolor=red
 			
-			render_bg{}
+			render_bg {
+				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/left)"
+				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/right)"
+				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/inner)"
+			}
 		}
 		
 		// Typed in, as well as hovered.
@@ -1182,7 +1190,7 @@
 					
 			textcolor="darkGreyEnd"
 			padding-left=0	
-			render_bg {}
+			
 		}
 		
 		// Default State when nothing in it.
@@ -1216,7 +1224,7 @@
 				font-style=italic
 				textcolor="lightGreyEnd"
 				padding-left=0
-				render_bg {}
+				
 		}
 
 		LibrarySearch:disabled [!$OSX] 
@@ -2041,73 +2049,29 @@
 			height=20 
 			margin-left=20
 		}
-		
-		//place {
-		//	control="library_filters" 
-		//	align=left
-		//	y=47
-		//	x=300
-		//	height=25
-		//	width=150  
-		//}
  
 		place { 
 			control="library_zoom"
 			width=82 
 			height=20 
 		}
-	     
-	    place {
-	    	control="label_library_zoom"
-	    	width=13
-	    	height=15
-	    	y=52
-	    	align=right
-	    	margin-right=400
-	    } 
-	    
-	    place {
-	    	control="label_zoom_separator"
-	    	width=13
-	    	height=15
-	    	y=52
-	    	align=right
-	    	margin-right=300
-	    }
-	      
-		place { 
-			control="library_zoom" 
-			align=right 
-			y=47 
-			height=25 
-			margin-right=315 
-		}
-		
+			
 		place {
-			control="library_filters_details" 
-			align=right 
-			y=47 
-			margin-right=251
-			height=25 
-			width=27 
-		}
-		
-		place {
-			control="library_filters_list" 
-			align=right 
-			y=47 
-			margin-right=223 
-			height=25 
-			width=28 
-		}
-		
-		place {
-			control="library_filters_grid" 
-			align=right 
+			control="library_filters_details,library_filters_list,library_filters_grid"
+			align=left
+			dir=right
 			y=47
-			margin-right=196 
+			height=25
+			width=27
+			x=68
+		}
+		
+		place { 
+			control="label_library_zoom,library_zoom,label_zoom_separator" 
+			align=left
+			start=library_filters_grid  
 			height=25 
-			width=27 
+			margin-left=-10
 		}
 
 		place { 
@@ -2121,21 +2085,20 @@
 		
 		place { 
 			control="library_search" 
-			width=110
-			margin-right=40 
-			align=left
+			margin-right=194 
+			align=right
 			dir=right 
 			y=48 
 			height=25 
-			x=85
-			spacing=60
 		}
 		
 		place {
 			control="library_filters"
-			start="library_search"
 			dir=right
-			x=30
+			x=100
+			y=48
+			align=top-center
+			margin-right=200
 			height=24
 			width=160
 		}
