@@ -208,23 +208,4 @@
 			render {}
 	    }
 	}
-	
-	
-	layout {
-		place { 
-			control="ImageAvatar" 
-			x=16 
-			y=16 
-		}
-		
-		place { 
-			control="LabelSender,LabelInfo,LabelMessage" 
-			x=70
-			width=160 
-			dir=down 
-			margin-top=15 
-			margin-bottom=15 
-		}
-		
-	}
 }
