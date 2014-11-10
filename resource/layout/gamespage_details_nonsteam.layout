@@ -14,6 +14,7 @@
 	styles {
 		nonsteamdetails { 
 			bgcolor=black65
+			minimum-height=300
 		}
 
 		bodycontent {
@@ -37,10 +38,16 @@
 		
 		place { 
 			region=body 
-			control=headerlabel,bodycontent
-			dir=down
-			spacing=16
+			control=headerlabel 
 			width=max 
 		}
+		
+		place { 
+			region=body
+			y=35 
+			width=max
+			control=bodycontent
+		}
+		
 	}
 }
