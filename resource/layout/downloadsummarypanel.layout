@@ -688,7 +688,6 @@
 			
 			render {
 				0="fill( x0, y0, x1, y1, black65 )"
-				1="fill(x0,y1-1,x1,y1, darkestGrey)"
 				//1="gradient_horizontal( x0+170, y0, x0+375, y1, black50, black50 )"
 				
 			}

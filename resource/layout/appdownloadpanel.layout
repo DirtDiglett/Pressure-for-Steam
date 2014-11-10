@@ -78,7 +78,8 @@
 	styles {
 		panelStyle {
 			bgcolor=none
-			
+			render {}
+			render_bg {}
 		}
 		
 		panelStyleHighlight {
@@ -96,7 +97,7 @@
 			padding-bottom=0
 		
 			render_bg {
-				0="image(x1+3,y0,x1+17,y1, graphics/news)"
+				0="image(x1+3,y0+2,x1+17,y1, graphics/news)"
 			}
 		}
 		
@@ -125,7 +126,7 @@
 			font-family=basefont
 			
 			render_bg {
-				0="image(x1+3, y0, x1+17, y1, graphics/auto_downloads)"
+				0="image(x1+3, y0+2, x1+17, y1, graphics/auto_downloads)"
 			}
 		}
 		
@@ -459,12 +460,12 @@
 		
 		// left-mid column
 		place { control="namelabel" region="column2" margin-top=17 margin-left=0 }
-		place { control="updatetypelabel" region="column2" margin-top=47 align=left}
+		place { control="updatetypelabel" region="column2" margin-top=45 align=left}
 		place { control="downloadtotallabel,downloadtotalfield" region="column2" align=left margin-top=58 spacing=4 }
 		
-		place { control="starttimelabel,starttimefield" region="column2" dir="right" align=left spacing=4 margin-top=71 x=0 }
+		place { control="starttimelabel,starttimefield" region="column2" dir="right" align=left spacing=4 margin-top=70 x=0 }
 		place { control="timecompletedlabel,timecompletedfield" region="column2" x=0 align=left margin-top=71 spacing=4 }
-		place { control="timeremaininglabel,timeremainingfield" region="column2" x=0 align=left margin-top=83 spacing=4 }
+		place { control="timeremaininglabel,timeremainingfield" region="column2" x=0 align=left margin-top=82 spacing=4 }
 
 		
 
