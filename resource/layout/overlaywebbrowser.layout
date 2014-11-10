@@ -438,7 +438,7 @@
 
 		URLBarSecure
 		{
-		textcolor="Black"
+		textcolor="green"
 		font-size=14
 		}
 
@@ -448,19 +448,16 @@
 		}
 	
 
-		COverlayWebBrowser
-		{
-			bgcolor=grey
-			render_bg
-			{
-				0="fill( x0, y0, x1, y0+5, lightGreyEnd )"
-				1="fill( x0, y0+5, x1, y0+6, darkGreyEnd )"
-				2="fill( x0, y0+6, x1, y0+7, greyHighlight )"
-				3="gradient( x0, y0+7, x1, y0+47, grey, lightGreyEnd )"
+		COverlayWebBrowser {
+			bgcolor=none
+			render_bg {
+				1="fill( x0, y0+4, x1, y0+5, darkGreyEnd )"
+				2="fill( x0, y0+5, x1, y0+6, greyHighlight )"
+				3="gradient( x0, y0+6, x1, y0+47, grey, lightGreyEnd )"
 				4="fill( x0, y0+47, x1, y0+48, darkGreyEnd )"
 				5="fill( x0, y1-21, x1, y1-20, grey )"
 				6="fill( x0, y1-20, x1, y1-19, greyHighlight )"
-				7="gradient( x0, y1-19, x1, y1, grey, lightGreyEnd )"
+				//7="gradient( x0, y1-19, x1, y1, grey, lightGreyEnd )"
 				8="fill( x0, y1-1, x0+1, y1, darkGreyEnd )"
 				9="fill( x1-1, y1-1, x1, y1, darkGreyEnd )"
 			}
