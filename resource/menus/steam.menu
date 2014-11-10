@@ -97,6 +97,24 @@
 		
 		Divider {} // ________________________________________________________________________________________________________________________
 		
+		CheckForUpdates	{	
+			text="#steam_menu_checkforupdates"		
+			command="CheckForUpdates" 
+		}
+		
+		// one of these will be invisible
+		UpdateVideoDrivers	[$WINDOWS]	{	
+			text="#steam_menu_updatevendorgraphicscard"		
+			command="CheckForVideoDriverUpdates" 
+		}
+		
+		CheckForVideoDriverUpdates	[$WINDOWS]	{	
+			text="#steam_menu_checkforvideodriverupdates"	
+			command="CheckForVideoDriverUpdates" 
+		}
+
+		Divider {} // ________________________________________________________________________________________________________________________
+
 		Settings {
 			text="#steam_menu_settings"
 			command="Settings"
