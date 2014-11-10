@@ -1177,17 +1177,12 @@
 		
 		// Typed in, as well as hovered.
 		
-		LibrarySearch:hover [!$OSX]
-		{
-					
+		LibrarySearch:hover [!$OSX] {
 			textcolor="darkGreyEnd"
-			padding-left=4	
-			render_bg {}
+			padding-left=4
 		}
 
-		LibrarySearch:hover [$OSX]
-		{
-					
+		LibrarySearch:hover [$OSX] {
 			textcolor="darkGreyEnd"
 			padding-left=0	
 			
@@ -1195,28 +1190,24 @@
 		
 		// Default State when nothing in it.
 		
-		LibrarySearch:empty [!$OSX]
-		{
+		LibrarySearch:empty [!$OSX] {
 			font-family=basefont
 			font-style=italic
 			textcolor="lightestGrey"
 			padding-left=4	
 		}
 		
-		LibrarySearch:empty [$OSX]
-		{
+		LibrarySearch:empty [$OSX] {
 			font-family=basefont
 			font-style=italic
 			textcolor="lightestGrey"
 			padding-left=0	
 		}
 		
-		LibrarySearch:empty:hover [!$OSX] 
-		{
+		LibrarySearch:empty:hover [!$OSX] {
 				font-style=italic
 				textcolor="lightGreyEnd"
 				padding-left=4
-				render_bg {}
 			}
 			
 		LibrarySearch:empty:hover [$OSX] 
