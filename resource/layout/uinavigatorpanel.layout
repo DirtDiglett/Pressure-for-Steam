@@ -1153,7 +1153,7 @@
 			render_bg {
 				1="image(x0-19, y0+1, x0+3, y0+24, graphics/search/left)"
 				2="image(x1-14, y0+1, x1-2, y0+24, graphics/search/right)"
-				3="image_tiled(x0+3, y0+1, x1-14, y0+24, graphics/search/inner)"
+				3="image_tiled(x0+3, y0+1, x1-14, y0+25, graphics/search/inner)"
 			}
 		}
 
@@ -1814,7 +1814,7 @@
 				font-outerglow-filtersize=3
 			
 				render_bg {
-					0="image(x0+40, y1-10, x0+55, y1, graphics/arrowup)"
+					0="image(x0+40, y1-9, x0+55, y1, graphics/arrowup)"
 				}
 			}
 
@@ -1975,7 +1975,7 @@
 		place { 
 			control="back,forward" 
 			x=6 
-			y=47 
+			y=48 
 			height=25 
 			width=28 
 			spacing=-1 
@@ -1989,7 +1989,7 @@
 		place {
 			control="refresh,stop"
 			x=68
-			y=47
+			y=48
 			height=25
 			width=28
 			spacing=0
@@ -2017,7 +2017,7 @@
 		place {
 			control="URLBar"
 			align=left
-			y=47
+			y=48
 			height=24
 			width=max
 			margin-left=96
@@ -2051,7 +2051,7 @@
 			control="library_filters_details,library_filters_list,library_filters_grid"
 			align=left
 			dir=right
-			y=47
+			y=48
 			height=25
 			width=27
 			x=68
@@ -2068,7 +2068,7 @@
 		place { 
 			control="subnavgroup_library" 
 			align=left 
-			y=47 
+			y=48 
 			height=25 
 			width=152 
 			x=68 
@@ -2079,7 +2079,7 @@
 			margin-right=194 
 			align=right
 			dir=right 
-			y=46 
+			y=47 
 			height=25 
 		}
 
@@ -2089,7 +2089,7 @@
 			margin-right=194 
 			align=right
 			dir=right 
-			y=47 
+			y=48 
 			height=25 
 		}
 		
