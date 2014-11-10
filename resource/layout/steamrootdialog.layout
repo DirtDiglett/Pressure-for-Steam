@@ -270,11 +270,11 @@
 				16="fill(x1-2, y1-3, x1-1, y1-2, bottomDarkPixels)" // Bottom Right Fake Anti-Aliased								
 				
 				// The sub-Nav needs to be 188px from y1.
-				18="image_tiled(x0, y0+52, x1-194, y0+88, graphics/subnav_bg)"
-				19="image(x1-194, y0+52, x1-190, y0+88, graphics/subnav_right)"
-				20="fill(x0+1, y0+54, x0+2, y0+89, grey50 )"
-
-				21="fill( x0+2, y0+88, x1-194, y0+90, lightGreyEnd)" //Fix for random bar showing
+				18="image_tiled(x0, y0+51, x1-194, y0+88, graphics/subnav_bg)"
+				19="image(x1-194, y0+51, x1-190, y0+88, graphics/subnav_right)"
+				20="fill(x0+1, y0+53, x0+2, y0+88, grey50 )"
+				
+				
 			}
 		}	
 

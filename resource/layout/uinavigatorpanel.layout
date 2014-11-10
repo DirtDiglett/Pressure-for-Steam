@@ -1814,7 +1814,7 @@
 				font-outerglow-filtersize=3
 			
 				render_bg {
-					0="image(x0+40, y1-9, x0+55, y1, graphics/arrowup)"
+					0="image(x0+40, y1-10, x0+55, y1, graphics/arrowup)"
 				}
 			}
 
@@ -2079,7 +2079,7 @@
 			margin-right=194 
 			align=right
 			dir=right 
-			y=48 
+			y=47 
 			height=25 
 		}
 		
@@ -2087,10 +2087,10 @@
 			control="library_filters"
 			dir=right
 			x=100
-			y=48
+			y=47
 			align=top-center
 			margin-right=200
-			height=24
+			height=25
 			width=160
 		}
 
