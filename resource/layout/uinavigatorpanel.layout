@@ -1153,7 +1153,7 @@
 			render_bg {
 				1="image(x0-19, y0+1, x0+3, y0+24, graphics/search/left)"
 				2="image(x1-14, y0+1, x1-2, y0+24, graphics/search/right)"
-				3="image_tiled(x0+3, y0+1, x1-14, y0+25, graphics/search/inner)"
+				3="image_tiled(x0+3, y0+1, x1-14, y0+26, graphics/search/inner)"
 			}
 		}
 
