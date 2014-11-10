@@ -430,7 +430,7 @@
 			inset="0 8 0 0"
 			
 			render {
-				0="image_tiled(x0,y1-14,x1,y1, graphics/chatbottom)"
+				//0="image_tiled(x0,y1-14,x1,y1, graphics/chatbottom)"
 			}
 		}
 		
