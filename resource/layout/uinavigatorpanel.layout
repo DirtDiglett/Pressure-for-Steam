@@ -1151,9 +1151,9 @@
 			minimum-width=150
 			
 			render_bg {
-				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/left)"
-				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/right)"
-				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/inner)"
+				1="image(x0-19, y0+1, x0+3, y0+24, graphics/search/left)"
+				2="image(x1-14, y0+1, x1-2, y0+24, graphics/search/right)"
+				3="image_tiled(x0+3, y0+1, x1-14, y0+24, graphics/search/inner)"
 			}
 		}
 
@@ -2073,8 +2073,18 @@
 			width=152 
 			x=68 
 		}
+
+		place [!$OSX] { 
+			control="library_search" 
+			margin-right=194 
+			align=right
+			dir=right 
+			y=46 
+			height=25 
+		}
+
 		
-		place { 
+		place [$OSX] { 
 			control="library_search" 
 			margin-right=194 
 			align=right
