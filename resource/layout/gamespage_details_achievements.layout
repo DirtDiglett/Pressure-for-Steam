@@ -93,7 +93,6 @@
 			control=mostrecent_area 
 			dir=down 
 			y=35 
-			width=max 
 		}
 		
 		place {
@@ -106,10 +105,10 @@
 		
 		place {
 			control=locked_area
-			y=50
-			x=300
+			y=5
 			width=max
 			height=45
+			start="mostrecent_area"
 		}
 
 		place { 

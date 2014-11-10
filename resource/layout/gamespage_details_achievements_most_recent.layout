@@ -61,6 +61,7 @@
 	{
 		mostrecent {
 			minimum-height="118"
+			minimum-width="300"
 		}
 
 		achievementimagebg {
