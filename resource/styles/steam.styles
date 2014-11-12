@@ -282,7 +282,7 @@ styles {
 
 	// Frames Titlebar when NOT in focus. (Doesn't seem to affect the main client)
     FrameTitle {
-		font-family=basefont
+		font-family=semibold
 		inset  = "2 -3 0 0"
 		inset  = "0 4 0 0" [$OSX]
 		padding-left  = "0"
@@ -309,7 +309,7 @@ styles {
 					7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 		      	
 		      	
-		      	8="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		      	8="gradient(x0,y0+24, x1, y0+31, black40, none)"
 		      	
 		      	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		      	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
@@ -318,7 +318,7 @@ styles {
     }
 
 	    FrameTitle:framefocus {
-			font-family=basefont
+			font-family=semibold
 			inset="2 -3 0 0"
 			inset  = "0 4 0 0" [$OSX]
 			font-size=14
@@ -342,7 +342,7 @@ styles {
 					7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 		      	
 		      	
-		      	8="gradient(x0,y0+25, x1, y0+31, black65, none)"
+		      	8="gradient(x0,y0+24, x1, y0+31, black40, none)"
 		      	
 		      	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		      	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
@@ -999,15 +999,12 @@ styles {
     
     
 		ProgressBox {
-			//bgcolor=lightGreyEnd
 			render {
-		1="fill( x0+2,y0+26, x1-1, y1-1, darkGreyEnd )" //Added for more consistancy		
-		2="image( x0+122, y0+39, x1, y0, graphics/login_logo )"
+				0="image( x0+122, y0+39, x1, y0, graphics/login_logo )"
 			}
 		}
 		
-		"ProgressBox Label"
-		{
+		"ProgressBox Label" {
 			inset="0 0 0 10"
 			textcolor=none
 			font-size=14
