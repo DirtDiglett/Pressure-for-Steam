@@ -165,9 +165,8 @@
 			spacing=-9 
 		}
 		
-		
 		place { 
-			control="InfoLabel,InfoLabel2" 
+			control="InfoLabel,InfoLabel2,HTML" 
 			width=max 
 			dir=down
 			spacing=10
@@ -177,19 +176,14 @@
 		}
 		
 		
-		place { 
-			control="HTML" 
-			width=max
-			height=320 
-			align=bottom
-			margin-bottom=51
-		}
+		
 		
 		//Bottom
 		region { 
 			name=bottom 
 			align=bottom 
 			height=51
+			width=max
 		}
 		
 		place {	
