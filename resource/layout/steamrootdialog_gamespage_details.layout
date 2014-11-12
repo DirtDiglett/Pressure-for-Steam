@@ -174,6 +174,8 @@
 			inset="0 2 0 0"
 			textcolor=white
 			
+			font-family=semibold
+			
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -189,6 +191,8 @@
 		ListPanelSectionHeader [!$OSX] {     
 			inset="0 0 0 0"
 			textcolor=white
+			
+			font-family=semibold
 			
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
@@ -211,6 +215,7 @@
 		"GamesPage_Details ListPanelColumnHeader" {
 			bgcolor="none"
 			font-size=11
+			font-family=semibold
 			font-weight=800
 			inset="0 0 0 0"
 			render {}
