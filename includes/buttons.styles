@@ -469,10 +469,10 @@
 					
 					
 					// Fake Anti-Aliasing for the bottom corners.
-					22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, black60 )" // Bottom Right
-					23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, black60 )" // Bottom Right
-					24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, black60 )" // Bottom Left
-					25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, black60 )" // Bottom Left	
+					22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, black65 )" // Bottom Right
+					23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, black65 )" // Bottom Right
+					24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, black65 )" // Bottom Left
+					25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, black65 )" // Bottom Left	
 					
 					
 					// Drop-shadow
@@ -1017,10 +1017,10 @@
 					
 					
 					// Fake Anti-Aliasing for the bottom corners.
-					22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, black60 )" // Bottom Right
-					23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, black60 )" // Bottom Right
-					24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, black60 )" // Bottom Left
-					25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, black60 )" // Bottom Left	
+					22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, black65 )" // Bottom Right
+					23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, black65 )" // Bottom Right
+					24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, black65 )" // Bottom Left
+					25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, black65 )" // Bottom Left	
 					
 					
 					// Drop-shadow
