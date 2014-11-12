@@ -162,7 +162,7 @@
 		}
 		
 		ListPanelSectionHeader {
-			font-family=basefont
+			font-family=semibold
 			font-style="outerglow,normal"
 			font-outerglow-color="red"
 			font-outerglow-offset=1
@@ -367,7 +367,7 @@
 			textcolor=white
 			
 			
-			font-family=basefont
+			font-family=semibold
 			font-style="regular"
 						
 			render_bg {
@@ -557,7 +557,7 @@
 		// This will only affect the HEADERS inside it for some reason
 		"CFriendsDialog SectionedListPanelInterior" {
 			
-			font-family=basefont
+			font-family=semibold
 			font-style="regular"
 			
 			inset="0 -3 0 0"
