@@ -40,11 +40,16 @@
 				1="fill( x0 - 5, y0 - 1, x1 + 5, y0    , lightestGreen )"  // top
 				2="fill( x0 - 5, y1    , x1 + 5, y1 + 1, darkestGreen )"  // bottom
 			}
-			textcolor=trueWhite
+			textcolor=darkestGrey
 		}
 		
-		TotalAmtStyle { minimum-width="70" }
-		AuthBtnStyle { minimum-width="100" }
+		TotalAmtStyle { 
+			minimum-width="70" 
+		}
+		
+		AuthBtnStyle { 
+			minimum-width="100" 
+		}
 	}
 
 	
@@ -58,16 +63,46 @@
 			spacing=-8 
 		}
 		
-		region { name="main" width="max" height=250 margin-top=40 margin-left=10 margin-right=10 }
+		region { 
+			name="main" 
+			width="max" 
+			height=250 
+			margin-top=40 
+			margin-left=10 
+			margin-right=10 
+		}
+		
 		region { name="total" region="main" align="bottom" height=24 width="max" margin-right=25 }
 		
 		region { name="buttons" align="bottom" width="max" height=51 }
 
-		place { control=BalanceDescLabel,BalanceLabel dir=left x=200 y=0 margin-right=35 margin-top=6 align=right spacing=10 }
+		place { 
+			control=BalanceDescLabel,BalanceLabel 
+			dir=left 
+			y=6 
+			margin-right=100 
+			align=right 
+			spacing=10 
+		}
 
-		place { control=AuthorizeButton,CancelButton region=buttons dir=left align=right spacing=8 margin-top=10 margin-right=13 }
+		place { 
+			control=AuthorizeButton,CancelButton 
+			region=buttons 
+			dir=left 
+			align=right 
+			spacing=8 
+			margin-top=13 
+			margin-right=13 
+		}
 
-		place { control=ReasonLabel,ItemList region=main dir=down spacing=15 width=max }
+		place { 
+			control=ReasonLabel,ItemList 
+			region=main 
+			dir=down 
+			spacing=15 
+			width=max 
+		}
+		
 		place { control=TotalLabel,TotalAmtLabel region=total dir=left align=right spacing=15 margin-top=0 }
 		place { control=ConvertedTotalLabel,ConvertedTotalAmtLabel region=total dir=left align=right spacing=15 margin-top=12 }
 	}
