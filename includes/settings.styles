@@ -16,7 +16,7 @@
 		// *********************************************** 
 		// Spacing
 		// ***********************************************		
-		Frame.ClientInsetX        10
+		Frame.ClientInsetX        0
 		Frame.ClientInsetY        35
 
 		// *********************************************** 
@@ -45,7 +45,7 @@
 	
 	
 	
-   WizardPanel.HeaderBGColor     HeaderDialog
+   WizardPanel.HeaderBGColor     green
 
     Menu.TextInset          "6"
     
