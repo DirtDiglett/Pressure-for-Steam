@@ -31,7 +31,7 @@
 			bgcolor=none
 			
 			render {
-				1="gradient(x0+194,y0+25, x1, y0+31, black40, none)"
+				1="gradient(x0,y0+25, x1, y0+31, black40, none)"
 			}
 			
 			render_bg {     
@@ -48,28 +48,32 @@
 		}
 		
 		PropertySheet {
-			minimum-width="545"
+			minimum-width="540"
 			minimum-height="505"
-			inset="20 32 0 0"
+			inset="10 32 0 0"
 			bgcolor=none
 			
 			render {
-				0="fill(x0,y0+1,x0+5,y1, lightGreyEnd)"	
-				1="fill(x0,y0+1,x0+1,y1, darkestGrey)"
+				0="fill(x0-4,y0+1,x0+10,y1, lightGreyEnd)"
+				1="fill(x0-5,y0+1,x0-4,y1, darkestGrey)"
+				2="gradient_horizontal(x0-11,y0+1,x0-5,y1, none, black40)"
 			}
 			
 			render_bg {
-				0="fill(x0,y0+1,x1,y1, lightGreyEnd)"
+				0="fill(x0-10,y0+1,x1-1,y1, lightGreyEnd)"
+				
 			}
 
 		}
 
 		"SettingsList" {
-			inset="-4 -14 1 0" //inset="6 -14 4 0" 
+			inset="-4 -14 0 0" //inset="6 -14 4 0" 
 			minimum-width="200"
 			minimum-height="525"
 			font-size=18
 			padding=6
+			
+			bgcolor=darkestGrey
 		}
 		
 		ListPanel {
@@ -123,17 +127,19 @@
 			region=body 
 			width=max 
 			height=max 
-			spacing=25  
+			spacing=0 
 		}
 
 		place { 
 			control="settingslist"
-			margin-top=25 
+			margin-top=25
+			margin-left=1 
+			margin-right=0
 		}
 
 		place { 
 			control="sheet" 
-			margin-left=201
+			margin-left=200
 			margin-top=0 
 		}
 
