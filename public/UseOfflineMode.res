@@ -15,6 +15,7 @@
 		"settitlebarvisible"		"1"
 		"title"		"#SteamUI_OfflineMode_ErrorTitle"
 	}
+	
 	"RetryButton" {
 		"ControlName"		"Button"
 		"fieldName"		"RetryButton"
@@ -34,6 +35,7 @@
 		"Command"		"Retry"
 		"Default"		"0"
 	}
+	
 	"OfflineModeButton" {
 		"ControlName"		"Button"
 		"fieldName"		"OfflineModeButton"
@@ -53,6 +55,7 @@
 		"Command"		"Offline"
 		"Default"		"0"
 	}
+	
 	"QuitButton" {
 		"ControlName"		"Button"
 		"fieldName"		"QuitButton"
@@ -72,6 +75,7 @@
 		"Command"		"Quit"
 		"Default"		"1"
 	}
+	
 	"Label1" {
 		"ControlName"		"Label"
 		"fieldName"		"Label1"
@@ -91,8 +95,8 @@
 		"font"		"uiHeadline"
 		"wrap"		"1"
 	}
-	"LabelAppearOffline"
-	{
+	
+	"LabelAppearOffline" {
 		"ControlName"		"Label"
 		"fieldName"		"LabelAppearOffline"
 		"xpos"		"24"
@@ -110,8 +114,8 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	"LabelChoose"
-	{
+	
+	"LabelChoose" {
 		"ControlName"		"Label"
 		"fieldName"		"Label3"
 		"xpos"		"24"
@@ -129,8 +133,8 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	"URLLabel1"
-	{
+	
+	"URLLabel1" {
 		"ControlName"		"URLLabel"
 		"fieldName"		"URLLabel1"
 		"xpos"		"24"
@@ -222,5 +226,4 @@
 			height=24 
 		}
 	}
-
 }
