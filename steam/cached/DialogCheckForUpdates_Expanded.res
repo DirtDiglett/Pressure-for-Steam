@@ -1,7 +1,6 @@
 "steam/cached/DialogCheckForUpdates_Expanded.res" {
 	controls {
-		"DialogCheckForUpdates"
-		{
+		"DialogCheckForUpdates" {
 			"ControlName"		"CDialogCheckForUpdates"
 			"fieldName"		"DialogCheckForUpdates"
 			"xpos"		"1050"
@@ -17,8 +16,8 @@
 			"settitlebarvisible"		"1"
 			"title"		"#steam_checkforupdates_title"
 		}
-		"ProgressBar"
-		{
+		
+		"ProgressBar" {
 			"ControlName"		"ProgressBar"
 			"fieldName"		"ProgressBar"
 			"xpos"		"24"
@@ -33,8 +32,8 @@
 			"paintbackground"		"1"
 			"progress"		"0.934772"
 		}
-		"HTML"
-		{
+		
+		"HTML" {
 			"ControlName"		"HTML"
 			"fieldName"		"HTML"
 			"xpos"		"24"
@@ -48,8 +47,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		"InfoLabel"
-		{
+		
+		"InfoLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"InfoLabel"
 			"xpos"		"24"
@@ -66,8 +65,8 @@
 			"textAlignment"		"west"
 			"wrap"		"1"
 		}
-		"InfoLabel2"
-		{
+		
+		"InfoLabel2" {
 			"ControlName"		"Label"
 			"fieldName"		"InfoLabel2"
 			"xpos"		"24"
@@ -83,8 +82,8 @@
 			"textAlignment"		"north-west"
 			"wrap"		"1"
 		}
-		"RestartNowButton"
-		{
+		
+		"RestartNowButton" {
 			"ControlName"		"Button"
 			"fieldName"		"RestartNowButton"
 			"xpos"		"250"
@@ -103,8 +102,8 @@
 			"Command"		"Restart"
 			"Default"		"0"
 		}
-		"Button1"
-		{
+		
+		"Button1" {
 			"ControlName"		"Button"
 			"fieldName"		"Button1"
 			"xpos"		"368"
@@ -123,8 +122,8 @@
 			"Command"		"close"
 			"Default"		"0"
 		}
-		"BytesDownloaded"
-		{
+		
+		"BytesDownloaded" {
 			"ControlName"		"Label"
 			"fieldName"		"BytesDownloaded"
 			"xpos"		"30"
@@ -175,9 +174,6 @@
 			y=36
 		}
 		
-		
-		
-		
 		//Bottom
 		region { 
 			name=bottom 
@@ -195,9 +191,5 @@
 			margin-right=10
 			margin-top=13 
 		}
-
-		
-		//Hidden
-		
 	}
 }

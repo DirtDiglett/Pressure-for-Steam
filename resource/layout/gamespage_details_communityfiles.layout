@@ -25,7 +25,7 @@
 
 	styles {
 	
-			// This overrides the default button.
+		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0

@@ -15,8 +15,8 @@
 		"settitlebarvisible"		"1"
 		"title"		"#steam_checkforupdates_title"
 	}
-	"ProgressBar"
-	{
+	
+	"ProgressBar" {
 		"ControlName"		"ProgressBar"
 		"fieldName"		"ProgressBar"
 		"xpos"		"24"
@@ -31,8 +31,8 @@
 		"paintbackground"		"1"
 		"progress"		"1.000000"
 	}
-	"HTML"
-	{
+	
+	"HTML" {
 		"ControlName"		"HTML"
 		"fieldName"		"HTML"
 		"xpos"		"24"
@@ -46,8 +46,8 @@
 		"tabPosition"		"0"
 		"paintbackground"		"1"
 	}
-	"InfoLabel"
-	{
+	
+	"InfoLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"InfoLabel"
 		"xpos"		"24"
@@ -64,8 +64,8 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	"Button1"
-	{
+	
+	"Button1" {
 		"ControlName"		"Button"
 		"fieldName"		"Button1"
 		"xpos"		"384"
@@ -84,8 +84,8 @@
 		"Command"		"close"
 		"Default"		"0"
 	}
-	"InfoLabel2"
-	{
+	
+	"InfoLabel2" {
 		"ControlName"		"Label"
 		"fieldName"		"InfoLabel2"
 		"xpos"		"24"
@@ -101,7 +101,17 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	styles {}
+	
+	styles {
+		frame {
+			bgcolor=red
+		}
+		
+		panel {
+			bgcolor=green
+		}
+	}
+	
 	layout {
 		place [!$OSX]  { 
 			control="frame_minimize,frame_close" 

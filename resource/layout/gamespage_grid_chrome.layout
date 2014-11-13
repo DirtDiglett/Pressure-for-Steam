@@ -6,23 +6,19 @@
 			mouseinputenabled			0
 		}
 		
-		
 		"launch" {
 			zpos="1"
-			// this control's White and command will be clobbered by code based on the installation state
 			ControlName					URLLabel
 			labelText					"#steam_launch"
 			style						CUILaunchButton
 			command						launch
 		}
-		
-				
+			
 		"divider" {
 			zpos="1"
 			ControlName					Label
 			labelText					"|"
 			style						GridNavDivider
-
 		}
 		
 		"details" {
@@ -36,7 +32,6 @@
 	
 	colors {
 		// Install Button Normal
-		
 		InstallAntiAliasingTop "54 131 145 255"
 		InstallAntiAliasingBottom "12 102 121 255"
 		
@@ -148,7 +143,6 @@
 	}
 
 	styles {
-		
 		ChromeBorderItem {
 			bgcolor= black75
 		}
@@ -805,14 +799,13 @@
 					}
 			}
 		
-		CUIDetailsButton:disabled
-		{   
+		CUIDetailsButton:disabled {   
 			image=graphics/details_d
 		}
 
-		"GameItem_Updating CUINavButton:hover" {
-			textcolor="White"
-		}
+			"GameItem_Updating CUINavButton:hover" {
+				textcolor="White"
+			}
 	}
 
 	
@@ -838,8 +831,7 @@
 			margin-right=0
 		}
 
-		place
-		{
+		place {
 			control="launch,details"	
 			region="actions"		
 			align=top-center

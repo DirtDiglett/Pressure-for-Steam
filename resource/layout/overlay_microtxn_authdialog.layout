@@ -1,24 +1,65 @@
 "resource/layout/overlay_microtxn_authdialog.layout" {
 	controls {
-		ItemList { controlname="ListPanel" style="ItemListStyle" }
-		AuthorizeButton { controlname="Button" Style="AuthBtnStyle" labeltext="#Overlay_MicroTxnAuth_Authorize" }
-		CancelButton { controlname="Button" Style="AuthBtnStyle" labeltext="#Overlay_MicroTxnAuth_Cancel" }
+		ItemList {
+			controlname="ListPanel"
+			style="ItemListStyle"
+		}
+			
+		AuthorizeButton {
+			controlname="Button"
+			Style="AuthBtnStyle"
+			labeltext="#Overlay_MicroTxnAuth_Authorize"
+		}
+		
+		CancelButton {
+			controlname="Button"
+			Style="AuthBtnStyle"
+			labeltext="#Overlay_MicroTxnAuth_Cancel"
+		}
 
-		ReasonLabel { controlname="Label" labeltext="#Overlay_MicroTxnAuth_Description" wrap=1 }
-		TotalLabel { controlname="Label" labeltext="#Overlay_MicroTxnAuth_Total" }
-		TotalAmtLabel { controlname="Label" style="TotalAmtStyle" labeltext="%total%" }
-		ConvertedTotalLabel { controlname="Label" labeltext="#Overlay_MicroTxnAuth_ConvertedTotalLabel" }
-		ConvertedTotalAmtLabel { controlname="Label" style="TotalAmtStyle" labeltext="#Overlay_MicroTxnAuth_ConvertedTotalValue" }
-		BalanceLabel { controlname="Label" style="BalanceStyle" labeltext="#Overlay_MicroTxnAuth_Balance" }
-		BalanceDescLabel { controlname="Label" labeltext="#Overlay_MicroTxnAuth_BalanceLabel" }
+		ReasonLabel {
+			controlname="Label"
+			labeltext="#Overlay_MicroTxnAuth_Description"
+			wrap=1
+		}
+			
+		TotalLabel {
+			controlname="Label"
+			labeltext="#Overlay_MicroTxnAuth_Total"
+		}
+			
+		TotalAmtLabel {
+			controlname="Label"
+			style="TotalAmtStyle"
+			labeltext="%total%"
+		}
+			
+		ConvertedTotalLabel {
+			controlname="Label"
+			labeltext="#Overlay_MicroTxnAuth_ConvertedTotalLabel"
+		}
+			
+		ConvertedTotalAmtLabel {
+			controlname="Label"
+			style="TotalAmtStyle"
+			labeltext="#Overlay_MicroTxnAuth_ConvertedTotalValue"
+		}
+			
+		BalanceLabel {
+			controlname="Label"
+			style="BalanceStyle"
+			labeltext="#Overlay_MicroTxnAuth_Balance"
+		}
+			
+		BalanceDescLabel {
+			controlname="Label"
+			labeltext="#Overlay_MicroTxnAuth_BalanceLabel"
+		}
 	}
 
-	colors {
-	   
-	}
+	colors {}
 
 	styles {
-		
 		Frame {
 			render_bg {
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
@@ -54,7 +95,6 @@
 
 	
 	layout {
-		
 		place [!$OSX]  { 
 			control="frame_close" 
 			align=right 
@@ -72,9 +112,21 @@
 			margin-right=10 
 		}
 		
-		region { name="total" region="main" align="bottom" height=24 width="max" margin-right=25 }
+		region {
+			name="total"
+			region="main"
+			align="bottom"
+			height=24
+			width="max"
+			margin-right=25
+		}
 		
-		region { name="buttons" align="bottom" width="max" height=51 }
+		region {
+			name="buttons"
+			align="bottom"
+			width="max"
+			height=51
+		}
 
 		place { 
 			control=BalanceDescLabel,BalanceLabel 
@@ -91,8 +143,9 @@
 			dir=left 
 			align=right 
 			spacing=8 
-			margin-top=13 
-			margin-right=13 
+			margin-top=14 
+			margin-right=14
+			height=24 
 		}
 
 		place { 
@@ -103,7 +156,22 @@
 			width=max 
 		}
 		
-		place { control=TotalLabel,TotalAmtLabel region=total dir=left align=right spacing=15 margin-top=0 }
-		place { control=ConvertedTotalLabel,ConvertedTotalAmtLabel region=total dir=left align=right spacing=15 margin-top=12 }
+		place {
+			control=TotalLabel,TotalAmtLabel
+			region=total
+			dir=left
+			align=right
+			spacing=15
+			margin-top=0
+		}
+		
+		place {
+			control=ConvertedTotalLabel,ConvertedTotalAmtLabel
+			region=total
+			dir=left
+			align=right
+			spacing=15
+			margin-top=12
+		}
 	}
 }

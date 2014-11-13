@@ -223,27 +223,72 @@
 			margin-bottom=100 
 		}
 		
-		region 	{ name="topbar" region=overlay width="max" height=50 }
-		region	{ name="taskbar" region=overlay width=700 height=100 align=top-center }
-		region	{ name="above_taskbar" region=overlay align=bottom width=max height=110 margin-bottom=75 }
-		region 	{ name="powermeter" region=above_taskbar align=right width=200 }
+		region {
+			name="topbar"
+			region=overlay
+			width="max"
+			height=50
+		}
 		
+		region {
+			name="taskbar"
+			region=overlay
+			width=700
+			height=100
+			align=top-center
+		}
 		
+		region {
+			name="above_taskbar"
+			region=overlay
+			align=bottom
+			width=max
+			height=110
+			margin-bottom=75
+		}
 		
-		place { control="TopFadePanel" align=top width=max height=600 }
-		place { control="BottomFadePanel" align=bottom width=max height=0 }
-				
+		region {
+			name="powermeter"
+			region=above_taskbar
+			align=right
+			width=200
+		}
+		
+		place {
+			control="TopFadePanel"
+			align=top
+			width=max
+			height=600
+		}
+		
+		place {
+			control="BottomFadePanel"
+			align=bottom
+			width=max
+			height=0
+		}
 		
 		// Get rid of the "SHIFT + TAB Closes the overlay" string.
-		place { control="HotkeyLabel,HotkeyExplain" region=mid align=top-center y=0 height=0 width=0 }
+		place {
+			control="HotkeyLabel,HotkeyExplain"
+			region=mid
+			align=top-center
+			y=0
+			height=0
+			width=0
+		}
 		
-
+		place {
+			control="PowerMeterDim"
+			region=powermeter
+			align=right
+		}
 		
-
-		
-		place { control="PowerMeterDim" region=powermeter align=right }
-		
-		place { control="TaskbarPanel" region=taskbar height=64 width=max }
+		place {
+			control="TaskbarPanel"
+			region=taskbar
+			height=64
+			width=max
+		}
 	}
-	
 }

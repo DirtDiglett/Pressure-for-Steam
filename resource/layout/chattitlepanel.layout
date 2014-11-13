@@ -1,10 +1,26 @@
 "resource/layout/chattitlepanel.layout" {
 	controls {
-		 "AvatarImage" { ControlName="ImagePanel" }
-	     "NameLabel" { ControlName="Label" }
-	     "StatusLabel" { ControlName="Label" style="statuslabel" }
-	     "LockImage" { ControlName="ImagePanel" }
-	     "MenuButton" { ControlName= "CChatTitlePanelAffordance" style="menuButtonStyle"}
+		"AvatarImage" {
+			ControlName="ImagePanel"
+		}
+	     
+	    "NameLabel" {
+	    	ControlName="Label"
+	    }
+	     
+	    "StatusLabel" {
+	    	ControlName="Label"
+	    	style="statuslabel"
+	    }
+	     
+	    "LockImage" {
+	    	ControlName="ImagePanel"
+	    }
+	     
+	    "MenuButton" {
+	    	ControlName="CChatTitlePanelAffordance"
+	    	style="menuButtonStyle"
+	    }
 	}
 	
 	styles {
@@ -47,7 +63,14 @@
 	}
 	
 	layout {
-		place {	control="AvatarImage" x=2 y=7 align=left dir=right spacing=8 }
+		place {	
+			control="AvatarImage" 
+			x=2
+			y=7
+			align=left
+			dir=right
+			spacing=8
+		}
 		
 		place {	
 			control="NameLabel,MenuButton" 

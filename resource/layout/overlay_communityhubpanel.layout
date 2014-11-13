@@ -11,15 +11,22 @@
 			style=detailsboxtitle 
 		}
 		
-		NumContributionsText { controlname="label" labeltext="#Overlay_CommunityHub_Panel_NumContributions"  style=highlight }
+		NumContributionsText {
+			controlname="label"
+			labeltext="#Overlay_CommunityHub_Panel_NumContributions"
+			style=highlight
+		}
 
-		ViewCommunityHub { controlname="Button" labeltext="#Overlay_View_CommunityHub" command="viewcommunityhub" }
+		ViewCommunityHub {
+			controlname="Button"
+			labeltext="#Overlay_View_CommunityHub"
+			command="viewcommunityhub"
+		}
 	}
 	
 	colors {}	
 	
 	styles {
-
 		button {
 			textcolor=blue
 			font-size=13
@@ -55,8 +62,7 @@
 			//bgcolor="40 40 40 255"
 		}
 
-		PreviewImage {
-		}
+		PreviewImage {}
 
 
 		highlight {
@@ -64,17 +70,20 @@
 		}
 	}
 	
-	layout
-	{
+	layout {
 		region { 
 			name=title
 			width=max 
 			height=100 
 		}
 		
-		//region { name=actions y=65  margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=124 }
-		//place { control="TitleText" region=title }
-		place { control="NumContributionsText" region=title y=40 width=0 height=0 }
+		place {
+			control="NumContributionsText"
+			region=title
+			y=40
+			width=0
+			height=0
+		}
 
 		place { 
 			control="TitleText,ViewCommunityHub" 

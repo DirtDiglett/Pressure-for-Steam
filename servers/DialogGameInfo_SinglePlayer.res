@@ -1,7 +1,5 @@
-"Servers/DialogGameInfo_SinglePlayer.res"
-{
-	"DialogGameInfo"
-	{
+"Servers/DialogGameInfo_SinglePlayer.res" {
+	"DialogGameInfo" {
 		"ControlName"		"CDialogGameInfo"
 		"fieldName"		"DialogGameInfo"
 		"xpos"		"570"
@@ -17,8 +15,8 @@
 		"settitlebarvisible"		"1"
 		"title"		"#ServerBrowser_GameInfoWithNameTitle"
 	}
-	"Connect"
-	{
+	
+	"Connect" {
 		"ControlName"		"Button"
 		"fieldName"		"Connect"
 		"xpos"		"195"
@@ -36,8 +34,8 @@
 		"wrap"		"0"
 		"Default"		"1"
 	}
-	"Close"
-	{
+	
+	"Close" {
 		"ControlName"		"Button"
 		"fieldName"		"Close"
 		"xpos"		"295"
@@ -55,8 +53,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"Refresh"
-	{
+	
+	"Refresh" {
 		"ControlName"		"Button"
 		"fieldName"		"Refresh"
 		"xpos"		"218"
@@ -74,8 +72,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"InfoLabel"
-	{
+	
+	"InfoLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"InfoLabel"
 		"xpos"		"26"
@@ -92,8 +90,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"AutoRetry"
-	{
+	
+	"AutoRetry" {
 		"ControlName"		"ToggleButton"
 		"fieldName"		"AutoRetry"
 		"xpos"		"28"
@@ -111,8 +109,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"AutoRetryAlert"
-	{
+	
+	"AutoRetryAlert" {
 		"ControlName"		"RadioButton"
 		"fieldName"		"AutoRetryAlert"
 		"xpos"		"27"
@@ -131,8 +129,8 @@
 		"Default"		"0"
 		"SubTabPosition"		"1"
 	}
-	"AutoRetryJoin"
-	{
+	
+	"AutoRetryJoin" {
 		"ControlName"		"RadioButton"
 		"fieldName"		"AutoRetryJoin"
 		"xpos"		"28"
@@ -151,8 +149,8 @@
 		"Default"		"0"
 		"SubTabPosition"		"2"
 	}
-	"PlayerList"
-	{
+	
+	"PlayerList" {
 		"ControlName"		"ListPanel"
 		"fieldName"		"PlayerList"
 		"xpos"		"24"
@@ -166,8 +164,8 @@
 		"tabPosition"		"0"
 		"paintbackground"		"1"
 	}
-	"ServerLabel"
-	{
+	
+	"ServerLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"ServerLabel"
 		"xpos"		"16"
@@ -184,8 +182,8 @@
 		"textAlignment"		"east"
 		"wrap"		"0"
 	}
-	"GameLabel"
-	{
+	
+	"GameLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"GameLabel"
 		"xpos"		"16"
@@ -202,8 +200,8 @@
 		"textAlignment"		"east"
 		"wrap"		"0"
 	}
-	"ServerIPLabel"
-	{
+	
+	"ServerIPLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"ServerIPLabel"
 		"xpos"		"16"
@@ -220,8 +218,8 @@
 		"textAlignment"		"east"
 		"wrap"		"0"
 	}
-	"MapLabel"
-	{
+	
+	"MapLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"MapLabel"
 		"xpos"		"16"
@@ -238,8 +236,8 @@
 		"textAlignment"		"east"
 		"wrap"		"0"
 	}
-	"PlayersLabel"
-	{
+	
+	"PlayersLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"PlayersLabel"
 		"xpos"		"16"
@@ -256,8 +254,8 @@
 		"textAlignment"		"east"
 		"wrap"		"0"
 	}
-	"PingLabel"
-	{
+	
+	"PingLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"PingLabel"
 		"xpos"		"16"
@@ -274,8 +272,8 @@
 		"textAlignment"		"east"
 		"wrap"		"0"
 	}
-	"ServerText"
-	{
+	
+	"ServerText" {
 		"ControlName"		"Label"
 		"fieldName"		"ServerText"
 		"xpos"		"128"
@@ -291,8 +289,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"GameText"
-	{
+	
+	"GameText" {
 		"ControlName"		"Label"
 		"fieldName"		"GameText"
 		"xpos"		"128"
@@ -309,8 +307,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"ServerIPText"
-	{
+	
+	"ServerIPText" {
 		"ControlName"		"TextEntry"
 		"fieldName"		"ServerIPText"
 		"xpos"		"128"
@@ -329,8 +327,8 @@
 		"NumericInputOnly"		"0"
 		"unicode"		"0"
 	}
-	"MapText"
-	{
+	
+	"MapText" {
 		"ControlName"		"Label"
 		"fieldName"		"MapText"
 		"xpos"		"128"
@@ -346,8 +344,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"PlayersText"
-	{
+	
+	"PlayersText" {
 		"ControlName"		"Label"
 		"fieldName"		"PlayersText"
 		"xpos"		"128"
@@ -363,8 +361,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"PingText"
-	{
+	
+	"PingText" {
 		"ControlName"		"Label"
 		"fieldName"		"PingText"
 		"xpos"		"128"
@@ -380,8 +378,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"Label1"
-	{
+	
+	"Label1" {
 		"ControlName"		"Label"
 		"fieldName"		"Label1"
 		"xpos"		"15"
@@ -398,8 +396,8 @@
 		"textAlignment"		"east"
 		"wrap"		"0"
 	}
-	"SecureText"
-	{
+	
+	"SecureText" {
 		"ControlName"		"Label"
 		"fieldName"		"SecureText"
 		"xpos"		"128"
@@ -415,8 +413,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"StatusInfo"
-	{
+	
+	"StatusInfo" {
 		"ControlName"		"Label"
 		"fieldName"		"StatusInfo"
 		"xpos"		"128"
@@ -433,8 +431,8 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	"StatusLabel"
-	{
+	
+	"StatusLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"StatusLabel"
 		"xpos"		"16"
@@ -474,8 +472,8 @@
 			align=right 
 			spacing=8 
 			height=24 
-			margin-top=10
-			margin-right=13
+			margin-top=14
+			margin-right=14
 		}
 	}
 }

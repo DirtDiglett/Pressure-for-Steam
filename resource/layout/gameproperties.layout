@@ -1,6 +1,5 @@
 "resource/layout/gameproperties.layout" {
-	controls {
-	}
+	controls {}
 	
 	layout {
 		place [!$OSX]  { 
@@ -21,18 +20,17 @@
 		region { 
 			name=bottom 
 			align=bottom 
-			height=44
+			height=51
 		}
 		
-		place {	control="OKButton" 
+		place {	
+			control="OKButton" 
 			region=bottom 
 			width=92 
-			height=25 
+			height=24 
 			align=right
-			margin-right=10 
-			margin-top=6
-			margin-bottom=5  
+			margin-right=14
+			margin-top=14  
 		}
-
 	}
 }

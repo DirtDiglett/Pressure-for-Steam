@@ -1,31 +1,5 @@
-"resource/layout/steamrootdialog.layout"
-{
-	
-	colors {
-		support_flag_red "169 72 71 255"
-		
-		support_hover_red1 "193 94 93 255"
-		support_hover_red2 "156 64 63 255"
-
-		parental_lock_active1 "92 126 16 255"
-		parental_lock_active2 "51 49 48 255"	
-		parental_lock_active4 "122 145 71 255"
-		parental_lock_active5 "85 102 47 255"	
-
-		parental_lock_inactive1 "154 49 48 255"
-		parental_lock_inactive2 "189 79 79 255"	
-		parental_lock_inactive4 "146 72 71 255"
-		parental_lock_inactive5 "103 48 47 255"	
-
-		backdrop "21 20 18 255"
-		
-	} // END OF COLORS
-	
-	
-	
-	
+"resource/layout/steamrootdialog.layout" {
 	controls {
-	
 		"ImageLogo" {
 			"ControlName" 	"Label"
 			style="ClientLogo"
@@ -125,14 +99,9 @@
 			textAlignment=west
 			zpos=-1
 		}
-		
-		
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	
-	
 	styles {    		
-		
-
 		// Got no idea what this is for.
 		RootMenu {
 			bgcolor="none" //Background Behind Menu Button
@@ -291,7 +260,6 @@
 			}
 		}
 
-
 // The Top section of the Main Client Window when focused.				
 			FrameTitle:framefocus {
 				font-family=basefont
@@ -325,8 +293,6 @@
 		AddGameButton:hover {
 			render_bg {}
 		}	
-		
-		
 
 // ******************************************************************************************************** 
 // (Friends) "VIEW FRIENDS LIST" & "X Online"
@@ -423,9 +389,7 @@
 					0="image(x1-18, y0+2, x1, y0+13, graphics/icons/friends)"
 				}
 			}
-			
-			
-
+	
 // ******************************************************************************************************** 
 // (Mail Icon) Notification Icon
 // ********************************************************************************************************
@@ -446,7 +410,6 @@
 			bgcolor = none
 			
 			render_bg {}
-			
 		}
 		
 			inboxmenuitem:hover {
@@ -502,7 +465,6 @@
 				0="image(x0-2, y0-1, x0+9, y0+9, graphics/inbox_zero)"
 				1="image(x1-17, y0, x1-1, y0+12, graphics/icons/notifications_none)"
 			}	
-
 		}
 
 			// No notifications
@@ -588,8 +550,6 @@
 				render {}	
 			}	
 			
-
-
 // ********************************************************************************************************
 // The Account ("<x>'s Account")
 // We hide it because it's not used at all. It'll be put in a menu dropdown later.
@@ -611,8 +571,6 @@
 				textcolor=none
 			}	
 	
-	
-	
 // ******************************************************************************************************** 
 // Parental Locks TO DO
 // ********************************************************************************************************			
@@ -630,8 +588,7 @@
 				render {}
 				render_bg {
 					0="image(x0,y0,x1,y1,graphics/family_sharing_off)"
-				}	
-				
+				}		
 			}
 	
 			parental_lock_button:selected {
@@ -640,7 +597,6 @@
 				render_bg {
 					0="image(x0,y0,x1,y1,graphics/family_sharing_on)"
 				}	
-				
 			}
 
 
@@ -650,39 +606,32 @@
 				render_bg {
 					0="image(x0,y0,x1,y1,graphics/family_sharing_on)"
 				}	
-				
 			}
 
 // ******************************************************************************************************** 
 // Menu
 // ********************************************************************************************************	
 		
-		"MenuBar MenuButton"
-		{
+		"MenuBar MenuButton" {
 			textcolor="none"
 			render_bg {
-				
 				0="image( x0, y0, x1,y1, graphics/supermenus/client/normal )"
 			}
 		}
 
-		"MenuBar MenuButton:hover"
-		{
-			textcolor="none"
-			render_bg {
-				
-				0="image( x0, y0, x1,y1, graphics/supermenus/client/hover )"
+			"MenuBar MenuButton:hover" {
+				textcolor="none"
+				render_bg {
+					0="image( x0, y0, x1,y1, graphics/supermenus/client/hover )"
+				}
 			}
-		}
-		
-		"MenuBar MenuButton:selected"
-		{
-			textcolor="none"
-			render_bg {
-				
-				0="image( x0, y0, x1,y1, graphics/supermenus/client/active )"
-			}
-		}	
+			
+			"MenuBar MenuButton:selected" {
+				textcolor="none"
+				render_bg {
+					0="image( x0, y0, x1,y1, graphics/supermenus/client/active )"
+				}
+			}	
 
 		
 		
@@ -783,7 +732,7 @@
 			height=12
 		}
 		
-				// This is the link for opening friends list. It needs to overlap the "online_friends" control to make it pseudo-clickable.
+		// This is the link for opening friends list. It needs to overlap the "online_friends" control to make it pseudo-clickable.
 		place [$OSX] { 
 			control="view_friends" 
 			height=13 
@@ -803,8 +752,6 @@
 			dir=right
 			margin-right=71 
 		}
-		
-		
 		
 		// This is for the Avatar of the user.
 		place [!$OSX] { 
@@ -835,7 +782,6 @@
 			height=12
 		}
 		
-		
 		// This is the link for opening friends list. It needs to overlap the "online_friends" control to make it pseudo-clickable.
 		place [!$OSX] { 
 			control="view_friends" 
@@ -856,9 +802,6 @@
 			dir=right
 			margin-right=59 
 		}
-		
-		
-		
 
 		region { 
 			name=bottom 
@@ -878,9 +821,6 @@
 			height=0
 		}
 	
-	
-	
-	
 		place { 
 			control="ImageLogo" 
 			align=right 
@@ -892,12 +832,13 @@
 			margin-right=0
 		}
 		
-	//	place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
-	//	place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=20} //Fix for an odd bug
-	
-	
- 		// the title bar is missing, so increase the size of the grip
-		place { control="frame_captiongrip" margin=2 width=max height=104 }
+		// the title bar is missing, so increase the size of the grip
+		place {
+			control="frame_captiongrip"
+			margin=2
+			width=max
+			height=104
+		}
 		
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 } // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	

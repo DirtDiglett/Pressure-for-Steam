@@ -1,13 +1,28 @@
-"resource/layout/deletecustomimagedialog.layout"
-{
-	controls
-	{
-		DeleteCustomImageDialog { controlname="Frame" title="#SteamUI_DeleteCustomImage_Title" style="DeleteCustomImageDialog" }
+"resource/layout/deletecustomimagedialog.layout" {
+	controls {
+		DeleteCustomImageDialog {
+			controlname="Frame"
+			title="#SteamUI_DeleteCustomImage_Title"
+			style="DeleteCustomImageDialog"
+		}
 
-		ConfirmText { controlname="Label" labeltext="#SteamUI_DeleteCustomImage_Confirm" wrap=1 }
+		ConfirmText {
+			controlname="Label"
+			labeltext="#SteamUI_DeleteCustomImage_Confirm"
+			wrap=1
+		}
 
-		Continue { controlname="Button" tabposition=1 labeltext="#SteamUI_DeleteCustomImage_Continue" }
-		Cancel { controlname="Button" tabposition=2 labeltext="#SteamUI_DeleteCustomImage_Cancel" }
+		Continue {
+			controlname="Button"
+			tabposition=1
+			labeltext="#SteamUI_DeleteCustomImage_Continue"
+		}
+		
+		Cancel {
+			controlname="Button"
+			tabposition=2
+			labeltext="#SteamUI_DeleteCustomImage_Cancel"
+		}
 	}
 	
 	styles {
@@ -27,7 +42,6 @@
 				3="image(x0+16, y0+65, x1, y1, resource/icon_warning)"
 			}
 		}
-
 	}
 	
 	layout {
@@ -43,9 +57,8 @@
 			name="bottom" 
 			width=max 
 			align=bottom 
-			height=50 
+			height=51 
 		}
-
 
 		place { 
 			control="ConfirmText" 
@@ -55,17 +68,14 @@
 			x=65		
 		}
 
-
 		place { 
 			control="Continue,Cancel" 
 			region="bottom" 
 			align=right 
 			spacing=8 
-			margin-top=13
-			margin-right=13
+			margin-top=14
+			margin-right=14
 			height=24
 		}
-		
 	}
-
 }

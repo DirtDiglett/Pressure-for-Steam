@@ -1,6 +1,5 @@
 "steam/cached/AddShortcutDialog.res" {
-	"AddShortcutDialog"
-	{
+	"AddShortcutDialog" {
 		"ControlName"		"CAddShortcutDialog"
 		"fieldName"		"AddShortcutDialog"
 		"xpos"		"794"
@@ -16,8 +15,8 @@
 		"settitlebarvisible"		"1"
 		"title"		"#SteamUI_PickShortcutTitle"
 	}
-	"Label1"
-	{
+	
+	"Label1" {
 		"ControlName"		"Label"
 		"fieldName"		"Label1"
 		"xpos"		"10"
@@ -36,8 +35,8 @@
 		"brighttext"		"0"
 		"wrap"		"1"
 	}
-	"AppList"
-	{
+	
+	"AppList" {
 		"ControlName"		"ListPanel"
 		"fieldName"		"AppList"
 		"xpos"		"10"
@@ -51,8 +50,8 @@
 		"tabPosition"		"0"
 		"paintbackground"		"1"
 	}
-	"BrowseButton"
-	{
+	
+	"BrowseButton" {
 		"ControlName"		"Button"
 		"fieldName"		"BrowseButton"
 		"xpos"		"291"
@@ -69,8 +68,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"AddSelectedButton"
-	{
+	
+	"AddSelectedButton" {
 		"ControlName"		"Button"
 		"fieldName"		"AddSelectedButton"
 		"xpos"		"393"
@@ -87,8 +86,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"CloseButton"
-	{
+	
+	"CloseButton" {
 		"ControlName"		"Button"
 		"fieldName"		"CloseButton"
 		"xpos"		"599"
@@ -135,8 +134,6 @@
 			margin-top=56 
 			margin-bottom=51 
 		}
-
-		
 		
 		region { 
 			name="bottom" 
@@ -151,8 +148,8 @@
 			height=24 
 			spacing=8 
 			align=right 
-			margin-top=13
-			margin-right=13
+			margin-top=14
+			margin-right=14
 		}	
 	}
 }

@@ -1,6 +1,5 @@
 "resource/layout/overlaydialogsettings.layout" {
-	controls {
-	}
+	controls {}
 	
 	layout {
 		//Original
@@ -12,17 +11,31 @@
 			spacing=-8 
 		}
 		
-		region { name="right" align=right height=max width=192 margin=8 margin-top=0 }
+		region {
+			name="right"
+			align=right
+			height=max
+			width=192
+			margin=8
+			margin-top=0
+			margin-bottom=51
+		}
+		
+		region {
+			name="bottom"
+			align=bottom
+			height=51
+			width=max
+		}
+		
 		place { 
 			control="OKButton,CancelButton" 
-			region=right 
-			align=bottom
-			margin-bottom=5
+			region=bottom
 			width=92 
-			height=25 
-			spacing=8 
-			margin=0 
-			margin-right=12
+			height=24
+			spacing=8
+			margin-top=14
+			margin-right=14
 		}
 	}
 }

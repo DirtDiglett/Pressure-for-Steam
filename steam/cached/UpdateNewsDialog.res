@@ -145,25 +145,17 @@
 			name="bottom" 
 			align=bottom 
 			height=51 
-			margin=8 
 		}
 		
 		place { 
-			control="PrevButton,NextButton" 
+			control="PrevButton,NextButton,CloseButton" 
 			region=bottom 
 			align=right
 			height=24
 			width=92 
 			spacing=8
-			margin-bottom=8 
-		}
-	
-		place {
-			control="CloseButton"
-			width=0
-			height=0
-			y=0
-			x=0
+			margin-top=14
+			margin-right=14
 		}
 	}
 }

@@ -16,8 +16,8 @@
 			"settitlebarvisible"		"1"
 			"title"		"#Steam_LaunchOptions_Title"
 		}
-		"LaunchOptions"
-		{
+		
+		"LaunchOptions" {
 			"ControlName"		"TextEntry"
 			"fieldName"		"LaunchOptions"
 			"xpos"		"12"
@@ -36,8 +36,8 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		"SysMenu"
-		{
+		
+		"SysMenu" {
 			"ControlName"		"Menu"
 			"fieldName"		"SysMenu"
 			"xpos"		"0"
@@ -52,8 +52,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		"Label1"
-		{
+		
+		"Label1" {
 			"ControlName"		"Label"
 			"fieldName"		"Label1"
 			"xpos"		"12"
@@ -71,8 +71,8 @@
 			"textAlignment"		"west"
 			"wrap"		"1"
 		}
-		"Button1"
-		{
+		
+		"Button1" {
 			"ControlName"		"Button"
 			"fieldName"		"Button1"
 			"xpos"		"268"
@@ -91,8 +91,8 @@
 			"Command"		"Close"
 			"Default"		"0"
 		}
-		"Button2"
-		{
+		
+		"Button2" {
 			"ControlName"		"Button"
 			"fieldName"		"Button2"
 			"xpos"		"166"
@@ -140,7 +140,7 @@
 		region { 
 			name=bottom 
 			align=bottom 
-			height=50
+			height=51
 		}
 		
 		place {	
@@ -150,8 +150,8 @@
 			spacing=8 
 			height=24 
 			width=90 
-			margin-right=10
-			margin-top=13
+			margin-right=14
+			margin-top=14
 		}
 	}
 }

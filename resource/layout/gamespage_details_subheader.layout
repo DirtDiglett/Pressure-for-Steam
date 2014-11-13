@@ -1,22 +1,31 @@
-"resource/layout/gamespage_details_subheader.layout"
-{
-	controls
-	{
-		subheaderlabels { controlname="CDetailsSubHeaderLabelsPanel" }
-		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
-		clientlist { controlname="ClientListButton" labeltext="" style="ClientListButton" tabposition=2 zpos=100 }
+"resource/layout/gamespage_details_subheader.layout" {
+	controls {
+		subheaderlabels {
+			controlname="CDetailsSubHeaderLabelsPanel"
+		}
+		
+		launchbutton {
+			controlname="Button"
+			labeltext="#Steam_LaunchGame"
+			style="detailsLaunchButton"
+			tabposition=1
+			command="RunGameAction"
+		}
+		
+		clientlist {
+			controlname="ClientListButton"
+			labeltext=""
+			style="ClientListButton"
+			tabposition=2
+			zpos=100
+		}
 	}
 
 	colors {
 		GameDetailsSubHeader.HorizontalSpacing=5
 		GameDetailsSubHeader.VerticalMargin=10
 	
-	
-	
-	
-	
-		// Install Button Normal
-		
+		// Install Button Normal	
 		InstallAntiAliasingTop "54 131 145 255"
 		InstallAntiAliasingBottom "12 102 121 255"
 		
@@ -111,13 +120,9 @@
 			
 			BuyHoverGradientStart "245 222 1 255"
 			BuyHoverGradientEnd "210 179 2 255"				
-	
-	
-	
 	}
 
 	styles {
-	
 		gameplayedheader {
 			textcolor=blue
 		}
@@ -125,7 +130,6 @@
 		CDetailsGameSubHeaderPanel {
 			bgcolor=none
 		}
-		
 		
 		ClientListButton {
 			inset="0 0 0 0"
@@ -195,12 +199,6 @@
 				0="gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
 			}	
 		}
-		
-
-
-
-
-
 		
 		DetailsLaunchButton [$OSX] {  
 			inset="25 7 0 0"
@@ -413,14 +411,6 @@
 					22="fill(x1-1,y1-3,x1,y1-2, PlayActiveCornerRoundingBottom)"
 				}
 			}
-
-
-		
-		
-		
-		
-		
-		
 				
 		DetailsInstallButton [$OSX] {  
 			inset="25 7 0 0"
@@ -864,11 +854,8 @@
 			dir=left
 			align=left
 			margin-left=0
-			
 			y=35
-			
-			width=140
-						
+			width=140		
 			end-right=launchbutton
 		}
 
@@ -879,24 +866,17 @@
 			align=right
 			margin-left=10
 			margin-right=10
-			
 			margin-bottom=5
-			
 			y=29
-			
 			spacing=0
-			
 			height=42
 		}
 		place { 
 			control=clientlist
-			
 			y=0
 			x=0
-			
 			height=0
 			width=0
-			
 			region=header
 			dir=right
 			margin-left=0
@@ -904,6 +884,5 @@
 			margin-top=-999
 			spacing=0
 		}
-		
 	}
 }

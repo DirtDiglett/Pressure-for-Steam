@@ -3,7 +3,6 @@
 		"downloadsummarypanel" {
 			style=CDownloadSummaryPanel
 			tall="145"
-		
 		}
 		
 		"header" {
@@ -94,7 +93,12 @@
 			group = "ShowWhenAutoUpdateWindow"
 		}			
 	    
-		graphpanel {	controlname="GraphPanel"	 style="infoGraphic" group="HideOnCompletion"  zpos="-1" }		   
+		graphpanel {
+			controlname="GraphPanel"
+			style="infoGraphic"
+			group="HideOnCompletion"
+			zpos="-1"
+		}		   
 	}
     
     
@@ -213,13 +217,6 @@
 		 font-style="regular"
 		}
 	
-	
-	
-	
-	
-	
-	
-		
 		PauseButton [$OSX] {  
 			inset="25 7 0 0"
 			font-family=headerfont
@@ -447,9 +444,6 @@
 				}
 			}
 			
-			
-			
-			
 		ResumeButton [$OSX] {  
 			inset="25 7 0 0"
 			font-family=headerfont
@@ -675,9 +669,6 @@
 				}
 			}
 
-		  
-		  
-		  
 		infoGraphic {
 			bgcolor   "none"	
 			textcolor "green"
@@ -694,11 +685,14 @@
 		}
 	}
 	
-
-		
 	layout {	
 		//Background Graph
-		place { control="GraphPanel" width=max height=max margin-top=13 }
+		place { 
+			control="GraphPanel"
+			width=max
+			height=max
+			margin-top=13
+		}
 
 		//Universal Pause/Resume Button
 		place { 
@@ -718,22 +712,79 @@
 			width=0 
 		}
 
-		place { control="download_rate_value" x=12 spacing=8 height=30 y=16 }
-		place { control="download_rate" start="download_rate_value" x=3 height=30 }
+		place {
+			control="download_rate_value"
+			x=12
+			spacing=8
+			height=30
+			y=16
+		}
+		
+		place {
+			control="download_rate"
+			start="download_rate_value"
+			x=3
+			height=30
+		}
 
-		place { control="peak_download_rate_value" x=12 spacing=8 height=30 y=46 }
-		place { control="peak_download_rate" start="peak_download_rate_value" x=3 height=30 }
+		place {
+			control="peak_download_rate_value"
+			x=12
+			spacing=8
+			height=30
+			y=46
+		}
+		
+		place {
+			control="peak_download_rate"
+			start="peak_download_rate_value"
+			x=3
+			height=30
+		}
 
-
-		place { control="total_downloaded_value" x=12 spacing=8 height=30 y=76	}
-		place { control="total_downloaded" start="total_downloaded_value" x=3 height=30 }
+		place {
+			control="total_downloaded_value"
+			x=12
+			spacing=8
+			height=30
+			y=76
+		}
+		
+		place {
+			control="total_downloaded"
+			start="total_downloaded_value"
+			x=3
+			height=30
+		}
 
 		//Disk Usage
-		place { control="disk_status_image,disk_status_label" y=106 height=40 spacing=8 align=right margin-right=16 }
+		place {
+			control="disk_status_image,disk_status_label"
+			y=106
+			height=40
+			spacing=8
+			align=right
+			margin-right=16
+		}
 		
 		// Blackout/Throttling Values - Right
-		place { control="blackout_label,blackout_value," y=65 spacing=4 align=right height=30 margin-right=12  }
-		place { control="throttling_label,throttling_value" y=80 spacing=4 align=right height=30 margin-right=12  }
+		place {
+			control="blackout_label,blackout_value"
+			y=65
+			spacing=4
+			align=right
+			height=30
+			margin-right=12
+		}
+		
+		place {
+			control="throttling_label,throttling_value"
+			y=80
+			spacing=4
+			align=right
+			height=30
+			margin-right=12
+		}
 	}
 }
 

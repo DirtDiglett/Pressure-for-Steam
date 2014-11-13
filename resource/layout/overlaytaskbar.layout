@@ -3,34 +3,33 @@
 		TaskbarPanel {
 			controlname="EditablePanel"
 		}
+		
 		SettingsButton {
 			controlname="URLLabel"
 			labeltext="#Overlay_Taskbar_Settings"
 			style=taskbar
 		}
-		WebBrowserButton
-		{
+		
+		WebBrowserButton {
 			controlname="URLLabel"
 			labeltext="#Overlay_Taskbar_WebBrowser"
 			style=taskbar
 		}
-		MusicPlayerButton
-		{
+		
+		MusicPlayerButton {
 			controlname="URLLabel"
 			labeltext="#Overlay_Taskbar_Music"
 			style=taskbar
 		}
 		
-		SteamLogo	
-		{ 
+		SteamLogo { 
 			controlname="ImagePanel" 
 			zpos=1 
 			//image="resource/steam_logo_big"
 			scaleimage=0
 		}
 		
-		view_friends
-		{
+		view_friends {
 			ControlName=URLLabel
 			labelText="#Steam_ViewFriends"
 			command="OpenFriendsDialog"
@@ -38,8 +37,8 @@
 			style="view_friends"
 			textAlignment=east
 		}
-		online_friends
-		{
+		
+		online_friends {
 			ControlName=Label
 			labelText="#Steam_OnlineFriends"
 			style="online_friends"
@@ -67,10 +66,10 @@
 			font-weight=400
 			font-style=regular
 		}
-		view_friends:Hover
-		{
-			 textcolor="textHover"
-		}
+		
+			view_friends:Hover {
+				 textcolor="textHover"
+			}
 
 		online_friends [$OSX] {
 			textcolor="none"
@@ -89,8 +88,20 @@
 	
 	layout {
 		
-		place { control="TaskbarPanel" width=700 height=100 align=top-center }
-		place { control="SteamLogo"  x=225 margin-top=50 width=12 height=12 }
+		place {
+			control="TaskbarPanel"
+			width=700
+			height=100
+			align=top-center
+		}
+		
+		place {
+			control="SteamLogo"
+			x=225
+			margin-top=50
+			width=12
+			height=12
+		}
 		
 		region 	{
 			name=toparea 
@@ -99,9 +110,6 @@
 			height=100 
 		}
 		
-		//place { controls="SteamLogo,WebBrowserButton,online_friends,SettingsButton" region=toparea x=0 dir=right spacing=3 align=top-center margin-top=50}		
-
-
 		place [$OSX] { 
 			controls="WebBrowserButton,SettingsButton,MusicPlayerButton" 
 			region=toparea 
@@ -124,22 +132,11 @@
 		
 		// TEMPORARY NULL ZONE
 		place {
-			control="SteamLogo,online_friends"
+			control="SteamLogo,online_friends,view_friends,FriendPanel"
 			width=0
 			height=0
 			y=-100
 			x=-100
 		}
-
-
-		//place { controls="" region=toparea x=0 dir=right spacing=3 align=left margin-top=50}	
-		
-		place { controls=",ScreenshotsButton" x=0 dir=right spacing=3 align=right margin-top=50}
-
-
-		//place { control="FriendPanel" height=48 width=48 align=right margin-right=6 margin-top=4 }
-		place { control="view_friends" height=0 y=0 align=right dir=right margin-right=60 }
-		//place { control="online_friends" height=12 y=26 align=right dir=right margin-right=60 }
-		place { control="FriendPanel" height=0 width=0 y=0 x=0}
 	}	
 }

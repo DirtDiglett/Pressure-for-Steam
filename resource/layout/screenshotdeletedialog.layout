@@ -1,11 +1,38 @@
 "resource/layout/screenshotdeletedialog.layout" {
 	controls {
-		ScreenshotDeleteDialog { controlname="Frame" title="#steam_screenshotdelete_title" style="ScreenshotDeleteDialog" }
-		Warning { controlname="ImagePanel" image="resource/icon_warning" }
-		WarningText { controlname="Label" labeltext="#steam_are_you_sure_delete_screenshot" wrap=1 }
-		DeleteFromCloudBox { controlname="CheckButton" labelText="#steam_also_delete_from_cloud" }
-		Delete { controlname="Button" command="DeleteScreenshot" labeltext="#steam_delete" }
-		Cancel { controlname="Button" command="Cancel" labeltext="#vgui_cancel" }
+		ScreenshotDeleteDialog {
+			controlname="Frame"
+			title="#steam_screenshotdelete_title"
+			style="ScreenshotDeleteDialog"
+		}
+		
+		Warning {
+			controlname="ImagePanel"
+			image="resource/icon_warning"
+		}
+		
+		WarningText {
+			controlname="Label"
+			labeltext="#steam_are_you_sure_delete_screenshot"
+			wrap=1
+		}
+		
+		DeleteFromCloudBox {
+			controlname="CheckButton"
+			labelText="#steam_also_delete_from_cloud"
+		}
+		
+		Delete {
+			controlname="Button"
+			command="DeleteScreenshot"
+			labeltext="#steam_delete"
+		}
+		
+		Cancel {
+			controlname="Button"
+			command="Cancel"
+			labeltext="#vgui_cancel"
+		}
 	}
 	
 	styles {
@@ -36,19 +63,44 @@
 			spacing=-9 
 		}
 		
-		place { control="Warning" x=20 y=45}
-		place { control="WarningText" start="Warning" dir=right x=5 y=5 width=max margin-right=15 }
-		place { control="DeleteFromCloudBox" start="WarningText" dir=down }
+		place {
+			control="Warning"
+			x=20
+			y=45
+		}
+		
+		place {
+			control="WarningText"
+			start="Warning"
+			dir=right
+			x=5
+			y=5
+			width=max
+			margin-right=15
+		}
+		
+		place {
+			control="DeleteFromCloudBox"
+			start="WarningText"
+			dir=down
+		}
+		
+		region {
+			name="bottom"
+			align=bottom
+			height=51
+			width=max
+		}
 		
 		place { 
 			control="Delete,Cancel" 
-			y=142 
 			align=right 
-			margin-right=15 
-			spacing=5 
+			region=bottom
+			margin-right=14
+			margin-top=14 
+			spacing=8
 			height=24
 			width=90
 		}
 	}
-
 }

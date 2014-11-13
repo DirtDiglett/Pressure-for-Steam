@@ -7,10 +7,12 @@
 			"tabposition"					1
 		}
 
-		"emptylisttext" { control="RichText" style="emptylisttext" }
+		"emptylisttext" {
+			control="RichText"
+			style="emptylisttext"
+		}
 	}
 
-	// random/generic settings go in "colors"
 	colors {
 		// values defining the aspect ratio of the images in the grid view
 		GridView.OriginalImageWidth "460"
@@ -80,4 +82,3 @@
 		}
 	}
 }
-

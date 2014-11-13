@@ -38,6 +38,7 @@
 			font-size=18
 			textcolor="white"
 			padding-top=20
+			font-family=semibold
 		}
 
 		date_and_author {
@@ -89,10 +90,40 @@
 	}
 
 	layout {
-		region { name=body margin=0 width=max }
-		place { region=body control=newsitem_title x=0 y=0 width=max height=44 }
-		place { region=body y=37 control=newsitem_dateandauthor width=max height=24}
-		place { region=body y=58 control=newsitem_body width=max }
-		place { region=body control=newsitem_more align=bottom }
+		region {
+			name=body
+			margin=0
+			width=max
+		}
+		
+		place {
+			region=body
+			control=newsitem_title
+			x=0
+			y=0
+			width=max
+			height=44
+		}
+		
+		place {
+			region=body
+			y=37
+			control=newsitem_dateandauthor
+			width=max
+			height=24
+		}
+		
+		place {
+			region=body
+			y=58
+			control=newsitem_body
+			width=max
+		}
+		
+		place {
+			region=body
+			control=newsitem_more
+			align=bottom
+		}
 	}
 }

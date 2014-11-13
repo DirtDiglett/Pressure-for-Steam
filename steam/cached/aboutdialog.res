@@ -1,7 +1,6 @@
 "steam/cached/aboutdialog.res" {
 	controls {
-		"AboutDialog"
-		{
+		"AboutDialog" {
 			"ControlName"		"CAboutDialog"
 			"fieldName"		"AboutDialog"
 			"xpos"		"911"
@@ -17,8 +16,8 @@
 			"settitlebarvisible"		"1"
 			"title"		"#Steam_About_Title"
 		}
-		"Label1"
-		{
+		
+		"Label1" {
 			"ControlName"		"Label"
 			"fieldName"		"Label1"
 			"xpos"		"24"
@@ -35,8 +34,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"Button1"
-		{
+		
+		"Button1" {
 			"ControlName"		"Button"
 			"fieldName"		"Button1"
 			"xpos"		"248"
@@ -56,8 +55,8 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		"Label2"
-		{
+		
+		"Label2" {
 			"ControlName"		"Label"
 			"fieldName"		"Label2"
 			"xpos"		"24"
@@ -74,8 +73,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"Label3"
-		{
+		
+		"Label3" {
 			"ControlName"		"Label"
 			"fieldName"		"Label3"
 			"xpos"		"24"
@@ -92,8 +91,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"URLLabel1"
-		{
+		
+		"URLLabel1" {
 			"ControlName"		"URLLabel"
 			"fieldName"		"URLLabel1"
 			"xpos"		"25"
@@ -111,8 +110,8 @@
 			"wrap"		"0"
 			"URLText"		"http://www.steampowered.com"
 		}
-		"GreyStrip"
-		{
+		
+		"GreyStrip" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"GreyStrip"
 			"xpos"		"22"
@@ -131,8 +130,7 @@
 			"scaleImage"		"0"
 		}
 		
-		"Label4"
-		{
+		"Label4" {
 			"ControlName"		"Label"
 			"fieldName"		"Label4"
 			"xpos"		"24"
@@ -175,7 +173,6 @@
 			spacing=-9 
 		}
 		
-		
 		place { 
 			control="Label2,Label3,Label4,Label1,URLLabel1" 
 			x=16 
@@ -187,7 +184,7 @@
 		region { 
 			name="bottom" 
 			align=bottom 
-			height=50 
+			height=51
 		}
 		
 		place { 
@@ -196,8 +193,8 @@
 			align=right 
 			width=90
 			height=24
-			margin-top=13
-			margin-right=10 
+			margin-top=14
+			margin-right=14 
 		}
 		
 		place { 

@@ -1,7 +1,5 @@
-"Steam/Cached/LaunchOptionsDialog.res"
-{
-	"LaunchOptionsDialog"
-	{
+"Steam/Cached/LaunchOptionsDialog.res" {
+	"LaunchOptionsDialog" {
 		"ControlName"		"CLaunchOptionsDialog"
 		"fieldName"		"LaunchOptionsDialog"
 		"xpos"		"209"
@@ -17,8 +15,8 @@
 		"settitlebarvisible"		"1"
 		"title"		"#Steam_GameLaunchOptions_Title"
 	}
-	"LaunchButton"
-	{
+	
+	"LaunchButton" {
 		"ControlName"		"Button"
 		"fieldName"		"LaunchButton"
 		"xpos"		"170"
@@ -36,8 +34,8 @@
 		"wrap"		"0"
 		"Default"		"1"
 	}
-	"RadioButton0"
-	{
+	
+	"RadioButton0" {
 		"ControlName"		"RadioButton"
 		"fieldName"		"RadioButton0"
 		"xpos"		"18"
@@ -55,8 +53,8 @@
 		"Default"		"0"
 		"SubTabPosition"		"1"
 	}
-	"RadioButton1"
-	{
+	
+	"RadioButton1" {
 		"ControlName"		"RadioButton"
 		"fieldName"		"RadioButton1"
 		"xpos"		"18"
@@ -74,8 +72,8 @@
 		"Default"		"0"
 		"SubTabPosition"		"2"
 	}
-	"ImagePanel1"
-	{
+	
+	"ImagePanel1" {
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ImagePanel1"
 		"xpos"		"8"
@@ -93,8 +91,8 @@
 		"gradientVertical"		"0"
 		"scaleImage"		"0"
 	}
-	"Button1"
-	{
+	
+	"Button1" {
 		"ControlName"		"Button"
 		"fieldName"		"Button1"
 		"xpos"		"273"
@@ -113,7 +111,6 @@
 		"Command"		"Close"
 		"Default"		"0"
 	}
-	
 	
 	layout {
 		place [!$OSX]  { 

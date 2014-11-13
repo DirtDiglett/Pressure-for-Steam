@@ -1,9 +1,7 @@
 "resource/layout/edittagsdialog.layout" {
 	controls {}
 	
-	styles {
-		
-	}
+	styles {}
 	
 	layout {
 		place [!$OSX]  { 
@@ -30,7 +28,7 @@
 		region { 
 			name=bottom 
 			align=bottom 
-			height=50
+			height=51
 		}
 		
 		place {	
@@ -40,8 +38,8 @@
 			spacing=8 
 			height=24 
 			width=90 
-			margin-right=10
-			margin-top=13
+			margin-right=14
+			margin-top=14
 		}
 	}
 }

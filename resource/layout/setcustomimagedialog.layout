@@ -1,26 +1,68 @@
 "resource/layout/setcustomimagedialog.layout" {
 	controls {
-		SetCustomImageDialog { controlname="Frame" title="#SteamUI_SetCustomImage_Title" style="SetCustomImageDialog" }
+		SetCustomImageDialog {
+			controlname="Frame"
+			title="#SteamUI_SetCustomImage_Title"
+			style="SetCustomImageDialog"
+		}
 
-		ChooseAnImage { controlname="Label" labeltext="#SteamUI_SetCustomImage_ChooseImage" wrap=1 }
-		ImagePrescription { controlname="Label" labeltext="#SteamUI_SetCustomImage_ImagePrescription" wrap=1 }
+		ChooseAnImage {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_ChooseImage"
+			wrap=1
+		}
+		
+		ImagePrescription {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_ImagePrescription"
+			wrap=1
+		}
 
-		ThisFile { controlname="Label" labeltext="#SteamUI_SetCustomImage_ThisFile" wrap=1 }
-		Filename { controlname="TextEntry" tabposition=1 unicode=1 }
-		Browse { controlname="Button" tabposition=2 command="Browse" labeltext="#SteamUI_SetCustomImage_Browse" }
-		TryAgain { controlname="Label" labeltext="#SteamUI_SetCustomImage_TryAgain" visible=false }
+		ThisFile {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_ThisFile"
+			wrap=1
+		}
+		
+		Filename {
+			controlname="TextEntry"
+			tabposition=1
+			unicode=1
+		}
+		
+		Browse {
+			controlname="Button"
+			tabposition=2
+			command="Browse"
+			labeltext="#SteamUI_SetCustomImage_Browse"
+		}
+		
+		TryAgain {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_TryAgain"
+			visible=false
+		}
 
-		OK { controlname="Button" tabposition=3 command="DoSetCustomImage" labeltext="#SteamUI_SetCustomImage_SetImage" }
-		Cancel { controlname="Button" tabposition=4 command="Cancel" labeltext="#SteamUI_SetCustomImage_Cancel" }
+		OK {
+			controlname="Button"
+			tabposition=3
+			command="DoSetCustomImage"
+			labeltext="#SteamUI_SetCustomImage_SetImage"
+		}
+		
+		Cancel {
+			controlname="Button"
+			tabposition=4
+			command="Cancel"
+			labeltext="#SteamUI_SetCustomImage_Cancel"
+		}
 	}
 	
 	styles {
-		SetCustomImageDialog
-		{
+		SetCustomImageDialog {
 			minimum-width = 400
 			minimum-height = 280
 		}
-
 	}
 	
 	layout {
@@ -40,13 +82,19 @@
 			margin-top=54
 		}
 		
-		region { name="middle" width=max height=150 y=140 margin=10 }
+		region {
+			name="middle"
+			width=max
+			height=150
+			y=140
+			margin=10
+		}
 		
 		region { 
 			name="bottom" 
 			width=max 
 			align=bottom 
-			height=50 
+			height=51 
 		}
 
 		// top: prompts
@@ -97,7 +145,13 @@
 			align=right
 		}
 		
-		place { region="middle" control="TryAgain" start="Browse" dir=right margin-left=15 }
+		place {
+			region="middle"
+			control="TryAgain"
+			start="Browse"
+			dir=right
+			margin-left=16
+		}
 
 		// bottom: OK/cancel
 		place { 
@@ -105,11 +159,9 @@
 			region="bottom" 
 			align=right 
 			spacing=8
-			margin-top=13
-			margin-right=13
+			margin-top=14
+			margin-right=14
 			height=24 
 		}
 	}
-
 }
-

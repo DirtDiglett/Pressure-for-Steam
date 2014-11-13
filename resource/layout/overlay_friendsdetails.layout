@@ -15,9 +15,17 @@
 			labeltext="#Overlay_Friends_ViewPlayers"
 		}
 		
-		TitleText { controlname="label" labeltext="#Overlay_Taskbar_Friends" style=detailsboxtitle }
+		TitleText {
+			controlname="label"
+			labeltext="#Overlay_Taskbar_Friends"
+			style=detailsboxtitle
+		}
 		
-		TextThisManyFriends { controlname=label style=highlight labeltext="#Overlay_Friends_ThisManyOnline" }
+		TextThisManyFriends {
+			controlname=label
+			style=highlight
+			labeltext="#Overlay_Friends_ThisManyOnline"
+		}
 		
 		grid {
 			alignment=justify		
@@ -29,10 +37,7 @@
 	colors {}	
 	
 	styles {
-		
-		detailsbox {
-			//bgcolor=red
-		}
+		detailsbox {}
 		
 		// Used for the friend's Icon
 		label [$OSX] {
@@ -92,12 +97,12 @@
 	}
 	
 	layout {
-		region { name=box width=0 height=0 }
-		region { name=friendspanels height=0 width=0 }
-		
-		//place { control="TitleText" region=box width=0 height=0 }
-	
-		place { controls=grid region=friendspanels width=0 height=0 }
+		place {
+			controls=grid
+			region=friendspanels
+			width=0
+			height=0
+		}
 		
 		place { 
 			controls=TextThisManyFriends,AllFriendsButton,TitleText,ViewPlayersButton 

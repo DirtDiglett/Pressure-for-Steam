@@ -1,8 +1,6 @@
-"Steam/cached/AccountPage.res"
-{
-	controls{
-		"AccountPage"
-		{
+"Steam/cached/AccountPage.res" {
+	controls {
+		"AccountPage" {
 			"ControlName"		"CAccountPage"
 			"fieldName"		"AccountPage"
 			"xpos"		"0"
@@ -16,8 +14,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		"ValidateContactEmailButton"
-		{
+		
+		"ValidateContactEmailButton" {
 			"ControlName"		"Button"
 			"fieldName"		"ValidateContactEmailButton"
 			"xpos"		"20"
@@ -37,8 +35,8 @@
 			"Default"		"1"
 			"selected"		"0"
 		}
-		"MachineLockAccountButton"
-		{
+		
+		"MachineLockAccountButton" {
 			"ControlName"		"Button"
 			"fieldName"		"MachineLockAccountButton"
 			"xpos"		"20"
@@ -58,8 +56,8 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		"ManageSecurityButton"
-		{
+		
+		"ManageSecurityButton" {
 			"ControlName"		"Button"
 			"fieldName"		"ManageSecurityButton"
 			"xpos"		"20"
@@ -79,8 +77,8 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		"ChangeContactEmailButton"
-		{
+		
+		"ChangeContactEmailButton" {
 			"ControlName"		"Button"
 			"fieldName"		"ChangeContactEmailButton"
 			"xpos"		"20"
@@ -100,8 +98,8 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		"ChangePasswordButton"
-		{
+		
+		"ChangePasswordButton" {
 			"ControlName"		"Button"
 			"fieldName"		"ChangePasswordButton"
 			"xpos"		"20"
@@ -121,8 +119,8 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		"VACInfoLinkImage"
-		{
+		
+		"VACInfoLinkImage" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"VACInfoLinkImage"
 			"xpos"		"468"
@@ -144,8 +142,7 @@
 			"zpos"			"2"
 		}
 		
-		"SecurityStatusLabel"
-		{
+		"SecurityStatusLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"SecurityStatusLabel"
 			"xpos"		"20"
@@ -164,8 +161,7 @@
 			style=Label
 		}
 		
-		"SecurityIcon"
-		{
+		"SecurityIcon" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"SecurityIcon"
 			"xpos"		"132"
@@ -187,8 +183,7 @@
 			"zpos"			"1"
 		}
 		
-		"SecurityStatusState"
-		{
+		"SecurityStatusState" {
 			"ControlName"		"Label"
 			"fieldName"		"SecurityStatusState"
 			"xpos"		"163"
@@ -207,8 +202,7 @@
 			style=Label
 		}
 			
-		"EmailInfo"
-		{
+		"EmailInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"EmailInfo"
 			"xpos"		"136"
@@ -225,8 +219,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"LogoutLabel"
-		{
+		
+		"LogoutLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"LogoutLabel"
 			"xpos"		"20"
@@ -244,8 +238,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"AccountInfo"
-		{
+		
+		"AccountInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"AccountInfo"
 			"xpos"		"136"
@@ -263,8 +257,8 @@
 			"font"		"UiBold"
 			"wrap"		"0"
 		}
-		"AccountURL"
-		{
+		
+		"AccountURL" {
 			"ControlName"		"URLLabel"
 			"fieldName"		"AccountLink"
 			"labelText"		"#Steam_Account_Link"
@@ -281,11 +275,9 @@
 			"paintbackground"		"1"
 			"textAlignment"		"west"
 			"wrap"		"0"
-			}
-	
+		}
 		
-		"ContactEmailLabel"
-		{
+		"ContactEmailLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"ContactEmailLabel"
 			"xpos"		"20"
@@ -303,8 +295,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"Divider1"
-		{
+		
+		"Divider1" {
 			"ControlName"		"Divider"
 			"fieldName"		"Divider1"
 			"xpos"		"20"
@@ -319,8 +311,7 @@
 			"paintbackground"		"1"
 		}
 	
-		"ChangeUserButton"
-		{
+		"ChangeUserButton" {
 			"ControlName"		"Button"
 			"fieldName"		"ChangeUserButton"
 			"xpos"		"20"
@@ -341,8 +332,7 @@
 			"selected"		"0"
 		}
 		
-		"NoPersonalInfoCheck"
-		{
+		"NoPersonalInfoCheck" {
 			"ControlName"		"CheckButton"
 			"fieldName"		"NoPersonalInfoCheck"
 			"xpos"		"17"
@@ -361,8 +351,8 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		"Label1"
-		{
+		
+		"Label1" {
 			"ControlName"		"Label"
 			"fieldName"		"Label1"
 			"xpos"		"44"
@@ -379,8 +369,8 @@
 			"textAlignment"		"north-west"
 			"wrap"		"1"
 		}
-		"Label2"
-		{
+		
+		"Label2" {
 			"ControlName"		"Label"
 			"fieldName"		"Label2"
 			"xpos"		"20"
@@ -398,8 +388,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"VACStatusLabel"
-		{
+		
+		"VACStatusLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"VACStatusLabel"
 			"xpos"		"136"
@@ -416,8 +406,8 @@
 			"textAlignment"		"north-west"
 			"wrap"		"1"
 		}
-		"Divider2"
-		{
+		
+		"Divider2" {
 			"ControlName"		"Divider"
 			"fieldName"		"Divider2"
 			"xpos"		"20"
@@ -431,8 +421,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		"BetaParticipationLabel"
-		{
+		
+		"BetaParticipationLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"BetaParticipationLabel"
 			"xpos"		"20"
@@ -449,8 +439,8 @@
 			"textAlignment"		"north-west"
 			"wrap"		"1"
 		}
-		"CurrentBetaLabel"
-		{
+		
+		"CurrentBetaLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"CurrentBetaLabel"
 			"xpos"		"163"
@@ -468,8 +458,7 @@
 			"wrap"		"1"
 		}
 		
-		"ChangeBetaButton"
-		{
+		"ChangeBetaButton" {
 			"ControlName"		"Button"
 			"fieldName"		"ChangeBetaButton"
 			"xpos"		"162"
@@ -489,8 +478,7 @@
 			"command"	"ChangeBeta"
 		}
 		
-		"ReportBugLink"
-		{
+		"ReportBugLink" {
 			"ControlName"		"URLLabel"
 			"fieldName"		"ReportBugLink"
 			"xpos"		"363"
@@ -510,7 +498,6 @@
 	}
 	
 	layout {
-		
 		place {
 			control="AccountLink"
 			align=right
@@ -576,7 +563,6 @@
 			margin-right=32
 			spacing=16
 		}
-		
 		
 		place { 
 			control="ChangeUserButton,ManageSecurityButton,ChangePasswordButton" 

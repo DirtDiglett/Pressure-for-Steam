@@ -1,39 +1,127 @@
-"resource/layout/appdownloadpanel.layout"
-{
-	controls
-	{
-		// this just sets the height
-		appdownloadpanel	{	tall="110"	style=panelStyle }
-
-		// image
-		gameimage		{ controlname="ImagePanel"	 style="gameImagePanel" }		// set the initial size on on the gameimage; it's loaded async, so it may not know the image size immediately
+"resource/layout/appdownloadpanel.layout" {
+	controls {
+		appdownloadpanel {
+			tall="110"
+			style=panelStyle
+		}
 		
-		// left-mid column
-		namelabel	{ controlname="Label"	labelText="%name%" style="ModuleHeading" }
-		dashlabel	{ controlname="Label"	labelText=""	}
-		launchbutton		{ controlname="Button"	style="DetailsLaunchButton"	labelText="#Steam_LaunchGame" zpos="1" }
-		downloadprogressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 group="ShowWhileDownloading" style="SlimProgressBar" }
-		settingslink		{ controlname="URLlabel"	style="settingslink" }
+		gameimage {
+			controlname="ImagePanel"
+			style="gameImagePanel" 
+		}		// set the initial size on on the gameimage; it's loaded async, so it may not know the image size immediately
+		
+		namelabel {
+			controlname="Label"
+			labelText="%name%"
+			style="ModuleHeading" 
+		}
+		
+		dashlabel {
+			controlname="Label"	
+			labelText=""
+		}
+		
+		launchbutton {
+			controlname="Button"
+			style="DetailsLaunchButton"
+			labelText="#Steam_LaunchGame"
+			zpos="1"
+		}
+		
+		downloadprogressbar {
+			controlname="ProgressBar"
+			style="SlimProgressBar"
+			barinset=0
+			continuous=1
+			group="ShowWhileDownloading"
+			style="SlimProgressBar"
+		}
+		
+		settingslink {
+			controlname="URLlabel"
+			style="settingslink"
+		}
 
 		// right-mid column
-		downloadtotallabel	{ controlname="Label"	labelText="#steam_downloads_gamesize_update" style="label2" }
-		downloadtotalfield	{ controlname="Label"	labelText="%download_totals%" style="label" style="label" }
-		starttimelabel	{ controlname="Label"	labelText="#steam_downloads_initiated" style=Label2  group="ShowWhileDownloading"}
-		starttimefield	{ controlname="Label"	labelText="%time_started%" style=Label  group="ShowWhileDownloading"}
-		timeremaininglabel	{ controlname="Label"	labelText="#steam_downloads_timeremaining" style="label2" group="ShowWhileDownloading" }
-		timeremainingfield	{ controlname="Label"	labelText="%time_remaining%"  style="label" group="ShowWhileDownloading" }
-		timecompletedlabel	{ controlname="Label"	labelText="#steam_downloads_timecompleted" style="label2" group="ShowWhenComplete" }
-		timecompletedfield	{ controlname="Label"	labelText="%time_completed%"  style="label" group="ShowWhenComplete" }
+		downloadtotallabel {
+			controlname="Label"
+			labelText="#steam_downloads_gamesize_update"
+			style="label2"
+		}
 		
-
-		// right column
-		updatetypelabel	{ controlname="Label"	labelText="#steam_downloads_suspended" style=ModuleHeading2 }
-		removefromqueuebutton	{ controlname="Button" style="SmRemoveButton" tooltiptext="#steam_downloads_remove" }
-		topofqueuebutton	{ controlname="Button" style="topOfQueueButton" tooltiptext="#steam_downloads_topofqueue" group="HideOnCompletion" }
-		newslink			{ controlname="URLlabel"	style="links"		labelText="#steam_downloads_updatenews" }
-
-	
+		downloadtotalfield {
+			controlname="Label"
+			labelText="%download_totals%"
+			style="label"
+			style="label"
+		}
 		
+		starttimelabel {
+			controlname="Label"
+			labelText="#steam_downloads_initiated"
+			style=Label2
+			group="ShowWhileDownloading"
+		}
+		
+		starttimefield {
+			controlname="Label"
+			labelText="%time_started%"
+			style=Label
+			group="ShowWhileDownloading"
+		}
+		
+		timeremaininglabel {
+			controlname="Label"
+			labelText="#steam_downloads_timeremaining"
+			style="label2"
+			group="ShowWhileDownloading"
+		}
+		
+		timeremainingfield {
+			controlname="Label"
+			labelText="%time_remaining%"
+			style="label"
+			group="ShowWhileDownloading"
+		}
+		
+		timecompletedlabel {
+			controlname="Label"
+			labelText="#steam_downloads_timecompleted"
+			style="label2"
+			group="ShowWhenComplete"
+		}
+		
+		timecompletedfield { 
+			controlname="Label"	
+			labelText="%time_completed%"
+			style="label"
+			group="ShowWhenComplete"
+		}
+
+		updatetypelabel {
+			controlname="Label"
+			labelText="#steam_downloads_suspended"
+			style=ModuleHeading2
+		}
+		
+		removefromqueuebutton {
+			controlname="Button"
+			style="SmRemoveButton"
+			tooltiptext="#steam_downloads_remove"
+		}
+		
+		topofqueuebutton {
+			controlname="Button"
+			style="topOfQueueButton"
+			tooltiptext="#steam_downloads_topofqueue"
+			group="HideOnCompletion"
+		}
+		
+		newslink { 
+			controlname="URLlabel"
+			style="links"
+			labelText="#steam_downloads_updatenews" 
+		}
 	}
 	
 	colors {
@@ -72,7 +160,6 @@
 			
 			PlayActiveGradientStart "131 176 20 255"
 			PlayActiveGradientEnd "99 130 14 255"	
-		
 	}
 	
 	styles {
@@ -140,22 +227,20 @@
 				padding-bottom=0
 			}
 
-		settingslink:disabled
-		{
-			textcolor="TextDisabled"
-		}
+			settingslink:disabled {
+				textcolor="grey50"
+			}
 
-		rightcolumnlink:hover
-		{
-			textcolor=TextHover
+		rightcolumnlink:hover {
+			textcolor=none
 		}
 		
 
 		// The "Downloaded" label
 		label2 {
-			bgcolor			none
-			font-size		"13"
-			textcolor		"lightestGrey"
+			bgcolor=none
+			font-size=13
+			textcolor="lightestGrey"
 			font-style="regular"
 		}
 
@@ -172,18 +257,14 @@
 		ModuleHeading2 {
 			font-family	basefont
 			bgcolor="none"
-			font-size	"13"
-			textcolor	"orange"
+			font-size="13"
+			textcolor="orange"
 		}								
-		
 		
 		// Doesn't seem to be used for anything?
 		panelBgColorActive {
 			bgcolor=none
 		}
-
-				
-				
 				
 		gameImagePanel {   
 			inset="0 0 0 0"
@@ -195,15 +276,11 @@
 			render {}
 		}
 		
-		gameImagePanelHighlight
-		{   
+		gameImagePanelHighlight {   
 			inset="0 0 0 0"
 			bgcolor=none
 			render_bg {}
 		}					
-		
-		
-		
 		
 		DetailsLaunchButton {  
 			inset="0 0 0 0"
@@ -363,8 +440,6 @@
 				}
 			}
 
-		
-				
 		topOfQueueButton {   
 		
 			inset="30 0 0 0"
@@ -409,9 +484,7 @@
 					1="image( x0+4, y0+5, x1, y1, graphics/remove_download )"
 				}
 	
-			}
-		
-		
+			}		
 		
 		SlimProgressBar {
 			textcolor=green
@@ -420,23 +493,36 @@
 				0="fill( x0, y0, x1, y1, black )"
 				1="fill(x0,y1,x1,y1+1, grey50)"
 			}
-			render {
-			}    
+			render {}    
 		}
 	}
 
-
-	layout
-	{
-		region	{ name="bottom" width="max" height=20 align=bottom}
+	layout {
+		region { 
+			name="bottom" 
+			width="max" 
+			height=20 
+			align=bottom
+		}
 		
-		region { name="column1" x=0 width=200 }
-		region { name="column2" x=210 width=max }
-		region { name="column4" x=700 width=max overflow=allow-horizontal }
+		region { 
+			name="column1"
+			x=0
+			width=200
+		}
 		
+		region {
+			name="column2"
+			x=210
+			width=max
+		}
 		
-		
-		
+		region {
+			name="column4"
+			x=700
+			width=max
+			overflow=allow-horizontal
+		}
 		
 		// left column
 		place { 
@@ -459,19 +545,55 @@
 		}
 		
 		// left-mid column
-		place { control="namelabel" region="column2" margin-top=17 margin-left=0 }
-		place { control="updatetypelabel" region="column2" margin-top=45 align=left}
-		place { control="downloadtotallabel,downloadtotalfield" region="column2" align=left margin-top=58 spacing=4 }
+		place { 
+			control="namelabel" 
+			region="column2" 
+			margin-top=17 
+			margin-left=0 
+		}
 		
-		place { control="starttimelabel,starttimefield" region="column2" dir="right" align=left spacing=4 margin-top=70 x=0 }
-		place { control="timecompletedlabel,timecompletedfield" region="column2" x=0 align=left margin-top=71 spacing=4 }
-		place { control="timeremaininglabel,timeremainingfield" region="column2" x=0 align=left margin-top=82 spacing=4 }
-
+		place { 
+			control="updatetypelabel"
+			region="column2"
+			margin-top=45
+			align=left
+		}
 		
-
-	
-		// right column
-				
+		place {
+			control="downloadtotallabel,downloadtotalfield"
+			region="column2"
+			align=left
+			margin-top=58
+			spacing=4
+		}
+		
+		place { 
+			control="starttimelabel,starttimefield"
+			region="column2"
+			dir="right"
+			align=left
+			spacing=4
+			margin-top=70
+			x=0
+		}
+		
+		place {
+			control="timecompletedlabel,timecompletedfield"
+			region="column2"
+			x=0
+			align=left
+			margin-top=71
+			spacing=4
+		}
+		
+		place {
+			control="timeremaininglabel,timeremainingfield"
+			region="column2"
+			x=0
+			align=left
+			margin-top=82
+			spacing=4
+		}
 		
 		place { 
 			control="launchbutton,topofqueuebutton,removefromqueuebutton" 
@@ -485,10 +607,22 @@
 			margin-right=16 
 		}
 		
+		place {
+			control="newslink"
+			region="column4"
+			spacing=10
+			margin-top=64
+			align=right
+			margin-right=34
+		}
 		
-		place { control="newslink" region="column4" spacing=10 margin-top=64 align=right	margin-right=34 }
-		place { control="settingslink" region=column4 dir=right margin-top=80 align=right margin-right=34 }
-		// put the buttons along the bottom
-		
+		place {
+			control="settingslink"
+			region=column4
+			dir=right
+			margin-top=80
+			align=right
+			margin-right=34
+		}
 	}
 }

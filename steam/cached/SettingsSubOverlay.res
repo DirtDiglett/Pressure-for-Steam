@@ -1,7 +1,5 @@
-"steam/cached/SettingsSubOverlay.res"
-{
-	"EnableOverlayCheck"
-	{
+"steam/cached/SettingsSubOverlay.res" {
+	"EnableOverlayCheck" {
 		"ControlName"		"CheckButton"
 		"fieldName"		"EnableOverlayCheck"
 		"xpos"		"17"
@@ -19,8 +17,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"HotKeySelector"
-	{
+	
+	"HotKeySelector" {
 		"ControlName"		"HotKeyEntry"
 		"fieldName"		"HotKeySelector"
 		"xpos"		"20"
@@ -35,8 +33,8 @@
 		"paintbackground"		"1"
 		"appearance"		"TextEntry"
 	}
-	"ScreenshotHotKeySelector"
-	{
+	
+	"ScreenshotHotKeySelector" {
 		"ControlName"		"HotKeyEntry"
 		"fieldName"		"ScreenshotHotKeySelector"
 		"xpos"		"20"
@@ -51,8 +49,8 @@
 		"paintbackground"		"1"
 		"appearance"		"TextEntry"
 	}
-	"Label2"
-	{
+	
+	"Label2" {
 		"ControlName"		"Label"
 		"fieldName"		"Label2"
 		"xpos"		"20"
@@ -70,8 +68,8 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	"Label1"
-	{
+	
+	"Label1" {
 		"ControlName"		"Label"
 		"fieldName"		"Label1"
 		"xpos"		"20"
@@ -88,8 +86,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"ScreenshotLabel"
-	{
+	
+	"ScreenshotLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"ScreenshotLabel"
 		"xpos"		"20"
@@ -106,8 +104,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"ScreenshotActionLabel"
-	{
+	
+	"ScreenshotActionLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"ScreenshotActionLabel"
 		"xpos"		"20"
@@ -124,8 +122,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"ScreenshotNotifyCheck"
-	{
+	
+	"ScreenshotNotifyCheck" {
 		"ControlName"		"CheckButton"
 		"fieldName"		"ScreenshotNotifyCheck"
 		"xpos"		"40"
@@ -143,8 +141,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"ScreenshotPlaySoundCheck"
-	{
+	
+	"ScreenshotPlaySoundCheck" {
 		"ControlName"		"CheckButton"
 		"fieldName"		"ScreenshotPlaySoundCheck"
 		"xpos"		"40"
@@ -162,8 +160,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"ScreenshotSaveUncompressedCheck"
-	{
+	
+	"ScreenshotSaveUncompressedCheck" {
 		"ControlName"		"CheckButton"
 		"fieldName"		"ScreenshotSaveUncompressedCheck"
 		"xpos"		"40"
@@ -181,8 +179,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"SetScreenshotFolderButton"
-	{
+	
+	"SetScreenshotFolderButton" {
 		"ControlName"		"Button"
 		"fieldName"		"SetScreenshotFolderButton"
 		"labelText"		"#Overlay_SetScreenshotFolder"
@@ -200,8 +198,8 @@
 		"Default"		"0"
 		"command" "SetScreenshotFolder"
 	}
-	"OverlayHomePageLabel"
-	{
+	
+	"OverlayHomePageLabel" {
 		"ControlName"		"Label"
 		"fieldName"		"OverlayHomePageLabel"
 		"xpos"		"20"
@@ -218,8 +216,8 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	"OverlayHomePage"
-	{
+	
+	"OverlayHomePage" {
 		"ControlName"		"TextEntry"
 		"fieldName"		"OverlayHomePage"
 		"xpos"		"20"
@@ -238,37 +236,64 @@
 		"Default"		"0"
 	}
 	
-	styles {
-		pagetab {
-			textcolor=red
-			bgcolor=green
-		}
-		
-		page {
-			bgcolor=orange
-		}
-		
-		label {
-			textcolor=red
-			font-family=headerfont
-		}
-	}
+	styles {}
 	
 	layout {
 		//Steam Community
-		place { control=Label2,EnableOverlayCheck x=8 y=60 width=max spacing=8 dir=down }
+		place { 
+			control=Label2,EnableOverlayCheck 
+			x=8 
+			y=60 
+			width=max 
+			spacing=8 
+			dir=down 
+		}
 		
 		//Press Shortcut Keys
-		place { start=EnableOverlayCheck control=Label1,HotKeySelector y=8 width=180 spacing=8 dir=down }
+		place { 
+			start=EnableOverlayCheck 
+			control=Label1,HotKeySelector 
+			y=8 
+			width=180 
+			spacing=8 
+			dir=down 
+		}
 		
 		//Screenshots
-		place { y=36 margin-top=24 width=300 start=HotKeySelector control=ScreenshotLabel,ScreenshotHotKeySelector,ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck spacing=8 dir=down }
-		place { control=SetScreenshotFolderButton start=ScreenshotSaveUncompressedCheck y=8 height=28 dir=down }
+		place { 
+			y=36 
+			margin-top=24 
+			width=300 
+			start=HotKeySelector
+			control=ScreenshotLabel,ScreenshotHotKeySelector,ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
+			spacing=8 
+			dir=down 
+		}
+		
+		place { 
+			control=SetScreenshotFolderButton 
+			start=ScreenshotSaveUncompressedCheck 
+			y=8 
+			height=28 
+			dir=down 
+		}
 	
 		//Browser	
-		place { x=324 y=36 margin-top=24 width=180 start=HotKeySelector control=OverlayHomePageLabel,OverlayHomePage spacing=8 dir=down }
+		place { 
+			x=324 
+			y=36 
+			margin-top=24 
+			width=180
+			start=HotKeySelector
+			control=OverlayHomePageLabel,OverlayHomePage 
+			spacing=8 
+			dir=down 
+		}
 		
 		//Hidden
-		place { control=ScreenshotActionLabel height=0 }
+		place { 
+			control=ScreenshotActionLabel 
+			height=0 
+		}
 	}
 }
