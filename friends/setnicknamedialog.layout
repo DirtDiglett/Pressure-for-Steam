@@ -30,13 +30,10 @@
 			tabposition		"1"
 			unicode			"1"
 		}
-		
 	}
 	
 	styles {
-		
 		frame {
-			
 			minimum-height=175
 		}
 		
@@ -57,7 +54,7 @@
 		region { 
 			name="bottomrow" 
 			align=bottom 
-			height=50 
+			height=51 
 		}
 		
 		place { 
@@ -65,8 +62,8 @@
 			region=bottomrow 
 			align=right 
 			spacing=8 
-			margin-right=10
-			margin-top=13 
+			margin-right=14
+			margin-top=14
 			height=24
 		}
 		

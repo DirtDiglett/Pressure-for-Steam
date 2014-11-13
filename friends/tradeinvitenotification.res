@@ -1,8 +1,6 @@
-"friends/TradeInviteNotification.res"
-{
+"friends/TradeInviteNotification.res" {
 	controls {
-		"TradeInviteNotification"
-		{
+		"TradeInviteNotification" {
 			"ControlName"		"TradInvitationNotification"
 			"fieldName"		"TradeInviteNotification"
 			"xpos"		"0"
@@ -17,8 +15,8 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"ImageAvatar"
-		{
+		
+		"ImageAvatar" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"ImageAvatar"
 			"xpos"		"16"
@@ -34,8 +32,8 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		"NotificationClickPanel"
-		{
+		
+		"NotificationClickPanel" {
 			"ControlName"		"CNotificationClickPanel"
 			"fieldName"		"NotificationClickPanel"
 			"xpos"		"0"
@@ -50,8 +48,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelSender"
-		{
+		
+		"LabelSender" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelSender"
 			"xpos"		"64"
@@ -69,8 +67,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelInfo"
-		{
+		
+		"LabelInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelInfo"
 			"xpos"		"64"
@@ -88,8 +86,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"DarkenedRegion"
-		{
+		
+		"DarkenedRegion" {
 			"controlname"	"imagepanel"
 			"fieldname"		"DarkenedRegion"
 			"xpos"		"0"
@@ -99,8 +97,8 @@
 			"fillcolor"	"Black"
 			"zpos"		"-1"
 		}
-		"LabelHotkey"
-		{
+		
+		"LabelHotkey" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelHotkey"
 			"xpos"		"0"
@@ -125,7 +123,6 @@
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			
 			
 			bgcolor=none
 			
@@ -159,7 +156,6 @@
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			
 			
 			bgcolor=none
 			
@@ -205,6 +201,5 @@
 			margin-top=15 
 			margin-bottom=0 
 		}
-		
 	}
 }

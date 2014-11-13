@@ -49,8 +49,6 @@
 				font-size=13
 				textcolor="trueWhite"
 				
-				
-				
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
@@ -129,12 +127,9 @@
 		CVoiceTraffic {}
 		
 		voice_image {}
-		
-		
 	}
 	
 	layout {
-
 		//Icon
 		place { 
 			control="VoiceImage" 

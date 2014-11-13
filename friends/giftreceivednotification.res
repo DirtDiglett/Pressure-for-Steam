@@ -1,8 +1,6 @@
-"friends/GiftReceivedNotification.res"
-{
+"friends/GiftReceivedNotification.res" {
 	controls {
-		"GiftReceivedNotification"
-		{
+		"GiftReceivedNotification" {
 			"ControlName"		"GiftReceivedNotification"
 			"fieldName"		"GiftReceivedNotification"
 			"xpos"		"0"
@@ -17,8 +15,8 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"GiftImage"
-		{
+		
+		"GiftImage" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"GiftImage"
 			"xpos"		"16"
@@ -35,8 +33,8 @@
 			"scaleImage"		"0"
 			"image" "graphics/icon_toast_gift"
 		}
-		"NotificationClickPanel"
-		{
+		
+		"NotificationClickPanel" {
 			"ControlName"		"CNotificationClickPanel"
 			"fieldName"		"NotificationClickPanel"
 			"xpos"		"0"
@@ -51,8 +49,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelSender"
-		{
+		
+		"LabelSender" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelSender"
 			"xpos"		"64"
@@ -70,8 +68,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelInfo"
-		{
+		
+		"LabelInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelInfo"
 			"xpos"		"64"
@@ -89,8 +87,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"DarkenedRegion"
-		{
+		
+		"DarkenedRegion" {
 			"controlname"	"imagepanel"
 			"fieldname"		"DarkenedRegion"
 			"xpos"		"0"
@@ -100,8 +98,8 @@
 			"fillcolor"	"Black"
 			"zpos"		"-1"
 		}
-		"LabelHotkey"
-		{
+		
+		"LabelHotkey" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelHotkey"
 			"xpos"		"0"
@@ -126,7 +124,6 @@
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			
 			
 			bgcolor=none
 			
@@ -160,7 +157,6 @@
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			
 			
 			bgcolor=none
 			

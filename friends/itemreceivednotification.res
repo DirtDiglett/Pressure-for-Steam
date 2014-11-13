@@ -1,8 +1,6 @@
-"friends/ItemReceivedNotification.res"
-{
+"friends/ItemReceivedNotification.res" {
 	controls {
-		"ItemReceivedNotification"
-		{
+		"ItemReceivedNotification" {
 			"ControlName"		"ItemReceivedNotification"
 			"fieldName"		"ItemReceivedNotification"
 			"xpos"		"0"
@@ -17,8 +15,8 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"ItemImage"
-		{
+		
+		"ItemImage" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"ItemImage"
 			"xpos"		"16"
@@ -35,8 +33,8 @@
 			"scaleImage"		"0"
 			"image" "graphics/icon_toast_item"
 		}
-		"NotificationClickPanel"
-		{
+		
+		"NotificationClickPanel" {
 			"ControlName"		"CNotificationClickPanel"
 			"fieldName"		"NotificationClickPanel"
 			"xpos"		"0"
@@ -51,8 +49,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelInfo"
-		{
+		
+		"LabelInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelInfo"
 			"xpos"		"64"
@@ -70,8 +68,8 @@
 			"wrap"		"1"
 			"font"		FriendsSmall
 		}
-		"DarkenedRegion"
-		{
+		
+		"DarkenedRegion" {
 			"controlname"	"imagepanel"
 			"fieldname"		"DarkenedRegion"
 			"xpos"		"0"
@@ -81,8 +79,8 @@
 			"fillcolor"	"Black"
 			"zpos"		"-1"
 		}
-		"LabelHotkey"
-		{
+		
+		"LabelHotkey" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelHotkey"
 			"xpos"		"0"
@@ -107,7 +105,6 @@
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			
 			
 			bgcolor=none
 			
@@ -141,7 +138,6 @@
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			
 			
 			bgcolor=none
 			

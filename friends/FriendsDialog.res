@@ -10,7 +10,6 @@
 			"AutoResize"    "1"
 			"PinCorner"   "0"
 			"enabled"   "1"
-
 			"paintbackground"   "1"
 			"settitlebarvisible"    "0"
 			style="FriendsPanel"    
@@ -31,7 +30,6 @@
 			"textAlignment"   "west" 
 			"textAlignment"   "center" [$OSX]
 		}
-
 
 		"DownLabel" {
 			"ControlName"   "Label"
@@ -93,10 +91,8 @@
 			"wrap"    "0"
 			"Default"   "0"
 			"selected"    "0"
-			
 			zpos=10
 		}
-
 
 		"NoFriendsAddFriendButton" {
 			"ControlName"   "Button"
@@ -109,7 +105,6 @@
 			"PinCorner"   "0"
 			"visible"   "0"
 			"enabled"   "1"
-
 			"paintbackground"   "1"
 			"labelText"   "#Friends_AddFriend"
 			"textAlignment"   "west"
@@ -117,6 +112,7 @@
 			"Default"   "0"
 			"selected"    "0"
 		}
+		
 		"FriendsState" {
 			"ControlName"   "EditablePanel"
 			"fieldName"   "FriendsState"
@@ -128,7 +124,6 @@
 			"PinCorner"   "0"
 			"visible"   "0"
 			"enabled"   "1"
-
 			"paintbackground"   "1"
 		}
 		
@@ -154,19 +149,12 @@
 		CFriendsDialog {
 			minimum-width=294
 			minimum-height=400
-			maximum-width=500
 			font-family=basefont
-			font-style="normal"
-			
-			
+			font-style="normal"	
 		}
 		
 		ListPanelSectionHeader {
 			font-family=semibold
-			font-style="outerglow,normal"
-			font-outerglow-color="red"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
 		}
 		
 		FrameTitle {
@@ -204,13 +192,10 @@
 				
 				11="fill(x0+1, y0+126, x1-1, y0+127, darkestGrey)"
 				
-				
-				
 				// Search Input Background
 				12="image_tiled(x0+155,y0+94,x0+275,y0+119, graphics/search/inner)"
 				13="image(x0+155, y0+94, x0+177, y0+119, graphics/search/left)"
 				14="image(x0+275, y0+94, x0+287, y0+119, graphics/search/right)"
-				
 				
 				// Background for the pageTabs
 				15="fill(x0+7,y0+94,x0+146,y0+118, darkestGrey)"// Top->Bottom
@@ -258,13 +243,10 @@
 					
 					11="fill(x0+1, y0+125, x1-1, y0+126, darkestGrey)"
 					
-					
-					
 					// Search Input Background
 					12="image_tiled(x0+155,y0+94,x0+275,y0+119, graphics/search/inner)"
 					13="image(x0+155, y0+94, x0+177, y0+119, graphics/search/left)"
 					14="image(x0+275, y0+94, x0+287, y0+119, graphics/search/right)"
-					
 					
 					// Background for the pageTabs
 					15="fill(x0+7,y0+94,x0+146,y0+118, darkestGrey)"// Top->Bottom
@@ -275,9 +257,8 @@
 					20="fill(x0+146, y0+117, x0+147, y0+118, grey50)"
 					
 					21="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
-					
 				}
-			  }
+			}
 	
 		// Used to push the friends section down lower for trickery with the PageTabs.
 		Page {
@@ -287,7 +268,6 @@
 			
 			bgcolor=none
 		}
-	
 	
 		SectionedlistpanelCollapser {
 			image="graphics/icon_collapse"
@@ -349,32 +329,28 @@
 				}
 			}
 		
-		
-	"CFriendsDialog SectionedListPanel" {
-      bgcolor  = "none"
-      font-family=basefont
-      font-style="regular"
-      
-      render_bg {
-       		// background fill to overwrite the normal listPanel background
-	   		0  = "fill( x0, y0, x1, y1, darkestGrey)"
-	   		
-      }    
-    }
-    
-    CFriendsListSectionHeader {
+		"CFriendsDialog SectionedListPanel" {
+		    bgcolor  = "none"
+		    font-family=basefont
+		      
+		    render_bg {
+			    // background fill to overwrite the normal listPanel background
+				0  = "fill( x0, y0, x1, y1, darkestGrey)"
+		    }    
+	    }
+	    
+	    CFriendsListSectionHeader {
 			inset="0 0 0 0"
 			textcolor=white
 			
-			
 			font-family=semibold
-			font-style="regular"
+			font-style="regular,normal"
 						
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0, x1, y0+1, greyHighlight)"
 			}    
-    }
+	    }
     
 		
 		// The actual whole dialog window itself.
@@ -389,18 +365,14 @@
 				1="fill( x0, y1-16, x1, y1-15, darkestGrey )"
 				2="fill( x0+1, y1-15, x1-1, y1-14, greyHighlight )"
 				3="gradient( x0+1, y1-14, x1-1, y1-1, grey, lightGreyEnd )"
-			
 			}
 		}	
 		
-		
 		"CFriendsDialog SectionedListPanel" {
 			font-family=basefont
-			font-style="regular"
+			font-style="regular,normal"
 			//inset="0 30 0 0"
 		}
-		
-		
 		
 		AddFriendsButton  {
 			font-family=basefont
@@ -412,27 +384,20 @@
 				0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
 				0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
 			}
-			
+		
 			render_bg {}
 		}
 		   
 
-		AddFriendsButton:hover {
-			textcolor="none"
-			render_bg {}
-		}	  	
-		
-		
+			AddFriendsButton:hover {
+				textcolor="none"
+				render_bg {}
+			}	  	
+				
 		RootMenu {
 			textcolor="none"
-			bgcolor="none" 
-
+			bgcolor="none"
 		} 
-
-				
-		FriendsTitle {
-			//inset="0 0 0 0"
-		}
 
 		// Hide the word "Friends" on the title area.
 		FriendsTitle [$OSX] {
@@ -450,36 +415,30 @@
 				textcolor="none"
 				bgcolor="none"
 			}
-		
-		
-		
 
-		"MenuBar MenuButton"
-		{
+		"MenuBar MenuButton" {
 			textcolor="none"
-			render_bg {
-				
+			
+			render_bg {	
 				0="image( x0, y0, x1,y1, graphics/supermenus/friends/normal )"
 			}
 		}
 
-		"MenuBar MenuButton:hover"
-		{
-			textcolor="none"
-			render_bg {
+			"MenuBar MenuButton:hover" {
+				textcolor="none"
 				
-				0="image( x0, y0, x1,y1, graphics/supermenus/friends/hover )"
+				render_bg {					
+					0="image( x0, y0, x1,y1, graphics/supermenus/friends/hover )"
+				}
 			}
-		}
-		
-		"MenuBar MenuButton:selected"
-		{
-			textcolor="none"
-			render_bg {
+			
+			"MenuBar MenuButton:selected" {
+				textcolor="none"
 				
-				0="image( x0, y0, x1,y1, graphics/supermenus/friends/active )"
-			}
-		}		
+				render_bg {
+					0="image( x0, y0, x1,y1, graphics/supermenus/friends/active )"
+				}
+			}		
 		
 		FriendsSearch [!$OSX] {
 			font-family=basefont
@@ -506,31 +465,27 @@
 			render_bg {}
 		}
 		
-		FriendsSearch:empty {
-			font-family=basefont
-			font-style=italic
-			textcolor="lightestGrey"
+			FriendsSearch:empty {
+				font-family=basefont
+				font-style=italic
+				textcolor="lightestGrey"
+			}
 			
-		}
-		
-		FriendsSearch:hover {	
-			textcolor="darkGreyEnd"	
+			FriendsSearch:hover {	
+				textcolor="darkGreyEnd"	
+			}
 			
-		}
-		
-		FriendsSearch:empty:hover {
-			font-family=basefont
-			font-style=italic
-			textcolor="lightGreyEnd"
-			
-		}
-			
-		FriendsSearch:disabled {
-			font-family=basefont
-			font-style=italic
-			textcolor="None"
-			
-		}
+			FriendsSearch:empty:hover {
+				font-family=basefont
+				font-style=italic
+				textcolor="lightGreyEnd"
+			}
+				
+			FriendsSearch:disabled {
+				font-family=basefont
+				font-style=italic
+				textcolor="None"	
+			}
 			
 		// Used as an overlay to round off the buttons
 		FriendsSearchIcon {
@@ -556,7 +511,6 @@
 		
 		// This will only affect the HEADERS inside it for some reason
 		"CFriendsDialog SectionedListPanelInterior" {
-			
 			font-family=semibold
 			font-style="regular"
 			
@@ -569,19 +523,17 @@
 			textcolor  = "white"
 			selectedtextcolor  = "blue"
 			selectedbgcolor  = "green"
-			shadowtextcolor  = "darkGreyEnd"	// the color of disabled line items		
-			
+			shadowtextcolor  = "darkGreyEnd"	// the color of disabled line items			
 		}
 	
 			"CFriendsDialog SectionedListPanelInterior:scrollbar" {
-				font-family=basefont
-				font-style="none"
+				font-family=semibold
+				font-style="regular,normal"
 				padding-right=15
 			}	
 	}
  	
  	layout {
-		
 		place [!$OSX]  { 
 			control="frame_minimize,frame_close" 
 			align=right 
@@ -590,15 +542,39 @@
 			spacing=-9 
 		}
 
-place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
-		place 	[!$OSX] { control="frame_title" visible=0 x=0 y=0 width=max height=0 }
+		place [$OSX] { 
+			control="frame_title" 
+			align=center 
+			x=0 
+			y=0 
+			width=max 
+			height=20 
+		}
+		
+		place [!$OSX] { 
+			control="frame_title" 
+			visible=0 
+			x=0
+			y=0 
+			width=max 
+			height=0 
+		}
 
  		// the title bar is missing, so increase the size of the grip
-		place { control="frame_captiongrip" margin=2 width=max height=38 }
+		place { 
+			control="frame_captiongrip" 
+			margin=2 
+			width=max 
+			height=38 
+		}
 		
 		place [!$OSX] { 
 			control="MenuBar" 
-			margin-left=2 width=62 height=24 margin-top=-1 }
+			margin-left=2 
+			width=62 
+			height=24 
+			margin-top=-1 
+		}
 		
 		place { 
 			control="friends_search" 
@@ -637,7 +613,6 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			height=22 
 			width=1
 		}
-	
 		
 		place { 
 			control="addFriendsButton" 
@@ -662,5 +637,4 @@ place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
 			width=120
 		}
  	}
- 	
 }

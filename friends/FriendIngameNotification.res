@@ -1,9 +1,6 @@
-"friends/FriendInGameNotification.res"
-{
-	
+"friends/FriendInGameNotification.res" {
 	controls {
-		"FriendIngameNotification"
-		{
+		"FriendIngameNotification" {
 			"ControlName"		"CFriendInGameNotification"
 			"fieldName"		"FriendIngameNotification"
 			"xpos"		"0"
@@ -18,8 +15,8 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"ImageAvatar"
-		{
+		
+		"ImageAvatar" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"ImageAvatar"
 			"xpos"		"16"
@@ -35,8 +32,8 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		"NotificationClickPanel"
-		{
+		
+		"NotificationClickPanel" {
 			"ControlName"		"CNotificationClickPanel"
 			"fieldName"		"NotificationClickPanel"
 			"xpos"		"0"
@@ -51,8 +48,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelSender"
-		{
+		
+		"LabelSender" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelSender"
 			"xpos"		"64"
@@ -70,8 +67,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelInfo"
-		{
+		
+		"LabelInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelInfo"
 			"xpos"		"64"
@@ -89,8 +86,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelGame"
-		{
+		
+		"LabelGame" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelGame"
 			"xpos"		"64"
@@ -108,8 +105,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"DarkenedRegion"
-		{
+		
+		"DarkenedRegion" {
 			"controlname"	"imagepanel"
 			"fieldname"		"DarkenedRegion"
 			"xpos"		"0"
@@ -119,8 +116,8 @@
 			"fillcolor"	"Black"
 			"zpos"		"-1"
 		}
-		"LabelHotkey"
-		{
+		
+		"LabelHotkey" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelHotkey"
 			"xpos"		"0"
@@ -141,7 +138,6 @@
 	}
 	
 	styles {
-		
 		Notification [!$OSX] {
 			font-family=basefont
 			font-size=15

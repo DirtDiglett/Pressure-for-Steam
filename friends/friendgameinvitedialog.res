@@ -1,9 +1,6 @@
-"Friends/friendgameinvitedialog.res"
-{
-	controls
-	{
-		"FriendGameInviteDialog"
-		{
+"Friends/friendgameinvitedialog.res" {
+	controls {
+		"FriendGameInviteDialog" {
 			"ControlName"   "CFriendGameInviteDialog"
 			"fieldName"   "FriendGameInviteDialog"
 			"xpos"    "2123"
@@ -21,8 +18,7 @@
 			closeonescape=1
 		}		
 
-		"BuddyList"
-		{
+		"BuddyList" {
 			"ControlName"   "CFriendsListSubPanel"
 			"fieldName"   "BuddyList"
 			"AutoResize"    "3"
@@ -35,8 +31,7 @@
 			style="FriendsList"
 		}
 		
-		"CloseButton"
-		{
+		"CloseButton" {
 			"ControlName"   "Button"
 			"fieldName"   "CloseButton"
 			"xpos"    "10"
@@ -57,10 +52,8 @@
 		}
 	}
 
-  
 	styles {
-		FriendsPanel {			
-			
+		FriendsPanel {	
 			render_bg {
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
@@ -72,7 +65,6 @@
 		RootMenu {
 			bgcolor="none"
 		} 
-
 				
 		FriendsTitle  {
 			inset="0 0 0 0"
@@ -87,18 +79,17 @@
 			inset="0 9 0 0"
 		}
 
-		FriendsTitle:FrameFocus [$OSX] {
-			font-family=basefont
-			font-size=15
-			font-weight=400
-			textcolor="white"
-			bgcolor="none"
-			inset="0 9 0 0"
-		}
+			FriendsTitle:FrameFocus [$OSX] {
+				font-family=basefont
+				font-size=15
+				font-weight=400
+				textcolor="white"
+				bgcolor="none"
+				inset="0 9 0 0"
+			}
 	}
  	
  	layout {
-	 	
 	 	place [!$OSX]  { 
 			control="frame_close" 
 			align=right 
@@ -106,8 +97,7 @@
 			margin-right=6 
 			spacing=-9 
 		}
-		
-		
+				
  		// the title bar is missing, so increase the size of the grip
 		place { 
 			control="frame_captiongrip" 
@@ -130,7 +120,7 @@
 		region {
 			name=bottom
 			align=bottom
-			height=50
+			height=51
 			width=max
 		}
 		
@@ -138,8 +128,8 @@
 			control=CloseButton
 			region=bottom
 			align-right
-			margin-top=13
-			margin-right=13
+			margin-top=14
+			margin-right=14
 			height=24
 		}
  	}

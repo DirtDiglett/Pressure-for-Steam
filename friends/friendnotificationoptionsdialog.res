@@ -1,8 +1,6 @@
 "friends/friendnotificationoptionsdialog.res" {
-	controls {
-	
-		"CFriendNotificationOptionsDialog"
-		{
+	controls {	
+		"CFriendNotificationOptionsDialog" {
 			"ControlName"		"CFriendNotificationOptionsDialog"
 			"fieldName"		"CFriendNotificationOptionsDialog"
 			"xpos"		"1100"
@@ -18,8 +16,8 @@
 			"settitlebarvisible"		"1"
 			"title"		"#Friends_NotificationOptions_Title"
 		}
-		"OKButton"
-		{
+		
+		"OKButton" {
 			"ControlName"		"Button"
 			"fieldName"		"OKButton"
 			"xpos"		"168"
@@ -36,8 +34,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"Button1"
-		{
+		
+		"Button1" {
 			"ControlName"		"Button"
 			"fieldName"		"Button1"
 			"xpos"		"258"
@@ -56,8 +54,8 @@
 			"Command"		"Close"
 			"Default"		"0"
 		}
-		"Label4"
-		{
+		
+		"Label4" {
 			"ControlName"		"Label"
 			"fieldName"		"Label4"
 			"xpos"		"20"
@@ -74,8 +72,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"JoinGameNotifyCheck"
-		{
+		
+		"JoinGameNotifyCheck" {
 			"ControlName"		"CheckButton"
 			"fieldName"		"JoinGameNotifyCheck"
 			"xpos"		"40"
@@ -93,8 +91,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"JoinGamePlaySoundCheck"
-		{
+		
+		"JoinGamePlaySoundCheck" {
 			"ControlName"		"CheckButton"
 			"fieldName"		"JoinGamePlaySoundCheck"
 			"xpos"		"40"
@@ -112,8 +110,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"Label5"
-		{
+		
+		"Label5" {
 			"ControlName"		"Label"
 			"fieldName"		"Label5"
 			"xpos"		"20"
@@ -130,8 +128,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"FriendOnlineNotifyCheck"
-		{
+		
+		"FriendOnlineNotifyCheck" {
 			"ControlName"		"CheckButton"
 			"fieldName"		"FriendOnlineNotifyCheck"
 			"xpos"		"40"
@@ -149,8 +147,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"FriendOnlinePlaySoundCheck"
-		{
+		
+		"FriendOnlinePlaySoundCheck" {
 			"ControlName"		"CheckButton"
 			"fieldName"		"FriendOnlinePlaySoundCheck"
 			"xpos"		"40"
@@ -168,8 +166,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"Label6"
-		{
+		
+		"Label6" {
 			"ControlName"		"Label"
 			"fieldName"		"Label6"
 			"xpos"		"20"
@@ -186,8 +184,8 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		"ReceiveMessageNotifyCheck"
-		{
+		
+		"ReceiveMessageNotifyCheck" {
 			"ControlName"		"CheckButton"
 			"fieldName"		"ReceiveMessageNotifyCheck"
 			"xpos"		"39"
@@ -205,8 +203,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"ReceiveMessagePlaySoundCheck"
-		{
+		
+		"ReceiveMessagePlaySoundCheck" {
 			"ControlName"		"CheckButton"
 			"fieldName"		"ReceiveMessagePlaySoundCheck"
 			"xpos"		"40"
@@ -238,15 +236,15 @@
 		region {
 			name="bottomarea"
 			align=bottom
-			height=50
+			height=51
 		}
 		
 		place {
 			control="OKButton,button1"
 			region=bottomarea
 			align=right
-			margin-right=8
-			margin-top=12
+			margin-right=14
+			margin-top=14
 			spacing=8
 			width=94
 			height=24

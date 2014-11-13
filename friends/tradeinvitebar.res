@@ -1,15 +1,52 @@
 "friends/tradeinvitebar.res" {
 	controls {
-		"InviteLabel"		{	ControlName="Label"		labeltext="#friends_trade_invite"			mouseinputenabled=0	group="recv"	}
-		"ClickHereLabel"	{	ControlName="Label"		labeltext="#friends_trade_invite_action"	mouseinputenabled=0	group="recv" }
-
-		"InviteSentLabel"			{	ControlName="Label"		labeltext="#friends_trade_invite_sent"			mouseinputenabled=0	group="send"	}
-		"WaitingForResponseLabel"	{	ControlName="Label"		labeltext="#friends_trade_invite_sent_waiting"	mouseinputenabled=0	group="send" }
+		"InviteLabel" {
+			ControlName="Label"
+			labeltext="#friends_trade_invite"
+			mouseinputenabled=0
+			group="recv"
+		}
 		
-		"InviteImage"			{	ControlName="ImagePanel" image="resource/icon_trade_request"				mouseinputenabled=0	group="recv" }
-		"InviteSentImage"		{	ControlName="ImagePanel" image="resource/icon_trade_request"				mouseinputenabled=0	group="send" }
+		"ClickHereLabel" {
+			ControlName="Label"
+			labeltext="#friends_trade_invite_action"
+			mouseinputenabled=0
+			group="recv"
+		}
+
+		"InviteSentLabel" {
+			ControlName="Label"
+			labeltext="#friends_trade_invite_sent"
+			mouseinputenabled=0
+			group="send"
+		}
+		
+		"WaitingForResponseLabel" {
+			ControlName="Label"
+			labeltext="#friends_trade_invite_sent_waiting"
+			mouseinputenabled=0
+			group="send"
+		}
+		
+		"InviteImage" {
+			ControlName="ImagePanel"
+			image="resource/icon_trade_request"
+			mouseinputenabled=0
+			group="recv"
+		}
+		
+		"InviteSentImage" {
+			ControlName="ImagePanel"
+			image="resource/icon_trade_request"
+			mouseinputenabled=0
+			group="send"
+		}
 				
-		"CloseButton"		{	ControlName="Button"	labeltext="X"	command="Close"	}
+		"CloseButton" {
+			ControlName="Button"
+			labeltext="X"
+			command="Close"
+		}
 	}
 	
 	styles {

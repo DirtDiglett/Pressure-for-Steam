@@ -1,8 +1,6 @@
-"friends/FriendInvitationNotification.res"
-{
+"friends/FriendInvitationNotification.res" {
 	controls {
-		"FriendInvitationNotification"
-		{
+		"FriendInvitationNotification" {
 			"ControlName"		"CFriendInvitationNotification"
 			"fieldName"		"FriendInvitationNotification"
 			"xpos"		"0"
@@ -17,8 +15,8 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"ImageAvatar"
-		{
+		
+		"ImageAvatar" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"ImageAvatar"
 			"xpos"		"16"
@@ -34,8 +32,8 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		"NotificationClickPanel"
-		{
+		
+		"NotificationClickPanel" {
 			"ControlName"		"CNotificationClickPanel"
 			"fieldName"		"NotificationClickPanel"
 			"xpos"		"0"
@@ -50,8 +48,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelSender"
-		{
+		
+		"LabelSender" {	
 			"ControlName"		"Label"
 			"fieldName"		"LabelSender"
 			"xpos"		"64"
@@ -69,8 +67,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelInfo"
-		{
+		
+		"LabelInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelInfo"
 			"xpos"		"64"
@@ -88,8 +86,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelFriendsList"
-		{
+		
+		"LabelFriendsList" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelFriendsList"
 			"xpos"		"64"
@@ -108,8 +106,8 @@
 			"font"		FriendsSmall
 			"textcolor"		"NotificationBodyText"
 		}
-		"DarkenedRegion"
-		{
+		
+		"DarkenedRegion" {
 			"controlname"	"imagepanel"
 			"fieldname"		"DarkenedRegion"
 			"xpos"		"0"
@@ -119,8 +117,8 @@
 			"fillcolor"	"Black"
 			"zpos"		"-1"
 		}
-		"LabelHotkey"
-		{
+		
+		"LabelHotkey" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelHotkey"
 			"xpos"		"0"

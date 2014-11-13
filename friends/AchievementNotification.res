@@ -1,9 +1,6 @@
-"friends/AchievementNotification.res"
-{
+"friends/AchievementNotification.res" {
 	controls {
-	
-		"AchievementNotification"
-		{
+		"AchievementNotification" {
 			"ControlName"		"CAchievmentNotification"
 			"fieldName"		"AchievementNotification"
 			"xpos"		"0"
@@ -18,8 +15,8 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"DarkenedRegion"
-		{
+		
+		"DarkenedRegion" {
 			"controlname"	"imagepanel"
 			"fieldname"		"DarkenedRegion"
 			"xpos"		"1"
@@ -29,8 +26,8 @@
 			"fillcolor"	"ClientBG"
 			"zpos"		"-1"
 		}
-		"AchievementIcon"
-		{
+		
+		"AchievementIcon" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"AchievementIcon"
 			"xpos"		"14"
@@ -46,8 +43,8 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		"IconBorder"
-		{
+		
+		"IconBorder" {
 			"ControlName"		"Panel"
 			"fieldName"		"IconBorder"
 			"xpos"		"13"
@@ -62,8 +59,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelTitle"
-		{
+		
+		"LabelTitle" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelTitle"
 			"xpos"		"88"
@@ -81,8 +78,8 @@
 			"wrap"		"1"
 			"font"		FriendsSmall
 		}
-		"LabelDescription"
-		{
+		
+		"LabelDescription" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelText"
 			"xpos"		"88"
@@ -108,8 +105,9 @@
 			font-size=15
 			font-weight=400
 			
-			
 			bgcolor=none
+			
+			render {}
 			
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
@@ -133,8 +131,6 @@
 				
 				11="image(x1-110,y0,x1,y1, graphics/notifications/achievement)"
 			}
-	      
-			render {}
 	    }
  
 		Notification [$OSX] {
@@ -142,8 +138,9 @@
 			font-size=15
 			font-weight=400
 			
-			
 			bgcolor=none
+			
+			render {}
 			
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
@@ -167,8 +164,6 @@
 				
 				11="image(x1-110,y0,x1,y1, graphics/notifications/achievement)"
 			}
-	      
-			render {}
 	    }
 	}
 }

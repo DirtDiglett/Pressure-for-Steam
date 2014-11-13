@@ -1,6 +1,5 @@
 "friends/BlockCommunicationWarningDialog.res" {
-	"BlockCommunicationDialog"
-	{
+	"BlockCommunicationDialog" {
 		"ControlName"		"SimpleDialog"
 		"fieldName"		"BlockCommunicationDialog"
 		"xpos"		"979"
@@ -16,8 +15,8 @@
 		"settitlebarvisible"		"1"
 		"title"		"#Friends_BlockCommunicationWarning_Title"
 	}
-	"ContinueButton"
-	{
+	
+	"ContinueButton" {
 		"ControlName"		"Button"
 		"fieldName"		"ContinueButton"
 		"xpos"		"27"
@@ -35,8 +34,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"CancelButton"
-	{
+	
+	"CancelButton" {
 		"ControlName"		"Button"
 		"fieldName"		"CancelButton"
 		"xpos"		"265"
@@ -54,8 +53,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"DontShowAgain"
-	{
+	
+	"DontShowAgain" {
 		"ControlName"		"CheckButton"
 		"fieldName"		"DontShowAgain"
 		"xpos"		"24"
@@ -73,8 +72,8 @@
 		"wrap"		"0"
 		"Default"		"0"
 	}
-	"Label3"
-	{
+	
+	"Label3" {
 		"ControlName"		"Label"
 		"fieldName"		"Label3"
 		"xpos"		"28"
@@ -91,8 +90,8 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	"Label4"
-	{
+	
+	"Label4" {
 		"ControlName"		"URLLabel"
 		"fieldName"		"Label4"
 		"xpos"		"28"

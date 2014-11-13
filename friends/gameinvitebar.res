@@ -1,16 +1,44 @@
 "friends/gameinvitebar.res" {
 	controls {
-		"GameInviteBar"		{	ControlName="GameInviteBar"		}
-		"InviteLabel"		{	ControlName="Label"		labeltext="#friends_game_invite"		mouseinputenabled=0		}
-		"GameLabel"			{	ControlName="Label"		labeltext="%game%"						mouseinputenabled=0		}
-		"ClickHereLabel"	{	ControlName="Label"		labeltext="#friends_game_invite_action"	mouseinputenabled=0		}
-		"InviteImage"		{	ControlName="ImagePanel" image="resource/invite"				mouseinputenabled=0		}
-		"CloseButton"		{	ControlName="Button"	labeltext="X"	command="Close"	}
+		"GameInviteBar" {
+			ControlName="GameInviteBar"
+		}
+		
+		"InviteLabel" {	
+			ControlName="Label"
+			labeltext="#friends_game_invite"
+			mouseinputenabled=0
+		}
+		
+		"GameLabel" {
+			ControlName="Label"
+			labeltext="%game%"
+			mouseinputenabled=0
+		}
+		
+		"ClickHereLabel" {
+			ControlName="Label"
+			labeltext="#friends_game_invite_action"
+			mouseinputenabled=0
+		}
+		
+		"InviteImage" {
+			ControlName="ImagePanel"
+			image="resource/invite"
+			mouseinputenabled=0
+		}
+		
+		"CloseButton" {	
+			ControlName="Button"
+			labeltext="X"
+			command="Close"
+		}
 	}
 	
 	styles {
 		CGameInviteBar {
 			bgcolor=none
+			
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
 				1="gradient(x0-9,y0+1,x1,y1-1, orange, darkestOrange)"

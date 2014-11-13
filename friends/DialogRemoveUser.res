@@ -1,8 +1,6 @@
-"Friends/DialogRemoveUser.res"
-{
+"Friends/DialogRemoveUser.res" {
 	controls {
-		"DialogRemoveUser"
-		{
+		"DialogRemoveUser" {
 			"ControlName"		"Frame"
 			"fieldName"		"DialogRemoveUser"
 			"xpos"		"221"
@@ -15,8 +13,8 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 		}
-		"SysMenu"
-		{
+		
+		"SysMenu" {
 			"ControlName"		"Menu"
 			"fieldName"		"SysMenu"
 			"xpos"		"0"
@@ -29,8 +27,8 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 		}
-		"OK"
-		{
+		
+		"OK" {
 			"ControlName"		"Button"
 			"fieldName"		"OK"
 			"xpos"		"220"
@@ -49,8 +47,8 @@
 			"Command"		"OK"
 			"Default"		"0"
 		}
-		"Cancel"
-		{
+		
+		"Cancel" {
 			"ControlName"		"Button"
 			"fieldName"		"Cancel"
 			"xpos"		"352"
@@ -69,8 +67,8 @@
 			"Command"		"Close"
 			"Default"		"0"
 		}
-		"WarningLabel"
-		{
+		
+		"WarningLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"WarningLabel"
 			"xpos"		"24"
@@ -87,8 +85,8 @@
 			"dulltext"		"0"
 			"brighttext"		"0"
 		}
-		"InfoLabel"
-		{
+		
+		"InfoLabel" {
 			"ControlName"		"Label"
 			"fieldName"		"InfoLabel"
 			"xpos"		"24"

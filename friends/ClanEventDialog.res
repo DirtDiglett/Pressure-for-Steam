@@ -1,5 +1,4 @@
-"friends/ClanEventDialog.res"
-{
+"friends/ClanEventDialog.res" {
 	controls {
 		"ClanEventDialog" {
 			"ControlName"		"SimpleDialog"
@@ -17,8 +16,8 @@
 			"settitlebarvisible"		"1"
 			"title"		"#Friends_GroupEvent_Title"
 		}
-		"ImageAvatar"
-		{
+		
+		"ImageAvatar" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"ImageAvatar"
 			"xpos"		"16"
@@ -34,8 +33,8 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		"ViewEventButton"
-		{
+		
+		"ViewEventButton" {
 			"ControlName"		"Button"
 			"fieldName"		"ViewEventButton"
 			"xpos"		"16"
@@ -53,8 +52,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"CloseButton"
-		{
+		
+		"CloseButton" {
 			"ControlName"		"Button"
 			"fieldName"		"CloseButton"
 			"xpos"		"161"
@@ -72,8 +71,8 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		"LabelGroup"
-		{
+		
+		"LabelGroup" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelGroup"
 			"xpos"		"64"
@@ -91,8 +90,8 @@
 			"font"		"FriendsSmall"
 			"wrap"		"0"
 		}
-		"LabelInfo"
-		{
+		
+		"LabelInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelInfo"
 			"xpos"		"64"
@@ -110,8 +109,8 @@
 			"font"		"FriendsSmall"
 			"wrap"		"0"
 		}
-		"LabelEventTitle"
-		{
+		
+		"LabelEventTitle" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelEventTitle"
 			"xpos"		"64"
@@ -147,7 +146,6 @@
 			spacing=-9 
 		}
 		
-		
 		place {
 			control="ImageAvatar"
 			x=32
@@ -176,8 +174,8 @@
 			height=24
 			dir=right
 			align=right
-			margin-top=13
-			margin-right=13
+			margin-top=14
+			margin-right=14
 			spacing=8
 		}
 		

@@ -1,8 +1,6 @@
-"friends/ClanEventNotification.res"
-{
+"friends/ClanEventNotification.res" {
 	controls{
-		"ClanEventNotification"
-		{
+		"ClanEventNotification" {
 			"ControlName"		"CClanEventNotification"
 			"fieldName"		"ClanEventNotification"
 			"xpos"		"0"
@@ -17,8 +15,8 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		"ImageAvatar"
-		{
+		
+		"ImageAvatar" {
 			"ControlName"		"ImagePanel"
 			"fieldName"		"ImageAvatar"
 			"xpos"		"16"
@@ -34,8 +32,8 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		"NotificationClickPanel"
-		{
+		
+		"NotificationClickPanel" {
 			"ControlName"		"CNotificationClickPanel"
 			"fieldName"		"NotificationClickPanel"
 			"xpos"		"0"
@@ -50,8 +48,8 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		"LabelGroup"
-		{
+		
+		"LabelGroup" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelGroup"
 			"xpos"		"64"
@@ -69,8 +67,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelInfo"
-		{
+		
+		"LabelInfo" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelInfo"
 			"xpos"		"64"
@@ -88,8 +86,8 @@
 			"wrap"		"0"
 			"font"		FriendsSmall
 		}
-		"LabelEventTitle"
-		{
+		
+		"LabelEventTitle" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelEventTitle"
 			"xpos"		"64"
@@ -107,8 +105,8 @@
 			"wrap"		"1"
 			"font"		FriendsSmall
 		}
-		"DarkenedRegion"
-		{
+		
+		"DarkenedRegion" {
 			"controlname"	"imagepanel"
 			"fieldname"		"DarkenedRegion"
 			"xpos"		"0"
@@ -118,8 +116,8 @@
 			"fillcolor"	"Black"
 			"zpos"		"-1"
 		}
-		"LabelHotkey"
-		{
+		
+		"LabelHotkey" {
 			"ControlName"		"Label"
 			"fieldName"		"LabelHotkey"
 			"xpos"		"0"
