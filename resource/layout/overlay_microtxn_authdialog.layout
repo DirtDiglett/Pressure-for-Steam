@@ -80,7 +80,7 @@
 			control=BalanceDescLabel,BalanceLabel 
 			dir=left 
 			y=6 
-			margin-right=100 
+			margin-right=75
 			align=right 
 			spacing=10 
 		}
