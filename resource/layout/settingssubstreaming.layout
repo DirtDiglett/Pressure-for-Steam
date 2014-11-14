@@ -1,0 +1,117 @@
+"resource/layout/settingssubstreaming.layout" {
+	styles {}
+
+	layout {
+		place {
+			control="AdvancedHostOptions,AdvancedClientOptions"
+			height=24
+		}
+		
+		place {
+			control=DescriptionLabel
+			dir=down
+			width=max
+			x=18 
+			y=21
+			margin-right=43
+		}
+		
+		place {
+			control=RemoteClientList
+			start=DescriptionLabel
+			dir=down
+			width=max
+			y=8
+			margin-right=43
+		}
+		
+		place {
+			control=EnableStreaming
+			start=RemoteClientList
+			dir=down
+			width=max
+			y=8
+			
+		}
+
+		place {
+			control=HostDivider
+			start=EnableStreaming
+			dir=down
+			width=max
+			y=16
+			margin-right=43
+		}
+		
+		place {
+			control=HostLabel
+			start=HostDivider
+			dir=down
+			width=max
+			y=16
+		}
+		
+		place {
+			control=UnsupportedPlatform
+			start=HostLabel
+			dir=down
+			width=max
+			y=8
+		}
+		
+		place {
+			control=AdvancedHostOptions
+			start=HostLabel
+			dir=down
+			width=340
+			y=16
+		}
+		
+		place {
+			control=ClientDivider
+			start=AdvancedHostOptions
+			dir=down
+			width=max
+			y=16
+			margin-right=43
+		}
+		
+		place {
+			control=ClientLabel
+			start=ClientDivider
+			dir=down
+			width=max
+			y=16
+		}
+
+		place {
+			control=QualityFast
+			start=ClientLabel
+			dir=down
+			y=8
+		}
+		
+		place {
+			control="QualityBalanced,QualityBeautiful"
+			start=QualityFast
+			dir=right
+			spacing=16
+		}
+
+		place {
+			control=AdvancedClientOptions
+			start=QualityFast
+			dir=down
+			width=340
+			height=28
+			y=16	
+		}
+
+		place {
+			control=SupportInformationLabel
+			dir=down
+			start=AdvancedClientOptions
+			y=16
+		}		
+	}
+}

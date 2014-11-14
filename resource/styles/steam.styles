@@ -532,7 +532,7 @@ styles {
 		padding=8
       
 		render_bg {
-					0="gradient(x0, y0, x1, y1, grey, darkGreyEnd)"
+					0="gradient(x0, y0, x1, y1, grey, lightGreyEnd)"
 					1="fill(x0, y0, x0+1, y1, darkGreyEnd)" // Left
 					2="fill(x1-1, y0, x1, y1, darkGreyEnd)" // Right
 					3="fill(x0, y0, x1, y0+1, darkGreyEnd)" // Top
@@ -914,6 +914,14 @@ styles {
 	}
 	
 	CChooseBetaDialog {
+		render_bg {
+				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
+				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
+		}
+	}
+	
+	CValidateContactEmailWizard {
 		render_bg {
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"

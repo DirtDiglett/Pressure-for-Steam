@@ -1,0 +1,146 @@
+"resource/layout/subpaneloptionsingame.layout" {
+	
+	styles {
+		Page {
+			render_bg {
+				0="fill(x0+18,y0+305,x1-43,y0+306, black65)"
+				1="fill(x0+18,y0+306,x1-43,y0+307, grey50)"
+			}
+		}
+	}
+	
+	layout {
+		place {
+			controls=DescriptionLabel
+			width=max
+			dir=down
+			spacing=8
+			x=18 
+			y=21
+			margin-right=43
+		}
+		
+		place {
+			controls=EnableOverlayCheck
+			dir=down
+			width=max
+			start=DescriptionLabel
+			y=16
+		}
+		
+		place {
+			controls=HotKeySelectorLabel
+			dir=down
+			start=EnableOverlayCheck
+			y=32
+		}
+		
+		place {
+			controls=HotKeySelector
+			dir=down
+			width=200
+			height=24
+			start=HotKeySelectorLabel
+			y=4
+		}
+		
+		place {
+			controls=OverlayHomePageLabel
+			dir=down
+			start=EnableOverlayCheck
+			y=32
+			x=240
+		}
+		
+		place {
+			controls=OverlayHomePage
+			dir=down
+			width=200
+			height=24
+			start=OverlayHomePageLabel
+			y=4
+		}
+		
+		place {
+			control="Divider1"
+			dir=down
+			width=max
+			start=HotKeySelector
+			y=16
+			margin-right=43
+		}
+
+		place {
+			controls=ScreenshotActionLabel
+			dir=down
+			start=Divider1
+			y=16
+			x=240
+		}
+		
+		place {
+			controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
+			dir=down
+			start=ScreenshotActionLabel
+			spacing=-6
+		}
+
+		place {
+			controls=ScreenshotLabel
+			dir=down
+			start=Divider1
+			y=16
+		}
+		
+		place {
+			controls=ScreenshotHotKeySelector
+			dir=down
+			width=200
+			height=24
+			start=ScreenshotLabel
+			y=4
+		}
+		
+		place {
+			controls=SetScreenshotFolderButton
+			dir=down
+			width=200
+			height=28
+			start=ScreenshotHotKeySelector
+			y=16
+		}
+
+		place {
+			controls="PingRateLabel"
+			dir=down
+			width=max
+			start=SetScreenshotFolderButton
+			y=34
+		}
+		
+		place {
+			controls="PingRateCombo"
+			dir=down
+			width=200
+			height=28
+			start=PingRateLabel
+			y=4
+		}
+		
+		place {
+			controls="PingRateInfo"
+			dir=down
+			width=max
+			height=100
+			margin-right=43
+			y=16
+			start="PingRateCombo"
+		}
+
+		place {
+			control="TitleLabel"
+			height=0
+			width=0
+		}			
+	}
+}

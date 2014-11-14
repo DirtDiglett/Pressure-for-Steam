@@ -1,0 +1,134 @@
+"resource/layout/subpaneloptionsdownloads.layout" {
+	controls {}
+	
+	layout {
+		place {
+			controls="ManageInstalledappsLabel"
+			dir=down
+			width=max
+			y=25
+			x=18
+		}
+
+		place {
+			controls="ManageInstalledApps"
+			dir=down
+			width=340
+			height=28
+			start=ManageInstalledappsLabel
+			y=4
+		}
+		
+		place {
+			control="Divider1"
+			dir=down
+			width=max
+			start=ManageInstalledApps
+			y=16
+			margin-right=43
+		}
+
+		place {
+			controls="RegionLabel"
+			dir=down
+			start=Divider1
+			y=16
+		}
+		
+		place {
+			controls="RegionInfoLabel"
+			dir=down
+			width=max
+			start=RegionLabel
+			y=8
+		}
+		
+		place {
+			controls="DownloadRegionCombo"
+			dir=down
+			width=340
+			height=28
+			start=RegionInfoLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control="Divider2"
+			dir=down
+			width=max
+			start=DownloadRegionCombo
+			y=16
+		}
+
+		place {
+			controls="RestrictionsLabel"
+			dir=down
+			start=Divider2
+			y=16
+		}
+		
+		place {
+			control=ThrottleRatesLabel
+			dir=down
+			start="RestrictionsLabel"
+			y=8
+		}
+		
+		place {
+			controls="ThrottleRates"
+			dir=down
+			width=340
+			height=28
+			start=ThrottleRatesLabel
+			y=4
+		}
+
+		place {
+			controls="AllowDownloadsDuringGameplayCheckbox,AutoUpdateTimeRestrictCheckbox"
+			dir=down
+			start=ThrottleRates
+			y=16
+			spacing=-4
+		}
+
+		place {
+			controls="AutoUpdateTimeRestrictStartLabel"
+			dir=down
+			start=AutoUpdateTimeRestrictCheckbox
+			y=8
+		}
+		
+		place {
+			controls="AutoUpdateTimeRestrictStart"
+			dir=down
+			width=120
+			height=28
+			start=AutoUpdateTimeRestrictStartLabel
+			y=4
+		}
+
+		place {
+			controls="AutoUpdateTimeRestrictEndLabel"
+			dir=down
+			start=AutoUpdateTimeRestrictCheckbox
+			x=160
+			y=8
+		}
+		
+		place {
+			controls="AutoUpdateTimeRestrictEnd"
+			dir=down
+			width=120
+			height=28
+			start=AutoUpdateTimeRestrictEndLabel
+			y=4
+		}
+
+		place {
+			control="LibrariesLabel,AllowDownloadsDuringGameplayInfo"
+			height=0
+			width=0
+		}
+	}
+}

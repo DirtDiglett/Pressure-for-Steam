@@ -517,13 +517,14 @@
 		}
 		
 		place {
-			control="ChangeContactEmailButton"
+			control="ValidateContactEmailButton,ChangeContactEmailButton"
 			start="NoPersonalInfoCheck"
 			dir=down
 			y=8
 			margin-right=32
 			height=28
 			width=340
+			spacing=8
 		}
 		
 		place {
@@ -555,8 +556,8 @@
 		place { 
 			control="Label2"  
 			dir=down 
-			y=196
-			x=18
+			start=SecurityIcon
+			y=4
 		}
 		
 		place {
@@ -568,8 +569,8 @@
 		
 		place { 
 			control="ChangeUserButton,ManageSecurityButton,ChangePasswordButton" 
-			x=18
-			y=228 
+			y=24
+			start="Label2" 
 			height=28 
 			width=340 // Matches default steam so should cover all other languages too
 			dir=down 
