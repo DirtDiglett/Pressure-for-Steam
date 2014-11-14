@@ -501,8 +501,8 @@
 		place {
 			control="AccountLink"
 			align=right
-			y=32
-			margin-right=32
+			y=21
+			margin-right=43
 		}
 		
 		place { 
@@ -510,16 +510,17 @@
 			dir=down 
 			align=left
 			width=max 
-			x=32 
-			y=32
+			x=18 
+			y=21
 			spacing=8 
 			margin-right=32
 		}
 		
 		place {
 			control="ChangeContactEmailButton"
-			y=114
-			x=32
+			start="NoPersonalInfoCheck"
+			dir=down
+			y=8
 			margin-right=32
 			height=28
 			width=340
@@ -527,22 +528,20 @@
 		
 		place {
 			control="Divider1"
-			y=158
+			start="ChangeContactEmailButton"
+			dir=down
+			y=16
 			align=left
 			width=max
 			height=1
-			x=32
-			margin-right=32
+			margin-right=43
 		}
-		
 		
 		place {
 			control="SecurityIcon"
-			y=174
-			x=32
-			align=left
-			dir=right
-			spacing=4
+			start="Divider1"
+			y=16
+			dir=down
 		}
 		
 		place {
@@ -551,23 +550,26 @@
 			y=6
 			x=4
 			width=max
-			margin-right=32
 		}
 		
 		place { 
-			control="Label2, VACStatusLabel" 
-			x=32
-			y=208 
-			width=max 
-			dir=right 
-			margin-right=32
-			spacing=16
+			control="Label2"  
+			dir=down 
+			y=196
+			x=18
+		}
+		
+		place {
+			control="VACStatusLabel"
+			start="Label2"
+			dir=right
+			x=6
 		}
 		
 		place { 
 			control="ChangeUserButton,ManageSecurityButton,ChangePasswordButton" 
-			x=32
-			y=254 
+			x=18
+			y=228 
 			height=28 
 			width=340 // Matches default steam so should cover all other languages too
 			dir=down 
@@ -579,7 +581,7 @@
 			start="ChangePasswordButton"
 			y=16
 			width=max
-			margin-right=32
+			margin-right=43
 			align=left
 			height=1
 			dir=down
@@ -591,14 +593,15 @@
 			y=16
 			dir=down 
 			width=max 
-			margin-right=32
+			margin-right=43
 			spacing=8
 		}
 		
 		place {
 			control="ChangeBetaButton"
 			start="CurrentBetaLabel"
-			y=8
+			y=16
+			height=28
 			width=340
 			dir=down
 		}
@@ -608,7 +611,7 @@
 			start="ChangeBetaButton"
 			dir=down
 			y=8
-			margin-right=32
+			margin-right=43
 		}
 		
 		// NULL ZONE
