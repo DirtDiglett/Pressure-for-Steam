@@ -1,0 +1,157 @@
+"resource/layout/settingssubmusic.layout" {
+	
+	layout {
+		place {
+			control=LibraryHeader
+			dir=down
+			x=18 
+			y=21
+			width=max
+			margin-right=43	
+		}
+		
+		place {
+			control=LibraryList
+			dir=down
+			width=max
+			height=80
+			start=LibraryHeader
+			margin-right=43
+			y=4
+		}
+
+		place {
+			control=AddLibraryButton
+			dir=down
+			width=90
+			start=LibraryList
+			y=8
+		}
+		
+		place {
+			control=RemoveLibraryButton,StartCrawlingButton
+			dir=right
+			width=90
+			start=AddLibraryButton
+			x=8
+			spacing=8	
+		}
+
+		place {
+			control=LibraryDivider
+			dir=down
+			width=max
+			start=AddLibraryButton
+			y=16
+			margin-right=43
+		}
+
+		place {
+			control=DatabaseInfoLabel
+			dir=down
+			start=LibraryDivider
+			y=16
+		}
+		
+		place {
+			control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders,EnableMediaKeysCheckbox
+			dir=down
+			start=DatabaseInfoLabel
+			y=8
+			spacing=-4
+		}
+		
+		place {
+			control=ResetDatabaseButton
+			dir=down
+			start=EnableMediaKeysCheckbox
+			width=340
+			y=8
+		}
+
+		place {
+			control=DatabaseDivider
+			dir=down
+			width=max
+			start=ResetDatabaseButton
+			margin-right=43
+			y=16
+		}
+
+		place {
+			control=VolumeHeader
+			dir=down
+			y=16
+			start=DatabaseDivider
+		}
+		
+		place {
+			control=VolumeSlider
+			dir=right
+			start=VolumeHeader
+			width=200
+			x=16
+			y=-3
+		}
+
+		place {
+			control=VolumeDivider
+			dir=down
+			width=max
+			start=VolumeHeader
+			margin-right=43
+			y=16
+		}
+
+
+		place {
+			control=PauseMusicHeader
+			dir=down
+			start=VolumeDivider
+			y=16
+		}
+			
+		place {
+			control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox
+			dir=down
+			start=PauseMusicHeader
+			y=0
+			spacing=-4
+		}
+		
+		place {
+			control=NotificationHeader
+			dir=down
+			start=PauseMusicWhenVoiceChatCheckbox
+			y=16
+		}
+		
+		place {
+			control=NotificationPlaylistNowPlayingCheckbox
+			dir=down
+			start=NotificationHeader
+			y=0
+		}
+
+		place {
+			control=LoggingHeader
+			dir=down
+			x=240
+			start=VolumeDivider
+			y=16
+		}
+		
+		place {
+			control=LoggingCrawlingCheckbox
+			dir=down
+			start=LoggingHeader
+			y=0
+		}
+
+		place {
+			control=DatabaseHeader
+			height=0
+			width=0
+		}
+	}
+}
