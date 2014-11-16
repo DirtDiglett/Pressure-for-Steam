@@ -2081,7 +2081,7 @@
 			control="library_filters"
 			dir=right
 			x=100
-			y=47
+			y=48
 			align=top-center
 			margin-right=200
 			height=25
