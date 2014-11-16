@@ -7,6 +7,37 @@
 			margin-right=6 
 			spacing=-9 
 		}
+
+		place {
+			control=Label1
+			x=32
+			y=53
+			width=max
+			margin-right=32
+		}
+
+		place {
+			control="ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus"
+			start="Label1"
+			y=4
+			spacing=-4
+			dir=down
+		}
+
+		place {
+			control="Label2"
+			start=ShowAppearOfflineStatus
+			y=16
+			dir=down
+		}
+
+		place {
+			controls="ShowStore,ShowMyGames,ShowCommunity,ShowFriendActivity,ShowFriends,ShowMusicPlayer,ShowScreenshots,ShowServers,ShowSettings,ShowBigPicture,ShowExit"
+			dir=down
+			start=Label2
+			y=4
+			spacing=-4
+		}
 		
 		region {
 			name="bottom"
