@@ -585,7 +585,16 @@
 			height=24 
 			width=max 
 			start="StopButton" 
-			margin-right=9 }
+			margin-right=9 
+		}
+		
+		place { 
+			control="URLStatusImage" 
+			align=right
+			y=36
+			height=38 
+			margin-right=19 
+		}
 		
 		///// Null Zone /////
 
