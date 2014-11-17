@@ -1,7 +1,7 @@
 "scrollbars.styles" { 
 	
 	colors {
-    	ScrollBar.Wide          11 //19 (11 Seems to make it more akin to iOS Scrollbars)
+    	ScrollBar.Wide          16 //19 (11 Seems to make it more akin to iOS Scrollbars)
 	}
 	
 	styles {
