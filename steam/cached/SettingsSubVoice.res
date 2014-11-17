@@ -70,6 +70,7 @@
 			dir=down
 			start=TestMicrophone
 			y=8
+			height=25
 		}
 		
 		place {
@@ -77,19 +78,21 @@
 			dir=down
 			start=TestMicrophone
 			y=8
+			height=25
 		}
 		
 		place {
 			control="MicBoost"
-			dir=down
+			dir=right
 			start=MicMeter
-			y=8
+			y=-2
+			x=8
 		}
 
 		place {
 			control="Divider2"
 			dir=down
-			start=MicBoost
+			start=MicMeter
 			y=16
 			width=max
 			margin-right=43
