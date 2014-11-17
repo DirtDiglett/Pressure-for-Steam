@@ -529,7 +529,7 @@
     }
 		
 		"Page ListPanelInterior:scrollbar" {
-			inset="10 10 10 10"
+			inset="5 0 0 0"
 			bgcolor=darkestGrey
 			selectedbgcolor="blue"
 			selectedtextcolor="red" //test
