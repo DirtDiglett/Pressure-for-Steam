@@ -31,6 +31,7 @@
 		place { 
 			control="OKButton,CancelButton" 
 			region=bottom
+			align=right
 			width=92 
 			height=24
 			spacing=8
