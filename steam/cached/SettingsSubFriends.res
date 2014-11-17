@@ -54,8 +54,17 @@
 		}
 		
 		place {
-			control="AutoSignIntoFriendsCheck,ShowTimeInChatLogCheck,AlwaysNewChatCheck"
+			control="Divider2"
+			dir=down
 			start=ImageAvatarOverlay
+			y=16
+			width=max
+			margin-right=43
+		}
+		
+		place {
+			control="AutoSignIntoFriendsCheck,ShowTimeInChatLogCheck,AlwaysNewChatCheck"
+			start=Divider2
 			dir=down
 			y=16	
 			spacing=-6
@@ -117,18 +126,9 @@
 		}
 		
 		place {
-			control="Divider2"
-			dir=down
-			start=ReceiveMessagePlaySoundCheck
-			y=16
-			width=max
-			margin-right=43
-		}
-
-		place {
 			control="Label7"
 			dir=down
-			start=Divider2
+			start=JoinGamePlaySoundCheck
 			y=16
 		}
 		
