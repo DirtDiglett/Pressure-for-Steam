@@ -479,7 +479,7 @@
 			y=174
 			height=max
 			width=max
-			margin-right=-10
+			margin-right=-15
 			overflow=allow-vertical
 		}
 
