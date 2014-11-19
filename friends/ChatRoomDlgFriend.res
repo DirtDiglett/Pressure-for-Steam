@@ -60,6 +60,8 @@
 			"ControlName"		"CEmoticonButton"
 		}
 	}	
+	
+	colors {}
 
 	styles {
 		
@@ -152,24 +154,6 @@
 				12="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
 			}
 		}
-			
-		button {
-			textcolor="none"
-			font-style="none"
-			
-			render {
-				0="image(x0+3,y0+7,x1,y1, graphics/send_button)"
-			}
-		}
-			
-			button:active {
-				textcolor="none"
-				font-style="none"
-				
-				render {
-					0="image(x0+3,y0+7,x1,y1, graphics/send_button_active)"
-				}
-			}
 			
 		// Used for the status label on the chat only
 		label {
@@ -569,7 +553,7 @@
 			align=right
 			
 			height=40 
-			width=40 
+			width=50
 			
 			margin-left=8
 			margin-right=8

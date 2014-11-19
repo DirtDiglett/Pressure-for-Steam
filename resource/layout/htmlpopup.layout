@@ -591,9 +591,9 @@
 		place { 
 			control="URLStatusImage" 
 			align=right
-			y=36
+			y=26
 			height=38 
-			margin-right=19 
+			margin-right=10 
 		}
 		
 		///// Null Zone /////
