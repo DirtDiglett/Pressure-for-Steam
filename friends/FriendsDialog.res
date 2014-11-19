@@ -192,11 +192,6 @@
 				
 				11="fill(x0+1, y0+126, x1-1, y0+127, darkestGrey)"
 				
-				// Search Input Background
-				12="image_tiled(x0+155,y0+94,x0+275,y0+119, graphics/search/inner)"
-				13="image(x0+155, y0+94, x0+177, y0+119, graphics/search/left)"
-				14="image(x0+275, y0+94, x0+287, y0+119, graphics/search/right)"
-				
 				// Background for the pageTabs
 				15="fill(x0+7,y0+94,x0+146,y0+118, darkestGrey)"// Top->Bottom
 				16="fill(x0+6,y0+95,x0+7,y0+117, darkestGrey)" // Left
@@ -242,11 +237,6 @@
 					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
 					
 					11="fill(x0+1, y0+125, x1-1, y0+126, darkestGrey)"
-					
-					// Search Input Background
-					12="image_tiled(x0+155,y0+94,x0+275,y0+119, graphics/search/inner)"
-					13="image(x0+155, y0+94, x0+177, y0+119, graphics/search/left)"
-					14="image(x0+275, y0+94, x0+287, y0+119, graphics/search/right)"
 					
 					// Background for the pageTabs
 					15="fill(x0+7,y0+94,x0+146,y0+118, darkestGrey)"// Top->Bottom
@@ -440,52 +430,97 @@
 				}
 			}		
 		
+		
 		FriendsSearch [!$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
-			textcolor="darkestGrey"	
-			bgcolor=none
-			padding-left=2
-			selectedbgcolor="blue"
+			textcolor="darkestGrey"
+			padding-left=4
+			padding-right=20
+			inset-left=0
+			minimum-width=110
 			
-			render {}	
-			render_bg {}
+			render_bg {
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
+				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+			}
 		}
+
 		
 		FriendsSearch [$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
-			textcolor="darkestGrey"	
-			bgcolor=none
-			selectedbgcolor="blue"
+			textcolor="darkestGrey"
+			inset-left=0
+			minimum-width=110
 			
-			render {}	
-			render_bg {}
+			//bgcolor=red
+			
+			render_bg {
+				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/left)"
+				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/right)"
+				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/inner)"
+			}
 		}
 		
-			FriendsSearch:empty {
-				font-family=basefont
-				font-style=italic
-				textcolor="lightestGrey"
-			}
+		// Typed in, as well as hovered.
+		
+		FriendsSearch:hover [!$OSX] {
+			textcolor="darkGreyEnd"
+			padding-left=4
+		}
+
+		FriendsSearch:hover [$OSX] {
+			textcolor="darkGreyEnd"
+			padding-left=0	
 			
-			FriendsSearch:hover {	
-				textcolor="darkGreyEnd"	
-			}
-			
-			FriendsSearch:empty:hover {
-				font-family=basefont
+		}
+		
+		// Default State when nothing in it.
+		
+		FriendsSearch:empty [!$OSX] {
+			font-family=basefont
+			font-style=italic
+			textcolor="lightestGrey"
+			padding-left=4	
+		}
+		
+		FriendsSearch:empty [$OSX] {
+			font-family=basefont
+			font-style=italic
+			textcolor="lightestGrey"
+			padding-left=0	
+		}
+		
+		FriendsSearch:empty:hover [!$OSX] {
 				font-style=italic
 				textcolor="lightGreyEnd"
-			}
-				
-			FriendsSearch:disabled {
-				font-family=basefont
+				padding-left=4
+		}
+			
+		FriendsSearch:empty:hover [$OSX] {
 				font-style=italic
-				textcolor="None"	
-			}
+				textcolor="lightGreyEnd"
+				padding-left=0
+				
+		}
+
+		FriendsSearch:disabled [!$OSX] {
+			font-family=basefont
+			font-style=italic
+			textcolor="None"
+			padding-left=4
+		}
+			
+		FriendsSearch:disabled [$OSX] {
+			font-family=basefont
+			font-style=italic
+			textcolor="None"
+			padding-left=0
+		}
 			
 		// Used as an overlay to round off the buttons
 		FriendsSearchIcon {
@@ -579,7 +614,7 @@
 		place { 
 			control="friends_search" 
 			dir=right 
-			margin-left=167 
+			margin-left=170 
 			y=95 
 			width=117 
 			height=25 
