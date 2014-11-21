@@ -10,6 +10,14 @@
 	}	
 	
 	styles {
+		URLLabel {
+			textcolor="22 117 141 255"
+		}
+		
+			URLLabel:hover {
+				textcolor=lightestBlue
+			}
+		
 		CGamesListPanel {
 			render {
 				0="gradient(x0,y0+18,x1,y0+24, black40, none)"
