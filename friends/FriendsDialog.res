@@ -667,9 +667,10 @@
 		
 		place {
 			control="NoFriendsAddFriendButton"
-			margin-top=165
-			margin-left=8
-			width=120
+			margin-top=94
+			margin-left=6
+			width=141
+			height=24
 		}
  	}
 }
