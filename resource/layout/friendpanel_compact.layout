@@ -20,6 +20,10 @@
 			style="inviteLinkStyle"
 		}
 	}
+	
+	colors {
+		Friends.OfflineColor      "greyHighlight"
+	}
 
 	styles {
 		CFriendPanel:selected {

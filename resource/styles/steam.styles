@@ -20,7 +20,7 @@ colors {
 		// Friends List colors (Having them in an include seems to break it)
 	    Friends.InGameColor       "green"
 	    Friends.OnlineColor       "blue"
-	    Friends.OfflineColor      "greyHighlight"
+	    Friends.OfflineColor      "white"
 	    Friends.PanelDefault      "Label"
 	    Friends.PanelOver       "Text"
 	    Friends.PanelSelected     "ClientBG"
