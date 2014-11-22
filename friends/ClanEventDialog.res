@@ -159,6 +159,15 @@
 			dir=down
 		}
 		
+		place {
+			control="LabelEventTitle"
+			start=LabelInfo
+			dir=down
+			height=33
+			width=max
+			margin-right=8
+		}
+		
 		
 		region {
 			name=bottom
