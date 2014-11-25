@@ -1,97 +1,69 @@
 "resource/layout/overlay_communityhubpanel.layout" {
-	controls {
-		CommunityHubDetailPanel { 
-			controlname="COverlay_Details_CommunityHub_Panel" 
-			style=detailsbox
-		}
-		
-		TitleText { 
-			controlname="label" 
-			labeltext="#Overlay_CommunityHub_Panel_Title" 
-			style=detailsboxtitle 
-		}
-		
-		NumContributionsText {
-			controlname="label"
-			labeltext="#Overlay_CommunityHub_Panel_NumContributions"
-			style=highlight
-		}
-
-		ViewCommunityHub {
-			controlname="Button"
-			labeltext="#Overlay_View_CommunityHub"
-			command="viewcommunityhub"
-		}
-	}
+	controls {}
 	
-	colors {}	
+	colors {
+		lightestBlue="137 235 255 255"
+	}	
 	
 	styles {
 		button {
+			font-size=14
+			font-family=basefont
+			
+			inset-left=0
+			padding-left=24
+			padding-top=0
+			padding-bottom=15
+			
 			textcolor=blue
-			font-size=13
-			font-style=regular
 			
-			padding=0
-			
-			render {}
-			render_bg {}
+			render_bg {
+			//	0="fill(x0,y0,x1,y1, orange)"
+				1="image(x0,y0,x0+26,y1, graphics/overlay/communityhub)"
+			}
 		}
 		
 			button:hover {
 				textcolor=lightestBlue
 				
-				render{}
-				render_bg {}
+				render_bg {
+					1="image(x0,y0,x0+26,y1, graphics/overlay/communityhub_hover)"
+				}				
 			}
 
-
-		detailsboxtitle [$OSX] {
-			textcolor=none
-			image=graphics/overlay/communityhub
-			inset="15 7 0 0"
-		}
-
-		detailsboxtitle [!$OSX] {
-			textcolor=none
-			image=graphics/overlay/communityhub
-			inset="15 9 0 0"
-		}
-
-		DarkRegion {
-			//bgcolor="40 40 40 255"
-		}
+		DarkRegion {}
 
 		PreviewImage {}
 
-
 		highlight {
-			textcolor=none
+			textcolor=lightestGreyHighlight
+			font-size=12
 		}
 	}
 	
 	layout {
-		region { 
-			name=title
-			width=max 
-			height=100 
+		region {
+			name=box
+			width=max
+			height=max
 		}
 		
 		place {
-			control="NumContributionsText"
-			region=title
-			y=40
-			width=0
-			height=0
+			controls=ViewCommunityHub
+			region=box
+			y=0
+			x=0
+			width=190
 		}
-
-		place { 
-			control="TitleText,ViewCommunityHub" 
-			region="title"
-			align=left
-			dir=right 
-			spacing=-5
-			y=55
+		
+		place {
+			controls=NumContributionsText
+			start=ViewCommunityHub
+			dir=down
+			y=-14
+			x=30
 		}
+		
+		place { control="TitleText" width=0 height=0}
 	}
 }

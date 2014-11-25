@@ -1,90 +1,70 @@
 "resource/layout/overlay_guidespanel.layout" {
-	controls {
-		GuidesDetailPanel { 
-			controlname="COverlay_Details_Guides_Panel" 
-			style=detailsbox
-		}
-		
-		TitleText { 
-			controlname="label" 
-			labeltext="#Overlay_Guides_Panel_Title" 
-			style=detailsboxtitle 
-		}
-		
-		NumGuidesText { 
-			controlname="label" 
-			labeltext="#Overlay_Guides_Panel_NumGuides" 
-			style=highlight 
-		}
-
-		ViewGuides { 
-			controlname="Button" 
-			labeltext="#Overlay_View_Guides" 
-			command="viewguides" 
-		}
-	}
+	controls {}
 	
-	colors {}	
+	colors {
+		lightestBlue="137 235 255 255"
+	}		
 	
 	styles {
-		PreviewImage {}
-
 		button {
+			font-size=14
+			font-family=basefont
+			
+			inset-left=0
+			padding-left=24
+			padding-top=0
+			padding-bottom=15
+			
 			textcolor=blue
-			font-size=13
-			font-style=regular
 			
-			padding=0
-			padding-right=10
-			
-			render {}
-			render_bg {}
+			render_bg {
+				//0="fill(x0,y0,x1,y1, orange)"
+				1="image(x0,y0,x0+26,y1, graphics/overlay/guides)"
+			}
 		}
 		
 			button:hover {
 				textcolor=lightestBlue
 				
-				render{}
-				render_bg {}
+				render_bg {
+					1="image(x0,y0,x0+26,y1, graphics/overlay/guides_hover)"
+				}
 			}
 		
-
-		highlight [$OSX] {
-			textcolor=none
-			image=graphics/overlay/guides
-			inset="10 7 0 0"
-		}
-		
-		highlight [!$OSX] {
-			textcolor=none
-			image=graphics/overlay/guides
-			inset="10 9 0 0"
+		highlight {
+			textcolor=lightestGreyHighlight
+			font-size=12
 		}
 	}
 	
 	layout {
-		region { 
-			name=title 
-			width=max 
-			height=100 
+		region {
+			name=box
+			width=max
+			height=max
 		}
 		
-		place { 
+		place {
+			controls=ViewGuides
 			region=box
-			control=*guideitem,TitleText
-			y=70
+			y=0
 			x=0
+			width=max
+		}
+		
+		place {
+			controls=NumGuidesText
+			start=ViewGuides
+			dir=down
+			y=-14
+			x=30
+		}
+		
+		
+		place {
+			control="TitleText,*guideitem"
 			width=0
 			height=0
-		}
-
-		place { 
-			control="NumGuidesText,ViewGuides" 
-			region="title" 
-			align=left 
-			dir=right
-			spacing=-5
-			y=55
 		}
 	}
 }

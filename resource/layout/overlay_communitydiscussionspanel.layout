@@ -1,4 +1,4 @@
-"resource/layout/overlay_screenshotspanel.layout" {
+"resource/layout/overlay_communitydiscussionspanel.layout" {
 	controls {}
 	
 	colors {
@@ -18,18 +18,18 @@
 			textcolor=blue
 			
 			render_bg {
-				0="image(x0,y0,x0+26,y1, graphics/overlay/screenshots)"
+				//0="fill(x0,y0,x1,y1, orange)"
+				1="image(x0,y0,x0+26,y1, graphics/overlay/discussions)"
 			}
 		}
 		
 			button:hover {
 				textcolor=lightestBlue
 				
-				render {
-					1="image(x0,y0,x0+26,y1, graphics/overlay/screenshots_hover)"
+				render_bg {
+					//0="fill(x0,y0,x1,y1, orange)"
+					1="image(x0,y0,x0+26,y1, graphics/overlay/discussions_hover)"
 				}
-				
-				render_bg {}
 			}
 		
 		highlight {
@@ -46,7 +46,7 @@
 		}
 		
 		place {
-			controls=ViewScreenshots
+			controls=ViewCommunityDiscussions
 			region=box
 			y=0
 			x=0
@@ -54,8 +54,8 @@
 		}
 		
 		place {
-			controls=InstructionText
-			start=ViewScreenshots
+			controls=NumDiscussionsText
+			start=ViewCommunityDiscussions
 			dir=down
 			y=-14
 			x=30
@@ -63,7 +63,7 @@
 		
 		
 		place {
-			control="TitleText,SetShortcut"
+			control="TitleText"
 			width=0
 			height=0
 		}

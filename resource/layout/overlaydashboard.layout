@@ -1,131 +1,58 @@
 "resource/layout/overlaydashboard.layout" {
-	controls {
-		BaseDashboardPanel { 
-			controlname="EditablePanel" 
-			style="overlaymain"	
-		}
-		
-		TaskbarPanel { 
-			controlname="EditablePanel" 
-		}
-		
-		TopFadePanel {
-			controlname="EditablePanel"
-			style=topfade
-			zpos=-1
-			mouseinputenabled=0
-		}
-		
-		BottomFadePanel {
-			controlname="EditablePanel"
-			style=bottomfade
-			zpos=-1
-		}		
-		
-		Clock {
-			controlname="Label"
-			labeltext="10:43"
-			style=topbar
-		}
-		
-		ClockSuffix {
-			controlname="Label"
-			labeltext="am"
-			style=clocksuffix
-		}
-		
-		GameName {
-			controlname="Label"
-			labeltext="%gamename%"
-			style=topbar
-			textalignment=west
-		}
-		
-		PowerMeterDim {
-			controlname=	"ImagePanel"
-			image=			"resource/battery_dim"
-		}
-		
-		PowerMeterBright {
-			controlname=	"ImagePanel"
-			image=			"resource/battery_bright"
-		}		
-		
-		CloseButton	{ 
-			controlname="URLLabel" 
-			labeltext="#Overlay_Taskbar_Close" 
-			style="OverlayURLLabel"
-		}
-		
-		HotkeyLabel { 
-			controlname="Label" 
-			labeltext="%hotkey%" 
-			style="hotkey" 
-		}
-			
-		HotkeyExplain { 
-			controlname="Label" 
-			labeltext="#Overlay_Hotkey_Explain" 
-			margin-left=4 
-			style="LabelOverlay"
-		}
-		
-		SessionText { 
-			controlname=label 
-			style=TimeStrings 
-			labeltext="#Overlay_Playtime_Session" 
-		}
-		
-		TwoWeeksText { 
-			controlname=label 
-			style=TimeStrings 
-		}
-		
-		ForeverText { 
-			controlname=label 
-			style=TimeStrings 
-		}
-	}
+	controls {}
 	
-	colors {
-		backgroundOverlayTop="0 0 0 0"
-	}
+	colors {}
 	
 	styles {
-		hotkey {
-			font-size=14
-			font-style=none
-			textcolor=red
-		}
-		
-		// Emptied.
 		topfade {
 			render_bg {
-				0="fill(x0,y0,x1,y0+100, black75)"
+				0="fill( x0, y0, x1, y1, black75)"
 			}
 		}
 		
-		// Emptied.
-		bottomfade {}	
+		bottomfade {
+			render_bg {
+				0="fill( x0, y0, x1, y1, black75)"
+			}
+		}	
 		
 		overlaymain {
-			bgcolor = black40
-		}	
+			render_bg {
+				0="fill(x0,y0+112,x1,y1-146, black40)"
+			}
+		}
+		
+		hotkey {
+			font-size=14
+			font-style=none
+			textcolor=none
+		}
 		
 		clocksuffix {
 			font-family=headerfont
-			font-size=42			
+			font-size=48			
 			textcolor=white
+			
+			render_bg {
+			//	0="fill(x0,y0,x1,y1, orange)"
+			}
 		}
 		
 		// The game's name
 		topbar {
 			font-family=headerfont
-			font-size=42			
+			font-size=48			
 			textcolor=white
+			
+			render_bg {
+			//	0="fill(x0,y0,x1,y1, red)"
+			}
 		}
 		
-		
+		detailsboxtitle {
+				textcolor=red
+		}
+				
 		// Close button		
 		OverlayURLLabel {
 			image=graphics/overlay/close
@@ -136,159 +63,115 @@
 			}
 		
 		LabelOverlay {
-			font-size=14
-			textcolor=orange
+			image=graphics/overlay/browsersettingsmusic
 		}
 		
 		timeStrings {
-			font-size=13
-			textcolor=grey
+			font-size=14
+			textcolor=greyHighlight
 			font-family=basefont
 		}
 	}
 	
 	layout {
-		region { 
-			name=overlay 
-			width=max 
-			align=top-center 
-			margin-top=10 
-			margin-bottom=10 
-		}
-	
-		region { 
-			name="left" 
-			region=overlay 
-			width=800 
-			height=100 
-			margin-top=10 
-			align=left 
-			margin-left=30
-		}
-		
-		region { 
-			name="mid" 
-			region=overlay 
-			width=250 
-			height=100 
-			margin-top=20 
-			align=top-center 
-		}
-		
-		region { 
-			name="right" 
-			region=overlay 
-			width=230 
-			height=100 
-			margin-top=10
-			align=right 
-			margin-right=30
-		}
-		
 		place { 
-			controls="gamename" 
-			region=left 
-			align=left 
-			dir=left
-		}
-		
-		place { 
-			control="Clock,ClockSuffix" 
-			region=mid 
-			align=top-center
-		}
-		
-		place { 
-			control="CloseButton" 
-			region=right 
-			align=right 
-			margin-top=10
-		}
-		
-		place { 
-			control="SessionText,TwoWeeksText,ForeverText" 
-			dir=right 
-			region=left 
-			y=35
-			x=0
-			spacing=10 
-		}
-		
-		region	{ 
-			name="detailpanels" 
-			//region=overlay 
-			align=bottom 
-			width=max 
-			height=360 
-			margin-bottom=100 
-		}
-		
-		region {
-			name="topbar"
-			region=overlay
-			width="max"
-			height=50
-		}
-		
-		region {
-			name="taskbar"
-			region=overlay
-			width=700
-			height=100
-			align=top-center
-		}
-		
-		region {
-			name="above_taskbar"
-			region=overlay
-			align=bottom
-			width=max
-			height=110
-			margin-bottom=75
-		}
-		
-		region {
-			name="powermeter"
-			region=above_taskbar
-			align=right
-			width=200
-		}
-		
-		place {
 			control="TopFadePanel"
 			align=top
 			width=max
-			height=600
+			height=112
 		}
 		
 		place {
 			control="BottomFadePanel"
 			align=bottom
 			width=max
-			height=0
+			height=146
 		}
 		
-		// Get rid of the "SHIFT + TAB Closes the overlay" string.
-		place {
-			control="HotkeyLabel,HotkeyExplain"
-			region=mid
+		region {
+			name="topbar"
+			region=overlay
+			width="max"
+			height=112
 			align=top-center
-			y=0
-			height=0
-			width=0
+		}
+		
+		region {
+			name="taskbar"
+			region=overlay
+			width="max"
+			height=146
+			align=bottom
 		}
 		
 		place {
-			control="PowerMeterDim"
-			region=powermeter
-			align=right
+			controls="gamename"
+			region=topbar
+			align=left
+			y=8
+			x=16
 		}
 		
+		place {
+			control="SessionText"
+			start=gamename
+			dir=down
+			y=-8 // We want it 6 pixels lower than the game name.. but there is a default 12px bottom padding on the name I can't hide so this takes that into account
+		}
+		
+		place {
+			control=TwoWeeksText,ForeverText
+			start=SessionText
+			dir=right
+			spacing=32
+			x=32
+		}
+		
+		place {
+			control="CloseButton"
+			region=topbar
+			align=right
+			y=36
+			margin-right=39 // There is a 3px weirdness offset. This accounts for that.
+		}
+		
+		place {
+			control="Clock,ClockSuffix"
+			region=taskbar
+			align=right
+			dir=right
+			y=51 // Need to account for the weird top padding.
+			margin-right=175
+		}
+		
+		// Used for the icons 
+		place {
+			control=HotkeyExplain
+			align=right
+			region=taskbar
+			dir=right
+			margin-right=48 // There is 2 pixels on the left of the image that we need to account for
+			y=46
+		}
+	
+		region {
+			name=overlay
+			width=max
+			align=top-center
+		}
+	
 		place {
 			control="TaskbarPanel"
 			region=taskbar
-			height=64
-			width=max
+			height=145
+			align=right
+			width=480
+		}
+		
+		place {
+			control="HotkeyLabel,powermeter,PowerMeterDim"
+			height=0
+			width=0
 		}
 	}
 }
