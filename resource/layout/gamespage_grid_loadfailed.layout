@@ -1,40 +1,11 @@
 "resource/layout/gamespage_grid_loadfailed.layout" {
-	controls {
-		"background" {
-			ControlName						"ImagePanel"
-			style							"GGPlaceholderBG"
-			scaling							"fit"
-			zpos							"1"
-			// image resource of this control will be set programmatically
-		}
-
-		"noappimage_border" {
-			ControlName						"ImagePanel"
-			style							"GamesGridIconBorder"
-			zpos							"2"
-		}	
-		
-		"noappimage" {
-			ControlName						"ImagePanel"
-			style							"GamesGridIcon"
-			zpos							"3"
-		}
-				
-		"appname" {
-			ControlName						"Label"
-			style							"GamesGridPlaceholder"
-			textalignment					"center"
-			zpos							"4"
-			// labeltext of this control will be set programmatically
-		}
-		
-	}
+	controls {}
 
 	styles {
 		GamesGridPlaceholder {
 			font-size=18
-			font-family=basefont
-			textcolor=grey50
+			font-family=semibold
+			textcolor=white
 		}
 
 		GamesGridIconBorder {
@@ -42,7 +13,7 @@
 			inset="0 0 0 0"
 		    
 		    render {
-		    	1="image( x0, y0, x1, y1, steam/cached/icon_game_frame )"
+		    //	1="image( x0, y0, x1, y1, steam/cached/icon_game_frame )"
 		    }
 		}
 					
@@ -51,7 +22,7 @@
 		}
 
 		"GameItem_installed GamesGridPlaceholder" {
-			textcolor="grey50"
+			textcolor="white"
 		}
 	}
 
