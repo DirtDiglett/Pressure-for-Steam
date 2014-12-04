@@ -461,7 +461,7 @@
 			x=0
 			width=max
 			height=max
-			margin-right=-10
+			margin-right=-15
 		}
 		
 		region {
@@ -470,7 +470,7 @@
 			y=171
 			height=max
 			width=0
-			margin-right=0
+			margin-right=-10
 			margin-top=1
 			margin-bottom=1
 			overflow=allow-vertical
