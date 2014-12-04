@@ -65,8 +65,8 @@
 			
 			render_bg {
 				// lines around
-				0="fill( x0, y0, x1, y1, black )"
-				1="fill( x0, y1 -1, x1, y1, grey25 )"  // bottom
+				0="fill( x0, y0, x1-6, y1, black )"
+				1="fill( x0, y1 -1, x1-6, y1, grey25 )"  // bottom
 			}
 		}
 
