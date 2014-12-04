@@ -111,24 +111,45 @@
 		}
 
 		place { 
-			control=totalplaytimeheader,totalplaytimevalue
-			align=right
+			control=totalplaytimeheader
 			region=subheaderlabels
-		}
-		
-		place { 
-			align=bottom
-			control=gameplayedheader,gameplayedvalue
-			region=subheaderlabels
+			x=0
+			y=0
 		}
 		
 		place {
-			control=streamheader,streamvalue
-			width=0
-			height=0
-			x=0
-			y=-100
-			margin-top=-999
+			control=totalplaytimevalue
+			start=totalplaytimeheader
+			x=6
+			dir=right
+		}
+		
+		place { 
+			control=gameplayedheader
+			start=totalplaytimeheader
+			dir=down
+			y=6
+		}
+		
+		place {
+			control=gameplayedvalue
+			start=gameplayedheader
+			dir=right
+			x=6
+		}
+		
+		place {
+			control=streamheader
+			start=gameplayedheader
+			y=6
+			dir=down
+		}
+		
+		place {
+			control=streamvalue
+			start=streamheader
+			x=6
+			dir=right
 		}
 	}
 }

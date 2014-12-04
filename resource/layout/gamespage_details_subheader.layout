@@ -854,7 +854,7 @@
 			dir=left
 			align=left
 			margin-left=0
-			y=35
+			y=28
 			width=140		
 			end-right=launchbutton
 		}
