@@ -46,6 +46,7 @@
 			start=DialogTitle
 			width=max
 			margin-right=16
+			dir=down
 		}
 		
 		place {
@@ -54,16 +55,17 @@
 			y=16
 			height=28
 			width=160
+			dir=down
 		}
 		
 		place {
 			control="PurchaseGameButton"
-			start=DialogText
-			align=right
-			y=16
+			start=authorizationbutton
+			dir=right
 			height=28
 			width=160
 			margin-right=16
+			x=16
 		}
 			
 		
