@@ -339,6 +339,7 @@
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0, x1, y0+1, greyHighlight)"
+				2="gradient(x0,y1,x1,y1+6, black65, none)"
 			}    
 	    }
     
