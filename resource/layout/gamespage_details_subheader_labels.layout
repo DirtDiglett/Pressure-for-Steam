@@ -106,7 +106,7 @@
 			align=right 
 			y=0 
 			x=0 
-			width=max 
+			width=140
 			height=max 
 		}
 
@@ -128,7 +128,6 @@
 			control=gameplayedheader
 			start=totalplaytimeheader
 			dir=down
-			y=6
 		}
 		
 		place {
@@ -141,7 +140,6 @@
 		place {
 			control=streamheader
 			start=gameplayedheader
-			y=6
 			dir=down
 		}
 		
