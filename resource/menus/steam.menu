@@ -1,6 +1,5 @@
-"menubar"
-{
-	Steam [$WINDOWS] {
+"menubar" {
+	Steam [!$OSX] {
 		text = "#steam_menu_file"
 		
 		SkinVersion {
