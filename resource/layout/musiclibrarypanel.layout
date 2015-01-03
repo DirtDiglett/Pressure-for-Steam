@@ -46,10 +46,10 @@
 			render_bg
 			{
 				// top area and graphic
-				0="gradient( x0, y0, x1, y0+275, ClientBG, DialogBG )"
-				2="image( x0, y0, x1, y0+175, graphics/clienttexture2)"
+				0="gradient( x0, y0, x1, y0+275, grey, lightgreyend)"
+				//2="image( x0, y0, x1, y0+175, graphics/clienttexture2)"
 				// fill in the bottom area
-				3="fill( x0, y0 + 275, x1, y1, DialogBG )"
+				3="fill( x0, y0 + 275, x1, y1, lightgreyend )"
 			}
 		}		
 		
@@ -96,41 +96,50 @@
 			
 		LibrarySearch
 		{
-			padding-left=0
-			inset="2 4 0 0" 
 			font-family=basefont
 			font-size=14
 			font-weight=400	
-			textcolor="text"
-			render {}
+			textcolor="darkestGrey"
+			padding-left=4
+			padding-right=20
+			
+			minimum-width=150
+			
+			render_bg {
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
+				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
 		}
+			}
 		
 		LibrarySearch:empty
 		{
-			inset="2 10 0 0" 			
+			font-family=basefont
 			font-style=italic
-			textcolor="LabelDisabled"
+			textcolor="lightestGrey"
+			padding-left=4
 		}
 		
 		LibrarySearch:hover
-		{	
-			inset="2 4 0 0" 		
-			textcolor="texthover"	
+		 {
+			textcolor="darkGreyEnd"
+			padding-left=4
 		}
 		
 		LibrarySearch:empty:hover
 		{
-			inset="2 10 0 0" 		
-			font-style=italic
-			textcolor="texthover"
+				font-style=italic
+				textcolor="lightGreyEnd"
+				padding-left=4
 			
 		}
 			
 		LibrarySearch:disabled
 		{
-			inset="2 10 0 0" 					
+			font-family=basefont
 			font-style=italic
 			textcolor="None"
+			padding-left=4
 			
 		}
 			
@@ -139,7 +148,7 @@
 			bgcolor="none"
 			inset="10 0 0 0"
 			render_bg={}
-			image="graphics/icon_button_search"	
+			image="none"	
 		}
 		
 		LibrarySearchIcon:disabled
@@ -251,7 +260,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 + 2, y0 + 1, x1 - 10, y1 - 1, dialogbgtrans )"
+				0="fill( x0 + 2, y0 + 1, x1 - 10, y1 - 1, none )"
 			}
 			
 		}
@@ -260,17 +269,24 @@
 	
 	layout
 	{
-		region { name=searchrow x= 5 y=30 }
-		region { name=details y=60 width=max }	
-		
+		region { name=searchrow x=8 y=40 }
+		region { name=details y=75 width=max }	
+				//Original
+		place [!$OSX]  { 
+			control="frame_minimize,frame_maximize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-8 
+		}
 		place { control="subnavgroup_library" align=top-center y=30 height=28 width=max margin-right=1 margin-left=10 }
 		
-		place { control=label_search_icon region=searchrow y=6 }
-		place { control=library_search region=searchrow y=2 x=24 width=256 }
+		place { control=label_search_icon region=searchrow y=0 x=0 width=0 height=0 }
+		place { control=library_search region=searchrow y=0 x=30 width=256 }
 	
-		place { control=library_music_menu,library_music_add_button region=searchrow x=285 y=3 }
-		place { control="library_music_player_icon"  region=searchrow align=right y=6 height=18 width=18 margin-right=10 }
-		place {	control="MusicPage_Details_Content"	region=details x=10 y=0 width=max height=max	margin-bottom=40 margin-right=10}
+		place { control=library_music_menu,library_music_add_button region=searchrow x=300 y=0 }
+		place { control="library_music_player_icon"  region=searchrow align=right x=4 y=6 height=18 width=18 margin-right=10 }
+		place {	control="MusicPage_Details_Content"	region=details x=0 y=0 width=max height=max	margin-bottom=0 margin-right=0}
 	}
 	
 }
