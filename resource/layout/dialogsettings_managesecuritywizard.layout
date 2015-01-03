@@ -1,0 +1,31 @@
+"resource/layout/dialogsettings_managesecuritywizard.layout" {
+	controls {}
+
+ 	layout {
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+		
+		region {
+			name=bottom
+			align=bottom
+			height=51
+			width=max
+		}
+		
+		place {
+			control="PrevButton,NextButton,CancelButton,FinishButton"
+			region=bottom
+			height=24
+			width=90
+			align=right
+			margin-top=14
+			margin-right=14
+			spacing=8
+		}
+	}	
+}

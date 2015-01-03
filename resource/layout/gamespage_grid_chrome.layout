@@ -6,23 +6,19 @@
 			mouseinputenabled			0
 		}
 		
-		
 		"launch" {
 			zpos="1"
-			// this control's White and command will be clobbered by code based on the installation state
 			ControlName					URLLabel
 			labelText					"#steam_launch"
 			style						CUILaunchButton
 			command						launch
 		}
-		
-				
+			
 		"divider" {
 			zpos="1"
 			ControlName					Label
 			labelText					"|"
 			style						GridNavDivider
-
 		}
 		
 		"details" {
@@ -36,7 +32,6 @@
 	
 	colors {
 		// Install Button Normal
-		
 		InstallAntiAliasingTop "54 131 145 255"
 		InstallAntiAliasingBottom "12 102 121 255"
 		
@@ -72,29 +67,41 @@
 			InstallActiveGradientStart "34 154 205 255"
 			InstallActiveGradientEnd "26 131 168 255"				
 		
-		// Details Normal
-		DetailsAntiAliasingTop "12 12 10 255"
-		DetailsAntiAliasingBottom "10 10 9 255"
+		// Details Button Normal
+		DetailsAntiAliasingTop "grey50"
+		DetailsAntiAliasingBottom "grey25"
 		
-		DetailsLineTop "68 68 68 255"
-		DetailsLineTopAntiAliasing "60 60 60 255"
+		DetailsLineTop "87 87 87 255"
+		DetailsLineTopAntiAliasing "78 78 78 255"
 		
-		DetailsCornerRoundingBottom "37 37 37 255"
+		DetailsCornerRoundingBottom "48 48 48 255"
 		
-		DetailsGradientStart "55 55 55 255"
-		DetailsGradientEnd "47 47 47 255"
-		
-			// Details Hover
-			DetailsHoverAntiAliasingTop "14 14 13 255"
-			DetailsHoverAntiAliasingBottom "13 13 11 255"
+		DetailsGradientStart "65 65 65 255"
+		DetailsGradientEnd "51 51 51 255"
+				
+			// Hover
+			DetailsHoverAntiAliasingTop "grey50"
+			DetailsHoverAntiAliasingBottom "grey25"
 			
-			DetailsHoverLineTop "93 93 93 255"
-			DetailsHoverLineTopAntiAliasing "82 82 82 255"
+			DetailsHoverLineTop "119 119 119 255"
+			DetailsHoverLineTopAntiAliasing "107 107 107 255"
 			
-			DetailsHoverCornerRoundingBottom "51 51 51 255"
+			DetailsHoverCornerRoundingBottom "66 66 66 255"
 			
-			DetailsHoverGradientStart "75 75 75 255"
-			DetailsHoverGradientEnd "64 64 64 255"
+			DetailsHoverGradientStart "89 89 89 255"
+			DetailsHoverGradientEnd "70 70 70 255"	
+						
+			// Active	
+			DetailsActiveAntiAliasingTop "grey50"
+			DetailsActiveAntiAliasingBottom "grey25"
+			
+			DetailsActiveLineTop "87 87 87 255"
+			DetailsActiveLineTopAntiAliasing "78 78 78 255"
+			
+			DetailsActiveCornerRoundingBottom "48 48 48 255"
+			
+			DetailsActiveGradientStart "51 51 51 255"
+			DetailsActiveGradientEnd "65 65 65 255"	
 		
 			
 		// Play Button Normal
@@ -136,9 +143,8 @@
 	}
 
 	styles {
-		
 		ChromeBorderItem {
-			bgcolor=GreyT //black75
+			bgcolor= black75
 		}
 
 		GridNavDivider {
@@ -146,24 +152,21 @@
 			bgcolor=none
 		}
 		
-		"GameItem_Uninstalled CUILaunchButton" {
+		"GameItem_Uninstalled CUILaunchButton" [$OSX] {
 			inset="22 7 0 0"
 			font-family=headerfont
-			font-size=30
+			font-size=22
 			
-			font-style="outerglow"
-			font-outerglow-color="11 143 176 255"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=6
+			font-style="none"
 			
-			padding-right=10
-			padding-left=10
+			padding-right=11
+			padding-left=11
 			
 			textcolor=white
 			
 			
 			render {
-				1="image( x0 + 10, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
+				1="image( x0 + 9, y0 + 12, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
 			render_bg {
 				// Background
@@ -200,123 +203,230 @@
 			}	
 		}
 		
-		"GameItem_Uninstalled CUILaunchButton:hover" {
-			render_bg {
-					// Background
-					0="gradient(x0,y0+1,x1,y1-1,InstallHoverGradientStart, InstallHoverGradientEnd)"
-					1="fill(x0+2,y1-1,x1-2,y1, InstallHoverGradientEnd)"
-					
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, InstallHoverAntiAliasingTop)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, InstallHoverAntiAliasingTop)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, InstallHoverAntiAliasingTop)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, InstallHoverAntiAliasingTop)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, InstallHoverAntiAliasingBottom)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, InstallHoverAntiAliasingBottom)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, InstallHoverAntiAliasingBottom)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, InstallHoverAntiAliasingBottom)" // Bottom Right
-					
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, InstallHoverLineTop)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
-					
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, InstallHoverCornerRoundingBottom)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, InstallHoverCornerRoundingBottom)"
-					19="fill(x0+2,y1-1,x0+3,y1, InstallHoverCornerRoundingBottom)"
-					
-					20="fill(x1-3,y1-1,x1-2,y1, InstallHoverCornerRoundingBottom)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, InstallHoverCornerRoundingBottom)"
-					22="fill(x1-1,y1-3,x1,y1-2, InstallHoverCornerRoundingBottom)"
-				}
-		}
-		
-		"GameItem_Uninstalled CUILaunchButton:selected" {
-			render_bg {
-					// Background
-					0="gradient(x0,y0+1,x1,y1-1,InstallActiveGradientEnd, InstallActiveGradientStart)"
-					1="fill(x0+2,y1-1,x1-2,y1, InstallActiveGradientStart)"
-					
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, InstallActiveAntiAliasingTop)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, InstallActiveAntiAliasingTop)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, InstallActiveAntiAliasingTop)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, InstallActiveAntiAliasingTop)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, InstallActiveAntiAliasingBottom)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, InstallActiveAntiAliasingBottom)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Right
-					
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, InstallActiveLineTop)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, InstallActiveCornerRoundingBottom)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, InstallActiveCornerRoundingBottom)"
-					19="fill(x0+2,y1-1,x0+3,y1, InstallActiveCornerRoundingBottom)"
-					
-					20="fill(x1-3,y1-1,x1-2,y1, InstallActiveCornerRoundingBottom)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, InstallActiveCornerRoundingBottom)"
-					22="fill(x1-1,y1-3,x1,y1-2, InstallActiveCornerRoundingBottom)"
-				}
-		}
-		
-		"GameItem_Uninstalled CUILaunchButton:active" {
-			render_bg {
-					// Background
-					0="gradient(x0,y0+1,x1,y1-1,InstallActiveGradientEnd, InstallActiveGradientStart)"
-					1="fill(x0+2,y1-1,x1-2,y1, InstallActiveGradientStart)"
-					
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, InstallActiveAntiAliasingTop)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, InstallActiveAntiAliasingTop)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, InstallActiveAntiAliasingTop)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, InstallActiveAntiAliasingTop)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, InstallActiveAntiAliasingBottom)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, InstallActiveAntiAliasingBottom)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Right
-					
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, InstallActiveLineTop)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
-					
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, InstallActiveCornerRoundingBottom)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, InstallActiveCornerRoundingBottom)"
-					19="fill(x0+2,y1-1,x0+3,y1, InstallActiveCornerRoundingBottom)"
-					
-					20="fill(x1-3,y1-1,x1-2,y1, InstallActiveCornerRoundingBottom)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, InstallActiveCornerRoundingBottom)"
-					22="fill(x1-1,y1-3,x1,y1-2, InstallActiveCornerRoundingBottom)"
-				}
-		}
-		
-		"GameItem_Uninstalled CUILaunchButton:disabled" {
-			image=graphics/install_d
-		}
-		
-		CUILaunchButton {
+		"GameItem_Uninstalled CUILaunchButton" [!$OSX] {
+			inset="22 3 0 0"
+			font-family=headerfont
+			font-size=20
 			
+			font-style="outerglow"
+			font-outerglow-color="11 143 176 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=11
+			padding-left=11
+			
+			textcolor=white
+			
+			
+			render {
+				1="image( x0 + 9, y0 + 12, x1, y1, graphics/gamedetails/install/install_icon )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,InstallGradientStart, InstallGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, InstallGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, InstallAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, InstallAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, InstallAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, InstallAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, InstallAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, InstallAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, InstallAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, InstallAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, InstallLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, InstallLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, InstallCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, InstallCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, InstallCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, InstallCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, InstallCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, InstallCornerRoundingBottom)"
+			}	
+		}
+		
+			"GameItem_Uninstalled CUILaunchButton:hover" {
+				render_bg {
+						// Background
+						0="gradient(x0,y0+1,x1,y1-1,InstallHoverGradientStart, InstallHoverGradientEnd)"
+						1="fill(x0+2,y1-1,x1-2,y1, InstallHoverGradientEnd)"
+						
+						//Anti-Alias
+						2="fill(x0+1,y0,x0+2,y0+1, InstallHoverAntiAliasingTop)" // Top Left
+						3="fill(x0,y0+1,x0+1,y0+2, InstallHoverAntiAliasingTop)" // Top Left
+						4="fill(x1-2, y0, x1-1, y0+1, InstallHoverAntiAliasingTop)" // Top Right
+						5="fill(x1-1,y0+1,x1,y0+2, InstallHoverAntiAliasingTop)" // Top Right
+						6="fill(x0, y1-2, x0+1, y1-1, InstallHoverAntiAliasingBottom)" // Bottom Left
+						7="fill(x0+1, y1-1, x0+2, y1, InstallHoverAntiAliasingBottom)" // Bottom Left
+						8="fill(x1-2, y1-1, x1-1, y1, InstallHoverAntiAliasingBottom)" // Bottom Right
+						9="fill(x1-1, y1-2, x1, y1-1, InstallHoverAntiAliasingBottom)" // Bottom Right
+						
+						// 1px Solid Line Top
+						10="fill(x0+3, y0, x1-3, y0+1, InstallHoverLineTop)" // Main Line
+						11="fill(x0+2, y0, x0+3, y0+1, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
+						12="fill(x0+1, y0+1, x0+2, y0+2, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
+						13="fill(x0, y0+2, x0+1, y0+3, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
+						14="fill(x1-3, y0, x1-2, y0+1, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
+						15="fill(x1-2, y0+1, x1-1, y0+2, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
+						16="fill(x1-1, y0+2, x1, y0+3, InstallHoverLineTopAntiAliasing)" // Anti-Aliasing
+						
+						// Bottom Corner Rounding
+						17="fill(x0,y1-3,x0+1,y1-2, InstallHoverCornerRoundingBottom)"
+						18="fill(x0+1,y1-2,x0+2,y1-1, InstallHoverCornerRoundingBottom)"
+						19="fill(x0+2,y1-1,x0+3,y1, InstallHoverCornerRoundingBottom)"
+						
+						20="fill(x1-3,y1-1,x1-2,y1, InstallHoverCornerRoundingBottom)"
+						21="fill(x1-2,y1-2,x1-1,y1-1, InstallHoverCornerRoundingBottom)"
+						22="fill(x1-1,y1-3,x1,y1-2, InstallHoverCornerRoundingBottom)"
+					}
+			}
+			
+			"GameItem_Uninstalled CUILaunchButton:selected" {
+				render_bg {
+						// Background
+						0="gradient(x0,y0+1,x1,y1-1,InstallActiveGradientEnd, InstallActiveGradientStart)"
+						1="fill(x0+2,y1-1,x1-2,y1, InstallActiveGradientStart)"
+						
+						//Anti-Alias
+						2="fill(x0+1,y0,x0+2,y0+1, InstallActiveAntiAliasingTop)" // Top Left
+						3="fill(x0,y0+1,x0+1,y0+2, InstallActiveAntiAliasingTop)" // Top Left
+						4="fill(x1-2, y0, x1-1, y0+1, InstallActiveAntiAliasingTop)" // Top Right
+						5="fill(x1-1,y0+1,x1,y0+2, InstallActiveAntiAliasingTop)" // Top Right
+						6="fill(x0, y1-2, x0+1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Left
+						7="fill(x0+1, y1-1, x0+2, y1, InstallActiveAntiAliasingBottom)" // Bottom Left
+						8="fill(x1-2, y1-1, x1-1, y1, InstallActiveAntiAliasingBottom)" // Bottom Right
+						9="fill(x1-1, y1-2, x1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Right
+						
+						// 1px Solid Line Top
+						10="fill(x0+3, y0, x1-3, y0+1, InstallActiveLineTop)" // Main Line
+						11="fill(x0+2, y0, x0+3, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						12="fill(x0+1, y0+1, x0+2, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						13="fill(x0, y0+2, x0+1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						14="fill(x1-3, y0, x1-2, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						15="fill(x1-2, y0+1, x1-1, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						16="fill(x1-1, y0+2, x1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						
+						// Bottom Corner Rounding
+						17="fill(x0,y1-3,x0+1,y1-2, InstallActiveCornerRoundingBottom)"
+						18="fill(x0+1,y1-2,x0+2,y1-1, InstallActiveCornerRoundingBottom)"
+						19="fill(x0+2,y1-1,x0+3,y1, InstallActiveCornerRoundingBottom)"
+						
+						20="fill(x1-3,y1-1,x1-2,y1, InstallActiveCornerRoundingBottom)"
+						21="fill(x1-2,y1-2,x1-1,y1-1, InstallActiveCornerRoundingBottom)"
+						22="fill(x1-1,y1-3,x1,y1-2, InstallActiveCornerRoundingBottom)"
+					}
+			}
+			
+			"GameItem_Uninstalled CUILaunchButton:active" {
+				render_bg {
+						// Background
+						0="gradient(x0,y0+1,x1,y1-1,InstallActiveGradientEnd, InstallActiveGradientStart)"
+						1="fill(x0+2,y1-1,x1-2,y1, InstallActiveGradientStart)"
+						
+						//Anti-Alias
+						2="fill(x0+1,y0,x0+2,y0+1, InstallActiveAntiAliasingTop)" // Top Left
+						3="fill(x0,y0+1,x0+1,y0+2, InstallActiveAntiAliasingTop)" // Top Left
+						4="fill(x1-2, y0, x1-1, y0+1, InstallActiveAntiAliasingTop)" // Top Right
+						5="fill(x1-1,y0+1,x1,y0+2, InstallActiveAntiAliasingTop)" // Top Right
+						6="fill(x0, y1-2, x0+1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Left
+						7="fill(x0+1, y1-1, x0+2, y1, InstallActiveAntiAliasingBottom)" // Bottom Left
+						8="fill(x1-2, y1-1, x1-1, y1, InstallActiveAntiAliasingBottom)" // Bottom Right
+						9="fill(x1-1, y1-2, x1, y1-1, InstallActiveAntiAliasingBottom)" // Bottom Right
+						
+						// 1px Solid Line Top
+						10="fill(x0+3, y0, x1-3, y0+1, InstallActiveLineTop)" // Main Line
+						11="fill(x0+2, y0, x0+3, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						12="fill(x0+1, y0+1, x0+2, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						13="fill(x0, y0+2, x0+1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						14="fill(x1-3, y0, x1-2, y0+1, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						15="fill(x1-2, y0+1, x1-1, y0+2, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						16="fill(x1-1, y0+2, x1, y0+3, InstallActiveLineTopAntiAliasing)" // Anti-Aliasing
+						
+						// Bottom Corner Rounding
+						17="fill(x0,y1-3,x0+1,y1-2, InstallActiveCornerRoundingBottom)"
+						18="fill(x0+1,y1-2,x0+2,y1-1, InstallActiveCornerRoundingBottom)"
+						19="fill(x0+2,y1-1,x0+3,y1, InstallActiveCornerRoundingBottom)"
+						
+						20="fill(x1-3,y1-1,x1-2,y1, InstallActiveCornerRoundingBottom)"
+						21="fill(x1-2,y1-2,x1-1,y1-1, InstallActiveCornerRoundingBottom)"
+						22="fill(x1-1,y1-3,x1,y1-2, InstallActiveCornerRoundingBottom)"
+					}
+			}
+			
+			"GameItem_Uninstalled CUILaunchButton:disabled" {
+				render {}
+				render_bg {}
+				
+				font-size=1
+				textcolor=none
+			}
+		
+		CUILaunchButton [$OSX] {
 			inset="22 7 0 0"
 			font-family=headerfont
-			font-size=28
+			font-size=22
+			
+			font-style="none"
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 10, y0 + 7, x1, y1, graphics/gamedetails/play/play_icon )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,PlayGradientStart, PlayGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, PlayGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, PlayAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, PlayAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, PlayAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, PlayAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, PlayAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, PlayAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, PlayAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, PlayAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, PlayLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, PlayCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, PlayCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, PlayCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, PlayCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, PlayCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, PlayCornerRoundingBottom)"
+			}     
+		}
+		
+		CUILaunchButton [!$OSX] {
+			inset="22 3 0 0"
+			font-family=headerfont
+			font-size=20
 			
 			font-style="outerglow"
 			font-outerglow-color="97 141 21 255"
@@ -329,7 +439,7 @@
 			textcolor=white
 			
 			render {
-				1="image( x0 + 10, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
+				1="image( x0 + 10, y0 + 7, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
 			render_bg {
 				// Background
@@ -478,10 +588,60 @@
 				
 			}
 		
-		CUIDetailsButton {     
+		CUIDetailsButton [$OSX] {
 			inset="22 7 0 0"
 			font-family=headerfont
-			font-size=28
+			font-size=22
+			
+			font-style="none"
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 10, y0 + 10, x1, y1, graphics/gamedetails/details/details_icon )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,DetailsGradientStart, DetailsGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, DetailsGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, DetailsAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, DetailsAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, DetailsAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, DetailsAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, DetailsAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, DetailsAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, DetailsAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, DetailsAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, DetailsLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, DetailsLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, DetailsLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, DetailsLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, DetailsLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, DetailsLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, DetailsLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, DetailsCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, DetailsCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, DetailsCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, DetailsCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, DetailsCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, DetailsCornerRoundingBottom)"
+			}
+		}
+		
+		CUIDetailsButton [!$OSX] {
+			inset="22 3 0 0"
+			font-family=headerfont
+			font-size=20
 			
 			font-style="outerglow"
 			font-outerglow-color="41 41 41 255"
@@ -494,7 +654,7 @@
 			textcolor=white
 			
 			render {
-				1="image( x0 + 10, y0 + 12, x1, y1, graphics/gamedetails/details/details_icon )"
+				1="image( x0 + 10, y0 + 10, x1, y1, graphics/gamedetails/details/details_icon )"
 			}
 			render_bg {
 				// Background
@@ -639,22 +799,28 @@
 					}
 			}
 		
-		CUIDetailsButton:disabled
-		{   
+		CUIDetailsButton:disabled {   
 			image=graphics/details_d
 		}
 
-		"GameItem_Updating CUINavButton:hover" {
-			textcolor="White"
-		}
+			"GameItem_Updating CUINavButton:hover" {
+				textcolor="White"
+			}
 	}
 
 	
 	layout {
-		region { name="actions" align=bottom width=max height=78 x=0 y=210 margin-bottom=0}
+		region { 
+			name="actions" 
+			align=bottom 
+			width=max 
+			height=78 
+			x=0 
+			y=210 
+			margin-bottom=0
+		}
 		
-		place
-		{
+		place {
 			control=chromeborder	
 			region=actions			
 			x=0 
@@ -665,17 +831,16 @@
 			margin-right=0
 		}
 
-		place
-		{
+		place {
 			control="launch,details"	
 			region="actions"		
 			align=top-center
 			spacing=16 
 			margin-bottom=24 
-			margin-left=0 
+			margin-left=8
+			margin-right=8 
 			margin-top=18
 			height=40
-			width=100
 		}
 		
 		place { 

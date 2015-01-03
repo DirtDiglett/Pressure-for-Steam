@@ -10,10 +10,12 @@
 			
 	    FrameBRGripPanel {
 	      image="graphics/window_controls/grabber"
+	      inset="4 4 0 0"
 	    }
 	    
 	    FrameBRGripPanel:hover {
 	      image="graphics/window_controls/grabber"
+		  inset="4 4 0 0"
 	    }
 
 // ******************************************************************************************************** 

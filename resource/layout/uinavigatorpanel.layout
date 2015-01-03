@@ -1,5 +1,4 @@
 "resource/layout/uinavigatorpanel.layout" {
-
 	controls {
 		"subnavgroup_library" {
 			"ControlName"		"imagepanel"
@@ -14,24 +13,26 @@
 			zpos=8
 			"group" "urlthrobber"
 		}
+		
 		"Back" {
 			"ControlName"		"Button"
 			style="BackButton"
 			command="Back"
 			zpos=6
 		}
+		
 		"Forward" {
 			"ControlName"		"Button"
 			style="ForwardButton"
 			command="Forward"
 			zpos=6
 		}
+		
 		"fullscreen" {
 			"ControlName"		"Button"
 			style="Nulled"
 			command="fullscreen"
 		}
-
 
 		"refresh" {
 			"ControlName"		"Button"
@@ -39,6 +40,7 @@
 			style="ReloadButton"
 			group="Refresh"
 		}
+		
 		"Stop" {
 			"ControlName"		"Button"
 			command="Stop"
@@ -70,16 +72,19 @@
 			"labelText"		"#steam_news"
 			style="CuiNavButton"
 		}
+		
 		"label_community" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_community"
 			style="CuiNavButton"
 		}
+		
 		"label_me" {
 			"ControlName"		"Label"
 			"labelText"		"ME"
 			style="CuiNavButton"
 		}
+		
 		"label_community_friends" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_friends"
@@ -87,6 +92,7 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_groups" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_groups"
@@ -94,6 +100,7 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_forums" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_discussions"
@@ -101,6 +108,7 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_profile" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_profile"
@@ -108,6 +116,7 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_gamehubs" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_gamehubs"
@@ -115,6 +124,7 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_workshop" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_workshop"
@@ -122,6 +132,7 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_greenlight" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_greenlight"
@@ -129,6 +140,7 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_marketplace" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_nav_marketplace"
@@ -136,11 +148,13 @@
 			group="community"
 			zpos=1
 		}
+		
 		"label_community_new" {
 			"ControlName"		"Label"
 			"labelText"		"NEW"
 			style="CUINavButtonNew"
 		}
+		
 		"URLBar" {
 			"ControlName"		"TextEntry"
 			style="TextEntryURL"
@@ -274,54 +288,42 @@
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	
 	styles {
-
-
-		LabelEVCert [!$OSX]
-		{
-		font-family=basefont
-		font-size=14
-		textcolor="none"
-		font-weight=400
-		bgcolor="none"
-		inset-left=4
-		inset-right=4
-		inset-top=3		
+		LabelEVCert [!$OSX] {
+			font-family=basefont
+			font-size=14
+			textcolor="none"
+			font-weight=400
+			bgcolor="none"
+			inset-left=4
+			inset-right=4
+			inset-top=3		
 		}
-
-			
-		LabelEVCert [$OSX]
-		{
-		font-family=basefont
-		font-size=14
-		textcolor="none"
-		font-weight=400
-		bgcolor="none"
-		inset-left=3
-		inset-right=4
-		inset-top=3	
+	
+		LabelEVCert [$OSX] {
+			font-family=basefont
+			font-size=14
+			textcolor="none"
+			font-weight=400
+			bgcolor="none"
+			inset-left=3
+			inset-right=4
+			inset-top=3	
 		}	
 		
 		URLStatusImage {
-		bgcolor=none
-		inset="0 0 0 0"
-		render_bg={}
-		image="graphics/html_lock_disabled"
+			bgcolor=none
+			inset="0 0 0 0"
+			render_bg={}
+			image="graphics/html_lock_disabled"
 		}
 
 		URLBarSecure {
 			textcolor="green"
-
 		}
 
 		URLBarBrokenSecure {
 			textcolor="red"
-
 		}		
-		
-		
-
-		
-		
 		
 		// Doesn't appear to be used for anything:
 		headertextlarge {
@@ -336,8 +338,7 @@
 			minimum-width=200
 		}
 
-		LibraryShow [!$OSX]
-		{
+		LibraryShow [!$OSX] {
 			padding-left=0
 			font-family=basefont
 			font-size=14 
@@ -348,8 +349,7 @@
 
 		LibraryShow [$OSX] {}
 		
-		NavLabel
-		{
+		NavLabel {
 			font-family=basefont
 			font-size=14 [!$OSX]
 			font-size=15 [$OSX] 
@@ -366,7 +366,6 @@
 			font-style=uppercase
 			padding-left=0
 		}		
-		
 		
 		CUINavButton2 {
 			textcolor="green"
@@ -391,24 +390,19 @@
 			font-outerglow-filtersize=1
 		}
 
-		CUINavButton2:selected 
-		{
-			textcolor="white"
-			bgcolor=none
-			font-style="uppercase,outerglow"
-			font-outerglow-color="TextGlowSelectedSm"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
-		}
+			CUINavButton2:selected {
+				textcolor="white"
+				bgcolor=none
+				font-style="uppercase,outerglow"
+				font-outerglow-color="TextGlowSelectedSm"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=1
+			}
 
 		CUINavigatorPanel {			
 				bgcolor="none"
 		}
-		
-		
-
-
-		
+			
 // ******************************************************************************************************** 
 // Control's Styles that have been 'Nulled'
 // ********************************************************************************************************
@@ -420,7 +414,6 @@
 		CUINavButtonNew {}
 		"CGamesPage_Mini CGameFilterMenuButton" {}
 		
-		
 // ******************************************************************************************************** 
 // Zoom
 // ********************************************************************************************************
@@ -430,7 +423,7 @@
 		NavLabelZoom {
 			textcolor="none"
 			render_bg {
-				0="image(x0, y0, x1, y1, graphics/icons/zoom_out)"
+				0="image(x0+14, y0+4, x1, y1, graphics/icons/zoom_out)"
 			}
 		}
 		
@@ -439,7 +432,7 @@
 		LibrarySeparator {
 			textcolor="none"
 			render_bg {
-				0="image(x0, y0, x1, y1, graphics/icons/zoom)"
+				0="image(x0+4, y0+5, x1, y1, graphics/icons/zoom)"
 			}
 		}
 		
@@ -491,10 +484,10 @@
 			inset-left=0
 			inset-top=0
 			render {}  
-	      }   
+	    }   
 	      
-		   	TextEntry:hover {
-					textcolor="grey"
+			TextEntry:hover {
+				textcolor="grey"
 		    }   
 	      
 			TextEntry:active {
@@ -506,29 +499,63 @@
 			}   
 		
 		TextEntryURL {
-			padding-top=6
 			font-family=basefont
-			font-size=12
-			textcolor="grey"
-			bgcolor="none"
-			selectedtextcolor="white"
-			selectedbgcolor="blue"
-			shadowtextcolor="grey"	// this is the cursor color	
+		    font-size=13
+		    textcolor  = "lightestGreyHighlight"
+		    bgcolor  = "none"
+		    selectedtextcolor  = "white"
+		    selectedbgcolor  = "blue"
+		    shadowtextcolor  = "darkestGrey"  // this is the cursor color
+		
+		    inset-left=4
+		    inset-top=0
+		      
+		    render_bg {
+				0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
+			
+				// TOP
+				1="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
+				2="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
+				
+				// RIGHT
+				3="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+				  	
+				// BOTTOM
+			    7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+			    8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+		      } 
 		}
 		
 		"CSteamRootDialog TextEntryURL" {
-			padding-top=8
-			padding-left=4	
+			font-family=basefont
+		    font-size=13
+		    textcolor  = "lightestGreyHighlight"
+		    bgcolor  = "none"
+		    selectedtextcolor  = "white"
+		    selectedbgcolor  = "blue"
+		    shadowtextcolor  = "darkestGrey"  // this is the cursor color
+		
+		    inset-left=4
+		    inset-top=0
+		      
+		    render_bg {
+				0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
 			
-			render_bg {
-				1="image_tiled(x0, y0, x1-4, y0+25, graphics/inner)"
-				2="image(x1-4, y0, x1, y0+25, graphics/textEntryRight)"
-			}	
+				  	// TOP
+				1="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
+				2="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
+				 	// RIGHT
+				3="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+				  	
+				  	// BOTTOM
+			      	7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+			      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+			      	
+			      	9="fill(x0,y0,x0+1,y1, darkestGrey)"
+		      } 
 		}
 		
-			"CSteamRootDialog TextEntryURL:hover" {
-				textcolor="darkestGrey"
-			}		
+		"CSteamRootDialog TextEntryURL:hover" {}		
 	
 	
 // ******************************************************************************************************** 
@@ -1099,16 +1126,15 @@
 		grouper {
 			bgcolor=none
 			render {
-				1="image(x0, y0, x0+8, y0+25, graphics/search/left)"
-				2="image(x1-12, y0, x1, y0+25, graphics/search/right)"
-				3="image_tiled(x0+22, y0, x1-12, y0+25, graphics/search/inner)"
+			//	1="image(x0, y0, x0+8, y0+25, graphics/search/left)"
+			//	2="image(x1-12, y0, x1, y0+25, graphics/search/right)"
+			//	3="image_tiled(x0+22, y0, x1-12, y0+25, graphics/search/inner)"
 			}	
 		}
 		
 				// When things are typed in.
 
-		LibrarySearch [!$OSX]
-		{
+		LibrarySearch [!$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
@@ -1116,84 +1142,83 @@
 			padding-left=4
 			padding-right=20
 			
-			render_bg{}
+			minimum-width=150
+			
+			render_bg {
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
+				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+			}
 		}
 
 		
-		LibrarySearch [$OSX]
-		{
+		LibrarySearch [$OSX] {
 			font-family=basefont
 			font-size=14
 			font-weight=400	
 			textcolor="darkestGrey"
-			padding-left=0
-			padding-right=20
 			
-			render_bg{}
+			minimum-width=150
+			
+			//bgcolor=red
+			
+			render_bg {
+				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/left)"
+				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/right)"
+				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/inner)"
+			}
 		}
 		
 		// Typed in, as well as hovered.
 		
-		LibrarySearch:hover [!$OSX]
-		{
-					
+		LibrarySearch:hover [!$OSX] {
 			textcolor="darkGreyEnd"
-			padding-left=4	
-			render_bg {}
+			padding-left=4
 		}
 
-		LibrarySearch:hover [$OSX]
-		{
-					
+		LibrarySearch:hover [$OSX] {
 			textcolor="darkGreyEnd"
 			padding-left=0	
-			render_bg {}
+			
 		}
 		
 		// Default State when nothing in it.
 		
-		LibrarySearch:empty [!$OSX]
-		{
+		LibrarySearch:empty [!$OSX] {
 			font-family=basefont
 			font-style=italic
 			textcolor="lightestGrey"
 			padding-left=4	
 		}
 		
-		LibrarySearch:empty [$OSX]
-		{
+		LibrarySearch:empty [$OSX] {
 			font-family=basefont
 			font-style=italic
 			textcolor="lightestGrey"
 			padding-left=0	
 		}
 		
-		LibrarySearch:empty:hover [!$OSX] 
-		{
+		LibrarySearch:empty:hover [!$OSX] {
 				font-style=italic
 				textcolor="lightGreyEnd"
 				padding-left=4
-				render_bg {}
-			}
+		}
 			
-		LibrarySearch:empty:hover [$OSX] 
-		{
+		LibrarySearch:empty:hover [$OSX] {
 				font-style=italic
 				textcolor="lightGreyEnd"
 				padding-left=0
-				render_bg {}
+				
 		}
 
-		LibrarySearch:disabled [!$OSX] 
-		{
+		LibrarySearch:disabled [!$OSX] {
 			font-family=basefont
 			font-style=italic
 			textcolor="None"
 			padding-left=4
 		}
 			
-		LibrarySearch:disabled [$OSX] 
-		{
+		LibrarySearch:disabled [$OSX] {
 			font-family=basefont
 			font-style=italic
 			textcolor="None"
@@ -1723,11 +1748,33 @@
 // Main Navigation
 // ********************************************************************************************************
 		
-		CUINavButton {
-			textcolor="darkestGrey"
+		CUINavButton [$OSX] {
+			textcolor="white"
 			bgcolor="none"
 			font-family=headerfont
-			font-size=46
+			font-size=36
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			
+			padding-left=10
+			padding-right=10
+		}
+		
+		CUINavButton [!$OSX] {
+			textcolor="white"
+			bgcolor="none"
+			font-family=headerfont
+			font-size=36
+			
+			inset="0 -4 0 0"
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
 			
 			padding-left=10
 			padding-right=10
@@ -1736,16 +1783,13 @@
 			CUINavButton:hover {
 				textcolor="white"
 				font-style="outerglow"
-				font-outerglow-color="darkestGrey"
+				font-outerglow-color="lightestGrey"//white10"
 				font-outerglow-offset=1
-				font-outerglow-filtersize=3
+				font-outerglow-filtersize=6
 			}
 			
 			CUINavButton:disabled {
 				textcolor="darkestGrey"
-				bgcolor="none"
-				font-family=basefont
-				font-size=26
 			}
 	
 				CUINavButton:disabled:hover {
@@ -1754,11 +1798,11 @@
 				}
 	
 			CUINavButton:selected {
-				textcolor="white"
+				textcolor="trueWhite"
 				font-style="outerglow"
-				font-outerglow-color="darkestGrey"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3
+				font-outerglow-color="lightestGrey"
+				font-outerglow-offset=2
+				font-outerglow-filtersize=6
 			
 				render_bg {
 					0="image(x0+40, y1-9, x0+55, y1, graphics/arrowup)"
@@ -1792,11 +1836,33 @@
 				}
 		}
 		
+		SuperNavMenu {
+				padding=8
+				
+				inset="0 4 0 4"
+				
+				render {}
+		
+				render_bg {
+					0="gradient(x0, y0, x1, y1, grey, darkGreyEnd)"
+					1="fill(x0, y0, x0+1, y1, darkGreyEnd)" // Left
+					2="fill(x1-1, y0, x1, y1, darkGreyEnd)" // Right
+					3="fill(x0, y0, x1, y0+1, darkGreyEnd)" // Top
+					4="fill(x0, y1-1, x1, y1, darkGreyEnd)" // Bottom
+					
+					5="fill(x0+1, y0+1, x0+2, y1-1, white10)" // Left
+					6="fill(x1-2, y0+1, x1-1, y1-1, white10)" // Right
+					7="fill(x0+1, y0+1, x1-1, y0+2, greyHighlight)" // Top
+					8="fill(x0+2, y1-2, x1-2, y1-1, white10)" // Bottom
+				}
+		}
+		
 			SuperNavMenuItem {
 				font-family=basefont
 				font-size=14
 				
 				textcolor=white
+				selectedtextcolor=red
 				
 				font-style="outerglow"
 				font-outerglow-color="darkestGrey"
@@ -1827,6 +1893,7 @@
 					}
 				}
 		
+		
 			"SuperNavMenuDivider" {
 				textcolor  = "none"
 				render {}
@@ -1836,30 +1903,25 @@
 // Music
 // ********************************************************************************************************	
 
-		MusicAddButton
-		{
+		MusicAddButton {
 			font-size=14
 			font-size=13 [$OSX]
 			font-family=basefont
 			textcolor="labelfocus"
 			font-style=uppercase
-			render_bg
-			{
+			render_bg {
 				0="image( x0, y0 + 2, x1, y1, graphics/icon_collapse )"
 			}
 		}
 		
-		MusicAddButton:hover
-		{
+		MusicAddButton:hover {
 			textcolor="white"
-			render_bg
-			{
+			render_bg {
 				0="image( x0, y0 + 2, x1, y1, graphics/icon_collapse_over )"
 			}
 		}			
 		
-		MusicPlayerIcon
-		{
+		MusicPlayerIcon {
 			bgcolor="none"
 			inset="-1 0 0 0"
 			render_bg={}
@@ -1869,26 +1931,29 @@
 			padding-top=-1
 		}
 		
-		MusicPlayerIcon:hover
-		{
-			bgcolor="none"
-			inset="-1 0 0 0"
-			render_bg={}
-			image="graphics/icon_music_player_hover"
-			padding-left=0
-			padding-right=-1
-			padding-top=-1
-		}
+			MusicPlayerIcon:hover {
+				bgcolor="none"
+				inset="-1 0 0 0"
+				render_bg={}
+				image="graphics/icon_music_player_hover"
+				padding-left=0
+				padding-right=-1
+				padding-top=-1
+			}
+			
+			MusicPlayerIcon:selected {
+				bgcolor="none"
+				inset="-1 0 0 0"
+				render_bg={}
+				image="graphics/icon_music_player_selected"
+				padding-left=0
+				padding-right=-1
+				padding-top=-1
+			}
+			
 		
-		MusicPlayerIcon:selected
-		{
-			bgcolor="none"
-			inset="-1 0 0 0"
-			render_bg={}
-			image="graphics/icon_music_player_selected"
-			padding-left=0
-			padding-right=-1
-			padding-top=-1
+		ClearButton {
+			bgcolor=blue
 		}
 
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
@@ -1917,7 +1982,7 @@
 		place { 
 			control="back,forward" 
 			x=6 
-			y=47 
+			y=48 
 			height=25 
 			width=28 
 			spacing=-1 
@@ -1929,9 +1994,9 @@
 // Controls that appear on the WebPanel pages.
 // ********************************************************************************************************		
 		place {
-			control="refresh,stop,home"
+			control="refresh,stop"
 			x=68
-			y=47
+			y=48
 			height=25
 			width=28
 			spacing=0
@@ -1959,10 +2024,10 @@
 		place {
 			control="URLBar"
 			align=left
-			y=47
-			height=28
+			y=48
+			height=24
 			width=max
-			margin-left=124
+			margin-left=96
 			margin-right=195
 		}
  	
@@ -1980,15 +2045,7 @@
 			x=82 
 			y=55 
 			height=20 
-		}
-		
-		place {
-			control="library_filters" 
-			align=left
-			y=47
-			x=300
-			height=25
-			width=150  
+			margin-left=20
 		}
  
 		place { 
@@ -1996,77 +2053,62 @@
 			width=82 
 			height=20 
 		}
-	     
-	    place {
-	    	control="label_library_zoom"
-	    	width=13
-	    	height=15
-	    	y=52
-	    	align=right
-	    	margin-right=400
-	    } 
-	    
-	    place {
-	    	control="label_zoom_separator"
-	    	width=13
-	    	height=15
-	    	y=52
-	    	align=right
-	    	margin-right=300
-	    }
-	      
+			
+		place {
+			control="library_filters_details,library_filters_list,library_filters_grid"
+			align=left
+			dir=right
+			y=48
+			height=25
+			width=27
+			x=68
+		}
+		
 		place { 
-			control="library_zoom" 
-			align=right 
-			y=47 
+			control="label_library_zoom,library_zoom,label_zoom_separator" 
+			align=left
+			start=library_filters_grid  
 			height=25 
-			margin-right=315 
-		}
-		
-		place {
-			control="library_filters_details" 
-			align=right 
-			y=47 
-			margin-right=251
-			height=25 
-			width=27 
-		}
-		
-		place {
-			control="library_filters_list" 
-			align=right 
-			y=47 
-			margin-right=223 
-			height=25 
-			width=28 
-		}
-		
-		place {
-			control="library_filters_grid" 
-			align=right 
-			y=47
-			margin-right=196 
-			height=25 
-			width=27 
+			margin-left=-10
 		}
 
 		place { 
 			control="subnavgroup_library" 
 			align=left 
-			y=47 
-			height=25 
-			width=224 
-			x=68 
-		}
-		
-		place { 
-			control="library_search" 
-			width=100 
-			align=left 
 			y=48 
 			height=25 
-			x=85
-			spacing=6
+			width=152 
+			x=68 
+		}
+
+		place [!$OSX] { 
+			control="library_search" 
+			margin-right=194 
+			align=right
+			dir=right 
+			y=48
+			height=25 
+		}
+
+		
+		place [$OSX] { 
+			control="library_search" 
+			margin-right=194 
+			align=right
+			dir=right 
+			y=48 
+			height=25 
+		}
+		
+		place {
+			control="library_filters"
+			dir=right
+			x=100
+			y=48
+			align=top-center
+			margin-right=200
+			height=25
+			width=160
 		}
 
 		place [!$OSX] { 
@@ -2089,26 +2131,34 @@
 			spacing=3
 			start="library_filters"
 			 
-			}
+		}
 
 
 // ******************************************************************************************************** 
 // NULL ZONE - Nullify certain controls.
 // ********************************************************************************************************
 		region { 
-			name="bigpicture" 
+			name="fullscreen" 
 			width=0 
 			height=0 
 		}
 		
 		place { 
-			control="fullscreen, label_library_view, label_search_icon, EVCert, label_community_new" 
+			control="fullscreen, label_library_view, label_search_icon,EVCert" 
 			width=0 
 			height=0 
-			x=0
 			y=0
 		}
 		
+		place { 
+			control="label_community_new" 
+			start="label_community" 
+			y="-40" 
+			x="0" 
+			width=0 
+			height=0 
+		}
+
  	  	place {
  	  		control=emailreminderbar 
  	  		margin-top=81 
@@ -2125,7 +2175,7 @@
 			control=DownloadsPage 		
 			width=max 
 			height=max 
-			margin-top=-3 
+			margin-top=-5 
 			margin-left=-1 
 			margin-right=0 
 			margin-bottom=0 
@@ -2137,10 +2187,10 @@
 			control=GamesPage_List 		
 			width=max 
 			height=max 
-			margin-top=-3 
+			margin-top=-2
 			margin-left=-1 
 			margin-right=0 
-			margin-bottom=0 
+			margin-bottom=-2 
 			start=emailreminderbar 
 			dir=down 
 		}
@@ -2161,7 +2211,7 @@
 			control=GamesPage_Grid 		
 			width=max 
 			height=max 
-			margin-top=-5 
+			margin-top=-4 
 			margin-left=-1 
 			margin-right=0 
 			margin-bottom=0 
@@ -2239,4 +2289,3 @@
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 
 } // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-

@@ -4,20 +4,53 @@
 		caption { controlname=label labeltext="#Overlay_Achievement_Recent" }
 		name { controlname=label style=name }
 	}
-	
 	colors {}
 	
 	styles {
-		name {
-			textcolor=text
+		
+		label {
+			font-size=15
+			textcolor=greyHighlight
 		}
+	
+		name {
+			textcolor=white
+			font-size=26
+			font-family=semibold
+		}
+	
 	}
 
 	layout {
-		region { name=body width=max }
+		region {
+			name=body
+			width=max
+		}
 		
-		place { region=body control=icon y=0 x=0 width=64 height=64 }
-		place { region=body control=caption y=0 x=74 width=64 height=64 }
-		place { region=body control=name y=68 x=0 width=128 }
+		place {
+			region=body
+			control=icon
+			y=0
+			x=0
+			width=64
+			height=64
+		}
+		
+		place {
+			region=body
+			control=caption
+			start=icon
+			dir=right
+			x=10
+			y=12
+		}
+		
+		place {
+			region=body
+			control=name
+			start=caption
+			dir=down
+			y=-4
+		}
 	}
 }

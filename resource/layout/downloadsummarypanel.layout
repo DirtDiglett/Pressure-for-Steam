@@ -1,91 +1,76 @@
-"resource/layout/downloadsummarypanel.layout"
-{
-	controls
-	{
-		"downloadsummarypanel"
-		{
+"resource/layout/downloadsummarypanel.layout" {
+	controls {
+		"downloadsummarypanel" {
 			style=CDownloadSummaryPanel
 			tall="145"
-		
 		}
 		
-		"header"
-		{
+		"header" {
 			"ControlName"		"Label"
 			"labelText"		"#steam_downloads_networkusage"
 			style=bigtext
 		}
 
-		"download_rate"
-		{
+		"download_rate" {
 			"ControlName"	    "Label"
 			"labelText"	    "#steam_downloads_downloadrate"
 			style=bigtextlabel		  
 	    }
 	
-	    "download_rate_value"
-	    {
+	    "download_rate_value" {
 			"ControlName"	    "Label"
 			"labelText"	    "%CurrentDLRate%"
 			style=bigtext
 	    }
 	
-		"peak_download_rate"
-		{
+		"peak_download_rate" {
 			"ControlName"	 "Label"
 			"labelText"		 "#steam_downloads_peakdownloadrate"
 			style="bigtextlabel"
 		}
 	
-		"peak_download_rate_value"
-		{
+		"peak_download_rate_value" {
 			"ControlName"	    "Label"
 			"labelText"	    "%PeakDLRate%"
 			style="bigtext"
 		}
 	
-		"total_downloaded"
-		{
+		"total_downloaded" {
 			"ControlName"	    "Label"
 			"labelText"	    "#steam_downloads_totaldownloaded"
 			style="bigtextlabel"
 		}
-		"total_downloaded_value"
-		{
+		
+		"total_downloaded_value" {
 			"ControlName"	    "Label"
 			"labelText"	    "%TotalDownloaded%"
 			style="bigtext"
 		}
 		
-		"disk_status_label"
-		{
+		"disk_status_label" {
 			"ControlName"	    "Label"
 			"labelText"	    "#steam_downloads_diskstatus_idle"
 			style="bigtextlabel"
 		}
 
-		"disk_status_image"
-		{
+		"disk_status_image" {
 			"ControlName"	    "ImagePanel"
 			"image"		"graphics/icon_disk_activity_idle.tga"
 		}		
 		
-		"pauseresumeallbutton"
-		{
+		"pauseresumeallbutton" {
 			"ControlName"	    "Button"
 			style=PauseButton
 		}
 	    
-		"throttling_label"
-		{
+		"throttling_label" {
 			"ControlName"	    "Label"
 			"labelText"	    "#steam_downloads_throttling"
 			style="throttleLabel"
 			group = "ShowWhenThrottled"
 	    }
 	
-		"throttling_value"
-		{
+		"throttling_value" {
 			"ControlName"	    "URLLabel"
 			"URLText"		"steam://settings/downloads"
 			"labelText"	    "%throttle_value%"
@@ -93,16 +78,14 @@
 			group = "ShowWhenThrottled"
 		}		
 		
-		"blackout_label"
-		{
+		"blackout_label" {
 			"ControlName"	    "Label"
 			"labelText"	    "#steam_downloads_autoupdate_window_label"
 			style="throttleLabel"
 			group = "ShowWhenAutoUpdateWindow"
 	    }
 	
-		"blackout_value"
-		{
+		"blackout_value" {
 			"ControlName"	    "URLLabel"
 			"URLText"		"steam://settings/downloads"
 			"labelText"	    "#steam_downloads_autoupdate_window_value"
@@ -110,180 +93,591 @@
 			group = "ShowWhenAutoUpdateWindow"
 		}			
 	    
-		graphpanel {	controlname="GraphPanel"	 style="infoGraphic" group="HideOnCompletion"  zpos="-1" }		   
+		graphpanel {
+			controlname="GraphPanel"
+			style="infoGraphic"
+			group="HideOnCompletion"
+			zpos="-1"
+		}		   
 	}
     
     
-	colors
-	{
+	colors {
 		//panelBackground="16 16 16 255"
 		panelBackground = "12 27 38 255"
 		panelBackgroundTransparent = "12 27 38 0"
+		
+		
+		// Play Button Normal
+		theButtonAntiAliasingTop "46 46 46 255"
+		theButtonAntiAliasingBottom "34 34 34 255"
+		
+		theButtonLineTop "87 87 87 255"
+		theButtonLineTopAntiAliasing "78 78 78 255"
+		
+		theButtonCornerRoundingBottom "48 48 48 255"
+		
+		theButtonGradientStart "65 65 65 255"
+		theButtonGradientEnd "51 51 51 255"
+				
+			// Hover
+			theButtonHoverAntiAliasingTop "63 63 63 255"
+			theButtonHoverAntiAliasingBottom "47 47 47 255"
+			
+			theButtonHoverLineTop "119 119 119 255"
+			theButtonHoverLineTopAntiAliasing "107 107 107 255"
+			
+			theButtonHoverCornerRoundingBottom "66 66 66 255"
+			
+			theButtonHoverGradientStart "89 89 89 255"
+			theButtonHoverGradientEnd "70 70 70 255"	
+						
+			// Active	
+			theButtonActiveAntiAliasingTop "46 46 46 255"
+			theButtonActiveAntiAliasingBottom "34 34 34 255"
+			
+			theButtonActiveLineTop "87 87 87 255"
+			theButtonActiveLineTopAntiAliasing "78 78 78 255"
+			
+			theButtonActiveCornerRoundingBottom "48 48 48 255"
+			
+			theButtonActiveGradientStart "51 51 51 255"
+			theButtonActiveGradientEnd "65 65 65 255"	
 	}
   
-	styles
-	{
-		CDownloadSummaryPanel
-		{
+	styles {
+		CDownloadSummaryPanel {
 			bgcolor=darkestgrey
 			inset="0 0 0 0"
 	  	}
 
-		throttleLabel
-		{
+		throttleLabel {
 			bgcolor	   none
-			font-size   "15"
+			font-size   "13"
 			textcolor   "white"
 			padding-top	"0"
-			font-style="regular"
+			font-style="outerglow,regular"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=4
 	    } 
-		throttleValue
-		{
+	    
+		throttleValue {
 			bgcolor	   none
-			font-size   "15"
+			font-size   "13"
 			textcolor   "orange"
 			padding-top	"0"
-			font-style="uppercase"
+			font-style="outerglow,uppercase"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=2
+			font-outerglow-filtersize=4
 		}
 		
-		container
-		{
+		container {
 			bgcolor="none"
 	   	}
 	
-		bigtext
-		{
-		 font-family=headerfont
-		 font-size=20
-		 font-style="uppercase"
+		bigtext {
+		 font-family=basefont
+		 font-size=14
+		 font-style="outerglow,regular"
+		 font-outerglow-color="8 8 8 255"
+		 font-outerglow-offset=1
+		 font-outerglow-filtersize=4
+		 font-weight=700
 		 textcolor="white"
+		 
 		}
 
-		bigtextlabel 
-		{
+		bigtextlabel {
 		 font-family=basefont
-		 font-size=18
-		 font-style="regular"
+		 font-size=14
+		 font-style="outerglow,regular"
+		 font-outerglow-color="8 8 8 255"
+		 font-outerglow-offset=1
+		 font-outerglow-filtersize=4
 		 textcolor="lightestGreyHighlight"
 		}
 		
-		bigtextHeader 
-		{
+		bigtextHeader {
 		 font-family=basefont
 		 font-size=17
-		 font-style="uppercase"
-		 textcolor="label2"
+		 font-style="outerglow,uppercase"
+		 font-outerglow-color="8 8 8 255"
+		 font-outerglow-offset=1
+		 font-outerglow-filtersize=4
+		 textcolor="red"
 		}
 	
 	
-		bigTextNumbers 
-		{
+		bigTextNumbers {
 		 font-family=basefont
 		 font-size="17"
-		 textcolor="text"
-		 font-style="uppercase"
+		 textcolor="green"
+		 font-style="regular"
 		}
 	
-	
-		
-		PauseButton
-		{   
-	
-			inset="32 0 0 0" //Inset more to the right
+		PauseButton [$OSX] {  
+			inset="25 7 0 0"
 			font-family=headerfont
-			font-size=32
-			font-weight=400
-			textcolor="white"
-			font-style=uppercase
-			bgcolor=none
-	
-			render
-			{
-				1="image( x0 + 10, y0 + 14, x1, y1, graphics/icon_pause )"
-			}
-			render_bg
-			{
-				// background fill
-				0="gradient( x0, y0, x1, y1, grey, lightgreyend	)"   		
-			}
-		}
-	   
-		PauseButton:Hover
-		{	  
-			inset="30 0 0 0"
-			font-family=headerfont
-			font-size=24
-			font-weight=400
-			textcolor="white"
-			font-style=uppercase
-			bgcolor=none   
-		   
-			render
-			{
-				1="image( x0 + 10, y0 + 14, x1, y1, graphics/icon_pause_hover )"
-			}
-			render_bg
-			{
-				// background fill
-		 		0="gradient( x0, y0, x1, y1, blue, darkgreyend	)" 
-			}	   
-		}
+			font-size=30
 			
-		ResumeButton
-		{	  
-
-			inset="23 0	0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor="Text"
-			font-style=uppercase
-			bgcolor=none
-
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_install )"
+			font-style="outerglow"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 16, y0 + 10, x1, y1, graphics/pause )"
 			}
-			render_bg
-			{
-				// background fill
-	 			0="gradient( x0 + 1, y0	+ 1,	x1 -	1, y1 - 1, buttonface2, propertysheetbg	)"
-			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,theButtonGradientStart, theButtonGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, theButtonGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, theButtonAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, theButtonAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, theButtonAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, theButtonAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, theButtonAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, theButtonAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, theButtonAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, theButtonAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, theButtonLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, theButtonCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, theButtonCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, theButtonCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, theButtonCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, theButtonCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, theButtonCornerRoundingBottom)"
+				
+				
+				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+			}	
 		}
-	   
-		ResumeButton:Hover
-		{	  
-			inset="23 0	0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor="TextHover"
-			font-style=uppercase
-			bgcolor=none   
-		   
-			render
-			{
-				1="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_install_hover	)"
+		
+		PauseButton [!$OSX] {  
+			inset="25 3 0 0"
+			font-family=headerfont
+			font-size=30
+			
+			font-style="outerglow"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 16, y0 + 10, x1, y1, graphics/pause )"
 			}
-			render_bg
-			{
-				// background fill
-		 		0="gradient( x0 + 1, y0	+ 1,	x1 -	1, y1 - 1, buttonfaceactive, propertysheetbg	)"
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,theButtonGradientStart, theButtonGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, theButtonGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, theButtonAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, theButtonAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, theButtonAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, theButtonAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, theButtonAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, theButtonAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, theButtonAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, theButtonAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, theButtonLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, theButtonCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, theButtonCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, theButtonCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, theButtonCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, theButtonCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, theButtonCornerRoundingBottom)"
+				
+				
+				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+			}	
+		}
+		
+			PauseButton:Hover {  
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,theButtonHoverGradientStart, theButtonHoverGradientEnd)"
+					1="fill(x0+2,y1-1,x1-2,y1, theButtonHoverGradientEnd)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, theButtonHoverAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, theButtonHoverAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, theButtonHoverAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, theButtonHoverAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, theButtonHoverAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, theButtonHoverAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, theButtonHoverAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, theButtonHoverAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, theButtonHoverLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, theButtonHoverCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, theButtonHoverCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, theButtonHoverCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, theButtonHoverCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, theButtonHoverCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, theButtonHoverCornerRoundingBottom)"
+					
+					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+				}		
+			}
+			
+			PauseButton:Selected {
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,theButtonActiveGradientEnd, theButtonActiveGradientStart)"
+					1="fill(x0+2,y1-1,x1-2,y1, theButtonActiveGradientStart)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, theButtonActiveAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, theButtonActiveAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, theButtonActiveAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, theButtonActiveAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, theButtonActiveLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, theButtonActiveCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, theButtonActiveCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, theButtonActiveCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, theButtonActiveCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, theButtonActiveCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, theButtonActiveCornerRoundingBottom)"
+					
+					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+				}
+			}
+			
+			
+			PauseButton:Active {
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,theButtonActiveGradientEnd, theButtonActiveGradientStart)"
+					1="fill(x0+2,y1-1,x1-2,y1, theButtonActiveGradientStart)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, theButtonActiveAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, theButtonActiveAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, theButtonActiveAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, theButtonActiveAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, theButtonActiveLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, theButtonActiveCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, theButtonActiveCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, theButtonActiveCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, theButtonActiveCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, theButtonActiveCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, theButtonActiveCornerRoundingBottom)"
+					
+					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+				}
+			}
+			
+		ResumeButton [$OSX] {  
+			inset="25 7 0 0"
+			font-family=headerfont
+			font-size=30
+			
+			font-style="outerglow"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 16, y0 + 10, x1, y1, graphics/Resume )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,theButtonGradientStart, theButtonGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, theButtonGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, theButtonAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, theButtonAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, theButtonAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, theButtonAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, theButtonAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, theButtonAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, theButtonAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, theButtonAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, theButtonLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, theButtonCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, theButtonCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, theButtonCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, theButtonCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, theButtonCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, theButtonCornerRoundingBottom)"
+				
+				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+			}	
+		}
+		
+		ResumeButton [!$OSX]{  
+			inset="25 3 0 0"
+			font-family=headerfont
+			font-size=30
+			
+			font-style="outerglow"
+			font-outerglow-color="8 8 8 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=6
+			
+			padding-right=10
+			padding-left=10
+			
+			textcolor=white
+			
+			render {
+				1="image( x0 + 16, y0 + 10, x1, y1, graphics/Resume )"
+			}
+			render_bg {
+				// Background
+				0="gradient(x0,y0+1,x1,y1-1,theButtonGradientStart, theButtonGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, theButtonGradientEnd)"
+				
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, theButtonAntiAliasingTop)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, theButtonAntiAliasingTop)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, theButtonAntiAliasingTop)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, theButtonAntiAliasingTop)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, theButtonAntiAliasingBottom)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, theButtonAntiAliasingBottom)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, theButtonAntiAliasingBottom)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, theButtonAntiAliasingBottom)" // Bottom Right
+				
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, theButtonLineTop)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, theButtonLineTopAntiAliasing)" // Anti-Aliasing
+				
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, theButtonCornerRoundingBottom)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, theButtonCornerRoundingBottom)"
+				19="fill(x0+2,y1-1,x0+3,y1, theButtonCornerRoundingBottom)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, theButtonCornerRoundingBottom)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, theButtonCornerRoundingBottom)"
+				22="fill(x1-1,y1-3,x1,y1-2, theButtonCornerRoundingBottom)"
+				
+				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+			}	
+		}
+		
+			ResumeButton:Hover {  
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,theButtonHoverGradientStart, theButtonHoverGradientEnd)"
+					1="fill(x0+2,y1-1,x1-2,y1, theButtonHoverGradientEnd)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, theButtonHoverAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, theButtonHoverAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, theButtonHoverAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, theButtonHoverAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, theButtonHoverAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, theButtonHoverAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, theButtonHoverAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, theButtonHoverAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, theButtonHoverLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, theButtonHoverLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, theButtonHoverCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, theButtonHoverCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, theButtonHoverCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, theButtonHoverCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, theButtonHoverCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, theButtonHoverCornerRoundingBottom)"
+					
+					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+				}		
+			}
+			
+			ResumeButton:Selected {
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,theButtonActiveGradientEnd, theButtonActiveGradientStart)"
+					1="fill(x0+2,y1-1,x1-2,y1, theButtonActiveGradientStart)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, theButtonActiveAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, theButtonActiveAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, theButtonActiveAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, theButtonActiveAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, theButtonActiveLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, theButtonActiveCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, theButtonActiveCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, theButtonActiveCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, theButtonActiveCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, theButtonActiveCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, theButtonActiveCornerRoundingBottom)"
+					
+					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+				}
+			}
+			
+			
+			ResumeButton:Active {
+				render_bg {
+					// Background
+					0="gradient(x0,y0+1,x1,y1-1,theButtonActiveGradientEnd, theButtonActiveGradientStart)"
+					1="fill(x0+2,y1-1,x1-2,y1, theButtonActiveGradientStart)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, theButtonActiveAntiAliasingTop)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, theButtonActiveAntiAliasingTop)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, theButtonActiveAntiAliasingTop)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, theButtonActiveAntiAliasingTop)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, theButtonActiveAntiAliasingBottom)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, theButtonActiveAntiAliasingBottom)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, theButtonActiveLineTop)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, theButtonActiveLineTopAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, theButtonActiveCornerRoundingBottom)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, theButtonActiveCornerRoundingBottom)"
+					19="fill(x0+2,y1-1,x0+3,y1, theButtonActiveCornerRoundingBottom)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, theButtonActiveCornerRoundingBottom)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, theButtonActiveCornerRoundingBottom)"
+					22="fill(x1-1,y1-3,x1,y1-2, theButtonActiveCornerRoundingBottom)"
+					
+					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
+				}
+			}
 
-			   }	   
-		   }
-		  
-		infoGraphic
-		{
+		infoGraphic {
 			bgcolor   "none"	
 			textcolor "green"
 			inset="0 3 3 3"
-			render_bg
-			{
+			render_bg {
 				// no background
 			}
-			render
-			{
+			
+			render {
 				0="fill( x0, y0, x1, y1, black65 )"
 				//1="gradient_horizontal( x0+170, y0, x0+375, y1, black50, black50 )"
 				
@@ -291,35 +685,106 @@
 		}
 	}
 	
-
-		
-	layout
-	{	
+	layout {	
 		//Background Graph
-		place { control="GraphPanel" width=max height=max margin-top=13 }
+		place { 
+			control="GraphPanel"
+			width=max
+			height=max
+			margin-top=13
+		}
 
 		//Universal Pause/Resume Button
-		place { control="pauseresumeallbutton" width=118 height=43 align=right y=28 margin-right=40 }
+		place { 
+			control="pauseresumeallbutton" 
+			height=43 
+			align=right 
+			y=24 
+			margin-right=12 
+		}
 		
 		//Network Values
-		place { control="header" x=24 height=30 margin-top=20 }
+		place { 
+			control="header" 
+			x=0 
+			y=-100 
+			height=0 
+			width=0 
+		}
 
-		place { control="download_rate_value" x=24 spacing=8 height=30 y=58 }
-		place { control="download_rate" start="download_rate_value" x=5 height=30 y=-1 }
+		place {
+			control="download_rate_value"
+			x=12
+			spacing=8
+			height=30
+			y=16
+		}
+		
+		place {
+			control="download_rate"
+			start="download_rate_value"
+			x=3
+			height=30
+		}
 
-		place { control="peak_download_rate_value" x=24 spacing=8 height=30 y=80 }
-		place { control="peak_download_rate" start="peak_download_rate_value" x=5 height=30 y=-1 }
+		place {
+			control="peak_download_rate_value"
+			x=12
+			spacing=8
+			height=30
+			y=46
+		}
+		
+		place {
+			control="peak_download_rate"
+			start="peak_download_rate_value"
+			x=3
+			height=30
+		}
 
-
-		place { control="total_downloaded_value" x=24 spacing=8 height=30 y=103	}
-		place { control="total_downloaded" start="total_downloaded_value" x=5 height=30 y=-1 }
+		place {
+			control="total_downloaded_value"
+			x=12
+			spacing=8
+			height=30
+			y=76
+		}
+		
+		place {
+			control="total_downloaded"
+			start="total_downloaded_value"
+			x=3
+			height=30
+		}
 
 		//Disk Usage
-		place { control="disk_status_image,disk_status_label" y=90 height=40 spacing=8 align=right margin-right=16 }
+		place {
+			control="disk_status_image,disk_status_label"
+			y=106
+			height=40
+			spacing=8
+			align=right
+			margin-right=16
+		}
 		
 		// Blackout/Throttling Values - Right
-		place { control="blackout_label,blackout_value," y=86 spacing=4 align=right height=30 margin-right=43  }
-		place { control="throttling_label,throttling_value" y=100 spacing=4 align=right height=30 margin-right=43  }
+		place {
+			control="blackout_label,blackout_value"
+			y=65
+			spacing=4
+			align=right
+			height=30
+			margin-right=12
+		}
+		
+		place {
+			control="throttling_label,throttling_value"
+			y=80
+			spacing=4
+			align=right
+			height=30
+			margin-right=12
+		}
 	}
 }
 

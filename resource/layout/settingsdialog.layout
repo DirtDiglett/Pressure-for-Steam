@@ -1,92 +1,118 @@
-"resource/layout/settingsdialog.layout"
-{
-	controls
-	{
-		SettingsDialog { controlname="CDialogSettings" }
-		okbutton { controlname="OKButton" }	 
-		cancelbutton { controlname="CancelButton" }	 
-		settingslist { controlname="SettingsList" style="SettingsList" wide=180 }
-		sheet { controlname="Sheet" style="PropertySheet" }
-
+"resource/layout/settingsdialog.layout" {
+	controls {
+		SettingsDialog {
+			controlname="CDialogSettings"
+		}
+		
+		okbutton {
+			controlname="OKButton"
+		}
+			 
+		cancelbutton {
+			controlname="CancelButton"
+		}
+			 
+		settingslist {
+			controlname="SettingsList"
+			style="SettingsList"
+			wide=180
+		}
+		
+		sheet {
+			controlname="Sheet"
+			style="PropertySheet"
+		}
 	}
 	
-	styles
-	{
-		CDialogSettings
-		{
+	styles {
+		CDialogSettings {
 			minimum-width="740"
 			minimum-height="585"
 			bgcolor=none
 			
-			render
-			{
-				0="fill( x0, y0+25, x0+194, y0 +33, darkestGrey )" //Fixes a bug
+			render {
+				1="gradient(x0,y0+25, x1, y0+31, black40, none)"
 			}
-			render_bg
-			{     
+			
+			render_bg {     
 
-      	 			0="fill( x0, y0, x1, y1, darkestGrey )" //grey
-				1="fill( x0, y0+27, x0+194, y0+32, groupGrey )"
-				2="fill( x0+194, y0+27, x1, y0+32, darkestGrey )"
-  				3="fill( x0, y1-51, x1, y1-50, darkGreyEnd )"
+      	 		0="fill( x0, y0, x1, y1, darkestGrey )" //grey
+      	 		1="fill(x0+1,y0+1,x1-1,y1-1, darkGreyEnd)"
+				
+			//	2="fill( x0+194, y0+27, x1, y0+32, darkestGrey )"
+  			
+  				3="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				4="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
-				5="fill( x0+1, y1-49, x1-1, y1-1, Lightgreyend )"
-				6="fill( x0+1, y1-2, x0+2, y1-1, darkGreyEnd )"
-				7="fill( x1-2, y1-2, x1-1, y1-1, darkGreyEnd )"
+				5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
-
 		}
 		
-		PropertySheet
-		{
-			minimum-width="535"
+		PropertySheet {
+			minimum-width="540"
 			minimum-height="505"
-			inset="0 32 0 0"
+			inset="10 32 0 0"
 			bgcolor=none
-			render_bg
-			{
-			1="fill( x0, y0+1, x1, y1, darkGreyEnd )"
+			
+			render {
+				0="fill(x0-4,y0+1,x0+10,y1, lightGreyEnd)"
+				1="fill(x0-5,y0+1,x0-4,y1, darkestGrey)"
+				2="gradient_horizontal(x0-11,y0+1,x0-5,y1, none, black40)"
+			}
+			
+			render_bg {
+				0="fill(x0-10,y0+1,x1-1,y1, lightGreyEnd)"
+				
 			}
 
 		}
 
-		"SettingsList"
-		{
-			inset="-4 -14 4 0" //inset="6 -14 4 0" 
+		"SettingsList" {
+			inset="-4 -14 0 0" //inset="6 -14 4 0" 
 			minimum-width="200"
 			minimum-height="525"
 			font-size=18
 			padding=6
+			
+			bgcolor=darkestGrey
 		}
 		
-		ListPanelInterior
-    {     
-		inset="3 0 0 0"
-		font-size=15
-		textcolor="text2"
-		bgcolor="none" 
-   		 render
-			{				
-     			//line to hide a bug here
-     			1="fill( x0, y0-6, x0+194, y0+5, darkestGrey )"
-			
-      		 	//gradient to obscure content at bottom of scrolling region 
-			//2="gradient( x0+1, y1 - 16, x1-1, y1, none, almostblack )"
-			}
-
-		render_bg 
-			{				
-			0="fill( x0, y0, x1, y1, darkestGrey)"
-			}
-    } 
+		ListPanel {
+			render{}
+			render_bg{}
+		}
 		
+		ListPanelInterior {     
+			inset="3 0 0 0"
+			font-size=14
+			textcolor="white"
+			bgcolor="none" 
+	   		
+	   		render {}
+	
+			render_bg {}
+		} 
 		
+		ListPanelSectionheader {
+			render{}
+			render_bg{}
+		}
 	}
-	layout
-	{
-		region { name="buttons" width=max height=44 align="bottom" }
-		region { name="body" margin-left=0 margin-right=-1 margin-bottom=51 margin-top=-20 }		
+	
+	layout {
+		region { 
+			name="buttons" 
+			width=max 
+			height=51 
+			align="bottom" 
+		}
 		
+		region { 
+			name="body"
+			margin-left=0
+			margin-right=-1
+			margin-bottom=51
+			margin-top=-20
+		}		
 		
 		place [!$OSX]  { 
 			control="frame_minimize,frame_close" 
@@ -101,30 +127,31 @@
 			region=body 
 			width=max 
 			height=max 
-			spacing=-4  
+			spacing=0 
 		}
 
 		place { 
 			control="settingslist"
-			margin-top=32  
+			margin-top=25
+			margin-left=1 
+			margin-right=0
 		}
 
 		place { 
 			control="sheet" 
-			margin-left=194 
+			margin-left=200
 			margin-top=0 
 		}
 
 		place { 
 			control="okbutton,cancelbutton" 
 			region="buttons"
-		        width=92 
-			height=25 
+		    width=92 
+			height=24 
 			align=right
-			margin-right=10 
-			margin-top=6
-			margin-bottom=5 
-			spacing=10
+			margin-top=14
+			margin-right=14 
+			spacing=8
 		}
 	}
 }

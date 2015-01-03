@@ -1,72 +1,71 @@
 "resource/layout/overlay_screenshotspanel.layout" {
-	controls {
-		ScreenshotsDetailPanel { 
-			controlname="COverlay_Screenshots_Panel" 
-			style=detailsbox
-		}
-		
-		TitleText { controlname="label" labeltext="#Overlay_Screenshots_Panel_Title" style=detailsboxtitle }
-		InstructionText { controlname="label" labeltext="#Overlay_Screenshots_Press_Hotkey"  style=highlight }
-
-		ViewScreenshots { controlname="Button" labeltext="#Overlay_View_Screenshots" command="viewscreenshots" }
-		SetShortcut { controlname="Button" labeltext="#Overlay_Set_Shortcut" command="setshortcut" }
-
-	}
+	controls {}
 	
-	colors {}	
+	colors {
+		lightestBlue="137 235 255 255"
+	}	
 	
 	styles {
-
 		button {
+			font-size=14
+			font-family=basefont
+			
+			inset-left=0
+			padding-left=24
+			padding-top=0
+			padding-bottom=15
+			
 			textcolor=blue
-			font-size=13
-			font-style=regular
 			
-			padding=0
-			padding-right=10
-			
-			render {}
-			render_bg {}
+			render_bg {
+				0="image(x0,y0,x0+26,y1, graphics/overlay/screenshots)"
+			}
 		}
 		
 			button:hover {
 				textcolor=lightestBlue
 				
-				render{}
+				render {
+					1="image(x0,y0,x0+26,y1, graphics/overlay/screenshots_hover)"
+				}
+				
 				render_bg {}
 			}
 		
-
 		highlight {
-			textcolor=none
-			image=graphics/overlay/screenshots
-			inset="0 7 0 0"
+			textcolor=lightestGreyHighlight
+			font-size=12
 		}
 	}
 	
 	layout {
-		region { 
-			name=title 
-			width=max 
-			height=100 
+		region {
+			name=box
+			width=max
+			height=max
 		}
 		
-		//region { name=actions y=65  margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=124 }
-		
-		
-		//place { control="TitleText" region=title }
-		
-		place { 
-			control="TitleText,InstructionText,SetShortcut" 
-			width=0 
-			height=0 
+		place {
+			controls=ViewScreenshots
+			region=box
+			y=0
+			x=0
+			width=max
 		}
-
-		place { 
-			control="InstructionText,ViewScreenshots" 
-			region="title" 
-			spacing=-6
-			y=55
+		
+		place {
+			controls=InstructionText
+			start=ViewScreenshots
+			dir=down
+			y=-14
+			x=30
+		}
+		
+		
+		place {
+			control="TitleText,SetShortcut"
+			width=0
+			height=0
 		}
 	}
 }

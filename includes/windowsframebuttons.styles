@@ -10,10 +10,12 @@
 			
 	    FrameBRGripPanel {
 	      image="graphics/window_controls/grabber"
+	      inset="4 4 0 0"
 	    }
 	    
 	    FrameBRGripPanel:hover {
 	      image="graphics/window_controls/grabber"
+	      inset="4 4 0 0"
 	    }
 
 // ******************************************************************************************************** 
@@ -80,6 +82,39 @@
 	 		
 	 		FrameMaximizeButton:framefocus:active {
 	 			image = "graphics/window_controls/windows/maximize_active"
+	 		}
+
+// ******************************************************************************************************** 
+// Restore Button
+// ********************************************************************************************************
+ 
+	 FrameRestoreButton {
+	 	padding-top=3px
+	 	image = "graphics/window_controls/windows/restore"
+	 }
+	 
+	 	FrameRestoreButton:hover {
+	 		image = "graphics/window_controls/windows/restore_hover"
+	 	}
+	 	
+	 	FrameRestoreButton:active {
+	 		image = "graphics/window_controls/windows/restore_active"
+	 	}
+	 	
+	 	FrameRestoreButton:disabled {
+	 		image = "graphics/window_controls/windows/disabled"
+	 	}
+	 
+	 	FrameRestoreButton:framefocus {
+	 		image = "graphics/window_controls/windows/restore"
+	 	}
+	 	
+	 		FrameRestoreButton:framefocus:hover {
+	 			image = "graphics/window_controls/windows/restore_hover"
+	 		}
+	 		
+	 		FrameRestoreButton:framefocus:active {
+	 			image = "graphics/window_controls/windows/restore_active"
 	 		}
 
 // ******************************************************************************************************** 

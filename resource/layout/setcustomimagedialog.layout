@@ -1,0 +1,167 @@
+"resource/layout/setcustomimagedialog.layout" {
+	controls {
+		SetCustomImageDialog {
+			controlname="Frame"
+			title="#SteamUI_SetCustomImage_Title"
+			style="SetCustomImageDialog"
+		}
+
+		ChooseAnImage {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_ChooseImage"
+			wrap=1
+		}
+		
+		ImagePrescription {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_ImagePrescription"
+			wrap=1
+		}
+
+		ThisFile {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_ThisFile"
+			wrap=1
+		}
+		
+		Filename {
+			controlname="TextEntry"
+			tabposition=1
+			unicode=1
+		}
+		
+		Browse {
+			controlname="Button"
+			tabposition=2
+			command="Browse"
+			labeltext="#SteamUI_SetCustomImage_Browse"
+		}
+		
+		TryAgain {
+			controlname="Label"
+			labeltext="#SteamUI_SetCustomImage_TryAgain"
+			visible=false
+		}
+
+		OK {
+			controlname="Button"
+			tabposition=3
+			command="DoSetCustomImage"
+			labeltext="#SteamUI_SetCustomImage_SetImage"
+		}
+		
+		Cancel {
+			controlname="Button"
+			tabposition=4
+			command="Cancel"
+			labeltext="#SteamUI_SetCustomImage_Cancel"
+		}
+	}
+	
+	styles {
+		SetCustomImageDialog {
+			minimum-width = 400
+			minimum-height = 280
+		}
+	}
+	
+	layout {
+		place [!$OSX]  { 
+			control="frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+		
+		region { 
+			name="top" 
+			width=max 
+			height=150 
+			margin=10 
+			margin-top=54
+		}
+		
+		region {
+			name="middle"
+			width=max
+			height=150
+			y=140
+			margin=10
+		}
+		
+		region { 
+			name="bottom" 
+			width=max 
+			align=bottom 
+			height=51 
+		}
+
+		// top: prompts
+		place { 
+			control="ChooseAnImage" 
+			region="top" 
+			width=max 
+			margin-left=16
+			margin-right=16
+		}
+		
+		place { 
+			control="ImagePrescription" 
+			start="ChooseAnImage" 
+			margin-top=15 
+			dir=down 
+			region="top" 
+			width=max 
+			margin-right=16 
+		}
+
+		// middle: controls to select the image
+		place { 
+			region="middle" 
+			control="ThisFile" 
+			width=360 
+			margin-right=16
+			margin-top=15 
+			margin-left=16
+		}
+		
+		place { 
+			region="middle" 
+			control="Filename" 
+			start="ThisFile" 
+			dir=down 
+			width=280 
+			margin-right=8
+			margin-top=7 
+		}
+		
+		place { 
+			region="middle" 
+			control="Browse" 
+			start="Filename" 
+			dir=right 
+			margin-right=16 
+			align=right
+		}
+		
+		place {
+			region="middle"
+			control="TryAgain"
+			start="Browse"
+			dir=right
+			margin-left=16
+		}
+
+		// bottom: OK/cancel
+		place { 
+			control="OK,Cancel" 
+			region="bottom" 
+			align=right 
+			spacing=8
+			margin-top=14
+			margin-right=14
+			height=24 
+		}
+	}
+}

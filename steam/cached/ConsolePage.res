@@ -1,7 +1,5 @@
-"steam/cached/consolepage.res"
-{
-	"ConsolePage"
-	{
+"steam/cached/consolepage.res" {
+	"ConsolePage" {
 		"ControlName"		"CConsolePage"
 		"fieldName"		"ConsolePage"
 		"xpos"		"1"
@@ -17,8 +15,8 @@
 		
 		style=ConsolePage
 	}
-	"CompletionList"
-	{
+	
+	"CompletionList" {
 		"ControlName"		"Menu"
 		"fieldName"		"CompletionList"
 		"xpos"		"0"
@@ -33,8 +31,8 @@
 		"tabPosition"		"0"
 		"paintbackground"		"1"
 	}
-	"entry"
-	{
+	
+	"entry" {
 		"ControlName"		"TabCatchingTextEntry"
 		"fieldName"		"entry"
 		"xpos"		"0"
@@ -53,8 +51,8 @@
 		"NumericInputOnly"		"0"
 		"unicode"		"1"
 	}
-	"console"
-	{
+	
+	"console" {
 		"ControlName"		"CConsoleHistory"
 		"fieldName"		"console"
 		"xpos"		"0"
@@ -71,27 +69,23 @@
 		"ScrollBar"		"1"
 	}
 	
-	styles
-	{
-		ConsolePage
-		{
-			bgcolor=DialogBG
+	styles {
+		ConsolePage {
+			bgcolor=darkestGrey
 		}
 		
-		TabCatchingTextEntry
-		{
+		TabCatchingTextEntry {
 			bgcolor=none
 			textcolor= darkestGrey
 			render_bg {
 
-				1="fill( x0, y0, x1, y1, Grey)"
+				1="fill( x0, y0, x1, y1, darkestGrey)"
 				2="fill( x0+1, y0+1, x1-1, y1-1, White)"
 			}
 		}
 	}
 
-	layout
-	{
+	layout {
 		place {
 			control="console"
 			width=max

@@ -7,10 +7,12 @@
 			"tabposition"					1
 		}
 
-		"emptylisttext" { control="RichText" style="emptylisttext" }
+		"emptylisttext" {
+			control="RichText"
+			style="emptylisttext"
+		}
 	}
 
-	// random/generic settings go in "colors"
 	colors {
 		// values defining the aspect ratio of the images in the grid view
 		GridView.OriginalImageWidth "460"
@@ -19,7 +21,7 @@
 		// value defining the extra vertical distance to leave below
 		// the picture for drop shadow room, in px. This value should
 		// match the margin values in the layout statements in the gamespage_grid_*.layout files.
-		GridView.DropShadowLeading "10"
+		GridView.DropShadowLeading "0"
 	}
 
 	styles {
@@ -80,4 +82,3 @@
 		}
 	}
 }
-

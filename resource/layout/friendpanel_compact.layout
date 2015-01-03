@@ -1,0 +1,98 @@
+"resource/layout/friendpanel_compact.layout" {
+	controls {
+		MenuButton {
+			style=menuButtonStyle
+		}
+		
+		AvatarOverlayImage {
+			zpos=2
+		}
+		
+		AcceptLink {
+			style="inviteLinkStyle"
+		}
+		
+		IgnoreLink {
+			style="inviteLinkStyle"
+		}
+		
+		BlockLink {
+			style="inviteLinkStyle"
+		}
+	}
+	
+	colors {
+		Friends.OfflineColor      "greyHighlight"
+	}
+
+	styles {
+		CFriendPanel:selected {
+			render_bg {}
+		}	
+		
+		SelfPanel:hover {
+			render_bg {}
+		}		    
+ 
+ 		namestyle {
+			font-family=basefont
+			font-size=14
+			font-weight=600
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3		
+		}
+		
+		nameInstanceStyle {
+			font-family=basefont
+			textcolor="lightestGrey"
+			font-size=14
+			
+			inset="0 0 0 0"
+			
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3	
+		}
+		
+		menuButtonStyle {
+			minimum-width=14
+			padding-top=7
+			padding-right=5
+			padding-left=6
+		}
+		
+		menuButtonStyle:hover {
+			render_bg {}
+		}
+		
+			downarrow:hover {
+				render_bg {
+					0="image( x0, y0, x1, y1, graphics/icon_down_hover )"
+				}
+			}
+		
+		inviteLinkStyle {
+			font-style=""
+			textcolor=Text2
+			padding-left=2
+		}
+	
+			inviteLinkStyle:hover {
+				textcolor=White
+				font-style=underline
+			}
+	}
+	
+	layout {
+		place {
+			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore,MenuButton"
+			x=1
+			y=1
+			spacing=4
+		}
+	}
+}

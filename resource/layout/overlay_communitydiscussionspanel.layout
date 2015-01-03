@@ -1,0 +1,71 @@
+"resource/layout/overlay_communitydiscussionspanel.layout" {
+	controls {}
+	
+	colors {
+		lightestBlue="137 235 255 255"
+	}	
+	
+	styles {
+		button {
+			font-size=14
+			font-family=basefont
+			
+			inset-left=0
+			padding-left=24
+			padding-top=0
+			padding-bottom=15
+			
+			textcolor=blue
+			
+			render_bg {
+				//0="fill(x0,y0,x1,y1, orange)"
+				1="image(x0,y0,x0+26,y1, graphics/overlay/discussions)"
+			}
+		}
+		
+			button:hover {
+				textcolor=lightestBlue
+				
+				render_bg {
+					//0="fill(x0,y0,x1,y1, orange)"
+					1="image(x0,y0,x0+26,y1, graphics/overlay/discussions_hover)"
+				}
+			}
+		
+		highlight {
+			textcolor=lightestGreyHighlight
+			font-size=12
+		}
+	}
+	
+	layout {
+		region {
+			name=box
+			width=max
+			height=max
+		}
+		
+		place {
+			controls=ViewCommunityDiscussions
+			region=box
+			y=0
+			x=0
+			width=max
+		}
+		
+		place {
+			controls=NumDiscussionsText
+			start=ViewCommunityDiscussions
+			dir=down
+			y=-14
+			x=30
+		}
+		
+		
+		place {
+			control="TitleText"
+			width=0
+			height=0
+		}
+	}
+}

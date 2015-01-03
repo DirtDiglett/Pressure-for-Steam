@@ -1,7 +1,7 @@
 "scrollbars.styles" { 
 	
 	colors {
-    	ScrollBar.Wide          11 //19 (11 Seems to make it more akin to iOS Scrollbars)
+    	ScrollBar.Wide          16 //19 (11 Seems to make it more akin to iOS Scrollbars)
 	}
 	
 	styles {
@@ -174,121 +174,8 @@
 			render_bg {}
 		}
 		 
-		"Page ListPanelInterior:scrollbar" {
-			inset="3 1 -1 0"
-			bgcolor=none
-			selectedbgcolor="blue"
-			selectedtextcolor="red" //test
-			render {}
-			render_bg {}
-		}
+
 		
-		
-		"Csteamrootdialog ListPanelInterior:scrollbar" { 
-			inset="3 0 -1 0"
-			bgcolor=none
-			selectedbgcolor="blue"
-			
-			render {}   
-			render_bg {}
-		}
-		
-		ListPanelInterior:scrollbar { 
-			bgcolor=none
-			inset="3 1 -1 0"
-			textcolor="text2"
-			selectedtextcolor="red" //test
-			selectedbgcolor="blue"
-			
-			render {}
-			
-			render_bg {}
-		} 
-		
-		CheckButtonList:scrollbar {
-			inset="1 1 1 1"
-			textcolor="text2"
-			bgcolor=none
-			
-			render {
-				//gradient to obscure content at top of scrolling region 
-				0="gradient( x0+1, y0, x1+1, y0 + 6, dialogbg, none  )"
 				
-				//gradient to obscure content at bottom of scrolling region 
-				1="gradient( x0, y1 - 9, x1+1, y1-1, none, almostblack )"
-			}
-			
-			render_bg { 
-				// background fill
-				0="gradient( x0 + 1, y0 + 1, x1 - 1, y0 +80, dialogbg, BackgroundStartOpaque )"
-				1="fill( x0 + 1, y0 + 80, x1 - 1, y1 - 1, BackgroundStartOpaque )"
-				2="gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
-				  
-				// lines around
-				3="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-				4="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-				5="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-				6="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-				
-				
-				// single pixel fills in the corners
-				7="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
-				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
-				9="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
-				10="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
-				11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-				12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-				13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-				14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-				15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-				16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-				17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-				18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-			}
-			  
-		} 
-		
-		"Page CheckButtonList:scrollbar" {
-			inset="1 1 1 1"
-			textcolor="text2"
-			bgcolor=none
-			
-			render {
-				//gradient to obscure content at top of scrolling region 
-				0="gradient( x0+1, y0, x1+1, y0 + 6, dialogbg, none  )"
-				
-				//gradient to obscure content at bottom of scrolling region 
-				1="gradient( x0, y1 - 9, x1+1, y1-1, none, almostblack )"
-			}   
-			
-			render_bg { 
-				// background fill
-				0="gradient( x0 + 1, y0 + 1, x1 - 1, y0 +80, dialogbg, BackgroundStartOpaque )"
-				1="fill( x0 + 1, y0 + 80, x1 - 1, y1 - 1, BackgroundStartOpaque )"
-				2="gradient( x0 + 1, y0 + 1, x1 - 1, y0 + 30, backgroundstartsubtle, none )"
-				  
-				// lines around
-				3="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-				4="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-				5="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-				6="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-				
-				
-				// single pixel fills in the corners
-				7="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
-				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
-				9="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
-				10="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
-				11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-				12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-				13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-				14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-				15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-				16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-				17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-				18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-			}
-			  
-		}		
 	}
 }

@@ -1,30 +1,80 @@
-"steam/cached/overlaywebbrowser.layout"
-{
-	controls
-	{
-		WebBrowser { controlname="COverlayWebBrowser" frametitle="#Overlay_WebBrowserTitle" }
-		HTMLField	{ controlname="HTML" zpos=1 }
-		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage"  }
-		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }
-		URLBar		{ controlname="TextEntry" style="TextEntryURL" }
-		StatusText { controlname="Label"  }
+"steam/cached/overlaywebbrowser.layout" {
+	controls {
+		WebBrowser {
+			controlname="COverlayWebBrowser"
+			frametitle="#Overlay_WebBrowserTitle"
+		}
 		
-		HomeButton	{ controlname="Button" command="WebHome" labeltext="" style="HomeButton" }
-		StopButton	{ controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
-		ReloadButton	{ controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
-		ForwardButton	{ controlname="Button" command="WebForward" labeltext="" style="ForwardButtonSm" }
-		BackButton	{ controlname="Button" command="WebBack" style="BackButtonSm" }
+		HTMLField {
+			controlname="HTML"
+			zpos=1
+		}
 		
-		PageLoadThrobber { controlname="ImagePanel" image="graphics/rampDown_4" }
+		URLStatusImage {
+			controlname="ImagePanel"
+			style="URLStatusImage"
+		}
+		
+		EVCert {
+			controlname="Label"
+			style="LabelEVCert"
+			visible=false
+		}
+		
+		URLBar {
+			controlname="TextEntry"
+			style="TextEntryURL"
+		}
+		
+		StatusText {
+			controlname="Label"
+		}
+		
+		HomeButton {
+			controlname="Button"
+			command="WebHome"
+			labeltext=""
+			style="HomeButton"
+		}
+		
+		StopButton {
+			controlname="Button"
+			command="WebStop"
+			labeltext=""
+			style="StopButton"
+		}
+		
+		ReloadButton {
+			controlname="Button"
+			command="WebReload"
+			labeltext=""
+			style="ReloadButton"
+		}
+		
+		ForwardButton {
+			controlname="Button"
+			command="WebForward"
+			labeltext=""
+			style="ForwardButtonSm"
+		}
+		
+		BackButton {
+			controlname="Button"
+			command="WebBack"
+			style="BackButtonSm"
+		}
+		
+		PageLoadThrobber {
+			controlname="ImagePanel"
+			image="graphics/rampDown_4"
+		}
 	}
 	
-	styles
-	{
+	styles {
 		Label {
 			font-size=12
 			textcolor="White"
 		}
-		
 		
 		BackButtonSm {
 			image=none
@@ -69,182 +119,138 @@
 					
 				// Align the image correctly (12px by 10px)
 				50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/back)"						
+			}
 		}
-	}
 	
-	    BackButtonSm:hover {
-		render_bg {
-		       // background fill
-		        0 = "gradient( x0 + 1, y0 + 1, x1, y1 - 2, greyHighlight, grey )" // Background Gradient
-				       
-			    // Dark Borders around
-			        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
-			        2="fill( x0 + 2, y0, x1, y0 + 1, darkestGrey )" // Top
-			        4="fill( x0 + 2, y1 - 2, x1, y1-1, darkestGrey )" // Bottom
-			        5="fill(x1-1, y0, x1, y1-1, darkestGrey)"
-			
-				// Dark Grey Background Corners & Fake Anti-Aliasing
-					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
-					6="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
-					7="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					8="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-						
-					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
-					14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
-					15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					16="fill( x0 + 1, y1 -2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)				
-					
-				// Single Pixel Highlight Line.
-				17="fill( x0 + 3, y0 + 1, x1-1, y0 + 2, lightestGreyHighlight )"
-					
-				// Fake Anti-Aliasing for the Single Pixel Highlight
-				18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, topLightPixelsHighlighted )" // Top Left		
-				19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, topLightPixelsHighlighted )" // Top Left
-					
-				// Fake Anti-Aliasing for the bottom corners.
-				24="fill( x0 + 2, y1 - 3, x0 + 3, y1 - 2, bottomDarkPixelsHighlighted )" // Bottom Left
-				25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixelsHighlighted )" // Bottom Left
-										
-				// Drop-shadow
-				47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
-				48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left			
-				49="fill(x0+2, y1-1, x1, y1, grey)" // single 1px line.
-					
-				// Align the image correctly (12px by 10px)
-				50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/back)"						
-			}
-	    }
-		
-	    BackButtonSm:active {
-	    	render_bg {
-		       // background fill
-		        0 = "fill( x0 + 1, y0 + 1, x1, y1 - 2, darkestGrey )" // Background Gradient
-				       
-			    // Dark Borders around
-			        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
-			        2="fill( x0 + 2, y0, x1, y0 + 1, darkestGrey )" // Top
-			        4="fill( x0 + 2, y1 - 2, x1, y1-1, darkestGrey )" // Bottom
-			        5="fill(x1-1, y0, x1, y1-1, darkestGrey)"
-			
-				// Dark Grey Background Corners & Fake Anti-Aliasing
-					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
-					6="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
-					7="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					8="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-						
-					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
-					14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
-					15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					16="fill( x0 + 1, y1 -2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)				
-					
-				// Drop-shadow
-				47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
-				48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left			
-				49="fill(x0+2, y1-1, x1, y1, grey)" // single 1px line.
-					
-				// Align the image correctly (12px by 10px)
-				50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/back_active)"						
-			}
-	    }
-		
-	    BackButtonSm:disabled {
-	    	render_bg {
-		       // background fill
-		        0 = "gradient( x0 + 1, y0 + 1, x1, y1 - 2, lightGreyEnd, darkGreyEnd )" // Background Gradient
-				       
-			    // Dark Borders around
-		        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
-		        2="fill( x0 + 2, y0, x1, y0 + 1, darkestGrey )" // Top
-		        4="fill( x0 + 2, y1 - 2, x1, y1-1, darkestGrey )" // Bottom
-		        5="fill(x1-1, y0, x1, y1-1, darkestGrey)"
-			
-				// Dark Grey Background Corners & Fake Anti-Aliasing
-					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
-					6="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
-					7="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					8="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-						
-					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
-					14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
-					15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					16="fill( x0 + 1, y1 -2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)				
-					
-				// Single Pixel Highlight Line.
-				17="fill( x0 + 3, y0 + 1, x1-1, y0 + 2, grey25 )"
-					
-					// Fake Anti-Aliasing for the Single Pixel Highlight
-					18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, grey10 )" // Top Left		
-					19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, grey10 )" // Top Left
-					
-				// Fake Anti-Aliasing for the bottom corners.
-				24="fill( x0 + 2, y1 - 3, x0 + 3, y1 - 2, bottomDarkPixelsDisabled )" // Bottom Left
-				25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixelsDisabled )" // Bottom Left
-										
-				// Drop-shadow
-				47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
-				48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left			
-				49="fill(x0+2, y1-1, x1, y1, grey)" // single 1px line.
-					
-				// Align the image correctly (12px by 10px)
-				50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/back_disabled)"						
-			}
-	    }
-
-	ForwardButtonSm {
-		image=none
-		render_bg {
-			// background fill
-	        0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, grey, lightGreyEnd )" // Background Gradient
-	                
-	        // Dark Borders around
-	        2="fill( x0+1, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
-	        3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
-	        4="fill( x0+1, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
-	        
-			// Dark Grey Background Corners & Fake Anti-Aliasing
-				// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
-				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
-				9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+		    BackButtonSm:hover {
+			render_bg {
+			       // background fill
+			        0 = "gradient( x0 + 1, y0 + 1, x1, y1 - 2, greyHighlight, grey )" // Background Gradient
+					       
+				    // Dark Borders around
+				        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
+				        2="fill( x0 + 2, y0, x1, y0 + 1, darkestGrey )" // Top
+				        4="fill( x0 + 2, y1 - 2, x1, y1-1, darkestGrey )" // Bottom
+				        5="fill(x1-1, y0, x1, y1-1, darkestGrey)"
 				
-				// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
-				11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
-				12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					// Dark Grey Background Corners & Fake Anti-Aliasing
+						// TOP-LEFT corner pixels (Fake Anti-Aliasing)
+						6="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
+						7="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						8="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+							
+						// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
+						14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
+						15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						16="fill( x0 + 1, y1 -2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)				
+						
+					// Single Pixel Highlight Line.
+					17="fill( x0 + 3, y0 + 1, x1-1, y0 + 2, lightestGreyHighlight )"
+						
+					// Fake Anti-Aliasing for the Single Pixel Highlight
+					18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, topLightPixelsHighlighted )" // Top Left		
+					19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, topLightPixelsHighlighted )" // Top Left
+						
+					// Fake Anti-Aliasing for the bottom corners.
+					24="fill( x0 + 2, y1 - 3, x0 + 3, y1 - 2, bottomDarkPixelsHighlighted )" // Bottom Left
+					25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixelsHighlighted )" // Bottom Left
+											
+					// Drop-shadow
+					47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
+					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left			
+					49="fill(x0+2, y1-1, x1, y1, grey)" // single 1px line.
+						
+					// Align the image correctly (12px by 10px)
+					50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/back)"						
+				}
+		    }
 			
-			// Single Pixel Highlight Line.
-			17="fill( x0+1, y0 + 1, x1 - 3, y0 + 2, greyHighlight )"
+		    BackButtonSm:active {
+		    	render_bg {
+			       // background fill
+			        0 = "fill( x0 + 1, y0 + 1, x1, y1 - 2, darkestGrey )" // Background Gradient
+					       
+				    // Dark Borders around
+				        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
+				        2="fill( x0 + 2, y0, x1, y0 + 1, darkestGrey )" // Top
+				        4="fill( x0 + 2, y1 - 2, x1, y1-1, darkestGrey )" // Bottom
+				        5="fill(x1-1, y0, x1, y1-1, darkestGrey)"
+				
+					// Dark Grey Background Corners & Fake Anti-Aliasing
+						// TOP-LEFT corner pixels (Fake Anti-Aliasing)
+						6="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
+						7="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						8="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+							
+						// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
+						14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
+						15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						16="fill( x0 + 1, y1 -2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)				
+						
+					// Drop-shadow
+					47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
+					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left			
+					49="fill(x0+2, y1-1, x1, y1, grey)" // single 1px line.
+						
+					// Align the image correctly (12px by 10px)
+					50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/back_active)"						
+				}
+		    }
 			
-				// Fake Anti-Aliasing for the Single Pixel Highlight		
-				20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, greyHighlightFake )" // Top Right
-				21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, greyHighlightFake )" // Top Right
-			
-			// Fake Anti-Aliasing for the bottom corners.
-			22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixels )" // Bottom Right
-			23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixels )" // Bottom Right
-		
-			// Drop-shadow
-			45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
-			46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
-			49="fill(x0+1, y1-1, x1-2, y1, grey)" // single 1px line.
-			
-			// Align the image correctly (12px by 10px)
-			50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/forward)"	
-			
-			}
-		}
+		    BackButtonSm:disabled {
+		    	render_bg {
+			       // background fill
+			        0 = "gradient( x0 + 1, y0 + 1, x1, y1 - 2, lightGreyEnd, darkGreyEnd )" // Background Gradient
+					       
+				    // Dark Borders around
+			        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
+			        2="fill( x0 + 2, y0, x1, y0 + 1, darkestGrey )" // Top
+			        4="fill( x0 + 2, y1 - 2, x1, y1-1, darkestGrey )" // Bottom
+			        5="fill(x1-1, y0, x1, y1-1, darkestGrey)"
+				
+					// Dark Grey Background Corners & Fake Anti-Aliasing
+						// TOP-LEFT corner pixels (Fake Anti-Aliasing)
+						6="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
+						7="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						8="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+							
+						// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
+						14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
+						15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						16="fill( x0 + 1, y1 -2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)				
+						
+					// Single Pixel Highlight Line.
+					17="fill( x0 + 3, y0 + 1, x1-1, y0 + 2, grey25 )"
+						
+						// Fake Anti-Aliasing for the Single Pixel Highlight
+						18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, grey10 )" // Top Left		
+						19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, grey10 )" // Top Left
+						
+					// Fake Anti-Aliasing for the bottom corners.
+					24="fill( x0 + 2, y1 - 3, x0 + 3, y1 - 2, bottomDarkPixelsDisabled )" // Bottom Left
+					25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixelsDisabled )" // Bottom Left
+											
+					// Drop-shadow
+					47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
+					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left			
+					49="fill(x0+2, y1-1, x1, y1, grey)" // single 1px line.
+						
+					// Align the image correctly (12px by 10px)
+					50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/back_disabled)"						
+				}
+		    }
 	
-		ForwardButtonSm:hover {
+		ForwardButtonSm {
+			image=none
 			render_bg {
 				// background fill
-		        0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, greyHighlight, grey )" // Background Gradient
+		        0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, grey, lightGreyEnd )" // Background Gradient
 		                
 		        // Dark Borders around
 		        2="fill( x0+1, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
 		        3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
 		        4="fill( x0+1, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
 		        
-		
 				// Dark Grey Background Corners & Fake Anti-Aliasing
 					// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 					8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
@@ -255,18 +261,17 @@
 					11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
 					12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
 				
 				// Single Pixel Highlight Line.
-				17="fill( x0+1, y0 + 1, x1 - 3, y0 + 2, lightestGreyHighlight )"
+				17="fill( x0+1, y0 + 1, x1 - 3, y0 + 2, greyHighlight )"
 				
 					// Fake Anti-Aliasing for the Single Pixel Highlight		
-					20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, topLightPixelsHighlighted )" // Top Right
-					21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, topLightPixelsHighlighted )" // Top Right
+					20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, greyHighlightFake )" // Top Right
+					21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, greyHighlightFake )" // Top Right
 				
 				// Fake Anti-Aliasing for the bottom corners.
-				22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixelsHighlighted )" // Bottom Right
-				23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixelsHighlighted )" // Bottom Right
+				22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixels )" // Bottom Right
+				23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixels )" // Bottom Right
 			
 				// Drop-shadow
 				45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
@@ -275,45 +280,14 @@
 				
 				// Align the image correctly (12px by 10px)
 				50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/forward)"	
-			}
-		}
-		
-		ForwardButtonSm:active {
-			render_bg {
-				// background fill
-		        0 = "fill( x0+1, y0 + 1, x1 - 1, y1 - 1, darkestGrey )" // Background Gradient
-		                
-		        // Dark Borders around
-		        2="fill( x0+1, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
-		        3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
-		        4="fill( x0+1, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
-		        
-		
-				// Dark Grey Background Corners & Fake Anti-Aliasing
-					// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
-					8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
-					9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
-					// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
-					11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
-					12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
-				// Drop-shadow
-				45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
-				46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
-				49="fill(x0+1, y1-1, x1-2, y1, grey)" // single 1px line.
 				
-				// Align the image correctly (12px by 10px)
-				50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/forward_active)"	
 			}
 		}
-		
-		ForwardButtonSm:disabled {
-			render_bg {
-			// background fill
-			        0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, lightGreyEnd, darkGreyEnd )" // Background Gradient
+	
+			ForwardButtonSm:hover {
+				render_bg {
+					// background fill
+			        0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, greyHighlight, grey )" // Background Gradient
 			                
 			        // Dark Borders around
 			        2="fill( x0+1, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
@@ -334,15 +308,15 @@
 						
 					
 					// Single Pixel Highlight Line.
-					17="fill( x0+1, y0 + 1, x1 - 3, y0 + 2, grey25 )"
+					17="fill( x0+1, y0 + 1, x1 - 3, y0 + 2, lightestGreyHighlight )"
 					
-					// Fake Anti-Aliasing for the Single Pixel Highlight		
-					20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, grey10 )" // Top Right
-					21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, grey10 )" // Top Right
+						// Fake Anti-Aliasing for the Single Pixel Highlight		
+						20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, topLightPixelsHighlighted )" // Top Right
+						21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, topLightPixelsHighlighted )" // Top Right
 					
 					// Fake Anti-Aliasing for the bottom corners.
-					22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixelsDisabled )" // Bottom Right
-					23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixelsDisabled )" // Bottom Right
+					22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixelsHighlighted )" // Bottom Right
+					23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixelsHighlighted )" // Bottom Right
 				
 					// Drop-shadow
 					45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
@@ -350,52 +324,159 @@
 					49="fill(x0+1, y1-1, x1-2, y1, grey)" // single 1px line.
 					
 					// Align the image correctly (12px by 10px)
-					50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/forward_disabled)"	
+					50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/forward)"	
+				}
 			}
-		}
+			
+			ForwardButtonSm:active {
+				render_bg {
+					// background fill
+			        0 = "fill( x0+1, y0 + 1, x1 - 1, y1 - 1, darkestGrey )" // Background Gradient
+			                
+			        // Dark Borders around
+			        2="fill( x0+1, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
+			        3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
+			        4="fill( x0+1, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
+			        
+			
+					// Dark Grey Background Corners & Fake Anti-Aliasing
+						// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
+						8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
+						9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						
+						// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
+						11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
+						12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+						13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+				
+					// Drop-shadow
+					45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
+					46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
+					49="fill(x0+1, y1-1, x1-2, y1, grey)" // single 1px line.
+					
+					// Align the image correctly (12px by 10px)
+					50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/forward_active)"	
+				}
+			}
+			
+			ForwardButtonSm:disabled {
+				render_bg {
+				// background fill
+				        0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, lightGreyEnd, darkGreyEnd )" // Background Gradient
+				                
+				        // Dark Borders around
+				        2="fill( x0+1, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
+				        3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
+				        4="fill( x0+1, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
+				        
+				
+						// Dark Grey Background Corners & Fake Anti-Aliasing
+							// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
+							8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
+							9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+							10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+							
+							// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
+							11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
+							12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+							13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+							
+						
+						// Single Pixel Highlight Line.
+						17="fill( x0+1, y0 + 1, x1 - 3, y0 + 2, grey25 )"
+						
+						// Fake Anti-Aliasing for the Single Pixel Highlight		
+						20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, grey10 )" // Top Right
+						21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, grey10 )" // Top Right
+						
+						// Fake Anti-Aliasing for the bottom corners.
+						22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixelsDisabled )" // Bottom Right
+						23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixelsDisabled )" // Bottom Right
+					
+						// Drop-shadow
+						45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
+						46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
+						49="fill(x0+1, y1-1, x1-2, y1, grey)" // single 1px line.
+						
+						// Align the image correctly (12px by 10px)
+						50="image(x0+8,y0+7,x0+20,y0+17, graphics/icons/forward_disabled)"	
+				}
+			}
 		
 		TextEntryURL {
-			
 			font-family=basefont
-			font-size=14
-			textcolor="grey"
-			bgcolor="none"
-			selectedtextcolor="white"
-			selectedbgcolor="blue"
-			shadowtextcolor="grey"	// this is the cursor color
-			padding-top=9
-			padding-left=4
+	      font-size=14
+	      textcolor  = "grey"
+	      bgcolor  = "none"
+	      selectedtextcolor  = "white"
+	      selectedbgcolor  = "blue"
+	      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+	
+	      inset-left=2
+	      inset-top=0
+	      
+	      render_bg {
+	      	0="fill(x0,y0+2,x1-2,y1-2, white)"
+	
+		  	// TOP
+		  	2="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+		  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+		  	
+		  	// RIGHT
+		  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+		  	
+		  	// BOTTOM
+	      	7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+	      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
+	      	
+	      }
+		}
 		
-			render_bg {
-				1="image_tiled(x0, y0, x1-4, y0+25, graphics/inner)"
-				2="image(x1-4, y0, x1, y0+25, graphics/textEntryRight)"
+			TextEntryURL:hover {
+				
+				textcolor="darkGreyEnd"
+			}   			
+		
+			TextEntryURL:Disabled {
+				 font-family=basefont
+			      font-size=14
+			      textcolor  = "lightestGreyHighlight"
+			      bgcolor  = "none"
+			      selectedtextcolor  = "white"
+			      selectedbgcolor  = "blue"
+			      shadowtextcolor  = "darkestGrey"  // this is the cursor color
+			
+			      inset-left=4
+			      inset-top=0
+			      
+			      render_bg {
+				      	0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
+				
+					  	// TOP
+					  	2="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
+					  	3="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
+					  	
+					  	// RIGHT
+					  	5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+					  	
+					  	// BOTTOM
+				      	7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+				      	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+			      } 
 			}
-		           	
-		}
 		
-		TextEntryURL:hover {
-			
-			textcolor="darkestGrey"
-		}   			
-		
-		TextEntryURL:Disabled {
-			
-			textcolor="textdisabled"
-		}
-		
-		LabelEVCert
-		{
+		LabelEVCert {
 			font-family=basefont
 			font-size=14
-			textcolor="darkclientbg"
+			textcolor="darkestGrey"
 			bgcolor="html.secureurl"
 			inset-left=4
 			inset-right=4
 			inset-top=-1		
 		}
 			
-		URLStatusImage
-		{
+		URLStatusImage {
 			bgcolor=none
 			inset="0 0 0 0"
 			render_bg={}
@@ -403,47 +484,40 @@
  			scaling=panel
  		}
 
-		URLBarSecure
-		{
-		textcolor="Black"
-		font-size=14
+		URLBarSecure {
+			textcolor="green"
+			font-size=14
 		}
 
-		URLBarBrokenSecure
-		{
-		textcolor="Red"
+		URLBarBrokenSecure {
+			textcolor="Red"
+			font-family=semibold
 		}
 	
-
-		COverlayWebBrowser
-		{
-			bgcolor=grey
-			render_bg
-			{
-				0="fill( x0, y0, x1, y0+5, lightGreyEnd )"
-				1="fill( x0, y0+5, x1, y0+6, darkGreyEnd )"
-				2="fill( x0, y0+6, x1, y0+7, greyHighlight )"
-				3="gradient( x0, y0+7, x1, y0+47, grey, lightGreyEnd )"
+		COverlayWebBrowser {
+			bgcolor=none
+			render_bg {
+				1="fill( x0, y0+4, x1, y0+5, darkGreyEnd )"
+				2="fill( x0, y0+5, x1, y0+6, greyHighlight )"
+				3="gradient( x0, y0+6, x1, y0+47, grey, lightGreyEnd )"
 				4="fill( x0, y0+47, x1, y0+48, darkGreyEnd )"
 				5="fill( x0, y1-21, x1, y1-20, grey )"
 				6="fill( x0, y1-20, x1, y1-19, greyHighlight )"
-				7="gradient( x0, y1-19, x1, y1, grey, lightGreyEnd )"
+				//7="gradient( x0, y1-19, x1, y1, grey, lightGreyEnd )"
 				8="fill( x0, y1-1, x0+1, y1, darkGreyEnd )"
 				9="fill( x1-1, y1-1, x1, y1, darkGreyEnd )"
 			}
 		}
-		HTML
-		{
-			render
-			{
-			0="gradient( x0, y0, x1, y0+4, lightGreyEnd, None )"	
-			1="gradient( x0, y1-4, x1, y1, None, Grey )"
+		
+		HTML {
+			render {
+				0="gradient( x0, y0, x1, y0+4, black75, None )"	
+				1="gradient( x0, y1-5, x1, y1, None, black75 )"
 			}
 		}
 	}
 
-	layout
-	{
+	layout {
 		///// HTML Browser /////
 
 		place { 
@@ -497,15 +571,19 @@
 
 		place { 
 			control="URLBar" 
-			height=25 
+			height=24 
 			width=max 
 			start="HomeButton" 
 			margin-right=9 }
 		
 		///// Null Zone /////
 
-		place { control="EVCert,PageLoadThrobber" x=0 y=0 width=0 height=0 }
-	}
-	
+		place { 
+			control="EVCert,PageLoadThrobber" 
+			x=0 
+			y=0
+			width=0
+			height=0
+		}
+	}	
 }
-

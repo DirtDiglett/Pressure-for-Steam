@@ -2,440 +2,659 @@
 	
 	styles {
 		
-	ListPanelCheckBox
-    {
-		font-family=basefont
-		font-size=14
-		font-weight=400
-		textcolor  = "Label"
-		image  = "graphics/chkUnselStd_Sm"
-		inset  = "0 5 0 0"
-    }   
-
-    
-    ListPanelCheckBox:selected
-    {
-		image  = "graphics/chkSelStd_Sm"    
-    }
-
-	ListPanelCheckBox:focus
-    {
-		textcolor  = "Text"
-		bgcolor=none
-		image  = "graphics/chkUnselFocus_Sm"  
-    }
-
-    ListPanelCheckBox:selected:focus
-    {
-		textcolor  = "Text"
-		render_bg {}
-		bgcolor=none
-		image  = "graphics/chkSelFocus_Sm"
-    }
-    
-    ListPanelCheckBox:disabled
-    {
-		textcolor  = "TextDisabled"
-		bgcolor=none
-		image  = "graphics/chkUnselDis_Sm"
-    }
-    
-    ListPanelCheckBox:disabled:select
-    {
-		textcolor  = "TextDisabled"
-		bgcolor=none
-		//!! bug - this needs to look disabled
-		image  = "graphics/chkUnselDis"
-    }
-    
-    "ListPanelColumnheader ListPanelCheckBox"
-    {
-		font-family=basefont
-		font-size=14
-		font-weight=400
-		textcolor  = "Label"
-		image  = "graphics/chkUnSelFocus_Sm"
-		inset  = "4 0 0 0"  
-	}
-
-     
-	"ListPanelColumnHeader ListPanelCheckBox:selected"
-    {
-		inset  = "4 0 0 0"
-		image  = "graphics/chkUnSelStd_Sm"    
-    }
+		ListPanelCheckBox {
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor  = "Label"
+			image  = "graphics/chkUnselStd_Sm"
+			inset  = "0 5 0 0"
+	    }   
 	
-	"ListPanelColumnheader ListPanelCheckBox:focus"
-    {
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      textcolor  = "TextHover"
-      image  = "graphics/chkUnSelFocus_Sm"
-      inset  = "4 0 0 0"  
-	}
-
-	"ListPanelColumnheader ListPanelCheckBox:selected:focus"
-    {
-      textcolor  = "TextHover"
-      render_bg {}
-      bgcolor=none
-      image  = "graphics/chkSelFocus_Sm"
-      inset  = "4 0 0 0"  
-    }
-    
-    
-    ListPanelColumnheader {
-		font-family=basefont
-		font-size=13
-		font-size=13 [$OSX]
-		font-weight=400
-		textcolor  = "white"
-		font-style  = "regular"
-		bgcolor  = "none"
-		inset  = "1 3 0 0"
-
-			render {
-				1 = "fill ( x0 + 1, y0 , x1 - 1, y0 + 1, greyHighlight )" //greyHighlight
-			}
-				
-			render_bg {
-				// fill
-				//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
-				//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
-				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
-				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
-			}   
+	    
+		    ListPanelCheckBox:selected {
+				image  = "graphics/chkSelStd_Sm"    
+		    }
+	
+			ListPanelCheckBox:focus {
+				textcolor  = "Text"
+				bgcolor=none
+				image  = "graphics/chkUnselFocus_Sm"  
+		    }
+		
+		    ListPanelCheckBox:selected:focus {
+				textcolor  = "Text"
+				render_bg {}
+				bgcolor=none
+				image  = "graphics/chkSelFocus_Sm"
+		    }
+		    
+		    ListPanelCheckBox:disabled {
+				textcolor  = "TextDisabled"
+				bgcolor=none
+				image  = "graphics/chkUnselDis_Sm"
+		    }
+		    
+		    ListPanelCheckBox:disabled:select {
+				textcolor  = "TextDisabled"
+				bgcolor=none
+				//!! bug - this needs to look disabled
+				image  = "graphics/chkUnselDis"
+		    }
+	    
+		// ________________________________________________________________
+	    
+	    "ListPanelColumnheader ListPanelCheckBox" {
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor  = "Label"
+			image  = "graphics/chkUnSelFocus_Sm"
+			inset  = "4 0 0 0"
+			  
 		}
-
-    
-    ListPanelColumnHeader:hover
-    {
-		textcolor  = "Texthover"
-    }
-      
-	"Csteamrootdialog ListPanelColumnheader"
-    {
-		font-family=basefont
-		font-size=14
-		font-size=13 [$OSX]
-		font-weight=400
-		textcolor  = "white"
-		font-style  = "none"
-		bgcolor  = "none"
-		inset  = "0 0 0 0"
-		inset  = "0 1 0 0" [$OSX]
-		padding-top=5
-
-			render {
-				1 = "fill ( x0 + 1, y0 , x1 - 1, y0 + 1, greyHighlight )" //greyHighlight
-			}
-				
-			render_bg {
-				// fill
-				//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
-				//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
-				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
-				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
-			}   
-		}
-   
-    "Csteamrootdialog ListPanelColumnHeader:hover" {
-		textcolor  = "TextHover"
-    }
-    
-   	"Csteamrootdialog ListPanelSectionCollapser"
-	{
-		inset = "0 1 0 1"
-		bgcolor=none
-		render_bg {
-			1  = "fill( x0 , y0, x1, y1 - 1, buttonface2  )"
-		}    
-	}
 	
-	  "CGamesPage_Mini ListPanelSectionCollapser"
-	{
-		inset = "0 1 0 1"
-		bgcolor=none
-		render_bg
-		{
-			1  = "fill( x0 , y0, x1, y1 - 1, buttonface2  )"
-		}    
-	}
-    
-
- 
-	ListPanelColumnSelectButton // the games list column chooser  
-    	{
-        	inset  = "0 0 0 0"
-       
-			render {
-				1 = "fill ( x0 + 1, y0 , x1 - 1, y0 + 1, greyHighlight )" //greyHighlight
-			}
-				
-			render_bg {
-				// fill
-				//0 = "fill ( x0 + 1, y0 + 1, x1 - 1, y0 + 2, darkGreyEnd )"
-				//1 = "fill ( x0 + 1, y0 + 2, x1 - 1, y0 + 3, Red )" //greyHighlight
-				2 = "gradient ( x0 + 1, y0 + 1, x1 - 1, y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
-				3 = "fill ( x0 + 1, y1, x1 - 1, y1+1, darkGreyEnd )"
-
-         			5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-        		}   
-        		render_bg {}
-	}
-    
-    ListPanelColumnSelectButton:hover
-     {
-        inset  = "0 3 0 0"
-        render
-        {
-          // lines around
-          1  = "fill( x0, y0 + 1, x1 - 1, y1, buttonborderdisabled)"
-          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
-          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
-          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
-          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-        }   
-        render_bg {}
-	}
-      
-    ListPanelColumnSelectButton:selected
-    {
-        inset  = "0 3 0 0"
-        render
-        {
-          // lines around
-          1  = "fill( x0, y0 + 1, x1 - 1, y1, buttonborderdisabled)"
-          2  = "fill( x0 - 4, y0 - 1, x1 + 1, y0 + 1, buttonborderdisabled )"  //top
-          3  = "fill( x0, y1 - 1, x1, y1, buttonborderdisabled )"       //btm
-          4  = "fill( x1-1, y0 + 1, x1, y1, buttonborderdisabled )" //right
-          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-        }   
-        render_bg {}
-	}
-
-
-	
-	"CGamesListPanel ListPanelColumnSelectButton"   
-	{
-        inset  = "0 3 0 0"
-        render
-        {
-          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-        }   
-        render_bg {
-        1  = "fill( x0 + 1, y0, x1 - 1, y1, green )"
-        }
-	}
-	"CGamesListPanel ListPanelColumnSelectButton:hover"   
-	{
-        inset  = "0 3 0 0"
-        render
-        {
-          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-        }   
-
-	}
-	"CGamesListPanel ListPanelColumnSelectButton:selected"   
-	{
-        inset  = "0 3 0 0"
-        render
-        {
-          5  = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
-        }   
-
-	}
-   
-    	ListPanelDragger
-	{
-		bgcolor  = "none"
-			render 
-			{
-			//fill makes dragger visible
-
-			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-1, grey, lightGreyEnd )"
-			2="fill( x0-1, y0, x1, y0+1, greyHighlight )"
-			3="fill( x0, y0, x0 + 1, y1, darkGreyEnd )" // left
-			4="fill( x0-1, y1-1, x0, y1, darkGreyEnd )"
+	     
+			"ListPanelColumnHeader ListPanelCheckBox:selected" {
+				inset  = "4 0 0 0"
+				image  = "graphics/chkUnSelStd_Sm"    
+		    }
 			
-			}
-    	}
-	
-	"Csteamrootdialog ListPanelDragger"
-	{
-		bgcolor  = "none"
-			render 
-			{
-			//fill makes dragger visible
-
-			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-3, grey, lightGreyEnd )"
-			2="fill( x0-1, y0, x1, y0+1, greyHighlight )"
-			3="fill( x0, y0, x0 + 1, y1-2, darkGreyEnd )" // left
-			4="fill( x0-1, y1-3, x0, y1-2, darkGreyEnd )"
-			
-			}
-    	}
-	    	"Page ListPanelDragger"
-		{
-			bgcolor  = "none"
-			render 
-			{
-			//fill makes dragger visible
-
-			1="gradient( x0-1 , y0 + 1, x1 - 1, y1-1, grey, lightGreyEnd )"
-			2="fill( x0-1, y0, x1, y0+1, greyHighlight )"
-			3="fill( x0, y0, x0 + 1, y1, darkGreyEnd )" // left
-			4="fill( x0-1, y1-1, x0, y1, darkGreyEnd )"
-			
-			}
-    		}
-    
-    ListPanelInterior
-    {     
-		inset  = "3 1 0 0"
-		font-size=15
-		textcolor  = "text2"
-		selectedbgcolor= "blue"
-		bgcolor  = "none" 
-      	render
-			{
-				//gradient to obscure content at top of scrolling region 
-				1  = "gradient( x0+1, y0+0, x1-1, y0 + 3, none, none  )"
-				
-				//gradient to obscure content at bottom of scrolling region 
-				//2 = "gradient( x0+1, y1 - 12, x1-1, y1-0, none, almostblack )"
+			"ListPanelColumnheader ListPanelCheckBox:focus" {
+		      font-family=basefont
+		      font-size=14
+		      font-weight=400
+		      textcolor  = "TextHover"
+		      image  = "graphics/chkUnSelFocus_Sm"
+		      inset  = "4 0 0 0"  
 			}
 		
-		render_bg {}
-    } 
-    
-    
+			"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
+		      textcolor  = "TextHover"
+		      render_bg {}
+		      bgcolor=none
+		      image  = "graphics/chkSelFocus_Sm"
+		      inset  = "4 0 0 0"  
+		    }
 
-	"CSteamRootDialog ListPanel"
-	{
-		padding-left=2
-		padding-right=2
-	}
-    
-     "Csteamrootdialog ListPanelInterior"
-    {     
-       	inset  = "0 0 0 0"
-		bgcolor=none
-		selectedbgcolor= "blue"
-		render_bg {}
-	}
-	
-	
-	
-	"Page ListPanelInterior"
-	{
-		inset  = "0 0 0 0"
-		font-size=15
-		bgcolor=none
-		selectedbgcolor= "blue"
-		render_bg {}
-	}
-	
 
-      
-    ListPanelSectionHeader {     
-				inset="0 2 0 0"
-			textcolor=white
-			
-			font-style="outerglow"
-			font-outerglow-color="darkGreyEnd"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
-			
-						
+		// ________________________________________________________________	    
+	    
+	    ListPanelColumnheader [$OSX] {
+			font-family=semibold
+			font-size=13
+			font-weight=400
+			textcolor  = "white"
+			font-style  = "regular,normal"
+			bgcolor  = "none"
+			inset  = "1 2 0 0"
+	
 			render_bg {
-				0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
-				1="fill(x0, y0, x1, y0+1, greyHighlight)"
-			}  
-    } 
-    
-    ListPanelSectionHeader:hover
-    {     
-        textcolor=texthover
-    } 
-    
-    
-    
-	"ListPanel RichText"
-	{
-		textcolor  = "Text"
+				// fill
+				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
+				
+			}   
+		}
+		
+		ListPanelColumnheader [!$OSX] {
+			font-family=semibold
+			font-size=14
+			font-weight=400
+			textcolor  = "white"
+			font-style  = "regular,normal"
+			bgcolor  = "none"
+			inset  = "0 0 0 0"
+	
+			render_bg {
+				// fill
+				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
+				
+			}   
+		}
+	    
+	    ListPanelColumnHeader:hover {
+			textcolor  = "white"
+			
+			render_bg {
+				0="gradient(x0,y0,x1,y1, lighterGrey, grey)"
+				1="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
+				
+			}
+	    }
+	    
+	    // Copy the ListPanelColumnheader above 
+	    // This is used for the Tool's page. 
+		
+	    
+
+		// ________________________________________________________________
+	    
+	   	"Csteamrootdialog ListPanelSectionCollapser" {
+			inset = "0 1 0 1"
+			bgcolor=none
+			render_bg {
+				1  = "fill( x0 , y0, x1, y1 - 1, buttonface2  )"
+			}    
+		}
+		
+		"CGamesPage_Mini ListPanelSectionCollapser" {
+			inset = "0 0 5 0"
+			bgcolor=none
+		
+			render
+			{
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
+				
+			}
+	
+			render_bg
+			{
+				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
+				
+			}    
+		}
+	    
+
+		// ________________________________________________________________	
+	 
+		ListPanelColumnSelectButton {
+	        inset="13 2 0 0"
+       		padding-left=0
+       		padding-right=0
+       		manimum-width=8
+       		manimum-height=8
+       		bgcolor=none
+        	render {
+          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
+        	}   
+        	render_bg {
+        		0="fill(x0,y0,x1,y1, darkestGrey)"
+        	}
+		}
+	    
+		    ListPanelColumnSelectButton:hover {
+		        inset="13 2 0 0"
+	       		padding-left=0
+	       		padding-right=0
+	       		manimum-width=8
+	       		manimum-height=8
+	       		bgcolor=none
+	        	render {
+	          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
+	        	}   
+	        	render_bg {
+	        		0="fill(x0,y0,x1,y1, darkestGrey)"
+	        	}
+			}
+	      
+		    ListPanelColumnSelectButton:selected {
+		       inset="13 2 0 0"
+	       		padding-left=0
+	       		padding-right=0
+	       		manimum-width=8
+	       		manimum-height=8
+	       		bgcolor=none
+	        	render {
+	          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog_active )"
+	        	}   
+	        	render_bg {
+	        		0="fill(x0,y0,x1,y1, darkestGrey)"
+	        	}
+			}
+	
+	
+		
+		
+		// ________________________________________________________________
+	   
+	    ListPanelDragger {
+			bgcolor  = "none"
+			render {
+				//fill makes dragger visible
+				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
+			}
+	    }
+	
+	    "Page ListPanelDragger" {
+			bgcolor  = "none"
+			
+			render {
+				//fill makes dragger visible
+				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
+			}
+	    }
+	    
+	    
+	    ListPanelInterior {     
+			inset  = "10 10 0 0"
+			font-size=13
+			textcolor  = "white"
+			selectedbgcolor= "blue"
+			bgcolor  = "none" 
+	      	
+			render {}
+			render_bg {}
+	    } 
+	    
+	    
+	
+		"CSteamRootDialog ListPanel" {
+			padding-left=2
+			padding-right=2
+		}
+	    
+	    "Csteamrootdialog ListPanelInterior" {     
+	       	inset  = "0 0 0 0"
+			bgcolor=none
+			selectedbgcolor= "blue"
+			render_bg {}
+		}
+		
+		"Page ListPanelInterior" {
+			inset  = "0 0 0 0"
+			font-size=13
+			bgcolor=none
+			
+			textcolor=green
+			selectedbgcolor= "trueWhite"
+			render_bg {}
+		}
+		
+
+		// ________________________________________________________________	
+	      
+	    ListPanelSectionHeader [$OSX] {     
+				font-family=semibold
+				
+				inset="0 1 0 0"
+				textcolor=white
+				
+				font-style="outerglow,normal,regular"
+				font-outerglow-color="darkGreyEnd"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=3
+				
+							
+				render_bg {
+					0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
+					1="fill(x0, y0, x1, y0+1, greyHighlight)"
+				}  
+	    } 
+	    
+	    ListPanelSectionHeader [!$OSX] {     
+				font-family=semibold
+				
+				inset="0 0 0 0"
+				textcolor=white
+				
+				font-style="outerglow,normal,regular"
+				font-outerglow-color="darkGreyEnd"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=3
+				
+							
+				render_bg {
+					0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
+					1="fill(x0, y0, x1, y0+1, greyHighlight)"
+				}  
+	    } 
+	    
+		    ListPanelSectionHeader:hover {     
+		        textcolor=trueWhite
+		    } 
+	    
+
+	// ________________________________________________________________	    
+	    
+	ListPanel {
 		font-family=basefont
-		font-size=15
-		bgcolor=none
-		render_bg {} 
+		font-size=14
+		font-weight=400
+		textcolor  = "white"
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor  = "Blue"
+		bgcolor=darkestGrey
+	        
+		render {}
+
+		render_bg {    
+			0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+			// Lines around
+			1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+			2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+			3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+			4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+			
+			// Corner pixels
+			5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+			6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+			7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+			8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+			9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+			10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+			11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+			12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+			
+			// Bottom Pixel Highlight
+			13="fill(x0-1,y1,x0,y1+1, grey25)"
+			14="fill(x0,y1+1,x1,y1+2, grey50)"
+			15="fill(x1,y1,x1+1,y1+1, grey25)"
+			
+		}
 	}
-
-
-	"ListPanel RichText url" {
-		font-size=13
-		textcolor  = "blue"
-		font-style=underline
-	}
-
-    "ListPanel RichTextInterior"
-    {
-      bgcolor=DarkDialogBG
-      render_bg {} 
-      bgcolor=none
-    }
-    
-    ListPanelSectionCollapser [!$OSX]
-    {
       
-      bgcolor=none
+    "Page ListPanel" {
+		
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor  = "white"
+		selectedtextcolor  = "trueWhite"
+		selectedbgcolor  = "Blue"
+		bgcolor=darkestGrey
+	        
+		render {}
+
+		render_bg {    
+			0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+			// Lines around
+			1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+			2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+			3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+			4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+			
+			// Corner pixels
+			5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+			6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+			7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+			8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+			9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+			10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+			11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+			12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+			
+			// Bottom Pixel Highlight
+			13="fill(x0-1,y1,x0,y1+1, grey25)"
+			14="fill(x0,y1+1,x1,y1+2, grey50)"
+			15="fill(x1,y1,x1+1,y1+1, grey25)"
+			
+		}
+	}
+	
+	CheckButtonList:scrollbar {
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			
+			render {}
+			
+			render_bg { 
+				0="fill(x0,y0,x1,y1, darkestGrey)"
+				
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+			}
+			  
+		} 
+		
+		"Page CheckButtonList:scrollbar" {
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			
+			render {}   
+			
+			render_bg { 
+			 	0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+			}
+			  
+		}
+		
+		CheckButtonList {
+	        inset="1 1 1 1"
+	        textcolor="white"
+	        bgcolor=none
+	        
+	        render_bg {     
+					0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+	         }
+	    } 
+	    
+	    
+	    
+	    "Page CheckButtonList" {
+	        inset="1 1 1 1"
+	        textcolor="white"
+	        bgcolor=none
+	        
+	        render_bg {     
+					0="fill(x0,y0,x1,y1, darkestGrey)"
+			
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+				
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+				
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+	         }
+	    }
+    
+    "CGamesListPanel" {
+      font-family=basefont
+	  bgcolor  = "darkestGrey"
+      font-size=14
+      font-weight=400
+      textcolor  = "white"
+      selectedtextcolor  = "trueWhite"
+      selectedbgcolor  = "blue" //blue
+      shadowtextcolor  = "grey"
+      inset  = "0 -3 0 0"
+      
+      padding-right=0
+      
+      render {
+      	0="fill( x0, y0-1, x1, y0, darkestgrey)" //0="gradient( x0, y0, x1, y0+4, black65, none)" 
+      	1="fill( x0, y1-1, x1, y1, darkestgrey)"
+	
+      }
+      
       render_bg {}
-      image  = "graphics/icon_collapse" 
-      inset  = "-4 0 0 0"
-      padding-top=-2
-      padding-bottom=-2
     }
-    
-    ListPanelSectionCollapser [$OSX]
-    {
-      
-      bgcolor=none
-      render_bg {}   
-      image  = "graphics/icon_collapse_osx" 
-      inset  = "0 0 0 0"
-      padding-top=0
-      padding-bottom=-2
-    }
-    
-    ListPanelSectionCollapser:hover [!$OSX]
-    {
-      image  = "graphics/icon_collapse_over" 
-    }
-    
-    ListPanelSectionCollapser:hover [$OSX]
-    {
-      image  = "graphics/icon_collapse_over_osx" 
-    }
-    
-    ListPanelSectionCollapser:selected [!$OSX]
-    {
-      image  = "graphics/icon_expand" 
-    }
-    
-    ListPanelSectionCollapser:selected [$OSX]
-    {
-      image  = "graphics/icon_expand_osx" 
-    }
-    
-    ListPanelSectionCollapser:selected:hover [!$OSX]
-    {
-      image  = "graphics/icon_expand_over" 
-    }
-    
-     ListPanelSectionCollapser:selected:hover [$OSX]
-    {
-      image  = "graphics/icon_expand_over_osx" 
-    }
+		
+		"Page ListPanelInterior:scrollbar" {
+			inset="5 0 0 0"
+			bgcolor=darkestGrey
+			selectedbgcolor="blue"
+			selectedtextcolor="red" //test
+			render {}
+			render_bg {}
+		}
+		
+		
+		"Csteamrootdialog ListPanelInterior:scrollbar" { 
+			inset="3 0 -1 0"
+			bgcolor=none
+			selectedbgcolor="red"
+			
+			render {}   
+			render_bg {}
+		}
+		
+		ListPanelInterior:scrollbar { 
+			bgcolor=none
+			inset="3 1 -1 0"
+			textcolor="text2"
+			selectedtextcolor="red" //test
+			selectedbgcolor="blue"
+			
+			render {}
+			
+			render_bg {}
+		} 
+		
+		
+		"ListPanel RichText" {
+			textcolor  = white
+			font-family=basefont
+			font-size=13
+			bgcolor=none
+			render_bg {} 
+		}
+	
+		"ListPanel RichText url" {
+			font-size=13
+			textcolor  = "blue"
+			font-style=underline
+		}
+		
+			"ListPanel RichText url:hover" {
+				textcolor=lightestBlue
+			}
+	
+	    "ListPanel RichTextInterior" {
+	      bgcolor=none
+	      render_bg {} 
+	      bgcolor=none
+	    }
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    ListPanelSectionCollapser [!$OSX]
+	    {
+	      
+	      bgcolor=none
+	      render_bg {}
+	      image  = "graphics/icon_collapse" 
+	      inset  = "-4 0 0 0"
+	      padding-top=-2
+	      padding-bottom=-2
+	    }
+	    
+	    ListPanelSectionCollapser [$OSX]
+	    {
+	      
+	      bgcolor=none
+	      render_bg {}   
+	      image  = "graphics/icon_collapse_osx" 
+	      inset  = "0 0 0 0"
+	      padding-top=0
+	      padding-bottom=-2
+	    }
+	    
+	    ListPanelSectionCollapser:hover [!$OSX]
+	    {
+	      image  = "graphics/icon_collapse_over" 
+	    }
+	    
+	    ListPanelSectionCollapser:hover [$OSX]
+	    {
+	      image  = "graphics/icon_collapse_over_osx" 
+	    }
+	    
+	    ListPanelSectionCollapser:selected [!$OSX]
+	    {
+	      image  = "graphics/icon_expand" 
+	    }
+	    
+	    ListPanelSectionCollapser:selected [$OSX]
+	    {
+	      image  = "graphics/icon_expand_osx" 
+	    }
+	    
+	    ListPanelSectionCollapser:selected:hover [!$OSX]
+	    {
+	      image  = "graphics/icon_expand_over" 
+	    }
+	    
+	     ListPanelSectionCollapser:selected:hover [$OSX]
+	    {
+	      image  = "graphics/icon_expand_over_osx" 
+	    }
 		
 	}
 }

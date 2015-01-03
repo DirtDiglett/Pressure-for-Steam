@@ -25,7 +25,7 @@
 
 	styles {
 	
-			// This overrides the default button.
+		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
@@ -69,7 +69,6 @@
 		
 		place {
 			control=*communityfile
-			width=max
 			y=105
 			x=23
 			dir=right

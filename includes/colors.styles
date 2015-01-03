@@ -16,10 +16,12 @@
 		lightestGreyHighlight="113 113 113 255"
 		greyHighlight="85 85 85 255"
 		
+		lighterGrey="70 70 70 255"
+		
 		grey="60 60 60 255"
 		lightGreyEnd="42 42 42 255"
 		darkGreyEnd="25 25 25 255"
-		darkestGrey="8 8 8 255"
+		darkestGrey="16 16 16 255"
 		
 		groupGrey="14 14 14 255"// Group Chat Related Only
 
@@ -29,10 +31,12 @@
 		black65="0 0 0 165" // 65% Opacity Black
 		black40="0 0 0 102" // 40% Opacity Black
 
+		white20="255 255 255 65"
 		white10="255 255 255 25" // 10% Opacity White
+		
 		grey50="60 60 60 165" // 65% Opacity Grey
-		grey25="60 60 60 70" // 25%
-		grey10="60 60 60 25 // 10%"
+		grey25="60 60 60 110" // 25%
+		grey10="60 60 60 25" // 10%"
 		darkestGrey50="8 8 8 100" // 65% Opacity Grey
 		
 		// Greens	

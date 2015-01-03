@@ -1,0 +1,45 @@
+"resource/layout/edittagsdialog.layout" {
+	controls {}
+	
+	styles {}
+	
+	layout {
+		place [!$OSX]  { 
+			control="frame_minimize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-9 
+		}
+		
+		//Content
+		place { 
+			control="Label1,Label2,BetaListComboBox,ReadMoreURL" 
+			y=38 
+			margin-top=16 
+			dir=down 
+			x=16 
+			width=max 
+			margin-right=16 
+			spacing=8 
+		}
+		
+		//Bottom
+		region { 
+			name=bottom 
+			align=bottom 
+			height=51
+		}
+		
+		place {	
+			control="OKButton,CancelButton" 
+			region=bottom 
+			align=right 
+			spacing=8 
+			height=24 
+			width=90 
+			margin-right=14
+			margin-top=14
+		}
+	}
+}

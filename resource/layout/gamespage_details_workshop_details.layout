@@ -35,8 +35,7 @@
 		}
 	}
 
-	layout
-	{
+	layout {
 		place { 
 			region=body 
 			control=workshop_description 
