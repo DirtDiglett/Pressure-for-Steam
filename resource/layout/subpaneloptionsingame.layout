@@ -302,14 +302,6 @@
 		}
 		
 		place {
-			controls=ShowIngameFPSCheck
-			dir=down
-			start=EnableOverlayCheck
-			margin-top=0
-			width=max
-		}
-		
-		place {
 			controls=HotKeySelectorLabel
 			dir=down
 			start=EnableOverlayCheck
@@ -412,11 +404,36 @@
 			controls="PingRateInfo"
 			dir=down
 			width=max
-			height=100
 			margin-right=43
-			y=16
+			y=8
 			start="PingRateCombo"
 		}
+		
+		place {
+			controls="ShowIngameFPSLabel"
+			dir=down
+			width=max
+			start="PingRateInfo"
+			y=16
+		}
+		
+		place {
+			controls="ShowInGameFPSCombo"
+			dir=down
+			width=200
+			height=28
+			start="ShowIngameFPSLabel"
+			y=8
+		}
+		
+		place {
+			controls="ShowIngameFPSContrastCheck"
+			dir=right
+			width=max
+			start=ShowIngameFPSCombo
+			x=16
+		}
+		
 
 		place {
 			control="TitleLabel"
