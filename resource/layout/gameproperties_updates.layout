@@ -369,7 +369,8 @@
 		place {
 			control=CloudUsageLabel
 			start=EnableCloudCheck
-			x=32
+			dir=down
+			x=28
 			width=max
 			margin-right=23
 		}
