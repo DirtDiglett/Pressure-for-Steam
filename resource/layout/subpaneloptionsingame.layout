@@ -302,6 +302,14 @@
 		}
 		
 		place {
+			controls=ShowIngameFPSCheck
+			dir=down
+			start=EnableOverlayCheck
+			margin-top=0
+			width=max
+		}
+		
+		place {
 			controls=HotKeySelectorLabel
 			dir=down
 			start=EnableOverlayCheck

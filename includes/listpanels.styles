@@ -93,7 +93,7 @@
 				// fill
 				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-				2="gradient(x0,y1,x1,y1+6, black65, none)"
+				
 			}   
 		}
 		
@@ -110,7 +110,7 @@
 				// fill
 				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-				2="gradient(x0,y1,x1,y1+6, black65, none)"
+				
 			}   
 		}
 	    
@@ -120,7 +120,7 @@
 			render_bg {
 				0="gradient(x0,y0,x1,y1, lighterGrey, grey)"
 				1="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
-				2="gradient(x0,y1,x1,y1+6, black65, none)"
+				
 			}
 	    }
 	    
@@ -140,11 +140,20 @@
 		}
 		
 		"CGamesPage_Mini ListPanelSectionCollapser" {
-			inset = "0 1 0 1"
+			inset = "0 0 5 0"
 			bgcolor=none
+		
+			render
+			{
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
+				
+			}
+	
 			render_bg
 			{
-				1  = "fill( x0 , y0, x1, y1 - 1, buttonface2  )"
+				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
+				
 			}    
 		}
 	    

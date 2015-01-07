@@ -504,6 +504,20 @@
 			margin=0
 		}
 		
+		place { 
+			control=welcomedetails
+			region=detailsbody
+			dir=down
+			width=max
+			margin-right=0
+			margin-top=0
+			margin-left=0
+			spacing=30
+			margin-bottom=10
+			height=110
+
+		}
+		
 		// Body contents
 		place { 
 			control=friendsdetails,achievementsdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
@@ -515,15 +529,8 @@
 			margin-left=0
 			spacing=30
 			margin-bottom=10 
-		}
-		
-		// Hide the useless-as-balls "Get Info" bit.
-		place {
-			control="welcomedetails"
-			y=0
-			x=0
-			height=0
-			width=0
+			start=welcomedetails
+			y=30
 		}
 
 		

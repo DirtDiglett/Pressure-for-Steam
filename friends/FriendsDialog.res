@@ -265,12 +265,16 @@
 			padding-bottom=-5
 			font-family=basefont
 			font-style="normal"
+			minimum-height=14
 			
 			inset="-4 -5 0 0"
 			
 			render_bg {
-				//0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
-				//1="fill(x0, y0, x1, y0+1, greyHighlight)"
+				//0="fill(x0,y0,x1,y1, darkestGrey)"
+				
+				//1="fill( x0, y1-16, x1, y1-15, darkestGrey )"
+				//2="fill( x0+1, y1-15, x1-1, y1-14, greyHighlight )"
+				//3="gradient( x0+1, y1-14, x1-1, y1-1, grey, lightGreyEnd )"
 			}   
 		}
 		
@@ -339,7 +343,7 @@
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0, x1, y0+1, greyHighlight)"
-				2="gradient(x0,y1,x1,y1+6, black65, none)"
+				2="gradient(x0,y1,x1,y1+2, black65, none)"
 			}    
 	    }
     
@@ -551,7 +555,7 @@
 			font-style="regular"
 			
 			inset="0 -3 0 0"
-			
+			minimum-width=800
 			bgcolor=none
 			
 			font-size=14

@@ -1,348 +1,716 @@
-"resource/layout/appdownloadpanel.layout" {
-	controls {
-		appdownloadpanel {
+"resource/layout/appdownloadpanel.layout" 
+{
+	
+	controls 
+	{
+
+
+		appdownloadpanel
+		{
+
 			tall="110"
+			
 			style=panelStyle
-		}
 		
-		gameimage {
+		}
+	
+
+
+		gameimage  // set the initial size on on the gameimage; it's loaded async, so it may not know the image size immediately
+
+		{
+
+			
 			controlname="ImagePanel"
+			
 			style="gameImagePanel" 
-		}		// set the initial size on on the gameimage; it's loaded async, so it may not know the image size immediately
 		
-		namelabel {
+		}		
+		
+		
+		namelabel 
+		{
+			
 			controlname="Label"
+			
 			labelText="%name%"
+			
 			style="ModuleHeading" 
-		}
 		
-		dashlabel {
+		}
+	
+	
+		
+		dashlabel
+		{
+			
 			controlname="Label"	
+			
 			labelText=""
-		}
 		
-		launchbutton {
+		}
+
+
+		
+launchbutton 
+		{
+			
 			controlname="Button"
+			
 			style="DetailsLaunchButton"
+			
 			labelText="#Steam_LaunchGame"
+			
 			zpos="1"
 		}
+
 		
-		downloadprogressbar {
+		
+		downloadprogressbar 
+		{
+			
 			controlname="ProgressBar"
+			
 			style="SlimProgressBar"
+			
 			barinset=0
+			
 			continuous=1
+			
 			group="ShowWhileDownloading"
+			
 			style="SlimProgressBar"
-		}
 		
-		settingslink {
+		}
+
+		
+
+		settingslink // right-mid column
+		
+		{
+			
 			controlname="URLlabel"
+			
 			style="settingslink"
+		
 		}
 
-		// right-mid column
-		downloadtotallabel {
+	
+	
+		downloadtotallabel 
+		{
+			
 			controlname="Label"
+			
 			labelText="#steam_downloads_gamesize_update"
+			
 			style="label2"
+		
 		}
 		
-		downloadtotalfield {
+		
+
+		downloadtotalfield 
+		{
+			
 			controlname="Label"
+			
 			labelText="%download_totals%"
+			
 			style="label"
-			style="label"
-		}
-		
-		starttimelabel {
-			controlname="Label"
-			labelText="#steam_downloads_initiated"
-			style=Label2
-			group="ShowWhileDownloading"
-		}
-		
-		starttimefield {
-			controlname="Label"
-			labelText="%time_started%"
-			style=Label
-			group="ShowWhileDownloading"
-		}
-		
-		timeremaininglabel {
-			controlname="Label"
-			labelText="#steam_downloads_timeremaining"
-			style="label2"
-			group="ShowWhileDownloading"
-		}
-		
-		timeremainingfield {
-			controlname="Label"
-			labelText="%time_remaining%"
-			style="label"
-			group="ShowWhileDownloading"
-		}
-		
-		timecompletedlabel {
-			controlname="Label"
-			labelText="#steam_downloads_timecompleted"
-			style="label2"
-			group="ShowWhenComplete"
-		}
-		
-		timecompletedfield { 
-			controlname="Label"	
-			labelText="%time_completed%"
-			style="label"
-			group="ShowWhenComplete"
+			
 		}
 
-		updatetypelabel {
+
+		starttimelabel 
+		{
+			
 			controlname="Label"
+			
+			labelText="#steam_downloads_initiated"
+			
+			style=Label2
+			
+			group="ShowWhileDownloading"
+		
+		}
+
+		
+
+		starttimefield 
+		{
+			
+			controlname="Label"
+			
+			labelText="%time_started%"
+			
+			style=Label
+			
+			group="ShowWhileDownloading"
+		
+		}
+		
+		
+
+		timeremaininglabel 
+		{
+			
+			controlname="Label"
+			
+			labelText="#steam_downloads_timeremaining"
+			
+			style="label2"
+			
+			group="ShowWhileDownloading"
+		
+		}
+		
+		
+
+		timeremainingfield 
+		{
+			
+
+			controlname="Label"
+			
+			labelText="%time_remaining%"
+			
+			style="label"
+			
+			group="ShowWhileDownloading"
+		
+		}
+		
+		
+
+		timecompletedlabel 
+		{
+			
+			controlname="Label"
+			
+			labelText="#steam_downloads_timecompleted"
+			
+			style="label2"
+			
+			group="ShowWhenComplete"
+		
+		}
+		
+		
+
+		timecompletedfield 
+		{ 
+			
+			controlname="Label"	
+			
+			labelText="%time_completed%"
+			
+			style="label"
+			
+			group="ShowWhenComplete"
+		
+		}
+
+		
+
+		updatetypelabel 
+		{
+			
+			controlname="Label"
+			
 			labelText="#steam_downloads_suspended"
+			
 			style=ModuleHeading2
-		}
 		
-		removefromqueuebutton {
+		}
+
+		
+		
+		removefromqueuebutton 
+		{
+			
 			controlname="Button"
+			
 			style="SmRemoveButton"
+			
 			tooltiptext="#steam_downloads_remove"
-		}
 		
-		topofqueuebutton {
+		}
+
+		
+
+		topofqueuebutton 
+		{
+			
 			controlname="Button"
+			
 			style="topOfQueueButton"
+			
 			tooltiptext="#steam_downloads_topofqueue"
+			
 			group="HideOnCompletion"
+		
 		}
 		
-		newslink { 
+		
+
+		newslink
+		{ 
+			
 			controlname="URLlabel"
+			
 			style="links"
+			
 			labelText="#steam_downloads_updatenews" 
+		
 		}
+	
 	}
 	
-	colors {
+	
+
+	colors 
+	{
+		
 		// Play Button Normal
-		PlayAntiAliasingTop "121 144 29 255"
-		PlayAntiAliasingBottom "88 109 18 255"
 		
-		PlayLineTop "209 248 48 255"
-		PlayLineTopAntiAliasing "190 230 37 255"
+			PlayAntiAliasingTop "121 144 29 255"
 		
-		PlayCornerRoundingBottom "129 163 19 255"
+			PlayAntiAliasingBottom "88 109 18 255"
 		
-		PlayGradientStart "175 217 28 255"
-		PlayGradientEnd "136 173 19 255"
+		
+			PlayLineTop "209 248 48 255"
+		
+			PlayLineTopAntiAliasing "190 230 37 255"
+		
+		
+			PlayCornerRoundingBottom "129 163 19 255"
+		
+		
+			PlayGradientStart "175 217 28 255"
+		
+			PlayGradientEnd "136 173 19 255"
 				
-			// Hover
+			
+
+		// Hover
+			
 			PlayHoverAntiAliasingTop "138 147 39 255"
+			
 			PlayHoverAntiAliasingBottom "113 132 22 255"
 			
+			
 			PlayHoverLineTop "238 254 66 255"
+			
 			PlayHoverLineTopAntiAliasing "227 248 51 255"
+			
 			
 			PlayHoverCornerRoundingBottom "170 201 25 255"
 			
+			
 			PlayHoverGradientStart "216 242 38 255"
+			
 			PlayHoverGradientEnd "180 214 26 255"	
 						
-			// Active	
+			
+
+		// Active	
+			
 			PlayActiveAntiAliasingTop "97 133 22 255"
+			
 			PlayActiveAntiAliasingBottom "67 85 15 255"
 			
+			
 			PlayActiveLineTop "140 190 24 255"
+			
 			PlayActiveLineTopAntiAliasing "137 186 23 255"
+			
 			
 			PlayActiveCornerRoundingBottom "94 123 14 255"
 			
+			
 			PlayActiveGradientStart "131 176 20 255"
+			
 			PlayActiveGradientEnd "99 130 14 255"	
+	
 	}
 	
-	styles {
-		panelStyle {
+	
+
+	styles
+	{
+		
+		panelStyle 
+		{
+			
 			bgcolor=none
+			
 			render {}
+			
 			render_bg {}
+		
 		}
 		
-		panelStyleHighlight {
+		
+
+		panelStyleHighlight 
+		{
+			
 			render_bg {}			
+		
 		}
 
-		links {
+	
+
+		links 
+		{
+			
 			font-size=13
+			
 			font-style=normal
+			
 			textcolor="blue"
+			
 			font-family=basefont
+			
 			font-style="regular"
+			
 			padding-left=0
+			
 			padding-top=0
+			
 			padding-bottom=0
 		
-			render_bg {
+			
+
+			render_bg 
+			{
+				
 				0="image(x1+3,y0+2,x1+17,y1, graphics/news)"
+			
 			}
+		
 		}
 		
-			links:hover {
-				font-size=13
-				font-style=normal
-				textcolor="lightestBlue"
-				font-family=basefont
-				font-style="regular"
-			}
-
-			links:disabled {
-				textcolor="grey"
-			}
+			
 		
-		label {
+		links:hover
+		{
+				
 			font-size=13
+				
+			font-style=normal
+				
+			textcolor="lightestBlue"
+				
+			font-family=basefont
+				
+			font-style="regular"
+			
+		}
+
+			
+
+		links:disabled 
+		{
+				
+			textcolor="grey"
 			
 		}
 		
-		// For the "Auto-Updates Enabled"
-		settingslink {
+		
+
+		label 
+		{
+	
 			font-size=13
+			
+		
+		}
+		
+		
+
+		// For the "Auto-Updates Enabled"
+		
+		
+		settingslink 
+		{
+			
+			font-size=13
+			
 			font-style=regular
+			
 			textcolor="blue"
+			
 			font-family=basefont
 			
-			render_bg {
+			
+			render_bg 
+			{
+				
 				0="image(x1+3, y0+2, x1+17, y1, graphics/auto_downloads)"
-			}
+			
+}
 		}
-		
-			settingslink:hover {
-				font-size=13
-				font-style=regular
-				textcolor="lightestBlue"
-				font-family=basefont
-				padding-left=0
-				padding-top=0
-				padding-bottom=0
-			}
 
-			settingslink:disabled {
-				textcolor="grey50"
-			}
-
-		rightcolumnlink:hover {
-			textcolor=none
-		}
-		
-
-		// The "Downloaded" label
-		label2 {
-			bgcolor=none
+			
+		settingslink:hover
+		{
+				
 			font-size=13
-			textcolor="lightestGrey"
-			font-style="regular"
+				
+			font-style=regular
+				
+			textcolor="lightestBlue"
+				
+			font-family=basefont
+				
+			padding-left=0
+				
+			padding-top=0
+				
+			padding-bottom=0
+			
 		}
 
+			
+
+		settingslink:disabled 
+		{
+				
+			textcolor="grey50"
+			
+		}
+
+		
+
+		rightcolumnlink:hover
+		{
+			
+			textcolor=none
+		
+		}
+	
+	
+
+		
+		// The "Downloaded" label
+
+		label2 	
+		{
+			
+			bgcolor=none
+			
+			font-size=13
+			
+			textcolor="lightestGrey"
+			
+			font-style="regular"
+		
+		}
+
+
+			
 
 		// Name of the game/app
-		ModuleHeading {
+			
+		ModuleHeading 
+		{
+			
 			font-family=headerfont
+			
 			bgcolor="none"
+			
 			font-size="38"
+			
 			textcolor="white"
+		
 		}	
 		
+		
+
 		// Contains the "Update Required" text.
-		ModuleHeading2 {
-			font-family	basefont
+		
+		ModuleHeading2 
+		{
+	
+			font-family=basefont
+			
 			bgcolor="none"
+			
 			font-size="13"
+			
 			textcolor="orange"
-		}								
+		
+		}	
 		
 		// Doesn't seem to be used for anything?
+		
 		panelBgColorActive {
-			bgcolor=none
-		}
+ bgcolor=none }
 				
-		gameImagePanel {   
+		
+
+		gameImagePanel 
+		{   
+			
 			inset="0 0 0 0"
+			
 			
 			render_bg {
+				
 				0="gradient(x0+4,y1-8,x1-4,y1-4, black90, none)"
+			
 			}
 			
+			
 			render {}
+		
 		}
 		
-		gameImagePanelHighlight {   
+		
+
+		gameImagePanelHighlight 
+		{   
+			
 			inset="0 0 0 0"
+			
 			bgcolor=none
+			
 			render_bg {}
+		
 		}					
 		
-		DetailsLaunchButton {  
+		
+
+		DetailsLaunchButton 
+		{  
+			
 			inset="0 0 0 0"
+			
 			font-family=basefont
+			
 			font-size=1
 			
+			
 			font-style="none"
+			
 			padding-right=10
+			
 			padding-left=10
+			
 			
 			textcolor=none
 			
-			render {
-				1="image( x0 + 4, y0 + 4, x1, y1, graphics/game_small )"
+			
+			
+			render 
+			{
+				
+				1="image( x0 + 4, y0 + 4, x1, y1, graphics/game_small )" 
 			}
-			render_bg {
-				// Background
+			
+
+			render_bg 
+			{
+
+			// Background
+				
 				0="gradient(x0,y0+1,x1,y1-1,PlayGradientStart, PlayGradientEnd)"
+				
 				1="fill(x0+2,y1-1,x1-2,y1, PlayGradientEnd)"
+	
+			
 				
-				//Anti-Alias
-				2="fill(x0+1,y0,x0+2,y0+1, PlayAntiAliasingTop)" // Top Left
-				3="fill(x0,y0+1,x0+1,y0+2, PlayAntiAliasingTop)" // Top Left
-				4="fill(x1-2, y0, x1-1, y0+1, PlayAntiAliasingTop)" // Top Right
-				5="fill(x1-1,y0+1,x1,y0+2, PlayAntiAliasingTop)" // Top Right
-				6="fill(x0, y1-2, x0+1, y1-1, PlayAntiAliasingBottom)" // Bottom Left
-				7="fill(x0+1, y1-1, x0+2, y1, PlayAntiAliasingBottom)" // Bottom Left
-				8="fill(x1-2, y1-1, x1-1, y1, PlayAntiAliasingBottom)" // Bottom Right
-				9="fill(x1-1, y1-2, x1, y1-1, PlayAntiAliasingBottom)" // Bottom Right
+			//Anti-Alias
 				
-				// 1px Solid Line Top
-				10="fill(x0+3, y0, x1-3, y0+1, PlayLineTop)" // Main Line
-				11="fill(x0+2, y0, x0+3, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
-				12="fill(x0+1, y0+1, x0+2, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
-				13="fill(x0, y0+2, x0+1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
-				14="fill(x1-3, y0, x1-2, y0+1, PlayLineTopAntiAliasing)" // Anti-Aliasing
-				15="fill(x1-2, y0+1, x1-1, y0+2, PlayLineTopAntiAliasing)" // Anti-Aliasing
-				16="fill(x1-1, y0+2, x1, y0+3, PlayLineTopAntiAliasing)" // Anti-Aliasing
+				2="fill(x0+1,y0,x0+2,y0+1, PlayAntiAliasingTop)" 
+
+			// Top Left
 				
-				// Bottom Corner Rounding
+				3="fill(x0,y0+1,x0+1,y0+2, PlayAntiAliasingTop)" 
+				4="fill(x1-2, y0, x1-1, y0+1, PlayAntiAliasingTop)" 
+
+			// Top Right
+				
+				5="fill(x1-1,y0+1,x1,y0+2, PlayAntiAliasingTop)" 
+				6="fill(x0, y1-2, x0+1, y1-1, PlayAntiAliasingBottom)" 
+
+			// Bottom Left
+				
+				7="fill(x0+1, y1-1, x0+2, y1, PlayAntiAliasingBottom)" 
+				8="fill(x1-2, y1-1, x1-1, y1, PlayAntiAliasingBottom)" 
+
+			// Bottom Right
+	
+				9="fill(x1-1, y1-2, x1, y1-1, PlayAntiAliasingBottom)" 
+
+			// 1px Solid Line Top
+				
+				10="fill(x0+3, y0, x1-3, y0+1, PlayLineTop)" 
+
+			// Main Line
+				
+				11="fill(x0+2, y0, x0+3, y0+1, PlayLineTopAntiAliasing)" 
+
+			// Anti-Aliasing
+				
+				12="fill(x0+1, y0+1, x0+2, y0+2, PlayLineTopAntiAliasing)" 
+				13="fill(x0, y0+2, x0+1, y0+3, PlayLineTopAntiAliasing)" 
+				14="fill(x1-3, y0, x1-2, y0+1, PlayLineTopAntiAliasing)" 
+				15="fill(x1-2, y0+1, x1-1, y0+2, PlayLineTopAntiAliasing)"
+				16="fill(x1-1, y0+2, x1, y0+3, PlayLineTopAntiAliasing)"
+		
+			// Bottom Corner Rounding
+				
 				17="fill(x0,y1-3,x0+1,y1-2, PlayCornerRoundingBottom)"
+	
 				18="fill(x0+1,y1-2,x0+2,y1-1, PlayCornerRoundingBottom)"
+
 				19="fill(x0+2,y1-1,x0+3,y1, PlayCornerRoundingBottom)"
 				
+				
 				20="fill(x1-3,y1-1,x1-2,y1, PlayCornerRoundingBottom)"
+				
 				21="fill(x1-2,y1-2,x1-1,y1-1, PlayCornerRoundingBottom)"
+				
 				22="fill(x1-1,y1-3,x1,y1-2, PlayCornerRoundingBottom)"
+			
 			}	
+		
 		}
 		
-			DetailsLaunchButton:Hover {  
-				render_bg {
-					// Background
-					0="gradient(x0,y0+1,x1,y1-1,PlayHoverGradientStart, PlayHoverGradientEnd)"
-					1="fill(x0+2,y1-1,x1-2,y1, PlayHoverGradientEnd)"
+			
+		
+		DetailsLaunchButton:Hover
+		{  
+
+				
+		render_bg {
 					
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, PlayHoverAntiAliasingTop)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, PlayHoverAntiAliasingTop)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, PlayHoverAntiAliasingTop)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, PlayHoverAntiAliasingTop)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, PlayHoverAntiAliasingBottom)" // Bottom Left
+		// Background
+					
+			0="gradient(x0,y0+1,x1,y1-1,PlayHoverGradientStart, PlayHoverGradientEnd)"
+
+			1="fill(x0+2,y1-1,x1-2,y1, PlayHoverGradientEnd)"
+					
+					
+		
+		//Anti-Alias
+					
+			2="fill(x0+1,y0,x0+2,y0+1, PlayHoverAntiAliasingTop)" 
+
+		// Top Left
+					
+			3="fill(x0,y0+1,x0+1,y0+2, PlayHoverAntiAliasingTop)" 
+			4="fill(x1-2, y0, x1-1, y0+1, PlayHoverAntiAliasingTop)" 
+
+		// Top Right
+					
+			5="fill(x1-1,y0+1,x1,y0+2, PlayHoverAntiAliasingTop)" 
+			6="fill(x0, y1-2, x0+1, y1-1, PlayHoverAntiAliasingBottom)" 
+
+		// Bottom Left
 					7="fill(x0+1, y1-1, x0+2, y1, PlayHoverAntiAliasingBottom)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, PlayHoverAntiAliasingBottom)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, PlayHoverAntiAliasingBottom)" // Bottom Right
