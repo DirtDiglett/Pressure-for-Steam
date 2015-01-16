@@ -676,7 +676,7 @@
 			control=InfoLabel
 			
 			dir=down
-			width=300
+			width=310
 			align=left
 			x=16
 			y=16
