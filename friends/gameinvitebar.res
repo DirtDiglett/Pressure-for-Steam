@@ -81,7 +81,7 @@
 	layout {
 		place { 
 			control="InviteImage" 
-			x=18 
+			x=1 
 			y=15 
 			width=30 
 			height=36 
@@ -94,7 +94,7 @@
 			spacing=3 
 			margin-top=18 
 			margin-right=2 
-			margin-left=51 
+			margin-left=37 
 		}
 
 		place { 
