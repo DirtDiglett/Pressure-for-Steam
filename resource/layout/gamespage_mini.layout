@@ -276,19 +276,13 @@
 			textcolor="darkestGrey"
 			padding-left=4
 			padding-right=20
-			padding-top=5
-			
-			minimum-width=110
-			
-			render {
-				//2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-				}
+			padding-top=5	
+
 			render_bg {
-				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
-				2="image(x1-14, y0, x1+12, y0+25, graphics/search/right)"
-				3="image_tiled(x0+3, y0, x1+11, y0+25, graphics/search/inner)"	
-				}
+				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
+				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
 			}
+		}
 		
 		LibrarySearch:empty
 		{
@@ -296,41 +290,38 @@
 			font-style=italic
 			textcolor="lightestGrey"
 			padding-left=4	
-						render_bg {
-				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
-				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"	
-				}
+			render_bg {
+				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
+				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
+			}	
 		}
 			
 		LibrarySearch:hover
 		{	
 			textcolor="darkGreyEnd"
-			padding-left=4				
+			padding-left=4	
 			render_bg {
-				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
-				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"	
-				}
+				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
+				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
+			}				
 		}
 		
 		LibrarySearch:empty:hover
 		{
-				font-style=italic
-				textcolor="lightGreyEnd"
-				padding-left=4
-						render_bg {
-				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
-				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"	
-				}
+			font-style=italic
+			textcolor="lightGreyEnd"
+			padding-left=4
+			render_bg {
+				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
+				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
+			}	
 		}
 		LibrarySearchIcon
 		{
 			bgcolor="none"
-			inset="2 0 0 0"
+			inset="0 0 0 2"
 			render_bg={}
-			image="none"
+			image="graphics/search/left"
 			padding-left=0
 			padding-right=-1
 		}
@@ -381,7 +372,7 @@
 			align=right 
 			margin-top=-2 
 			margin-right=6 
-			spacing=-8 
+			spacing=-10 
 		}
 		place { control="frame_captiongrip" margin=2 width=max height=38 }
 		place [!$OSX] { control="MenuBar" margin-left=0 width=56 height=24 margin-top=-1 margin-right=44 }
@@ -391,7 +382,8 @@
 		place { control="gameslist" align=left margin-left=1 margin-right=0 margin-top=70 margin-bottom=10 width=max height=max }
 		
 		place { control="library_search"  width=110 }
-		place [!$OSX] { control="label_search_icon,library_search" align=left y=38 height=17 spacing=1 x=27 }
+		place [!$OSX] { control="label_search_icon" align=left y=38 height=27 spacing=1 x=17 }
+		place [!$OSX] { control="library_search" align=left y=38 height=24 spacing=1 x=31 }
 		place  [$OSX] { control="label_search_icon,library_search" align=left y=38 height=17 spacing=1 x=28 }
 		
 		place { control="library_filters" align=right margin-left=10 margin-right=5 margin-top=38 height=22 spacing=1 }
