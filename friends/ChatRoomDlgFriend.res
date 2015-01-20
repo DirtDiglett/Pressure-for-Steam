@@ -483,7 +483,7 @@
 		}
 		
 		place { 
-			control="GameInviteBar,TradeInviteBar,ChatInfoBar,VoiceBar" 
+			control="GameInviteBar,TradeInviteBar,ChatInfoBar,VoiceBar,BIBar,BABar" 
 			height=65 
 			margin-right=8
 			margin-left=8
@@ -499,7 +499,7 @@
 		}
 		
 		place { 
-			control="TradeInviteBar,GameInviteBar,ChatInfoBar,ChatHistory" 
+			control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" 
 			start=VoiceBar
 			y=0 
 			width=max 
