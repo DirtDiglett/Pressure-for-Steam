@@ -105,7 +105,7 @@
 			width=max 
 			dir=down 
 			spacing=3 
-			margin-top=18 
+			margin-top=14 
 			margin-right=2 
 			margin-left=37 
 		}
@@ -113,7 +113,7 @@
 		place { 
 			control="CloseButton" 
 			align=right 
-			margin=10 
+			margin=6 
 			width=8 
 			height=9 
 		}
