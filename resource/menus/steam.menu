@@ -245,6 +245,11 @@
 			text="#steam_subnav_market"
 			shellcmd="steam://url/CommunityMarket"
 		}
+
+		Broadcasts {
+			text="#steam_subnav_broadcast"
+			shellcmd="steam://openurl/http://steamcommunity.com/?subsection=broadcasts"
+		}
 	}
 	
 	Friends [$OSX] {
