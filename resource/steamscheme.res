@@ -2,13 +2,11 @@
 // old-style vgui description file
 // currently used only for the BaseSettings, Colors LayoutTemplates and Fonts sections
 ///////////////////////////////////////////////////////////
-Scheme
-{
+Scheme {
 	//////////////////////// COLORS ///////////////////////////
 	// color details
 	// this is a list of all the colors used by the scheme
-	Colors
-	{
+	Colors {
 		// base colors
 		"White"				"255 255 255 255"
 		"TransparentBlack"		"0 0 0 128"
@@ -75,25 +73,19 @@ Scheme
 	//
 	// default settings for all panels
 	// controls use these to determine their settings
-	BaseSettings
-	{
-	}
+	BaseSettings {}
 	
 	//////////////////////// layout /////////////////////////////
 	//
 	// describes default layouts for controls that have and control their own children
 	// works just like a normal settings .res file, except only positioning attributes are recognized
-	LayoutTemplates
-	{
-		Frame
-		{
-			frame_menu
-			{
+	LayoutTemplates {
+		Frame {
+			frame_menu {
 				visible	0	// hidden
 			}
 			
-			frame_title
-			{
+			frame_title {
 				xpos	0
 				ypos	1
 				wide	max 
@@ -101,8 +93,7 @@ Scheme
 				AutoResize	1
 			}
 			
-			frame_captiongrip
-			{
+			frame_captiongrip {
 				xpos	4
 				ypos	4
 				wide	r20
@@ -110,44 +101,41 @@ Scheme
 				AutoResize	1
 			}
 			
-			frame_minimize
-			{
+			frame_minimize {
 				xpos	r90 //r45
 				xpos	22 [$OSX]
 				ypos	-2 //7
 				ypos	3 [$OSX]
 				wide	34 //28
-				tall	22
+				tall	23
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
 			
-			frame_maximize
-			{
+			frame_maximize {
 				xpos	r63
 				xpos	43 [$OSX]
 				ypos	7
 				ypos	3 [$OSX]
 				wide	26 
-				tall	22
+				tall	23
 				visible 0 [!$OSX]
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}			
-			frame_close
-			{
+			
+			frame_close {
 				xpos	r62 //r29
 				xpos	1 [$OSX]
 				ypos	-2 //7
 				ypos	3 [$OSX]
 				wide	54 //20
-				tall	22
+				tall	23
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
 
-			frame_brGrip
-			{
+			frame_brGrip {
 				xpos	r15
 				ypos	r15
 				wide	14
@@ -156,10 +144,8 @@ Scheme
 			}
 		}
 		
-		PropertyDialog
-		{
-			sheet
-			{
+		PropertyDialog {
+			sheet {
 				xpos	9
 				ypos	26
 				wide	r9
