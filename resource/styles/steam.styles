@@ -404,12 +404,12 @@ styles {
     "GameItem_Uninstalled" {
       padding-left=10
       textcolor  = "grey"
-      selectedtextcolor  = "white"
+      selectedtextcolor  = "lighterGrey"
       //selectedbgcolor = "blue" //blue
     }
 	    "GameItem_Uninstalled:hover" {
     	    textcolor  = "grey"
-			selectedtextcolor  = "white"
+			selectedtextcolor  = "lighterGrey"
 		//selectedbgcolor = "blue" //blue
 		}
  
