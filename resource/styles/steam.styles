@@ -218,8 +218,13 @@ colors {
 
 
 styles {
-
-
+	
+	FriendsList
+	{
+		bgcolor=none
+		render_bg{}
+	}
+	
 	downarrow {
 		image  = "graphics/icon_down_default"    
 	}

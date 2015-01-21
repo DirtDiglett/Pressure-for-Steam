@@ -127,7 +127,7 @@
 		place {
 			control=CloseButton
 			region=bottom
-			align-right
+			align=right
 			margin-top=14
 			margin-right=14
 			height=24
