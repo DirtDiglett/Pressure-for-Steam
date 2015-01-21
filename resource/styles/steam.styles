@@ -429,19 +429,19 @@ styles {
     "GameItem_Updating" {
     	padding-left=10
     	textcolor  = "orange"
-    	selectedtextcolor  = "trueWhite"
+    	selectedtextcolor  = "lightestGreen"
     	//selectedbgcolor = "blue" //blue
     }
     
     	"GameItem_Updating:hover" {
     		textcolor  = "orange"
-    		selectedtextcolor  = "trueWhite"
+    		selectedtextcolor  = "lightestGreen"
     		//selectedbgcolor = "blue" //blue
 		}
     
 		"GameItem_Updating:selected" {
  			textcolor  = "orange"
- 			selectedtextcolor  = "trueWhite"
+ 			selectedtextcolor  = "lightestGreen"
  			//selectedbgcolor = "blue" //blue
  		}
     
@@ -473,37 +473,37 @@ styles {
     
     "GameItem_Decrypting" {
     	textcolor  = "orange"
-    	selectedtextcolor  = "trueWhite"
+    	selectedtextcolor  = "lightestGreen"
 	//selectedbgcolor = "blue" //blue
     }
     
 	    "GameItem_Decrypting:hover" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "lightestGreen"
 		//selectedbgcolor = "blue" //blue
 	    }
     
 	    "GameItem_Decrypting:selected" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "lightestGreen"
 		//selectedbgcolor = "blue" //blue
 	    }
     
     "GameItem_Syncing" {
     	textcolor  = "orange"
-    	selectedtextcolor  = "trueWhite"
+    	selectedtextcolor  = "lightestGreen"
 	//selectedbgcolor = "blue" //blue
     }
     
 	    "GameItem_Syncing:hover" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "lightestGreen"
 		//selectedbgcolor = "blue" //blue
 	    }
 	    
 	    "GameItem_Syncing:selected" {
 	    	textcolor  = "orange"
-	    	selectedtextcolor  = "trueWhite"
+	    	selectedtextcolor  = "lightestGreen"
 		//selectedbgcolor = "blue" //blue
 	    }
     
