@@ -276,7 +276,7 @@
 			textcolor="darkestGrey"
 			padding-left=4
 			padding-right=20
-			padding-top=5	
+			//padding-top=5	
 
 			render_bg {
 				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
