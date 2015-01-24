@@ -280,7 +280,7 @@
 
 			render_bg {
 				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
-				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
+				1="image(x1, y0, x1+1, y0+25, graphics/search/right)"
 			}
 		}
 		
@@ -292,7 +292,7 @@
 			padding-left=4	
 			render_bg {
 				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
-				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
+				1="image(x1, y0, x1+1, y0+25, graphics/search/right)"
 			}	
 		}
 			
@@ -302,7 +302,7 @@
 			padding-left=4	
 			render_bg {
 				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
-				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
+				1="image(x1, y0, x1+1, y0+25, graphics/search/right)"
 			}				
 		}
 		
@@ -313,7 +313,7 @@
 			padding-left=4
 			render_bg {
 				0="image_tiled(x0+3, y0, x1, y0+25, graphics/search/inner)"
-				1="image(x1, y0, x1-2, y0+25, graphics/search/right)"
+				1="image(x1, y0, x1+1, y0+25, graphics/search/right)"
 			}	
 		}
 		LibrarySearchIcon
