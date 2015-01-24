@@ -22,7 +22,7 @@
 		TrackLabelStyle 
 		{ 
 			padding-bottom=10
-			padding-top=0
+			padding-top=1
 			font-size=15
 			textcolor=Text2
 			font-family=basefont
