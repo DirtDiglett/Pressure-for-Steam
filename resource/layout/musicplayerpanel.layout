@@ -97,7 +97,7 @@
 		
 		ListPanelInterior
 		{     
-			inset="3 0 2 -5"
+			inset="8 0 2 -5"
 			font-size=15
 			textcolor="white"
 			bgcolor="none"
