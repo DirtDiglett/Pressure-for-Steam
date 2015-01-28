@@ -126,7 +126,16 @@
 			align=left
 			margin-left=0
 		}
+		
+		place {
+			controls="BroadcastDetailPanel"
+			start=FriendsDetailPanel
+			dir=down
+			height=145
+			spacing=10
+			width=400
+		}
 
-		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,NewsDetailPanel" width=0 height=0 }
+		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,NewsDetailPanel" width=0 height=0 }
 	}
 }
