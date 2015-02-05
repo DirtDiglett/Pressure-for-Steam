@@ -601,13 +601,13 @@
 		}
 		
 		place {
-			control=gamehublink,forumlink,ogglink,storelink,guideslink,dlclink
+			control=gamehublink,forumlink,ogglink,storelink,guideslink,dlclink,cdkeylink
 			region="gamedata"
 			spacing=20
 		}
 		
 		place {
-			control=achievementslink,manuallink,newslink,cdkeylink,supportlink,recommendlink,tagslabel,*taglink,edittagslink,sendguestpasslink,guidelink
+			control=achievementslink,manuallink,newslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink,sendguestpasslink,guidelink
 			region="gamedata"
 			dir=right
 			margin-right=0
