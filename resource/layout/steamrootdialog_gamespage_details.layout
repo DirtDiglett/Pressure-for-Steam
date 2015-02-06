@@ -525,7 +525,7 @@
 		
 		// Body contents
 		place { 
-			control=dlcdetails,friendsdetails,achievementsdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
+			control=friendsdetails,achievementsdetails,dlcdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
 			region=detailsbody
 			dir=down
 			width=max
