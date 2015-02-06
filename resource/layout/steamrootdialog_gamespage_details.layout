@@ -152,6 +152,11 @@
 			controlname="CGamesPage_Details_Welcome" 
 			zpos="1" 
 		}
+
+		dlcdetails {
+			controlname="CGamesPage_Details_DLC"
+			zpos="1"
+		}
 		
 		friendsdetails { 
 			controlname="CGamesPage_Details_Friends" 
@@ -520,7 +525,7 @@
 		
 		// Body contents
 		place { 
-			control=friendsdetails,achievementsdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
+			control=friendsdetails,achievementsdetails,dlcdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
 			region=detailsbody
 			dir=down
 			width=max
