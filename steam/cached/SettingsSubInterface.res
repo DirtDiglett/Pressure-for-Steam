@@ -341,18 +341,18 @@
 		}
 		
 		place {
-			controls=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck
+			controls=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck,H264HWAccelCheck
 			dir=down
 			start=SkinCombo
-			y=16
+			y=10
 			spacing=-4
 		}
 		
 		place {
 			control="Divider2"
 			dir=down
-			start=UrlBarCheck
-			y=16
+			start=H264HWAccelCheck
+			y=10
 			width=max
 			margin-right=43
 		}
