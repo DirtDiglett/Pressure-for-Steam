@@ -318,23 +318,6 @@
 		}
 		
 		place {
-			controls=OverlayHomePageLabel
-			dir=down
-			start=EnableOverlayCheck
-			y=32
-			x=240
-		}
-		
-		place {
-			controls=OverlayHomePage
-			dir=down
-			width=200
-			height=24
-			start=OverlayHomePageLabel
-			y=4
-		}
-		
-		place {
 			control="Divider1"
 			dir=down
 			width=max
