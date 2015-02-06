@@ -38,12 +38,6 @@
 			style="dlclist"
 		}
 
-		managedlc {
-			controlname="Button"
-			labeltext="#Steam_ManageDLC"
-			command="ManageDLC"
-		}
-
 		moredlc {
 			controlname="Button"
 			labeltext="#Steam_FindDLCInStore"
@@ -147,14 +141,15 @@
 			region=body
 			y=35
 			x=267
-			control=dlclist dir=down
+			control=dlclist
+			dir=down
 		}
 
 		place {
 			region=body
 			y=165
 			x=267
-			control=managedlc,moredlc
+			control=moredlc
 			dir=right
 			spacing=10
 		}
