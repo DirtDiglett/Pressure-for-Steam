@@ -305,7 +305,7 @@
 			controls=HotKeySelectorLabel
 			dir=down
 			start=EnableOverlayCheck
-			y=4
+			y=10
 		}
 		
 		place {
@@ -371,7 +371,7 @@
 			dir=down
 			width=max
 			start=SetScreenshotFolderButton
-			y=34
+			y=50
 		}
 		
 		place {
