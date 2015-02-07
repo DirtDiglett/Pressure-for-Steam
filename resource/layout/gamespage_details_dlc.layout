@@ -92,6 +92,12 @@
 			textcolor="text"
 			selectedtextcolor="white"
 		}
+
+		"mostrecenttime"
+		{
+			padding-top=3
+			minimum-width=256
+		}
 	}
 
 	layout
@@ -140,16 +146,16 @@
 		place {
 			region=body
 			y=35
-			x=267
-			control=dlclist
-			dir=down
+			control=latestimage,dlclist
+			dir=right
+			height=120
+			spacing=9
 		}
 
 		place {
 			region=body
 			y=165
-			x=267
-			control=moredlc
+			control=latesttimelabel,moredlc
 			dir=right
 			spacing=10
 		}
