@@ -134,12 +134,13 @@
 		place {
 			region=body
 			y=168
+			width=257
 			control=latesttimelabel
 		}
 
 		place {
+			region=body
 			control=dlclist
-			height=120
 			width=max
 		}
 
