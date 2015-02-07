@@ -305,7 +305,7 @@
 			controls=HotKeySelectorLabel
 			dir=down
 			start=EnableOverlayCheck
-			y=32
+			y=4
 		}
 		
 		place {
