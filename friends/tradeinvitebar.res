@@ -60,13 +60,8 @@
 		}
 
 		Label {
-			textcolor=white
-			font-family=basefont
-			
-			font-style="outerglow"
-			font-outerglow-color="95 139 21 255"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
+			textcolor=black90
+			font-family=semibold
 		}
 
 		Button {
