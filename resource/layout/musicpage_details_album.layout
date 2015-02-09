@@ -168,7 +168,7 @@
 		
 		ActionButtonStyle
 		{   
-			inset="23 1 0 0"
+			inset="16 0 0 0"
 
 			font-family=basefont
 			font-size=16
@@ -179,26 +179,26 @@
 
 			render
 			{
-				1="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
+				1="image( x0 + 0, y0 + 8, x1, y1, graphics/icon_play )"
 			}
 			render_bg
 			{
 				// background fill
-				0="gradient( x0, y0, x1, y1+1, launch1, launch2 )"
-				}	
-			}
+				0="gradient( x0, y0, x1, y1+0, launch1, launch2 )"
+			}	
+		}
 			
 		ActionButtonStyle:hover
 		{
 			textcolor="white"
 			render
 			{
-				0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
+				0="image( x0 + 0, y0 + 8, x1, y1, graphics/icon_play )"
 			}	
 			render_bg
 			{
 			// background fill
-				0="gradient( x0, y0, x1, y1+1, launch0, launch2  )"
+				0="gradient( x0, y0, x1, y1+0, launch0, launch2  )"
 			}			
 		}
 		

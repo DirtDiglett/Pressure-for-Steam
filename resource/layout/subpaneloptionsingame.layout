@@ -305,7 +305,7 @@
 			controls=HotKeySelectorLabel
 			dir=down
 			start=EnableOverlayCheck
-			y=32
+			y=10
 		}
 		
 		place {
@@ -314,23 +314,6 @@
 			width=200
 			height=24
 			start=HotKeySelectorLabel
-			y=4
-		}
-		
-		place {
-			controls=OverlayHomePageLabel
-			dir=down
-			start=EnableOverlayCheck
-			y=32
-			x=240
-		}
-		
-		place {
-			controls=OverlayHomePage
-			dir=down
-			width=200
-			height=24
-			start=OverlayHomePageLabel
 			y=4
 		}
 		
@@ -388,7 +371,7 @@
 			dir=down
 			width=max
 			start=SetScreenshotFolderButton
-			y=34
+			y=50
 		}
 		
 		place {

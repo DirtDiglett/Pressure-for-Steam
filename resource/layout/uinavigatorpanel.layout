@@ -2281,10 +2281,10 @@
 		place { 
 			control="library_music_player_icon"
 			align=right 
-			y=52 
+			y=53 
 			height=16 
 			width=16 
-			margin-right=198 }
+			margin-right=367 }
 
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 

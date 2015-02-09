@@ -39,7 +39,13 @@
 	}
 
 	styles {
-		FindEntry {}
+		FindEntry {
+			render_bg{
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
+				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+			}
+		}
 		
 		CloseButtonSm {
 			bgcolor=none
@@ -85,11 +91,11 @@
 	layout {
 		place {
 			control="FindEntry"
-			width=180
+			width=180 //180
 			align=left
-			y=6
-			margin-right=26
-			margin-left=98
+			y=8 //6
+			margin-right=26 //26
+			margin-left=30 //98
 		}
 		
 		place {
@@ -97,8 +103,8 @@
 			width=70
 			align=right
 			y=6
-			margin-right=40
-			margin-left=6
+			margin-right=55 //40
+			margin-left=6 //6
 			margin-top=5
 		}
 		
@@ -107,17 +113,17 @@
 			align=right
 			height=24
 			width=22
-			margin-right=5
-			margin-top=6
+			margin-right=5 //5
+			margin-top=8 //6
 		}
 			
 		place {
 			control="SearchThisPage"
-			align=left
-			height=22
-			width=94
-			margin-left=8
-			margin-top=8
+			//align=left
+			height=0 //22
+			width=0 //94
+			//margin-left=8
+			//margin-top=8
 		}
 	}
 }

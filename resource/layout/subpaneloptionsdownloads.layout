@@ -332,6 +332,7 @@
 			width=max
 			start=DownloadRegionCombo
 			y=16
+			margin-right=43
 		}
 
 		place {

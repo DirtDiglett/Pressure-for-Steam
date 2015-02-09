@@ -149,13 +149,13 @@
 		place {
 			control="ImageAvatar"
 			x=32
-			y=56
+			y=50
 		}
 		
 		place {
 			control="LabelGroup,LabelInfo,LabelEventTitle"
 			x=90
-			y=54
+			y=46
 			dir=down
 		}
 		
