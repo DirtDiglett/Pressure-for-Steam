@@ -91,11 +91,11 @@
 	layout {
 		place {
 			control="FindEntry"
-			width=180 //180
+			width=180
 			align=left
-			y=8 //6
-			margin-right=26 //26
-			margin-left=30 //98
+			y=8
+			margin-right=26
+			margin-left=30
 		}
 		
 		place {
@@ -103,8 +103,8 @@
 			width=70
 			align=right
 			y=6
-			margin-right=55 //40
-			margin-left=6 //6
+			margin-right=55
+			margin-left=6
 			margin-top=5
 		}
 		
@@ -113,8 +113,8 @@
 			align=right
 			height=24
 			width=22
-			margin-right=5 //5
-			margin-top=8 //6
+			margin-right=5
+			margin-top=8
 		}
 			
 		place {
