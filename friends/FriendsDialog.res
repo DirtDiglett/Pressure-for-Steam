@@ -1,153 +1,10 @@
 "Friends/FriendsDialog.res" {
-	controls {
-		"FriendsDialog" {
-			"ControlName"   "CFriendsDialog"
-			"fieldName"   "FriendsDialog"
-			"xpos"    "2123"
-			"ypos"    "549"
-			"wide"    "356"
-			"tall"    "746"
-			"AutoResize"    "1"
-			"PinCorner"   "0"
-			"enabled"   "1"
-			"paintbackground"   "1"
-			"settitlebarvisible"    "0"
-			style="FriendsPanel"    
-			closeonescape=1
-		}
-
-		"BuddyList" {
-			"ControlName" "CFriendsListSubPanel"
-			tabposition=1
-		}
-
-		"frame_title" {
-			"ControlName"	"Label"
-			"labelText"   "#SteamRootFriends"
-			"xpos"    "0"
-			"ypos"    "8"
-			style="FriendsTitle"
-			"textAlignment"   "west" 
-			"textAlignment"   "center" [$OSX]
-		}
-
-		"DownLabel" {
-			"ControlName"   "Label"
-			"fieldName"   "DownLabel"
-			"xpos"    "10"
-			"ypos"    "85"
-			"wide"    "336"
-			"tall"    "80"
-			"AutoResize"    "1"
-			"PinCorner"   "0"
-			"visible"   "0"
-			"enabled"   "1"
-			"paintbackground"   "1"
-			"labelText"   "#Friends_NoFriendsInList"
-			"textAlignment"   "north-west"
-			"wrap"    "1"
-		}
-
-		"MenuBar" {
-			style="RootMenu"
-			"ControlName"   "MenuBar"
-			"fieldName"   "MenuBar"
-			"xpos"    "29"
-			"ypos"    "2"
-			"wide"    "75"
-			"tall"    "27"
-			"AutoResize"    "0"
-			"PinCorner"   "0"
-			"enabled"   "1"
-			"paintbackground"   "1"
-			zpos="-1" 
-		}
-
-		"FriendPanelSelf" {
-			"ControlName"		"CFriendPanel"
-			"fieldName"		"FriendPanelSelf"
-			"tall"		"42"
-			"AutoResize"		"0"
-			"PinCorner"		"0"
-			"paintbackground"		"1"
-		}
-
-		"AddFriendsButton" {
-			style="AddFriendsButton"
-			"ControlName"   "Button"
-			"fieldName"   "AddFriendsButton"
-			"xpos"    "0"
-			"ypos"    "0"
-			"wide"    "0"
-			"tall"    "0"
-			"AutoResize"    "0"
-			"PinCorner"   "2"
-			"visible"   "0"
-			"enabled"   "0"
-			"tabPosition"   "3"
-			"paintbackground"   "1"
-			"labelText"   "#Friends_AddFriend"
-			"textAlignment"   "west"
-			"wrap"    "0"
-			"Default"   "0"
-			"selected"    "0"
-			zpos=10
-		}
-
-		"NoFriendsAddFriendButton" {
-			"ControlName"   "Button"
-			"fieldName"   "NoFriendsAddFriendButton"
-			"xpos"    "10"
-			"ypos"    "129"
-			"wide"    "200"
-			"tall"    "24"
-			"AutoResize"    "0"
-			"PinCorner"   "0"
-			"visible"   "0"
-			"enabled"   "1"
-			"paintbackground"   "1"
-			"labelText"   "#Friends_AddFriend"
-			"textAlignment"   "west"
-			"wrap"    "0"
-			"Default"   "0"
-			"selected"    "0"
-		}
-		
-		"FriendsState" {
-			"ControlName"   "EditablePanel"
-			"fieldName"   "FriendsState"
-			"xpos"    "6"
-			"ypos"    "52"
-			"wide"    "310"
-			"tall"    "457"
-			"AutoResize"    "0"
-			"PinCorner"   "0"
-			"visible"   "0"
-			"enabled"   "1"
-			"paintbackground"   "1"
-		}
-		
-		friends_search { 
-			ControlName=TextEntry 
-			maxchars=16 
-			hintText="#steam_library_search" 
-			style="FriendsSearch" 
-			unicode=1 
-			tabposition=2 
-			zpos=9
-		}
-		
-		friends_search_icon	{ 
-			ControlName=Label 
-			style="FriendsSearchIcon" 
-			zpos=4 
-		}		
-	}
+	controls {}
 
 	styles {
 		// Here we force-set the minimum width to ensure that the search bar is not cut off.
 		CFriendsDialog {
-			minimum-width=294
+			minimum-width=225
 			minimum-height=400
 			font-family=basefont
 			font-style="normal"	
@@ -193,12 +50,12 @@
 				11="fill(x0+1, y0+126, x1-1, y0+127, darkestGrey)"
 				
 				// Background for the pageTabs
-				15="fill(x0+7,y0+94,x0+146,y0+118, darkestGrey)"// Top->Bottom
-				16="fill(x0+6,y0+95,x0+7,y0+117, darkestGrey)" // Left
-				17="fill(x0+146,y0+95,x0+147,y0+117, darkestGrey)" // Right
-				18="fill(x0+7,y0+118,x0+146,y0+119, grey50)"
-				19="fill(x0+6, y0+117, x0+7, y0+118, grey50)"
-				20="fill(x0+146, y0+117, x0+147, y0+118, grey50)"
+				15="fill(x0+7,y0+134,x0+146,y0+158, darkestGrey)"// Top->Bottom
+					16="fill(x0+6,y0+135,x0+7,y0+157, darkestGrey)" // Left
+					17="fill(x0+146,y0+135,x0+147,y0+157, darkestGrey)" // Right
+					18="fill(x0+7,y0+158,x0+146,y0+159, grey50)"//grey50)"
+					19="fill(x0+6, y0+157, x0+7, y0+158, grey50)"
+					20="fill(x0+146, y0+157, x0+147, y0+158, grey50)"
 			}
 	    }
 	
@@ -231,22 +88,24 @@
 					//3="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
 					//4="fill(x0+1,y0+88, x1-1, y0+89, greyHighlight)"
 					
-					8="image_tiled(x0+1, y0+87, x1-1, y0+125, graphics/subnav_bg)"
+					8="image_tiled(x0+1, y0+87, x1-1, y0+155, graphics/subnav_bg)"
 					
 					9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
 					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
 					
-					11="fill(x0+1, y0+125, x1-1, y0+126, darkestGrey)"
+					11="fill(x0+1, y0+164, x1-1, y0+165, red)" // Single pixel line below the gradient
 					
 					// Background for the pageTabs
-					15="fill(x0+7,y0+94,x0+146,y0+118, darkestGrey)"// Top->Bottom
-					16="fill(x0+6,y0+95,x0+7,y0+117, darkestGrey)" // Left
-					17="fill(x0+146,y0+95,x0+147,y0+117, darkestGrey)" // Right
-					18="fill(x0+7,y0+118,x0+146,y0+119, grey50)"
-					19="fill(x0+6, y0+117, x0+7, y0+118, grey50)"
-					20="fill(x0+146, y0+117, x0+147, y0+118, grey50)"
+					15="fill(x0+7,y0+134,x0+146,y0+158, darkestGrey)"// Top->Bottom
+					16="fill(x0+6,y0+135,x0+7,y0+157, darkestGrey)" // Left
+					17="fill(x0+146,y0+135,x0+147,y0+157, darkestGrey)" // Right
+					18="fill(x0+7,y0+158,x0+146,y0+159, grey50)"//grey50)"
+					19="fill(x0+6, y0+157, x0+7, y0+158, grey50)"
+					20="fill(x0+146, y0+157, x0+147, y0+158, grey50)"
 					
 					21="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
+					
+					
 				}
 			}
 	
@@ -619,9 +478,10 @@
 		place { 
 			control="friends_search" 
 			dir=right 
-			margin-left=170 
-			y=95 
-			width=117 
+			margin-left=28 
+			margin-right=8
+			y=102 
+			width=185 
 			height=25 
 		}
 
@@ -634,7 +494,7 @@
 	
 		place { 
 			control="FriendsDialogSheet" 
-			y=85 
+			y=125 
 			align=left 
 			margin-left=-1 
 			margin-right=0 
@@ -649,7 +509,7 @@
 			control="friends_search_icon" 
 			margin-left=7 
 			dir=right 
-			y=95 
+			y=135 
 			height=22 
 			width=1
 		}
@@ -658,7 +518,7 @@
 			control="addFriendsButton" 
 			margin-left=145 
 			dir=right 
-			y=95 
+			y=135 
 			height=22 
 			width=1
 		}
