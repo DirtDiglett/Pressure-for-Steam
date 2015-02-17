@@ -8,14 +8,19 @@ Pressure for Steam is currently a Work-In-Progress so expect it to change a lot 
 ###IMPORTANT
 It is extremely important you follow the instructions below, and absolutely critical that you install the Bebas Neue Bold font by FontFabric or this skin will not look as intended. FontFabric have generously given me permission to include it in the Git Download so you can install it there or via their website.
 
+You must also ensure that you are using the current BETA version of Steam, as otherwise this skin will not work correctly. You can do this by going into Steam Settings, Choose Account on the left and on the right click "Change..." under the BETA Participation and opt-in to Steam Beta. After restarting Steam you'll be ready for Pressure.
+
 
 ###Images
-Here are a couple images of the skin. The look and feel of the skin can change at any time, so what you see in these images might not be what you see when you download the skin. For even more images, go to the [main album on Imgur](http://imgur.com/a/yUiQW).
+Here are a couple images of the skin. The look and feel of the skin can change at any time, so what you see in these images might not be what you see when you download the skin. For even more images, go to the [main album on Imgur](http://imgur.com/a/To4mp).
 
-* [**Game Details and Friends List**](http://i.imgur.com/v1K6Ttu.png)
-* [**List View**](http://i.imgur.com/BEnmKVW.png)
-* [**Grid View**](http://i.imgur.com/pVY4urS.png)
-* [**Client Browser**](http://i.imgur.com/VdSu8kn.png)
+* [**Game Details**](http://i.imgur.com/vmR10CM.png)
+* [**List View**](http://i.imgur.com/Qa3FUFS.png)
+* [**Grid View**](http://i.imgur.com/SiVfHjC.png)
+* [**Client Browser**](http://i.imgur.com/7goVjVA.png)
+* [**In-Game Overlay**](http://i.imgur.com/pCTjpUW.png)
+* [**Friends List**](http://i.imgur.com/H2yAVDn.png)
+* [**Chat & Group Chat**](http://i.imgur.com/CvuqKnQ.png)
 
 ## Downloading and Installing
 
@@ -28,7 +33,7 @@ Because the skin is still in development, you can only download the skin here on
 	* Windows: the `Program Files (x86)/Steam/skins` folder
 	* Mac: right-click `Steam.app` and choose `show package contents` then go to - `/Contents/MacOS/skins`
 	* Linux: the `~/.local/share/Steam/skins/` folder
-3. You should also go ahead and install the Bebas Neue Bold font download it directly from [**FontFabric.com**](http://fontfabric.com/downfont/bebas.zip). 
+3. You should also go ahead and install the Bebas Neue Bold font that is in the ZIP folder. It will be the file `BebasNeue Bold.otf`
 	* Windows: Right-Click the font file and choose "Install".
 	* Mac: Double-Click the font file. Click "Install".
 	* Linux: you may need to "install" the font manually instead by copying it to `/usr/share/fonts` (to install it system-wide) or `~/.fonts` (to install it only for the current user) and executing `fc-cache -fv` in a terminal.
