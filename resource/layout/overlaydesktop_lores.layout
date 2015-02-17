@@ -1,0 +1,36 @@
+"resource/layout/overlaydesktop_lores.layout" {
+	controls {}
+	
+	styles {
+	
+		
+	
+		sidemenu {
+			font-size=15
+			textcolor=blue
+		}
+		
+		sidemenu:hover {
+			font-size=15
+			textcolor=lightestBlue
+		}
+	}
+	
+	layout {
+		region {
+			name=overlay
+			width=1000
+			align=top-center
+			margin-top=10
+			margin-bottom=10
+			margin-left=10
+			margin-right=10
+		}
+	
+		region { name="detailpanels" region=overlay align=bottom width=max height=210 margin-bottom=100 }
+		region { name="taskbar" region=overlay width="max" height=75 align=bottom }
+		
+		place { controls="BroadcastDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
+		place { controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton" y=100 align=left region=overlay dir=down spacing=10 }
+	}	
+}

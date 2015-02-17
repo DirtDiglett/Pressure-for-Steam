@@ -1,0 +1,85 @@
+"resource/layout/overlaydashboard_lores.layout" {
+	styles {
+		overlaymain {
+			render_bg {
+				0="fill( x0, y0, x1, y1, black75)"
+			}
+		}
+
+		topbar {
+			font-family=headerfont
+			textcolor=white
+			font-size=48
+		}
+
+		clocksuffix {
+			font-family=headerfont
+			textcolor=white
+			font-size=48
+		}
+
+		timeStrings {
+			//this is the session text
+			color=white
+		}
+
+		OverlayURLLabel {
+			image=graphics/overlay/close
+		}
+		
+			OverlayURLLabel:hover {
+				image=graphics/overlay/close_hover
+			}
+
+		bottomfade {}
+	}
+
+	layout {
+
+		region { 
+			name=bottom 
+			align=bottom 
+			height=240 
+			width=max 
+		}
+		
+		region {
+			name=top
+			align=left
+			y=0
+			x=0
+			height=100
+			width=max
+		}
+		
+		place {
+			control=gamename
+			y=4
+			x=10
+			align=left
+		}
+		
+		place { 
+			control="SessionText,TwoWeeksText,ForeverText" 
+			dir=down 
+			y=45
+			x=10
+		}
+		
+		place {
+			control=CloseButton
+			y=10
+			margin-right=10
+			align=right
+		}
+		
+		place { 
+			control=clock,clocksuffix 
+			region=top 
+			align=top-center
+			y=6
+		}
+
+		place { control=PowerMeterDim,BottomFadePanel,TopFadePanel,HotkeyLabel,HotkeyExplain height=0 width=0 }
+	}
+}
