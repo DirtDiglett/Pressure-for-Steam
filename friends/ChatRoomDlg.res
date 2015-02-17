@@ -1,78 +1,5 @@
 "friends/ChatRoomDlg.res" {
-	controls {
-		"ChatRoomDlg" {
-			"ControlName"		"CChatRoomDlg"
-			"title"		"#Friends_Chat_Group_Title"
-		}
-
-		"TextEntry" {
-			"ControlName"		"TextEntry"
-			"tabPosition"		"1"
-			"editable"		"1"
-			"maxchars"		"2048"
-			"unicode"		"1"
-			style="Textentryfocus_chat"
-		}
-
-		"ChatHistory" {
-			"ControlName"		"RichText"
-			"maxchars"		"-1"
-			"ScrollBar"		"1"
-			style="ListPanel"
-		}
-
-		"SendButton" {
-			"ControlName"		"Button"
-			"tabPosition"		"2"
-			"paintbackground"		"1"
-			"labelText"		"#Friends_Chat_Send"
-			"textAlignment"		"west"
-			"Default"		"1"
-			style="button"
-		}
-
-		"StatusLabel" {
-			"ControlName"		"Label"
-			"labelText"			""
-		}
-
-		"VoiceBar" {
-			"ControlName"		"CVoiceBar"
-		}
-
-		"TitlePanel" {
-			"ControlName"		"CFriendPanel"
-			"zpos"		"-2"
-			paintbackgroundenabled=0	
-		}
-
-		"UserList" {
-			"ControlName"		"CFriendsListSubPanel"
-			style="FriendsList"
-			"linespacing"		"50"
-			wide=200
-		}
-
-		"Splitter" {
-			"ControlName"		"CChatSplitter"
-			resizepanel="UserList"
-			zpos=1
-		}
-
-		"VoiceChat" {
-			"ControlName"		"Button"
-			style="Chat_MenuButton_withChrome"
-			
-		}
-		
-		"GameInviteBar" {
-			"ControlName"		"GameInviteBar"
-		}
-		
-		"EmoticonButton" {
-			"ControlName"		"CEmoticonButton"
-		}
-	}	
+	controls {}
 	
 	styles {
 	
@@ -106,24 +33,6 @@
 				12="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
 			}
 		}
-
-		button {
-			textcolor="none"
-			font-style="none"
-			
-			render {
-				0="image(x0+3,y0+7,x1,y1, graphics/send_button)"
-			}
-		}
-		
-		button:active {
-			textcolor="none"
-			font-style="none"
-			
-			render {
-				0="image(x0+3,y0+7,x1,y1, graphics/send_button_active)"
-			}
-		}
 		
 		SectionedListPanelCollapser {
 			render{}
@@ -131,8 +40,8 @@
 		
 		// Used for the status label on the chat only
 		label {
-			font-size=12
-			textcolor=grey
+			font-size=13
+			textcolor=lighterGrey
 			font-style=none
 		}
 		
@@ -293,49 +202,49 @@
 				}
 			}
 
-			CChatActionsButton:selected {
-				render_bg {
-				        // background fill
-				        0 = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 2, darkestGrey )" // Background Gradient
-				                
-				        // Dark Borders around
-				        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
-				        2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
-				        3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
-				        4="fill( x0 + 2, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
+		CChatActionsButton:selected {
+			render_bg {
+		        // background fill
+		        0 = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 2, darkestGrey )" // Background Gradient
+		                
+		        // Dark Borders around
+		        1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
+		        2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
+		        3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
+		        4="fill( x0 + 2, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
+		
+				// Dark Grey Background Corners & Fake Anti-Aliasing
+					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
+					5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
+					6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					
+					// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
+					8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
+					9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					
+					// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
+					11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
+					12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					
+					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
+					14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
+					15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
+					16="fill( x0 + 1, y1 - 2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				
-						// Dark Grey Background Corners & Fake Anti-Aliasing
-							// TOP-LEFT corner pixels (Fake Anti-Aliasing)
-							5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
-							6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-							7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-							
-							// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
-							8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
-							9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-							10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-							
-							// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
-							11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
-							12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-							13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-							
-							// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
-							14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
-							15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-							16="fill( x0 + 1, y1 - 2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-						
-						// Drop-shadow
-						45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
-						46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
-						47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
-						48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
-						49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
-						
-						49="image(x0+5, y0+6, x1, y1, graphics/largecog_active)"
-						50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_active)"		
-					}
+				// Drop-shadow
+				45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
+				46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
+				47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
+				48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
+				49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
+				
+				49="image(x0+5, y0+6, x1, y1, graphics/largecog_active)"
+				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_active)"		
 			}
+		}
 		
 		
 		Chat_MenuButton_withChrome {
@@ -385,7 +294,7 @@
 			selectedtextcolor="trueWhite"
 			bgcolor=none
 			
-			inset="8 8 0 0"
+			inset-top=8
 			
 			render {
 				0="image_tiled(x0,y1-14,x1,y1, graphics/chatbottom)"
@@ -429,11 +338,11 @@
 			selectedbgcolor="blue"
 			bgcolor=darkestGrey
 		
-			inset="8 8 8 0"
+			//inset="0 8 8 0"
 		
 			render {
 			// For some weird ready, this appears DARKER than the rest of darkestGrey
-			0="gradient(x0,y1-9,x1,y1, none, darkestGrey)"
+			//0="gradient(x0,y1-9,x1,y1, none, darkestGrey)"
 			1="fill(x0,y0,x1,y0+1, darkestGrey)"
 			}
 			render_bg {}
@@ -595,8 +504,8 @@ layout {
 			height=max 
 			align=right 
 			dir=down 
-			margin-bottom=75 
-			margin-right=1 
+			margin-bottom=75
+			margin-left=8
 			end-right=UserList
 		}
 		
