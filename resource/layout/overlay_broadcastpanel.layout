@@ -11,30 +11,30 @@
 		ShowSettings { controlname="Button" labeltext="#Overlay_Broadcast_ShowSettings" command="ShowSettings" }
 	}
 	
-	styles
-	{
+	styles {
 
-		Button
-		{
+		Button {
 			font-size=13
 			font-family=basefont
 			font-weight=400
 			inset=2
 		}
 
-		highlight
-		{
-			textcolor=text
+		highlight {
+			textcolor=white
 		}
 	}
 	
-	layout
-	{
-		region { name=title margin-top=14 margin-bottom=10 margin-left=10 margin-right=10 width=max height=40 }
-		region { name=actions y=25 margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=60 }
-		place { control="TitleText" region=title width=0 height=0 }
-		place { control="InstructionText" region=title y=0 }
+	layout {
+		place { control="TitleText" width=0 height=0 }
+		place { control="InstructionText" y=0 }
 
-		place { control="ShowBroadcast,ShowChat,ShowSettings,StopBroadcast" region="actions" spacing=10 align=top  margin-bottom=4 }
+		place { 
+			control="ShowBroadcast,ShowChat,ShowSettings,StopBroadcast" 
+			y=20
+			spacing=10 
+			align=top
+			margin-bottom=0 
+		}
 	}
 }

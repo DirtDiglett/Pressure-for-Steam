@@ -129,11 +129,13 @@
 		
 		place {
 			controls="BroadcastDetailPanel"
-			start=FriendsDetailPanel
-			dir=down
+			align=right
+			dir=right
 			height=145
 			spacing=10
 			width=400
+			margin-right=0
+			y=25
 		}
 
 		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,NewsDetailPanel" width=0 height=0 }
