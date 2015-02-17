@@ -1,0 +1,180 @@
+"resource/layout/overlay_broadcastpanel.layout" {
+	controls {}	
+	
+	styles {
+	
+	COverlayBroadcastChatDialog {
+				inset="0 0 0 0"	
+				
+			bgcolor="none"
+			render_bg {
+		       	1="fill(x0,y0,x1,y1, darkestGrey)"
+
+				// The status Label area.
+				4="fill( x0, y1-90, x1, y1, darkestGrey )"
+				
+				// The chat Input area.
+				5="gradient( x0, y1-58, x1, y1, grey, lightGreyEnd)"
+				6="fill(x0,y1-58,x1,y1-57, greyHighlight)"
+				
+				// Dark corner pixels for the Chat Input area.
+				7="fill(x0,y1-1,x0+1,y1, darkestGrey)"
+				8="fill(x1-1,y1-1,x1,y1, darkestGrey)"
+				9="fill(x0,y1-2,x0+1,y1-1, bottomDarkPixels)" // Bottom Left
+				10="fill(x0+1,y1-1,x0+2,y1, bottomDarkPixels)" // Bottom Left
+				11="fill(x1-2,y1-1,x1-1,y1, bottomDarkPixels)" // Bottom Right
+				12="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
+			}
+		}
+	
+	
+		label {
+			font-size=13
+		}
+		
+		controlbutton {
+			minimum-width=120
+		}
+		
+		Textentryfocus_chat {
+		    font-family=basefont
+		    font-size=13
+		    textcolor  = "darkestGrey"
+		    bgcolor  = "none"
+		    selectedtextcolor  = "white"
+		    selectedbgcolor  = "blue"
+		    shadowtextcolor  = "darkestGrey"  // this is the cursor color
+		
+		    inset-left=4
+		    inset-top=6
+		    inset-right=6
+		      
+		    render_bg {
+			    0="fill(x0+2,y0+2,x1+32,y1-2, white)"
+			
+				// TOP
+				1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+				2="image_tiled(x0+3,y0,x1+32,y0+4, graphics/textEntry/topMiddle)"
+				3="image(x1+32,y0,x1+35,y0+4, graphics/textEntry/topRight)"
+				  	
+				// LEFT
+				4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+				  	
+				// RIGHT
+				5="image_tiled(x1+32,y0+4,x1+35,y1-3, graphics/textEntry/rightMiddle)"
+				  	
+				// BOTTOM
+			    6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+			    7="image_tiled(x0+3,y1-2,x1+32,y1+1, graphics/textEntry/bottomMiddle)"
+				8="image(x1+32,y1-3,x1+35,y1+1, graphics/textEntry/bottomRight)"	
+		    }
+	         
+	    }
+
+		CEmoticonButton {
+			//32 x 25
+			
+			render {
+				0="image(x0,y0,x1,y1, graphics/emote_button)"
+			}
+		}
+		
+			CEmoticonButton:hover {
+				//32 x 25
+				
+				render {
+					0="image(x0,y0,x1,y1, graphics/emote_button_hover)"
+				}
+			}		
+
+		EmoticonMenuItemStyle {
+			font-size=24
+			inset="-9 0 0 0"
+		}
+		
+		EmoticonMenuItemStyle:hover {
+			textcolor=white
+		}
+		
+		EmoticonMenuItemStyle:selected {
+			textcolor=white
+		}
+		
+		GridMenu {
+			font-size=16
+		}
+	}
+	
+	layout {
+			region { 
+			name=bottom1 
+			align=bottom 
+			height=79
+			width=max
+		}
+		region { 
+			name=bottom 
+			align=bottom 
+			height=50 
+		}
+	
+		place { 
+			control="ChatHistory" 
+			y=30
+			width=max 
+			height=max 
+			align=right 
+			dir=down 
+			margin-bottom=75 
+			margin-left=8 
+		}
+		
+		
+			place { 
+			control="TextEntry" 
+			region=bottom
+			height=40
+			width=max 
+			
+			margin-left=8
+			margin-bottom=6
+			
+			end-right=EmoticonButton 
+		}
+		
+		place { 
+			control="EmoticonButton" 
+			region=bottom
+			width=32 
+			height=25 
+			align=right 
+			margin-top=9
+			
+			end-right=sendbutton
+		}
+		
+		place { 
+			control="SendButton" 
+			region=bottom
+			
+			align=right
+			
+			height=40 
+			width=50
+			
+			margin-left=8
+			margin-right=8
+			margin-bottom=6
+		}
+		
+		
+		place { 
+			control="StatusLabel" 
+			region=bottom1 
+			height=20
+			align=top 
+			margin-left=8
+			margin-top=0
+		}
+	}
+}
