@@ -1,25 +1,5 @@
 "resource/layout/gamespage_details_subheader.layout" {
-	controls {
-		subheaderlabels {
-			controlname="CDetailsSubHeaderLabelsPanel"
-		}
-		
-		launchbutton {
-			controlname="Button"
-			labeltext="#Steam_LaunchGame"
-			style="detailsLaunchButton"
-			tabposition=1
-			command="RunGameAction"
-		}
-		
-		clientlist {
-			controlname="ClientListButton"
-			labeltext=""
-			style="ClientListButton"
-			tabposition=2
-			zpos=100
-		}
-	}
+	controls {}
 
 	colors {
 		GameDetailsSubHeader.HorizontalSpacing=5
@@ -132,27 +112,19 @@
 		}
 		
 		ClientListButton {
-			inset="0 0 0 0"
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break
+			inset="10 0 0 0"
 			bgcolor=none
-
-			render_bg {
-				// background fill
-				0="gradient( x0 , y0, x1, y1, red, blue )"
-			}
-		}
+			image=none
+			render_bg {}
+			render {}
+		}	
 		
-			ClientListButton:hover {
-				inset="-6 0 0 0"
-				bgcolor=none
-	
-				render_bg {
-					// background fill
-					0="gradient( x0 , y0, x1, y1, buttonface2, almostblack )"
-				}
-			}	
+		ClientListButton:hover {
+			image="graphics/icon_down_hover"
+		}
 		
 
 		DetailsButton {   
@@ -854,20 +826,17 @@
 			dir=left
 			align=left
 			margin-left=0
-			y=24
-			width=160		
 			end-right=launchbutton
 		}
 
 		place { 
-			control=launchbutton
+			control=launchbutton,clientlist
 			region=header
 			dir=right
 			align=right
 			margin-left=10
-			margin-right=10
 			margin-bottom=5
-			y=29
+			y=0
 			spacing=0
 			height=42
 		}
@@ -875,14 +844,10 @@
 			control=clientlist
 			y=0
 			x=0
-			height=0
-			width=0
-			region=header
+			start=launchbutton
 			dir=right
-			margin-left=0
-			margin-right=0
-			margin-top=-999
-			spacing=0
+			width=40
+			height=40
 		}
 	}
 }

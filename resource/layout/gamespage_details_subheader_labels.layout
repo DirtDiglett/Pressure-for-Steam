@@ -1,99 +1,28 @@
 "resource/layout/gamespage_details_subheader_labels.layout" {
-	controls {
-		totalplaytimeheader {
-			controlname="Label"
-			style="headertext"
-			labeltext="#steam_details_totalplaytimeheader"
-			zpos="2"
-		}
-		
-		totalplaytimevalue {
-			controlname="Label"
-			style="valuetext"
-			labeltext=""
-			zpos="2"
-		}
-
-		gameplayedheader {
-			controlname="Label"
-			style="headertext"
-			labeltext="#steam_details_lastplayedheader"
-			zpos="2"
-		}
-		
-		gameplayedvalue {
-			controlname="Label"
-			style="valuetext"
-			labeltext=""
-			zpos="2"
-		}
-
-		shareheader {
-			controlname="Label"
-			style="headertext"
-			labeltext="#steam_details_sharedbyheader"
-			zpos="2"
-		}
-		
-		sharevalue {
-			controlname="Label"
-			style="valuetext"
-			labeltext=""
-			zpos="2"
-		}
-
-		streamheader {
-			controlname="Label"
-			style="headertext"
-			labeltext="#steam_details_streamfromheader"
-			zpos="2"
-		}
-		
-		streamvalue {
-			controlname="Label"
-			style="valuetext"
-			labeltext=""
-			zpos="2"
-		}
-	}
+	controls {}
 
 	styles {
 		headertext {
-			padding-left=0
-			padding-bottom=1
-			padding-top=0
 			font-size=13
 			textcolor=lightestGreyHighlight
 		}
 
 		headertext-red {
-			padding-left=0
-			padding-bottom=1
-			padding-top=0
 			font-size=13
 			textcolor=lightestGreyHighlight
 		}
 
 		headertext-green {
-			padding-left=0
-			padding-bottom=1
-			padding-top=0
 			font-size=13
 			textcolor=lightestGreyHighlight
 		}
 
 		headertext-blue {
-			padding-left=0
-			padding-bottom=1
-			padding-top=0
 			font-size=13
 			textcolor=lightestGreyHighlight
 		}
 
 		valuetext {
-			padding-left=0
-			padding-bottom=1
-			padding-top=0
 			font-size=13
 			textcolor=lightestGreyHighlight
 		}
@@ -103,11 +32,9 @@
 	layout {
 		region { 
 			name="subheaderlabels" 
-			align=right 
+			align=left 
 			y=0 
-			x=0 
-			width=140
-			height=max 
+			x=0
 		}
 
 		place { 

@@ -575,30 +575,32 @@
 			y=20
 			height=46
 			align=left
-			margin-right=315
+			margin-right=20
 		}
 		
 		place {
 			control=gamesubheader
 			region=headertext
 			dir=down
+			align=left
+			y=60
+			x=20
+			width=max
+			height=50
 			margin-right=20
-			align=right
-			y=0
-			height=75
 		}
 		
 		place {
 			control=tagslabel
 			width=max
-			height=100
+			height=150
 			region=headertext
 		}
 		
 		// Community Hub, Forums, Related Groups, Store Page, DLC, Community Guides, Write Review
 		region	{ 
 			name="gamedata" 
-			y=70 
+			y=120
 			x=20 
 			width=max 
 			height=50 
