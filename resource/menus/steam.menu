@@ -30,9 +30,11 @@
 			text="#steam_menu_bigpicturemode"
 			shellcmd="steam://open/bigpicture" 
 		} 
-		
-		Divider {} MiniMode			[!$OSX]		{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
+	
+		MiniMode			[!$OSX]		{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
 		LargeMode			[!$OSX]		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" } // ________________________________________________________________________________________________________________________
+		
+		Divider {} 
 		
 		MusicDetails {
 			text="#steam_menu_view_music_details"
@@ -42,6 +44,13 @@
 		MusicPlayer {
 			text="#steam_menu_view_musicplayer"
 			shellcmd="steam://open/musicplayer" 
+		}
+		
+		Divider {} 
+		
+		Screenshots {
+			text="#steam_screenshots"
+			command="Screenshots"
 		}
 		
 		Divider {} // ________________________________________________________________________________________________________________________
