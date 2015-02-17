@@ -3,6 +3,11 @@
 	
 	styles {
 	
+		EmoticonMenuItemStyle {
+			font-size=24
+			inset="-3 0 0 0"
+		}
+	
 		CChatRoomDlg {	
 				
 			inset="0 0 0 0"	

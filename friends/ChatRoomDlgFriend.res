@@ -388,6 +388,13 @@
 			textcolor="ChatDialog.HistoryColor"
 			selectedbgcolor="blue"
 		}	
+		
+		
+		EmoticonMenuItemStyle {
+			font-size=24
+			inset="-3 0 0 0"
+		}
+		
 	} // end of styles
 	
 	layout {
