@@ -54,13 +54,13 @@
 			bgcolor=none
 			
 			render {
-				0="fill(x0-4,y0+1,x0+10,y1, lightGreyEnd)"
-				1="fill(x0-5,y0+1,x0-4,y1, darkestGrey)"
-				2="gradient_horizontal(x0-11,y0+1,x0-5,y1, none, black40)"
+				0="fill(x0-4,y0+26,x0+10,y1, lightGreyEnd)"
+				1="fill(x0-5,y0+25,x0-4,y1, darkestGrey)"
+				2="gradient_horizontal(x0-11,y0+26,x0-5,y1, none, black40)"
 			}
 			
 			render_bg {
-				0="fill(x0-10,y0+1,x1-1,y1, lightGreyEnd)"
+				0="fill(x0-10,y0+26,x1-1,y1, lightGreyEnd)"
 				
 			}
 
