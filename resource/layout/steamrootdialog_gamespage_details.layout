@@ -589,7 +589,7 @@
 		}
 		
 		place {
-			control=linkslabel
+			control=tagslabel
 			width=max
 			height=100
 			region=headertext
@@ -612,7 +612,7 @@
 		}
 		
 		place {
-			control=achievementslink,manuallink,newslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink,sendguestpasslink,guidelink
+			control=achievementslink,manuallink,newslink,supportlink,recommendlink,linkslabel,*taglink,edittagslink,sendguestpasslink,guidelink
 			region="gamedata"
 			dir=right
 			margin-right=0
