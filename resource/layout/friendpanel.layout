@@ -50,7 +50,7 @@
 
 		statusStyle {
 			font-family=basefont
-			font-size=12	
+			font-size=13	
 		}
 		
 		inviteLinkStyle {
@@ -130,7 +130,7 @@
 		place { 		
 			control="StatusLabel"
 			x=50 
-			y=18 
+			y=17
 		}
 
 		place { 
