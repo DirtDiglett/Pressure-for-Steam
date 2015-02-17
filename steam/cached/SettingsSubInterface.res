@@ -341,21 +341,45 @@
 		}
 		
 		place {
-			controls=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck,H264HWAccelCheck
+			controls=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck
 			dir=down
 			start=SkinCombo
 			y=10
 			spacing=-4
 		}
 		
-		place {
-			control="Divider2"
-			dir=down
-			start=H264HWAccelCheck
-			y=10
-			width=max
-			margin-right=43
-		}
+		 // Remove option for linux
+        place {
+            control=H264HWAccelCheck
+            height=0
+            width=0
+        }
+        // Readd button for Windows
+        place [$WINDOWS] {
+            controls=H264HWAccelCheck
+            dir=down
+            start=UrlBarCheck
+            y=-4
+        }
+ 
+        // Start divider at UrlBarCheck for Linux
+        place {
+            control="Divider2"
+            dir=down
+            start=UrlBarCheck
+            y=10
+            width=max
+            margin-right=43
+        }
+        // Start divider at H264HWAccelCheck for Windows
+        place [$WINDOWS]  {
+            control="Divider2"
+            dir=down
+            start=H264HWAccelCheck
+            y=10
+            width=max
+            margin-right=43
+        }
 
 		place {
 			controls=NotifyAvailableGamesCheck
