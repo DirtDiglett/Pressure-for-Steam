@@ -1,42 +1,5 @@
 "resource/layout/htmlfindbar.layout" {
-	controls {
-		FindEntry {
-			controlname=TextEntry
-			default=1
-			unicode=1
-			tabposition=1
-			style="FindEntry"
-		}
-		
-		FindCount {
-			controlname=Label
-			labeltext="#vgui_HTMLSearchMatch"
-		}
-		
-		Close {
-			controlname=Button
-			command="Close"
-			style="CloseButtonSm"
-		}
-		
-		Next {
-			controlname=Button
-			command="next"
-			style="NextButtonSm"
-		}
-		
-		Previous {
-			controlname=Button
-			command="previous"
-			style="PrevButtonSm"
-		}
-		
-		SearchThisPage {
-			controlname=Label
-			labeltext="#vgui_HTMLSearchThisPage"
-			style=""
-		}
-	}
+	controls {}
 
 	styles {
 		FindEntry {
@@ -63,28 +26,28 @@
 			bgcolor=none
 			inset="0 0 0 0"
 			render_bg={}
-			image="graphics/find_icon_down"
+			image="graphics/icon_down_default"
 		}
 		
 			NextButtonSm:hover {
 				bgcolor=none
 				inset="0 0 0 0"
 				render_bg={}
-				image="graphics/find_icon_down_hover"
+				image="graphics/icon_down_hover"
 			}
 		
 		PrevButtonSm {
 			bgcolor=none
 			inset="0 0 0 0"
 			render_bg={}
-			image="graphics/find_icon_up"
+			image="graphics/icon_up_default"
 		}
 		
 			PrevButtonSm:hover {
 				bgcolor=none
 				inset="0 0 0 0"
 				render_bg={}
-				image="graphics/find_icon_up_hover"
+				image="graphics/icon_up_hover"
 			}
 	}
 		
@@ -95,14 +58,14 @@
 			align=left
 			y=8
 			margin-right=26
-			margin-left=30
+			margin-left=24
 		}
 		
 		place {
 			control="FindCount"
 			width=70
 			align=right
-			y=6
+			y=8
 			margin-right=55
 			margin-left=6
 			margin-top=5
