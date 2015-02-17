@@ -37,25 +37,22 @@
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 				
-				// Creates the section.
-				//2="gradient( x0+1, y0+88, x1-1, y0+125, grey, lightGreyEnd )"
-				//3="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
-				//4="fill(x0+1,y0+88, x1-1, y0+89, greyHighlight)"
-				
-				8="image_tiled(x0+1, y0+87, x1-1, y0+125, graphics/subnav_bg)"
-				
-				9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
-				10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
-				
-				11="fill(x0+1, y0+126, x1-1, y0+127, darkestGrey)"
-				
-				// Background for the pageTabs
-				15="fill(x0+7,y0+134,x0+146,y0+158, darkestGrey)"// Top->Bottom
+				8="image_tiled(x0+1, y0+87, x1-1, y0+165, graphics/subnav_bg)"
+					
+					9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
+					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
+					
+					11="fill(x0+1, y0+164, x1-1, y0+250, darkestGrey)" // Single pixel line below the gradient
+					
+					// Background for the pageTabs
+					15="fill(x0+7,y0+134,x0+146,y0+158, darkestGrey)"// Top->Bottom
 					16="fill(x0+6,y0+135,x0+7,y0+157, darkestGrey)" // Left
 					17="fill(x0+146,y0+135,x0+147,y0+157, darkestGrey)" // Right
 					18="fill(x0+7,y0+158,x0+146,y0+159, grey50)"//grey50)"
 					19="fill(x0+6, y0+157, x0+7, y0+158, grey50)"
 					20="fill(x0+146, y0+157, x0+147, y0+158, grey50)"
+					
+					21="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
 			}
 	    }
 	
@@ -83,17 +80,12 @@
 					// Create the 1px Highlight on top
 					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 					
-					// Creates the section.
-					//2="gradient( x0+1, y0+88, x1-1, y0+125, grey, lightGreyEnd )"
-					//3="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
-					//4="fill(x0+1,y0+88, x1-1, y0+89, greyHighlight)"
-					
-					8="image_tiled(x0+1, y0+87, x1-1, y0+155, graphics/subnav_bg)"
+					8="image_tiled(x0+1, y0+87, x1-1, y0+165, graphics/subnav_bg)"
 					
 					9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
 					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
 					
-					11="fill(x0+1, y0+164, x1-1, y0+165, red)" // Single pixel line below the gradient
+					11="fill(x0+1, y0+164, x1-1, y0+250, darkestGrey)" // Single pixel line below the gradient
 					
 					// Background for the pageTabs
 					15="fill(x0+7,y0+134,x0+146,y0+158, darkestGrey)"// Top->Bottom
@@ -104,8 +96,6 @@
 					20="fill(x0+146, y0+157, x0+147, y0+158, grey50)"
 					
 					21="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
-					
-					
 				}
 			}
 	
@@ -525,14 +515,14 @@
 		
 		place {
 			control="DownLabel"
-			margin-top=135
+			margin-top=175
 			height=max
 			margin-left=8
 		}
 		
 		place {
 			control="NoFriendsAddFriendButton"
-			margin-top=94
+			margin-top=134
 			margin-left=6
 			width=141
 			height=24
