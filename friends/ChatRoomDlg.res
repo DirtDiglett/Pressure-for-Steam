@@ -494,7 +494,7 @@ layout {
 		
 		place { 
 			control="VoiceBar" 
-			y=57 
+			y=58
 			width=max 
 			height=40 
 			dir=down 
@@ -559,7 +559,7 @@ layout {
 			align=right
 			
 			height=40 
-			width=40 
+			width=50 
 			
 			margin-left=8
 			margin-right=8
