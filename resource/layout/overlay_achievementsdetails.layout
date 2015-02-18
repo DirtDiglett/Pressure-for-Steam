@@ -128,6 +128,8 @@
 			align=bottom
 			x=15
 			margin-bottom=15
+			height=0
+			width=0
 		}
 		
 		place {
