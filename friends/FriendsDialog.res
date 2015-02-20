@@ -21,38 +21,39 @@
 			bgcolor  = "none"
 			textcolor  = "none"
 
-			render_bg {
-				// Creates the top section
-				0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, darkGreyEnd )"
-				
-				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
-				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
-				
-				3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
-				4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
-				
-				5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
-				6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
-				
-				// Create the 1px Highlight on top
-				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
-				
-				8="image_tiled(x0+1, y0+87, x1-1, y0+165, graphics/subnav_bg)"
+				render_bg {
+					// Creates the top section
+					0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, darkGreyEnd )"
 					
-					9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
-					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
+					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
+					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
 					
-					11="fill(x0+1, y0+164, x1-1, y0+250, darkestGrey)" // Single pixel line below the gradient
+					3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
+					4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
+					
+					5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
+					6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
+					
+					// Create the 1px Highlight on top
+					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
+					
+					8="image_tiled(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
+						
+					9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
+					10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
+					
+					11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
 					
 					// Background for the pageTabs
-					15="fill(x0+7,y0+134,x0+146,y0+158, darkestGrey)"// Top->Bottom
-					16="fill(x0+6,y0+135,x0+7,y0+157, darkestGrey)" // Left
-					17="fill(x0+146,y0+135,x0+147,y0+157, darkestGrey)" // Right
-					18="fill(x0+7,y0+158,x0+146,y0+159, grey50)"//grey50)"
-					19="fill(x0+6, y0+157, x0+7, y0+158, grey50)"
-					20="fill(x0+146, y0+157, x0+147, y0+158, grey50)"
+					15="fill(x0+7,y0+114,x0+146,y0+138, darkestGrey)"// Top->Bottom
+					16="fill(x0+6,y0+115,x0+7,y0+137, darkestGrey)" // Left
+					17="fill(x0+146,y0+115,x0+147,y0+137, darkestGrey)" // Right
+					18="fill(x0+7,y0+138,x0+146,y0+139, grey50)"//grey50)"
+					19="fill(x0+6, y0+137, x0+7, y0+138, grey50)"
+					20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
 					
-					21="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
+					21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
+					22="fill(x0+1,y0+142,x1-1,y0+143, darkGreyEnd)"
 			}
 	    }
 	
@@ -80,22 +81,23 @@
 					// Create the 1px Highlight on top
 					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 					
-					8="image_tiled(x0+1, y0+87, x1-1, y0+165, graphics/subnav_bg)"
+					8="image_tiled(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
+						
+					9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
+					10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
 					
-					9="fill(x0+1, y0+88, x0+2, y0+125, grey10)"
-					10="fill(x1-2, y0+88, x1-1, y0+125, grey10)"
-					
-					11="fill(x0+1, y0+164, x1-1, y0+250, darkestGrey)" // Single pixel line below the gradient
+					11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
 					
 					// Background for the pageTabs
-					15="fill(x0+7,y0+134,x0+146,y0+158, darkestGrey)"// Top->Bottom
-					16="fill(x0+6,y0+135,x0+7,y0+157, darkestGrey)" // Left
-					17="fill(x0+146,y0+135,x0+147,y0+157, darkestGrey)" // Right
-					18="fill(x0+7,y0+158,x0+146,y0+159, grey50)"//grey50)"
-					19="fill(x0+6, y0+157, x0+7, y0+158, grey50)"
-					20="fill(x0+146, y0+157, x0+147, y0+158, grey50)"
+					15="fill(x0+7,y0+114,x0+146,y0+138, darkestGrey)"// Top->Bottom
+					16="fill(x0+6,y0+115,x0+7,y0+137, darkestGrey)" // Left
+					17="fill(x0+146,y0+115,x0+147,y0+137, darkestGrey)" // Right
+					18="fill(x0+7,y0+138,x0+146,y0+139, grey50)"//grey50)"
+					19="fill(x0+6, y0+137, x0+7, y0+138, grey50)"
+					20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
 					
-					21="fill(x0+1,y0+87,x1-1,y0+88, darkestGrey)"
+					21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
+					22="fill(x0+1,y0+142,x1-1,y0+143, darkGreyEnd)"
 				}
 			}
 	
@@ -192,7 +194,7 @@
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0, x1, y0+1, greyHighlight)"
-				2="gradient(x0,y1,x1,y1+2, black65, none)"
+				2="gradient(x0-22,y1,x1,y1+2, black65, none)"
 			}    
 	    }
     
@@ -404,7 +406,7 @@
 			font-style="regular"
 			
 			inset="0 -3 0 0"
-			minimum-width=800
+			minimum-width=800	// if window is made larger than this, it looks different from if it's smaller
 			bgcolor=none
 			
 			font-size=14
@@ -470,21 +472,21 @@
 			dir=right 
 			margin-left=28 
 			margin-right=8
-			y=102 
-			width=185 
+			y=85 
+			width=185 // should be max but right side is buggy if window size is changed using right-side handle of window border (only if box is empty) 
 			height=25 
 		}
 
 		place { 
 			control="FriendPanelSelf" 
-			x=12
-			y=26
+			x=10
+			y=25
 			width=max
 		}
 	
 		place { 
 			control="FriendsDialogSheet" 
-			y=125 
+			y=105 
 			align=left 
 			margin-left=-1 
 			margin-right=0 
@@ -496,33 +498,34 @@
 		
 		// Use this for cleverness to make the buttons.
 		place { 
-			control="friends_search_icon" 
+			control="friends_search_icon" // this rounds off the corners for the pagetab buttons; it was never clickable
 			margin-left=7 
 			dir=right 
-			y=135 
+			y=115 
 			height=22 
 			width=1
 		}
 		
 		place { 
-			control="addFriendsButton" 
+			control="addFriendsButton" // this rounds off the corners for the pagetab buttons; it's still clickable
 			margin-left=145 
 			dir=right 
-			y=135 
+			y=115 
 			height=22 
 			width=1
 		}
 		
 		place {
 			control="DownLabel"
-			margin-top=175
+			margin-top=155
 			height=max
+			width=max
 			margin-left=8
 		}
 		
 		place {
 			control="NoFriendsAddFriendButton"
-			margin-top=134
+			margin-top=114
 			margin-left=6
 			width=141
 			height=24

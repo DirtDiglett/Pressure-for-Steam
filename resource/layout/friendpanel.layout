@@ -28,7 +28,7 @@
 		
 		menuButtonStyle {
 			minimum-width=14
-			padding-top=3
+			padding-top=6
 			padding-bottom=4
 			padding-right=5
 			padding-left=6

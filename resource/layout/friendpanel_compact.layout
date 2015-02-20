@@ -60,9 +60,9 @@
 		
 		menuButtonStyle {
 			minimum-width=14
-			padding-top=7
+			padding-top=6
 			padding-right=5
-			padding-left=6
+			padding-left=4
 		}
 		
 		menuButtonStyle:hover {
