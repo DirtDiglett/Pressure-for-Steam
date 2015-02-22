@@ -786,7 +786,7 @@
 		place [!$OSX] { 
 			control="view_friends" 
 			height=13 
-			y=17 
+			y=19 
 			align=right 
 			dir=right 
 			margin-right=59 
