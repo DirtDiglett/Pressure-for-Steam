@@ -4,7 +4,7 @@
 		
 		SkinVersion {
 			text="Pressure BETA"
-			shellcmd="steam://openurl/http://steamcommunity.com/groups/pressureskin"
+			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 		
 		About { 
