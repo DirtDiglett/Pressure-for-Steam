@@ -3,12 +3,12 @@
 	
 	styles {
 	
-	COverlayBroadcastChatDialog {
-				inset="0 0 0 0"	
+		COverlayBroadcastChatDialog {
+			inset="0 0 0 0"	
 				
 			bgcolor="none"
 			render_bg {
-		       	1="fill(x0,y0,x1,y1, darkestGrey)"
+				1="fill(x0,y0,x1,y1, darkestGrey)"
 
 				// The status Label area.
 				4="fill( x0, y1-90, x1, y1, darkestGrey )"
@@ -26,7 +26,7 @@
 				12="fill(x1-1,y1-2,x1,y1-1, bottomDarkPixels)" // Bottom Right
 			}
 		}
-	
+		
 	
 		label {
 			font-size=13
@@ -106,7 +106,7 @@
 	}
 	
 	layout {
-			region { 
+		region { 
 			name=bottom1 
 			align=bottom 
 			height=79
@@ -130,7 +130,7 @@
 		}
 		
 		
-			place { 
+		place { 
 			control="TextEntry" 
 			region=bottom
 			height=40

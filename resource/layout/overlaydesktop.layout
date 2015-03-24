@@ -39,6 +39,31 @@
 			font-size=15
 			textcolor=text
 		}
+		
+		topbar {
+			font-family=headerfont
+			font-size=48
+			textcolor=white
+			
+			render_bg {
+			}
+		}
+		
+		clocksuffix {
+			font-family=headerfont
+			font-size=48			
+			textcolor=white
+			
+			render_bg {
+			//	0="fill(x0,y0,x1,y1, orange)"
+			}
+		}
+		
+		timeStrings {
+			font-size=14
+			textcolor=greyHighlight
+			font-family=basefont
+		}
 	}
 	
 	layout {
@@ -62,12 +87,35 @@
 		}
 		
 		place {
+			control="SessionText"
+			y=47
+			x=17
+		}
+		
+		place {
+			control=TwoWeeksText,ForeverText
+			start=SessionText
+			dir=right
+			spacing=20
+			x=20
+		}
+		
+		place {
+			control="Clock,ClockSuffix"
+			region=taskbar
+			align=right
+			dir=right
+			y=59
+			margin-right=175
+		}
+		
+		place {
 			control=FriendsDetailPanel
 			region=topbar
 			align=left
 			dir=right
 			height=26
-			width=160
+			width=165
 		}
 		
 		place {
@@ -83,7 +131,7 @@
 			start=CommunityHubDetailPanel
 			height=26
 			x=24
-			width=126
+			width=121
 		}
 
 		place {
@@ -91,7 +139,7 @@
 			start=GuidesDetailPanel
 			height=26
 			x=24
-			width=138
+			width=135
 		}
 
 		place {
@@ -99,7 +147,7 @@
 			start=CommunityDiscussionsDetailPanel
 			height=26
 			x=24
-			width=285
+			width=220
 		}
 		
 		region {

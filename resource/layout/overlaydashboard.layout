@@ -27,17 +27,7 @@
 			font-style=none
 			textcolor=none
 		}
-		
-		clocksuffix {
-			font-family=headerfont
-			font-size=48			
-			textcolor=white
-			
-			render_bg {
-			//	0="fill(x0,y0,x1,y1, orange)"
-			}
-		}
-		
+
 		// The game's name
 		topbar {
 			font-family=headerfont
@@ -65,12 +55,7 @@
 		LabelOverlay {
 			image=graphics/overlay/browsersettingsmusic
 		}
-		
-		timeStrings {
-			font-size=14
-			textcolor=greyHighlight
-			font-family=basefont
-		}
+
 	}
 	
 	layout {
@@ -111,22 +96,7 @@
 			y=8
 			x=16
 		}
-		
-		place {
-			control="SessionText"
-			start=gamename
-			dir=down
-			y=-8 // We want it 6 pixels lower than the game name.. but there is a default 12px bottom padding on the name I can't hide so this takes that into account
-		}
-		
-		place {
-			control=TwoWeeksText,ForeverText
-			start=SessionText
-			dir=right
-			spacing=32
-			x=32
-		}
-		
+
 		place {
 			control="CloseButton"
 			region=topbar
@@ -134,16 +104,7 @@
 			y=36
 			margin-right=39 // There is a 3px weirdness offset. This accounts for that.
 		}
-		
-		place {
-			control="Clock,ClockSuffix"
-			region=taskbar
-			align=right
-			dir=right
-			y=51 // Need to account for the weird top padding.
-			margin-right=175
-		}
-		
+
 		// Used for the icons 
 		place {
 			control=HotkeyExplain
