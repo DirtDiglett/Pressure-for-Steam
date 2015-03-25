@@ -78,7 +78,8 @@ Indent all code via tabs rather than spaces.
 
 **Ordering Styles**
 When including styles for a control keep them in the following order:
-```// Styling
+```
+// Styling
 bgcolor
 selectedbgcolor
 selectedtextcolor
