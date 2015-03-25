@@ -1,3 +1,35 @@
+// Styling
+bgcolor
+selectedbgcolor
+selectedtextcolor
+shadowtextcolor
+textcolor
+
+// Font settings.
+font-family
+font-outerglow-color
+font-outerglow-filtersize
+font-outerglow-offset
+font-size
+font-style
+font-weight
+
+// Content-Additions
+image
+
+// Positioning
+inset
+inset-bottom
+inset-left
+inset-right
+inset-top
+minimum-height
+minimum-width
+padding-bottom
+padding-left
+padding-right
+padding-top
+
 "Friends/FriendsDialog.res" {
 	controls {}
 

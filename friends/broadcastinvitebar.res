@@ -1,40 +1,4 @@
 "friends/broadcastinvitebar.res" {
-	controls {
-		"BIBar" {
-			ControlName="BIBar"
-		}
-		
-		"InviteLabel" {	
-			ControlName="Label"
-			labeltext="#Friends_BroadcastInvite"
-			mouseinputenabled=0
-		}
-		
-		"GameLabel" {
-			ControlName="Label"
-			labeltext="%game%"
-			mouseinputenabled=0
-		}
-		
-		"ClickHereLabel" {
-			ControlName="Label"
-			labeltext="#friends_game_invite_action"
-			mouseinputenabled=0
-		}
-		
-		"InviteImage" {
-			ControlName="ImagePanel"
-			image="resource/invite"
-			mouseinputenabled=0
-		}
-		
-		"CloseButton" {	
-			ControlName="Button"
-			labeltext="X"
-			command="Close"
-		}
-	}
-	
 	styles {
 		CBroadcastInviteBar {
 			bgcolor=none
@@ -49,7 +13,6 @@
 		Label {
 			textcolor=white
 			font-family=basefont
-			
 			font-style="outerglow"
 			font-outerglow-color="130 80 0 255"
 			font-outerglow-offset=1
@@ -89,19 +52,19 @@
 		
 		place { 
 			control="InviteLabel,GameLabel" 
-			dir=down 
-			spacing=3 
+			margin-left=37
 			margin-top=14 
-			margin-right=2 
-			margin-left=37 
+			margin-right=2
+			dir=down 
+			spacing=3
 		}
 
 		place { 
 			control="CloseButton" 
 			align=right 
-			margin=6 
-			width=8 
-			height=9 
+			width=8
+			height=9
+			margin=6			 
 		}
 		
 		place { 
