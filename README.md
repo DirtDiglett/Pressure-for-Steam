@@ -76,8 +76,8 @@ If you're providing code to add to the project please adhere to these coding pra
 **Spacing**
 Indent all code via tabs rather than spaces.
 
-**Ordering Styles**
-When including styles for a control keep them in the following order:
+**Ordering Styles & Controls**
+When including styles for a control keep them in the following order. The mantra is 'Width before Height, Clockwise in position starting Left". So X then Y, Left Top Right Bottom.
 ```
 // Styling
 bgcolor
@@ -128,3 +128,17 @@ TestStyle [!$OSX] {
    render_bg {}
 }
 ```
+
+And for controls:
+````
+start
+align
+x
+y
+width
+height
+margin
+dir
+spacing
+end-right
+````
