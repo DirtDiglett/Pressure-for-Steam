@@ -78,7 +78,7 @@ Indent all code via tabs rather than spaces.
 
 **Ordering Styles**
 When including styles for a control keep them in the following order:
-`// Styling
+```// Styling
 bgcolor
 selectedbgcolor
 selectedtextcolor
@@ -108,10 +108,11 @@ minimum-width
 padding-left
 padding-top
 padding-right
-padding-bottom`
-
+padding-bottom
+```
 Here is an example style that fits this:
-`TestStyle [!$OSX] {
+```
+TestStyle [!$OSX] {
    bgcolor=none
    selectedbgcolor=blue
    textcolor=red
@@ -124,4 +125,5 @@ Here is an example style that fits this:
    
    render {}   
    render_bg {}
-}`
+}
+```
