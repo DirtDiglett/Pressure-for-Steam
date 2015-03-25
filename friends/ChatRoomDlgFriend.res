@@ -35,8 +35,8 @@
 		}
 	   
 			MenuItem:selected {
-				bgcolor=none"
-				textcolor=white"
+				bgcolor=none
+				textcolor=white
 				
 			}
 			
@@ -52,7 +52,7 @@
 		
 			MenuItem:disabled {
 				shadowtextcolor=none
-				textcolor=darkestGrey"
+				textcolor=darkestGrey
 				font-style="none"
 			}
 			
