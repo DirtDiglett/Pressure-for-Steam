@@ -1,39 +1,28 @@
 "resource/layout/editfriendsgroupdialog.layout" {
-	controls {}
-	
 	layout {
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
 		place {
 			control="description"
 			y=38
+			width=max
 			margin-left=16
 			margin-right=16
-			width=max
 		}
-		
 		
 		region {
 			name=bottom
 			align=bottom
-			height=51
 			width=max
+			height=51
 		}
 		
 		place {
 			control="OKButton,CancelButton"
 			region=bottom
 			align=right
-			spacing=8
 			height=24
 			margin-top=14
 			margin-right=14
+			spacing=8
 		}
 	}
 }
