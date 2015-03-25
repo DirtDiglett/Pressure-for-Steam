@@ -1,12 +1,9 @@
 "colors.styles" { // "Pressure" by Dirt Diglett
 	colors {
-
-  
 // *********************************************** 
 // "Pressure" Colors
 // ***********************************************
- 
-		none="0 0 0 0"
+ 		none="0 0 0 0"
 	 
 		// Greyscale
 		trueWhite="255 255 255 255"
@@ -67,10 +64,7 @@
 		lightestYellow="231 200 1 255"
 		yellow="210 178 1 255"
 		darkestYellow="160 132 1 255"
-		
-		
-		// SPECIAL
-		
+
 		// Normal Button
 		darkCornerPixels = "8 8 8 200"
 		topLightPixels = "62 62 62 255"
@@ -84,7 +78,5 @@
 		
 		// Disabled Button
 		bottomDarkPixelsDisabled = "24 24 24 255"
-		
-		
 	}
 }

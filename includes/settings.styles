@@ -16,52 +16,39 @@
 		// *********************************************** 
 		// Spacing
 		// ***********************************************		
-		Frame.ClientInsetX        0
-		Frame.ClientInsetY        35
+		Frame.ClientInsetX 0
+		Frame.ClientInsetY 35
 
 		// *********************************************** 
 		// Transitions
 		// ***********************************************	
-		Frame.FocusTransitionEffectTime   "0"     // time it takes for a window to fade in/out on focus/out of focus
-		Frame.TransitionEffectTime      "0.25"      // time it takes for a window to fade in/out on open/close
-		
-		
+		Frame.FocusTransitionEffectTime "0"	 // time it takes for a window to fade in/out on focus/out of focus
+		Frame.TransitionEffectTime "0.25"	  // time it takes for a window to fade in/out on open/close
+		Frame.OnDragAlphaDelayTime "0.15"	  // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
+		Frame.OnDragAlphaMultiplier "1.0"	 // multiplier applied to alpha while dragging a frame
+		Frame.AutoSnapRange "6"
+		Frame.UsesAlphaBlending 1
+		FrameSystemButton.Icon ""
+		FrameSystemButton.DisabledIcon ""
 
-
-
-    Frame.OnDragAlphaDelayTime      "0.15"      // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
-    Frame.OnDragAlphaMultiplier     "1.0"     // multiplier applied to alpha while dragging a frame
-    Frame.AutoSnapRange         "6"
-    Frame.UsesAlphaBlending       1
-    FrameSystemButton.Icon        ""
-    FrameSystemButton.DisabledIcon    ""
-
-	// Default tooltip delay pops fast, but lets the mouse pass through without popping
-	// Anchor=Cursor makes it stick to initial pop location like windows implementation.
-	// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside
-	// the parent panel (useful for icon sized items)
-	Tooltip.Delay=75
-	Tooltip.Anchor=Cursor
+		// Default tooltip delay pops fast, but lets the mouse pass through without popping
+		// Anchor=Cursor makes it stick to initial pop location like windows implementation.
+		// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside
+		// the parent panel (useful for icon sized items)
+		Tooltip.Delay=75
+		Tooltip.Anchor=Cursor
 	
+		WizardPanel.HeaderBGColor green
+
+		Menu.TextInset "6"
 	
+		PropertySheet.TransitionEffectTime "0"	 // time to change from one tab to another
+		PropertySheet.TabGap 1
+		PropertySheet.FlashTabColor "255 114 76 255"
 	
-   WizardPanel.HeaderBGColor     green
-
-    Menu.TextInset          "6"
-    
-    PropertySheet.TransitionEffectTime    "0"     // time to change from one tab to another
-    PropertySheet.TabGap        1
-    PropertySheet.FlashTabColor	"255 114 76 255"
-    
-    
-        SectionedListPanel.CollapserWidth   10
+		SectionedListPanel.CollapserWidth 10
  
- 
- 
-		    DragDrop.DragFrame        "255 255 255 192"
-    DragDrop.DropFrame        "150 255 150 255"
-    	
-
-
+		DragDrop.DragFrame "255 255 255 192"
+		DragDrop.DropFrame "150 255 150 255"
 	}
 }

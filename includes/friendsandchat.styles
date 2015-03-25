@@ -1,95 +1,83 @@
 "friendsandchat.styles" { 
-	colors {
-
-	}
-	
-	
 	styles {
-	
-		CFriendsListSectionAffordance {     
-	      inset="0 0 0 0"
-	      font-size=14
-	      font-weight=400
-	      textcolor="Label"
-	    }
-	    
-	    
-	
-	            
-	    CFriendPanel {
-	      inset="0 0 0 0"
-	      bgcolor=none
-	      font-family=basefont
-	      font-size=14
-	      font-size=13 [$OSX]
-	      font-weight=400
-	      textcolor="white"
-	    }
-	    
-	    friends_chat_text {
+		CFriendsListSectionAffordance {	 
+			textcolor="Label"
+			font-size=14
+			font-weight=400
+			inset="0 0 0 0"
+		}
+
+		CFriendPanel {
+			bgcolor=none
 			textcolor="white"
+			font-family=basefont
+			font-size=14
+			font-size=13 [$OSX]
+			font-weight=400
+			inset="0 0 0 0"
+		}
+		
+		friends_chat_text {
 			selectedtextcolor="trueWhite"	
 			SelectedBgColor="blue"
+			textcolor="white"
 			font-size=14
 		}
 
 		friends_chat_text_self {
-			textcolor="lightestGrey" //changed to white to fix ingame not hovering
 			selectedtextcolor="trueWhite" 	
 			selectedbgcolor="blue"
+			textcolor="lightestGrey" //changed to white to fix ingame not hovering
 			font-size=14
 		}
 		
-
-	
 		friends_chat_history {
-			textcolor="ChatDialog.HistoryColor"
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
+			textcolor="ChatDialog.HistoryColor"
 			font-size=14
 		}
 		
 		friends_chat_event {
-			textcolor="blue"
-			font-size=14
 			selectedtextcolor="trueWhite"
 			selectedbgcolor="blue"
+			textcolor="blue"
+			font-size=14
 		}
 	
 		friends_chat_bright_event {
-			textcolor="white"
 			selectedtextcolor="trueWhite"
+			textcolor="white"
 			font-size=14
 			font-weight=1000
 		}
 	
 		friends_chat_url {
-			textcolor="blue"
-	   		font-style=underline
-			font-size=14
 			selectedtextcolor="trueWhite"
 			selectedbgcolor="blue"
+			textcolor="blue"
+	 		font-style=underline
+			font-size=14
 		}
 		
 		friends_chat_name_ingame {
-			textcolor="Friends.InGameColor"
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
+			textcolor="Friends.InGameColor"
 			font-size=14
-	
 		}
 		
 		friends_chat_self {
-			textcolor="Friends.OnlineColor"
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
+			textcolor="Friends.OnlineColor"
 			font-size=14
 		}
 		
 		friends_chat_name {
-			textcolor="Friends.OnlineColor"
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
+			textcolor="Friends.OnlineColor"
 			font-size=14
 		}
 		
@@ -101,34 +89,31 @@
 		}
 		
 		friends_chat_securitylink {
-			textcolor="orange"
 			bgcolor="none"
+			selectedtextcolor="trueWhite"	
+			selectedbgcolor="blue"
+			textcolor="orange"
 			font-family=basefont
 			font-size=14
 			font-weight=400
 			font-style=none
-			selectedtextcolor="trueWhite"	
-			selectedbgcolor="blue"
 		}
 		
 		// used in friends tooltip and friends list for overriding regular styles with custom colors
-	   	friends_offline {
-	   		textcolor="Friends.OfflineColor"
-	   	}
-	   	
-	   	friends_online {
-	   		textcolor="Friends.OnlineColor"
-	   	}
-	   	
-	   	friends_ingame {
-	   		textcolor="Friends.InGameColor"
-	   	}
-	   	
-	   	friends_ignored {
-	   		textcolor="Friends.IgnoredColor"
-	   	}
-	   	
-	   	
-	
+	 	friends_offline {
+	 		textcolor="Friends.OfflineColor"
+	 	}
+	 	
+	 	friends_online {
+	 		textcolor="Friends.OnlineColor"
+	 	}
+	 	
+	 	friends_ingame {
+	 		textcolor="Friends.InGameColor"
+	 	}
+	 	
+	 	friends_ignored {
+	 		textcolor="Friends.IgnoredColor"
+	 	}
 	}
 }

@@ -17,151 +17,153 @@
 // OS X ONLY
 // ***********************************************
  
-FrameMinimizeButton [$OSX] {
-	padding-top=3px
-	render_bg{}
-	image= "graphics/window_controls/osx/minimize"
-} 
- 
-FrameMinimizeButton:framefocus [$OSX] {
-	padding-top=3px
-	render_bg{}
-	image= "graphics/window_controls/osx/minimize"
-} 
- 
- 
- 
- 
- 
+		FrameMinimizeButton [$OSX] {
+			padding-top=3px
+			image= "graphics/window_controls/osx/minimize"
+
+			render_bg{}
+		} 
+		 
+		FrameMinimizeButton:framefocus [$OSX] {
+			padding-top=3px
+			image= "graphics/window_controls/osx/minimize"
+
+			render_bg{}
+		} 
  
 // *********************************************** 
 // Minimize
 // *********************************************** 
-	
 		FrameMinimizeButton [!OSX] {
-			render_bg {}
 			image= "graphics/window_controls/windows/minimize"
+
+			render_bg{}
 		}
 	
-		FrameMinimizeButton:hover {
-			render_bg {}
-			bgcolor= "none"
-			image= "graphics/window_controls/windows/minimize_hover"
-			image= "graphics/window_controls/osx/minimize_hover" [$OSX]
-		}
+			FrameMinimizeButton:hover {
+				bgcolor= "none"
+				image= "graphics/window_controls/windows/minimize_hover"
+				image= "graphics/window_controls/osx/minimize_hover" [$OSX]
+
+				render_bg{}
+			}
 
 		FrameMinimizeButton:framefocus [!$OSX] {
-			render_bg {}
 			bgcolor= "none"
 			image= "graphics/window_controls/osx/minimize"
+
+			render_bg{}
 		}
  
-		FrameMinimizeButton:framefocus:hover [$OSX]
-		{
-			render_bg {}
-			bgcolor= "none"
-			image= "graphics/window_controls/osx/minimize_hover"
-		}
-	
-		FrameMinimizeButton:active {
-			render_bg {}
-			bgcolor= "none"
-			image= "graphics/window_controls/windows/minimize_active"
-			image= "graphics/window_controls/osx/minimize_active" [$OSX]
-		}
+			FrameMinimizeButton:framefocus:hover [$OSX]{
+				bgcolor= "none"
+				image= "graphics/window_controls/osx/minimize_hover"
 
+				render_bg{}
+			}
+		
+			FrameMinimizeButton:active {
+				bgcolor= "none"
+				image= "graphics/window_controls/windows/minimize_active"
+				image= "graphics/window_controls/osx/minimize_active" [$OSX]
 
+				render_bg{}
+			}
 
 // *********************************************** 
 // Maximize
-// ***********************************************	
-	
+// ***********************************************		
  	 	FrameMaximizeButton {
-			render_bg {}
 			image= "graphics/window_controls/windows/maximize"
+
+			render_bg{}
 		}
 
 			FrameMaximizeButton:hover {
-				render_bg {}
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/maximize_hover"
+
+				render_bg{}
 			}
 		
 			FrameMaximizeButton:framefocus {
-				render_bg {}
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/maximize"
+
+				render_bg{}
 			}
 		
-			FrameMaximizeButton:framefocus:hover {
-				render_bg {}
-				bgcolor= "none"
-				image= "graphics/window_controls/windows/maximize_hover"
-			}
+				FrameMaximizeButton:framefocus:hover {
+					bgcolor= "none"
+					image= "graphics/window_controls/windows/maximize_hover"
+
+					render_bg{}
+				}
 		
-			FrameMaximizeButton:active {
-				render_bg {}
-				bgcolor= "none"
-				image= "graphics/window_controls/windows/maximize_active"
-			}
+				FrameMaximizeButton:active {
+					bgcolor= "none"
+					image= "graphics/window_controls/windows/maximize_active"
+
+					render_bg{}
+				}
 
 // *********************************************** 
 // Restore
 // ***********************************************
-	
 		FrameRestoreButton {
-			render_bg {}
 			image= "graphics/window_controls/windows/restore"
+
+			render_bg {}
 		}
 	
 			FrameRestoreButton:hover {
-				render_bg {}
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/restore_hover"
-			}
-		
-			FrameRestoreButton:framefocus {
-				
+
 				render_bg {}
-				bgcolor= "none"
-				image= "graphics/window_controls/windows/restore"
 			}
 		
+		FrameRestoreButton:framefocus {
+			bgcolor= "none"
+			image= "graphics/window_controls/windows/restore"
+
+			render_bg {}
+		}
+	
 			FrameRestoreButton:framefocus:hover {
-				render_bg {}
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/restore_hover"
+
+				render_bg{}
 			}
 		
 			FrameRestoreButton:active {
-				render_bg {}
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/restore_active"
+
+				render_bg{}
 			}
-
-
 
 // *********************************************** 
 // Close or Exit
 // ***********************************************
-
 		FrameCloseButton {
-			render_bg {}
 			image= "graphics/window_controls/windows/close"
+
+			render_bg{}
 		}
 	
 			FrameCloseButton:hover {
-				render_bg {}
 				image= "graphics/window_controls/windows/close_hover"
+
+				render_bg{}
 			}
 			
 			FrameCloseButton:disabled {
-				render_bg {}
 				bgcolor= "none"
-				image= "graphics/window_controls/windows/close_disabled" 
+				image= "graphics/window_controls/windows/close_disabled"
+
+				render_bg{}
 			}
-	
-	
-	
 	} // END OF STYLES
 }

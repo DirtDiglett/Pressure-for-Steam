@@ -1,6 +1,5 @@
 "notifications.styles" { 
 	colors {
-		
 		// *********************************************** 
 		// "Pressure" Notifications
 		// ***********************************************	
@@ -14,20 +13,16 @@
     
 		AchievementPopup.TitleColor   "white"
 		AchievementPopup.DescriptionColor "lightestGrey"
-		
-
 	}
 	
 	styles {
-	
 		Notification [!$OSX] {
+			bgcolor=none
 			font-family=basefont
 			font-size=15
 			font-weight=400
 			
-			
-			bgcolor=none
-			
+			render {}
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
 				
@@ -48,18 +43,15 @@
 				// Grey Highlight
 				10="fill(x0+3,y0+1,x1-3,y0+2, greyHighlight)"
 			}
-	      
-			render {}
 	    }
  
 		Notification [$OSX] {
+			bgcolor=none
 			font-family=basefont
 			font-size=15
 			font-weight=400
 			
-			
-			bgcolor=none
-			
+			render {}
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
 				
@@ -80,11 +72,6 @@
 				// Grey Highlight
 				10="fill(x0+3,y0,x1-3,y0+1, greyHighlight)"
 			}
-	      
-			render {}
 	    }
-    
-	
 	}
-	
 }
