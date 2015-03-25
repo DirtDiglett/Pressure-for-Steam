@@ -1,8 +1,6 @@
 "resource/layout/friendpanel.layout" {
-	controls {}
-	
 	colors {
-		Friends.OfflineColor      "greyHighlight"
+		Friends.OfflineColor "greyHighlight"
 	}
 	
 	styles {
@@ -21,17 +19,17 @@
 		}
 		
 		nameInstanceStyle {
-			font-family=basefont
 			textcolor="lightestGrey"
+			font-family=basefont
 			font-size=13
 		}
 		
 		menuButtonStyle {
-			minimum-width=14
 			padding-top=6
 			padding-bottom=4
 			padding-right=5
 			padding-left=6
+			minimum-width=14
 		}
 		
 			menuButtonStyle:hover {
@@ -142,9 +140,9 @@
 		place {
 			control="BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"
 			start="StatusLabel"
-			margin-left=0
 			y=0
 			height=16
+			margin-left=0
 		}
 
 		// these controls are shown for friendship requests
