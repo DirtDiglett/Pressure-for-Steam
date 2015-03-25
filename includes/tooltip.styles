@@ -1,15 +1,9 @@
 "tooltip.styles" { 
-	colors {
-	}
 	styles {
-	    TooltipWindow {
-	        bgcolor  = "darkestGrey"
-	        
-	        render {
-	        
-	        
-	        }
-	        
+		TooltipWindow {
+			bgcolor=darkestGrey
+			
+			render {}
 			render_bg {
 				0="gradient(x0, y0, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0, y0, x0+1, y1, darkGreyEnd)" // Left
@@ -22,39 +16,34 @@
 				7="fill(x0+1, y0+1, x1-1, y0+2, greyHighlight)" // Top
 				8="fill(x0+2, y1-2, x1-2, y1-1, white10)" // Bottom
 			}
-	    }
+		}
 	
 		// body text inside a tooltip
-	    "TooltipWindow Label" {
+		"TooltipWindow Label" {
+			textcolor=white
+			font-size=11
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
 			padding-left=3
+			padding-top=3
 			padding-right=3
 			padding-bottom=3
-			padding-top=3
-	        textcolor  = "white"
-	        
-	        				font-style="outerglow"
-				font-outerglow-color="darkestGrey"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3
-	        
-	        font-size=11
-	    }
-	    
-	    // headline text inside a tooltip
+		}
+		
+		// headline text inside a tooltip
 	   	tooltip_headline {
+	   		textcolor=white
 	   		font-size="18"
 	   		font-family=semibold
-	   		textcolor  = "white"
-	   		
-	   		padding-left=3
+	   		font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			padding-left=3
 	   		padding-top=3
 	   		padding-right=3
-	   		
-	   						font-style="outerglow"
-				font-outerglow-color="darkestGrey"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3
 	   	}
 	}
-
 }
