@@ -1,15 +1,5 @@
 "resource/layout/gameproperties.layout" {
-	controls {}
-	
 	layout {
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
 		place { 
 			control="frame_captiongrip" 
 			width=max 
@@ -26,11 +16,11 @@
 		place {	
 			control="OKButton" 
 			region=bottom 
+			align=right
 			width=92 
 			height=24 
-			align=right
+			margin-top=14 
 			margin-right=14
-			margin-top=14  
 		}
 	}
 }
