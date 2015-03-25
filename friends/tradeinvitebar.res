@@ -1,57 +1,8 @@
 "friends/tradeinvitebar.res" {
-	controls {
-		"InviteLabel" {
-			ControlName="Label"
-			labeltext="#friends_trade_invite"
-			mouseinputenabled=0
-			group="recv"
-		}
-		
-		"ClickHereLabel" {
-			ControlName="Label"
-			labeltext="#friends_trade_invite_action"
-			mouseinputenabled=0
-			group="recv"
-		}
-
-		"InviteSentLabel" {
-			ControlName="Label"
-			labeltext="#friends_trade_invite_sent"
-			mouseinputenabled=0
-			group="send"
-		}
-		
-		"WaitingForResponseLabel" {
-			ControlName="Label"
-			labeltext="#friends_trade_invite_sent_waiting"
-			mouseinputenabled=0
-			group="send"
-		}
-		
-		"InviteImage" {
-			ControlName="ImagePanel"
-			image="resource/icon_trade_request"
-			mouseinputenabled=0
-			group="recv"
-		}
-		
-		"InviteSentImage" {
-			ControlName="ImagePanel"
-			image="resource/icon_trade_request"
-			mouseinputenabled=0
-			group="send"
-		}
-				
-		"CloseButton" {
-			ControlName="Button"
-			labeltext="X"
-			command="Close"
-		}
-	}
-	
 	styles {
 		CTradeInviteBar {
 			bgcolor=none
+			
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
 				1="gradient(x0-9,y0+1,x1,y1-1, green, darkestGreen)"
@@ -65,9 +16,9 @@
 		}
 
 		Button {
-			textcolor=none
 			bgcolor=none
-			
+			textcolor=none
+						
 			render_bg {
 				0="image(x0,y0,x1,y1,graphics/trade_invite_close)"
 			}
@@ -98,19 +49,19 @@
 		place { 
 			control="InviteLabel,ClickHereLabel,InviteSentLabel,WaitingForResponseLabel" 
 			width=max 
-			dir=down 
-			spacing=3 
+			margin-left=37
 			margin-top=14 
 			margin-right=2 
-			margin-left=37 
+			dir=down 
+			spacing=3 
 		}
 		
 		place { 
 			control="CloseButton" 
-			align=right 
-			margin=6 
+			align=right
 			width=8 
-			height=9 
+			height=9
+			margin=6
 		}
 	}
 }

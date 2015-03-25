@@ -1,34 +1,4 @@
 "friends/voicebar.res" {
-	controls {
-		"VoiceBar" {
-			"ControlName"		"CVoiceBar"
-		}
-		
-		"micvolume" {
-			"ControlName"		"CVoiceTraffic"
-		}
-		
-		"SpeakerVolume" {
-			"ControlName"		"CVoiceTraffic"
-		}
-		
-		"action2" {
-			"ControlName"		"Button"
-			style="Chat_MenuButton_withChrome"
-		}
-
-		"StatusLabel" {
-			"ControlName"		"Label"
-			style="status_label"
-		}
-		
-		"VoiceImage" {
-			"ControlName"		"ImagePanel"
-			style="voice_image"
-			image="resource/icon_voice_chat"
-		}
-	}
-	
 	styles {
 		CVoiceBar {
 			bgcolor=none
@@ -45,16 +15,14 @@
 		}
 		
 			Chat_MenuButton_withChrome:hover {
+				bgcolor=none
+				textcolor="trueWhite"
 				font-family=basefont
 				font-size=13
-				textcolor="trueWhite"
-				
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
 					
-				bgcolor=none
-
 				render_bg {
 			        // background fill
 			        0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, greyHighlight, grey )" // Background Gradient
@@ -112,16 +80,13 @@
 			}
 
 		status_label {
-			font-family=basefont
 			textcolor=white
-			inset="0 0 0 0"
-			
+			font-family=basefont
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=3
-			
-			
+			inset="0 0 0 0"
 		}
 
 		CVoiceTraffic {}
@@ -147,12 +112,12 @@
 		//Content
 		place { 
 			control="StatusLabel" 
-			align=left-center 
-			x=40 
-			y=0 
-			height=18 
-			end-right=action2 
-			margin-right=8 
+			align=left-center
+			x=40
+			y=0
+			height=18
+			margin-right=8
+			end-right=action2
 		}
 		
 		place { 
@@ -167,11 +132,11 @@
 		//Button
 		place { 
 			control="action2" 
-			height=24
-			margin=8 
-			margin-right=10 
-			align=right 
+			align=right
 			y=0
+			height=24
+			margin=8
+			margin-right=10
 		}
 	}
 }
