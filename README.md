@@ -65,3 +65,63 @@ If [git](https://git-scm.com/) is installed on your system you can also use that
 
 ## Staying up-to-date with the skin's progress
 We recommend staying up-to-date with the skin's progress, so that you can get updates on how the skin is coming along. To do that, make sure you join the ["Pressure" Skin group on Steam](http://steamcommunity.com/groups/pressureskin) by clicking on the link, signing into your Steam account, and clicking on the *"Join group"* button.
+
+
+
+
+
+## Coding Practices
+If you're providing code to add to the project please adhere to these coding practices to make it easier on everyone to collaborate efficiently. (I am working on converting all existing code to this).
+
+**Spacing**
+Indent all code via tabs rather than spaces.
+
+**Ordering Styles**
+When including styles for a control keep them in the following order:
+`// Styling
+bgcolor
+selectedbgcolor
+selectedtextcolor
+shadowtextcolor
+textcolor
+
+// Font settings.
+font-family
+font-outerglow-color
+font-outerglow-filtersize
+font-outerglow-offset
+font-size
+font-style
+font-weight
+
+// Content-Additions
+image
+
+// Positioning
+inset
+inset-left
+inset-top
+inset-right
+inset-bottom
+minimum-height
+minimum-width
+padding-left
+padding-top
+padding-right
+padding-bottom`
+
+Here is an example style that fits this:
+`TestStyle [!$OSX] {
+   bgcolor=none
+   selectedbgcolor=blue
+   textcolor=red
+   font-family=basefont
+   font-size=15
+   font-weight=400
+   image="graphics/test"
+   inset="5 10 10 5" // Left, Top, Right, Bottom
+   minimum-width=10
+   
+   render {}   
+   render_bg {}
+}`
