@@ -1,6 +1,6 @@
 "friends/ChatMsgNotification.res" {
 	styles {
-Notification [$OSX] {
+		Notification [$OSX] {
 			bgcolor=none
 			font-family=basefont
 			font-size=15
