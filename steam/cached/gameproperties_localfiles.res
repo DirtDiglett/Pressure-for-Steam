@@ -1,6 +1,4 @@
 "steam/cached/gameproperties_localfiles.res" {
-	controls {}
-	
 	layout {
 		place {
 			control=DiskUsageLabel
@@ -9,17 +7,17 @@
 			width=max
 			margin-right=23
 		}
-		
+
 		place {
 			control=OpenInstallFolder,BackupButton,DeleteButton,VerifyButton
 			start=DiskUsageLabel
 			y=16
 			width=340
 			height=28
-			spacing=8
 			dir=down
+			spacing=8
 		}
-		
+
 		place {
 			control=BuildIDLabel
 			start=VerifyButton
@@ -27,5 +25,4 @@
 			dir=down
 		}
 	}
-	
 }

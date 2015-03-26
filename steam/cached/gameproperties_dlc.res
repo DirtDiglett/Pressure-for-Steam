@@ -1,6 +1,4 @@
 "steam/cached/gameproperties_dlc.res" {
-	controls {}
-	
 	layout {
 		place {
 			control=DescriptionLabel
@@ -9,22 +7,22 @@
 			width=max
 			margin-right=23
 		}
-		
+
 		place {
 			control=ContentList
 			start=DescriptionLabel
-			dir=down
 			y=8
 			height=320
+			dir=down
 		}
-		
+
 		place {
 			control=StoreDLCURL
 			start=ContentList
-			dir=down
 			y=8
 			width=max
 			margin-right=23
+			dir=down
 		}
 	}
 }

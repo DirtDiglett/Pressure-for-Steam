@@ -1,11 +1,10 @@
 "steam/cached/SetJumplistOptions.res" {
 	layout {
-		place [!$OSX]  { 
-			control="frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
+		region {
+			name="bottom"
+			align=bottom
+			height=51
+			width=max
 		}
 
 		place {
@@ -20,8 +19,8 @@
 			control="ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus"
 			start="Label1"
 			y=4
-			spacing=-4
 			dir=down
+			spacing=-4
 		}
 
 		place {
@@ -33,27 +32,20 @@
 
 		place {
 			controls="ShowStore,ShowMyGames,ShowCommunity,ShowFriendActivity,ShowFriends,ShowMusicPlayer,ShowScreenshots,ShowServers,ShowSettings,ShowBigPicture,ShowExit"
-			dir=down
 			start=Label2
 			y=4
+			dir=down
 			spacing=-4
 		}
-		
-		region {
-			name="bottom"
-			align=bottom
-			height=51
-			width=max
-		}
-		
+
 		place {
 			control="OkButton,CancelButton"
 			region=bottom
 			align=right
+			width=90
 			margin-right=14
 			margin-top=14
 			spacing=8
-			width=90
 		}
 
 		place {
