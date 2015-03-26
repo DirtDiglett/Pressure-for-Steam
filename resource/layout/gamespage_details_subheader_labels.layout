@@ -1,30 +1,28 @@
 "resource/layout/gamespage_details_subheader_labels.layout" {
-	controls {}
-
 	styles {
 		headertext {
-			font-size=13
 			textcolor=lightestGreyHighlight
+			font-size=13
 		}
 
 		headertext-red {
-			font-size=13
 			textcolor=lightestGreyHighlight
+			font-size=13
 		}
 
 		headertext-green {
-			font-size=13
 			textcolor=lightestGreyHighlight
+			font-size=13
 		}
 
 		headertext-blue {
-			font-size=13
 			textcolor=lightestGreyHighlight
+			font-size=13
 		}
 
 		valuetext {
-			font-size=13
 			textcolor=lightestGreyHighlight
+			font-size=13
 		}
 	}
 
@@ -33,8 +31,8 @@
 		region { 
 			name="subheaderlabels" 
 			align=left 
-			y=0 
 			x=0
+			y=0
 		}
 
 		place { 
