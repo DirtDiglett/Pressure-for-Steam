@@ -1,45 +1,42 @@
-"resource/layout/settingssubbroadcast.layout"
-{
-	layout
-	{
-		// Dunno what this is?
+"resource/layout/settingssubbroadcast.layout" {
+	layout {
 		place {
 			control="BroadcastDisabledLabel"
 			margin-left=20
-			margin-right=20
 			margin-top=32
+			margin-right=20
 			width=max
 		}
-		// Dunno what this is?
+		
 		place {
 			control="BroadcastDisabledSupportURL"
 			start="BroadcastDisabledLabel"
-			dir=down
+			width=max
 			margin-top=10
 			margin-right=20
-			width=max
+			dir=down
 		}
 
 		place {
 			control="BroadcastStatusHeader"
-			dir=down
 			x=18 
 			y=21
 			margin-right=43
+			dir=down
 		}
 
 		place {
 			control="BroadcastStatus"
 			start="BroadcastStatusHeader"
-			dir=right
 			margin-left=4
+			dir=right
 		}
 
 		place {
 			control="BroadcastHelpHeader"
 			start="BroadcastStatusHeader"
-			dir=down
 			y=4
+			dir=down
 		}
 
 		place {
@@ -52,106 +49,106 @@
 		place {
 			control="Divider1"
 			start="BroadcastHelpHeader"
-			dir=down
 			y=16
 			width=max
 			margin-right=43
+			dir=down
 		}						
 
 		place {
 			control="PermissionsHeader"
 			start="Divider1"
-			dir=down
 			y=16
 			width=max
+			dir=down
 		}
 
 		place {
 			control="Permissions"
 			start="PermissionsHeader"
-			dir=down
 			y=4
 			width=350
+			dir=down
 		}
 
 		place {
 			control="DimensionsHeader"
 			start="Permissions"
-			dir=down
 			y=10
 			width=max
+			dir=down
 		}
 
 		place {
 			control="Dimensions"
 			start="DimensionsHeader"
-			dir=down
 			y=4
 			width=250
+			dir=down
 		}
 
 		place {
 			control="BitrateLimitHeader"
 			start="Dimensions"
-			dir=down
 			y=10
 			width=max
+			dir=down
 		}
 
 		place {
 			control="BitrateLimit"
 			start="BitrateLimitHeader"
-			dir=down
 			y=4
 			width=250
+			dir=down
 		}
 
 		place {
 			control="EncoderHeader"
 			start="BitrateLimit"
-			dir=down
 			y=10
 			width=max
+			dir=down
 		}
 
 		place {
 			control="EncoderSetting"
 			start="EncoderHeader"
-			dir=down
 			y=4
 			width=250
+			dir=down
 		}
 
 		place {
 			control="ShowChatHeader"
 			start="EncoderSetting"
-			dir=down
 			y=10
 			width=max
+			dir=down
 		}
 
 		place {
 			control="ShowChatCombo"
 			start="ShowChatHeader"
-			dir=down
 			y=4
 			width=250
+			dir=down
 		}
-		// EnableHardwareSupport and ShowReminder don't show by default?
+		
 		place {
 			control="IncludeDesktop,RecordSystemAudio,RecordMic,EnableHardwareSupport,ShowDebugInfo,ShowReminder"
 			start="ShowChatCombo"
-			dir=down
 			y=10
 			spacing=-4
+			dir=down
 		}
 
 		place {
 			control="ConfigMic"
 			start="RecordMic"
-			dir=right
-			margin-left=4
 			y=6
+			margin-left=4
+			dir=right
 		}	
 
 		place {

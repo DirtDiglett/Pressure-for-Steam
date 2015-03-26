@@ -1,131 +1,130 @@
 "resource/layout/settingssubmusic.layout" {
-	
 	layout {
 		place {
 			control=LibraryHeader
-			dir=down
 			x=18 
 			y=21
 			width=max
-			margin-right=43	
+			margin-right=43
+			dir=down
 		}
 		
 		place {
 			control=LibraryList
-			dir=down
+			start=LibraryHeader
+			y=4
 			width=max
 			height=80
-			start=LibraryHeader
 			margin-right=43
-			y=4
+			dir=down
 		}
 
 		place {
 			control=AddLibraryButton
-			dir=down
-			width=90
 			start=LibraryList
 			y=8
+			width=90
+			dir=down
 		}
 		
 		place {
 			control=RemoveLibraryButton,StartCrawlingButton
-			dir=right
-			width=90
 			start=AddLibraryButton
+			width=90
 			x=8
+			dir=right
 			spacing=8	
 		}
 
 		place {
 			control=LibraryDivider
-			dir=down
-			width=max
 			start=AddLibraryButton
 			y=16
+			width=max		
 			margin-right=43
+			dir=down
 		}
 
 		place {
 			control=DatabaseInfoLabel
-			dir=down
 			start=LibraryDivider
 			y=16
+			dir=down
 		}
 		
 		place {
 			control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders,EnableMediaKeysCheckbox
-			dir=down
 			start=DatabaseInfoLabel
 			y=8
+			dir=down
 			spacing=-4
 		}
 		
 		place {
 			control=ResetDatabaseButton
-			dir=down
 			start=EnableMediaKeysCheckbox
 			width=340
 			y=8
+			dir=down
 		}
 
 		place {
 			control=DatabaseDivider
-			dir=down
-			width=max
 			start=ResetDatabaseButton
-			margin-right=43
 			y=16
+			width=max
+			margin-right=43
+			dir=down
 		}
 
 		place {
 			control=PauseMusicHeader
-			dir=down
 			start=DatabaseDivider
 			y=16
+			dir=down
 		}
 			
 		place {
 			control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox
-			dir=down
 			start=PauseMusicHeader
 			y=0
+			dir=down
 			spacing=-4
 		}
 		
 		place {
 			control=NotificationHeader
-			dir=down
 			start=PauseMusicWhenVoiceChatCheckbox
 			y=16
+			dir=down
 		}
 		
 		place {
 			control=NotificationPlaylistNowPlayingCheckbox
-			dir=down
 			start=NotificationHeader
 			y=0
+			dir=down
 		}
 
 		place {
 			control=LoggingHeader
-			dir=down
-			x=240
 			start=DatabaseDivider
+			x=240
 			y=16
+			dir=down
 		}
 		
 		place {
 			control=LoggingCrawlingCheckbox
-			dir=down
 			start=LoggingHeader
 			y=0
+			dir=down
 		}
 
 		place {
 			control=DatabaseHeader,VolumeHeader,VolumeSlider,VolumeDivider
-			height=0
 			width=0
+			height=0
 		}
 	}
 }
