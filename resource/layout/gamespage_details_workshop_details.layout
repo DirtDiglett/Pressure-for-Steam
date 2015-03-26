@@ -1,23 +1,4 @@
 "resource/layout/gamespage_details_workshop_details.layout" {
-	controls {
-		workshopdetails { 
-			controlname="CWorkshopDetailsPanel" 
-		}
-		
-		workshop_banner { 
-			controlname="ImagePanel" 
-			image=resource/workshop_banner 
-			zpos=-1 
-			style="workshop_banner" 
-		}
-		
-		workshop_description { 
-			controlname="RichText" 
-			style="workshop_description" 
-			text="#steam_community_files_info" 
-		}
-	}
-	
 	colors {
 		WorkshopDetailsPanel.ExtraVerticalSpacing "130"
 		WorkshopDetailsPanel.ExtraHorizontalSpacing "183"
@@ -27,18 +8,19 @@
 	
 	styles {
 		workshop_description {
+			selectedtextcolor="Label"
 			textcolor="white"
-			selectedtextcolor="Label"	
-			render_bg {}
 			font-size=15
 			font-family=basefont
+
+			render_bg {}
 		}
 	}
 
 	layout {
 		place { 
-			region=body 
-			control=workshop_description 
+			control=workshop_description
+			region=body
 			x=0 
 			y=0 
 			width=0 
@@ -46,13 +28,13 @@
 		}
 		
 		place { 
-			region=body 
-			control=workshop_banner 
-			x=1 
-			y=0 
-			width=200 
-			height=52 
-			align=left 
+			control=workshop_banner
+			region=body
+			align=left
+			x=1
+			y=0
+			width=200
+			height=52
 		}
 	}
 }

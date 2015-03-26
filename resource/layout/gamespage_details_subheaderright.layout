@@ -1,16 +1,4 @@
 "resource/layout/gamespage_details_subheaderright.layout" {
-	controls {
-		subheaderlabels {
-			controlname="CDetailsSubHeaderLabelsRightPanel"
-		}
-
-		gamehubbutton {
-			controlname="Button"
-			labeltext="#steam_gamehub"
-			style="DetailsButton"
-		}
-	}
-
 	colors {
 		GameDetailsSubHeader.HorizontalSpacing=10
 		GameDetailsSubHeader.VerticalMargin=0
@@ -25,12 +13,12 @@
 		}
 
 		DetailsButton {   
-			inset="-3 0 0 0"
+			bgcolor=none
+			textcolor="Text"
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			textcolor="Text"
-			bgcolor=none
+			inset="-3 0 0 0"
 
 			render_bg {
 				// background fill
@@ -56,22 +44,22 @@
 			}	
 		}
 		
-		DetailsButton:hover {
-			textcolor="white"
-		}
+			DetailsButton:hover {
+				textcolor="white"
+			}
 		
-		DetailsButton:active {
-			textcolor="white"
-			inset="-2 1 0 0"
-		}
+			DetailsButton:active {
+				textcolor="white"
+				inset="-2 1 0 0"
+			}
 	}
 
 	layout {
 		// Y offset here should match the vertical padding value above in the colors section
 		region { 
 			name="header" 
-			y=0
 			x=0
+			y=0
 			width=max
 			height=max
 		}
