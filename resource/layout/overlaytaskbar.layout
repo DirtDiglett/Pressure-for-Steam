@@ -1,21 +1,17 @@
 "resource/layout/overlaytaskbar.layout" {
-	controls {}
-	
 	styles {
 		taskbar {
+			textcolor=blue
 			font-size=14
 			font-family=basefont
 			font-style=none
-			textcolor=blue
 			
-			render_bg {
-				//0="fill(x0,y0,x1,y1, red)"
-			}
+			render_bg {}
 		}
 		
-		taskbar:hover {
-			textcolor=lightestBlue
-		}
+			taskbar:hover {
+				textcolor=lightestBlue
+			}
 		
 		view_friends {}
 
@@ -33,19 +29,19 @@
 		place {
 			control="bottomarea"
 			region="bottom"
+			align=right
 			width=143
 			height=145
-			align=right
 		}
 		
 		place {
 			controls="WebBrowserButton,SettingsButton,MusicPlayerButton"
-			dir=down
-			spacing=4
 			region=bottom
 			align=right
-			margin-right=66
 			y=43
+			margin-right=66
+			dir=down
+			spacing=4
 		}	
 		
 		place {
