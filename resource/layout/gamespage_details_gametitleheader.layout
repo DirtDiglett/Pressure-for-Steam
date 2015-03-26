@@ -1,17 +1,4 @@
 "resource/layout/gamespage_details_gametitleheader.layout" {
-	controls {
-		gametitlelabel { 
-			controlname="Label" 
-			style="headertextlarge" 
-			labeltext="" 
-		}
-		
-		iconimage { 
-			controlname="ImagePanel" 
-			style="gameicon" 
-		}
-	}
-
 	colors {
 		GameDetailsTitleHeader.HorizontalSpacing=10
 	}
@@ -20,18 +7,18 @@
 		CDetailsGameTitleHeaderPanel {}
 
 		headertextlarge {
-			font-size=48
+			bgcolor=none
 			textcolor=white
 			font-family=headerfont
-			bgcolor=none
+			font-size=48
 		}
 	}
 
 	layout {
 		region { 
 			name="header" 
+			x=0
 			y=0 
-			x=0 
 			width=max 
 			height=max 
 		}
@@ -39,18 +26,18 @@
 		place { 
 			control=gametitlelabel
 			region=header
-			dir=right
 			align=left-center
 			margin-left=0
 			margin-right=0
+			dir=right
 		}
 		
 		place {
 			control="iconimage"
+			x=0
+			y=0
 			width=0
 			height=0
-			y=0
-			x=0
 		}
 	}
 }

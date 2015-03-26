@@ -1,23 +1,4 @@
 "resource/layout/gamespage_details_news.layout" {
-	controls {
-		newsdetails { 
-			controlname="CGamesPage_Details_News" 
-			style="newsdetails" 
-		}
-		
-		headerlabel { 
-			controlname="Label" 
-			style="gamedetails-headerlabel" 
-			labeltext="#Steam_RecentNews" 
-		}
-		
-		viewall { 
-			controlname="Button" 
-			labeltext="#Steam_ViewAllNews" 
-			command="ViewAllNews" 
-		}
-	}
-
 	colors {
 		// This is needed to determine how much space is needed veritically for the header and button
 		// in addition to the autocomputed height for the *newsitem panels, adjust it if you change vertical
@@ -30,7 +11,7 @@
 			bgcolor=black65
 		}
 		
-				// This overrides the default button.
+		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
@@ -48,32 +29,31 @@
 	layout {
 		region { 
 			name=body 
+			width=max 
+			height=max
 			margin=20 
-			width=max 
-			height=max 
 		}
 		
 		place { 
+			control=headerlabel
 			region=body 
-			control=headerlabel 
 			width=max 
 		}
 		
 		place { 
-			region=body 
-			y=22 
+			control=*newsitem
+			region=body
 			y=0 
-			control=*newsitem 
-			dir=down 
-			width=max 
+			width=max
+			dir=down
 		}
 		
 		place { 
+			control=viewall
 			region=body 
-			align=bottom 
-			control=viewall 
+			align=bottom
+			margin-left=-6
 			margin-bottom=5
-			margin-left=-6 
 		}
 	}
 }
