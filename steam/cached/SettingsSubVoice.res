@@ -2,131 +2,131 @@
 	layout {
 		place {
 			control="Label1"
-			dir=down
-			width=max
-			x=18 
+			x=18
 			y=21
-			margin-right=43		
+			width=max
+			margin-right=43
+			dir=down	
 		}
-		
+
 		place {
 			control="DeviceName"
-			dir=down
-			width=340
-			height=24
 			start=Label1
 			y=8
+			width=340
+			height=24
+			dir=down
 		}
-		
+
 		place {
 			control="ChangeDeviceButton,ReinitAudio"
-			dir=down
-			width=340
-			height=28
 			start=DeviceName
 			y=8
+			width=340
+			height=28
+			dir=down
 			spacing=8
 		}
-		
+
 		place {
 			control="Divider1"
-			dir=down
 			start=ReinitAudio
 			y=16
 			width=max
 			margin-right=43
+			dir=down
 		}
 
 		place {
 			control="SpeakerLabel,SpeakerVolume"
-			dir=down
-			width=200
 			start=Divider1
-			y=16
-			spacing=8
 			x=240
+			y=16
+			width=200
+			dir=down
+			spacing=8
 		}
-		
+
 		place {
 			control="MicrophoneLabel,MicrophoneVolume"
-			dir=down
-			width=200
 			start=Divider1
 			y=16
+			width=200
+			dir=down
 			spacing=8
 		}
-			
+
 		place {
 			control="TestMicrophone"
-			dir=down
-			width=340
-			height=28
 			start=MicrophoneVolume
 			y=16
+			width=340
+			height=28
+			dir=down
 		}
-		
+
 		place {
 			control="MicMeter"
-			dir=down
 			start=TestMicrophone
 			y=8
 			height=25
+			dir=down
 		}
-		
+
 		place {
 			control="MicMeter2"
-			dir=down
 			start=TestMicrophone
 			y=8
 			height=25
+			dir=down
 		}
-		
+
 		place {
 			control="MicBoost"
-			dir=right
 			start=MicMeter
-			y=-2
 			x=8
+			y=-2
+			dir=right
 		}
 
 		place {
 			control="Divider2"
-			dir=down
 			start=MicMeter
 			y=16
 			width=max
 			margin-right=43
+			dir=down
 		}
 
 		place {
 			control="WhenActiveLabel"
-			dir=down
 			start=Divider2
 			y=16
+			dir=down
 		}
-		
+
 		place {
 			control="TransmitMethodRadioButton1,TransmitMethodRadioButton2"
-			dir=down
 			start=WhenActiveLabel
 			y=8
 			spacing=-4
+			dir=down
 		}
-		
+
 		place {
 			control="PushToTalkKeyEntry"
-			dir=down
+			start=TransmitMethodRadioButton2
+			x=28
+			y=-4
 			width=240
 			height=24
-			start=TransmitMethodRadioButton2
-			y=-4
-			x=28
+			dir=down
 		}
 
 		place {
 			control="RepairAudio"
-			height=0
 			width=0
+			height=0
 		}
 	}
 }
