@@ -31,10 +31,17 @@
 			shellcmd="steam://open/bigpicture" 
 		} 
 	
-		MiniMode			[!$OSX]		{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
-		LargeMode			[!$OSX]		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" } // ________________________________________________________________________________________________________________________
+		MiniMode [!$OSX] {
+			text="#steam_menu_minimode"
+			shellcmd="steam://open/minigameslist"
+		}
+
+		LargeMode [!$OSX] {
+			text="#steam_menu_largemode"
+			shellcmd="steam://open/largegameslist"
+		} 
 		
-		Divider {} 
+		Divider {} // ________________________________________________________________________________________________________________________
 		
 		MusicDetails {
 			text="#steam_menu_view_music_details"
