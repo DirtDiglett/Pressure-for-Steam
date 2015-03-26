@@ -822,7 +822,6 @@
 					49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.
 				}
 			}
-		}
 
 			"Page Button:selected:Hover" {	 //Added so that Hover State works for certain buttons in some parts of client eg Settings Page
 				bgcolor=none
