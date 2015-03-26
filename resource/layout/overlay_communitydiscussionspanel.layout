@@ -7,18 +7,15 @@
 	
 	styles {
 		button {
+			textcolor=blue
 			font-size=14
 			font-family=basefont
-			
 			inset-left=0
 			padding-left=24
 			padding-top=0
 			padding-bottom=15
 			
-			textcolor=blue
-			
 			render_bg {
-				//0="fill(x0,y0,x1,y1, orange)"
 				1="image(x0,y0,x0+26,y1, graphics/overlay/discussions)"
 			}
 		}
@@ -27,7 +24,6 @@
 				textcolor=lightestBlue
 				
 				render_bg {
-					//0="fill(x0,y0,x1,y1, orange)"
 					1="image(x0,y0,x0+26,y1, graphics/overlay/discussions_hover)"
 				}
 			}
@@ -48,8 +44,8 @@
 		place {
 			controls=ViewCommunityDiscussions
 			region=box
-			y=0
 			x=0
+			y=0
 			width=max
 		}
 		
@@ -57,10 +53,9 @@
 			controls=NumDiscussionsText
 			start=ViewCommunityDiscussions
 			dir=down
-			y=-14
 			x=30
-		}
-		
+			y=-14
+		}		
 		
 		place {
 			control="TitleText"
