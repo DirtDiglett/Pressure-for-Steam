@@ -1,47 +1,41 @@
 "resource/layout/gameproperties_general.layout" {
-	controls {}
-   
-	colors {}
-  
-	styles {}
-	
 	layout {
 		place {
 			control=HomepageLabelName
-			width=120
 			x=24
 			y=30
+			width=120
 		}
 		
 		place {
 			control=HomePageLabel
 			start=HomePageLabelName
-			dir=right
 			x=8
 			margin-right=23
+			dir=right
 		}
 		
 		place {
 			control=DeveloperLabelName
-			width=120
 			start=HomepageLabelName
 			y=16
+			width=120
 			dir=down
 		}
 		
 		place {
 			control=DeveloperLabel
 			start=DeveloperLabelName
-			dir=right
 			x=8
 			margin-right=23
+			dir=right
 		}
 		
 		place {
 			control=ManualLabelName
-			width=120
 			start=DeveloperLabelName
 			y=16
+			width=120
 			dir=down
 		}
 		
@@ -49,17 +43,17 @@
 			control=ManualLabel,NoManualLabel
 			start=ManualLabelName
 			x=8
-			dir=right
 			margin-right=23
+			dir=right
 		}
 		
 		place {
 			control=Divider1
 			start=ManualLabelName
-			dir=down
 			y=16
 			width=max
 			margin-right=23
+			dir=down
 		}
 		
 		place {
@@ -72,10 +66,10 @@
 		place {
 			controls=LaunchOptionsButton,CreateDesktopShortcutButton
 			start=EnableOverlayCheck
-			dir=down
 			y=16
-			height=28
 			width=340
+			height=28
+			dir=down
 			spacing=16
 		}
 		
