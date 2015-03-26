@@ -1,6 +1,4 @@
 "resource/layout/settingssubstreaming.layout" {
-	styles {}
-
 	layout {
 		place {
 			control="AdvancedHostOptions,AdvancedClientOptions"
@@ -9,86 +7,85 @@
 		
 		place {
 			control=DescriptionLabel
-			dir=down
-			width=max
 			x=18 
 			y=21
+			width=max
 			margin-right=43
+			dir=down
 		}
 		
 		place {
 			control=RemoteClientList
 			start=DescriptionLabel
-			dir=down
-			width=max
 			y=8
+			width=max
 			margin-right=43
+			dir=down
 		}
 		
 		place {
 			control=EnableStreaming
 			start=RemoteClientList
-			dir=down
-			width=max
 			y=8
-			
+			width=max
+			dir=down
 		}
 
 		place {
 			control=HostDivider
 			start=EnableStreaming
-			dir=down
-			width=max
 			y=16
+			width=max
 			margin-right=43
+			dir=down
 		}
 		
 		place {
 			control=HostLabel
 			start=HostDivider
-			dir=down
-			width=max
 			y=16
+			width=max
+			dir=down
 		}
 		
 		place {
 			control=UnsupportedPlatform
 			start=HostLabel
-			dir=down
-			width=max
 			y=8
+			width=max
+			dir=down
 		}
 		
 		place {
 			control=AdvancedHostOptions
 			start=HostLabel
-			dir=down
-			width=340
 			y=16
+			width=340
+			dir=down
 		}
 		
 		place {
 			control=ClientDivider
 			start=AdvancedHostOptions
-			dir=down
-			width=max
 			y=16
+			width=max
 			margin-right=43
+			dir=down
 		}
 		
 		place {
 			control=ClientLabel
 			start=ClientDivider
-			dir=down
-			width=max
 			y=16
+			width=max
+			dir=down
 		}
 
 		place {
 			control=QualityFast
 			start=ClientLabel
-			dir=down
 			y=8
+			dir=down
 		}
 		
 		place {
@@ -101,17 +98,17 @@
 		place {
 			control=AdvancedClientOptions
 			start=QualityFast
-			dir=down
+			y=16
 			width=340
 			height=28
-			y=16	
+			dir=down
 		}
 
 		place {
 			control=SupportInformationLabel
-			dir=down
 			start=AdvancedClientOptions
 			y=16
+			dir=down
 		}		
 	}
 }
