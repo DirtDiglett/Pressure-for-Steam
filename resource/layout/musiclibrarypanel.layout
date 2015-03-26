@@ -1,292 +1,276 @@
-"resource/layout/musiclibrarypanel.layout"
-{
-	controls
-	{	
-		MusicPage_Details_Content { controlname="CMusicPage_Details_Content" } 
-		
-		library_search	   { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
-		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=library zpos="4" }
-		library_music_menu { ControlName=MenuButton labelText="#Music_Nav_Menu_Artists" style="NavLabel2" showDownArrow=0 align=left group=music }
-		library_music_add_button {	ControlName=Button labelText=""	tooltiptext="#Music_Playlist_Details_Menu_Add" style="MusicAddButton" group=music_add_button visible=true }
-		library_music_player_icon { ControlName=Button labelText="" tooltiptext="#music_tooltip_view_player" style="MusicPlayerIcon" align=right group=music }
-		
-		frame_title
-		{
-			ControlName=Label
-	
-			style="ClientTitle"
-			"textAlignment"   "west"
-			"textAlignment"   "center" [$OSX]
-		}
-		
-		"subnavgroup_library"
-		{
-			"ControlName"		"imagepanel"
-			style="grouper"
-
-			zpos="-2"
-		}
-	}
-
-	colors
-	{
-	
-		dialogbgtrans="0 0 0 0"
-	}
-
-	styles
-	{
-		CMusicLibraryPanel	
-		{
+"resource/layout/musiclibrarypanel.layout" {
+	styles {
+		CMusicLibraryPanel {
 			bgcolor=none
-			
 			minimum-width = 296
 			minimum-height = 300
 			
-			render_bg
-			{
-				// top area and graphic
+			render_bg {
 				0="gradient( x0, y0, x1, y0+275, grey, lightgreyend)"
-				//2="image( x0, y0, x1, y0+175, graphics/clienttexture2)"
-				// fill in the bottom area
 				3="fill( x0, y0 + 275, x1, y1, lightgreyend )"
 			}
 		}		
 		
-		ClientTitle [!$OSX]
-		{
+		ClientTitle [!$OSX] {
+			bgcolor="none"
+			textcolor="labeldisabled"
 			font-family=basefont
 			font-size=14
-      		font-weight=400
-      		textcolor="labeldisabled"
-      		bgcolor="none"
-      		inset="12 6 0 0"
+	  		font-weight=400
+	  		inset="12 6 0 0"
 		}
 		
-		ClientTitle [$OSX]
-		{
+		ClientTitle [$OSX] {
+			bgcolor="none"
+			textcolor="textdisabled"
 			font-family=basefont
 			font-size=15
-      		font-weight=400
-      		textcolor="textdisabled"
-      		bgcolor="none"
-      		inset="0 6 0 0"
+	  		font-weight=400
+	  		inset="0 6 0 0"
 		}
 		
-		ClientTitle:FrameFocus [!$OSX]
-		{
+		ClientTitle:FrameFocus [!$OSX] {
+			bgcolor="none"
+			textcolor="label"
 			font-family=basefont
    			font-size=14
    			font-weight=400
-   			textcolor="label"
-   			bgcolor="none"
    			inset="12 6 0 0"
 		}
 			
 			
-		ClientTitle:FrameFocus [$OSX]
-		{
-			font-family=basefont
+		ClientTitle:FrameFocus [$OSX] {
+			bgcolor="none"
+			textcolor="texthover"
+   			font-family=basefont
    			font-size=15
    			font-weight=400
-   			textcolor="texthover"
-   			bgcolor="none"
    			inset="0 6 0 0"
 		}
 			
-		LibrarySearch
-		{
+		LibrarySearch {
+			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=14
-			font-weight=400	
-			textcolor="darkestGrey"
+			font-weight=400
 			padding-left=4
 			padding-right=20
-			
 			minimum-width=150
 			
 			render_bg {
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
 				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+			}
 		}
+		
+		LibrarySearch:empty {
+			textcolor="lightestGrey"
+			font-family=basefont
+			font-style=italic
+			padding-left=4
+		}
+		
+			LibrarySearch:hover {
+				textcolor="darkGreyEnd"
+				padding-left=4
 			}
 		
-		LibrarySearch:empty
-		{
-			font-family=basefont
-			font-style=italic
-			textcolor="lightestGrey"
-			padding-left=4
-		}
-		
-		LibrarySearch:hover
-		 {
-			textcolor="darkGreyEnd"
-			padding-left=4
-		}
-		
-		LibrarySearch:empty:hover
-		{
-				font-style=italic
+			LibrarySearch:empty:hover {
 				textcolor="lightGreyEnd"
+				font-style=italic
 				padding-left=4
+			}
+				
+			LibrarySearch:disabled {
+				textcolor="None"
+				font-family=basefont
+				font-style=italic
+				padding-left=4
+			}
 			
-		}
-			
-		LibrarySearch:disabled
-		{
-			font-family=basefont
-			font-style=italic
-			textcolor="None"
-			padding-left=4
-			
-		}
-			
-		LibrarySearchIcon
-		{
+		LibrarySearchIcon {
 			bgcolor="none"
 			inset="10 0 0 0"
-			render_bg={}
-			image="none"	
+			image="none"
+
+			render_bg{}	
 		}
 		
-		LibrarySearchIcon:disabled
-		{
+		LibrarySearchIcon:disabled {
 			bgcolor="none"
 			inset="10 0 0 0"
-			render_bg={}
-			image="none"		
+			image="none"
+
+			render_bg{}		
 		}
 
-		MusicAddButton
-		{
+		MusicAddButton {
+			textcolor="labelfocus"
+			font-family=basefont
 			font-size=14
 			font-size=13 [$OSX]
-			font-family=basefont
-			textcolor="labelfocus"
-			font-style=uppercase
-			render_bg
-			{
+			font-style=normal
+
+			render_bg {
 				0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse )"
 			}
 		}
 		
-		MusicAddButton:hover
-		{
-			textcolor="white"
-			render_bg
-			{
-				0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse_over )"
-			}
-		}			
+			MusicAddButton:hover {
+				textcolor="white"
+				
+				render_bg {
+					0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse_over )"
+				}
+			}			
 		
-		MusicPlayerIcon
-		{
+		MusicPlayerIcon {
 			bgcolor="none"
+			padding-left=-4
+			padding-top=-1
+			padding-right=-1
 			inset="-1 3 0 0"
-			render_bg={}
 			image="graphics/icon_music_player"
-			padding-left=-4
-			padding-right=-1
-			padding-top=-1
+
+			render_bg{}
 		}
 		
-		MusicPlayerIcon:hover
-		{
-			bgcolor="none"
-			inset="-1 3 0 0"
-			render_bg={}
-			image="graphics/icon_music_player_hover"
-			padding-left=-4
-			padding-right=-1
-			padding-top=-1
-		}
+			MusicPlayerIcon:hover {
+				bgcolor="none"
+				padding-left=-4
+				padding-top=-1
+				padding-right=-1
+				inset="-1 3 0 0"
+				image="graphics/icon_music_player_hover"
+
+				render_bg={}
+			}
 		
-		MusicPlayerIcon:selected
-		{
-			bgcolor="none"
-			inset="-1 3 0 0"
-			render_bg={}
-			image="graphics/icon_music_player_selected"
-			padding-left=-4
-			padding-right=-1
-			padding-top=-1
-		}
+			MusicPlayerIcon:selected {
+				bgcolor="none"
+				padding-left=-4
+				padding-top=-1
+				padding-right=-1
+				inset="-1 3 0 0"
+				image="graphics/icon_music_player_selected"
+
+				render_bg={}
+			}
 		
-		NavLabel2 [!$OSX]
-		{
-			inset="0 2 0 0"
+		NavLabel2 [!$OSX] {
+			textcolor="labelfocus"
 			font-family=basefont
 			font-size=14
 			font-weight=400
-			textcolor="labelfocus"
 			font-style="uppercase"
+			inset="0 2 0 0"
 		}
 
-		NavLabel2 [$OSX]
-		{
-			inset="0 2 0 0"
+		NavLabel2 [$OSX] {
+			textcolor="labelfocus"
 			font-family=basefont
 			font-size=13
 			font-weight=400
-			textcolor="labelfocus"
 			font-style="uppercase"
+			inset="0 2 0 0"
 		}	
 		
-		NavLabel2:hover
-		{
-			inset="0 2 0 0"
-			textcolor="texthover"
-			font-style="outerglow,uppercase"
-			font-outerglow-color="TextGlowHover"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
-		}	
+			NavLabel2:hover {
+				textcolor="texthover"
+				font-style="outerglow,uppercase"
+				font-outerglow-color="TextGlowHover"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=3
+				inset="0 2 0 0"
+			}	
 		
-		NavLabel2:selected
-		{
-			inset="0 2 0 0"
-			textcolor="white"
-			font-style="outerglow,uppercase"
-			font-outerglow-color="TextGlowHover"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
-		}
+			NavLabel2:selected {
+				textcolor="white"
+				font-style="outerglow,uppercase"
+				font-outerglow-color="TextGlowHover"
+				font-outerglow-offset=1
+				font-outerglow-filtersize=3
+				inset="0 2 0 0"
+			}
 				
-		grouper
-		{
+		grouper {
 			bgcolor=none
-			render_bg
-			{
-				// background fill
+
+			render_bg {
 				0="fill( x0 + 2, y0 + 1, x1 - 10, y1 - 1, none )"
 			}
-			
 		}
 	}
 	
 	
-	layout
-	{
-		region { name=searchrow x=8 y=40 }
-		region { name=details y=75 width=max }	
-				//Original
-		place [!$OSX]  { 
-			control="frame_minimize,frame_maximize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-8 
+	layout {
+		region {
+			name=searchrow
+			x=8
+			y=40
 		}
-		place { control="subnavgroup_library" align=top-center y=30 height=28 width=max margin-right=1 margin-left=10 }
+
+		region {
+			name=details
+			y=75
+			width=max
+		}	
 		
-		place { control=label_search_icon region=searchrow y=0 x=0 width=0 height=0 }
-		place { control=library_search region=searchrow y=0 x=30 width=256 }
+		place {
+			control="subnavgroup_library"
+			align=top-center
+			y=30
+			width=max
+			height=28
+			margin-left=10
+			margin-right=1
+		}
+		
+		place {
+			control=label_search_icon
+			region=searchrow
+			x=0
+			y=0
+			width=0
+			height=0
+		}
+
+		place {
+			control=library_search
+			region=searchrow
+			x=30
+			y=0
+			width=256
+		}
 	
-		place { control=library_music_menu,library_music_add_button region=searchrow x=300 y=0 }
-		place { control="library_music_player_icon"  region=searchrow align=right x=4 y=6 height=18 width=18 margin-right=10 }
-		place {	control="MusicPage_Details_Content"	region=details x=0 y=0 width=max height=max	margin-bottom=0 margin-right=0}
-	}
-	
+		place {
+			control=library_music_menu,library_music_add_button
+			region=searchrow
+			x=300
+			y=0
+		}
+
+		place {
+			control="library_music_player_icon"
+			region=searchrow
+			align=right
+			x=4
+			y=6
+			width=18
+			height=18
+			margin-right=10
+		}
+
+		place {
+			control="MusicPage_Details_Content"
+			region=details
+			x=0
+			y=0
+			width=max
+			height=max
+			margin-right=0
+			margin-bottom=0
+		}
+	}	
 }
