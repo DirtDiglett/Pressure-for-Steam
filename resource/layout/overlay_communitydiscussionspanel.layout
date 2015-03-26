@@ -1,6 +1,4 @@
 "resource/layout/overlay_communitydiscussionspanel.layout" {
-	controls {}
-	
 	colors {
 		lightestBlue="137 235 255 255"
 	}	
