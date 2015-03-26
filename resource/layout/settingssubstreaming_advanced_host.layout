@@ -1,32 +1,20 @@
 "resource/layout/settingssubstreaming_advanced_host.layout" {
-	controls {}
-	
-	styles {}
-	
-	layout {
-		place [!$OSX]  { 
-			control="frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
+layout {
 		region { 
 			name="bottom"
+			align="bottom"
 			width=max
 			height=51
-			align="bottom"
 		}
 	
 		place {
 			control="DescriptionLabel,EnableHardwareEncoding,EnableDWMCapture,EnableTrafficPriorityLabel,EnableTrafficPriority"
-			dir=down
 			align=top
 			width=max
 			margin-left=32
-			margin-right=32
 			margin-top=42
+			margin-right=32
+			dir=down
 			spacing=12
 		}
 		
@@ -41,9 +29,9 @@
 		place {
 			control="OKButton"
 			region="bottom"
+			align=right
 			width=92
 			height=24
-			align=right
 			margin-top=14
 			margin-right=14
 			spacing=8
