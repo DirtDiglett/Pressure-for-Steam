@@ -1,81 +1,4 @@
 "resource/layout/joingamedialogexpanded.layout" {
-	controls {
-		Progress {
-			controlname=progressbar
-		}
-		
-		PlayButton {
-			controlname=button
-			labeltext=#SteamUI_JoinDialog_PlayGame_Btn 
-		}
-		
-		InfoLabel {
-			controlname=label
-			labeltext=#SteamUI_JoinDialog_ReadyToPlay
-			wrap=1
-		}
-		
-		NewsButton {
-			controlname=button
-			labeltext=#Steam_UpdateNewsButton
-			command=UpdateNews
-		}
-		
-		OverrideThrottleCheckBox {
-			controlname=checkbutton
-			labeltext=#SteamUI_JoinDialog_OverrideThrottle
-			command=ToggleThrottle
-		}
-		
-		AutoLaunchCheckBox {
-			controlname=checkbutton
-			labeltext=#SteamUI_JoinDialog_LaunchGameReady
-		}
-		
-		ReadyToPlayInfoLabel {
-			controlname=label
-			labeltext=#SteamUI_JoinDialog_ReadyToPlayTime
-		}
-		
-		ReadyToPlayTimeLabel {
-			controlname=label
-			labeltext=#SteamUI_JoinDialog_TimeLeftMinutes
-		}
-		
-		ThrobberThrobberThrobber {
-			controlname=throbberimagepanel
-		}
-		
-		SkipUpdateLabel {
-			controlname=label
-			textalignment=east
-			labeltext=#SteamUI_JoinDialog_SkipUpdateInfo
-			visible=false
-		}
-		
-		// only shown if the user hasn't seen the SSA change yet
-		Divider {
-			controlname=divider
-			visible=false
-		}
-		
-		SSAUpdateLabel {
-			controlname=label
-			labeltext=#SteamUI_SSAUpdatedInfo
-			wrap=1
-			visible=false
-		}
-		
-		SSAUpdateURL {
-			controlname=urllabel
-			labeltext=#Steam_SSAUpdated_Link
-			urltext=http://www.steampowered.com/index.php?area=subscriber_agreement
-			visible=false
-		}
-	}
-	
-	colors {}	
-	
 	styles {
 		label {
 			textcolor=white
@@ -84,71 +7,60 @@
 		
 		frame {
 			bgcolor=darkestGrey
-			
+			minimum-width=550
+			minimum-height=250
+
 			render_bg {
 				0="image(x0+20, y0+60, x1, y1, graphics/dialogs/gameLaunch)"
 			}
-			
-			minimum-width=550
-			minimum-height=250
 		}
-		
 	}
 	
 	layout {
-	
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-	
 		region {
 			name=box
-			margin-top=20
-			margin-bottom=20
-			margin-left=20
-			margin-right=20
 			width=max
 			height=max
+			margin-left=20
+			margin-top=20
+			margin-right=20
+			margin-bottom=20
 		}
 		
 		region {
 			name=ssa
-			margin-top=215
-			margin-left=20
-			margin-right=20
 			width=max
 			height=max
+			margin-left=20
+			margin-top=215
+			margin-right=20
 		}
 			
 		place { 
 			controls="InfoLabel" 
 			region=box 
-			margin-top=35 
-			dir=down 
-			align=left 
+			align=left
 			width=320 
 			margin-left=150 
+			margin-top=35 
+			dir=down 
 		}
 		
 		place {
 			controls="ThrobberThrobberThrobber"
 			region=box
 			start=InfoLabel
-			dir=down
 			align=left
 			margin-top=15
+			dir=down
 		}
 		
 		place {
 			controls="ReadyToPlayInfoLabel,ReadyToPlayTimeLabel"
 			region=box
 			start=InfoLabel
-			margin-top=10
 			width=max
+			margin-top=10
 			dir=down
 			spacing=8
 		}
@@ -157,8 +69,8 @@
 			controls="Progress"
 			region=box
 			start=ReadyToPlayTimeLabel
-			margin-top=10
 			width=max
+			margin-top=10
 			dir=down
 		}
 		
@@ -166,9 +78,9 @@
 			controls="OverrideThrottleCheckBox"
 			region=box
 			start=Progress
-			margin-top=10
 			width=max
 			height=15
+			margin-top=10
 			dir=down
 		}
 		
@@ -176,46 +88,47 @@
 			controls="AutoLaunchCheckBox"
 			region=box
 			start=OverrideThrottleCheckBox
-			margin-top=10
-			height=15
 			width=max
+			height=15
+			margin-top=10
 			dir=down
 		}
 		
 		region {
 			name=bottom
 			align=bottom
-			height=51
 			width=max
+			height=51
 		}
 		
 		place {
 			controls="NewsButton,PlayButton"
 			region=bottom
+			align=right
 			width=135
 			height=24
-			align=right
-			margin-right=14
 			margin-top=14
+			margin-right=14
 			spacing=8
 		}
+
 		place {
 			controls="SkipUpdateLabel"
 			region=box
 			start=AutoLaunchCheckBox
-			dir=down
 			width=max
-			margin-right=145
 			margin-top=46
+			margin-right=145
+			dir=down
 		}
 		
 		place {
 			controls="Divider,SSAUpdateLabel,SSAUpdateURL"
 			region=ssa
-			margin-top=10
-			spacing=5
 			width=max
+			margin-top=10
 			dir=down
+			spacing=5
 		}
 	}
 }
