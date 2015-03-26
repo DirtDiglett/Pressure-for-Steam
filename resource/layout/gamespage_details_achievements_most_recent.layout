@@ -1,53 +1,4 @@
 "resource/layout/gamespage_details_achievements_most_recent.layout" {
-	controls {
-		mostrecent_area { 
-			controlname="CAchievementsMostRecentPanel" 
-			style="mostrecent" 
-		}
-
-		mostrecent_label { 
-			controlname="Label" 
-			style="mostrecent_label" 
-			labeltext="#steam_achievement_mostrecent"
-		}
-		 
-		mostrecent_background { 
-			controlname="Label" 
-			style=achievementimagebg 
-			zpos="0" 
-			labeltext="" 
-			mouseinputenabled=0 
-		}
-		
-		mostrecent_image { 
-			controlname="ImagePanel" 
-			zpos=-1 
-			style="mostrecent_image" 
-		}
-		
-		mostrecent_name { 
-			controlname="Label" 
-			style="mostrecent_name" 
-			labeltext="" 
-		}
-		
-		mostrecent_unlockedsofar { 
-			controlname="Label" 
-			style="mostrecent_unlockedsofar" 
-			labeltext="#steam_achievement_unlockedsofar" 
-		}
-
-		progressbackground { 
-			controlname="ImagePanel" 
-			style="progressbackground" 
-		}
-		
-		progressbarimage { 
-			controlname="ImagePanel" 
-			style="progressbarimage" 
-		}
-	}
-	
 	colors {
 		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
 		GameDetailsAchievements.ProgressBarMargins "8"
@@ -57,26 +8,25 @@
 	
 	styles {
 		mostrecent {
-			minimum-height="118"
 			minimum-width="300"
+			minimum-height="118"
 		}
 
 		achievementimagebg {
 			bgcolor=none
 			inset="0 0 0 0"
-      		image="graphics/achievementbg_recent"    
-     		
+      		image="graphics/achievementbg_recent"
 		}
 
 		// Literally the label that says "Most Recent"
 		mostrecent_label {
-			font-size=13
 			textcolor="greyhighlight"
+			font-size=13
 		}
 		
 		mostrecent_name {
-			font-size=20
 			textcolor="lightestYellow"
+			font-size=20
 		}
 
 		mostrecent_unlockedsofar {
@@ -96,6 +46,7 @@
 
 		progressbarimage {
 			bgcolor="green"
+			
 			render = {
 				6="fill(x0,y0,x1,y0+1, lightestGreen)"
 				7="fill(x0, y0+1, x1, y1, green)"
@@ -106,43 +57,43 @@
 	layout {
 		region { 
 			name=body 
-			margin=0 
 			width=max 
-			height=max 
+			height=max
+			margin=0 
 		}
 
 		place { 
-			region=body 
-			control=mostrecent_label 
-			x=82 
-			y=18 
-			width=max 
+			region=body
+			control=mostrecent_label
+			x=82
+			y=18
+			width=max
 		}
 		
 		place { 
 			region=body 
 			control=mostrecent_name 
-			x=82 
-			y=29 
-			width=190 
+			x=82
+			y=29
+			width=190
 			height=25
 		}
 		
 		place { 
-			region=body 
-			control=mostrecent_unlockedsofar 
-			x=82 
-			y=54 
-			width=max 
+			region=body
+			control=mostrecent_unlockedsofar
+			x=82
+			y=54
+			width=max
 		}
 
-		place { 
+		place {
 			region=body 
-			control=mostrecent_background 
-			x=0 
-			y=6 
-			width=70 
-			height=70 
+			control=mostrecent_background
+			x=0
+			y=6
+			width=70
+			height=70
 		}
 		
 		place { 

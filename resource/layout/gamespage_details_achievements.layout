@@ -1,37 +1,4 @@
 "resource/layout/gamespage_details_achievements.layout" {
-	controls {
-		achievementsdetails { 
-			controlname="CGamesPage_Details_Achievements" 
-			style="achievementsdetails" 
-		}
-
-		headerlabel { 
-			controlname="Label" 
-			style="gamedetails-headerlabel" 
-			labeltext="#Steam_Achievements" 
-		}
-		
-		mostrecent_area { 
-			controlname="CAchievementsMostRecentPanel" 
-		}
-		
-		everythinglabel { 
-			controlname="Label" 
-			style="everythinglabel" 
-			labeltext="#Steam_EverythingAchieved" 
-		}
-		
-		locked_area { 
-			controlname="CAchievementsLockedPanel" 
-		}	
-
-		viewall	{ 
-			controlname="Button" 
-			labeltext="#Steam_ViewAllAchievements" 
-			command="ViewAllAchievements" 
-		}
-	}
-
 	colors {
 		// Extra spacing beyond the flowing elements to account for header and button at the bottom
 		GameDetailsAchievements.ExtraVerticalSpacing "10"
@@ -58,8 +25,7 @@
 			button:hover {
 				textcolor=lightestBlue
 			}
-			
-		// This is the background
+
 		achievementsdetails { 
 			bgcolor=black65
 			minimum-height=200
@@ -70,16 +36,15 @@
 			textcolor="white"
 			font-size=13
 		}	
-
 	}
 
 	layout {
 		region { 
 			name=body 
-			margin=20
-			margin-right=30
 			width=max 
 			height=max 
+			margin=20
+			margin-right=30
 		}
 
 		place { 
@@ -91,32 +56,32 @@
 		place { 
 			region=body 
 			control=mostrecent_area 
+			y=35
 			dir=down 
-			y=35 
 		}
 		
 		place {
 			region=body
 			control=everythinglabel
-			dir=right
-			y=55
 			x=300
+			y=55
+			dir=right
 		}
 		
 		place {
 			control=locked_area
+			start="mostrecent_area"
 			y=5
 			width=max
 			height=45
-			start="mostrecent_area"
 		}
 
 		place { 
 			region=body 
 			control=viewall 
 			align=bottom 
-			margin-bottom=0 
 			margin-left=-6
+			margin-bottom=0 
 		}
 	}
 }

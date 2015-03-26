@@ -1,47 +1,4 @@
 "resource/layout/gamespage_details_community_file.layout" {
-	controls {
-		communityfile { 
-			controlname="CCommunityFilePanel" 
-		}
-		
-		communityfile_image_border { 
-			controlname="Panel" 
-			style="communityfile_image_border" 
-		}
-		
-		communityfile_image { 
-			controlname="ImagePanel" 
-			image=resource/icon_community_preview 
-			zpos=-1 
-			style="communityfile_image" 
-		}
-		
-		communityfile_name { 
-			controlname="Label" 
-			style="communityfile_name" 
-			labeltext="" 
-			zpos=3
-		}
-		
-		communityfile_rating_image_background{ 
-			controlname="Panel" 
-			zpos=1 
-			style="communityfile_rating_image_background" 
-		}
-		
-		communityfile_rating_image { 
-			controlname="ImagePanel" 
-			zpos=2 
-			image=resource/1_star 
-			style="communityfile_rating_image"
-		}
-		
-		friendimage { 
-			controlname="ImagePanel" 
-			zpos=2
-		}
-	}
-	
 	colors {
 		// The extra space needed vertical beyond the autocomputed size of the blurb contents
 		// this is used in code to make the vertical size of the panel fit the title/author/morelink
@@ -54,13 +11,11 @@
 	
 	styles {
 		communityfile_name {
-			font-size=13
-			textcolor="blue"
-			
-			padding-left=6
-			padding-top=4
-			
 			bgcolor=black65
+			textcolor="blue"
+			font-size=13			
+			padding-left=6
+			padding-top=4			
 		}
 		
 		communityfile_image_border {
@@ -138,28 +93,28 @@
 			x=3 
 			y=87 
 			width=max
+			height=22
 			margin-right=3
-			height=22 
 		}
 		
 		place { 
 			region=body 
 			control=communityfile_rating_image 
-			x=8 
+			x=8
 			y=92 
 			width=max
-			margin-right=3 
-			height=11 
+			height=11
+			margin-right=3
 		}
 		
 		place { 
 			region=body 
 			control=friendimage
+			x=156
+			y=77
 			width=42
 			height=40
 			spacing=10
-			x=156
-			y=77
 		}		
 	}
 }
