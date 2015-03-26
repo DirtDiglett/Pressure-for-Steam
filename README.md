@@ -95,9 +95,6 @@ font-size
 font-style
 font-weight
 
-// Content-Additions
-image
-
 // Positioning
 inset
 inset-left
@@ -110,6 +107,9 @@ padding-left
 padding-top
 padding-right
 padding-bottom
+
+// Content-Additions
+image
 ```
 Here is an example style that fits this:
 ```
@@ -131,6 +131,9 @@ TestStyle [!$OSX] {
 
 And for controls:
 ````
+name
+control
+region
 start
 align
 x
@@ -140,5 +143,6 @@ height
 margin
 dir
 spacing
+overflow
 end-right
 ````
