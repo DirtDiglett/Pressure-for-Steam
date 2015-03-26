@@ -1,18 +1,4 @@
 "resource/layout/gamespage_grid.layout" {
-	controls {
-		"grid" {
-			"alignment"						"justify"		// left, right, justify 
-			"interiorspacing"				18				// minimum interitem spacing, used for both x and y
-			"wheelpct"						50				// mouse wheel -> scroll this percent of an item's dy
-			"tabposition"					1
-		}
-
-		"emptylisttext" {
-			control="RichText"
-			style="emptylisttext"
-		}
-	}
-
 	colors {
 		// values defining the aspect ratio of the images in the grid view
 		GridView.OriginalImageWidth "460"
@@ -26,8 +12,9 @@
 
 	styles {
 		WrapPanel {			
-			inset="0 0 0 0"
 			bgcolor="darkestGrey"
+			inset="0 0 0 0"
+			
 			render {
 				0="gradient(x0, y0, x1, y0+6, black90, none)"
 				1="gradient(x0, y1-6, x1, y1, none, black90)"
@@ -38,6 +25,7 @@
 		emptylisttext {
 			textcolor="grey"
 			font-size="14"
+
 			render_bg {}
 		}
 		
@@ -52,33 +40,33 @@
 		// uninstalled
 		// notinstalled (yes there are two)
 		GameItem_installed {
-			alpha		255
+			alpha 255
 		}
 		GameItem_unInstalled {
-			alpha		255
+			alpha 255
 		}
 		GameItem_Updating {
-			alpha		255
+			alpha 255
 		}
 	}
 
 	layout {
 		place {
-			control = grid
+			control=grid
 			x=1 
 			y=1 
 			width=max 
 			height=max 
 		}
 
-		place { 
-			control=emptylisttext 
-			x=0 
-			y=0 
-			margin=10 
-			margin-top=9 
-			width=max 
-			height=max 
+		place {
+			control=emptylisttext
+			x=0
+			y=0
+			width=max
+			height=max
+			margin=10
+			margin-top=9
 		}
 	}
 }
