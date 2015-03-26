@@ -1,40 +1,4 @@
 "resource/layout/parentallockdialog.layout" {
-	controls {
-		ParentalLockDialog {
-			controlname="Frame"
-			title="#steam_parental_locktitle"
-			style="ParentalLockDialog"
-		}
-
-		Instructions {
-			controlname="Label"
-			style="Hey"
-			labeltext="#steam_parental_lockinstructions"
-			wrap=1
-		}
-
-		KeyImage {
-			controlname="Label"
-			style="Key"
-			zpos=-4
-		}
-
-		OK {
-			controlname="Button"
-			tabposition=1
-			command="DoParentalLock"
-			labeltext="#PropertyDialog_OK"
-			default=1
-		}
-		
-		Cancel {
-			controlname="Button"
-			tabposition=2
-			command="Close"
-			labeltext="#PropertyDialog_Cancel"
-		}
-	}
-	
 	styles {
 		ParentalLockDialog {
 			minimum-width = 400
@@ -53,21 +17,14 @@
 
 		Key {
 			bgcolor=none
-			render_bg={}
-			image="graphics/keybg"
 			inset="20 0 0 0"
+			image="graphics/keybg"
+
+			render_bg {}
 		}
 	}
 	
 	layout {
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
 		region {
 			name="top"
 			width=max
@@ -78,16 +35,16 @@
 		
 		region {
 			name="middle"
+			y=100
 			width=max
 			height=150
-			y=100
 			margin=10
 		}
 		
 		region {
 			name="bottom"
-			width=max
 			align=bottom
+			width=max
 			height=51
 		}
 
@@ -112,9 +69,9 @@
 		
 		place {
 			control="OK,Cancel" region="bottom"
+			align=right
 			width=92
 			height=24
-			align=right
 			margin-top=14
 			margin-right=14
 			spacing=8
