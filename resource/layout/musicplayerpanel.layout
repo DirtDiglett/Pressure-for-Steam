@@ -1,47 +1,11 @@
-"resource/layout/musicplayerpanel.layout"
-{
-	controls
-	{	
-		CurrentAlbumImage { controlname=ImagePanel style="CurrentAlbumImageStyle" scaling=fit}
-
-		CurrentStatusLabel { controlname=Label style="StatusStyleDim" labeltext="NOW PLAYING" }
-		CurrentTrackLabel	{	controlname=Label	style="StatusStyle"	labeltext=""	}
-		CurrentArtistLabel { controlname=Label style="statusStyle" labeltext="" }
-		
-		RepeatButton { controlname=ToggleButton labeltext="" tooltiptext="#music_tooltip_repeat" command="ToggleRepeat" style="RepeatButtonStyle" }
-		ShuffleButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_shuffle" command="ToggleShuffle" style="ShuffleButtonStyle" }
-		PreviousButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_previous" command="PreviousTrack" style="PreviousButtonStyle" }
-		NextButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_next" command="NextTrack" style="NextButtonStyle" }
-		PlayPauseButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_playpause" command="TogglePlayPause" style="PlayButtonStyle" }
-		VolumeButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_volume" command="Volume" style="VolumeButtonStyle" }
-		BrowseButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_browse" command="BrowseMusic" style="BrowseButtonStyle" }
-		
-		TrackList { controlname=ListPanel style="MusicListPanelInterior" }
-		NoTracksLabel { controlname=Label style="NoTracksLabelStyle" labeltext="" zpos="-1" }
-		InfoLabel { controlname=Label style="InfoLabelStyle" labeltext="1 OF 10"  zpos="-1" textalignment=center }
-		
-		frame_title
-		{
-			ControlName=Label
-	
-			style="ClientTitle"
-			"textAlignment"   "west"
-			"textAlignment"   "center" [$OSX]
-		}
-	}
-
-
-	styles
-	{
-		CMusicPlayerPanel	
-		{
+"resource/layout/musicplayerpanel.layout" {
+	styles {
+		CMusicPlayerPanel {
 			bgcolor=Grey
-			
 			minimum-width = 440
 			minimum-height = 92
 			
-			render_bg
-			{
+			render_bg {
 				// top area and graphic
 				
 				0="fill( x0, y0, x1, y0+92, grey)"
@@ -60,160 +24,401 @@
 				// Create the 1px Highlight on top
 				9="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 
-				}
+			}
 		}
 
 
 		
-		MusicListPanelInterior
-		{     
-			inset="-3 -1 -2 0"
-			padding="6"
-			font-size=15
-			textcolor="white"
+		MusicListPanelInterior {	 
 			bgcolor="none"
 			selectedbgcolor="blue" 
 			selectedtextcolor="truewhite"
-			render
-			{
+			textcolor="white"
+			font-size=15
+			padding="6"
+			inset="-3 -1 -2 0"
+			
+			render {
 				//line at top
 				0="fill( x0, y0-3, x1+1, y0-2, darkestGrey )"
 				1="fill( x0, y0-2, x1, y0-1, greyHighlight)"
-				  
-				//gradient to obscure content at top of scrolling region 
-				//2="gradient( x0, y0-1, x1, y0 + 2, grey, none  )"
-				
-				5="fill( x0, y1, x1+1, y1 +1, darkestGrey )"  // bottom
-					
-				// single pixel fills in the corners
-					
-				//gradient to obscure content at bottom of scrolling region 
+				2="fill( x0, y1, x1+1, y1 +1, darkestGrey )"
 			}	
-			render_bg 
-			{
+			render_bg {
 				1="fill( x0, y0, x1+2, y1, lightGreyEnd )"
-				//2="gradient( x0, y1-30, x1, y1, lightGreyEnd, darkGreyEnd )"
 			}
-    		} 
+		} 
 		
-		ListPanelInterior
-		{     
-			inset="3 0 2 -5"
-			font-size=15
-			textcolor="white"
+		ListPanelInterior {	 
 			bgcolor="none"
 			selectedbgcolor="blue" 
 			selectedtextcolor="truewhite"
-			render
-			{
+			textcolor="white"
+			font-size=15
+			inset="3 0 2 -5"
+
+			render {
 				//line at top
 				0="fill( x0, y0-3, x1+1, y0-2, darkestGrey )"
 				1="fill( x0, y0-2, x1, y0-1, greyHighlight )"
-				  
-				
 				5="fill( x0, y1, x1+1, y1 +1, darkestGrey )"  // bottom
-					
-
 			}	
-			render_bg 
-			{
+			render_bg {
 				1="fill( x0, y0, x1, y1, lightGreyEnd )"
 				//2="gradient( x0, y1-30, x1, y1, lightGreyEnd, darkGreyEnd )"
 
 			}
-    		} 
+		} 
 
-    
-    		ClientTitle [!$OSX] {
-			textcolor=none
+	
+		ClientTitle [!$OSX] {
 			bgcolor=none
-			render_bg{}
-			}			
+			textcolor=none
+			
+			render_bg {}
+		}			
 		
-
-		ClientTitle [$OSX]
-		{
+		ClientTitle [$OSX] {
+			bgcolor="none"
+			textcolor="textdisabled"
 			font-family=basefont
 			font-size=15
-      			font-weight=400
-      			textcolor="textdisabled"
-      			bgcolor="none"
-      			inset="0 6 0 0"
+	  		font-weight=400
+	  		inset="0 6 0 0"
 		}
 
-			ClientTitle:FrameFocus [$OSX]
-			{	
+			ClientTitle:FrameFocus [$OSX] {	
+				bgcolor="none"
+				textcolor="texthover"
 				font-family=basefont
    				font-size=15
    				font-weight=400
-   				textcolor="texthover"
-   				bgcolor="none"
    				inset="0 6 0 0"
+			}
+
+		CurrentAlbumImageStyle {}
+
+		RepeatButtonStyle {
+			bgcolor=none
+			inset="0"
+			padding="0"
+			image=graphics/music_repeat_default
+
+			render_bg {}
 		}
 
-		CurrentAlbumImageStyle	{	}
-		RepeatButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_repeat_default	inset="0" padding="0" }
-		RepeatButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/music_repeat_hover	inset="0" padding="0" }
-		RepeatButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/music_repeat_enabled }
-		RepeatButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/music_repeat_enabled_hover }
-		ShuffleButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_shuffle_default	}
-		ShuffleButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/music_shuffle_enabled }
-		ShuffleButtonStyle:selected:hover	{	bgcolor=none render_bg={} image=graphics/music_shuffle_enabled_hover }
-		PreviousButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_trackback_default	}
-		PreviousButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/music_trackback_hover }
-		NextButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_trackfwd_default	}
-		NextButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_trackfwd_hover	}
-		PlayButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_play_default }
-		PlayButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_play_hover }
-		PauseButtonStyle {	bgcolor=none render_bg={} image=graphics/music_pause_default }
-		PauseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_pause_hover }
-		VolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/music_volume_default	}
-		VolumeButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_volume_hover }
-		VolumeButtonActiveStyle {	bgcolor=none render_bg={} image=graphics/music_volume_default	}
-		VolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} image=graphics/music_volume_hover }				
-		MuteVolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/music_volume_mute_default	}
-		MuteVolumeButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_volume_mute_hover }
-		MuteVolumeButtonActiveStyle {	bgcolor=none render_bg={} image=graphics/music_volume_mute_default	}
-		MuteVolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} image=graphics/music_volume_mute_hover }
-		
-		BrowseButtonStyle {	bgcolor=none render_bg={} image=graphics/music_browse_default	}
-		BrowseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_browse_hover }
-		
-		StatusStyle	{ render_bg={} font-family=basefont textcolor="LabelFocus" font-size=15	}
-		StatusStyleDim	{ render_bg={} font-family=basefont textcolor="White" font-size=16	}
-		InfoLabelStyle	{ render_bg={} font-family=basefont font-size=14 textcolor="White" }
-		TrackListStyle { }
-		NoTracksLabelStyle	{	bgcolor=none render_bg={} image=graphics/music_background }
-		
-	}
-	
-	
-	layout
-	{
-		region { name=transport y=20 width=269 height=70 align=right}
-		region { name=currenttrack x=10 y=20 width=max height=55 margin-right=271 }
+			RepeatButtonStyle:hover {
+				bgcolor=none
+				image=graphics/music_repeat_hover
+				inset="0"
+				padding="0"
+
+				render_bg {}
+			}
+
+			RepeatButtonStyle:selected {
+				bgcolor=none
+				image=graphics/music_repeat_enabled
+
+				render_bg {}
+			}
 				
-		place {	control="CurrentAlbumImage"	region=currenttrack x=0 y=4 width=56 height=56 margin=0	}
-		place { control="CurrentStatusLabel" region=currenttrack x=64 y=2 width=max }
-		place { control="CurrentTrackLabel" region=currenttrack x=64 y=20 width=max}
-		place { control="CurrentArtistLabel" region=currenttrack x=64 y=38 width=max }
+				RepeatButtonStyle:selected:hover {
+					bgcolor=none
+					image=graphics/music_repeat_enabled_hover
+
+					render_bg {}
+				}
 		
-		place { control="RepeatButton,ShuffleButton,PreviousButton" region=transport x=0 y=16 spacing=6 margin=0 height=18 }
-		place { control="PlayPauseButton" region=transport x=102 y=0 width=62 height=50 }
-		place { control="NextButton,VolumeButton,BrowseButton" region=transport x=164 y=16 spacing=6 margin-right=2 height=18 }
+		ShuffleButtonStyle {
+			bgcolor=none
+			image=graphics/music_shuffle_default
 
-		place { control="TrackList" x=1 y=94 width=max height=max margin-right=-1 margin-left=0 margin-bottom=27 }
-		place { control="NoTracksLabel" x=16 y=94 margin-right=10 margin-bottom=33 align="top-center" }
-		place { control="InfoLabel" align=bottom x=10 y=94 width=max margin-right=10 margin-bottom=8 }
-
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
+			render_bg {}
 		}
 
+			ShuffleButtonStyle:selected	{
+				bgcolor=none
+				image=graphics/music_shuffle_enabled
+
+				render_bg {}
+			}
+
+				ShuffleButtonStyle:selected:hover {
+					bgcolor=none
+					image=graphics/music_shuffle_enabled_hover
+
+					render_bg {}
+				}
+		
+		PreviousButtonStyle {
+			bgcolor=none
+			image=graphics/music_trackback_default
+
+			render_bg {}
+		}
+			
+			PreviousButtonStyle:hover {
+				bgcolor=none
+				image=graphics/music_trackback_hover
+				
+				render_bg {}
+			}
+		
+		NextButtonStyle	{
+			bgcolor=none
+			image=graphics/music_trackfwd_default
+
+			render_bg {}
+		}
+			
+			NextButtonStyle:hover {
+				bgcolor=none
+				image=graphics/music_trackfwd_hover
+
+				render_bg {}
+			}
+		
+		PlayButtonStyle {
+			bgcolor=none
+			image=graphics/music_play_default
+
+			render_bg {}
+		}
+		
+			PlayButtonStyle:hover {
+				bgcolor=none
+				image=graphics/music_play_hover
+				
+				render_bg {}
+			}
+		
+		PauseButtonStyle {
+			bgcolor=none
+			image=graphics/music_pause_default
+
+			render_bg {}
+		}
+
+		PauseButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music_pause_hover
+
+			render_bg {}
+		}
+		
+		VolumeButtonStyle {
+			bgcolor=none
+			image=graphics/music_volume_default
+
+			render_bg {}
+		}
+		VolumeButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music_volume_hover
+			
+			render_bg {}
+		}
+		
+		VolumeButtonActiveStyle {
+			bgcolor=none
+			image=graphics/music_volume_default
+
+			render_bg {}
+		}
+
+		VolumeButtonActiveStyle:hover {
+			bgcolor=none
+			image=graphics/music_volume_hover
+
+			render_bg {}
+		}				
+		
+		MuteVolumeButtonStyle {
+			bgcolor=none
+			image=graphics/music_volume_mute_default
+
+			render_bg {}
+		}
+
+		MuteVolumeButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music_volume_mute_hover
+
+			render_bg {}
+		}
+	
+		MuteVolumeButtonActiveStyle {
+			bgcolor=none
+			image=graphics/music_volume_mute_default
+
+			render_bg {}
+		}
+
+		MuteVolumeButtonActiveStyle:hover {
+			bgcolor=none
+			image=graphics/music_volume_mute_hover
+		
+			render_bg {}
+		}
+		
+		BrowseButtonStyle {
+			bgcolor=none
+			image=graphics/music_browse_default
+
+			render_bg {}
+		}
+
+		BrowseButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music_browse_hover
+
+			render_bg {}
+		}
+		
+		StatusStyle	{
+			textcolor="LabelFocus"
+			font-family=basefont
+			font-size=15
+
+			render_bg {}
+		}
+
+		StatusStyleDim	{
+			textcolor="White"
+			font-family=basefont
+			font-size=16
+
+			render_bg {}
+		}
+
+		InfoLabelStyle	{
+			textcolor="White"
+			font-family=basefont
+			font-size=14
+			
+			render_bg {}
+		}
+
+		TrackListStyle {}
+
+		NoTracksLabelStyle {
+			bgcolor=none
+			image=graphics/music_background
+		
+			render_bg {}
+		}
 	}
 	
+	layout {
+		region {
+			name=transport
+			align=right
+			y=20
+			width=269
+			height=70
+		}
+
+		region {
+			name=currenttrack
+			x=10
+			y=20
+			width=max
+			height=55
+			margin-right=271
+		}
+				
+		place {
+			control="CurrentAlbumImage"
+			region=currenttrack
+			x=0
+			y=4
+			width=56
+			height=56
+			margin=0
+		}
+
+		place {
+			control="CurrentStatusLabel"
+			region=currenttrack
+			x=64
+			y=2
+			width=max
+		}
+
+		place {
+			control="CurrentTrackLabel"
+			region=currenttrack
+			x=64
+			y=20
+			width=max
+		}
+
+		place {
+			control="CurrentArtistLabel"
+			region=currenttrack
+			x=64
+			y=38
+			width=max
+		}
+		
+		place {
+			control="RepeatButton,ShuffleButton,PreviousButton"
+			region=transport
+			x=0
+			y=16
+			height=18
+			margin=0
+			spacing=6
+		}
+
+		place {
+			control="PlayPauseButton"
+			region=transport
+			x=102
+			y=0
+			width=62
+			height=50
+		}
+
+		place {
+			control="NextButton,VolumeButton,BrowseButton"
+			region=transport
+			x=164
+			y=16
+			height=18
+			margin-right=2
+			spacing=6
+		}
+
+		place {
+			control="TrackList"
+			x=1
+			y=94
+			width=max
+			height=max
+			margin-left=0
+			margin-right=-1
+			margin-bottom=27
+		}
+
+		place {
+			control="NoTracksLabel"
+			align="top-center"
+			x=16
+			y=94
+			margin-right=10
+			margin-bottom=33
+		}
+
+		place {
+			control="InfoLabel"
+			align=bottom
+			x=10
+			y=94
+			width=max
+			margin-right=10
+			margin-bottom=8
+		}
+	}
 }
