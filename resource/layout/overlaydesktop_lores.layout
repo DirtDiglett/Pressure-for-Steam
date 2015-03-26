@@ -1,56 +1,83 @@
 "resource/layout/overlaydesktop_lores.layout" {
-	controls {}
-	
 	styles {
-	
-		
-	
 		sidemenu {
-			font-size=15
 			textcolor=blue
+			font-size=15
 		}
 		
-		sidemenu:hover {
-			font-size=15
-			textcolor=lightestBlue
-		}
+			sidemenu:hover {
+				textcolor=lightestBlue
+				font-size=15
+			}
 
 		topbar {
-			font-family=headerfont
 			textcolor=white
+			font-family=headerfont
 			font-size=48
 		}
 
 		clocksuffix {
-			font-family=headerfont
 			textcolor=white
+			font-family=headerfont
 			font-size=48
 		}
 
 		timeStrings {
-			//this is the session text
 			color=white
 		}
-
 	}
 	
 	layout {
 		region {
 			name=overlay
-			width=1000
 			align=top-center
-			margin-top=10
-			margin-bottom=10
+			width=1000
 			margin-left=10
+			margin-top=10
 			margin-right=10
+			margin-bottom=10
 		}
 	
-		region { name="detailpanels" region=overlay align=bottom width=max height=210 margin-bottom=100 }
-		region { name="taskbar" region=overlay width="max" height=75 align=bottom }
-		region { name="topbar" region=overlay width="max" height=50 }
+		region {
+			name="detailpanels"
+			region=overlay
+			align=bottom
+			width=max
+			height=210
+			margin-bottom=100
+		}
+
+		region {
+			name="taskbar"
+			region=overlay
+			align=bottom
+			width="max"
+			height=75
+		}
+
+		region {
+			name="topbar"
+			region=overlay
+			width="max"
+			height=50
+		}
 	
-		place { controls="BroadcastDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
-		place { controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton" y=100 align=left region=overlay dir=down spacing=10 }
+		place {
+			controls="BroadcastDetailPanel"
+			region=detailpanels
+			width=330
+			height=240
+			spacing=10
+		}
+
+		place {
+			controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton"
+			region=overlay
+			align=left
+			y=100
+			dir=down
+			spacing=10
+		}
 		
 		
 		place { 
@@ -62,11 +89,16 @@
 		
 		place { 
 			control="SessionText,TwoWeeksText,ForeverText" 
-			dir=down 
 			y=45
 			x=10
+			dir=down
 		}
 		
-		place { control="CloseButton" dir=down region=overlay y=35 }
+		place {
+			control="CloseButton"
+			region=overlay
+			y=35
+			dir=down
+		}
 	}	
 }

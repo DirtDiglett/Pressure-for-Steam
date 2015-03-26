@@ -7,8 +7,8 @@
 		}
 
 		topbar {
-			font-family=headerfont
 			textcolor=white
+			font-family=headerfont
 			font-size=48
 		}
 
@@ -24,37 +24,40 @@
 	}
 
 	layout {
-
 		region { 
-			name=bottom 
-			align=bottom 
-			height=240 
-			width=max 
+			name=bottom
+			align=bottom
+			width=max
+			height=240
 		}
 		
-		region {	//unnecessary now that clock/etc moved to overlaydesktop_lores?
+		region {//unnecessary now that clock/etc moved to overlaydesktop_lores?
 			name=top
 			align=left
-			y=0
 			x=0
-			height=100
+			y=0
 			width=max
+			height=100
 		}
 		
 		place {
 			control=gamename
-			y=4
-			x=10
 			align=left
+			x=10
+			y=4
 		}
 
 		place {
 			control=CloseButton
+			align=right
 			y=10
 			margin-right=10
-			align=right
 		}
 
-		place { control=PowerMeterDim,BottomFadePanel,TopFadePanel,HotkeyLabel,HotkeyExplain height=0 width=0 }
+		place {
+			control=PowerMeterDim,BottomFadePanel,TopFadePanel,HotkeyLabel,HotkeyExplain
+			width=0
+			height=0
+		}
 	}
 }

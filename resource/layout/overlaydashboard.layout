@@ -1,8 +1,4 @@
 "resource/layout/overlaydashboard.layout" {
-	controls {}
-	
-	colors {}
-	
 	styles {
 		topfade {
 			render_bg {
@@ -23,27 +19,23 @@
 		}
 		
 		hotkey {
+			textcolor=none
 			font-size=14
 			font-style=none
-			textcolor=none
 		}
 
-		// The game's name
 		topbar {
-			font-family=headerfont
-			font-size=48			
 			textcolor=white
+			font-family=headerfont
+			font-size=48
 			
-			render_bg {
-			//	0="fill(x0,y0,x1,y1, red)"
-			}
+			render_bg {}
 		}
 		
 		detailsboxtitle {
-				textcolor=red
+			textcolor=red
 		}
-				
-		// Close button		
+
 		OverlayURLLabel {
 			image=graphics/overlay/close
 		}
@@ -55,10 +47,31 @@
 		LabelOverlay {
 			image=graphics/overlay/browsersettingsmusic
 		}
-
 	}
 	
 	layout {
+		region {
+			name="topbar"
+			region=overlay
+			align=top-center
+			width="max"
+			height=112
+		}
+		
+		region {
+			name="taskbar"
+			region=overlay
+			align=bottom
+			width="max"
+			height=146
+		}
+
+		region {
+			name=overlay
+			align=top-center
+			width=max
+		}		
+
 		place { 
 			control="TopFadePanel"
 			align=top
@@ -72,23 +85,7 @@
 			width=max
 			height=146
 		}
-		
-		region {
-			name="topbar"
-			region=overlay
-			width="max"
-			height=112
-			align=top-center
-		}
-		
-		region {
-			name="taskbar"
-			region=overlay
-			width="max"
-			height=146
-			align=bottom
-		}
-		
+
 		place {
 			controls="gamename"
 			region=topbar
@@ -108,31 +105,25 @@
 		// Used for the icons 
 		place {
 			control=HotkeyExplain
-			align=right
 			region=taskbar
-			dir=right
+			align=right
 			margin-right=48 // There is 2 pixels on the left of the image that we need to account for
+			dir=right
 			y=46
-		}
-	
-		region {
-			name=overlay
-			width=max
-			align=top-center
 		}
 	
 		place {
 			control="TaskbarPanel"
 			region=taskbar
-			height=145
 			align=right
 			width=480
+			height=145
 		}
 		
 		place {
 			control="HotkeyLabel,powermeter,PowerMeterDim"
-			height=0
 			width=0
+			height=0
 		}
 	}
 }
