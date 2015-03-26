@@ -5,7 +5,7 @@ gameoverlay.styles {
 		mostly_black "41 41 41 240"
 		semi_black "20 20 20 128"
 		semi_gray "20 20 20 220"
-		Notifications.PanelPosition     "BottomRight"  // osx has toast in the upper right, but in-overlay should not.
+		Notifications.PanelPosition "BottomRight"  // osx has toast in the upper right, but in-overlay should not.
 	}
 	
 	styles {
@@ -14,9 +14,9 @@ gameoverlay.styles {
 		}	
 		
 		detailsboxtitle {
+			textcolor=white
 			font-size=28
 			font-style=regular
-			textcolor=white
 		}
 	}
 }
