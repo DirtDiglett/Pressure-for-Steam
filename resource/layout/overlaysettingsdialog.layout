@@ -1,21 +1,10 @@
 "resource/layout/overlaydialogsettings.layout" {
-	controls {}
-	
-	layout {
-		//Original
-		place [!$OSX]  { 
-			control="frame_minimize,frame_maximize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-8 
-		}
-		
+	layout {		
 		region {
 			name="right"
 			align=right
-			height=max
 			width=192
+			height=max
 			margin=8
 			margin-top=0
 			margin-bottom=51
@@ -24,8 +13,8 @@
 		region {
 			name="bottom"
 			align=bottom
-			height=51
 			width=max
+			height=51
 		}
 		
 		place { 
@@ -34,9 +23,9 @@
 			align=right
 			width=92 
 			height=24
-			spacing=8
 			margin-top=14
 			margin-right=14
+			spacing=8
 		}
 	}
 }
