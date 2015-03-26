@@ -1,27 +1,4 @@
 "resource/layout/gamespage_details_screenshots.layout" {
-	controls {
-		screenshotsdetails { 
-			controlname="CGamesPage_Details_Screenshots" 
-			style="screenshotsdetails" 
-		}
-		
-		headerlabel { 
-			controlname="Label" 
-			style="gamedetails-headerlabel" 
-			labeltext="#Steam_Screenshots" 
-		}
-		
-		screenshotsarea { 
-			controlname="CScreenshotsPanel" 
-		}
-			
-		viewall	{ 
-			controlname="Button" 
-			labeltext="#Steam_ViewAllScreenshots" 
-			command="ViewAllScreenshots" 
-		}
-	}
-
 	colors {
 		// Extra spacing beyond the flowing elements to account for header and button at the bottom
 		GameDetailsScreenshots.ExtraVerticalSpacing "110"
@@ -31,7 +8,6 @@
 	}
 
 	styles {
-
 		// This overrides the default button.
 		button {
 			textcolor=blue
@@ -54,31 +30,31 @@
 	layout {
 		region { 
 			name=body 
-			margin=20 
 			width=max 
-			height=max 
+			height=max
+			margin=20 
 		}
 
 		place { 
-			region=body 
-			control=headerlabel 
-			width=max 
+			control=headerlabel
+			region=body
+			width=max
 		}
 		
 		place { 
-			region=body 
-			control=screenshotsarea 
-			dir=down 
-			y=35 
-			width=max 
+			control=screenshotsarea
+			region=body
+			y=35
+			width=max
+			dir=down
 		}
 
 		place { 
-			region=body 
-			control=viewall 
+			control=viewall
+			region=body
 			align=bottom 
+			margin-left=-6
 			margin-bottom=0
-			margin-left=-6 
 		}
 	}
 }

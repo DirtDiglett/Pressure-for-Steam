@@ -1,19 +1,4 @@
 "resource/layout/gamespage_details_screenshots_list.layout" {
-	controls {
-		screenshotsarea { 
-			controlname="CScreenshotsPanel" 
-			style="screenshotsarea" 
-		}
-
-		screenshotslabelmore { 
-			controlname="Label" 
-			style="screenshotslabelmore" 
-			labeltext="#Steam_MoreScreenshots" 
-			textAlignment="center" 
-			tooltiptext="#Steam_ViewAllScreenshots"
-		}
-	}
-
 	colors {
 		// Note, the below values are used for dynamic layout in code, and must match the values from place
 		// commands below for layout to work correctly.
@@ -32,35 +17,35 @@
 
 	styles {
 		infolabel {
-			font-size=13
 			textcolor=white
+			font-size=13
 		}
 		
 		screenshotslabelmore {
-			inset="-3 0 0 0"
-			font-size=13
 			textcolor="grey"
+			font-size=13
 			font-family=basefont
-		    
+		    inset="-3 0 0 0"
+
 		    render_bg {}
 		}
 	    		   
 			screenshotslabelmore:hover {
-				inset="-3 0 0 0"
-				font-size=13
 				textcolor="white"
+				font-size=13
 				font-family=basefont
-			    
+			    inset="-3 0 0 0"
+
 			    render_bg {}
 			}     
 	}
 
 	layout {
 		region { 
-			name=body 
+			name=body
+			width=max
+			height=max
 			margin=0 
-			width=max 
-			height=max 
 		}
 	}
 }

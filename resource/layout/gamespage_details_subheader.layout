@@ -1,6 +1,4 @@
 "resource/layout/gamespage_details_subheader.layout" {
-	controls {}
-
 	colors {
 		GameDetailsSubHeader.HorizontalSpacing=5
 		GameDetailsSubHeader.VerticalMargin=10
@@ -115,74 +113,68 @@
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break
-			inset="10 0 0 0"
 			bgcolor=none
+			inset="10 0 0 0"
 			image=none
+
 			render_bg {}
 			render {}
 		}	
 		
-		ClientListButton:hover {
-			image="graphics/icon_down_hover"
-		}
+			ClientListButton:hover {
+				image="graphics/icon_down_hover"
+			}
 		
-
 		DetailsButton {   
-			inset="-3 0 0 0"
+			bgcolor=none
+			textcolor="Text"
 			font-family=basefont
 			font-size=16
 			font-weight=400
-			textcolor="Text"
 			font-style=uppercase
-			bgcolor=none
+			inset="-3 0 0 0"
 
 			render_bg {
-				// background fill
 				0="gradient( x0, y0, x1, y1, buttonface2, almostblack )"
 			}	
 		}
 		
-		DetailsButton:hover {
-			inset="-3 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor="TextHover"
-			font-style=uppercase
-			bgcolor=none
-			
-			render_bg {
-				// background fill
-				0="gradient( x0, y0, x1, y1, buttonface2, almostblack )"
-			}	
-		}
+			DetailsButton:hover {
+				bgcolor=none
+				textcolor="TextHover"
+				font-family=basefont
+				font-size=16
+				font-weight=400
+				font-style=uppercase
+				inset="-3 0 0 0"
+
+				render_bg {
+					0="gradient( x0, y0, x1, y1, buttonface2, almostblack )"
+				}	
+			}
 		
-		DetailsButton:active {
-			inset="-3 0 0 0"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			textcolor="White"
-			font-style=uppercase
-			bgcolor=none
-			
-			render_bg {
-				// background fill
-				0="gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
-			}	
-		}
+			DetailsButton:active {
+				bgcolor=none
+				textcolor="White"
+				font-family=basefont
+				font-size=16
+				font-weight=400
+				font-style=uppercase
+				inset="-3 0 0 0"
+				
+				render_bg {
+					0="gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
+				}	
+			}
 		
 		DetailsLaunchButton [$OSX] {  
-			inset="25 7 0 0"
+			textcolor=white
 			font-family=headerfont
 			font-size=30
-			
 			font-style="none"
-			
-			padding-right=10
 			padding-left=10
-			
-			textcolor=white
+			padding-right=10
+			inset="25 7 0 0"
 			
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
@@ -223,19 +215,16 @@
 		}
 		
 		DetailsLaunchButton [!$OSX] {  
-			inset="25 3 0 0"
+			textcolor=white
 			font-family=headerfont
 			font-size=30
-			
 			font-style="outerglow"
 			font-outerglow-color="97 141 21 255"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
-			
-			padding-right=10
 			padding-left=10
-			
-			textcolor=white
+			padding-right=10
+			inset="25 3 0 0"
 			
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
@@ -385,16 +374,13 @@
 			}
 				
 		DetailsInstallButton [$OSX] {  
-			inset="25 7 0 0"
+			textcolor=white
 			font-family=headerfont
 			font-size=30
-			
 			font-style="none"
-			
-			padding-right=10
 			padding-left=10
-			
-			textcolor=white
+			padding-right=10
+			inset="25 7 0 0"
 			
 			render {
 				1="image( x0 + 14, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
@@ -435,19 +421,16 @@
 		}
 		
 		DetailsInstallButton [!$OSX] {  
-			inset="25 3 0 0"
+			textcolor=white
 			font-family=headerfont
 			font-size=30
-			
 			font-style="outerglow"
 			font-outerglow-color="11 143 176 255"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
-			
-			padding-right=10
 			padding-left=10
-			
-			textcolor=white
+			padding-right=10
+			inset="25 3 0 0"
 			
 			render {
 				1="image( x0 + 14, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
@@ -598,17 +581,14 @@
 		
 		
 		DetailsBuyButton [$OSX] {   
-			inset="25 7 0 0"
+			textcolor=white
 			font-family=headerfont
 			font-size=30
-			
 			font-style="none"
-			
-			padding-right=10
 			padding-left=10
-			
-			textcolor=white
-			
+			padding-right=10
+			inset="25 7 0 0"
+
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/buy/buy_icon )"
 			}
@@ -648,19 +628,16 @@
 		}
 		
 		DetailsBuyButton [!$OSX] {   
-			inset="25 3 0 0"
+			textcolor=white
 			font-family=headerfont
 			font-size=30
-			
 			font-style="outerglow"
 			font-outerglow-color="85 71 0 255"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
-			
-			padding-right=10
 			padding-left=10
-			
-			textcolor=white
+			padding-right=10
+			inset="25 3 0 0"
 			
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/buy/buy_icon )"
@@ -814,8 +791,8 @@
 		// Y offset here should match the vertical padding value above in the colors section
 		region { 
 			name="header" 
-			y=0 
-			x=0 
+			x=0
+			y=0			
 			width=max 
 			height=max
 		}
@@ -823,32 +800,33 @@
 		place { 
 			control=subheaderlabels
 			region=header
-			dir=left
 			align=left
 			margin-left=0
+			dir=left
 			end-right=launchbutton
 		}
 
 		place { 
 			control=launchbutton,clientlist
 			region=header
-			dir=right
 			align=right
-			margin-left=10
-			margin-bottom=5
-			margin-right=15
 			y=0
-			spacing=0
 			height=42
+			margin-left=10
+			margin-right=15
+			margin-bottom=5
+			spacing=0
+			dir=right
 		}
+
 		place { 
 			control=clientlist
-			y=0
-			x=0
 			start=launchbutton
-			dir=right
+			x=0
+			y=0
 			width=40
 			height=40
+			dir=right
 		}
 	}
 }
