@@ -1,11 +1,4 @@
 "resource/layout/toolwindow.layout" {
-	controls {
-		// the container
-		ToolWindowSheet	{
-			controlname="PropertySheet"
-		}
-	} 
-	
 	styles {
 		ToolWindow {
 			render_bg {
@@ -26,121 +19,107 @@
 			}
 		}
 		
-		Button {     
-		  	textcolor="none"
-				bgcolor="none"
-				
-				minimum-width=27
-				minimum-height=24
-				render_bg {
-					0="image( x0, y0+9, x1, y1, graphics/new_tab)"
-				}
-		  }
-		  
-			Button:hover {
-				render_bg {
-					0="image( x0, y0+9, x1, y1, graphics/new_tab_hover)"
-				}
+		Button {
+			bgcolor="none"
+			textcolor="none"
+			minimum-width=27
+			minimum-height=24
+
+			render_bg {
+				0="image( x0, y0+9, x1, y1, graphics/new_tab)"
 			}
-	
-			Button:active {
-				render_bg {
-					0="image( x0, y0+9, x1, y1, graphics/new_tab_active)"
-				}
+		}
+
+		Button:hover {
+			render_bg {
+				0="image( x0, y0+9, x1, y1, graphics/new_tab_hover)"
 			}
-			
-			Button:selected {
-				render_bg {
-					0="image( x0, y0+9, x1, y1, graphics/new_tab_active)"
-				}
-			}	
-	
+		}
+
+		Button:active {
+			render_bg {
+				0="image( x0, y0+9, x1, y1, graphics/new_tab_active)"
+			}
+		}
+
+		Button:selected {
+			render_bg {
+				0="image( x0, y0+9, x1, y1, graphics/new_tab_active)"
+			}
+		}
+
 		MenuButton {
-			padding-right=8
+			bgcolor=none
 			minimum-width=24
 			minimum-height=24
-			bgcolor=none
+			padding-right=8
+
 			render_bg {}
 		}
-		  
-		TabMenuButtonFlash { 
+
+		TabMenuButtonFlash {
 			render_bg {
 				0="fill(x0+6,y0+6,x1-6,y1-6,Focus)"
 			}
 		}
-		  
+
 		TabMenuItemFlash {
 			textcolor="orange"
 		}
 
 		PageTab {
-			minimum-height=30
-			
 			textcolor = lightestGrey
 			font-family=basefont
-			font-size=13
-			
-			
-			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
-			font-outerglow-offset=1
 			font-outerglow-filtersize=3
-			
-	        render_bg {
-	        	1="image(x0,y0,x0+3,y0+28,graphics/tabs/inactive/left)"
-		    	
-		    	2="image(x1-1,y0,x1+2,y0+28, graphics/tabs/inactive/right)"
-		    	3="image_scale(x0+3,y0,x1-1,y1-2, graphics/tabs/inactive/inner)" // For some weird reason, tiled images are tripled in height. So using y0+30 will cause the image to appear multiple times...
-	        }
-	    }
-  
-			PageTab:selected {
-				textcolor=white
-				
-			    render_bg {
-			    	0="fill(x0+1,y0+27,x1-1,y0+30, grey)" // Overlaps the highlight
-			    	1="fill(x0+1, y0+1, x1+2, y1, grey)"
-				
-			    	2="fill(x1+1, y0+30,x1+2, y0+31, greyHighlight)"
-			    	
-			    	3="image(x0,y0,x0+3,y0+30,graphics/tabs/active/left)"
-			    	
-			    	4="image(x1-1,y0,x1+2,y0+30, graphics/tabs/active/right)"
-			    	5="image_scale(x0+3,y0,x1-1,y1, graphics/tabs/active/inner)" // For some weird reason, tiled images are tripled in height. So using y0+30 will cause the image to appear multiple times...
-	
-					6="fill(x0, y1, x1+2, y1+1, Grey)" //Fix for Ingame Web Browser - No visual change anywhere else
-			    }
+			font-outerglow-offset=1
+			font-size=13
+			font-style="outerglow"
+			minimum-height=30
+
+			render_bg {
+				1="image(x0,y0,x0+3,y0+28,graphics/tabs/inactive/left)"
+				2="image(x1-1,y0,x1+2,y0+28, graphics/tabs/inactive/right)"
+				// Tiled images are tripled in height. Using y0+30 will cause the image to appear multiple times
+				3="image_scale(x0+3,y0,x1-1,y1-2, graphics/tabs/inactive/inner)"
 			}
+		}
+
+		PageTab:selected {
+			textcolor=white
+
+			render_bg {
+				0="fill(x0+1,y0+27,x1-1,y0+30, grey)" // Overlaps the highlight
+				1="fill(x0+1, y0+1, x1+2, y1, grey)"
+				2="fill(x1+1, y0+30,x1+2, y0+31, greyHighlight)"
+				3="image(x0,y0,x0+3,y0+30,graphics/tabs/active/left)"
+				4="image(x1-1,y0,x1+2,y0+30, graphics/tabs/active/right)"
+				// Tiled images are tripled in height. Using y0+30 will cause the image to appear multiple times
+				5="image_scale(x0+3,y0,x1-1,y1, graphics/tabs/active/inner)"
+				6="fill(x0, y1, x1+2, y1+1, Grey)" //Fix for Ingame Web Browser - No visual change anywhere else
+			}
+		}
 	}
 
 	layout {
-		//Original
-		place [!$OSX]  { 
-			control="frame_minimize,frame_maximize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-8 
+		place [!$OSX] {
+			control="frame_captiongrip"
+			width=max
+			height=40
 		}
-		
-		place [!$OSX] { 
-			control="frame_captiongrip" 
-			height=40 
-			width=max 
+
+		place [$OSX] {
+			control="frame_captiongrip"
+			width=max
+			height=50
 		}
-		
-		place [$OSX] { 
-			control="frame_captiongrip" 
-			height=50 
-			width=max 
-		}
-		
-		place { 
-			control="ToolWindowSheet" 
-			x=0 
-			y=21 
+
+		place {
+			control="ToolWindowSheet"
+			x=0
+			y=21
+			width=max
 			height=max
-			width=max 
 		}
 	}
 }

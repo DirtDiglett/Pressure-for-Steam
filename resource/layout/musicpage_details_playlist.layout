@@ -1,174 +1,177 @@
-"resource/layout/musicpage_details_playlist.layout"
-{
-	controls
-	{
-		PlaylistTitleLabel { controlname="Label" style="PlaylistTitleStyle" }
-		TracksInfoLabel { controlname="Label" style="TracksInfoLabelStyle" }
-		CoverImage { controlname="ImagePanel" style="CoverStyle" scaling=fit}
-		
-		PlayPlaylistButton { 
-			controlname="Button" 
-			labeltext="#Music_Playlist_Details_Play" 
-			style="ActionButtonStyle"
-			command="PlaylistPlayAction"
-		}
-		
-		AddPlaylistToQueueButton
-		{
-			controlname="Button" 
-			labelText="#Music_Playlist_Details_AddToQueue" 
-			style="AdditionalActionButtonStyle"
-			command="PlaylistAddToQueueAction"
-		}	
-
-		AddRandomTracksToPlaylistButton
-		{
-			controlname="Button" 
-			labelText="#Music_Playlist_Details_AddRandomTrack" 
-			style="AdditionalActionButtonStyle"
-			command="PlaylistAddRandomTracksAction"
-		}	
-		
-	}
-
-	styles
-	{
-		CMusicPage_Details_Playlist
-		{
+"resource/layout/musicpage_details_playlist.layout" {
+	styles {
+		CMusicPage_Details_Playlist {
 			bgcolor=none
-
 		}
 		
-		PlaylistTitleStyle
-		{
-			padding-bottom=8
-			padding-top=8
-			padding-left=10
-			padding-right=10
-			font-size=30
-			textcolor=Text
-			font-family=basefont
-			font-weight=400 
+		PlaylistTitleStyle {
 			bgcolor=BackgroundStart
-		}
-
-		TracksInfoLabelStyle
-		{
-			padding-bottom=10
-			padding-top=10
+			textcolor=Text
+			font-size=30
+			font-family=basefont
+			font-weight=400 
 			padding-left=10
+			padding-top=8
 			padding-right=10
-			font-size=15
-			textcolor=labeldisabled
-			font-family=basefont
-			font-weight=400 
-			bgcolor=none
+			padding-bottom=8
 		}
-		
-		TrackStyle
-		{
-			padding-bottom=10
-			padding-top=0
-			font-size=15
-			textcolor=Text2
-			font-family=basefont
-			font-weight=400 
-			bgcolor=none
-		}
-		
-		TrackStyle:hover
-		{
-			textcolor="text"
-		}
-		
-		CoverStyle
-		{
 
+		TracksInfoLabelStyle {
+			bgcolor=none
+			textcolor=labeldisabled
+			font-size=15
+			font-family=basefont
+			font-weight=400 
+			padding-left=10
+			padding-top=10
+			padding-bottom=10
+			padding-right=10
 		}
 		
-		AdditionalActionButtonStyle
-		{
+		TrackStyle {
+			bgcolor=none
+			textcolor=Text2
+			font-size=15
+			font-family=basefont
+			font-weight=400 
+			padding-top=0
+			padding-bottom=10
+		}
+		
+			TrackStyle:hover {
+				textcolor="text"
+			}
+		
+		CoverStyle {}
+		
+		AdditionalActionButtonStyle {
+			textcolor="label"
 			font-size=14
 			font-size=13 [$OSX]
 			font-family=basefont
-			textcolor="label"
-			padding-right=0
 			padding-left=-6
 			padding-top=6
+			padding-right=0
 			padding-bottom=-6
+
 			render_bg	{}
 		}
 		
-		AdditionalActionButtonStyle:hover
-		{
-			textcolor="labelfocus"
-		}
+			AdditionalActionButtonStyle:hover {
+				textcolor="labelfocus"
+			}
 		
 		
-			ActionButtonStyle
-		{   
-			inset="23 1 0 0"
-
+		ActionButtonStyle {   
+			bgcolor=none
 			font-family=basefont
 			font-size=16
 			font-weight=400
 			textcolor="white"
 			font-style=uppercase
-			bgcolor=none
+			inset="23 1 0 0"
 
-			render
-			{
+			render {
 				1="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
 			}
-			render_bg
-			{
+			render_bg {
 				// background fill
 				0="gradient( x0, y0, x1, y1+1, launch1, launch2 )"
-				}	
-			}
+			}	
+		}
 			
-		ActionButtonStyle:hover
-		{
-			textcolor="white"
-			render
-			{
-				0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
-			}	
-			render_bg
-			{
-			// background fill
-				0="gradient( x0, y0, x1, y1+1, launch0, launch2  )"
-			}			
+			ActionButtonStyle:hover {
+				textcolor="white"
+				
+				render {
+					0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
+				}	
+				render_bg {
+				// background fill
+					0="gradient( x0, y0, x1, y1+1, launch0, launch2  )"
+				}			
+			}
+		
+			ActionButtonStyle:active {
+				textcolor="white"
+				
+				render {
+					0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
+				}	
+				render_bg {
+				// background fill
+					0="gradient( x0, y0, x1, y1+1, focus, launch2 )"
+				}			
+			}
+	}
+	
+	layout {
+		region {
+			name=bodyregion
+			x=10
+			y=10
+			width=max
+			height=max
+			overflow=scroll-vertical
 		}
 		
-		ActionButtonStyle:active
-		{
-			textcolor="white"
-			render
-			{
-				0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
-			}	
-			render_bg
-			{
-			// background fill
-				0="gradient( x0, y0, x1, y1+1, focus, launch2 )"
-			}			
+		region {
+			name=headerregion
+			x=10
+			y=20
+			width=max
+			height=max
+			overflow=scroll-vertical
 		}
-}
-	layout
-	{
-		region { name=bodyregion x=10 y=10 width=max height=max overflow=scroll-vertical }		
-		region { name=headerregion x=10 y=20 width=max height=max overflow=scroll-vertical }
-		region { name=leftcolumn x=20 width=200 overflow=scroll-vertical }
-		region { name=trackcolumn width=max overflow=scroll-vertical }
 		
-		place { control="CoverImage" align=top width=200 height=200 }
+		region {
+			name=leftcolumn
+			x=20
+			width=200
+			overflow=scroll-vertical
+		}
 		
-		place { region=headerregion control=PlaylistTitleLabel,TracksInfoLabel,leftcolumn dir=down }
-		place { region=leftcolumn  dir=down start=TracksInfoLabel spacing=10
-			control=CoverImage,PlayPlaylistButton }
-		place { region=leftcolumn	dir=down start=PlayPlaylistButton 
-			control=AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton}
-		place { region=trackcolumn control=*MusicPageDetailsPlaylistTrack dir=down start=TracksInfoLabel x=230 width=max }
+		region {
+			name=trackcolumn
+			width=max
+			overflow=scroll-vertical
+		}
+		
+		place {
+			control="CoverImage"
+			align=top
+			width=200
+			height=200
+		}
+		
+		place {
+			control=PlaylistTitleLabel,TracksInfoLabel,leftcolumn
+			region=headerregion
+			dir=down
+		}
+		
+		place {
+			control=CoverImage,PlayPlaylistButton
+			region=leftcolumn
+			start=TracksInfoLabel
+			dir=down
+			spacing=10
+		}
+		
+		place {
+			control=AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton
+			region=leftcolumn
+			start=PlayPlaylistButton
+			dir=down
+		}
+		
+		place {
+			control=*MusicPageDetailsPlaylistTrack
+			region=trackcolumn
+			start=TracksInfoLabel
+			x=230
+			width=max
+			dir=down
+		}
 	}
 }
