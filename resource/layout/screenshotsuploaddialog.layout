@@ -1,108 +1,4 @@
 "resource/layout/screenshotsuploaddialog.layout" {
-	controls {
-		ScreenshotsUploadDialog {
-			title="#steam_screenshotsupload_title"
-		}
-
-		upload_question {
-			controlname="Label"
-			labeltext="#steam_upload_a_screenshot"
-		}
-		
-		upload_size {
-			controlname="Label"
-			labeltext="#steam_upload_size"
-		}
-		
-		storage_remaining {
-			controlname="Label"
-			labeltext="#steam_remaining_storage"
-		}
-		
-		upload_size_info {
-			controlname="Label"
-			labeltext="#steam_upload_size_info"
-		}
-		
-		storage_remaining_info {
-			controlname="Label"
-			labeltext="#steam_remaining_storage_info"
-		}
-		
-		visiblity_label {
-			controlname="Label"
-			labeltext="#steam_visibility"
-		}
-		
-		visibility_options {
-			controlname="ComboBox"
-			style=visibility_options
-			editable=0
-		}
-		
-		upload_button {
-			controlname="Button"
-			labeltext="#steam_upload"
-			command="upload"
-		}
-		
-		cancel_button {
-			controlname="Button"
-			labeltext="#vgui_cancel"
-			command="cancel"
-		}
-		
-		upload_progress {
-			controlname="ProgressBar"
-			style="SlimProgressBar"
-			visible=0
-			barinset=0
-			continuous=1
-		}
-		 
-		error_info {
-			controlname="Label"
-			labeltext="#steam_screenshots_error_info"
-			visible="0"
-			wrap="1"
-		}
-		
-		upload_info {
-			controlname="Label"
-			labeltext="#steam_screenshot_upload_info"
-			visible="0"
-			wrap="1"
-		}
-
-		shared_to_facebook_ok_label {
-			controlname="Label"
-			labeltext="#Overlay_ToBeSharedToFacebook"
-			visible="1"
-			wrap="1"
-		}
-		
-		shared_to_facebook_no_multi_label {
-			controlname="Label"
-			labeltext="#Overlay_WontBeSharedToFacebook"
-			visible="1"
-			wrap="1"
-		}
-		
-		shared_to_facebook_no_private_label {
-			controlname="Label"
-			labeltext="#Overlay_PrivateScreenshot"
-			visible="1"
-			wrap="1"
-		}
-
-		share_to_facebook_check_button {
-			controlname="CheckButton"
-			labeltext="#Overlay_Share"
-			visible="1"
-			command="changesharetofacebook"
-		}
-	}
-	
 	styles {
 		CScreenshotUploadDialog {
 			minimum-width=465	
@@ -137,14 +33,6 @@
 	}
 	
 	layout {
-		place [!$OSX]  { 
-			control="frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
 		place {
 			control="upload_question"
 			x=175
@@ -169,9 +57,9 @@
 			control="upload_progress"
 			y=85
 			width=max
+			height=2
 			margin-left=175
 			margin-right=25
-			height=2
 		}
 		
 		place {
@@ -207,8 +95,8 @@
 		place {
 			control="visibility_options"
 			start="visiblity_label"
-			y=-5
 			x=25
+			y=-5
 			dir=right
 		}
 		
@@ -243,12 +131,12 @@
 			control="cancel_button,upload_button" 
 			region="bottom"
 			align=right 
-			margin-right=14
-			spacing=8 
-			dir=right 
-			height=24
 			width=90
+			height=24
 			margin-top=14
+			margin-right=14
+			dir=right 
+			spacing=8
 		}
 	}
 }
