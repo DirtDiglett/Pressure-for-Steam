@@ -1,60 +1,4 @@
 "resource/layout/parentalunlockdialog.layout" {
-	controls {
-		ParentalUnlockDialog {
-			controlname="Frame"
-			title="#steam_parental_unlocktitle"
-			style="ParentalUnlockDialog"
-		}
-
-		Instructions {
-			controlname="Label"
-			style="Hey"
-			labeltext="#steam_parental_unlockinstructions"
-			wrap=1
-		}
-		
-		Instructions2 {
-			controlname="Label"
-			style="Hey2"
-			labeltext="#steam_parental_unlockinstructions2"
-			wrap=1
-		}
-
-		Password {
-			controlname="TextEntry"
-			style="Password"
-			command="DoParentalUnlock"
-			tabposition=1
-		}
-		
-		KeyImage {
-			controlname="Label"
-			style="Key"
-			zpos=-4
-		}
-
-		Recovery {
-			controlname="URLLabel"
-			labeltext="#steam_parental_norecoveryemail"
-			command="ShowRecoveryDialog"
-		}
-		
-		OK {
-			controlname="Button"
-			tabposition=2
-			command="DoParentalUnlock"
-			labeltext="#PropertyDialog_OK"
-			default=1
-		}
-		
-		Cancel {
-			controlname="Button"
-			tabposition=3
-			command="Close"
-			labeltext="#PropertyDialog_Cancel"
-		}
-	}
-	
 	styles {
 		ParentalUnlockDialog {
 			minimum-width = 400
@@ -68,38 +12,31 @@
 		}
 
 		Password {
-			minimum-height=50
-			font-size=40
 			bgcolor="none"
+			font-size=40
+			minimum-height=50
 		}
 
 		Hey {
-			font-size=18
 			textcolor=white
+			font-size=18
 		}
 		
 		Hey2 {
-			font-size=16
 			textcolor=none
+			font-size=16
 		}
 		
 		Key {
 			bgcolor=none
-			render_bg={}
 			image="graphics/keybg"
 			inset="20 0 0 0"
+
+			render_bg {}
 		}
 	}
 	
 	layout {
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
 		region {
 			name="top"
 			width=max
@@ -110,8 +47,8 @@
 
 		region {
 			name="bottom"
-			width=max
 			align=bottom
+			width=max
 			height=51
 		}
 
@@ -132,17 +69,17 @@
 			region="top"
 			x=20
 			y=10
-			spacing=8
 			width=max
+			spacing=8
 			dir=down
 		}
 		
 		place {
 			control="Password"
-			margin-top="75"
 			region="top"
-			margin-left=155
 			width=70
+			margin-left=155
+			margin-top="75"
 		}
 
 		place {
@@ -155,11 +92,11 @@
 		place {
 			control="OK,Cancel"
 			region="bottom"
-			height=24
 			align=right
-			spacing=8
+			height=24
 			margin-top=14
 			margin-right=14
+			spacing=8
 		}
 	}
 }
