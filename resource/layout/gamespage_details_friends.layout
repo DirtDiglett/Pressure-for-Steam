@@ -1,38 +1,9 @@
 "resource/layout/gamespage_details_friends.layout" {
-	controls {
-		friendsdetails { 
-			controlname="CGamesPage_Details_Friends" 
-			style="friendsdetails" 
-		}
-		
-		headerlabel { 
-			controlname="Label" 
-			style="gamedetails-headerlabel" 
-			labeltext="#Steam_Friends" 
-		}
-		
-		listplayingnow { 
-			controlname="CGamesPage_Details_Friends_List" 
-		}
-		
-		listplayever { 
-			controlname="CGamesPage_Details_Friends_List" 
-		}
-
-		viewall { 
-			controlname="Button" 
-			style="viewallbutton" 
-			labeltext="#Steam_ViewAllFriends" 
-			command="OpenFriendsDialog" 
-		}
-	}
-
 	colors {
 		GameDetailsFriends.ExtraVerticalSpacing=95	
 	}
 
 	styles {
-
 		// This overrides the default button.
 		button {
 			textcolor=blue
@@ -52,59 +23,60 @@
 		}
 
 		infolabel {
-			font-size=13
 			textcolor=red
+			font-size=13
 		}	
 		
 		friendlabelmore {
-			inset="-3 0 0 0"
-			font-size=13
 			textcolor="grey"
+			font-size=13
 			font-family=basefont
-		    
+		    inset="-3 0 0 0"
+
 		    render_bg {}
 		}
     		   
 		friendlabelmore:hover {
-			inset="-3 0 0 0"
-			font-size=13
 			textcolor="white"
+			font-size=13
 			font-family=basefont
-		    
+		    inset="-3 0 0 0"
+
 		    render_bg {}
     	}     
 	}
 
 	layout {
 		region { 
-			name=body 
-			margin=20 
-			width=max height=max 
+			name=body
+			width=max
+			height=max
+			margin=20
 		}
 		
 		place { 
-			region=body 
-			control=headerlabel 
-			width=max 
+			control=headerlabel
+			region=body
+			width=max
 		}
 		
 		place { 
+			control=listplayingnow,listplayever
 			region=body
 			y=35 
 			width=max
 			height=72
-			control=listplayingnow,listplayever
+			margin=0
 			dir=down
 			spacing=0
-			margin=0
 		}
 		
 		place {	
-			region=body 
 			control=viewall 
+			region=body 
 			align=bottom 
-			margin-bottom=5 
 			margin-left=-6
+			margin-bottom=5
 		}
 	}
 }
