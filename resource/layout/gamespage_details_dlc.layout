@@ -1,59 +1,11 @@
-"resource/layout/gamespage_details_dlc.layout"
-{
-	controls
-	{
-		dlcdetails {
-			controlname="CGamesPage_Details_DLC"
-			style="dlcdetails"
-		}
-
-		headerlabel {
-			controlname="Label"
-			style="gamedetails-headerlabel"
-			labeltext="#Steam_DLC_Details"
-		}
-
-		latestimage {
-			controlname="ImagePanel"
-			style="mostrecentimage"
-			scaling="fit"
-		}
-
-		overlayimage {
-			controlname"ImagePanel"
-			style="overlayimage"
-			scaling="fit"
-			zpos=2
-			image="resource/dlc_overlay"
-		}
-
-		latesttimelabel {
-			controlname="Label"
-			style="mostrecenttime"
-			labeltext="#Steam_DLC_LatestItemAdded"
-		}
-
-		dlclist {
-			controlname="ListPanel"
-			style="dlclist"
-		}
-
-		moredlc {
-			controlname="Button"
-			labeltext="#Steam_FindDLCInStore"
-			command="FindDLCInStore"
-		}
-	}
-
-	colors
-	{
+"resource/layout/gamespage_details_dlc.layout" {
+	colors {
 		RichText.InsetX "0"
 		RichText.InsetY "3" 
 		GameDetailsDLC.ExtraVerticalSpacing "229"
 	}
 
-	styles
-	{
+	styles {
 
 		// This overrides the default button.
 		button {
@@ -65,98 +17,95 @@
 			}
 		}
 			
-		button:hover {
-			textcolor=lightestBlue
-		}
+			button:hover {
+				textcolor=lightestBlue
+			}
 
 		dlcdetails { 
 			bgcolor=black65
 		}
 
-		bodycontent
-		{
+		bodycontent {
+			selectedtextcolor="Label"
 			textcolor="Label"
-			selectedtextcolor="Label"	
 			font-size=15
+
 			render_bg {}
 		}
 
-		"DLC_Uninstalled"
-		{
-			textcolor="labeldisabled"
+		"DLC_Uninstalled" {
 			selectedtextcolor="label"
+			textcolor="labeldisabled"
 		}
 
-		"DLC_Installed"
-		{
-			textcolor="text"
+		"DLC_Installed" {
 			selectedtextcolor="white"
+			textcolor="text"
 		}
 
-		"mostrecenttime"
-		{
+		"mostrecenttime" {
 			padding-top=3
 			minimum-width=256
 		}
 	}
 
-	layout
-	{
+	layout {
 		region {
 			name=body
-			margin=20
 			width=max
 			height=max
+			margin=20
 		}
 
 		place {
-			region=body
 			control=headerlabel
+			region=body
 			width=max
 		}
 
 		place {
+			control=latestimage
 			region=body
 			y=35
-			control=latestimage
 			width=257
 			height=120
 		}
 
 		place {
+			control=overlayimage
 			region=body
 			y=35
-			control=overlayimage
 			width=257
 			height=120 
 		}
 
 		place {
+			control=latesttimelabel
 			region=body
 			y=168
 			width=257
-			control=latesttimelabel
+			
 		}
 
 		place {
-			region=body
 			control=dlclist
+			region=body
 			width=max
 		}
 
 		place {
-			region=body
-			y=35
 			control=latestimage,dlclist
-			dir=right
+			region=body
+			y=35			
 			height=120
+			dir=right
 			spacing=9
 		}
 
 		place {
+			control=latesttimelabel,moredlc
 			region=body
 			y=165
-			control=latesttimelabel,moredlc
 			dir=right
 			spacing=10
 		}

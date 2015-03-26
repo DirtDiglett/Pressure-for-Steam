@@ -1,21 +1,4 @@
 "resource/layout/gamespage_details_communityfiles.layout" {
-	controls {
-		communityfilesdetails { 
-			controlname="CGamesPage_Details_CommunityFiles" 
-			style="communityfilesdetails" 
-		}
-		
-		workshopdetails { 
-			controlname="CWorkshopDetailsPanel" 
-		}
-		
-		viewall	{ 
-			controlname="Button" 
-			labeltext="#steam_community_files_view_all" 
-			command="ViewWorkshop" 
-		}
-	}
-
 	colors {
 		GameDetailsCommunityFiles.ExtraVerticalSpacing "150"
 		GameDetailsCommunityFiles.PanelSpacing "15"
@@ -24,7 +7,6 @@
 	}
 
 	styles {
-	
 		// This overrides the default button.
 		button {
 			textcolor=blue
@@ -52,34 +34,34 @@
 	layout {
 		region { 
 			name=body 
-			margin=20 
 			width=max 
-			height=max 
+			height=max
+			margin=20
 		}
 
 		place {
 			region=body
-			width=max
-			y=10
 			control=workshopdetails
+			y=10
+			width=max
+			margin=0
 			dir=right
 			spacing=8
-			margin=0
 		}
 		
 		place {
 			control=*communityfile
-			y=105
 			x=23
+			y=105
 			dir=right
 			spacing=4
 		}		
 		
 		place { 
-			region=body 
-			control=viewall 
-			align=bottom 
-			margin-bottom=5 
+			region=body
+			control=viewall
+			align=bottom
+			margin-bottom=5
 		}
 	}
 }
