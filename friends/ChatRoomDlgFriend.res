@@ -303,13 +303,7 @@
 		ListPanel {			
 			selectedbgcolor="blue"
 			textcolor="ChatDialog.HistoryColor"
-		}	
-				
-		EmoticonMenuItemStyle {
-			font-size=24
-			inset="-3 0 0 0"
-		}
-		
+		}			
 	}
 	
 	layout {
