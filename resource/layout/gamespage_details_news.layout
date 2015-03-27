@@ -37,13 +37,13 @@
 		place { 
 			control=headerlabel
 			region=body 
-			width=max 
+			width=max
 		}
 		
 		place { 
 			control=*newsitem
 			region=body
-			y=0 
+			y=15 
 			width=max
 			dir=down
 		}
