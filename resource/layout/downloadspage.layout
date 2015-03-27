@@ -1,21 +1,4 @@
 "resource/layout/downloadspage.layout" {
-	controls {
-		// the container
-		"DownloadsPage" {
-			"ControlName"		"CDownloadsPage"
-			Style=DownloadsPageStyle
-		}
-		
-		"downloadsummarypanel" {
-			"ControlName"	"DownloadSummaryPanel"
-		}
-	
-		"panel_list" {
-			"ControlName"	"SectionedListPanel"
-			Style=ListPanelStyle
-		}		
-	}
-	
 	styles {
 		SectionedListPanelCollapser {
 			inset = "0 -3 0 -2"
@@ -31,8 +14,7 @@
 		}
 
 		SectionHeaderStyle {
-			inset="0 2 0 0"
-			
+			inset="0 0 0 0"
 			font-style="outerglow,regular"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -50,7 +32,7 @@
 		}
 		
 		SectionHeaderStyleLabel {
-			inset = "0 1 0 0"
+			inset = "0 2 0 0"
 			textcolor="trueWhite"
 			font-style="regular"
 		}
@@ -93,7 +75,6 @@
 			control="downloadsummarypanel"
 			height=120
 		}
-		
 		place {
 			control="downloadsummarypanel,panel_list"
 			dir=down

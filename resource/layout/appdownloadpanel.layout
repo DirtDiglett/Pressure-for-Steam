@@ -1,485 +1,80 @@
-"resource/layout/appdownloadpanel.layout" 
-{
-	
-	controls 
-	{
-
-
-		appdownloadpanel
-		{
-
-			tall="110"
-			
-			style=panelStyle
-		
-		}
-	
-
-
-		gameimage  // set the initial size on on the gameimage; it's loaded async, so it may not know the image size immediately
-
-		{
-
-			
-			controlname="ImagePanel"
-			
-			style="gameImagePanel" 
-		
-		}		
-		
-		
-		namelabel 
-		{
-			
-			controlname="Label"
-			
-			labelText="%name%"
-			
-			style="ModuleHeading" 
-		
-		}
-	
-	
-		
-		dashlabel
-		{
-			
-			controlname="Label"	
-			
-			labelText=""
-		
-		}
-
-
-		
-launchbutton 
-		{
-			
-			controlname="Button"
-			
-			style="DetailsLaunchButton"
-			
-			labelText="#Steam_LaunchGame"
-			
-			zpos="1"
-		}
-
-		
-		
-		downloadprogressbar 
-		{
-			
-			controlname="ProgressBar"
-			
-			style="SlimProgressBar"
-			
-			barinset=0
-			
-			continuous=1
-			
-			group="ShowWhileDownloading"
-			
-			style="SlimProgressBar"
-		
-		}
-
-		
-
-		settingslink // right-mid column
-		
-		{
-			
-			controlname="URLlabel"
-			
-			style="settingslink"
-		
-		}
-
-	
-	
-		downloadtotallabel 
-		{
-			
-			controlname="Label"
-			
-			labelText="#steam_downloads_gamesize_update"
-			
-			style="label2"
-		
-		}
-		
-		
-
-		downloadtotalfield 
-		{
-			
-			controlname="Label"
-			
-			labelText="%download_totals%"
-			
-			style="label"
-			
-		}
-
-
-		starttimelabel 
-		{
-			
-			controlname="Label"
-			
-			labelText="#steam_downloads_initiated"
-			
-			style=Label2
-			
-			group="ShowWhileDownloading"
-		
-		}
-
-		
-
-		starttimefield 
-		{
-			
-			controlname="Label"
-			
-			labelText="%time_started%"
-			
-			style=Label
-			
-			group="ShowWhileDownloading"
-		
-		}
-		
-		
-
-		timeremaininglabel 
-		{
-			
-			controlname="Label"
-			
-			labelText="#steam_downloads_timeremaining"
-			
-			style="label2"
-			
-			group="ShowWhileDownloading"
-		
-		}
-		
-		
-
-		timeremainingfield 
-		{
-			
-
-			controlname="Label"
-			
-			labelText="%time_remaining%"
-			
-			style="label"
-			
-			group="ShowWhileDownloading"
-		
-		}
-		
-		
-
-		timecompletedlabel 
-		{
-			
-			controlname="Label"
-			
-			labelText="#steam_downloads_timecompleted"
-			
-			style="label2"
-			
-			group="ShowWhenComplete"
-		
-		}
-		
-		
-
-		timecompletedfield 
-		{ 
-			
-			controlname="Label"	
-			
-			labelText="%time_completed%"
-			
-			style="label"
-			
-			group="ShowWhenComplete"
-		
-		}
-
-		
-
-		updatetypelabel 
-		{
-			
-			controlname="Label"
-			
-			labelText="#steam_downloads_suspended"
-			
-			style=ModuleHeading2
-		
-		}
-
-		
-		
-		removefromqueuebutton 
-		{
-			
-			controlname="Button"
-			
-			style="SmRemoveButton"
-			
-			tooltiptext="#steam_downloads_remove"
-		
-		}
-
-		
-
-		topofqueuebutton 
-		{
-			
-			controlname="Button"
-			
-			style="topOfQueueButton"
-			
-			tooltiptext="#steam_downloads_topofqueue"
-			
-			group="HideOnCompletion"
-		
-		}
-		
-		
-
-		newslink
-		{ 
-			
-			controlname="URLlabel"
-			
-			style="links"
-			
-			labelText="#steam_downloads_updatenews" 
-		
-		}
-	
-	}
-	
-	
-
-	colors 
-	{
-		
-		// Play Button Normal
-		
-			PlayAntiAliasingTop "121 144 29 255"
-		
-			PlayAntiAliasingBottom "88 109 18 255"
-		
-		
-			PlayLineTop "209 248 48 255"
-		
-			PlayLineTopAntiAliasing "190 230 37 255"
-		
-		
-			PlayCornerRoundingBottom "129 163 19 255"
-		
-		
-			PlayGradientStart "175 217 28 255"
-		
-			PlayGradientEnd "136 173 19 255"
-				
-			
-
-		// Hover
-			
-			PlayHoverAntiAliasingTop "138 147 39 255"
-			
-			PlayHoverAntiAliasingBottom "113 132 22 255"
-			
-			
-			PlayHoverLineTop "238 254 66 255"
-			
-			PlayHoverLineTopAntiAliasing "227 248 51 255"
-			
-			
-			PlayHoverCornerRoundingBottom "170 201 25 255"
-			
-			
-			PlayHoverGradientStart "216 242 38 255"
-			
-			PlayHoverGradientEnd "180 214 26 255"	
-						
-			
-
-		// Active	
-			
-			PlayActiveAntiAliasingTop "97 133 22 255"
-			
-			PlayActiveAntiAliasingBottom "67 85 15 255"
-			
-			
-			PlayActiveLineTop "140 190 24 255"
-			
-			PlayActiveLineTopAntiAliasing "137 186 23 255"
-			
-			
-			PlayActiveCornerRoundingBottom "94 123 14 255"
-			
-			
-			PlayActiveGradientStart "131 176 20 255"
-			
-			PlayActiveGradientEnd "99 130 14 255"	
-	
-	}
-	
-	
-
-	styles
-	{
-		
-		panelStyle 
-		{
-			
+"resource/layout/appdownloadpanel.layout" {
+	styles {
+		panelStyle {
 			bgcolor=none
 			
-			render {}
-			
-			render_bg {}
-		
+			render {
+				0="fill(x0,y0,x1,y0+1, black65)"
+				1="fill(x0,y0+1,x1,y0+8, darkGreyEnd)"
+				2="fill(x0,y0+1,x1,y0+2, grey25)"
+			}
+			render_bg {
+				
+				1="gradient(x0,y1,x1,y1+6, black65, none)"
+				2="fill(x0,y0,x1,y1, darkGreyEnd)"
+				3="fill(x0,y0,x1,y0+1, greyHighlight)"
+			}
 		}
 		
-		
-
-		panelStyleHighlight 
-		{
-			
+		panelStyleHighlight {
 			render_bg {}			
-		
 		}
 
-	
-
-		links 
-		{
-			
+		links {
 			font-size=13
-			
 			font-style=normal
-			
 			textcolor="blue"
-			
 			font-family=basefont
-			
 			font-style="regular"
-			
 			padding-left=0
-			
 			padding-top=0
-			
 			padding-bottom=0
 		
-			
-
-			render_bg 
-			{
-				
+			render_bg {
 				0="image(x1+3,y0+2,x1+17,y1, graphics/news)"
-			
 			}
+		}			
 		
-		}
-		
-			
-		
-		links:hover
-		{
-				
+		links:hover {
 			font-size=13
-				
 			font-style=normal
-				
 			textcolor="lightestBlue"
-				
 			font-family=basefont
-				
 			font-style="regular"
-			
 		}
 
-			
-
-		links:disabled 
-		{
-				
+		links:disabled {
 			textcolor="grey"
-			
 		}
 		
-		
-
-		label 
-		{
-	
+		label {
 			font-size=13
-			
-		
 		}
-		
-		
 
 		// For the "Auto-Updates Enabled"
-		
-		
-		settingslink 
-		{
-			
+		settingslink {
 			font-size=13
-			
 			font-style=regular
-			
 			textcolor="blue"
-			
 			font-family=basefont
 			
-			
-			render_bg 
-			{
-				
-				0="image(x1+3, y0+2, x1+17, y1, graphics/auto_downloads)"
-			
-}
+			render_bg {
+				0="image(x1+3, y0+3, x1+17, y1, graphics/auto_downloads)"
+			}
 		}
-
 			
-		settingslink:hover
-		{
-				
+		settingslink:hover {
 			font-size=13
-				
 			font-style=regular
-				
 			textcolor="lightestBlue"
-				
 			font-family=basefont
-				
 			padding-left=0
-				
 			padding-top=0
-				
 			padding-bottom=0
-			
 		}
 
-			
-
-		settingslink:disabled 
-		{
-				
+		settingslink:disabled {
 			textcolor="grey50"
-			
 		}
 
 		
@@ -551,27 +146,16 @@ launchbutton
 				
 		
 
-		gameImagePanel 
-		{   
-			
+		gameImagePanel {
 			inset="0 0 0 0"
-			
-			
-			render_bg {
-				
-				0="gradient(x0+4,y1-8,x1-4,y1-4, black90, none)"
-			
-			}
-			
-			
-			render {}
 		
+			render {}
+			render_bg {
+				0="gradient(x0,y1-12,x1,y1-4, black65, none)"
+			}
 		}
 		
-		
-
-		gameImagePanelHighlight 
-		{   
+		gameImagePanelHighlight {   
 			
 			inset="0 0 0 0"
 			
@@ -916,14 +500,14 @@ launchbutton
 		place { 
 			control="namelabel" 
 			region="column2" 
-			margin-top=17 
+			margin-top=18
 			margin-left=0 
 		}
 		
 		place { 
 			control="updatetypelabel"
 			region="column2"
-			margin-top=45
+			margin-top=47
 			align=left
 		}
 		
