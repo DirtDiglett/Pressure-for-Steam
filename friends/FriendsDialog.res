@@ -275,9 +275,9 @@
 			minimum-width=110
 			
 			render_bg {
-				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
-				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 			}
 		}
 		
@@ -290,9 +290,9 @@
 			minimum-width=110
 			
 			render_bg {
-				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/left)"
-				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/right)"
-				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/inner)"
+				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
+				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
+				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
 			}
 		}
 		
@@ -306,14 +306,85 @@
 				textcolor="darkGreyEnd"
 				padding-left=0
 			}
-			
+
+				FriendsSearch:focus [!$OSX] {
+					render_bg {
+						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+					}
+				}
+
+				FriendsSearch:active [!$OSX] {
+					render_bg {
+						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+					}
+				}
+
+
+				FriendsSearch:focus [$OSX] {
+					render_bg {
+						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
+						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+					}
+				}
+
+				FriendsSearch:active [$OSX] {
+					render_bg {
+						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
+						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+					}
+				}
+
 			// Default State when nothing in it.
 			FriendsSearch:empty [!$OSX] {
 				textcolor="lightestGrey"
 				font-family=basefont
 				font-style=italic
 				padding-left=4
+
+				render_bg {
+					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
+					2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
+					3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+				}
 			}
+
+				FriendsSearch:empty:focus [!$OSX] {
+					render_bg {
+						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+					}
+				}
+
+				FriendsSearch:empty:active [!$OSX] {
+					render_bg {
+						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+					}
+				}
+
+				FriendsSearch:empty:focus [$OSX] {
+					render_bg {
+						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
+						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+					}
+				}
+
+				FriendsSearch:empty:active [$OSX] {
+					render_bg {
+						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
+						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
+						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+					}
+				}
 			
 			FriendsSearch:empty [$OSX] {
 				textcolor="lightestGrey"
