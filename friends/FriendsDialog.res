@@ -35,7 +35,7 @@
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 				
-				8="image_tiled(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
+				8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
 					
 				9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
 				10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
@@ -79,7 +79,7 @@
 					// Create the 1px Highlight on top
 					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 					
-					8="image_tiled(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
+					8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
 						
 					9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
 					10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
@@ -277,7 +277,7 @@
 			render_bg {
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 			}
 		}
 		
@@ -292,7 +292,7 @@
 			render_bg {
 				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
 				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-				3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+				3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
 			}
 		}
 		
@@ -311,7 +311,7 @@
 					render_bg {
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 					}
 				}
 
@@ -319,7 +319,7 @@
 					render_bg {
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 					}
 				}
 
@@ -328,7 +328,7 @@
 					render_bg {
 						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
 						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
 					}
 				}
 
@@ -336,7 +336,7 @@
 					render_bg {
 						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
 						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
 					}
 				}
 
@@ -350,7 +350,7 @@
 				render_bg {
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
 					2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-					3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+					3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
 				}
 			}
 
@@ -358,7 +358,7 @@
 					render_bg {
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 					}
 				}
 
@@ -366,7 +366,7 @@
 					render_bg {
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 					}
 				}
 
@@ -374,7 +374,7 @@
 					render_bg {
 						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
 						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
 					}
 				}
 
@@ -382,7 +382,7 @@
 					render_bg {
 						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
 						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_tiled(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
+						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
 					}
 				}
 			
