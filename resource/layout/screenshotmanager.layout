@@ -128,6 +128,7 @@
 			textcolor= "darkestGrey"
 			font-family=basefont
 			font-size=13
+			padding-left=14
 			inset-left=0
 			inset-top=0
 			
