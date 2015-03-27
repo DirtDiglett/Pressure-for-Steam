@@ -68,6 +68,7 @@
 			start="PermissionsHeader"
 			y=4
 			width=350
+			height=38
 			dir=down
 		}
 

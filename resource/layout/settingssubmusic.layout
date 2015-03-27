@@ -1,4 +1,19 @@
 "resource/layout/settingssubmusic.layout" {
+	styles {
+		ListPanelColumnheader [!$OSX] {
+			bgcolor="none"
+			textcolor= "white"
+			font-family=semibold
+			font-size=14
+			font-weight=400
+			font-style="regular,normal"
+			inset= "0 0 0 0"
+	
+			render {}
+			render_bg {} 
+		}
+	}
+
 	layout {
 		place {
 			control=LibraryHeader

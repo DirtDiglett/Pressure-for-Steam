@@ -296,8 +296,8 @@
 			textcolor="white"
 			font-family=basefont
 			font-size=14
-			font-weight=400		
-				
+			font-weight=400
+							
 			render {}
 
 			render_bg {	
@@ -538,7 +538,7 @@
 			selectedtextcolor="red" //test
 			selectedbgcolor="blue"
 			textcolor="text2"
-			inset="0 1 -1 0"
+			inset="0 0 -1 0"
 
 			render {}
 			render_bg {}
