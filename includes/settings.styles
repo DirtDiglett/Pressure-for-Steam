@@ -4,14 +4,16 @@
 		// Fonts
 		// ***********************************************	
 		
-		basefont = "Segoe UI"
-		semibold = "Segoe UI Semibold"
+		basefont = "Arial"
+		semibold = "Arial"
 			
 		headerfont = "Bebas Neue Bold"
-			
+		
+		basefont = "Segoe UI" [$WINDOWS]
+		semibold = "Segoe UI Semibold" [$WINDOWS]
+
 		basefont = "Helvetica" [$OSX]
 		semibold = "Helvetica Bold" [$OSX]
-		smallFontSize = "14"
 
 		// *********************************************** 
 		// Spacing
