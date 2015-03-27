@@ -480,9 +480,8 @@ styles {
 	}
 
 	Menu {
-		bgcolor="none"
-		padding=8
-		inset="0 4 0 4"
+		bgcolor="white"
+		inset="0 5 0 5"
 		
 		render {}
 		render_bg {
@@ -553,12 +552,17 @@ styles {
 			textcolor="white"
 		}
 		
+	EmoticonMenuItemStyle {
+		render {}
+		render_bg {}
+	}
+
 	MenuItem {
 		font-family=basefont
 		textcolor  = white
 		font-size=14
-		inset="-4 0 0 0"
-		padding=6
+		inset="0 0 0 0"
+		padding=0
 		bgcolor="none"
 		font-style="outerglow"
 		font-outerglow-color="darkestGrey"
@@ -578,7 +582,7 @@ styles {
 			font-style="none"
 			
 			render_bg {
-				0="gradient(x0+1, y0, x1-1, y1, blue, darkestBlue)"
+				0="gradient(x0+1, y0+1, x1-1, y1, blue, darkestBlue)"
 				1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
 			}	
 		}
@@ -597,10 +601,10 @@ styles {
 	MenuSeparator {
 		bgcolor=none
 		textcolor="none"
-		inset="0 0 6 0"
+		inset="0 0 0 0"
 		
 		render {
-			0="fill(x0,y0+5,x1,y0+6, black90)"
+			0="fill(x0,y0+5,x1,y0+6, black65)"
 			1="fill(x0+1,y0+6,x1,y0+7, grey50)"
 		}
 	}
