@@ -222,7 +222,7 @@
 			selectedbgcolor= "blue"
 			textcolor= "white"
 			font-size=13
-			inset= "10 10 0 0"
+			inset= "0 0 0 0"
 
 			render {}
 			render_bg {}
@@ -517,7 +517,7 @@
 			bgcolor=darkestGrey
 			selectedbgcolor="blue"
 			selectedtextcolor="red"
-			inset="5 0 0 0"
+			inset="0 0 0 0"
 			
 			render {}
 			render_bg {}
