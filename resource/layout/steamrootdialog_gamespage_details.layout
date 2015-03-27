@@ -61,52 +61,6 @@
 				render {}
 				render_bg {}
 			}
-			
-		ListPanelSectionCollapser {
-			padding-top=0
-			padding-bottom=0
-			inset="-6 0 0 0"
-			image="graphics/icon_collapse"
-			
-			render_bg {
-				0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
-				1="fill(x0, y0, x1, y0+1, greyHighlight)"
-			}   
-		}
-		
-			ListPanelSectionCollapser:selected {
-				image="graphics/icon_expand"
-			}
-		
-		ListPanelSectionHeader [$OSX] {     
-			inset="0 1 0 0"
-			textcolor=white
-			font-family=semibold
-			font-style="outerglow"
-			font-outerglow-color="darkGreyEnd"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
-						
-			render_bg {
-				0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
-				1="fill(x0, y0, x1, y0+1, greyHighlight)"
-			}    
-		} 
-
-		ListPanelSectionHeader [!$OSX] {     
-			textcolor=white
-			inset="0 0 0 0"
-			font-family=semibold
-			font-style="outerglow"
-			font-outerglow-color="darkGreyEnd"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
-									
-			render_bg {
-				0="gradient(x0, y0+1, x1, y1, grey, lightGreyEnd)"
-				1="fill(x0, y0, x1, y0+1, greyHighlight)"
-			}    
-		} 
 
 		"GamesPage_Details ListPanelDragger" {
 			bgcolor="none"
