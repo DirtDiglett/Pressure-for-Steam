@@ -1,5 +1,6 @@
 "friends/GameInviteNotification.res" {
-	Notification [$OSX] {
+	styles {
+		Notification [$OSX] {
 			bgcolor=none
 			font-family=basefont
 			font-size=15

@@ -680,7 +680,6 @@
 			render {
 				0="fill( x0, y0, x1, y1, black65 )"
 				//1="gradient_horizontal( x0+170, y0, x0+375, y1, black50, black50 )"
-				
 			}
 		}
 	}
@@ -690,7 +689,7 @@
 		place { 
 			control="GraphPanel"
 			width=max
-			height=max
+			height=500
 			margin-top=13
 		}
 
@@ -699,7 +698,7 @@
 			control="pauseresumeallbutton" 
 			height=43 
 			align=right 
-			y=24 
+			y=39 
 			margin-right=12 
 		}
 		
