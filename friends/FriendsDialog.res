@@ -65,10 +65,6 @@
 				font-size=1
 				font-weight=400
 				inset="0 4 0 0" [$OSX]
-
-				render {
-					0="fill(x0+1,y0+143,x1-1,y0+144, darkGreyEnd)"
-				}
 				
 				render_bg {
 					// Creates the top section
@@ -171,7 +167,7 @@
 		      
 		    render_bg {
 			    // background fill to overwrite the normal listPanel background
-				0  = "fill( x0, y0, x1, y1, darkestGrey)"
+				//0  = "fill( x0, y0, x1, y1, darkestGrey)"
 		    }    
 	    }
 	    
@@ -190,11 +186,13 @@
     
 		// The actual whole dialog window itself.
 		FriendsPanel {	
-			bgcolor="none"
+			bgcolor="darkestGrey"
 			
-			render {}
+			render {
+				0="fill(x0,y0+143,x1,y0+144, darkestGrey)"
+			}
 			render_bg {
-				0="fill(x0,y0,x1,y1, darkestGrey)"
+			//	0="fill(x0,y0,x1,y1, darkestGrey)"
 				1="fill( x0, y1-16, x1, y1-15, darkestGrey )"
 				2="fill( x0+1, y1-15, x1-1, y1-14, greyHighlight )"
 				3="gradient( x0+1, y1-14, x1-1, y1-1, grey, lightGreyEnd )"
