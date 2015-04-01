@@ -1,4 +1,8 @@
 "resource/layout/toolwindow.layout" {
+	colors {
+		PropertySheet.FlashTabColor "orange"
+	}
+
 	styles {
 		ToolWindow {
 			render_bg {
@@ -53,18 +57,34 @@
 			minimum-width=24
 			minimum-height=24
 			padding-right=8
+			inset-top=5
+
+			textcolor=yellow
 
 			render_bg {}
 		}
 
+		TabMenuButton {
+			inset-top=5
+		}
+
 		TabMenuButtonFlash {
+			render {}
+
 			render_bg {
-				0="fill(x0+6,y0+6,x1-6,y1-6,Focus)"
+				0="image(x1-9,y0+3,x1-2,y0+11, graphics/alert)"
 			}
 		}
 
 		TabMenuItemFlash {
-			textcolor="orange"
+			textcolor=darkestGrey
+			font-style=none
+
+			render_bg {
+				0="fill(x0+1,y0,x1-1,y1, orange)"
+				1="fill(x0+1,y0,x0+2,y1, lightestOrange)"
+				2="fill(x1-2,y0,x1-1,y1, lightestOrange)"
+			}
 		}
 
 		PageTab {
