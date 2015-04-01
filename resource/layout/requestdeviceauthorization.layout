@@ -1,0 +1,74 @@
+"resource/layout/requestdeviceauthorization.layout" {
+	styles {
+		BigLable {
+			textcolor=Text
+			font-size=20
+		}	
+	}
+		
+	layout {
+		place {
+			control="DialogTitle"
+			x=16
+			y=32
+			width=360
+			height=24
+		}
+
+		place {
+			control="ToLabel"
+			x=16
+			y=74
+			width=360
+			height=24
+		}
+
+		place {
+			control="FromLabel"
+			x=16
+			y=136
+			width=360
+			height=34
+		}
+
+		place {
+			control="DialogText"
+			x=16
+			y=100
+			width=350
+			height=96
+		}
+
+		place {
+			control="DescriptionLabel"
+			x=16
+			y=180
+			width=360
+			height=24
+		}
+
+		place {
+			control="DescriptionEntry"
+			x=16
+			y=200
+			width=350
+			height=24
+		}
+
+		place {
+			control="SendButton"
+			x=16
+			y=280
+			width=164
+			height=24
+		}
+
+		place {
+			control="CancelButton"
+			x=200
+			y=280
+			width=164
+			height=24
+		}
+	}
+}
