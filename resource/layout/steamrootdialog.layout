@@ -99,7 +99,7 @@
 
 			render_bg {
 				// top area and graphic
-				0="gradient( x0, y0, x1, y0+90, grey, darkGreyEnd )"	
+				0="gradient( x0, y0, x1, y0+90, grey, lightGreyEnd )"	
 				
 				1="image(x1-380, y0, x1-20, y0+90, graphics/piston)" // Background Steam Piston
 				
