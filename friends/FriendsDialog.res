@@ -19,6 +19,10 @@
 			font-size=1
 			font-weight=400
 			
+			render {
+				0="fill(x0+1,y0+143,x1-1,y0+144, darkGreyEnd)"
+			}
+
 			render_bg {
 				// Creates the top section
 				0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, darkGreyEnd )"
@@ -51,7 +55,6 @@
 				20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
 				
 				21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
-				22="fill(x0+1,y0+142,x1-1,y0+143, darkGreyEnd)"
 			}
 	    }
 	
@@ -62,6 +65,10 @@
 				font-size=1
 				font-weight=400
 				inset="0 4 0 0" [$OSX]
+
+				render {
+					0="fill(x0+1,y0+143,x1-1,y0+144, darkGreyEnd)"
+				}
 				
 				render_bg {
 					// Creates the top section
@@ -95,7 +102,6 @@
 					20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
 					
 					21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
-					22="fill(x0+1,y0+143,x1-1,y0+144, darkGreyEnd)"
 				}
 			}
 	
