@@ -2,7 +2,7 @@
 	styles {
 		BigLable {
 			textcolor=Text
-			font-size=18
+			font-size=20
 		}	
 	}
 		
@@ -10,7 +10,7 @@
 		place {
 			control="DialogTitle"
 			x=16
-			y=24
+			y=32
 			width=360
 			height=24
 		}
@@ -18,7 +18,7 @@
 		place {
 			control="DialogText"
 			x=16
-			y=52
+			y=74
 			width=360
 			height=200
 		}
