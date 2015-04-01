@@ -3,9 +3,7 @@
 		SlimProgressBar {
 			textcolor="lightestGreen"
 
-			render	{
-				1="fill( x0, y1-1, x1, y1, darkgreen18 )" //Fake Line for Download Bar
-			}
+			render	{}
 			render_bg {
 				0="fill( x0-1, y0-1, x1+1, y1+1, black )" // Fill/Frame
 				//Set at this point for the people downloading 10-99 downloads at once
@@ -25,7 +23,6 @@
 			inset="0 2 0 0"
 
 			render_bg {
-				0="fill( x0-20, y0, x0+1, y1, none )"
 				//1="image( x0-20, y0, x0-6, y1, graphics/icons/downloads )"
 			}
 		}
@@ -40,9 +37,7 @@
 			font-style="normal,outerglow"
 			font-weight=400
 
-			render_bg {
-				0="fill( x0-20, y0, x0+1, y1, none )"
-			}
+			render_bg {}
 		}
 
 		StatusLabelDim {
