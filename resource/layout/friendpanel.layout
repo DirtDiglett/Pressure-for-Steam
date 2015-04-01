@@ -73,6 +73,7 @@
 		MobileStatusStyle {
 			image="graphics/icon_status_mobile"
 			padding-left=4
+			inset-top=2
 		}
 
 		WebStatusStyleInGame {
