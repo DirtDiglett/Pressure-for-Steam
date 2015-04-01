@@ -3,6 +3,10 @@
 		CChatRoomDlg {
 			bgcolor="none"
 			inset="0 0 0 0"	
+
+			render {
+				0="fill(x0,y0+57, x1, y0+58, darkestGrey)"
+			}
 			
 			render_bg {
 			   	-1="fill(x0,y0+20,x1,y1, darkestGrey)"
