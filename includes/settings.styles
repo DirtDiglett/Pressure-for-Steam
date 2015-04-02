@@ -9,11 +9,11 @@
 			
 		headerfont = "Bebas Neue Bold"
 		
-		basefont = "Noto Sans" [$WINDOWS]
-		semibold = "Noto Sans" [$WINDOWS]
+	//	basefont = "Noto Sans" [$WINDOWS]
+	//	semibold = "Noto Sans" [$WINDOWS]
 
-		basefont = "Helvetica" [$OSX]
-		semibold = "Helvetica Bold" [$OSX]
+	//	basefont = "Helvetica" [$OSX]
+	//	semibold = "Helvetica Bold" [$OSX]
 
 		// *********************************************** 
 		// Spacing
