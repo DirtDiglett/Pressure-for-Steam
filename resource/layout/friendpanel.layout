@@ -14,8 +14,8 @@
 
 		namestyle {
 			font-family=basefont
-			font-size=15
-			font-weight=bold		
+			font-size=16
+			font-weight=600		
 			//font-style="outerglow"
 			//font-outerglow-color="darkestGrey"
 			//font-outerglow-offset=1
@@ -123,45 +123,26 @@
 		
 		place [$OSX] { 
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" 
-<<<<<<< HEAD
-			x=48
-=======
-			x=46 
->>>>>>> origin/master
+			x=46
 			y=5 
 		}
 
 		place [!$OSX] { 
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" 
-<<<<<<< HEAD
-			x=48 
-			y=2
-			spacing=2  
-=======
 			x=46 
 			y=2 
-			spacing=2 
->>>>>>> origin/master
+			spacing=2
 		}
 
 		place { 		
 			control="StatusLabel"
-<<<<<<< HEAD
-			x=48 
-			y=16
-=======
 			x=46 
 			y=16 
->>>>>>> origin/master
 		}
 
 		place { 
 			control="GameLabel" 
-<<<<<<< HEAD
-			x=48 
-=======
-			x=46 
->>>>>>> origin/master
+			x=46
 			y=30 
 		}
 		
@@ -176,11 +157,7 @@
 		// these controls are shown for friendship requests
 		place { 
 			control="AcceptLink,IgnoreLink,BlockLink"
-<<<<<<< HEAD
-			x=48
-=======
 			x=46
->>>>>>> origin/master
 			y=27
 			spacing=10
 		}
@@ -195,32 +172,20 @@
 		
 		place {
 			control="ControlPanelLink"
-<<<<<<< HEAD
-			x=48
-=======
 			x=46
->>>>>>> origin/master
 			y=27
 		}
 
 		place {
 			control="SuggestedImage,SuggestedLabel"
-<<<<<<< HEAD
-			x=48
-=======
 			x=46
->>>>>>> origin/master
 			y=19
 			spacing=4
 		}
 		
 		place {
 			control="SuggestedInvite,SuggestedIgnore"
-<<<<<<< HEAD
-			x=48
-=======
 			x=46
->>>>>>> origin/master
 			y=31
 			spacing=8
 		}

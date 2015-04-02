@@ -281,11 +281,10 @@
 			selectedbgcolor="blue"
 			selectedtextcolor="trueWhite"
 			textcolor="ChatDialog.HistoryColor"
-			inset-top=8
+			font-size=15
+			inset="0 8 0 0"
 			
-			render {
-				0="image_scale(x0,y1-14,x1,y1, graphics/chatbottom)"
-			}
+			render {}
 		}
 		
 		"RichText url" {}
