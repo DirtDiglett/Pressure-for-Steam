@@ -35,7 +35,7 @@
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
 			textcolor="ChatDialog.HistoryColor"
-			font-size=15
+			font-size=16
 		}
 		
 		friends_chat_event {

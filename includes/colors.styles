@@ -29,6 +29,7 @@
 		black75="0 0 0 191" // 75% Opacity Black
 		black65="0 0 0 165" // 65% Opacity Black
 		black40="0 0 0 102" // 40% Opacity Black
+		black25="0 0 0 65"
 
 		white20="255 255 255 65"
 		white10="255 255 255 25" // 10% Opacity White
