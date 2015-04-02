@@ -9,18 +9,18 @@
 		trueWhite="255 255 255 255"
 		white="251 251 251 255"
 
-		lightestGrey="139 139 139 255"
-		lightestGreyHighlight="77 77 77 255"
-		greyHighlight="67 67 67 255"
+		lightestGrey="166 1 156 255"
+		lightestGreyHighlight="166 1 156 255"
+		greyHighlight="166 1 156 255"
 		
-		lighterGrey="70 70 70 255"
+		lighterGrey="166 1 156 255"
 		
-		grey="60 60 60 255"
-		lightGreyEnd="42 42 42 255"
-		darkGreyEnd="29 29 29 255"
-		darkestGrey="16 16 16 255"
+		grey="149 1 140 255"
+		lightGreyEnd="109 1 103 255"
+		darkGreyEnd="109 1 103 255"
+		darkestGrey="2 1 2 255"
 
-		darkGrey="26 26 26 255"
+		darkGrey="72 1 68 255"
 		
 		groupGrey="14 14 14 255"// Group Chat Related Only
 
@@ -42,8 +42,6 @@
 		lightestGreen="209 248 48 255"
 		green="175 218 28 255"
 		darkestGreen="136 172 19 255"
-
-		darkgreen18="14 68 0 46" //18% opacity used for Downloads Bar
 		
 		// Blues
 		lightestBlue="91 225 252 255"
@@ -81,5 +79,30 @@
 		
 		// Disabled Button
 		bottomDarkPixelsDisabled = "24 24 24 255"
+
+		// Colors used for the large buttons such as PLAY INSTALL STREAM etc.
+		// Green
+		greenButtonHighlight = "193 242 31 255"
+		greenButtonHighlightAntiAliasing = "183 228 29 255"
+		greenButtonGradientStart = "175 218 28 255"
+		greenButtonGradientEnd = "163 204 27 255"
+		greenButtonAntiAliasedCorners = "163 204 27 100"
+		greenButtonDarkenedCorners = "163 204 27 191"
+
+			// Green Hover
+			greenButtonHoverHighlight = "203 255 33 255"
+			greenButtonHoverHighlightAntiAliasing = "197 248 32 255"
+			greenButtonHoverGradientStart = "193 242 31 255"
+			greenButtonHoverGradientEnd = "186 230 30 255"
+			greenButtonHoverAntiAliasedCorners = "186 230 30 100"
+			greenButtonHoverDarkenedCorners = "186 230 30 191"
+
+			// Green Active
+			greenButtonActiveHighlight = "152 191 25 255"
+			greenButtonActiveHighlightAntiAliasing = "152 191 25 255"
+			greenButtonActiveGradientStart = "152 191 25 255"
+			greenButtonActiveGradientEnd = "145 179 23 255"
+			greenButtonActiveAntiAliasedCorners = "145 179 23 100"
+			greenButtonActiveDarkenedCorners = "145 179 23 191"			
 	}
 }
