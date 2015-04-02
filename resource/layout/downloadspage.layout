@@ -1,13 +1,11 @@
 "resource/layout/downloadspage.layout" {
 	styles {
 		SectionedListPanelCollapser {
-			inset = "0 -3 0 -2"
+			inset = "-2 -3 0 -2"
 			bgcolor=none
 			
 			render_bg {
 				1 = "gradient ( x0 , y0, x1+2 , y1, grey, lightGreyEnd )" // bg fill lightGreyEnd
-				//2 = "fill ( x0, y1, x1+2 , y1+1, darkGreyEnd )"
-				//3 = "fill ( x0, y0 , x1+2 , y0 + 1, greyHighlight )" //greyHighlight
 			}
 		}
 
@@ -20,7 +18,7 @@
 			
 			render_bg {
 				1 = "gradient ( x0 , y0, x1 , y1, grey, lightGreyEnd)" // bg fill lightGreyEnd
-				3 = "fill ( x0, y0+1 , x1 , y0+2, greyHighlight )" //greyHighlight
+			//	2 = "fill ( x0, y0+1 , x1 , y0+2, greyHighlight )" // weird bug occurs with this :(
 			}   
 		}
 		
@@ -42,7 +40,7 @@
 			inset = "0 0 0 0"
 			bgcolor=darkestgrey
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			textcolor="none"
 			selectedtextcolor="TextSelected"
@@ -50,10 +48,14 @@
 			shadowtextcolor="TextDisabled"	// the color of disabled line items		
 			
 			render {}
-			render_bg {
-				1="fill( x0, y0 , x1, y1, darkestgrey )" 
-			}
+			render_bg {}
 		}	
+
+		Panel {
+			render_bg {
+				0="gradient(x0+1,y1-6,x1-1,y1, none, black40)"
+			}
+		}
 	}
 
 	layout {

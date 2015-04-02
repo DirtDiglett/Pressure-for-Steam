@@ -1,46 +1,17 @@
 "resource/layout/appdownloadpanel.layout" {
-	colors {
-		// Play Button Normal
-		greenButtonAntiAliasedCorners "121 144 29 255"
-		PlayAntiAliasingBottom "88 109 18 255"
-		greenButtonHighlight "209 248 48 255"
-		greenButtonHighlightAntiAliasing "190 230 37 255"
-		PlayCornerRoundingBottom "129 163 19 255"
-		greenButtonGradientStart "175 217 28 255"
-		greenButtonGradientEnd "136 173 19 255"
-
-		// Hover
-		PlayHoverAntiAliasingTop "138 147 39 255"
-		PlayHoverAntiAliasingBottom "113 132 22 255"
-		PlayHoverLineTop "238 254 66 255"
-		PlayHoverLineTopAntiAliasing "227 248 51 255"
-		PlayHoverCornerRoundingBottom "170 201 25 255"
-		PlayHoverGradientStart "216 242 38 255"
-		PlayHoverGradientEnd "180 214 26 255"
-
-		// Active	
-		PlayActiveAntiAliasingTop "97 133 22 255"
-		PlayActiveAntiAliasingBottom "67 85 15 255"
-		PlayActiveLineTop "140 190 24 255"
-		PlayActiveLineTopAntiAliasing "137 186 23 255"
-		PlayActiveCornerRoundingBottom "94 123 14 255"
-		PlayActiveGradientStart "131 176 20 255"
-		PlayActiveGradientEnd "99 130 14 255"
-	}
-
 	styles {
 		panelStyle {
 			bgcolor=none
 			
 			render {
 				0="fill(x0,y0,x1,y0+1, black65)"
-				1="fill(x0,y0+1,x1,y0+8, darkGreyEnd)"
+				1="fill(x0,y0+1,x1,y0+8, lightGreyEnd)"
 				2="fill(x0,y0+1,x1,y0+2, grey25)"
 			}
 
 			render_bg {
-				1="gradient(x0,y1,x1,y1+6, black65, none)"
-				2="fill(x0,y0,x1,y1, darkGreyEnd)"
+				1="gradient(x0,y1,x1,y1+6, black40, none)"
+				2="fill(x0,y0,x1,y1, lightGreyEnd)"
 				3="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 		}
@@ -135,7 +106,7 @@
 			bgcolor="none"
 			textcolor="orange"
 			font-family=basefont
-			font-size="13"
+			font-size="15"
 		}
 
 		// Doesn't seem to be used for anything?
@@ -171,141 +142,120 @@
 
 			render_bg {
 				// Background
-				0="gradient(x0,y0+1,x1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
+				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
+				
+				
 				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
-
+				
 				//Anti-Alias
-				2="fill(x0+1,y0,x0+2,y0+1, greenButtonAntiAliasedCorners)" 
-
-				// Top Left
-				3="fill(x0,y0+1,x0+1,y0+2, greenButtonAntiAliasedCorners)" 
-				4="fill(x1-2, y0, x1-1, y0+1, greenButtonAntiAliasedCorners)" 
-
-				// Top Right
-				5="fill(x1-1,y0+1,x1,y0+2, greenButtonAntiAliasedCorners)" 
-				6="fill(x0, y1-2, x0+1, y1-1, PlayAntiAliasingBottom)" 
-
-				// Bottom Left
-				7="fill(x0+1, y1-1, x0+2, y1, PlayAntiAliasingBottom)" 
-				8="fill(x1-2, y1-1, x1-1, y1, PlayAntiAliasingBottom)" 
-
-				// Bottom Right
-				9="fill(x1-1, y1-2, x1, y1-1, PlayAntiAliasingBottom)" 
-
+				2="fill(x0+1,y0,x0+2,y0+1, greenButtonAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, greenButtonAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, greenButtonDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, greenButtonDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, greenButtonAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, greenButtonAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, greenButtonAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, greenButtonAntiAliasedCorners)" // Bottom Right
+				
 				// 1px Solid Line Top
-				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHighlight)" 
-
-				// Main Line
-				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHighlightAntiAliasing)" 
-
-				// Anti-Aliasing
-				12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHighlightAntiAliasing)" 
-				13="fill(x0, y0+2, x0+1, y0+3, greenButtonHighlightAntiAliasing)" 
-				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHighlightAntiAliasing)" 
-				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHighlightAntiAliasing)"
-				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHighlightAntiAliasing)"
-
+				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
+				
 				// Bottom Corner Rounding
-				17="fill(x0,y1-3,x0+1,y1-2, PlayCornerRoundingBottom)"
-				18="fill(x0+1,y1-2,x0+2,y1-1, PlayCornerRoundingBottom)"
-				19="fill(x0+2,y1-1,x0+3,y1, PlayCornerRoundingBottom)"
-				20="fill(x1-3,y1-1,x1-2,y1, PlayCornerRoundingBottom)"
-				21="fill(x1-2,y1-2,x1-1,y1-1, PlayCornerRoundingBottom)"
-				22="fill(x1-1,y1-3,x1,y1-2, PlayCornerRoundingBottom)"
+				17="fill(x0,y1-3,x0+1,y1-2, greenButtonDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, greenButtonDarkenedCorners)"
+				
+				20="fill(x1-3,y1-1,x1-2,y1, greenButtonDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, greenButtonDarkenedCorners)"
 			}
 		}
 
 		DetailsLaunchButton:Hover {
 			render_bg {
-				// Background
-				0="gradient(x0,y0+1,x1,y1-1,PlayHoverGradientStart, PlayHoverGradientEnd)"
-				1="fill(x0+2,y1-1,x1-2,y1, PlayHoverGradientEnd)"
-
-				//Anti-Alias
-				2="fill(x0+1,y0,x0+2,y0+1, PlayHoverAntiAliasingTop)" 
-
-				// Top Left
-				3="fill(x0,y0+1,x0+1,y0+2, PlayHoverAntiAliasingTop)" 
-				4="fill(x1-2, y0, x1-1, y0+1, PlayHoverAntiAliasingTop)" 
-
-				// Top Right
-				5="fill(x1-1,y0+1,x1,y0+2, PlayHoverAntiAliasingTop)" 
-				6="fill(x0, y1-2, x0+1, y1-1, PlayHoverAntiAliasingBottom)" 
-
-				// Bottom Left
-				7="fill(x0+1, y1-1, x0+2, y1, PlayHoverAntiAliasingBottom)" 
-				8="fill(x1-2, y1-1, x1-1, y1, PlayHoverAntiAliasingBottom)" 
-
-				// Bottom Right
-				9="fill(x1-1, y1-2, x1, y1-1, PlayHoverAntiAliasingBottom)" 
-
-				// 1px Solid Line Top
-				10="fill(x0+3, y0, x1-3, y0+1, PlayHoverLineTop)" 
-
-				// Main Line
-				11="fill(x0+2, y0, x0+3, y0+1, PlayHoverLineTopAntiAliasing)" 
-
-				// Anti-Aliasing
-				12="fill(x0+1, y0+1, x0+2, y0+2, PlayHoverLineTopAntiAliasing)" 
-				13="fill(x0, y0+2, x0+1, y0+3, PlayHoverLineTopAntiAliasing)" 
-				14="fill(x1-3, y0, x1-2, y0+1, PlayHoverLineTopAntiAliasing)" 
-				15="fill(x1-2, y0+1, x1-1, y0+2, PlayHoverLineTopAntiAliasing)"
-				16="fill(x1-1, y0+2, x1, y0+3, PlayHoverLineTopAntiAliasing)"
-
-				// Bottom Corner Rounding
-				17="fill(x0,y1-3,x0+1,y1-2, PlayHoverCornerRoundingBottom)"
-				18="fill(x0+1,y1-2,x0+2,y1-1, PlayHoverCornerRoundingBottom)"
-				19="fill(x0+2,y1-1,x0+3,y1, PlayHoverCornerRoundingBottom)"
-				20="fill(x1-3,y1-1,x1-2,y1, PlayHoverCornerRoundingBottom)"
-				21="fill(x1-2,y1-2,x1-1,y1-1, PlayHoverCornerRoundingBottom)"
-				22="fill(x1-1,y1-3,x1,y1-2, PlayHoverCornerRoundingBottom)"
+					// Background
+					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
+					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
+					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
+					
+					
+					1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, greenButtonHoverDarkenedCorners)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, greenButtonHoverDarkenedCorners)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
+					19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
+					22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
 			}
 		}
 
 		DetailsLaunchButton:Active {
 			render_bg {
-				// Background
-				0="gradient(x0,y0+1,x1,y1-1,PlayActiveGradientEnd, PlayActiveGradientStart)"
-				1="fill(x0+2,y1-1,x1-2,y1, PlayActiveGradientStart)"
-
-				//Anti-Alias
-				2="fill(x0+1,y0,x0+2,y0+1, PlayActiveAntiAliasingTop)" 
-
-				// Top Left
-				3="fill(x0,y0+1,x0+1,y0+2, PlayActiveAntiAliasingTop)" 
-				4="fill(x1-2, y0, x1-1, y0+1, PlayActiveAntiAliasingTop)" 
-
-				// Top Right
-				5="fill(x1-1,y0+1,x1,y0+2, PlayActiveAntiAliasingTop)" 
-				6="fill(x0, y1-2, x0+1, y1-1, PlayActiveAntiAliasingBottom)" 
-
-				// Bottom Left
-				7="fill(x0+1, y1-1, x0+2, y1, PlayActiveAntiAliasingBottom)" 
-				8="fill(x1-2, y1-1, x1-1, y1, PlayActiveAntiAliasingBottom)" 
-
-				// Bottom Right
-				9="fill(x1-1, y1-2, x1, y1-1, PlayActiveAntiAliasingBottom)" 
-
-				// 1px Solid Line Top
-				10="fill(x0+3, y0, x1-3, y0+1, PlayActiveLineTop)" 
-
-				// Main Line
-				11="fill(x0+2, y0, x0+3, y0+1, PlayActiveLineTopAntiAliasing)" 
-
-				// Anti-Aliasing
-				12="fill(x0+1, y0+1, x0+2, y0+2, PlayActiveLineTopAntiAliasing)" 
-				13="fill(x0, y0+2, x0+1, y0+3, PlayActiveLineTopAntiAliasing)" 
-				14="fill(x1-3, y0, x1-2, y0+1, PlayActiveLineTopAntiAliasing)" 
-				15="fill(x1-2, y0+1, x1-1, y0+2, PlayActiveLineTopAntiAliasing)"
-				16="fill(x1-1, y0+2, x1, y0+3, PlayActiveLineTopAntiAliasing)"
-
-				// Bottom Corner Rounding
-				17="fill(x0,y1-3,x0+1,y1-2, PlayActiveCornerRoundingBottom)"
-				18="fill(x0+1,y1-2,x0+2,y1-1, PlayActiveCornerRoundingBottom)"
-				19="fill(x0+2,y1-1,x0+3,y1, PlayActiveCornerRoundingBottom)"
-				20="fill(x1-3,y1-1,x1-2,y1, PlayActiveCornerRoundingBottom)"
-				21="fill(x1-2,y1-2,x1-1,y1-1, PlayActiveCornerRoundingBottom)"
-				22="fill(x1-1,y1-3,x1,y1-2, PlayActiveCornerRoundingBottom)"
+					// Background
+					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
+					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+					
+					
+					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
+					
+					//Anti-Alias
+					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
+					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
+					4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
+					5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
+					6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+					
+					// 1px Solid Line Top
+					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
+					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+					13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+					
+					// Bottom Corner Rounding
+					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
+					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
+					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
+					
+					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
+					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
+					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
 			}
 		}
 
@@ -326,7 +276,7 @@
 
 			render_bg {
 				0="fill( x0, y0, x1, y1, black )"
-				1="fill(x0,y1,x1,y1+1, grey50)"
+				1="fill(x0,y1,x1,y1+1, grey25)"
 			}  
 		}
 	}

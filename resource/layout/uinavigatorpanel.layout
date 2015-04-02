@@ -1870,7 +1870,7 @@
 			margin-left=-1
 			margin-top=-2
 			margin-right=0 
-			margin-bottom=0
+			margin-bottom=1
 			dir=down
 		}
 
