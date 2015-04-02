@@ -230,7 +230,7 @@
 			selectedtextcolor="white"
 			selectedbgcolor="blue"
 			shadowtextcolor="darkestGrey"  // this is the cursor color
-			textcolor="lightestGreyHighlight"
+			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=15
 			inset-left=4
@@ -257,7 +257,7 @@
 			selectedtextcolor="white"
 			selectedbgcolor="blue"
 			shadowtextcolor="darkestGrey"  // this is the cursor color
-			textcolor="lightestGreyHighlight"
+			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=15
 			inset-left=4
