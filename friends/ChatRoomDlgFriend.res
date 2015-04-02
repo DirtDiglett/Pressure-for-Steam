@@ -48,7 +48,7 @@
 			bgcolor=none
 			textcolor=darkestGrey
 			font-family=basefont
-			font-size=14			
+			font-size=15			
 			inset-left=4
 			inset-top=6
 			inset-right=6
