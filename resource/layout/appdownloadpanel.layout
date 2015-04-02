@@ -1,13 +1,13 @@
 "resource/layout/appdownloadpanel.layout" {
 	colors {
 		// Play Button Normal
-		PlayAntiAliasingTop "121 144 29 255"
+		greenButtonAntiAliasedCorners "121 144 29 255"
 		PlayAntiAliasingBottom "88 109 18 255"
-		PlayLineTop "209 248 48 255"
-		PlayLineTopAntiAliasing "190 230 37 255"
+		greenButtonHighlight "209 248 48 255"
+		greenButtonHighlightAntiAliasing "190 230 37 255"
 		PlayCornerRoundingBottom "129 163 19 255"
-		PlayGradientStart "175 217 28 255"
-		PlayGradientEnd "136 173 19 255"
+		greenButtonGradientStart "175 217 28 255"
+		greenButtonGradientEnd "136 173 19 255"
 
 		// Hover
 		PlayHoverAntiAliasingTop "138 147 39 255"
@@ -171,18 +171,18 @@
 
 			render_bg {
 				// Background
-				0="gradient(x0,y0+1,x1,y1-1,PlayGradientStart, PlayGradientEnd)"
-				1="fill(x0+2,y1-1,x1-2,y1, PlayGradientEnd)"
+				0="gradient(x0,y0+1,x1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
 
 				//Anti-Alias
-				2="fill(x0+1,y0,x0+2,y0+1, PlayAntiAliasingTop)" 
+				2="fill(x0+1,y0,x0+2,y0+1, greenButtonAntiAliasedCorners)" 
 
 				// Top Left
-				3="fill(x0,y0+1,x0+1,y0+2, PlayAntiAliasingTop)" 
-				4="fill(x1-2, y0, x1-1, y0+1, PlayAntiAliasingTop)" 
+				3="fill(x0,y0+1,x0+1,y0+2, greenButtonAntiAliasedCorners)" 
+				4="fill(x1-2, y0, x1-1, y0+1, greenButtonAntiAliasedCorners)" 
 
 				// Top Right
-				5="fill(x1-1,y0+1,x1,y0+2, PlayAntiAliasingTop)" 
+				5="fill(x1-1,y0+1,x1,y0+2, greenButtonAntiAliasedCorners)" 
 				6="fill(x0, y1-2, x0+1, y1-1, PlayAntiAliasingBottom)" 
 
 				// Bottom Left
@@ -193,17 +193,17 @@
 				9="fill(x1-1, y1-2, x1, y1-1, PlayAntiAliasingBottom)" 
 
 				// 1px Solid Line Top
-				10="fill(x0+3, y0, x1-3, y0+1, PlayLineTop)" 
+				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHighlight)" 
 
 				// Main Line
-				11="fill(x0+2, y0, x0+3, y0+1, PlayLineTopAntiAliasing)" 
+				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHighlightAntiAliasing)" 
 
 				// Anti-Aliasing
-				12="fill(x0+1, y0+1, x0+2, y0+2, PlayLineTopAntiAliasing)" 
-				13="fill(x0, y0+2, x0+1, y0+3, PlayLineTopAntiAliasing)" 
-				14="fill(x1-3, y0, x1-2, y0+1, PlayLineTopAntiAliasing)" 
-				15="fill(x1-2, y0+1, x1-1, y0+2, PlayLineTopAntiAliasing)"
-				16="fill(x1-1, y0+2, x1, y0+3, PlayLineTopAntiAliasing)"
+				12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHighlightAntiAliasing)" 
+				13="fill(x0, y0+2, x0+1, y0+3, greenButtonHighlightAntiAliasing)" 
+				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHighlightAntiAliasing)" 
+				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHighlightAntiAliasing)"
+				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHighlightAntiAliasing)"
 
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, PlayCornerRoundingBottom)"

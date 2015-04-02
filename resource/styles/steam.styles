@@ -1047,7 +1047,7 @@ styles {
 		selectedbgcolor = blue	
 		textcolor="white"
 		font-family=basefont
-		font-size=20
+		font-size=15
 		font-weight=400
 		inset="0 -1 0 0"
 		

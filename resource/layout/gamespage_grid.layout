@@ -1,4 +1,14 @@
 "resource/layout/gamespage_grid.layout" {
+	controls {
+	// One day this will work :(
+		"grid" {
+			"alignment"						"justify"		// left, right, justify 
+			"interiorspacing"				-1				// minimum interitem spacing, used for both x and y
+			"wheelpct"						50				// mouse wheel -> scroll this percent of an item's dy
+			"tabposition"					1
+		}
+	}
+
 	colors {
 		// values defining the aspect ratio of the images in the grid view
 		GridView.OriginalImageWidth "460"
@@ -7,7 +17,8 @@
 		// value defining the extra vertical distance to leave below
 		// the picture for drop shadow room, in px. This value should
 		// match the margin values in the layout statements in the gamespage_grid_*.layout files.
-		GridView.DropShadowLeading "0"
+		GridView.DropShadowLeading "00"
+		interiorspacing "-1"
 	}
 
 	styles {

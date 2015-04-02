@@ -83,10 +83,10 @@
 				0 = "gradient(x0+1, y0+1, x1-1, y1-2, grey, lightGreyEnd)" // Background Gradient
 						
 				// Dark Borders around
-				1="fill(x0, y0+2, x0+1, y1-3, darkestGrey)" // Left
-				2="fill(x0+2, y0, x1-2, y0+1, darkestGrey)" // Top
-				3="fill(x1-1, y0+2, x1, y1-3, darkestGrey)" // Right
-				4="fill(x0+2, y1-2, x1-2, y1-1, darkestGrey)" // Bottom
+				1="fill(x0, y0+2, x0+1, y1-3, darkGrey)" // Left
+				2="fill(x0+2, y0, x1-2, y0+1, darkGrey)" // Top
+				3="fill(x1-1, y0+2, x1, y1-3, darkGrey)" // Right
+				4="fill(x0+2, y1-2, x1-2, y1-1, darkGrey)" // Bottom
 		
 				// Dark Grey Background Corners & Fake Anti-Aliasing
 					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
@@ -143,10 +143,10 @@
 					0 = "gradient(x0+1, y0+1, x1-1, y1-2, greyHighlight, grey)" // Background Gradient
 							
 					// Dark Borders around
-					1="fill(x0, y0+2, x0+1, y1-3, darkestGrey)" // Left
-					2="fill(x0+2, y0, x1-2, y0+1, darkestGrey)" // Top
-					3="fill(x1-1, y0+2, x1, y1-3, darkestGrey)" // Right
-					4="fill(x0+2, y1-2, x1-2, y1-1, darkestGrey)" // Bottom
+					1="fill(x0, y0+2, x0+1, y1-3, darkGrey)" // Left
+					2="fill(x0+2, y0, x1-2, y0+1, darkGrey)" // Top
+					3="fill(x1-1, y0+2, x1, y1-3, darkGrey)" // Right
+					4="fill(x0+2, y1-2, x1-2, y1-1, darkGrey)" // Bottom
 			
 					// Dark Grey Background Corners & Fake Anti-Aliasing
 						// TOP-LEFT corner pixels (Fake Anti-Aliasing)
@@ -281,11 +281,10 @@
 			selectedbgcolor="blue"
 			selectedtextcolor="trueWhite"
 			textcolor="ChatDialog.HistoryColor"
-			inset-top=8
+			font-size=15
+			inset="0 8 0 0"
 			
-			render {
-				0="image_scale(x0,y1-14,x1,y1, graphics/chatbottom)"
-			}
+			render {}
 		}
 		
 		"RichText url" {}

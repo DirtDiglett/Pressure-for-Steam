@@ -53,4 +53,14 @@
 		DragDrop.DragFrame "255 255 255 192"
 		DragDrop.DropFrame "150 255 150 255"
 	}
+
+	styles {
+		"GameItem_Uninstalled GGPlaceholderBG" {
+			alpha 75
+		}
+
+		"GameItem_Uninstalled GamesGridImage" {
+			alpha 75
+		}
+	}
 }

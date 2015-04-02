@@ -1,32 +1,8 @@
 "resource/layout/chattitlepanel.layout" {
-	controls {
-		"AvatarImage" {
-			ControlName="ImagePanel"
-		}
-	     
-	    "NameLabel" {
-	    	ControlName="Label"
-	    }
-	     
-	    "StatusLabel" {
-	    	ControlName="Label"
-	    	style="statuslabel"
-	    }
-	     
-	    "LockImage" {
-	    	ControlName="ImagePanel"
-	    }
-	     
-	    "MenuButton" {
-	    	ControlName="CChatTitlePanelAffordance"
-	    	style="menuButtonStyle"
-	    }
-	}
-	
 	styles {
 		menuButtonStyle {
 			minimum-width=14
-			padding-top=3
+			padding-top=6
 			padding-bottom=4
 			padding-right=5
 			padding-left=6
@@ -38,9 +14,8 @@
 		
 		Label {
 			font-family=basefont
-			font-size=14
-			font-weight=600
-			
+			font-size=16
+			font-weight=500
 			textcolor=white
 			
 			font-style="outerglow"
@@ -52,7 +27,7 @@
 		statuslabel {
 			font-family=basefont
 			textcolor=lightestGrey
-			font-size=12
+			font-size=14
 			
 			font-style="normal,regular,outerglow"
 			font-outerglow-color="darkestGrey"
@@ -66,7 +41,7 @@
 		place {	
 			control="AvatarImage" 
 			x=2
-			y=7
+			y=5
 			align=left
 			dir=right
 			spacing=8
@@ -75,7 +50,7 @@
 		place {	
 			control="NameLabel,MenuButton" 
 			x=66 
-			y=11 
+			y=8
 			align=left 
 			dir=right 
 			spacing=0 
@@ -92,7 +67,7 @@
 			control="StatusLabel" 
 			align=left 
 			x=47 
-			y=29
+			y=27
 		}
 	}
 }
