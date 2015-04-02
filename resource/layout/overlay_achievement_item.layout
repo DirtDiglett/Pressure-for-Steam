@@ -9,6 +9,7 @@
 			textcolor=white
 			font-size=26
 			font-family=semibold
+			font-weight=bold
 		}
 	}
 

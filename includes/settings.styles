@@ -4,13 +4,13 @@
 		// Fonts
 		// ***********************************************	
 		
-		basefont = "Arial"
-		semibold = "Arial"
+		basefont = "Noto Sans"
+		semibold = "Noto Sans"
 			
 		headerfont = "Bebas Neue Bold"
 		
-		basefont = "Segoe UI" [$WINDOWS]
-		semibold = "Segoe UI Semibold" [$WINDOWS]
+		basefont = "Noto Sans" [$WINDOWS]
+		semibold = "Noto Sans" [$WINDOWS]
 
 		basefont = "Helvetica" [$OSX]
 		semibold = "Helvetica Bold" [$OSX]

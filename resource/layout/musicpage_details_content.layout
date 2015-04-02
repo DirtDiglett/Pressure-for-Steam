@@ -86,7 +86,7 @@
 		
 		"MusicPage_Details_Content ListPanelColumnHeader" [$OSX] {
 			bgcolor="none"
-			font-size=13
+			font-size=15
 			inset="2 2 0 0"
 			
 			render {}

@@ -10,15 +10,17 @@
 		white="251 251 251 255"
 
 		lightestGrey="139 139 139 255"
-		lightestGreyHighlight="113 113 113 255"
-		greyHighlight="85 85 85 255"
+		lightestGreyHighlight="77 77 77 255"
+		greyHighlight="67 67 67 255"
 		
 		lighterGrey="70 70 70 255"
 		
 		grey="60 60 60 255"
 		lightGreyEnd="42 42 42 255"
-		darkGreyEnd="25 25 25 255"
+		darkGreyEnd="29 29 29 255"
 		darkestGrey="16 16 16 255"
+
+		darkGrey="26 26 26 255"
 		
 		groupGrey="14 14 14 255"// Group Chat Related Only
 
@@ -66,14 +68,15 @@
 		darkestYellow="160 132 1 255"
 
 		// Normal Button
-		darkCornerPixels = "8 8 8 200"
+		darkCornerPixels = "26 26 26 200"
 		topLightPixels = "62 62 62 255"
 		bottomDarkPixels = "38 38 38 255"
-		greyHighlightFake="85 85 85 127"
-		darkestGreyFake="8 8 8 105"	
+		greyHighlightFake="67 67 67 127"
+		darkestGreyFake="26 26 26 105"
+		darkGreyFake="26 26 26 105"	
 	
 		// Highlighted Button
-		topLightPixelsHighlighted = "103 103 103 255"
+		topLightPixelsHighlighted = "70 70 70 255"
 		bottomDarkPixelsHighlighted = "57 57 57 255"
 		
 		// Disabled Button

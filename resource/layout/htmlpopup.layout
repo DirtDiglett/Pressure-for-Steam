@@ -409,7 +409,7 @@
 			shadowtextcolor="darkestGrey"// this is the cursor color
 			textcolor="lightestGreyHighlight"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			inset-left=4
 			inset-top=0
 			inset=right=4

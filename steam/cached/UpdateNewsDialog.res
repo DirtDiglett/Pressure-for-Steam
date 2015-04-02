@@ -4,8 +4,8 @@
 			render_bg {
 				0="fill( x0, y0, x1, y1, lightGreyEnd )"
 				1="fill( x0, y0, x1, y0+54, grey50 )"
-				2="fill( x0, y0, x1, y0+53, darkestGrey )"
-				3="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+				2="fill( x0, y0, x1, y0+53, darkGrey )"
+				3="fill( x0, y1-51, x1, y1-50, darkGrey )"
 				4="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}

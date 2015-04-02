@@ -21,17 +21,18 @@
 		// Literally the label that says "Most Recent"
 		mostrecent_label {
 			textcolor="greyhighlight"
-			font-size=13
+			font-size=15
 		}
 		
 		mostrecent_name {
 			textcolor="lightestYellow"
 			font-size=20
+			font-weight=bold
 		}
 
 		mostrecent_unlockedsofar {
 			textcolor=white
-			font-size=13
+			font-size=15
 		}
 
 		progressbackground {

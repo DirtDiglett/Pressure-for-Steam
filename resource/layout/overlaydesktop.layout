@@ -28,7 +28,7 @@
 		
 		timeStrings {
 			textcolor=greyHighlight
-			font-size=14
+			font-size=15
 			font-family=basefont
 		}
 	}
@@ -95,7 +95,7 @@
 			control=FriendsDetailPanel
 			region=topbar
 			align=left
-			width=165
+			width=175
 			height=26
 			dir=right
 		}
@@ -104,7 +104,7 @@
 			control=CommunityHubDetailPanel
 			start=FriendsDetailPanel
 			x=24
-			width=190
+			width=220
 			height=26
 		}
 		
@@ -112,7 +112,7 @@
 			control=GuidesDetailPanel
 			start=CommunityHubDetailPanel
 			x=24
-			width=121
+			width=141
 			height=26
 		}
 
@@ -120,7 +120,7 @@
 			control=CommunityDiscussionsDetailPanel
 			start=GuidesDetailPanel
 			x=24
-			width=135
+			width=155
 			height=26
 		}
 
@@ -128,7 +128,7 @@
 			control=ScreenshotsDetailPanel
 			start=CommunityDiscussionsDetailPanel
 			x=24
-			width=220
+			width=240
 			height=26
 		}
 		

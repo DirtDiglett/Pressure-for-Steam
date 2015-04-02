@@ -1,15 +1,15 @@
 "steam/cached/consolepage.res" {
 	styles {
 		ConsolePage {
-			bgcolor=darkestGrey
+			bgcolor=darkGrey
 		}
 
 		TabCatchingTextEntry {
 			bgcolor=none
-			textcolor=darkestGrey
+			textcolor=darkGrey
 
 			render_bg {
-				1="fill( x0, y0, x1, y1, darkestGrey)"
+				1="fill( x0, y0, x1, y1, darkGrey)"
 				2="fill( x0+1, y0+1, x1-1, y1-1, White)"
 			}
 		}

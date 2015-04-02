@@ -25,7 +25,7 @@
 
 			render_bg {
 				// Creates the top section
-				0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, darkGreyEnd )"
+				0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, lightGreyEnd )"
 				
 				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
@@ -68,7 +68,7 @@
 				
 				render_bg {
 					// Creates the top section
-					0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, darkGreyEnd )"
+					0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, lightGreyEnd )"
 					
 					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
@@ -180,7 +180,7 @@
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0, x1, y0+1, greyHighlight)"
-				2="gradient(x0-22,y1,x1,y1+1, black65, none)"
+				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
 			}    
 	    }
     
@@ -207,7 +207,7 @@
 		AddFriendsButton  {
 			textcolor="none"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			
 			render {
@@ -271,7 +271,7 @@
 		FriendsSearch [!$OSX] {
 			textcolor="darkestGrey"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400	
 			padding-left=4
 			padding-right=20
@@ -288,7 +288,7 @@
 		FriendsSearch [$OSX] {
 			textcolor="darkestGrey"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset-left=0
 			minimum-width=110
@@ -454,7 +454,7 @@
 			textcolor=white
 			font-family=semibold
 			font-style="regular"
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset="0 -3 0 0"
 			minimum-width=800	// if window is made larger than this, it looks different from if it's smaller

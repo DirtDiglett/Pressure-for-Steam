@@ -13,7 +13,7 @@
 		communityfile_name {
 			bgcolor=black65
 			textcolor="blue"
-			font-size=13			
+			font-size=14			
 			padding-left=6
 			padding-top=4			
 		}

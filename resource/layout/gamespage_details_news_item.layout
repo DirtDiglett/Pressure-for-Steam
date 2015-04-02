@@ -27,7 +27,7 @@
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 			font-family=basefont
-			font-size=13
+			font-size=15
 
 			render_bg {}
 		}
@@ -35,14 +35,14 @@
 		"newsitem_body url" {
 			selectedtextcolor="blue"
 			textcolor=blue
-			font-size=13
+			font-size=15
 			font-style="underline"
 		}
 		
 			"newsitem_body url:hover" {
 				selectedtextcolor="label"
 				textcolor="lightestBlue"
-				font-size=13
+				font-size=15
 				font-style="underline"
 			}
 		
@@ -56,7 +56,7 @@
 			selectedtextcolor="blue"
 			textcolor="blue"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-style="none"
 			font-weight=400				
 		}

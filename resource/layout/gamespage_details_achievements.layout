@@ -34,7 +34,7 @@
 		// The label for "You've unlocked everything!"
 		everythinglabel {
 			textcolor="white"
-			font-size=13
+			font-size=15
 		}	
 	}
 

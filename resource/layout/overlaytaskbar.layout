@@ -2,7 +2,7 @@
 	styles {
 		taskbar {
 			textcolor=blue
-			font-size=14
+			font-size=15
 			font-family=basefont
 			font-style=none
 			
@@ -41,7 +41,7 @@
 			y=43
 			margin-right=66
 			dir=down
-			spacing=4
+			spacing=5
 		}	
 		
 		place {

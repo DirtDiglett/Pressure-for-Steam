@@ -24,7 +24,7 @@
 			shadowtextcolor= "Text"	// this is the cursor color
 			textcolor="white"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset-left=0
 			inset-top=0
@@ -50,7 +50,7 @@
 			shadowtextcolor= "Text"	// this is the cursor color
 			textcolor="text2"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset-left=0
 			inset-top=0
@@ -67,21 +67,21 @@
 			bgcolor="none"
 			textcolor="blue"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			font-style=underline
 		}
 		
 	 	URLLabel:Hover {
 			textcolor="lightestBlue"
-			font-size=14
+			font-size=15
 		}
 		
 		URLLabelSimple {
 			bgcolor= "none"
 			textcolor= "blue"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			font-style=regular
 		}
@@ -90,7 +90,7 @@
 			bgcolor="none"
 			textcolor="blue"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-weight=400
 			font-style=regular
 		}

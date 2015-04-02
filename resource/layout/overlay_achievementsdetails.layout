@@ -7,7 +7,7 @@
 		
 		button {
 			textcolor=blue
-			font-size=14
+			font-size=15
 			font-family=basefont
 			padding=0
 			

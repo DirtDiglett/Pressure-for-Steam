@@ -14,14 +14,14 @@
 
 		namestyle {
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=600		
 		}
 		
 		nameInstanceStyle {
 			textcolor="lightestGrey"
 			font-family=basefont
-			font-size=13
+			font-size=15
 		}
 		
 		menuButtonStyle {
@@ -39,17 +39,17 @@
 		
 		controlPanelLinkStyle {
 			font-family=basefont
-			font-size=14
+			font-size=15
 		}
 		
 			controlPanelLinkStyle:hover {
 				font-family=basefont
-				font-size=14
+				font-size=15
 			}
 
 		statusStyle {
 			font-family=basefont
-			font-size=13	
+			font-size=15	
 		}
 		
 		inviteLinkStyle {
@@ -125,14 +125,14 @@
 		place [!$OSX] { 
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" 
 			x=50 
-			y=4
+			y=2
 			spacing=2  
 		}
 
 		place { 		
 			control="StatusLabel"
 			x=50 
-			y=17
+			y=16
 		}
 
 		place { 

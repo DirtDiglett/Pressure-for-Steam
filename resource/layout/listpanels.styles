@@ -79,7 +79,7 @@
 			textcolor="red"
 			font-family=basefont
 			font-size=14
-			font-size=13 [$OSX]
+			font-size=15 [$OSX]
 			font-weight=400
 			font-style="none"
 			inset="1 3 0 0"
@@ -98,7 +98,7 @@
 			textcolor="red"
 			font-family=basefont
 			font-size=14
-			font-size=13 [$OSX]
+			font-size=15 [$OSX]
 			font-weight=400
 			font-style="none"
 			padding-top=5
@@ -281,7 +281,7 @@
 
 		"ListPanel RichText url" {
 			textcolor="blue"
-			font-size=13			
+			font-size=15			
 			font-style=underline
 		}
 

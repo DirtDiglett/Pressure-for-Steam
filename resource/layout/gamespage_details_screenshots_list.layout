@@ -18,12 +18,12 @@
 	styles {
 		infolabel {
 			textcolor=white
-			font-size=13
+			font-size=15
 		}
 		
 		screenshotslabelmore {
 			textcolor="grey"
-			font-size=13
+			font-size=15
 			font-family=basefont
 		    inset="-3 0 0 0"
 
@@ -32,7 +32,7 @@
 	    		   
 			screenshotslabelmore:hover {
 				textcolor="white"
-				font-size=13
+				font-size=15
 				font-family=basefont
 			    inset="-3 0 0 0"
 

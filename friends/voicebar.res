@@ -18,7 +18,7 @@
 				bgcolor=none
 				textcolor="trueWhite"
 				font-family=basefont
-				font-size=13
+				font-size=15
 				padding-left=3
 				padding-top=2
 				padding-bottom=1

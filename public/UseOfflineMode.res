@@ -18,7 +18,7 @@
 		}
 		
 		"URLLabel" {
-			font-size=13
+			font-size=15
 		}
 	}
 

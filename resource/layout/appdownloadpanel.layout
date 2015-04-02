@@ -54,7 +54,7 @@
 		links {
 			textcolor="blue"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-style=normal
 			padding-left=0
 			padding-top=0
@@ -68,7 +68,7 @@
 		links:hover {
 			textcolor="lightestBlue"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-style=normal
 		}
 
@@ -77,14 +77,14 @@
 		}
 
 		label {
-			font-size=13
+			font-size=15
 		}
 
 		// For the "Auto-Updates Enabled"
 		settingslink {
 			textcolor="blue"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-style=regular
 
 			render_bg {
@@ -95,7 +95,7 @@
 		settingslink:hover {
 			textcolor="lightestBlue"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-style=regular
 			padding-left=0
 			padding-top=0
@@ -114,7 +114,7 @@
 		label2 {
 			bgcolor=none
 			textcolor="lightestGrey"
-			font-size=13
+			font-size=15
 			font-style="regular"
 		}
 

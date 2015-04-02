@@ -3,7 +3,7 @@
 		ListPanelCheckBox {
 			textcolor= "Label"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset= "0 5 0 0"
 			image= "graphics/chkUnselStd_Sm"
@@ -44,7 +44,7 @@
 		"ListPanelColumnheader ListPanelCheckBox" {
 			textcolor= "Label"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset= "4 0 0 0"
 			image= "graphics/chkUnSelFocus_Sm"
@@ -59,7 +59,7 @@
 			"ListPanelColumnheader ListPanelCheckBox:focus" {
 				textcolor= "TextHover"
 				font-family=basefont
-				font-size=14
+				font-size=15
 				font-weight=400
 				inset= "4 0 0 0"
 				image= "graphics/chkUnSelFocus_Sm"
@@ -81,7 +81,7 @@
 			bgcolor="none"
 			textcolor="white"
 			font-family=semibold
-			font-size=13
+			font-size=15
 			font-weight=400
 			font-style="regular,normal"
 			inset="1 2 0 0"
@@ -97,13 +97,13 @@
 			bgcolor="none"
 			textcolor= "white"
 			font-family=semibold
-			font-size=14
+			font-size=15
 			font-weight=400
 			font-style="regular,normal"
 			inset= "0 3 0 0"
 	
 			render {
-				0="fill(x0,y1-2,x1,y1-1, darkestGrey)"
+				0="fill(x0,y1-2,x1,y1-1, darkGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 			render_bg {
@@ -124,12 +124,13 @@
 		
 	 	"Csteamrootdialog ListPanelSectionCollapser" {
 			bgcolor=none
-			inset = "0 1 0 1"
+			inset = "-2 1 0 1"
+			padding-left=0
 
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
-				2="gradient(x0-22,y1,x1,y1+1, black65, none)"
+				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
 			} 	
 		}
 		
@@ -140,7 +141,7 @@
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
-				2="gradient(x0-22,y1,x1,y1+1, black65, none)"
+				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
 			} 
 		}
 
@@ -158,7 +159,7 @@
 				5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
 			} 
 			render_bg {
-				0="fill(x0,y0,x1,y1, darkestGrey)"
+				0="fill(x0,y0,x1,y1, darkGrey)"
 			}
 		}
 		
@@ -204,7 +205,7 @@
 
 			render {
 				//fill makes dragger visible
-				2="fill( x0, y0, x0 + 1, y1-1, darkestGrey )" // left
+				2="fill( x0, y0, x0 + 1, y1-1, darkGrey )" // left
 			}
 		}
 	
@@ -213,7 +214,7 @@
 			
 			render {
 				//fill makes dragger visible
-				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
+				2="fill( x0, y0, x0 + 1, y1, darkGrey )" // left
 			}
 		}
 		
@@ -222,7 +223,7 @@
 			bgcolor= "none" 
 			selectedbgcolor= "blue"
 			textcolor= "white"
-			font-size=13
+			font-size=15
 			inset= "0 0 0 0"
 
 			render {}
@@ -244,7 +245,7 @@
 		
 		"Page ListPanelInterior" {
 			inset= "0 0 0 0"
-			font-size=13
+			font-size=15
 			bgcolor=none
 			
 			textcolor=green
@@ -279,7 +280,7 @@
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
-				2="gradient(x0-22,y1,x1,y1+1, black65, none)"
+				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
 			} 
 		} 
 		
@@ -295,7 +296,7 @@
 			selectedbgcolor=Blue
 			textcolor="white"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 							
 			render {}
@@ -332,7 +333,7 @@
 			selectedbgcolor= "Blue"
 			textcolor= "white"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			
 			render {}
@@ -500,7 +501,7 @@
 			shadowtextcolor= "grey"
 			textcolor= "white"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset= "0 -3 0 0"
 			padding-right=0
@@ -549,14 +550,14 @@
 			bgcolor=none
 			textcolor= white
 			font-family=basefont
-			font-size=13
+			font-size=15
 			
 			render_bg {} 
 		}
 	
 		"ListPanel RichText url" {
 			textcolor= "blue"
-			font-size=13
+			font-size=15
 			font-style=underline
 		}
 		
@@ -576,6 +577,7 @@
 			inset= "-4 0 0 0"
 			padding-top=-2
 			padding-bottom=-2
+			padding-left=0
 
 			render_bg {}
 		}

@@ -47,7 +47,7 @@
 		AdditionalActionButtonStyle {
 			textcolor="label"
 			font-size=14
-			font-size=13 [$OSX]
+			font-size=15 [$OSX]
 			font-family=basefont
 			padding-left=-6
 			padding-top=6

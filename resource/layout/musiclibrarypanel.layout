@@ -109,7 +109,7 @@
 			textcolor="labelfocus"
 			font-family=basefont
 			font-size=14
-			font-size=13 [$OSX]
+			font-size=15 [$OSX]
 			font-style=normal
 
 			render_bg {
@@ -170,7 +170,7 @@
 		NavLabel2 [$OSX] {
 			textcolor="labelfocus"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-weight=400
 			font-style="uppercase"
 			inset="0 2 0 0"

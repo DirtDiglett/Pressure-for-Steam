@@ -29,7 +29,7 @@
 		
 	
 		label {
-			font-size=13
+			font-size=15
 		}
 		
 		controlbutton {
@@ -38,7 +38,7 @@
 		
 		Textentryfocus_chat {
 		    font-family=basefont
-		    font-size=13
+		    font-size=15
 		    textcolor  = "darkestGrey"
 		    bgcolor  = "none"
 		    selectedtextcolor  = "white"

@@ -37,7 +37,7 @@
 		// Used for the status label on the chat only
 		label {
 			textcolor=lighterGrey
-			font-size=13
+			font-size=15
 			font-style=none
 		}
 			
@@ -48,7 +48,7 @@
 			bgcolor=none
 			textcolor=darkestGrey
 			font-family=basefont
-			font-size=13			
+			font-size=14			
 			inset-left=4
 			inset-top=6
 			inset-right=6
@@ -81,31 +81,31 @@
 				0 = "gradient(x0+1, y0+1, x1-1, y1-2, grey, lightGreyEnd)" // Background Gradient
 						
 				// Dark Borders around
-				1="fill(x0, y0+2, x0+1, y1-3, darkestGrey)" // Left
-				2="fill(x0+2, y0, x1-2, y0+1, darkestGrey)" // Top
-				3="fill(x1-1, y0+2, x1, y1-3, darkestGrey)" // Right
-				4="fill(x0+2, y1-2, x1-2, y1-1, darkestGrey)" // Bottom
+				1="fill(x0, y0+2, x0+1, y1-3, darkGrey)" // Left
+				2="fill(x0+2, y0, x1-2, y0+1, darkGrey)" // Top
+				3="fill(x1-1, y0+2, x1, y1-3, darkGrey)" // Right
+				4="fill(x0+2, y1-2, x1-2, y1-1, darkGrey)" // Bottom
 		
 				// Dark Grey Background Corners & Fake Anti-Aliasing
 					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 					5="fill(x0+1, y0+1, x0+2, y0+2, darkCornerPixels)" // Darkest Pixel
-					6="fill(x0, y0+1, x0+1, y0+2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-					7="fill(x0+1, y0, x0+2, y0+1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					6="fill(x0, y0+1, x0+1, y0+2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					7="fill(x0+1, y0, x0+2, y0+1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 					
 					// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 					8="fill(x1-2, y0+1, x1-1, y0+2, darkCornerPixels)" // Darkest Pixel
-					9="fill(x1-1, y0+1, x1, y0+2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-					10="fill(x1-2, y0, x1-1, y0+1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					9="fill(x1-1, y0+1, x1, y0+2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					10="fill(x1-2, y0, x1-1, y0+1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 					
 					// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 					11="fill(x1-2, y1-3, x1-1, y1-2, darkCornerPixels)" // Darkest Pixel
-					12="fill(x1-1, y1-3, x1, y1-2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-					13="fill(x1-2, y1-2, x1-1, y1-1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					12="fill(x1-1, y1-3, x1, y1-2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					13="fill(x1-2, y1-2, x1-1, y1-1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 					
 					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 					14="fill(x0+1, y1-3, x0+2, y1-2, darkCornerPixels)" // Darkest Pixel
-					15="fill(x0, y1-3, x0+1, y1-2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-					16="fill(x0+1, y1-2, x0+2, y1-1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					15="fill(x0, y1-3, x0+1, y1-2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+					16="fill(x0+1, y1-2, x0+2, y1-1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 				
 				// Single Pixel Highlight Line.
 				17="fill(x0+3, y0+1, x1-3, y0+2, greyHighlight)"
@@ -141,31 +141,31 @@
 					0 = "gradient(x0+1, y0+1, x1-1, y1-2, greyHighlight, grey)" // Background Gradient
 							
 					// Dark Borders around
-					1="fill(x0, y0+2, x0+1, y1-3, darkestGrey)" // Left
-					2="fill(x0+2, y0, x1-2, y0+1, darkestGrey)" // Top
-					3="fill(x1-1, y0+2, x1, y1-3, darkestGrey)" // Right
-					4="fill(x0+2, y1-2, x1-2, y1-1, darkestGrey)" // Bottom
+					1="fill(x0, y0+2, x0+1, y1-3, darkGrey)" // Left
+					2="fill(x0+2, y0, x1-2, y0+1, darkGrey)" // Top
+					3="fill(x1-1, y0+2, x1, y1-3, darkGrey)" // Right
+					4="fill(x0+2, y1-2, x1-2, y1-1, darkGrey)" // Bottom
 			
 					// Dark Grey Background Corners & Fake Anti-Aliasing
 						// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 						5="fill(x0+1, y0+1, x0+2, y0+2, darkCornerPixels)" // Darkest Pixel
-						6="fill(x0, y0+1, x0+1, y0+2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-						7="fill(x0+1, y0, x0+2, y0+1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						6="fill(x0, y0+1, x0+1, y0+2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						7="fill(x0+1, y0, x0+2, y0+1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 						
 						// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 						8="fill(x1-2, y0+1, x1-1, y0+2, darkCornerPixels)" // Darkest Pixel
-						9="fill(x1-1, y0+1, x1, y0+2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-						10="fill(x1-2, y0, x1-1, y0+1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						9="fill(x1-1, y0+1, x1, y0+2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						10="fill(x1-2, y0, x1-1, y0+1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 						
 						// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 						11="fill(x1-2, y1-3, x1-1, y1-2, darkCornerPixels)" // Darkest Pixel
-						12="fill(x1-1, y1-3, x1, y1-2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-						13="fill(x1-2, y1-2, x1-1, y1-1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						12="fill(x1-1, y1-3, x1, y1-2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						13="fill(x1-2, y1-2, x1-1, y1-1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 						
 						// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 						14="fill(x0+1, y1-3, x0+2, y1-2, darkCornerPixels)" // Darkest Pixel
-						15="fill(x0, y1-3, x0+1, y1-2, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
-						16="fill(x0+1, y1-2, x0+2, y1-1, darkestGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						15="fill(x0, y1-3, x0+1, y1-2, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
+						16="fill(x0+1, y1-2, x0+2, y1-1, darkGreyFake)" // Partially-Transparent (Fake Anti-Aliasing)
 						
 					// Single Pixel Highlight Line.
 					17="fill(x0+3, y0+1, x1-3, y0+2, lightestGreyHighlight)"
@@ -249,7 +249,7 @@
 				0="gradient(x0-1,y0+2,x1,y0+39, grey, lightGreyEnd)"	   	
 			   	1="image(x0+2,y0+16,x1,y1, graphics/tab_close)"
 				2="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
-				3="fill(x0-2,y0,x1,y0+1, darkestGrey)"
+				3="fill(x0-2,y0,x1,y0+1, darkGrey)"
 			}
 		}
 	
@@ -258,7 +258,7 @@
 					0="gradient(x0-1,y0+2,x1,y0+39, grey, lightGreyEnd)"	   	
 				   	1="image(x0+2,y0+16,x1,y1, graphics/tab_close_hover)"
 					2="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
-					3="fill(x0-2,y0,x1,y0+1, darkestGrey)"
+					3="fill(x0-2,y0,x1,y0+1, darkGrey)"
 				}
 			}
 			
@@ -267,7 +267,7 @@
 					0="gradient(x0-1,y0+2,x1,y0+39, grey, lightGreyEnd)"		   	
 				   	1="image(x0+2,y0+16,x1,y1, graphics/tab_close_active)"
 					2="fill(x0-2,y0+1,x1,y0+2, greyHighlight)"
-					3="fill(x0-2,y0,x1,y0+1, darkestGrey)"
+					3="fill(x0-2,y0,x1,y0+1, darkGrey)"
 				}
 			}
 			
@@ -277,6 +277,7 @@
 			selectedbgcolor="blue"
 			selectedtextcolor="trueWhite"
 			textcolor="ChatDialog.HistoryColor"
+			font-size=15
 			inset="0 8 0 0"
 			
 			render {}

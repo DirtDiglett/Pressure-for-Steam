@@ -2,27 +2,27 @@
 	styles {
 		headertext {
 			textcolor=lightestGreyHighlight
-			font-size=13
+			font-size=15
 		}
 
 		headertext-red {
 			textcolor=lightestGreyHighlight
-			font-size=13
+			font-size=15
 		}
 
 		headertext-green {
 			textcolor=lightestGreyHighlight
-			font-size=13
+			font-size=15
 		}
 
 		headertext-blue {
 			textcolor=lightestGreyHighlight
-			font-size=13
+			font-size=15
 		}
 
 		valuetext {
 			textcolor=lightestGreyHighlight
-			font-size=13
+			font-size=15
 		}
 	}
 

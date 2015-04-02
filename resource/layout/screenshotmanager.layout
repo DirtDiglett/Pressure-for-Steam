@@ -89,7 +89,7 @@
 		}
 		
 		gameselector {
-			font-size=13
+			font-size=15
 			font-family=basefont
 			font-weight=700
 			inset="6 0 0 0"
@@ -127,7 +127,7 @@
 			shadowtextcolor= "darkestGrey"// this is the cursor color
 			textcolor= "darkestGrey"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			padding-left=14
 			inset-left=0
 			inset-top=0

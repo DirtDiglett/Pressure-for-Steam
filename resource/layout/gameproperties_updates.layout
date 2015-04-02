@@ -6,7 +6,7 @@
 			bgcolor=none
 			textcolor="white"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-style="none"
 			inset="3 0 0 0"
 			
@@ -72,7 +72,7 @@
 				bgcolor=none
 				textcolor="trueWhite"
 				font-family=basefont
-				font-size=13
+				font-size=15
 				font-style="none"
 
 				render_bg {

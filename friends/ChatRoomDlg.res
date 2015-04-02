@@ -40,7 +40,7 @@
 		// Used for the status label on the chat only
 		label {
 			textcolor=lighterGrey
-			font-size=13
+			font-size=15
 			font-style=none
 		}
 		
@@ -51,7 +51,7 @@
 			shadowtextcolor=darkestGrey
 			textcolor=darkestGrey
 			font-family=basefont
-			font-size=13
+			font-size=15
 			inset-left=4
 			inset-top=6
 			inset-right=6
@@ -403,7 +403,7 @@
 		place { 
 			control="Splitter,UserList"
 			align=right
-			y=55
+			y=54
 			height=max
 			margin-right=0
 			margin-bottom=58

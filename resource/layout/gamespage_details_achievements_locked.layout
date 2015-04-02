@@ -24,7 +24,7 @@
 
 		achievementlabelmore {
 			textcolor="greyhighlight"
-			font-size=13
+			font-size=15
 			font-family=basefont
 		    inset="-3 0 0 0"
 
@@ -33,7 +33,7 @@
     		   
 			achievementlabelmore:hover {
 				textcolor="white"
-				font-size=13
+				font-size=15
 				font-family=basefont
 			    inset="-3 0 0 0"
 

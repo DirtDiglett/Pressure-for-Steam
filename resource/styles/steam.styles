@@ -153,7 +153,7 @@ colors {
 	MenuBG1="92 89 86 255" //gradient colors
 	MenuBG2="61 59 58 255"
 	
-	Divider="107 104 101 255"
+	Divider="darkGrey"
 	SuperDivider="61 61 61 255"
 	DarkImageBorder="47 48 43 255"
 	DarkImageOverlay="0 0 0 80"
@@ -233,7 +233,7 @@ styles {
 		bgcolor="none"
 
 		render {
-			0="fill(x0,y0,x1,y0+1, black65)"
+			0="fill(x0,y0,x1,y0+1, darkGrey)"
 			1="fill(x0,y0+1,x1,y0+2, grey50)"
 		}
 	}	
@@ -269,7 +269,7 @@ styles {
 		bgcolor="none"
 		font-family=semibold
 		textcolor="lightestGrey"
-		font-size=14
+		font-size=15
 		font-weight=400
 		padding-left="0"
 		padding-right="64"
@@ -304,7 +304,7 @@ styles {
 			bgcolor="none"
 			textcolor="white"
 			font-family=semibold
-			font-size=14
+			font-size=15
 			font-weight=400
 			inset="2 -3 0 0"
 			inset="0 4 0 0" [$OSX]
@@ -367,9 +367,9 @@ styles {
 	Label {
 		bgcolor="none"
 		selectedtextcolor="Text"
-		textcolor="Label"
+		textcolor="white"
 		font-family=basefont
-		font-size=14
+		font-size=15
 		font-weight=400
 	}
    
@@ -538,7 +538,7 @@ styles {
 		bgcolor="none"
 		textcolor="scrollglyph"
 		font-family=basefont
-		font-size=14
+		font-size=15
 		font-weight=400
 		
 		render_bg {}   
@@ -560,7 +560,7 @@ styles {
 	MenuItem {
 		font-family=basefont
 		textcolor  = white
-		font-size=14
+		font-size=15
 		inset="0 0 0 0"
 		padding=0
 		bgcolor="none"
@@ -604,8 +604,8 @@ styles {
 		inset="0 0 0 0"
 		
 		render {
-			0="fill(x0,y0+5,x1,y0+6, black65)"
-			1="fill(x0+1,y0+6,x1,y0+7, grey50)"
+			0="fill(x0,y0+5,x1,y0+6, darkGrey)"
+			1="fill(x0+1,y0+6,x1-1,y0+7, grey50)"
 		}
 	}
 
@@ -631,7 +631,7 @@ styles {
 			0="fill( x0, y0, x1, y1, lightGreyEnd )"
 			1="fill( x0, y0, x1, y0+55, grey50 )"
 			2="gradient( x0, y0, x1, y0+54, lightGreyEnd, darkGreyEnd)"//darkestGrey )"
-			3="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			3="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			4="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -644,7 +644,7 @@ styles {
 			0="fill( x0, y0, x1, y1, lightGreyEnd)"
 			1="fill( x0, y0, x1, y0+55, grey50 )"
 			2="gradient( x0, y0, x1, y0+54, lightGreyEnd, darkGreyEnd)"
-			3="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			3="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			4="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -655,7 +655,7 @@ styles {
 			0="fill( x0, y0, x1, y1, lightGreyEnd )"
 			1="fill( x0, y0, x1, y0+55, grey50 )"
 			2="gradient( x0, y0, x1, y0+54, lightGreyEnd, darkGreyEnd)"//darkestGrey )"
-			3="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			3="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			4="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -663,7 +663,7 @@ styles {
 	
 	CSetNicknameDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -671,7 +671,7 @@ styles {
 	
 	CFriendNotificationOptionsDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -679,7 +679,7 @@ styles {
 	
 	CGameLaunchParametersDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -687,7 +687,7 @@ styles {
 	
 	CClanEventDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		
@@ -699,7 +699,7 @@ styles {
 		bgcolor=darkGreyEnd
 		
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -710,7 +710,7 @@ styles {
 			0="fill( x0, y0, x1, y1, lightGreyEnd )"
 			1="fill( x0, y0, x1, y0+53, grey50 )"
 			2="gradient( x0, y0, x1, y0+52, lightGreyEnd, darkGreyEnd)"//darkestGrey )"
-			3="fill( x0, y1-60, x1, y1-59, darkestGrey )"
+			3="fill( x0, y1-60, x1, y1-59, darkGrey )"
 			4="fill( x0+1, y1-59, x1-1, y1-58, greyHighlight )"
 			5="gradient( x0+1, y1-58, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -720,7 +720,7 @@ styles {
 		bgcolor=darkGreyEnd
 		
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -728,7 +728,7 @@ styles {
 	
 	CSteamCacheWorkDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -736,7 +736,7 @@ styles {
 	
 	CSetCustomImageDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -744,7 +744,7 @@ styles {
 	
 	CBackupWizard {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -752,7 +752,7 @@ styles {
 	
 	CDialogCheckForUpdates {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -760,7 +760,7 @@ styles {
 	
 	CRegisterCDKeyWizard {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -768,7 +768,7 @@ styles {
 	
 	CAddShortcutDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -776,7 +776,7 @@ styles {
 	
 	CEditFriendsGroupsDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -784,7 +784,7 @@ styles {
 	
 	CLaunchOptionsDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -792,7 +792,7 @@ styles {
 	
 	CDialogGameInfo {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -800,7 +800,7 @@ styles {
 	
 	CChangeContactEmailWizard {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -808,7 +808,7 @@ styles {
 	
 	CChangePasswordWizard {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -816,7 +816,7 @@ styles {
 	
 	CChooseBetaDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -824,7 +824,7 @@ styles {
 	
 	CValidateContactEmailWizard {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -832,7 +832,7 @@ styles {
 	
 	CSettingsSubStreamingAdvancedHost {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -840,7 +840,7 @@ styles {
 	
 	CSettingsSubStreamingAdvancedClient {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -848,7 +848,7 @@ styles {
 	
 	CSetJumplistOptions {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -856,7 +856,7 @@ styles {
 	
 	CContentManagmentDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -864,7 +864,7 @@ styles {
 	
 	CSoundSystemSelect {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -872,7 +872,7 @@ styles {
 	
 	CSyncConflictDialog {
 		render_bg {
-			0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
+			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
@@ -883,7 +883,7 @@ styles {
 		bgcolor=none
 		textcolor="lightestGrey"
 		font-family=basefont
-		font-size=13
+		font-size=15
 		font-style="normal"
 		font-weight=400
 		inset="0 0 0 0"
@@ -935,7 +935,7 @@ styles {
 	}
 
 	"PageDragFrame PageTab" {
-		font-size=14
+		font-size=15
 		font-style="normal"
 		font-style="none"
 	}
@@ -944,7 +944,7 @@ styles {
 		bgcolor="none"
 		textcolor="white"
 		font-family=basefont
-		font-size=14
+		font-size=15
 		font-weight=400
 	}
 
@@ -956,7 +956,7 @@ styles {
 		
 		"ProgressBox Label" {
 			textcolor=none
-			font-size=14
+			font-size=15
 			font-family=basefont
 			font-weight=300
 			inset="0 0 0 10"
@@ -980,7 +980,7 @@ styles {
 		shadowtextcolor="darkestGrey"  // this is the cursor color
 		textcolor="green"
 		font-family=basefont
-		font-size=13
+		font-size=15
 		
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
@@ -1011,7 +1011,7 @@ styles {
 		shadowtextcolor="darkestGrey"  // this is the cursor color
 		textcolor="green"
 		font-family=basefont
-		font-size=13
+		font-size=15
 		
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
@@ -1047,7 +1047,7 @@ styles {
 		selectedbgcolor = blue	
 		textcolor="white"
 		font-family=basefont
-		font-size=13
+		font-size=20
 		font-weight=400
 		inset="0 -1 0 0"
 		
@@ -1063,7 +1063,7 @@ styles {
 	"RichText url" {
 		selectedtextcolor="white"
 		textcolor="blue"
-		font-size=13
+		font-size=15
 		font-style=underline
 	}
 	
@@ -1074,17 +1074,17 @@ styles {
 	"CFriendPanel RichText URL" {
 		textcolor="blue"
 		font-style=underline
-		font-size=13
+		font-size=15
 	}
 	
 	// style of bold text in a rich text control
 	"RichText bold" {
-		font-size=13
+		font-size=15
 		font-weight=1000
 	}
 	
 	"RichText emphasis" {
-		font-size=13
+		font-size=15
 		font-style=italic
 	}
 
@@ -1095,7 +1095,7 @@ styles {
 		selectedbgcolor="Focus"
 		textcolor="Text"
 		font-family=basefont
-		font-size=14
+		font-size=15
 		font-weight=400
 		
 		render_bg {
@@ -1146,14 +1146,14 @@ styles {
 	
 	StatusLabel {
 		font-family=basefont
-		font-size=14
+		font-size=15
 		font-weight=400
 		textcolor="labelfocus"	  
 	}
 
 		StatusLabel:hover {
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400
 			textcolor="white"  
 		}   
@@ -1178,7 +1178,7 @@ styles {
 		selectedbgcolor="TextSelectedBG"
 		textcolor="Text"
 		font-family=basefont
-		font-size=13
+		font-size=15
 	
 		render {}
 		render_bg {}
@@ -1237,7 +1237,7 @@ styles {
 		selectedbgcolor="Focus"
 		textcolor="Text"
 		font-family=basefont
-		font-size=14
+		font-size=15
 		font-weight=400
 		inset="1 -1 1 1"  
 	
@@ -1302,14 +1302,14 @@ styles {
 		font-family="Lucida Console"
 		font-size=9
 		font-family="Menlo" [$OSX]
-		font-size=14 [$OSX]
+		font-size=15 [$OSX]
 	}	
 	
 	console_text_error {
 		selectedtextcolor="trueWhite"
 		selectedbgcolor="blue"
 		textcolor="red"
-		font-size=14
+		font-size=15
 		font-family="Menlo" [$OSX]
 	  	font-size=16 [$OSX]
 	}
@@ -1321,7 +1321,7 @@ styles {
  		font-family="Lucida Console"
 		font-size=9
 		font-family="Menlo" [$OSX]
-	  	font-size=14 [$OSX]
+	  	font-size=15 [$OSX]
 	}
 	
 	// Controls the HOLD button on Voice Chat...
@@ -1329,7 +1329,7 @@ styles {
 		bgcolor=none
 		textcolor="white"
 		font-family=basefont
-		font-size=13
+		font-size=15
 		font-style="outerglow"
 		font-outerglow-color="darkGreyEnd"
 		font-outerglow-offset=1
@@ -1390,7 +1390,7 @@ styles {
 			bgcolor=none
 			textcolor="grey"
 			font-family=basefont
-			font-size=13
+			font-size=15
 			font-style="none"
 			padding-left=3
 			padding-top=2
@@ -1462,7 +1462,7 @@ styles {
 
 	SuperNavMenuItem {
 		bgcolor=none
-		font-size=14
+		font-size=15
 		font-style="uppercase"
 		padding=4
 	}
