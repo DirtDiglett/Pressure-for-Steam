@@ -584,7 +584,7 @@
 			control="GraphPanel"
 			width=max
 			height=500
-			margin-top=10
+			margin-top=0
 		}
 
 		//Universal Pause/Resume Button

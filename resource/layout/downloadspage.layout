@@ -32,7 +32,7 @@
 			bgcolor=darkestgrey
 			
 			render {
-				2 = "fill ( x0, y0, x1, y0+13, black65 )"
+				2 = "gradient ( x0, y0, x1, y0+10, black65, none )"
 			}
 		}
 
