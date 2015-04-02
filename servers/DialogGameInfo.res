@@ -13,12 +13,12 @@
 		
 		label {
 			textcolor=lightestGrey
-			font-size=14
+			font-size=16
 		}
 		
 		textEntry {
 			textcolor=lightestGrey
-			font-size=14
+			font-size=16
 			inset-left=0
 		
 			render {}
@@ -239,7 +239,7 @@
 			control="AutoRetry,Connect,Refresh,Close"
 			region=bottom
 			align=right
-			height=24
+			height=28
 			margin-top=13
 			margin-right=13
 			spacing=8

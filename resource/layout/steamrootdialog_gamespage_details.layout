@@ -46,7 +46,7 @@
 		}
 		
 		"GamesPage_Details ListPanelInterior" {
-			bgcolor="none"
+			bgcolor="darkestGrey"
 			inset="0 0 0 0"
 			minimum-width=320
 

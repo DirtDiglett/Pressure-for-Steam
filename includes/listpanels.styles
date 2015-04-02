@@ -100,14 +100,14 @@
 			font-size=15
 			font-weight=400
 			font-style="regular,normal"
-			inset= "0 3 0 0"
+			inset= "0 -1 0 0"
 	
 			render {
-				0="fill(x0,y1-2,x1,y1-1, darkGrey)"
+				0="fill(x0,y1-1,x1,y1, darkGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 			render_bg {
-				1="gradient(x0,y0,x1,y1+1, grey, lightGreyEnd)"
+				1="gradient(x0,y0,x1,y1-1, grey, lightGreyEnd)"
 			} 
 		}
 		
@@ -116,7 +116,7 @@
 			
 			render_bg {
 				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
-				1="gradient(x0,y0,x1,y1+1, lighterGrey, grey)"
+				1="gradient(x0,y0,x1,y1, lighterGrey, grey)"
 			}
 		}
 
