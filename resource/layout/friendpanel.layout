@@ -111,33 +111,33 @@
 		
 		place {
 			control="Clanstatusimage"
-			x=20
+			x=18
 			width=15
 			height=15
 		}
 		
 		place [$OSX] { 
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" 
-			x=50 
+			x=48
 			y=5 
 		}
 
 		place [!$OSX] { 
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" 
-			x=50 
+			x=48 
 			y=2
 			spacing=2  
 		}
 
 		place { 		
 			control="StatusLabel"
-			x=50 
+			x=48 
 			y=16
 		}
 
 		place { 
 			control="GameLabel" 
-			x=50 
+			x=48 
 			y=30 
 		}
 		
@@ -152,7 +152,7 @@
 		// these controls are shown for friendship requests
 		place { 
 			control="AcceptLink,IgnoreLink,BlockLink"
-			x=50
+			x=48
 			y=27
 			spacing=10
 		}
@@ -167,20 +167,20 @@
 		
 		place {
 			control="ControlPanelLink"
-			x=50
+			x=48
 			y=27
 		}
 
 		place {
 			control="SuggestedImage,SuggestedLabel"
-			x=50
+			x=48
 			y=19
 			spacing=4
 		}
 		
 		place {
 			control="SuggestedInvite,SuggestedIgnore"
-			x=50
+			x=48
 			y=31
 			spacing=8
 		}

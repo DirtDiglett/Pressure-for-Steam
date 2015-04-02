@@ -326,7 +326,7 @@
 		inbox_button {
 			textcolor=orange
 			font-family=basefont
-			font-size=12
+			font-size=15
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -366,7 +366,7 @@
 		inbox_button_active [$OSX] {
 			textcolor=orange
 			font-family=basefont
-			font-size=12
+			font-size=15
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -382,7 +382,7 @@
 		inbox_button_active [!$OSX] {
 			textcolor=orange
 			font-family=basefont
-			font-size=12
+			font-size=15
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
