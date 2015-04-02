@@ -16,6 +16,7 @@
 			font-family=basefont
 			font-size=16
 			font-weight=600
+			inset-top=-1
 			//font-style="outerglow"
 			//font-outerglow-color="darkestGrey"
 			//font-outerglow-offset=1
@@ -37,7 +38,6 @@
 			//font-outerglow-color="darkestGrey"
 			//font-outerglow-offset=1
 			//font-outerglow-filtersize=3
-			inset-top=1
 		}
 
 		menuButtonStyle {
