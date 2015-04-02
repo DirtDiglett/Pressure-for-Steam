@@ -14,10 +14,12 @@
 			font-size=48
 			font-family=headerfont
 			font-weight=400	
+			inset="240 20 0 0"
+			padding-bottom=60
 		}
 
 		ArtistStyle {
-			bgcolor=black65
+			bgcolor=none
 			textcolor=white
 			font-size=20
 			font-family=basefont
@@ -25,7 +27,7 @@
 		}
 		
 		TracksInfoStyle {
-			bgcolor=black65
+			bgcolor=none
 			textcolor=lightestGrey
 			font-size=15
 			font-family=basefont
@@ -80,7 +82,7 @@
 			font-size=30
 			font-weight=400
 			font-style=uppercase,outerglow
-			inset="16 0 0 0"
+			inset="26 1 0 0"
 			font-outerglow-color="97 141 21 255"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
@@ -89,7 +91,7 @@
 			minimum-width=200
 
 			render {
-				1="image( x0 + 5, y0 + 14, x1, y1, graphics/icon_play )"
+				1="image( x0 + 10, y0 + 10, x1, y1, graphics/icon_play )"
 			}
 			render_bg {
 				// Background
@@ -230,9 +232,9 @@
 
 		place {
 			control=AlbumTitleLabel
-			start=CoverImage
-			x=20
-			y=0
+			x=0
+			y=-1
+			width=max
 			dir=right
 		}
 
@@ -240,6 +242,8 @@
 			control=ArtistLabel
 			start=AlbumTitleLabel
 			dir=down
+			y=-60
+			x=240
 		}
 
 		place {			
@@ -267,7 +271,7 @@
 			start=TracksInfoLabel
 			region=album
 			width=max
-			y=10
+			y=30
 			dir=down
 		}
 	}
