@@ -6,22 +6,29 @@
 	styles {
 		CFriendPanel:selected {
 			render_bg {}
-		}	
-		
+		}
+
 		SelfPanel:hover {
 			render_bg {}
-		}		    
- 
+		}
+
  		namestyle {
 			font-family=basefont
-			font-size=15
-			font-weight=bold
+			font-size=16
+			font-weight=600
 			//font-style="outerglow"
 			//font-outerglow-color="darkestGrey"
 			//font-outerglow-offset=1
 			//font-outerglow-filtersize=3
 		}
-		
+
+			// namestyle:hover { //TODO, maybe only for compact
+				// font-style="outline"
+				// font-outline-color="lighterGrey"
+				// font-outline-offset=1
+				// font-outline-filtersize=3
+			// }
+
 		nameInstanceStyle {
 			font-family=basefont
 			textcolor="lightestGrey"
@@ -32,7 +39,7 @@
 			//font-outerglow-filtersize=3
 			inset-top=1
 		}
-		
+
 		menuButtonStyle {
 			minimum-width=14
 			padding-top=6
@@ -41,33 +48,33 @@
 			padding-left=4
 			inset-top=-2
 		}
-		
+
 		menuButtonStyle:hover {
 			render_bg {}
 		}
-		
+
 			downarrow:hover {
 				render_bg {
 					0="image( x0, y0, x1, y1, graphics/icon_down_hover )"
 				}
 			}
-		
+
 		inviteLinkStyle {
 			textcolor=Text2
 			font-style="normal"
 			padding-left=2
 		}
-	
+
 			inviteLinkStyle:hover {
 				textcolor=White
 				font-style=underline
 			}
 	}
-	
+
 	layout {
 		place {
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore,MenuButton"
-			x=1
+			x=0
 			y=2
 			spacing=3
 		}
