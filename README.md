@@ -33,7 +33,7 @@ Because the skin is still in development, you can only download the skin here on
 	* Windows: the `Program Files (x86)/Steam/skins` folder
 	* Mac: right-click `Steam.app` and choose `show package contents` then go to - `/Contents/MacOS/skins`
 	* Linux: the `~/.local/share/Steam/skins/` folder
-3. You should also go ahead and install the Bebas Neue Bold font that is in the ZIP folder. It will be the file `BebasNeue Bold.otf`
+3. You should also go ahead and install all of the fonts that are in the `font - INSTALL THESE FIRST` folder.
 	* Windows: Right-Click the font file and choose "Install".
 	* Mac: Double-Click the font file. Click "Install".
 	* Linux: you may need to "install" the font manually instead by copying it to `/usr/share/fonts` (to install it system-wide) or `~/.fonts` (to install it only for the current user) and executing `fc-cache -fv` in a terminal.
