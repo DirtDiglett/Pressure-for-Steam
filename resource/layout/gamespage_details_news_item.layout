@@ -13,14 +13,15 @@
 	styles {
 		title_label {
 			textcolor="white"
-			font-family=semibold
-			font-size=18
+			font-family=basefont
+			font-size=20
 			padding-top=20
+			font-weight=600
 		}
 
 		date_and_author {
 			textcolor="greyhighlight"
-			font-size=12
+			font-size=15
 		}
 
 		newsitem_body {
