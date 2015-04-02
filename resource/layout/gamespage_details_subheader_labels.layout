@@ -1,27 +1,27 @@
 "resource/layout/gamespage_details_subheader_labels.layout" {
 	styles {
 		headertext {
-			textcolor=lightestGreyHighlight
+			textcolor=lightestGrey
 			font-size=15
 		}
 
 		headertext-red {
-			textcolor=lightestGreyHighlight
+			textcolor=lightestGrey
 			font-size=15
 		}
 
 		headertext-green {
-			textcolor=lightestGreyHighlight
+			textcolor=lightestGrey
 			font-size=15
 		}
 
 		headertext-blue {
-			textcolor=lightestGreyHighlight
+			textcolor=lightestGrey
 			font-size=15
 		}
 
 		valuetext {
-			textcolor=lightestGreyHighlight
+			textcolor=lightestGrey
 			font-size=15
 		}
 	}
