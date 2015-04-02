@@ -84,7 +84,7 @@
 			control=StatusProgressbar
 			region=ProgressRegion
 			align="top-center"
-			y=23
+			y=22
 			width=450
 			height=2
 		}
@@ -93,7 +93,7 @@
 			control="StatusDownloading, StatusPaused, StatusComplete"
 			align="top-center"
 			region="StatusRegion"
-			y=4
+			y=1
 		}
 	}
 }

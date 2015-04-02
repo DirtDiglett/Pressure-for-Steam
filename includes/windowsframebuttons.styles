@@ -31,7 +31,7 @@ window_controls.styles {
 			}
 			
 			FrameCloseButton:disabled {
-				image=graphics/window_controls/windows/disabled
+				image=graphics/window_controls/windows/close_disabled
 			}
 		
 			FrameCloseButton:framefocus {
@@ -63,7 +63,7 @@ window_controls.styles {
 			}
 			
 			FrameMaximizeButton:disabled {
-				image=graphics/window_controls/windows/disabled
+				image=graphics/window_controls/windows/maximize_disabled
 			}
 		
 			FrameMaximizeButton:framefocus {
@@ -95,7 +95,7 @@ window_controls.styles {
 			}
 			
 			FrameRestoreButton:disabled {
-				image=graphics/window_controls/windows/disabled
+				image=graphics/window_controls/windows/restore_disabled
 			}
 		
 			FrameRestoreButton:framefocus {
@@ -127,7 +127,7 @@ window_controls.styles {
 			}
 			
 			FrameMinimizeButton:disabled {
-				image=graphics/window_controls/windows/disabled
+				image=graphics/window_controls/windows/minimize_disabled
 			}
 		
 			FrameMinimizeButton:framefocus {
