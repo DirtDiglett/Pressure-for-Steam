@@ -1,19 +1,23 @@
 "resource/layout/musicpage_details_playlistitem.layout" {
 	styles {
 		PositionLabelStyle { 
-			bgcolor=none
-			textcolor=Labeldisabled
-			font-size=14
+			bgcolor=black65
+			textcolor=lightestGrey
+			font-size=16
 			font-family=basefont
-			font-weight=400 
+			font-weight=600 
 			padding-top=1
-			padding-bottom=10				
+			padding-bottom=10
+
+			render_bg {
+				0="fill(x1,y0,x1+10,y1, black65)"
+			}				
 		}
 		
 		TrackLabelStyle { 
-			bgcolor=none
-			textcolor=Text2
-			font-size=15
+			bgcolor=black65
+			textcolor=white
+			font-size=16
 			font-family=basefont
 			font-weight=400 
 			padding-top=1
@@ -21,7 +25,7 @@
 		}
 		
 			TrackLabelStyle:hover {
-				textcolor="text"
+				textcolor="blue"
 			}
 	}
 		
@@ -34,13 +38,13 @@
 		place {
 			control="PositionLabel"
 			region="panelregion"
-			width=40
+			width=20
 		}
 
 		place {
 			control="TrackLabel"
 			region="panelregion"
-			x=50
+			x=30
 			width=max
 		}
 	}	
