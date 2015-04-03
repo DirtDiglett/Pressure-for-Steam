@@ -54,8 +54,6 @@
 			font-family=basefont
 			font-size=15
 			textcolor="white"
-
-			//textcolor="red" [$OSX] //Test for Mac to see if we can define in same styles option
 			
 			font-style="none"
 			

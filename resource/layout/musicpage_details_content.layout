@@ -132,7 +132,7 @@
 		region {
 			name="background"
 			x=320
-			y=0
+			y=1
 			width=1024
 			height=1024
 		}
@@ -140,7 +140,7 @@
 		region {
 			name="list"
 			x=0
-			y=0
+			y=1
 			width=320
 			height=max
 			margin-bottom=0
