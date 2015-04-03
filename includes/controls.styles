@@ -855,7 +855,7 @@
 	TextEntry:empty
 	{
 		font-style=italic
-		textcolor=LabelDisabled
+		textcolor=red
 	}
 	
     TextEntryLarge {
