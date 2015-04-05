@@ -21,6 +21,7 @@
 
 			render {
 				//0="fill(x0+1,y0+143,x1-1,y0+144, darkGreyEnd)"
+				0="fill(x1-1,y0,x1,y1, darkestGrey)"
 			}
 
 			render_bg {
@@ -203,6 +204,7 @@
 
 			render {
 				//0="fill(x0,y0+143,x1,y0+144, darkestGrey)"
+				0="fill(x1-1,y0,x1,y1, darkestGrey)"
 			}
 			render_bg {
 			//	0="fill(x0,y0,x1,y1, darkestGrey)"
@@ -281,7 +283,7 @@
 				}
 			}
 
-		FriendsSearch [!$OSX] {
+		FriendsSearch {
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
@@ -290,6 +292,11 @@
 			padding-right=20
 			inset-left=0
 			minimum-width=110
+
+			render {
+				6="gradient(x1, y0-5, x1+9999, y0+61, lightGreyEnd, darkGreyEnd)"
+			}
+
 			render_bg {
 				6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
@@ -309,53 +316,13 @@
 			}
 		}
 
-		FriendsSearch [$OSX] {
-			textcolor="darkestGrey"
-			font-family=basefont
-			font-size=15
-			font-weight=400
-			inset-left=0
-			minimum-width=110
-
-			render_bg {
-				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
-				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-				3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
-			}
-		}
-
 			// Typed in, as well as hovered.
-			FriendsSearch:hover [!$OSX] {
+			FriendsSearch:hover {
 				textcolor="darkGreyEnd"
 				padding-left=4
 			}
 
-			FriendsSearch:hover [$OSX] {
-				textcolor="darkGreyEnd"
-				padding-left=0
-			}
-
-				FriendsSearch:focus [!$OSX] {
-					render_bg {
-						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
-						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
-						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-
-						//4="fill(x0-24, y0-5, x1+4, y0-4, darkestGrey)"
-						//5="fill(x0-23, y0-4, x1+3, y0-3, greyHighlight)"
-						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
-
-						15="fill(x0-19,y0+33,x0+121,y0+55, darkestGrey)"// Top->Bottom
-						16="fill(x0-20,y0+34,x0-19,y0+54, darkestGrey)" // Left
-						17="fill(x0+121,y0+34,x0+122,y0+54, darkestGrey)" // Right
-						18="fill(x0-19,y0+55,x0+121,y0+56, grey50)"//grey50)"
-						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)"
-						20="fill(x0+121, y0+54, x0+122, y0+55, grey50)"
-					}
-				}
-
-				FriendsSearch:active [!$OSX] {
+				FriendsSearch:focus {
 					render_bg {
 						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
@@ -597,7 +564,7 @@
 			control="friends_search"
 			start="FriendPanelSelf"
 			//y=85
-			width=max // should be max but right side is buggy if window size is changed using right-side handle of window border (only if box is empty)
+			width=192 // should be max but right side is buggy if window size is changed using right-side handle of window border (only if box is empty)
 			height=25
 			margin-left=18
 			margin-right=8
