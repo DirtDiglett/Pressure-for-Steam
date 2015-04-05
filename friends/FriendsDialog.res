@@ -20,12 +20,13 @@
 			font-weight=400
 
 			render {
-				0="fill(x0+1,y0+143,x1-1,y0+144, darkGreyEnd)"
+				//0="fill(x0+1,y0+143,x1-1,y0+144, darkGreyEnd)"
 			}
 
 			render_bg {
 				// Creates the top section
-				0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, lightGreyEnd )"
+				0="gradient( x0+1, y0+1, x1-1, y0 + 48, grey, lightGreyEnd )"
+				21="fill( x0+1, y0+48, x1-1, y0 + 75, lightGreyEnd )"
 
 				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
@@ -39,22 +40,22 @@
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 
-				8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
+				//8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
 
-				9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
-				10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
+				// 9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
+				// 10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
 
 				11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
 
 				// Background for the pageTabs
-				15="fill(x0+7,y0+114,x0+146,y0+138, darkestGrey)"// Top->Bottom
-				16="fill(x0+6,y0+115,x0+7,y0+137, darkestGrey)" // Left
-				17="fill(x0+146,y0+115,x0+147,y0+137, darkestGrey)" // Right
-				18="fill(x0+7,y0+138,x0+146,y0+139, grey50)"//grey50)"
-				19="fill(x0+6, y0+137, x0+7, y0+138, grey50)"
-				20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
+				// 15="fill(x0+7,y0+114,x0+146,y0+138, darkestGrey)"// Top->Bottom
+				// 16="fill(x0+6,y0+115,x0+7,y0+137, darkestGrey)" // Left
+				// 17="fill(x0+146,y0+115,x0+147,y0+137, darkestGrey)" // Right
+				// 18="fill(x0+7,y0+138,x0+146,y0+139, grey50)"//grey50)"
+				// 19="fill(x0+6, y0+137, x0+7, y0+138, grey50)"
+				// 20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
 
-				21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
+				//21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
 			}
 	    }
 
@@ -68,7 +69,8 @@
 
 				render_bg {
 					// Creates the top section
-					0="gradient( x0+1, y0+1, x1-1, y0 + 100, grey, lightGreyEnd )"
+					0="gradient( x0+1, y0+1, x1-1, y0 + 48, grey, lightGreyEnd )"
+					21="fill( x0+1, y0+48, x1-1, y0 + 75, lightGreyEnd )"
 
 					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
@@ -82,22 +84,22 @@
 					// Create the 1px Highlight on top
 					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 
-					8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
+					//8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
 
-					9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
-					10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
+					// 9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
+					// 10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
 
 					11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
 
 					// Background for the pageTabs
-					15="fill(x0+7,y0+114,x0+146,y0+138, darkestGrey)"// Top->Bottom
-					16="fill(x0+6,y0+115,x0+7,y0+137, darkestGrey)" // Left
-					17="fill(x0+146,y0+115,x0+147,y0+137, darkestGrey)" // Right
-					18="fill(x0+7,y0+138,x0+146,y0+139, grey50)"//grey50)"
-					19="fill(x0+6, y0+137, x0+7, y0+138, grey50)"
-					20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
+					// 15="fill(x0+7,y0+114,x0+146,y0+138, darkestGrey)"// Top->Bottom
+					// 16="fill(x0+6,y0+115,x0+7,y0+137, darkestGrey)" // Left
+					// 17="fill(x0+146,y0+115,x0+147,y0+137, darkestGrey)" // Right
+					// 18="fill(x0+7,y0+138,x0+146,y0+139, grey50)"//grey50)"
+					// 19="fill(x0+6, y0+137, x0+7, y0+138, grey50)"
+					// 20="fill(x0+146, y0+137, x0+147, y0+138, grey50)"
 
-					21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
+					//21="fill(x0+1,y0+77,x1-1,y0+78, darkestGrey)"
 				}
 			}
 
@@ -135,14 +137,18 @@
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
-			inset="6 0 0 0"
+			inset="7 0 0 0"
 			minimum-width=68
-			minimum-height=34
+			minimum-height=32
 
 			render_bg {
 				//0="fill(x0+8,y0+6,x1+9,y1-6, blue)"
-				1="gradient(x0+8, y0+6, x1+9, y1-6, grey, lightGreyEnd)"
-				2="fill(x0+8, y0+6, x1+9, y0+7, greyHighlight)"
+				1="gradient(x0+10, y0+7, x1+12, y1-5, grey, lightGreyEnd)"
+				2="fill(x0+10, y0+7, x1+12, y0+8, greyHighlight)"
+				3="fill(x0+10, y0+7, x0+11, y0+8, darkGreyEnd)"
+				4="fill(x1+11, y0+7, x1+12, y0+8, darkGreyEnd)"
+				5="fill(x0+10, y1-6, x0+11, y1-5, darkGreyEnd)"
+				6="fill(x1+11, y1-6, x1+12, y1-5, darkGreyEnd)"
 			}
 		}
 
@@ -150,15 +156,22 @@
 				textcolor=white
 
 				render_bg {
-					0="gradient(x0+8, y0+6, x1+9, y1-6, greyHighlight, grey)"
-					1="fill(x0+8, y0+6, x1+9, y0+7, lightestGreyHighlight)"
+					0="gradient(x0+10, y0+7, x1+12, y1-5, greyHighlight, grey)"
+					1="fill(x0+10, y0+7, x1+12, y0+8, lightestGreyHighlight)"
+					3="fill(x0+10, y0+7, x0+11, y0+8, darkGreyEnd)"
+					4="fill(x1+11, y0+7, x1+12, y0+8, darkGreyEnd)"
+					5="fill(x0+10, y1-6, x0+11, y1-5, darkGreyEnd)"
+					6="fill(x1+11, y1-6, x1+12, y1-5, darkGreyEnd)"
 				}
 			}
 
 			PageTab:selected {
 				textcolor=blue
 
-				render_bg {}
+				render_bg {
+					//0="fill(x0+8, y0+6, x1+9, y1-6, darkestGrey)"
+					//1="fill(x1+9, y0+7, x1+10, y1-5, darkestGrey)"
+				}
 			}
 
 		"CFriendsDialog SectionedListPanel" {
@@ -189,7 +202,7 @@
 			bgcolor="darkestGrey"
 
 			render {
-				0="fill(x0,y0+143,x1,y0+144, darkestGrey)"
+				//0="fill(x0,y0+143,x1,y0+144, darkestGrey)"
 			}
 			render_bg {
 			//	0="fill(x0,y0,x1,y1, darkestGrey)"
@@ -211,8 +224,8 @@
 			font-weight=400
 
 			render {
-				0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
-				0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
+				// 0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
+				// 0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
 			}
 			render_bg {}
 		}
@@ -277,11 +290,22 @@
 			padding-right=20
 			inset-left=0
 			minimum-width=110
-
 			render_bg {
+				6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+
+				//4="fill(x0-24, y0-5, x1+4, y0-4, darkestGrey)"
+				//5="fill(x0-23, y0-4, x1+3, y0-3, greyHighlight)"
+				7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+
+				15="fill(x0-19,y0+33,x0+121,y0+55, darkestGrey)"// Top->Bottom
+				16="fill(x0-20,y0+34,x0-19,y0+54, darkestGrey)" // Left
+				17="fill(x0+121,y0+34,x0+122,y0+54, darkestGrey)" // Right
+				18="fill(x0-19,y0+55,x0+121,y0+56, grey50)"//grey50)"
+				19="fill(x0-20, y0+54, x0-19, y0+55, grey50)"
+				20="fill(x0+121, y0+54, x0+122, y0+55, grey50)"
 			}
 		}
 
@@ -313,17 +337,41 @@
 
 				FriendsSearch:focus [!$OSX] {
 					render_bg {
+						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+
+						//4="fill(x0-24, y0-5, x1+4, y0-4, darkestGrey)"
+						//5="fill(x0-23, y0-4, x1+3, y0-3, greyHighlight)"
+						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+
+						15="fill(x0-19,y0+33,x0+121,y0+55, darkestGrey)"// Top->Bottom
+						16="fill(x0-20,y0+34,x0-19,y0+54, darkestGrey)" // Left
+						17="fill(x0+121,y0+34,x0+122,y0+54, darkestGrey)" // Right
+						18="fill(x0-19,y0+55,x0+121,y0+56, grey50)"//grey50)"
+						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)"
+						20="fill(x0+121, y0+54, x0+122, y0+55, grey50)"
 					}
 				}
 
 				FriendsSearch:active [!$OSX] {
 					render_bg {
+						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+
+						//4="fill(x0-24, y0-5, x1+4, y0-4, darkestGrey)"
+						//5="fill(x0-23, y0-4, x1+3, y0-3, greyHighlight)"
+						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+
+						15="fill(x0-19,y0+33,x0+121,y0+55, darkestGrey)"// Top->Bottom
+						16="fill(x0-20,y0+34,x0-19,y0+54, darkestGrey)" // Left
+						17="fill(x0+121,y0+34,x0+122,y0+54, darkestGrey)" // Right
+						18="fill(x0-19,y0+55,x0+121,y0+56, grey50)"//grey50)"
+						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)"
+						20="fill(x0+121, y0+54, x0+122, y0+55, grey50)"
 					}
 				}
 
@@ -352,25 +400,61 @@
 				padding-left=4
 
 				render_bg {
+					6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
 					2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
 					3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+
+					//4="fill(x0-24, y0-5, x1+4, y0-4, darkestGrey)"
+					//5="fill(x0-23, y0-4, x1+3, y0-3, greyHighlight)"
+					7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+
+					15="fill(x0-19,y0+33,x0+121,y0+55, darkestGrey)"// Top->Bottom
+					16="fill(x0-20,y0+34,x0-19,y0+54, darkestGrey)" // Left
+					17="fill(x0+121,y0+34,x0+122,y0+54, darkestGrey)" // Right
+					18="fill(x0-19,y0+55,x0+121,y0+56, grey50)"//grey50)"
+					19="fill(x0-20, y0+54, x0-19, y0+55, grey50)"
+					20="fill(x0+121, y0+54, x0+122, y0+55, grey50)"
 				}
 			}
 
 				FriendsSearch:empty:focus [!$OSX] {
 					render_bg {
+						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+
+						//4="fill(x0-24, y0-5, x1+4, y0-4, darkestGrey)"
+						//5="fill(x0-23, y0-4, x1+3, y0-3, greyHighlight)"
+						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+
+						15="fill(x0-19,y0+33,x0+121,y0+55, darkestGrey)"// Top->Bottom
+						16="fill(x0-20,y0+34,x0-19,y0+54, darkestGrey)" // Left
+						17="fill(x0+121,y0+34,x0+122,y0+54, darkestGrey)" // Right
+						18="fill(x0-19,y0+55,x0+121,y0+56, grey50)"//grey50)"
+						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)"
+						20="fill(x0+121, y0+54, x0+122, y0+55, grey50)"
 					}
 				}
 
 				FriendsSearch:empty:active [!$OSX] {
 					render_bg {
+						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, darkGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+
+						//4="fill(x0-24, y0-5, x1+4, y0-4, darkestGrey)"
+						//5="fill(x0-23, y0-4, x1+3, y0-3, greyHighlight)"
+						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+
+						15="fill(x0-19,y0+33,x0+121,y0+55, darkestGrey)"// Top->Bottom
+						16="fill(x0-20,y0+34,x0-19,y0+54, darkestGrey)" // Left
+						17="fill(x0+121,y0+34,x0+122,y0+54, darkestGrey)" // Right
+						18="fill(x0-19,y0+55,x0+121,y0+56, grey50)"//grey50)"
+						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)"
+						20="fill(x0+121, y0+54, x0+122, y0+55, grey50)"
 					}
 				}
 
@@ -429,8 +513,8 @@
 			textcolor=none
 
 			render_bg {
-				0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
-				0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
+				// 0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
+				// 0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
 			}
 		}
 
@@ -439,8 +523,8 @@
 				inset="0 0 0 0"
 
 				render_bg {
-					0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
-					0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
+					//0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
+					//0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
 				}
 			}
 
@@ -503,16 +587,6 @@
 		}
 
 		place {
-			control="friends_search"
-			y=85
-			width=185 // should be max but right side is buggy if window size is changed using right-side handle of window border (only if box is empty)
-			height=25
-			margin-left=28
-			margin-right=8
-			dir=right
-		}
-
-		place {
 			control="FriendPanelSelf"
 			x=10
 			y=25
@@ -520,13 +594,26 @@
 		}
 
 		place {
+			control="friends_search"
+			start="FriendPanelSelf"
+			//y=85
+			width=max // should be max but right side is buggy if window size is changed using right-side handle of window border (only if box is empty)
+			height=25
+			margin-left=18
+			margin-right=8
+			margin-top=4
+			dir=down
+		}
+
+		place {
 			control="FriendsDialogSheet"
 			align=left
-			y=105
+			start="friends_search"
+			dir=down
 			width=max
 			height=max
-			margin-left=-1
-			margin-top=0
+			margin-left=-29
+			margin-top=-2
 			margin-right=0
 			margin-bottom=16
 		}
@@ -534,28 +621,20 @@
 		// Use this for cleverness to make the buttons.
 		place {
 			control="friends_search_icon" // this rounds off the corners for the pagetab buttons; it was never clickable
-			y=115
+			y=0
 			margin-left=7
-			width=1
-			height=22
+			width=0
+			height=0
 			dir=right
 		}
 
 		place {
 			control="addFriendsButton" // this rounds off the corners for the pagetab buttons; it's still clickable
-			width=1
-			y=115
-			height=22
+			width=0
+			y=0
+			height=0
 			margin-left=145
 			dir=right
-		}
-
-		place {
-			control="DownLabel"
-			width=max
-			height=max
-			margin-left=8
-			margin-top=155
 		}
 
 		place {
@@ -563,7 +642,18 @@
 			width=141
 			height=24
 			margin-left=6
-			margin-top=114
+			margin-top=83
+		}
+
+		place {
+			control="DownLabel"
+			width=max
+			height=max
+			start="NoFriendsAddFriendButton"
+			margin-left=2
+			margin-top=5
+			margin-right=6
+			dir=down
 		}
  	}
 }
