@@ -499,7 +499,7 @@
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	
 	layout {
-		place [!$OSX]  { 
+		place [$WINDOWS]  { 
 			control="frame_minimize,frame_maximize,frame_close" 
 			align=right 
 			margin-top=-2 
