@@ -142,4 +142,13 @@ Scheme {
 			}
 		}
 	}
+	Fonts {
+		"Default" {
+			"1" {
+			"name" "Noto Sans"
+			"tall" "15"
+			"weight" "400"
+			}
+		}
+	}
 }
