@@ -957,9 +957,13 @@ styles {
 	}
 
 		ProgressBox {
+			minimum-height=128
+			minimum-width=384
+
 			render {
-				0="image( x0+122, y0+39, x1, y0, graphics/login_logo )"
+				0="image( x0, y0, x1, y0, graphics/login_splash )"
 			}
+			render_bg {}
 		}
 		
 		"ProgressBox Label" {
