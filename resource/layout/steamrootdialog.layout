@@ -335,7 +335,7 @@
 			
 			render {}
 			render_bg {
-				0="image(x0-2, y0-1, x0+9, y0+9, graphics/inbox_zero)"
+				0="image(x0-2, y0+1, x0+9, y0+9, graphics/inbox_zero)"
 				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications_none)"
 			}	
 		}
