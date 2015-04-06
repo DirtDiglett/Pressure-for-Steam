@@ -449,7 +449,7 @@
 		
 		place { 
 			control="VoiceBar" 
-			y=58
+			y=57
 			width=max
 			height=40
 			dir=down
