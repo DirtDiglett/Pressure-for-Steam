@@ -36,16 +36,16 @@
 			}
 		}			
 		
-		links:hover {
-			textcolor="lightestBlue"
-			font-family=basefont
-			font-size=15
-			font-style=normal
-		}
+			links:hover {
+				textcolor="lightestBlue"
+				font-family=basefont
+				font-size=15
+				font-style=normal
+			}
 
-		links:disabled {
-			textcolor="grey"
-		}
+			links:disabled {
+				textcolor="grey"
+			}
 
 		label {
 			font-size=15
@@ -117,8 +117,8 @@
 		gameImagePanel {
 			inset="0 0 0 0"
 
-			render_bg {
-				0="gradient(x0,y1-12,x1,y1-4, black65, none)"
+			render {
+				0="image(x0,y0+3,x1,y1, graphics/download_overlay)"
 			}
 		}
 
@@ -292,7 +292,7 @@
 
 		region { 
 			name="column1"
-			x=16
+			x=11
 		}
 
 		region {
@@ -322,7 +322,7 @@
 		place { 
 			control="namelabel" 
 			region="column1"
-			x=-1 
+			x=5
 			y=5
 		}
 
@@ -330,9 +330,9 @@
 			control="gameimage"
 			region="column1"
 			start=namelabel
-			x=1
+			x=-5
 			y=-12
-			width=184
+			width=195
 			height=85
 			dir=down
 		}
