@@ -3,14 +3,21 @@
 
 
 		LabelEVCert [!$OSX] {
-			bgcolor="green"
-			textcolor="white"
+			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
 			font-weight=400
 			inset-left=4
-			inset-top=3
+			inset-top=0
 			inset-right=4	
+
+			render_bg {
+				0="fill(x0,y0,x0+1,y1, darkestGrey)"
+				1="fill(x0+1,y0,x1,y1, green)"
+				2="fill(x0+1,y0,x1,y0+1, darkestGrey)"
+				3="fill(x0+1,y1-1,x1,y1, darkestGrey)"
+				4="fill(x0+1,y1,x1,y1+1, grey25)"
+			}
 		}
 	
 		LabelEVCert [$OSX] {
@@ -251,7 +258,7 @@
 			font-family=basefont
 			font-size=15
 			inset-left=4
-			inset-top=0
+			inset-top=-1
 			  
 			render_bg {
 				0="fill(x0,y0+2,x1,y1-2, lighterGrey)"
@@ -2149,7 +2156,7 @@
 // Controls that appear on the WebPanel pages.
 // ********************************************************************************************************
 		place {
-			control="refresh,stop,EVCert"
+			control="refresh,stop"
 			x=68
 			y=48
 			width=28
@@ -2177,13 +2184,19 @@
 		}
 		
 		place {
-			control="URLBar"
+			control="EVCert"
+			width=165
+		}
+
+		place {
+			control="EVCert,URLBar"
 			align=left
 			y=48
 			width=max
 			height=24
 			margin-left=96
 			margin-right=221
+			dir=right
 		}
 
 // ******************************************************************************************************** 
