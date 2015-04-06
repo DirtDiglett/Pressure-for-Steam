@@ -3,8 +3,8 @@
 
 
 		LabelEVCert [!$OSX] {
-			bgcolor="none"
-			textcolor="none"
+			bgcolor="green"
+			textcolor="white"
 			font-family=basefont
 			font-size=15
 			font-weight=400
@@ -176,6 +176,21 @@
 // Background for the "Throbber" (Loading animation)
 		Panel_transparent {
 			bgcolor="none"
+
+			render_bg {
+				0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
+			
+				// TOP
+				1="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
+				2="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
+				
+				// RIGHT
+				3="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+				  	
+				// BOTTOM
+				7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+				8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+			}
 		}
 
 // ******************************************************************************************************** 
@@ -239,18 +254,14 @@
 			inset-top=0
 			  
 			render_bg {
-				0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
+				0="fill(x0,y0+2,x1,y1-2, lighterGrey)"
 			
 				// TOP
-				1="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
-				2="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
-				
-				// RIGHT
-				3="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+				1="image_scale(x0,y0,x1,y0+4, graphics/textEntry/disabled/topMiddle)"
 				  	
 				// BOTTOM
-				7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
-				8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+				7="image_scale(x0,y1-2,x1,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+				
 			} 
 		}
 		
@@ -266,17 +277,13 @@
 			inset-top=0
 			  
 			render_bg {
-				0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
+				0="fill(x0,y0+2,x1,y1-2, lighterGrey)"
 			
 				 // TOP
-				1="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
-				2="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
-				 	// RIGHT
-				3="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+				1="image_scale(x0,y0,x1,y0+4, graphics/textEntry/disabled/topMiddle)"
 				  	
 			  	// BOTTOM
-			  	7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
-			  	8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
+			  	7="image_scale(x0,y1-2,x1,y1+1, graphics/textEntry/disabled/bottomMiddle)"	
 			  	
 			  	9="fill(x0,y0,x0+1,y1, darkestGrey)"
 			} 
@@ -2142,12 +2149,13 @@
 // Controls that appear on the WebPanel pages.
 // ********************************************************************************************************
 		place {
-			control="refresh,stop"
+			control="refresh,stop,EVCert"
 			x=68
 			y=48
 			width=28
 			height=25
 			spacing=0
+			dir=right
 		}
 
 		place { 
@@ -2157,7 +2165,7 @@
 			y=0
 			width=24
 			height=24
-			margin-right=160
+			margin-right=197
 		}
 		
 		place { 
@@ -2175,7 +2183,7 @@
 			width=max
 			height=24
 			margin-left=96
-			margin-right=195
+			margin-right=221
 		}
 
 // ******************************************************************************************************** 
@@ -2262,7 +2270,7 @@
 		}
 		
 		place { 
-			control="fullscreen, label_library_view, label_search_icon,EVCert" 
+			control="fullscreen, label_library_view, label_search_icon" 
 			y=0
 			width=0
 			height=0
