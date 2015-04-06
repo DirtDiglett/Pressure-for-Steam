@@ -499,6 +499,14 @@
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	
 	layout {
+		place [!$OSX]  { 
+			control="frame_minimize,frame_maximize,frame_close" 
+			align=right 
+			margin-top=-2 
+			margin-right=6 
+			spacing=-8 
+		}
+
 		place [$WINDOWS]  { 
 			control="frame_minimize,frame_maximize,frame_close" 
 			align=right 
