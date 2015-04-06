@@ -366,7 +366,7 @@ styles {
 	
 	Label {
 		bgcolor="none"
-		selectedtextcolor="Text"
+		selectedtextcolor="truewhite"
 		textcolor="white"
 		font-family=basefont
 		font-size=15
@@ -471,7 +471,7 @@ styles {
 	
 	MainNav {
 		bgcolor="none"
-		selectedtextcolor="Text"
+		selectedtextcolor="trueWhite"
 		textcolor="Label"
 		font-family=basefont
 		font-size=21
