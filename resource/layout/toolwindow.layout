@@ -133,19 +133,13 @@
 		place [!$OSX] {
 			control="frame_captiongrip"
 			width=max
-			height=40
-		}
-
-		place [$OSX] {
-			control="frame_captiongrip"
-			width=max
-			height=50
+			height=20
 		}
 
 		place {
 			control="ToolWindowSheet"
 			x=0
-			y=21
+			y=12
 			width=max
 			height=max
 		}
