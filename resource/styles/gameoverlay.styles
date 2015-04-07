@@ -6,6 +6,14 @@ gameoverlay.styles {
 		semi_black "20 20 20 128"
 		semi_gray "20 20 20 220"
 		Notifications.PanelPosition "BottomRight"  // osx has toast in the upper right, but in-overlay should not.
+
+		// Notification Hacks
+		notificationDarkestGrey="0 0 0 150"
+		notificationGrey="0 0 0 150"
+		notificationLightGreyEnd="0 0 0 150"
+		notificationDarkGreyEnd="0 0 0 150"
+		notificationLighterGrey="0 0 0 150"
+		notificationHighlight="0 0 0 150"
 	}
 	
 	styles {

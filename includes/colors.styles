@@ -179,5 +179,15 @@
 			greyButtonActiveAntiAliasedCorners = "33 33 33 100"
 			greyButtonActiveDarkenedCorners = "33 33 33 191"	
 
+
+
+		// Some trickery to use different styling of Notifications in-game or out.
+		notificationDarkestGrey="darkestGrey"
+		notificationGrey="grey"
+		notificationLightGreyEnd="lightGreyEnd"
+		notificationDarkGreyEnd="darkGreyEnd"
+		notificationLighterGrey="lighterGrey"
+		notificationHighlight="greyHighlight"
+
 	}
 }
