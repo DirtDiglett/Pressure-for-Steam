@@ -348,21 +348,77 @@
 				0="fill(x0,y0+2,x1-2,y1-2, white)"
 			
 				// TOP
-				2="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+				2="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
 				3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
 				
 				// RIGHT
-				5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+				5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
 				
 				// BOTTOM
-				7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+				7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
 				8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
 			}
 		}
 		
 			TextEntryURL:hover {
-				textcolor="darkGreyEnd"
+				font-family=basefont
+				font-size=15
+				textcolor= "grey"
+				bgcolor= "none"
+				selectedtextcolor= "white"
+				selectedbgcolor= "blue"
+				shadowtextcolor= "darkestGrey"// this is the cursor color
+				
+				inset-left=2
+				inset-top=0
+				
+				render {}
+
+				render_bg {
+					0="fill(x0,y0+2,x1-2,y1-2, white)"
+				
+					// TOP
+					2="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
+					3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
+					
+					// RIGHT
+					5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
+					
+					// BOTTOM
+					7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
+					8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
+				}
 			} 			
+
+			TextEntryURL:focus {
+				font-family=basefont
+				font-size=15
+				textcolor= "grey"
+				bgcolor= "none"
+				selectedtextcolor= "white"
+				selectedbgcolor= "blue"
+				shadowtextcolor= "darkestGrey"// this is the cursor color
+				
+				inset-left=2
+				inset-top=0
+				
+				render {}
+
+				render_bg {
+					0="fill(x0,y0+2,x1-2,y1-2, white)"
+				
+					// TOP
+					2="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/active/topMiddle)"
+					3="image(x1-3,y0,x1,y0+4, graphics/textEntry/active/topRight)"
+					
+					// RIGHT
+					5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/active/rightMiddle)"
+					
+					// BOTTOM
+					7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/active/bottomMiddle)"
+					8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/active/bottomRight)"
+				}
+			} 
 		
 			TextEntryURL:Disabled {
 				bgcolor="none"
@@ -379,26 +435,26 @@
 					0="fill(x0,y0+2,x1-2,y1-2, lighterGrey)"
 				
 					// TOP
-					2="image_tiled(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
+					2="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/disabled/topMiddle)"
 					3="image(x1-3,y0,x1,y0+4, graphics/textEntry/disabled/topRight)"
 					
 					// RIGHT
-					5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
+					5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/disabled/rightMiddle)"
 					
 					// BOTTOM
-					7="image_tiled(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
+					7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/disabled/bottomMiddle)"
 					8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/disabled/bottomRight)"	
 				} 
 			}
 		
 		LabelEVCert {
-			bgcolor="html.secureurl"
 			textcolor="darkestGrey"
 			font-family=basefont
-			font-size=15			
-			inset-left=4
-			inset-top=-1
-			inset-right=4	
+			font-size=15
+			font-weight=400
+
+			render {}
+			render_bg {}	
 		}
 			
 		URLStatusImage {
@@ -411,8 +467,23 @@
  		}
 
 		URLBarSecure {
-			textcolor="green"
+			textcolor="darkestGrey"
 			font-size=15
+
+			render_bg {
+				0="fill(x0,y0+2,x1-2,y1-2, green)"
+			
+				// TOP
+				2="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/green/topMiddle)"
+				3="image(x1-3,y0,x1,y0+4, graphics/textEntry/green/topRight)"
+				
+				// RIGHT
+				5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/green/rightMiddle)"
+				
+				// BOTTOM
+				7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/green/bottomMiddle)"
+				8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/green/bottomRight)"
+			}
 		}
 
 		URLBarBrokenSecure {
@@ -472,7 +543,7 @@
 			width=20
 			height=20
 			margin-top=16
-			margin-right=14
+			margin-right=11
 		}	
 		
 		place { 
@@ -498,17 +569,25 @@
 			start="HomeButton"
 			height=24
 			width=max
-			margin-right=9
-			margin-left=1
+			margin-right=43
+			dir=right
 		}
-		
-		///// Null Zone /////
 		place { 
-			control="EVCert,PageLoadThrobber" 
-			x=0 
+			control="PageLoadThrobber"
+			start=URLBar
+			align=right
 			y=0
+			width=24
+			height=24
+			margin-right=10
+		}
+
+		place {
+			control=EVCert
 			width=0
 			height=0
+			y=0
+			x=0
 		}
 	}	
 }
