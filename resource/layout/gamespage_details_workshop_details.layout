@@ -8,7 +8,7 @@
 	
 	styles {
 		workshop_description {
-			selectedtextcolor="Label"
+			selectedtextcolor="white"
 			textcolor="white"
 			font-size=15
 			font-family=basefont
