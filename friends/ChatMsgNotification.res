@@ -84,12 +84,12 @@
 			margin=8
 			margin-bottom=0
 			margin-right=2
+			height=max
 		}
 		place {
 			control="LabelHotkey"
-			width=max
-			height=25
-			align=bottom
+			width=0
+			height=0
 		}
 	}
 }
