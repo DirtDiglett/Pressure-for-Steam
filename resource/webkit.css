@@ -1,3 +1,7 @@
+body {
+	background: #ffffff;
+}
+
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
 	width: 17px;
