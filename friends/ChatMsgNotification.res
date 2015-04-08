@@ -62,4 +62,34 @@
 			}
 	    }
 	}
+
+	layout {
+		region {
+			name=panel
+			height=74
+		}
+
+		place {
+			control="ImageAvatar"
+			x=16
+			y=16
+		}
+
+		place {
+			control="LabelSender,LabelInfo,LabelMessage"
+			region=panel
+			x=65
+			y=7
+			dir=down
+			margin=8
+			margin-bottom=0
+			margin-right=2
+		}
+		place {
+			control="LabelHotkey"
+			width=max
+			height=25
+			align=bottom
+		}
+	}
 }
