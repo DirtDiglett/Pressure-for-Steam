@@ -410,5 +410,11 @@
 			margin-right=34
 			dir=right
 		}
+
+		place {
+			control="workshopbanner"
+			width=0
+			height=0
+		}
 	}
 }
