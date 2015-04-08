@@ -487,8 +487,23 @@
 		}
 
 		URLBarBrokenSecure {
-			textcolor="Red"
-			font-family=semibold
+			textcolor="darkestGrey"
+			font-size=15
+
+			render_bg {
+				0="fill(x0,y0+2,x1-2,y1-2, red)"
+			
+				// TOP
+				2="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/red/topMiddle)"
+				3="image(x1-3,y0,x1,y0+4, graphics/textEntry/red/topRight)"
+				
+				// RIGHT
+				5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/red/rightMiddle)"
+				
+				// BOTTOM
+				7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/red/bottomMiddle)"
+				8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/red/bottomRight)"
+			}
 		}
 	
 		COverlayWebBrowser {
