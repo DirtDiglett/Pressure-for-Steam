@@ -128,6 +128,7 @@
 			control="Label7"
 			start=JoinGamePlaySoundCheck
 			y=16
+			margin-right=16
 			dir=down
 		}
 
