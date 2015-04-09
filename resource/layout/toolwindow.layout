@@ -30,25 +30,25 @@
 			minimum-height=24
 
 			render_bg {
-				0="image( x0, y0+9, x1, y1, graphics/new_tab)"
+				0="image( x0+3, y0+7, x1, y1, graphics/new_tab)"
 			}
 		}
 
 		Button:hover {
 			render_bg {
-				0="image( x0, y0+9, x1, y1, graphics/new_tab_hover)"
+				0="image( x0+3, y0+7, x1, y1, graphics/new_tab_hover)"
 			}
 		}
 
 		Button:active {
 			render_bg {
-				0="image( x0, y0+9, x1, y1, graphics/new_tab_active)"
+				0="image( x0+3, y0+7, x1, y1, graphics/new_tab_active)"
 			}
 		}
 
 		Button:selected {
 			render_bg {
-				0="image( x0, y0+9, x1, y1, graphics/new_tab_active)"
+				0="image( x0+3, y0+7, x1, y1, graphics/new_tab_active)"
 			}
 		}
 
