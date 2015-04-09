@@ -11,8 +11,8 @@
 			bgcolor=none
 			textcolor="white"
 			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
+			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			inset="0 0 0 0"
 		}
@@ -22,6 +22,7 @@
 			SelectedBgColor="blue"
 			textcolor="white"
 			font-size=16
+font-size=14 [$LINUX]
 		}
 
 		friends_chat_text_self {
@@ -29,6 +30,7 @@
 			selectedbgcolor="blue"
 			textcolor="lightestGrey" //changed to white to fix ingame not hovering
 			font-size=16
+font-size=14 [$LINUX]
 		}
 		
 		friends_chat_history {
@@ -36,6 +38,8 @@
 			selectedbgcolor="blue"
 			textcolor="ChatDialog.HistoryColor"
 			font-size=16
+font-size=15
+font-size=14 [$LINUX]
 		}
 		
 		friends_chat_event {
@@ -43,12 +47,14 @@
 			selectedbgcolor="blue"
 			textcolor="blue"
 			font-size=16
+font-size=14 [$LINUX]
 		}
 	
 		friends_chat_bright_event {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 			font-size=16
+font-size=14 [$LINUX]
 			font-weight=1000
 		}
 	
@@ -58,6 +64,7 @@
 			textcolor="blue"
 	 		font-style=underline
 			font-size=16
+font-size=14 [$LINUX]
 		}
 		
 		friends_chat_name_ingame {
@@ -65,6 +72,7 @@
 			selectedbgcolor="blue"
 			textcolor="Friends.InGameColor"
 			font-size=16
+font-size=14 [$LINUX]
 		}
 		
 		friends_chat_self {
@@ -72,6 +80,7 @@
 			selectedbgcolor="blue"
 			textcolor="Friends.OnlineColor"
 			font-size=16
+font-size=14 [$LINUX]
 		}
 		
 		friends_chat_name {
@@ -79,6 +88,7 @@
 			selectedbgcolor="blue"
 			textcolor="Friends.OnlineColor"
 			font-size=16
+font-size=14 [$LINUX]
 		}
 		
 		friends_chat_accountid {
@@ -86,6 +96,7 @@
 			selectedbgcolor="blue"
 			textcolor="grey"
 			font-size=16
+font-size=14 [$LINUX]
 		}
 		
 		friends_chat_securitylink {
@@ -95,6 +106,7 @@
 			textcolor="orange"
 			font-family=basefont
 			font-size=16
+font-size=14 [$LINUX]
 			font-weight=400
 			font-style=none
 		}

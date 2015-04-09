@@ -15,12 +15,14 @@
 			textcolor=lightestGrey
 			font-size=16
 font-size=15
+font-size=14 [$LINUX]
 		}
 		
 		textEntry {
 			textcolor=lightestGrey
 			font-size=16
 font-size=15
+font-size=14 [$LINUX]
 			inset-left=0
 		
 			render {}

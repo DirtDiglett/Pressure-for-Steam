@@ -136,7 +136,13 @@ font-size=14 [$LINUX]
 			margin-right=43
 			dir=down
 		}
-		
+
+		place [$LINUX] {
+			control=ClientDivider
+			width=0
+			height=0
+		}
+
 		place {
 			control=ClientLabel
 			start=ClientDivider

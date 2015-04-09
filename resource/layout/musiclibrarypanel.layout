@@ -25,6 +25,7 @@
 			textcolor="textdisabled"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 	  		font-weight=400
 	  		inset="0 6 0 0"
 		}
@@ -44,6 +45,7 @@
 			textcolor="texthover"
    			font-family=basefont
    			font-size=15
+font-size=14 [$LINUX]
    			font-weight=400
    			inset="0 6 0 0"
 		}
@@ -108,8 +110,8 @@
 		MusicAddButton {
 			textcolor="labelfocus"
 			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
+			font-size=15
+font-size=14 [$LINUX]
 			font-style=normal
 
 			render_bg {
@@ -171,6 +173,7 @@
 			textcolor="labelfocus"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			font-style="uppercase"
 			inset="0 2 0 0"

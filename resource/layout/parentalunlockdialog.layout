@@ -26,6 +26,7 @@
 			textcolor=none
 			font-size=16
 font-size=15
+font-size=14 [$LINUX]
 		}
 		
 		Key {

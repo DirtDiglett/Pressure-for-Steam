@@ -6,6 +6,7 @@
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			inset-left=4
 			inset-top=0
@@ -25,6 +26,7 @@
 			textcolor="none"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			inset-left=3
 			inset-top=3
@@ -63,7 +65,8 @@
 		LibraryShow [!$OSX] {
 			textcolor="LabelDisabled"
 			font-family=basefont
-			font-size=15 
+			font-size=15
+font-size=14 [$LINUX] 
 			font-weight=400
 			font-style=uppercase
 			padding-left=0
@@ -74,8 +77,10 @@
 		NavLabel {
 			textcolor="Label"
 			font-family=basefont
-			font-size=15 [!$OSX]
-			font-size=15 [$OSX] 
+			font-size=15
+font-size=14 [$LINUX]
+			font-size=15
+font-size=14 [$LINUX] 
 			font-weight=400
 			font-style=none
 		}	
@@ -84,6 +89,7 @@
 			textcolor="red"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			font-style=uppercase
 			padding-left=0
@@ -93,7 +99,8 @@
 			bgcolor="none"
 			textcolor="green"
 			font-family=basefont
-			font-size=15 
+			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400 
 			font-style="none"
 			padding-left=5
@@ -235,6 +242,7 @@
 			textcolor="grey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			inset-left=0
 			inset-top=0
@@ -262,6 +270,7 @@
 			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			inset-left=4
 			inset-top=-1
 			  
@@ -285,6 +294,7 @@
 			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			inset-left=4
 			inset-top=0
 			  
@@ -630,6 +640,7 @@
 			textcolor="white"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -861,6 +872,7 @@
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			padding-left=4
 			padding-right=20
@@ -877,6 +889,7 @@
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			minimum-width=150
 			
@@ -1591,6 +1604,7 @@
 				textcolor=white
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style="outerglow"
 				font-outerglow-color="darkestGrey"
 				font-outerglow-offset=1
@@ -1627,6 +1641,7 @@
 		MenuButton {
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			textcolor="white"
 			padding-right=18
 			minimum-width=120
@@ -1698,6 +1713,7 @@
 			MenuButton:hover {
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				textcolor="trueWhite"
 				
 				font-style="none"
@@ -1765,6 +1781,7 @@
 		MenuButton:focus {
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				textcolor="trueWhite"
 				
 				font-style="none"
@@ -1832,7 +1849,7 @@
 		MusicAddButton {
 			textcolor="labelfocus"
 			font-size=15
-			font-size=15 [$OSX]
+font-size=14 [$LINUX]
 			font-family=basefont
 			font-style=uppercase
 

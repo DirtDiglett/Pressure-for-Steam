@@ -381,6 +381,7 @@ font-size=14 [$LINUX]
 			font-family=basefont
 			font-size=16
 font-size=15
+font-size=14 [$LINUX]
 			font-weight=600
 
 			render_bg {}

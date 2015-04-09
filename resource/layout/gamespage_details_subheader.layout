@@ -34,6 +34,7 @@
 			textcolor="Text"
 			font-family=basefont
 			font-size=16
+font-size=14 [$LINUX]
 			font-weight=400
 			font-style=uppercase
 			inset="-3 0 0 0"
@@ -48,6 +49,7 @@
 				textcolor="TextHover"
 				font-family=basefont
 				font-size=16
+font-size=14 [$LINUX]
 				font-weight=400
 				font-style=uppercase
 				inset="-3 0 0 0"
@@ -62,6 +64,7 @@
 				textcolor="White"
 				font-family=basefont
 				font-size=16
+font-size=14 [$LINUX]
 				font-weight=400
 				font-style=uppercase
 				inset="-3 0 0 0"
