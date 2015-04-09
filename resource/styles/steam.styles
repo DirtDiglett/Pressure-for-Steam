@@ -1340,18 +1340,16 @@ styles {
 		selectedtextcolor="white"
 		textcolor="grey"
 		font-family="Lucida Console"
-		font-size=9
 		font-family="Menlo" [$OSX]
-		font-size=15 [$OSX]
+		font-size=15
 	}	
 	
 	console_text_error {
 		selectedtextcolor="trueWhite"
 		selectedbgcolor="blue"
 		textcolor="red"
-		font-size=15
 		font-family="Menlo" [$OSX]
-	  	font-size=16 [$OSX]
+	  	font-size=16
 	}
 	
 	console_text {
@@ -1359,9 +1357,8 @@ styles {
 		selectedbgcolor="blue"
 		textcolor="white"
  		font-family="Lucida Console"
-		font-size=9
 		font-family="Menlo" [$OSX]
-	  	font-size=15 [$OSX]
+	  	font-size=15
 	}
 	
 	// Controls the HOLD button on Voice Chat...
