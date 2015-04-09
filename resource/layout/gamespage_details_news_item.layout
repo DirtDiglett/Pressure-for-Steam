@@ -33,6 +33,15 @@
 			render_bg {}
 		}
 		
+		newsitem_body [$LINUX] {
+			selectedtextcolor="trueWhite"
+			textcolor="white"
+			font-family=basefont
+			font-size=14
+
+			render_bg {}
+		}
+
 		"newsitem_body url" {
 			selectedtextcolor="blue"
 			textcolor=blue
@@ -40,11 +49,15 @@
 			font-style="underline"
 		}
 		
+		"newsitem_body url" [$LINUX] {
+			selectedtextcolor="blue"
+			textcolor=blue
+			font-size=14
+			font-style="underline"
+		}
+
 			"newsitem_body url:hover" {
-				selectedtextcolor="label"
 				textcolor="lightestBlue"
-				font-size=15
-				font-style="underline"
 			}
 		
 		"newsitem_body bold" {
@@ -87,15 +100,16 @@
 		place {
 			control=newsitem_dateandauthor
 			region=body
-			y=37
+			start=newsitem_title
+			dir=down
 			width=max
-			height=24
 		}
 		
 		place {
 			control=newsitem_body
 			region=body
-			y=58
+			start=newsitem_dateandauthor
+			dir=down
 			width=max
 		}
 		
