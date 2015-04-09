@@ -4,6 +4,7 @@
 			bgcolor=none
 			textcolor=lightestGrey
 			font-size=16
+font-size=15
 			font-family=basefont
 			font-weight=600 
 			padding-top=4
@@ -18,6 +19,7 @@
 			bgcolor=none
 			textcolor=white
 			font-size=16
+font-size=15
 			font-family=basefont
 			font-weight=400 
 			padding-top=4

@@ -5,6 +5,7 @@
 			textcolor="greyHighlight"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			inset="2 -3 0 0"
 			inset="0 4 0 0" [$OSX]
@@ -42,6 +43,7 @@
 				textcolor="white"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-weight=400
 				inset="2 -3 0 0"
 				inset="0 4 0 0" [$OSX]
@@ -395,6 +397,7 @@
 			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			inset-left=4
 			inset-top=0
 			inset=right=4

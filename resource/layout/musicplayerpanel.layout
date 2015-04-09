@@ -49,6 +49,7 @@
 			selectedtextcolor="truewhite"
 			textcolor="white"
 			font-size=15
+font-size=14 [$LINUX]
 			padding="6"
 			inset="-3 -1 -2 0"
 			
@@ -71,6 +72,7 @@
 			selectedtextcolor="truewhite"
 			textcolor="white"
 			font-size=15
+font-size=14 [$LINUX]
 			inset="0 0 0 -10"
 
 			render {
@@ -99,6 +101,7 @@
 			textcolor="textdisabled"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 	  		font-weight=400
 	  		inset="0 6 0 0"
 		}
@@ -108,6 +111,7 @@
 				textcolor="texthover"
 				font-family=basefont
    				font-size=15
+font-size=14 [$LINUX]
    				font-weight=400
    				inset="0 6 0 0"
 			}
@@ -376,6 +380,7 @@
 			textcolor="white"
 			font-family=basefont
 			font-size=16
+font-size=15
 			font-weight=600
 
 			render_bg {}
@@ -385,6 +390,7 @@
 			textcolor="White"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=normal
 
 			render_bg {}

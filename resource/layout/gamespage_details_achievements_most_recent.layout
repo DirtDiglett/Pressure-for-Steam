@@ -22,6 +22,7 @@
 		mostrecent_label {
 			textcolor="greyhighlight"
 			font-size=15
+font-size=14 [$LINUX]
 		}
 		
 		mostrecent_name {
@@ -33,6 +34,7 @@
 		mostrecent_unlockedsofar {
 			textcolor=white
 			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		progressbackground {

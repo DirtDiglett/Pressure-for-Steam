@@ -223,6 +223,7 @@
 			textcolor="none"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 
 			render {
@@ -287,6 +288,7 @@
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			padding-left=4
 			padding-right=20
@@ -506,6 +508,7 @@
 			font-family=semibold
 			font-style="regular"
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			inset="0 -3 0 0"
 			minimum-width=800	// if window is made larger than this, it looks different from if it's smaller

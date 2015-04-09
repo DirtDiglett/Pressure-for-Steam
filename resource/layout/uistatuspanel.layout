@@ -18,6 +18,7 @@
 			font-outerglow-filtersize=1
 			font-outerglow-offset=1
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="normal,outerglow"
 			font-weight=400
 			inset="0 2 0 0"
@@ -34,6 +35,7 @@
 			font-outerglow-filtersize=1
 			font-outerglow-offset=1
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="normal,outerglow"
 			font-weight=400
 
@@ -47,6 +49,7 @@
 			font-outerglow-filtersize=1
 			font-outerglow-offset=1
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="normal;outerglow"
 			font-weight=400
 			inset="0 2 0 0"
@@ -59,6 +62,7 @@
 			font-outerglow-filtersize=1  
 			font-outerglow-offset=1
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="normal;outerglow"
 			font-weight=400
 		}

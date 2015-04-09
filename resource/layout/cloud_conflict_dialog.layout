@@ -11,6 +11,7 @@
 		bold {
 			textcolor=text
 			font-size=16
+font-size=15
 			font-family=semibold
 			font-weight=700
 			font-style=uppercase

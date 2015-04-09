@@ -7,6 +7,7 @@
 		button {
 			textcolor=blue
 			font-size=15
+font-size=14 [$LINUX]
 			font-family=basefont
 			inset-left=0
 			padding-left=24

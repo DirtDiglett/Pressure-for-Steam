@@ -117,6 +117,7 @@ TestStyle [!$OSX] {
    textcolor=red
    font-family=basefont
    font-size=15
+font-size=14 [$LINUX]
    font-weight=400
    image="graphics/test"
    inset="5 10 10 5" // Left, Top, Right, Bottom

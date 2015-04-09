@@ -89,6 +89,7 @@
 		
 		gameselector {
 			font-size=15
+font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=700
 			inset="6 0 0 0"
@@ -116,6 +117,7 @@
 
 		NoSelectionInstructions {
 			font-size=16
+font-size=15
 			font-family=basefont
 		}
 		
@@ -127,6 +129,7 @@
 			textcolor= "darkestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			padding-left=14
 			inset-left=0
 			inset-top=0

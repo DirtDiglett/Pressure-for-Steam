@@ -36,6 +36,7 @@
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=normal
 			padding-left=0
 			padding-top=0
@@ -50,6 +51,7 @@
 				textcolor="lightestBlue"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style=normal
 			}
 
@@ -66,6 +68,7 @@
 			bgcolor=none
 			textcolor="lightestGrey"
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="regular"
 		}
 
@@ -148,6 +151,7 @@
 		SmPauseButton {
 			font-family=basefont
 			font-size=16
+font-size=15
 			font-weight=400
 			textcolor="none"
 			bgcolor=none
@@ -160,6 +164,7 @@
 		SmResumeButton {
 			font-family=basefont
 			font-size=16
+font-size=15
 			font-weight=400
 			textcolor="none"
 			bgcolor=none

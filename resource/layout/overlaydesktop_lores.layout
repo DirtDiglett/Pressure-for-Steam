@@ -3,11 +3,13 @@
 		sidemenu {
 			textcolor=blue
 			font-size=15
+font-size=14 [$LINUX]
 		}
 		
 			sidemenu:hover {
 				textcolor=lightestBlue
 				font-size=15
+font-size=14 [$LINUX]
 			}
 
 		topbar {

@@ -53,6 +53,7 @@
 	ComboBox { // DropDowns
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			textcolor="white"
 			
 			font-style="none"
@@ -122,6 +123,7 @@
 	    ComboBox:hover {
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				textcolor="trueWhite"
 				
 				font-style="none"
@@ -322,6 +324,7 @@
 	    "Page ComboBox" {
 	      font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			textcolor="white"
 
 			//textcolor="red" [$OSX] //Test for Mac to see if we can define in same styles option
@@ -464,6 +467,7 @@
 	    "Page ComboBox:hover" {
 	      		font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				textcolor="trueWhite"
 				
 				font-style="none"
@@ -682,6 +686,7 @@
    TextEntry {
       font-family=basefont
       font-size=15
+font-size=14 [$LINUX]
       textcolor  = "darkestGrey"
       bgcolor  = "none"
       selectedtextcolor  = "white"
@@ -717,6 +722,7 @@
 	"Page TextEntry" {
            font-family=basefont
       font-size=15
+font-size=14 [$LINUX]
       textcolor  = "darkestGrey"
       bgcolor  = "none"
       selectedtextcolor  = "white"
@@ -751,6 +757,7 @@
     TextEntry:focus {     
           font-family=basefont
 	      font-size=15
+font-size=14 [$LINUX]
 	      textcolor  = "darkestGrey"
 	      bgcolor  = "none"
 	      selectedtextcolor  = "white"
@@ -784,6 +791,7 @@
     "Page TextEntry:focus" {     
          font-family=basefont
 	      font-size=15
+font-size=14 [$LINUX]
 	      textcolor  = "darkestGrey"
 	      bgcolor  = "none"
 	      selectedtextcolor  = "white"
@@ -818,6 +826,7 @@
     TextEntry:disabled {     
           font-family=basefont
 	      font-size=15
+font-size=14 [$LINUX]
 	      textcolor  = "lightestGreyHighlight"
 	      bgcolor  = "none"
 	      selectedtextcolor  = "white"
@@ -864,6 +873,7 @@
 	{
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		textcolor  = "text"
 		font-weight=400
 		bgcolor  = "none"
@@ -913,6 +923,7 @@
 	    CheckButton {
 	      font-family=basefont
 	      font-size=15
+font-size=14 [$LINUX]
 	      font-weight=400
 	      textcolor="white"
 	      image="graphics/chkUnselStd"
@@ -1474,6 +1485,7 @@
     {
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 		textcolor  = "Label"
 		render_bg {}

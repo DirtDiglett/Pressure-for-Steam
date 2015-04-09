@@ -30,6 +30,7 @@
 	
 		label {
 			font-size=15
+font-size=14 [$LINUX]
 		}
 		
 		controlbutton {
@@ -39,6 +40,7 @@
 		Textentryfocus_chat {
 		    font-family=basefont
 		    font-size=15
+font-size=14 [$LINUX]
 		    textcolor  = "darkestGrey"
 		    bgcolor  = "none"
 		    selectedtextcolor  = "white"
@@ -102,6 +104,7 @@
 		
 		GridMenu {
 			font-size=16
+font-size=15
 		}
 	}
 	

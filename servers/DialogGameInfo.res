@@ -14,11 +14,13 @@
 		label {
 			textcolor=lightestGrey
 			font-size=16
+font-size=15
 		}
 		
 		textEntry {
 			textcolor=lightestGrey
 			font-size=16
+font-size=15
 			inset-left=0
 		
 			render {}

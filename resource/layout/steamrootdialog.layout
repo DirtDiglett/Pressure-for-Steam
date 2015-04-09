@@ -10,6 +10,7 @@
 			textcolor=white
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=1000
 			font-style=none
 			padding-left=50
@@ -28,6 +29,7 @@
 				textcolor=white
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-weight=1000
 				font-style=none
 				padding-left=50
@@ -53,6 +55,7 @@
 			textcolor="lightestYellow"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -69,6 +72,7 @@
 			textcolor="lightestYellow"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -147,6 +151,7 @@
 			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			
 			render_bg {
@@ -160,6 +165,7 @@
 				textcolor="trueWhite"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-weight=400
 			
 				render_bg {
@@ -211,6 +217,7 @@
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -227,6 +234,7 @@
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -243,6 +251,7 @@
 				textcolor="lightestGrey"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style="outerglow"
 				font-outerglow-color="darkestGrey"
 				font-outerglow-offset=1
@@ -259,6 +268,7 @@
 				textcolor="lightestGrey"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style="outerglow"
 				font-outerglow-color="darkestGrey"
 				font-outerglow-offset=1
@@ -280,6 +290,7 @@
 			textcolor=white
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -327,6 +338,7 @@
 			textcolor=orange
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -367,6 +379,7 @@
 			textcolor=orange
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -383,6 +396,7 @@
 			textcolor=orange
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1

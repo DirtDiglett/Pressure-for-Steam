@@ -35,16 +35,19 @@
 		soft {
 			textcolor=trueWhite
 			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		bright {
 			textcolor="Blue"
 			font-size=15
+font-size=14 [$LINUX]
 		}
 		
 			bright:hover {
 				textcolor="LightestBlue"
 				font-size=15
+font-size=14 [$LINUX]
 			}
 
 		Button {

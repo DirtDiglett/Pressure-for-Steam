@@ -3,6 +3,7 @@
 		Label {
 			textcolor="White"
 			font-size=15
+font-size=14 [$LINUX]
 		}
 		
 		BackButtonSm {
@@ -335,6 +336,7 @@
 		TextEntryURL {
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			textcolor= "grey"
 			bgcolor= "none"
 			selectedtextcolor= "white"
@@ -363,6 +365,7 @@
 			TextEntryURL:hover {
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				textcolor= "grey"
 				bgcolor= "none"
 				selectedtextcolor= "white"
@@ -393,6 +396,7 @@
 			TextEntryURL:focus {
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				textcolor= "grey"
 				bgcolor= "none"
 				selectedtextcolor= "white"
@@ -428,6 +432,7 @@
 				textcolor="lightestGreyHighlight"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				inset-left=4
 				inset-top=0
 				
@@ -451,6 +456,7 @@
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 
 			render {}
@@ -469,6 +475,7 @@
 		URLBarSecure {
 			textcolor="darkestGrey"
 			font-size=15
+font-size=14 [$LINUX]
 
 			render_bg {
 				0="fill(x0,y0+2,x1-2,y1-2, green)"
@@ -489,6 +496,7 @@
 		URLBarBrokenSecure {
 			textcolor="darkestGrey"
 			font-size=15
+font-size=14 [$LINUX]
 
 			render_bg {
 				0="fill(x0,y0+2,x1-2,y1-2, red)"

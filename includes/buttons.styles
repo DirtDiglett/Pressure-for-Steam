@@ -8,6 +8,7 @@
 			textcolor="white"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -77,6 +78,7 @@
 				textcolor="trueWhite"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
@@ -142,6 +144,7 @@
 					bgcolor=none
 					textcolor="white"
 					font-size=15
+font-size=14 [$LINUX]
 					font-style="outerglow"
 					font-outerglow-color="darkGreyEnd"
 					font-outerglow-offset=1
@@ -259,6 +262,7 @@
 				textcolor="white"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
@@ -324,6 +328,7 @@
 				textcolor="trueWhite"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
@@ -389,6 +394,7 @@
 				textcolor="lightestGreyHighlight"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style="none"
 				padding-left=3
 				padding-top=2
@@ -447,6 +453,7 @@
 			textcolor="white"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -518,6 +525,7 @@
 				textcolor="trueWhite"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
@@ -582,6 +590,7 @@
 				textcolor="white"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style="outerglow"
 				font-outerglow-color="darkGreyEnd"
 				font-outerglow-offset=1
@@ -763,6 +772,7 @@
 				textcolor="white"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
@@ -828,6 +838,7 @@
 				textcolor="trueWhite"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				padding-left=3
 				padding-top=2
 				padding-bottom=1
@@ -893,6 +904,7 @@
 				textcolor="lightestGreyHighlight"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style="none"
 				padding-left=3
 				padding-top=2
@@ -955,6 +967,7 @@
 	 		textcolor="white"
 	 		font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -1024,6 +1037,7 @@
 			textcolor="white"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -1093,6 +1107,7 @@
 			textcolor="trueWhite"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			padding-left=3
 			padding-top=2
 			padding-bottom=1
@@ -1254,6 +1269,7 @@
 	  		textcolor="white"
 	  		font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
@@ -1323,6 +1339,7 @@
 			textcolor="trueWhite"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			padding-left=3
 			padding-top=2
 			padding-bottom=1
@@ -1388,6 +1405,7 @@
 	  		textcolor="white"
 	  		font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1

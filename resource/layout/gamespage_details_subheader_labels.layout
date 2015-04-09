@@ -3,26 +3,31 @@
 		headertext {
 			textcolor=lightestGrey
 			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		headertext-red {
 			textcolor=lightestGrey
 			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		headertext-green {
 			textcolor=lightestGrey
 			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		headertext-blue {
 			textcolor=lightestGrey
 			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		valuetext {
 			textcolor=lightestGrey
 			font-size=15
+font-size=14 [$LINUX]
 		}
 	}
 

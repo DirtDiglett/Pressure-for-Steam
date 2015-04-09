@@ -25,11 +25,13 @@
 		infolabel {
 			textcolor=red
 			font-size=15
+font-size=14 [$LINUX]
 		}	
 		
 		friendlabelmore {
 			textcolor="grey"
 			font-size=15
+font-size=14 [$LINUX]
 			font-family=basefont
 		    inset="-3 0 0 0"
 
@@ -39,6 +41,7 @@
 		friendlabelmore:hover {
 			textcolor="white"
 			font-size=15
+font-size=14 [$LINUX]
 			font-family=basefont
 		    inset="-3 0 0 0"
 

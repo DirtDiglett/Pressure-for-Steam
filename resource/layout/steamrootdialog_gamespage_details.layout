@@ -15,6 +15,7 @@
 		emptylisttext {
 			textcolor="red"
 			font-size=15
+font-size=14 [$LINUX]
 			inset="16 100 16 16"
 
 			render_bg {
@@ -155,6 +156,7 @@
 		rightcolumnlink {
 			textcolor=blue
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=normal
 			font-family=basefont
 		}
@@ -171,6 +173,7 @@
 			textcolor=Label
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=normal
 			padding-left=10
 			padding-top=0

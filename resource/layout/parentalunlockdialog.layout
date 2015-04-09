@@ -25,6 +25,7 @@
 		Hey2 {
 			textcolor=none
 			font-size=16
+font-size=15
 		}
 		
 		Key {

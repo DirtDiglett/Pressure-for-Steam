@@ -294,6 +294,7 @@ styles {
 		font-family=semibold
 		textcolor="lightestGrey"
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 		padding-left="0"
 		padding-right="64"
@@ -329,6 +330,7 @@ styles {
 			textcolor="white"
 			font-family=semibold
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			inset="2 -5 0 0"
 			inset="0 4 0 0" [$OSX]
@@ -394,6 +396,7 @@ styles {
 		textcolor="white"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 	}
    
@@ -563,6 +566,7 @@ styles {
 		textcolor="scrollglyph"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 		
 		render_bg {}   
@@ -585,6 +589,7 @@ styles {
 		font-family=basefont
 		textcolor  = white
 		font-size=15
+font-size=14 [$LINUX]
 		inset="0 0 0 0"
 		padding=0
 		bgcolor="none"
@@ -916,6 +921,7 @@ styles {
 		textcolor="lightestGrey"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-style="normal"
 		font-weight=400
 		inset="0 0 0 0"
@@ -968,6 +974,7 @@ styles {
 
 	"PageDragFrame PageTab" {
 		font-size=15
+font-size=14 [$LINUX]
 		font-style="normal"
 		font-style="none"
 	}
@@ -977,6 +984,7 @@ styles {
 		textcolor="white"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 	}
 
@@ -993,6 +1001,7 @@ styles {
 		"ProgressBox Label" {
 			textcolor=none
 			font-size=15
+font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=300
 			inset="0 0 0 10"
@@ -1021,6 +1030,7 @@ styles {
 		textcolor="green"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
@@ -1052,6 +1062,7 @@ styles {
 		textcolor="green"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
@@ -1088,6 +1099,7 @@ styles {
 		textcolor="white"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 		inset="0 -1 0 0"
 		
@@ -1104,6 +1116,7 @@ styles {
 		selectedtextcolor="white"
 		textcolor="blue"
 		font-size=15
+font-size=14 [$LINUX]
 		font-style=underline
 	}
 	
@@ -1115,16 +1128,19 @@ styles {
 		textcolor="blue"
 		font-style=underline
 		font-size=15
+font-size=14 [$LINUX]
 	}
 	
 	// style of bold text in a rich text control
 	"RichText bold" {
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=1000
 	}
 	
 	"RichText emphasis" {
 		font-size=15
+font-size=14 [$LINUX]
 		font-style=italic
 	}
 
@@ -1136,6 +1152,7 @@ styles {
 		textcolor="Text"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 		
 		render_bg {
@@ -1187,6 +1204,7 @@ styles {
 	StatusLabel {
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 		textcolor="labelfocus"	  
 	}
@@ -1194,6 +1212,7 @@ styles {
 		StatusLabel:hover {
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
 			textcolor="white"  
 		}   
@@ -1219,6 +1238,7 @@ styles {
 		textcolor="Text"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 	
 		render {}
 		render_bg {}
@@ -1278,6 +1298,7 @@ styles {
 		textcolor="Text"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-weight=400
 		inset="1 -1 1 1"  
 	
@@ -1342,6 +1363,7 @@ styles {
 		font-family="Lucida Console"
 		font-family="Menlo" [$OSX]
 		font-size=15
+font-size=14 [$LINUX]
 	}	
 	
 	console_text_error {
@@ -1350,6 +1372,7 @@ styles {
 		textcolor="red"
 		font-family="Menlo" [$OSX]
 	  	font-size=16
+font-size=15
 	}
 	
 	console_text {
@@ -1359,6 +1382,7 @@ styles {
  		font-family="Lucida Console"
 		font-family="Menlo" [$OSX]
 	  	font-size=15
+font-size=14 [$LINUX]
 	}
 	
 	// Controls the HOLD button on Voice Chat...
@@ -1367,6 +1391,7 @@ styles {
 		textcolor="white"
 		font-family=basefont
 		font-size=15
+font-size=14 [$LINUX]
 		font-style="outerglow"
 		font-outerglow-color="darkGreyEnd"
 		font-outerglow-offset=1
@@ -1428,6 +1453,7 @@ styles {
 			textcolor="grey"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="none"
 			padding-left=3
 			padding-top=2
@@ -1500,6 +1526,7 @@ styles {
 	SuperNavMenuItem {
 		bgcolor=none
 		font-size=15
+font-size=14 [$LINUX]
 		font-style="uppercase"
 		padding=4
 	}

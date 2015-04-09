@@ -18,6 +18,7 @@
 			bgcolor=none
 			textcolor=lightestGrey
 			font-size=15
+font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=400 
 			padding-left=0
@@ -30,6 +31,7 @@
 			bgcolor=black65
 			textcolor=Text2
 			font-size=15
+font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=400
 			padding-top=0
@@ -49,6 +51,7 @@
 		AdditionalActionButtonStyle {
 			textcolor=blue
 			font-size=16
+font-size=15
 			font-family=basefont
 			padding-top=0
 			padding-bottom=0

@@ -38,6 +38,7 @@
 		label {
 			textcolor=lighterGrey
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=none
 		}
 			
@@ -48,7 +49,8 @@
 			bgcolor=none
 			textcolor=darkestGrey
 			font-family=basefont
-			font-size=15			
+			font-size=15
+font-size=14 [$LINUX]			
 			inset-left=4
 			inset-top=6
 			inset-right=6
@@ -278,6 +280,7 @@
 			selectedtextcolor="trueWhite"
 			textcolor="ChatDialog.HistoryColor"
 			font-size=15
+font-size=14 [$LINUX]
 			inset="0 8 0 0"
 			
 			render {}

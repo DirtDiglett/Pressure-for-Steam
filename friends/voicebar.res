@@ -19,6 +19,7 @@
 				textcolor="trueWhite"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				padding-left=3
 				padding-top=2
 				padding-bottom=1

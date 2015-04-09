@@ -21,6 +21,7 @@
 		hotkey {
 			textcolor=none
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=none
 		}
 

@@ -26,6 +26,7 @@
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=normal
 			padding-left=0
 			padding-top=0
@@ -40,6 +41,7 @@
 				textcolor="lightestBlue"
 				font-family=basefont
 				font-size=15
+font-size=14 [$LINUX]
 				font-style=normal
 			}
 
@@ -49,6 +51,7 @@
 
 		label {
 			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		// For the "Auto-Updates Enabled"
@@ -56,6 +59,7 @@
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=regular
 
 			render_bg {
@@ -67,6 +71,7 @@
 			textcolor="lightestBlue"
 			font-family=basefont
 			font-size=15
+font-size=14 [$LINUX]
 			font-style=regular
 			padding-left=0
 			padding-top=0
@@ -86,6 +91,7 @@
 			bgcolor=none
 			textcolor="lightestGrey"
 			font-size=15
+font-size=14 [$LINUX]
 			font-style="regular"
 		}
 

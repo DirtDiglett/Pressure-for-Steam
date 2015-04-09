@@ -15,6 +15,7 @@
  		namestyle {
 			font-family=basefont
 			font-size=16
+font-size=15
 			font-weight=600
 			inset-top=-1
 			//font-style="outerglow"
