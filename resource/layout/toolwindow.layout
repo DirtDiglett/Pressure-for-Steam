@@ -134,7 +134,7 @@ font-size=14 [$LINUX]
 		place [!$OSX] {
 			control="frame_captiongrip"
 			width=max
-			height=20
+			height=50
 		}
 
 		place {
