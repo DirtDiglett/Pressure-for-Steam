@@ -69,7 +69,7 @@
 		
 		ViewPlayerList {
 			text="#steam_menu_view_players"
-			shellcmd="steam://friends/players" 
+			shellcmd="steam://openurl/http://steamcommunity.com/my/friends/coplay" 
 		}
 		
 		Servers {
@@ -418,7 +418,7 @@
 		
 		ViewPlayerList {
 			text="#steam_menu_view_players"
-			shellcmd="steam://friends/players"
+			shellcmd="steam://openurl/http://steamcommunity.com/my/friends/coplay"
 		}
 		
 		Servers {
