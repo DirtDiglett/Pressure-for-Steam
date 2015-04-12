@@ -85,8 +85,8 @@ font-size=14 [$LINUX]
 		place { 
 			region=body 
 			control=friendimage
-			x=156
-			y=77
+			x=0
+			y=0
 			width=42
 			height=40
 			spacing=10
