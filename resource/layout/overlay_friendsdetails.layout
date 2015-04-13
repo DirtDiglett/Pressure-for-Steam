@@ -35,8 +35,7 @@ font-size=14 [$LINUX]
 		
 		highlight {
 			textcolor=lightestGreyHighlight
-			font-size=15
-font-size=14 [$LINUX]
+			font-size=14
 		}
 	}
 	
