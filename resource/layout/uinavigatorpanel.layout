@@ -1522,55 +1522,31 @@ font-size=14 [$LINUX]
 // ********************************************************************************************************
 		CUINavButton [$OSX] {
 			bgcolor="none"
-			textcolor="white"
 			font-family=headerfont
 			font-size=36
-			font-style="outerglow"
-			font-outerglow-color="darkestGrey"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
 			padding-left=10
 			padding-right=10
 		}
 		
 		CUINavButton [!$OSX] {
 			bgcolor="none"
-			textcolor="white"
 			font-family=headerfont
 			font-size=36
 			inset="0 -4 0 0"
-			font-style="outerglow"
-			font-outerglow-color="darkestGrey"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
 			padding-left=10
 			padding-right=10
 		}
 			
-			CUINavButton:hover {
-				textcolor="white"
-				font-style="outerglow"
-				font-outerglow-color="lightestGrey"//white10"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=6
-			}
-			
 			CUINavButton:disabled {
-				textcolor="darkestGrey"
+				textcolor="grey"
 			}
 	
 				CUINavButton:disabled:hover {
-					textcolor="darkestGrey"
+					textcolor="grey"
 					font-style="none"
 				}
 	
-			CUINavButton:selected {
-				textcolor="trueWhite"
-				font-style="outerglow"
-				font-outerglow-color="lightestGrey"
-				font-outerglow-offset=2
-				font-outerglow-filtersize=6
-			
+			CUINavButton:selected {			
 				render_bg {
 					0="image(x0+40, y1-9, x0+55, y1, graphics/arrowup)"
 				}

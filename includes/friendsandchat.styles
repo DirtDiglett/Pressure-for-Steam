@@ -16,45 +16,34 @@ font-size=14 [$LINUX]
 			font-weight=400
 			inset="0 0 0 0"
 		}
-		
+
 		friends_chat_text {
 			selectedtextcolor="trueWhite"	
 			SelectedBgColor="blue"
 			textcolor="white"
-			font-size=16
-font-size=14 [$LINUX]
 		}
 
 		friends_chat_text_self {
 			selectedtextcolor="trueWhite" 	
 			selectedbgcolor="blue"
 			textcolor="lightestGrey" //changed to white to fix ingame not hovering
-			font-size=16
-font-size=14 [$LINUX]
 		}
 		
 		friends_chat_history {
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
 			textcolor="ChatDialog.HistoryColor"
-			font-size=16
-font-size=15
-font-size=14 [$LINUX]
 		}
 		
 		friends_chat_event {
 			selectedtextcolor="trueWhite"
 			selectedbgcolor="blue"
 			textcolor="blue"
-			font-size=16
-font-size=14 [$LINUX]
 		}
 	
 		friends_chat_bright_event {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
-			font-size=16
-font-size=14 [$LINUX]
 			font-weight=1000
 		}
 	
@@ -63,40 +52,30 @@ font-size=14 [$LINUX]
 			selectedbgcolor="blue"
 			textcolor="blue"
 	 		font-style=underline
-			font-size=16
-font-size=14 [$LINUX]
 		}
 		
 		friends_chat_name_ingame {
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
 			textcolor="Friends.InGameColor"
-			font-size=16
-font-size=14 [$LINUX]
 		}
 		
 		friends_chat_self {
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
 			textcolor="Friends.OnlineColor"
-			font-size=16
-font-size=14 [$LINUX]
 		}
 		
 		friends_chat_name {
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
 			textcolor="Friends.OnlineColor"
-			font-size=16
-font-size=14 [$LINUX]
 		}
 		
 		friends_chat_accountid {
 			selectedtextcolor="trueWhite"	
 			selectedbgcolor="blue"
 			textcolor="grey"
-			font-size=16
-font-size=14 [$LINUX]
 		}
 		
 		friends_chat_securitylink {
@@ -105,12 +84,10 @@ font-size=14 [$LINUX]
 			selectedbgcolor="blue"
 			textcolor="orange"
 			font-family=basefont
-			font-size=16
-font-size=14 [$LINUX]
 			font-weight=400
 			font-style=none
 		}
-		
+
 		// used in friends tooltip and friends list for overriding regular styles with custom colors
 	 	friends_offline {
 	 		textcolor="Friends.OfflineColor"
@@ -127,5 +104,6 @@ font-size=14 [$LINUX]
 	 	friends_ignored {
 	 		textcolor="Friends.IgnoredColor"
 	 	}
+	 	
 	}
 }

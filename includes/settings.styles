@@ -1,4 +1,6 @@
 "settings.styles" { 
+	include "config.ini"
+
 	colors {
 		// *********************************************** 
 		// Fonts
