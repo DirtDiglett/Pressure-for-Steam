@@ -148,11 +148,8 @@
 				2="fill(x0+10, y0+7, x1+12, y0+8, greyHighlight)"
 				3="fill(x0+10, y0+7, x0+11, y0+8, darkGreyEnd)"
 				4="fill(x1+11, y0+7, x1+12, y0+8, darkGreyEnd)"
-				5="fill(x0+10, y1-4, x0+11, y1, darkGreyEnd)"
-				6="fill(x1+11, y1-4, x1+12, y1, darkGreyEnd)"
-
-				7="fill(x0+10, y1-6, x0+11, y1-5, darkGreyEnd)"
-				8="fill(x1+11, y1-6, x1+12, y1-5, darkGreyEnd)"
+				7="fill(x0+10, y1-6, x0+11, y1-5, darkGrey)"
+				8="fill(x1+11, y1-6, x1+12, y1-5, darkGrey)"
 			}
 		}
 
@@ -163,12 +160,9 @@
 					0="gradient(x0+10, y0+7, x1+12, y1-5, greyHighlight, grey)"
 					1="fill(x0+10, y0+7, x1+12, y0+8, lightestGreyHighlight)"
 					3="fill(x0+10, y0+7, x0+11, y0+8, darkGreyEnd)"
-					4="fill(x1+11, y0+7, x1+12, y0+8, darkGreyEnd)"
-					5="fill(x0+10, y1-4, x0+11, y1, darkGreyEnd)"
-					6="fill(x1+11, y1-4, x1+12, y1, darkGreyEnd)"
-					
-					7="fill(x0+10, y1-6, x0+11, y1-5, darkGreyEnd)"
-					8="fill(x1+11, y1-6, x1+12, y1-5, darkGreyEnd)"
+					4="fill(x1+11, y0+7, x1+12, y0+8, darkGreyEnd)"					
+					7="fill(x0+10, y1-6, x0+11, y1-5, darkGrey)"
+					8="fill(x1+11, y1-6, x1+12, y1-5, darkGrey)"
 				}
 			}
 
