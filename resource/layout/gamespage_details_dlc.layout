@@ -2,7 +2,7 @@
 	colors {
 		RichText.InsetX "0"
 		RichText.InsetY "3" 
-		GameDetailsDLC.ExtraVerticalSpacing "229"
+		GameDetailsDLC.ExtraVerticalSpacing "250"
 	}
 
 	styles {
@@ -162,14 +162,23 @@ font-size=14 [$LINUX]
 			height=120
 			dir=right
 			spacing=9
+			margin-right=20
 		}
 
 		place {
-			control=latesttimelabel,moredlc
+			control=latesttimelabel
 			region=body
-			y=165
-			dir=right
-			spacing=10
+			start=latestimage
+			y=0
+			dir=down
+		}
+
+		place {
+			control=moredlc
+			start=latesttimelabel
+			y=16
+			x=-6
+			dir=down
 		}
 	}
 }
