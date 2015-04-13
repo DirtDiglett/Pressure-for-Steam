@@ -5,19 +5,19 @@
 				0="fill( x0, y0, x1, y1, black75)"
 			}
 		}
-		
+
 		bottomfade {
 			render_bg {
 				0="fill( x0, y0, x1, y1, black75)"
 			}
-		}	
-		
+		}
+
 		overlaymain {
 			render_bg {
 				0="fill(x0,y0+112,x1,y1-146, black40)"
 			}
 		}
-		
+
 		hotkey {
 			textcolor=none
 			font-size=15
@@ -29,10 +29,10 @@ font-size=14 [$LINUX]
 			textcolor=white
 			font-family=headerfont
 			font-size=48
-			
+
 			render_bg {}
 		}
-		
+
 		detailsboxtitle {
 			textcolor=red
 		}
@@ -40,17 +40,24 @@ font-size=14 [$LINUX]
 		OverlayURLLabel {
 			image=graphics/overlay/close
 		}
-		
+
 			OverlayURLLabel:hover {
 				image=graphics/overlay/close_hover
 			}
-		
+
 		LabelOverlay {
 			image=graphics/overlay/browsersettingsmusic
 		}
 	}
-	
+
 	layout {
+
+		region {
+			name=overlay
+			align=top-center
+			width=max
+		}
+
 		region {
 			name="topbar"
 			region=overlay
@@ -58,7 +65,7 @@ font-size=14 [$LINUX]
 			width="max"
 			height=112
 		}
-		
+
 		region {
 			name="taskbar"
 			region=overlay
@@ -67,19 +74,13 @@ font-size=14 [$LINUX]
 			height=146
 		}
 
-		region {
-			name=overlay
-			align=top-center
-			width=max
-		}		
-
-		place { 
+		place {
 			control="TopFadePanel"
 			align=top
 			width=max
 			height=112
 		}
-		
+
 		place {
 			control="BottomFadePanel"
 			align=bottom
@@ -103,7 +104,7 @@ font-size=14 [$LINUX]
 			margin-right=39 // There is a 3px weirdness offset. This accounts for that.
 		}
 
-		// Used for the icons 
+		// Used for the icons
 		place {
 			control=HotkeyExplain
 			region=taskbar
@@ -112,7 +113,7 @@ font-size=14 [$LINUX]
 			dir=right
 			y=46
 		}
-	
+
 		place {
 			control="TaskbarPanel"
 			region=taskbar
@@ -120,7 +121,7 @@ font-size=14 [$LINUX]
 			width=480
 			height=145
 		}
-		
+
 		place {
 			control="HotkeyLabel,powermeter,PowerMeterDim"
 			width=0
