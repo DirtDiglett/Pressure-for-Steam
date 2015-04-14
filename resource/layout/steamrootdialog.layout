@@ -640,7 +640,7 @@ font-size=14 [$LINUX]
 		place [!$OSX] { 
 			control="FriendPanel" 
 			align=right
-			y=11
+			y=14
 			width=48
 			height=48
 			margin-top=16
