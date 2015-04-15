@@ -26,14 +26,13 @@
 			inset="13 2 0 0"
 
 			render {
-				5="image( x0 + 5, y0 + 5, x1, y1, graphics/cog )"
+				0="fill(x0,y0,x1,y0+1, greyHighlight)"
+				1="fill(x0,y1-2,x1,y1-1, grey)"
+				2="fill(x0,y1-1,x1,y1, darkestGrey)"
+				3="image(x0+5,y0+5,x1,y1, graphics/cog)"
 			}   
 			render_bg {
-				0="fill(x0,y0,x1,y1+2, grey)"
 				1="gradient(x0,y0,x1,y1+1, grey, lightGreyEnd)"
-				2="fill(x0,y0,x1,y0+4, greyHighlight)"
-
-				
 			}
 		}
 
