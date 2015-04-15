@@ -20,27 +20,40 @@
 		}
 		
 		"CGamesListPanel ListPanelColumnSelectButton" {
-       		bgcolor=none
-       		padding-left=0
-       		padding-right=0
-       		inset="13 2 0 0"
+			bgcolor=none
+			padding-left=0
+			padding-right=0
+			inset="13 2 0 0"
 
-        	render {
-          		5="image( x0 + 9, y0 + 5, x1, y1, graphics/cog )"
-        	}   
-        	render_bg {
-        		0="gradient(x0, y0+1, x1, y1+2, grey, lightGreyEnd)"
-				1="fill(x0, y0, x1, y0+4, greyHighlight)"
-				2="gradient(x0,y1,x1,y1+6, black65, none)"
-        	}
+			render {
+				5="image( x0 + 5, y0 + 5, x1, y1, graphics/cog )"
+			}   
+			render_bg {
+				0="fill(x0,y0,x1,y1+2, grey)"
+				1="gradient(x0,y0,x1,y1+1, grey, lightGreyEnd)"
+				2="fill(x0,y0,x1,y0+4, greyHighlight)"
+
+				
+			}
 		}
 
-			ListPanelColumnheader [$OSX] {
+		"CGamesListPanel ListPanelColumnSelectButton:hover" {
+			render_bg {
+				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
+				1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
+			}
+		}
+
+		"CGamesListPanel ListPanelInterior" {
+			inset="3 0 0 0"
+		}
+
+		ListPanelColumnheader [$OSX] {
 			bgcolor="none"
 			textcolor="white"
 			font-family=semibold
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			font-style="regular,normal"
 			inset="1 2 0 0"
@@ -57,7 +70,7 @@ font-size=14 [$LINUX]
 			textcolor= "white"
 			font-family=semibold
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			font-style="regular,normal"
 			inset= "0 3 0 0"
