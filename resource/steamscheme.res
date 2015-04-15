@@ -82,21 +82,21 @@ Scheme {
 				xpos	r101
 				ypos	r36
 				wide	92
-				tall	24
+				tall	28
 			}
 			
 			CancelButton {
 				xpos	r203
 				ypos	r36
 				wide	92
-				tall	24
+				tall	28
 			}
 			
 			OKButton {
 				xpos	r304
 				ypos	r36
 				wide	92
-				tall	24
+				tall	28
 			}
 		}
 		
@@ -113,7 +113,7 @@ Scheme {
 				xpos	r306
 				ypos	r36
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 
@@ -121,7 +121,7 @@ Scheme {
 				xpos	r204
 				ypos	r36
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 
@@ -129,7 +129,7 @@ Scheme {
 				xpos	r102
 				ypos	r36
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 
@@ -137,7 +137,7 @@ Scheme {
 				xpos	r102
 				ypos	r36
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 		}

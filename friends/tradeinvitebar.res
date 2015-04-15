@@ -50,7 +50,7 @@
 			control="InviteLabel,ClickHereLabel,InviteSentLabel,WaitingForResponseLabel" 
 			width=max 
 			margin-left=37
-			margin-top=14 
+			margin-top=16 
 			margin-right=2 
 			dir=down 
 			spacing=3 

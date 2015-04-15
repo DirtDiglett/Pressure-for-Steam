@@ -41,8 +41,8 @@ font-size=14 [$LINUX]
 			padding-top=6
 			padding-bottom=4
 			padding-right=5
-			padding-left=5
-			minimum-width=14
+			padding-left=2
+			minimum-width=10
 			inset-top=-2
 		}
 
@@ -137,16 +137,23 @@ font-size=14 [$LINUX]
 		}
 
 		place [$OSX] {
-			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton"
+			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel"
 			x=46
 			y=5
 		}
 
 		place [!$OSX] {
-			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton"
+			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel"
 			x=46
 			y=2
 			spacing=2
+		}
+
+		place {
+			control=MenuButton
+			start=FriendsNameInstanceLabel
+			x=2
+			y=-3
 		}
 
 		place {

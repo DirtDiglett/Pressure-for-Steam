@@ -92,7 +92,7 @@
 			width=max 
 			dir=down 
 			spacing=3 
-			margin-top=14 
+			margin-top=16 
 			margin-right=2 
 			margin-left=37 
 		}

@@ -400,94 +400,7 @@ font-size=14 [$LINUX]
 		font-weight=400
 	}
    
-	// Games in Details List + List View that are not installed.
-	"GameItem_Uninstalled" {
-		selectedtextcolor="lighterGrey"
-		textcolor="grey"
-		padding-left=10
-	}
-		"GameItem_Uninstalled:hover" {
-			selectedtextcolor="lighterGrey"
-			textcolor="grey"
-		}
- 
-	"GameItem_Installed" {
-		selectedtextcolor="trueWhite"
-		textcolor="white"
-	}
-	  
-		"GameItem_Installed:hover" {
-			selectedtextcolor="trueWhite"
-			textcolor="white"
-		}
-	
-	
-	"GameItem_Updating" {
-		selectedtextcolor="lightestGreen"
-		textcolor="orange"
-		padding-left=10
-	}
-	
-		"GameItem_Updating:hover" {
-			selectedtextcolor="lightestGreen"
-			textcolor="orange"
-		}
-	
-		"GameItem_Updating:selected" {
- 			selectedtextcolor="lightestGreen"
- 			textcolor="orange"
- 		}
-	
-	"GameItem_Shortcut" {
-		selectedtextcolor="trueWhite"
-		textcolor="white"
-	}
-	  
-		"GameItem_Shortcut:hover" {
-			selectedtextcolor="trueWhite"
-			textcolor="white"
-		}
-	
-	"GameItem_Mod" {
-		selectedtextcolor="trueWhite"
-		textcolor="white"
-	}
-	  
-		"GameItem_Mod:hover" {
-			selectedtextcolor="trueWhite"
-			textcolor="white"
-		}
-	
-	"GameItem_Decrypting" {
-		selectedtextcolor="lightestGreen"
-		textcolor="orange"
-	}
-	
-		"GameItem_Decrypting:hover" {
-			textcolor="orange"
-			selectedtextcolor="lightestGreen"
-		}
-	
-		"GameItem_Decrypting:selected" {
-			textcolor="orange"
-			selectedtextcolor="lightestGreen"
-		
-		}
-	
-	"GameItem_Syncing" {
-		textcolor="orange"
-		selectedtextcolor="lightestGreen"
-	}
-	
-		"GameItem_Syncing:hover" {
-			textcolor="orange"
-			selectedtextcolor="lightestGreen"
-		}
-		
-		"GameItem_Syncing:selected" {
-			textcolor="orange"
-			selectedtextcolor="lightestGreen"
-		}
+
 	
 	"GameColumn_BigText" {
 		textcolor="green"
@@ -618,7 +531,7 @@ font-size=14 [$LINUX]
 	
 		MenuItem:disabled {
 			shadowtextcolor=none
-			textcolor="darkestGrey"
+			textcolor="lightestGrey"
 			font-style="none"
 		}
 		
