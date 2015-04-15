@@ -108,7 +108,7 @@ font-size=14 [$LINUX]
 
 		place { control=frame_captiongrip margin=0 width=max height=100 }
 
-		place { control=UserNameEdit,PasswordEdit 							align=top-center dir=down width=300 y=120 spacing=10 height=28 }
+		place { control=UserNameEdit,PasswordEdit 							align=top-center dir=down width=200 y=120 spacing=10 height=28 }
 		place { control=PasswordCapsLockImage										start=PasswordEdit dir=right x=-27 Y=4 }
 		place { control=SavePasswordCheck start=PasswordEdit 		align=top-center dir=down y=8 }
 
