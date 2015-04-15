@@ -4,7 +4,6 @@ colors {
 	}	
 	
 	styles {
-
 		URLLabel {
 			textcolor="22 117 141 255"
 		}
@@ -103,9 +102,10 @@ colors {
 			control="GamesList"
 			width=max
 			height=max
-			margin-left=-3
+			margin-left=-4
 			margin-top=0
 			margin-right=0
+			margin-bottom=-2
 		}
 	}
 }
