@@ -161,42 +161,28 @@ font-size=14 [$LINUX]
 	 		minimum-height=8
 			
 			render {
-				5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
+				0="fill(x0,y1-1,x1,y1, darkGrey)"
+				1="fill(x0,y0,x1,y0+1, greyHighlight)"
+				3="image(x0+5,y0+5,x1,y1, graphics/cog)"
 			} 
 			render_bg {
-				0="fill(x0,y0,x1,y1, darkGrey)"
+				0="gradient(x0,y0,x1,y1-1, grey, lightGreyEnd)"
 			}
 		}
 		
 			ListPanelColumnSelectButton:hover {
-				bgcolor=none
-				inset="13 2 0 0"
-		 		padding-left=0
-		 		padding-right=0
-		 		minimum-width=8
-		 		minimum-height=8
-		 		
-				render {
-					5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
-				} 
 				render_bg {
-					0="fill(x0,y0,x1,y1, darkestGrey)"
+					0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
+					1="gradient(x0,y0,x1,y1-1, lighterGrey, grey)"
 				}
 			}
 		
 			ListPanelColumnSelectButton:selected {
-				bgcolor=none
-				inset="13 2 0 0"
-		 		padding-left=0
-		 		padding-right=0
-		 		minimum-width=8
-		 		minimum-height=8
-		 		
 				render {
-					5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog_active )"
+					5="image( x0 + 5, y0 + 5, x1, y1, graphics/cog_active )"
 				} 
 				render_bg {
-					0="fill(x0,y0,x1,y1, darkestGrey)"
+					0="fill(x0,y0,x1,y1-1, darkestGrey)"
 				}
 			}
 	
