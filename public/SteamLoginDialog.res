@@ -98,7 +98,7 @@
 
 		button {
 			font-family=headerfont
-			font-size=18
+			font-size=28
 			font-style=none
 			textcolor=trueWhite
 
@@ -115,13 +115,13 @@
 			spacing=-9 
 		}
 
-		place { control=frame_captiongrip margin=0 width=max height=100 }
+		place { control=frame_captiongrip margin=0 width=max height=440 }
 
 		place { control=UserNameEdit,PasswordEdit 							align=top-center dir=down width=200 y=120 spacing=10 height=28 }
 		place { control=PasswordCapsLockImage										start=PasswordEdit dir=right x=-27 Y=4 }
 		place { control=SavePasswordCheck start=PasswordEdit 		align=top-center dir=down y=8 }
 
-		place { control=LoginButton align=top-center spacing=10 y=260 height=30 width=280 }
+		place { control=LoginButton align=top-center spacing=10 y=240 height=30}
 
 		place {
 			control=CreateNewAccountButton,PSNAccountSetupButton,LostPasswordButton
