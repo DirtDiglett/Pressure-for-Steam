@@ -132,8 +132,8 @@ font-size=14 [$LINUX]
 				48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
 				49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
 				
-				49="image(x0+5, y0+6, x1, y1, graphics/largecog)"
-				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"		
+				49="image(x0+5, y0+8, x1, y1, graphics/largecog)"
+				50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown)"		
 			}
 		}
 		
@@ -192,8 +192,8 @@ font-size=14 [$LINUX]
 					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
 					49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
 					
-					49="image(x0+5, y0+6, x1, y1, graphics/largecog)"
-					50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_hover)"		
+					49="image(x0+5, y0+8, x1, y1, graphics/largecog)"
+					50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown_hover)"		
 				}
 			}
 
@@ -236,8 +236,8 @@ font-size=14 [$LINUX]
 					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
 					49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
 					
-					49="image(x0+5, y0+6, x1, y1, graphics/largecog_active)"
-					50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_active)"		
+					49="image(x0+5, y0+8, x1, y1, graphics/largecog_active)"
+					50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown_active)"		
 				}
 			}
 			
@@ -330,9 +330,9 @@ font-size=14 [$LINUX]
 			control="ChatActionsButton" 
 			align=right
 			width=38
-			height=24
+			height=28
 			margin=12
-			margin-top=20
+			margin-top=18
 			dir=right
 		}
 		
