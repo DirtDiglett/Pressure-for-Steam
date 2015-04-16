@@ -86,12 +86,10 @@ font-size=14 [$LINUX]
 			bgcolor="none"
 			font-size=14
 			inset="2 2 0 0"
-			
-			render {}
-			render_bg {
-				0="gradient_horizontal( x0+1, y0+2, x1, y1 + 1, ButtonFace, none )"
-			}
+			minimum-height=0
 
+			render {}
+			render_bg {}
 		}
 		
 		"MusicPage_Details_Content ListPanelColumnHeader" [$OSX] {
