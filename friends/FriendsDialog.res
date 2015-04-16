@@ -288,17 +288,15 @@ font-size=14 [$LINUX]
 			inset-left=0
 			minimum-width=110
 
-			render {
-				6="fill(x1, y0-5, x1+9999, y0+64, lightGreyEnd)"
-			}
+				render {
+						0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+				}
 
 			render_bg {
-				6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
+				6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-
-				7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
 				15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
 				16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
@@ -316,13 +314,14 @@ font-size=14 [$LINUX]
 			}
 
 				FriendsSearch:focus {
+					render {
+						0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+					}
 					render_bg {
-						6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-
-						7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
 						15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
 						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
@@ -356,14 +355,16 @@ font-size=14 [$LINUX]
 				font-family=basefont
 				font-style=italic
 				padding-left=4
-
+				
+				render {
+						0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+				}
+				
 				render_bg {
-					6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
+					6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
 					2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
 					3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
-
-					7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
 					15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
 					16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
@@ -375,13 +376,15 @@ font-size=14 [$LINUX]
 			}
 
 				FriendsSearch:empty:focus [!$OSX] {
+					render {
+							0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+					}
+
 					render_bg {
-						6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-
-						7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
 						15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
 						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
@@ -393,13 +396,14 @@ font-size=14 [$LINUX]
 				}
 
 				FriendsSearch:empty:active [!$OSX] {
+					render {
+							0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+					}
 					render_bg {
-						6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-
-						7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
 						15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
 						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
