@@ -43,7 +43,7 @@
    TextEntry {
       font-family=basefont
       font-size=15
-font-size=14 [$LINUX]
+	font-size=14 [$LINUX]
       textcolor  = "darkestGrey"
       bgcolor  = "none"
       selectedtextcolor  = "white"
@@ -95,6 +95,15 @@ font-size=14 [$LINUX]
 			FrameMinimizeButton:hover {
 				image=graphics/window_controls/windows/login/minimize_hover
 			}
+
+		button {
+			font-family=headerfont
+			font-size=18
+			font-style=none
+			textcolor=trueWhite
+
+			render_bg {}
+		}
 	}	
 	
 	layout {
@@ -112,9 +121,17 @@ font-size=14 [$LINUX]
 		place { control=PasswordCapsLockImage										start=PasswordEdit dir=right x=-27 Y=4 }
 		place { control=SavePasswordCheck start=PasswordEdit 		align=top-center dir=down y=8 }
 
-		place { control=LoginButton align=top-center spacing=10 y=260 }
+		place { control=LoginButton align=top-center spacing=10 y=260 height=30 width=280 }
 
-		place { control=CreateNewAccountButton,PSNAccountSetupButton,LostPasswordButton align=top-center dir=right y=380 x=16 spacing=32 height=28 }
+		place {
+			control=CreateNewAccountButton,PSNAccountSetupButton,LostPasswordButton
+			align=top-center
+			dir=right
+			y=380
+			x=16
+			spacing=32
+			height=28
+		}
 
 		place {
 			control=Label2,Label3,Label4,CancelButton,ImagePanelLogo,Divider1
