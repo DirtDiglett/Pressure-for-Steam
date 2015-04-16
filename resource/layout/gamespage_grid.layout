@@ -18,7 +18,6 @@
 		// the picture for drop shadow room, in px. This value should
 		// match the margin values in the layout statements in the gamespage_grid_*.layout files.
 		GridView.DropShadowLeading "00"
-		interiorspacing "-1"
 	}
 
 	styles {
