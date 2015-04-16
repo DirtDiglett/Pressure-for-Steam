@@ -136,23 +136,21 @@ font-size=14 [$LINUX]
 		}
 		
 		place {
+			controls="BroadcastDetailPanel"
+			start=ScreenshotsDetailPanel
+			x=48
+			y=-10
+			width=280
+			height=40
+		}
+		
+		place {
 			controls="AchievementsDetailPanel"
 			region=bottom
 			align=left
 			width=800
 			height=145
 			margin-left=0
-			spacing=10
-		}
-		
-		place {
-			controls="BroadcastDetailPanel"
-			align=right
-			y=25
-			width=400
-			height=145
-			margin-right=0
-			dir=right
 			spacing=10
 		}
 

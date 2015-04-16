@@ -2,35 +2,60 @@
 	styles {
 		Button {
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=400
 			inset=2
+			textcolor=blue
+
+			render {}
+			render_bg {}
 		}
 
+			button:hover {
+				textcolor=lightestBlue
+			}
+
 		highlight {
-			textcolor=white
+			textcolor=lightestGreyHighlight
+			font-size=14
+			inset-left=30
+
+			render {
+				1="image(x0,y0-10,x1,y1, graphics/overlay/broadcast)"
+			}
 		}
 	}
 	
 	layout {
-		place {
-			control="TitleText"
-			width=0
-			height=0
+		region {
+			name=box
+			width=max
+			height=max
+		}
+
+		place { 
+			control="ShowChat,ShowBroadcast,StopBroadcast" 
+			region=box
+			x=19
+			y=0
+			dir=right
+			spacing=8
 		}
 
 		place {
 			control="InstructionText"
-			y=0
+			dir=down
+			x=0
+			y=22
 		}
 
-		place { 
-			control="ShowBroadcast,ShowChat,ShowSettings,StopBroadcast" 
-			align=top
-			y=20
-			margin-bottom=0
-			spacing=10 
+		
+
+		place {
+			control=TitleText,ShowSettings
+			width=0
+			height=0
 		}
 	}
 }
