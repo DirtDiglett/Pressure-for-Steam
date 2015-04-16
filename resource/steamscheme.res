@@ -80,21 +80,21 @@ Scheme {
 			// across taking the place of other buttons to make sure there aren't gaps
 			ApplyButton {
 				xpos	r101
-				ypos	r36
+				ypos	r39
 				wide	92
 				tall	28
 			}
 			
 			CancelButton {
 				xpos	r203
-				ypos	r36
+				ypos	r39
 				wide	92
 				tall	28
 			}
 			
 			OKButton {
 				xpos	r304
-				ypos	r36
+				ypos	r39
 				wide	92
 				tall	28
 			}
@@ -111,7 +111,7 @@ Scheme {
 		
 			PrevButton {
 				xpos	r306
-				ypos	r36
+				ypos	r39
 				wide	92
 				tall	28
 				PinCorner	3
@@ -119,7 +119,7 @@ Scheme {
 
 			NextButton {
 				xpos	r204
-				ypos	r36
+				ypos	r39
 				wide	92
 				tall	28
 				PinCorner	3
@@ -127,7 +127,7 @@ Scheme {
 
 			CancelButton {
 				xpos	r102
-				ypos	r36
+				ypos	r39
 				wide	92
 				tall	28
 				PinCorner	3
@@ -135,7 +135,7 @@ Scheme {
 
 			FinishButton {
 				xpos	r102
-				ypos	r36
+				ypos	r39
 				wide	92
 				tall	28
 				PinCorner	3
