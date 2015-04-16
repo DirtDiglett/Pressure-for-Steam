@@ -22,8 +22,8 @@
 
 			render_bg {
 				// Creates the top section
-				0="gradient( x0+1, y0+1, x1-1, y0 + 48, grey, lightGreyEnd )"
-				21="fill( x0+1, y0+48, x1-1, y0 + 75, lightGreyEnd )"
+				0="gradient( x0+1, y0+1, x1-1, y0 + 39, grey, lightGreyEnd )"
+				21="fill( x0+1, y0+39, x1-1, y0 + 75, lightGreyEnd )"
 
 				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
@@ -66,8 +66,8 @@
 
 				render_bg {
 					// Creates the top section
-					0="gradient( x0+1, y0+1, x1-1, y0 + 48, grey, lightGreyEnd )"
-					21="fill( x0+1, y0+48, x1-1, y0 + 75, lightGreyEnd )"
+					0="gradient( x0+1, y0+1, x1-1, y0 + 39, grey, lightGreyEnd )"
+					21="fill( x0+1, y0+39, x1-1, y0 + 75, lightGreyEnd )"
 
 					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
