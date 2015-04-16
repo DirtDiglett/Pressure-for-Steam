@@ -63,11 +63,25 @@
 		} 
 		
 		ListPanelSectionHeader {
+			minimum-height=1
 			render{}
 			render_bg{}
 		}
 
 		"Page ListPanelSectionHeader" {
+		minimum-height=1
+			render {}
+			render_bg {}
+		}
+
+		ListPanelColumnHeader {
+			minimum-height=1
+			render{}
+			render_bg{}
+		}
+
+		"Page ListPanelColumnHeader" {
+		minimum-height=1
 			render {}
 			render_bg {}
 		}

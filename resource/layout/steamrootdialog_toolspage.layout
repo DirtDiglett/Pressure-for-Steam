@@ -19,7 +19,25 @@ colors {
 				1="gradient(x0,y1-9,x1,y1-3, none, black40)"
 			}
 		}
-		
+		ListPanelDragger {
+			bgcolor= "none"
+			minimum-height=14
+
+			render {
+				//fill makes dragger visible
+				2="fill( x0, y0, x0 + 1, y1-1, darkGrey )" // left
+			}
+		}
+	
+		"Page ListPanelDragger" {
+			bgcolor= "none"
+			minimum-height=14
+			
+			render {
+				//fill makes dragger visible
+				2="fill( x0, y0, x0 + 1, y1, darkGrey )" // left
+			}
+		}
 		"CGamesListPanel ListPanelColumnSelectButton" {
 			bgcolor=none
 			padding-left=0
@@ -57,23 +75,6 @@ colors {
 		"CGamesListPanel ListPanelInterior" {
 			inset="5 0 0 0"
 		}
-
-		ListPanelColumnheader [$OSX] {
-			bgcolor="none"
-			textcolor="white"
-			font-family=semibold
-			font-size=15
-			font-size=14 [$LINUX]
-			font-weight=400
-			font-style="regular,normal"
-			inset="1 2 0 0"
-	
-			render_bg {
-				// fill
-				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
-				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-			} 
-		}
 		
 		ListPanelColumnheader [!$OSX] {
 			bgcolor="none"
@@ -84,6 +85,7 @@ colors {
 			font-weight=400
 			font-style="regular,normal"
 			inset= "0 3 0 0"
+			minimum-height=14
 	
 			render {
 				0="fill(x0,y0-1,x1,y0+1, darkestGrey)"
