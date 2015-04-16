@@ -5,7 +5,7 @@
 			font-size=15
 font-size=14 [$LINUX]
 		}
-		
+
 			sidemenu:hover {
 				textcolor=lightestBlue
 				font-size=15
@@ -25,10 +25,10 @@ font-size=14 [$LINUX]
 		}
 
 		timeStrings {
-			color=white
+			textcolor=white
 		}
 	}
-	
+
 	layout {
 		region {
 			name=overlay
@@ -39,7 +39,7 @@ font-size=14 [$LINUX]
 			margin-right=10
 			margin-bottom=10
 		}
-	
+
 		region {
 			name="detailpanels"
 			region=overlay
@@ -63,7 +63,7 @@ font-size=14 [$LINUX]
 			width="max"
 			height=50
 		}
-	
+
 		place {
 			controls="BroadcastDetailPanel"
 			region=detailpanels
@@ -80,27 +80,27 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=10
 		}
-		
-		
-		place { 
-			control=clock,clocksuffix 
+
+
+		place {
+			control=clock,clocksuffix
 			region=topbar
 			align=top-center
 			y=6
 		}
-		
-		place { 
-			control="SessionText,TwoWeeksText,ForeverText" 
+
+		place {
+			control="SessionText,TwoWeeksText,ForeverText"
 			y=45
 			x=10
 			dir=down
 		}
-		
+
 		place {
 			control="CloseButton"
 			region=overlay
 			y=35
 			dir=down
 		}
-	}	
+	}
 }
