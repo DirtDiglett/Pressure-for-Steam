@@ -78,6 +78,7 @@ font-size=14 [$LINUX]
 			font-family=semibold
 			font-weight=800
 			inset="0 0 0 0"
+			minimum-height=1
 			
 			render {}
 		}
