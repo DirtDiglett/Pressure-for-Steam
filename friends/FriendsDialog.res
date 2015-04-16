@@ -159,7 +159,7 @@
 					0="gradient(x0+10, y0+3, x1+12, y1-9, greyHighlight, grey)"
 					1="fill(x0+10, y0+3, x1+12, y0+4, lightestGreyHighlight)"
 					3="fill(x0+10, y0+3, x0+11, y0+4, darkGreyEnd)"
-					4="fill(x1+11, y0+3, x1+12, y0+4, darkGreyEnd)"					
+					4="fill(x1+11, y0+3, x1+12, y0+4, darkGreyEnd)"
 					7="fill(x0+10, y1-10, x0+11, y1-9, darkGrey)"
 					8="fill(x1+11, y1-10, x1+12, y1-9, darkGrey)"
 				}
@@ -289,21 +289,23 @@ font-size=14 [$LINUX]
 			minimum-width=110
 
 			render {
-				6="gradient(x1, y0-5, x1+9999, y0+61, lightGreyEnd, lightGreyEnd)"
+				6="fill(x1, y0-5, x1+9999, y0+64, lightGreyEnd)"
 			}
 
 			render_bg {
-				6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, lightGreyEnd)"
+				6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 
-				15="fill(x0-19,y0+29,x0+121,y0+53, darkestGrey)"// Top->Bottom
-				16="fill(x0-20,y0+30,x0-19,y0+52, darkestGrey)" // Left
-				17="fill(x0+121,y0+30,x0+122,y0+52, darkestGrey)" // Right
-				18="fill(x0-19,y0+53,x0+121,y0+54, grey50)"//grey50)"
-				19="fill(x0-20, y0+52, x0-19, y0+53, grey50)"
-				20="fill(x0+121, y0+52, x0+122, y0+53, grey50)"
+				7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
+
+				15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
+				16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
+				17="fill(x0+121,y0+33,x0+122,y0+55, darkestGrey)" // Right
+				18="fill(x0-19,y0+56,x0+121,y0+57, grey50)"//grey50)"
+				19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
+				20="fill(x0+121, y0+55, x0+122, y0+56, grey50)"
 			}
 		}
 
@@ -315,19 +317,19 @@ font-size=14 [$LINUX]
 
 				FriendsSearch:focus {
 					render_bg {
-						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 
-						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+						7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
-						15="fill(x0-19,y0+29,x0+121,y0+53, darkestGrey)"// Top->Bottom
-						16="fill(x0-20,y0+30,x0-19,y0+52, darkestGrey)" // Left
-						17="fill(x0+121,y0+30,x0+122,y0+52, darkestGrey)" // Right
-						18="fill(x0-19,y0+53,x0+121,y0+54, grey50)"//grey50)"
-						19="fill(x0-20, y0+52, x0-19, y0+53, grey50)"
-						20="fill(x0+121, y0+52, x0+122, y0+53, grey50)"
+						15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
+						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
+						17="fill(x0+121,y0+33,x0+122,y0+55, darkestGrey)" // Right
+						18="fill(x0-19,y0+56,x0+121,y0+57, grey50)"//grey50)"
+						19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
+						20="fill(x0+121, y0+55, x0+122, y0+56, grey50)"
 					}
 				}
 
@@ -356,55 +358,55 @@ font-size=14 [$LINUX]
 				padding-left=4
 
 				render_bg {
-					6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, lightGreyEnd)"
+					6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
 					2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
 					3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
 
-					7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+					7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
-					15="fill(x0-19,y0+29,x0+121,y0+53, darkestGrey)"// Top->Bottom
-					16="fill(x0-20,y0+30,x0-19,y0+52, darkestGrey)" // Left
-					17="fill(x0+121,y0+30,x0+122,y0+52, darkestGrey)" // Right
-					18="fill(x0-19,y0+53,x0+121,y0+54, grey50)"//grey50)"
-					19="fill(x0-20, y0+52, x0-19, y0+53, grey50)"
-					20="fill(x0+121, y0+52, x0+122, y0+53, grey50)"
+					15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
+					16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
+					17="fill(x0+121,y0+33,x0+122,y0+55, darkestGrey)" // Right
+					18="fill(x0-19,y0+56,x0+121,y0+57, grey50)"//grey50)"
+					19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
+					20="fill(x0+121, y0+55, x0+122, y0+56, grey50)"
 				}
 			}
 
 				FriendsSearch:empty:focus [!$OSX] {
 					render_bg {
-						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 
-						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+						7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
-						15="fill(x0-19,y0+29,x0+121,y0+53, darkestGrey)"// Top->Bottom
-						16="fill(x0-20,y0+30,x0-19,y0+52, darkestGrey)" // Left
-						17="fill(x0+121,y0+30,x0+122,y0+52, darkestGrey)" // Right
-						18="fill(x0-19,y0+53,x0+121,y0+54, grey50)"//grey50)"
-						19="fill(x0-20, y0+52, x0-19, y0+53, grey50)"
-						20="fill(x0+121, y0+52, x0+122, y0+53, grey50)"
+						15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
+						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
+						17="fill(x0+121,y0+33,x0+122,y0+55, darkestGrey)" // Right
+						18="fill(x0-19,y0+56,x0+121,y0+57, grey50)"//grey50)"
+						19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
+						20="fill(x0+121, y0+55, x0+122, y0+56, grey50)"
 					}
 				}
 
 				FriendsSearch:empty:active [!$OSX] {
 					render_bg {
-						6="gradient(x0-27, y0-5, x1+7, y0+61, lightGreyEnd, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+7, y0+64, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 
-						7="fill(x0-27, y0+61, x1+7, y0+62, darkestGrey)"
+						7="fill(x0-27, y0+64, x1+7, y0+65, darkestGrey)"
 
-						15="fill(x0-19,y0+29,x0+121,y0+53, darkestGrey)"// Top->Bottom
-						16="fill(x0-20,y0+30,x0-19,y0+52, darkestGrey)" // Left
-						17="fill(x0+121,y0+30,x0+122,y0+52, darkestGrey)" // Right
-						18="fill(x0-19,y0+53,x0+121,y0+54, grey50)"//grey50)"
-						19="fill(x0-20, y0+52, x0-19, y0+53, grey50)"
-						20="fill(x0+121, y0+52, x0+122, y0+53, grey50)"
+						15="fill(x0-19,y0+32,x0+121,y0+56, darkestGrey)"// Top->Bottom
+						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
+						17="fill(x0+121,y0+33,x0+122,y0+55, darkestGrey)" // Right
+						18="fill(x0-19,y0+56,x0+121,y0+57, grey50)"//grey50)"
+						19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
+						20="fill(x0+121, y0+55, x0+122, y0+56, grey50)"
 					}
 				}
 
@@ -552,7 +554,7 @@ font-size=14 [$LINUX]
 			height=25
 			margin-left=18
 			margin-right=8
-			margin-top=4
+			margin-top=1
 			dir=down
 		}
 
@@ -564,7 +566,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 			margin-left=-29
-			margin-top=-2
+			margin-top=1
 			margin-right=0
 			margin-bottom=16
 		}
