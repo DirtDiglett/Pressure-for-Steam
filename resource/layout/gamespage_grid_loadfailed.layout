@@ -2,8 +2,8 @@
 	styles {
 		GamesGridPlaceholder {
 			textcolor=white
-			font-size=18
-			font-family=semibold
+			font-size=28
+			font-family=headerfont
 		}
 
 		GamesGridIconBorder {
