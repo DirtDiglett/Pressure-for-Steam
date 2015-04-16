@@ -8,10 +8,6 @@
 			minimum-height=400
 		}
 
-		ListPanelSectionHeader {
-			font-family=semibold
-		}
-
 		FrameTitle {
 			bgcolor=none
 			textcolor=none
@@ -175,10 +171,7 @@
 		    bgcolor=none
 		    font-family=basefont
 
-		    render_bg {
-			    // background fill to overwrite the normal listPanel background
-				//0  = "fill( x0, y0, x1, y1, darkestGrey)"
-		    }
+		    render_bg {}
 	    }
 
 	    CFriendsListSectionHeader {
