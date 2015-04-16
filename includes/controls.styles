@@ -61,6 +61,8 @@ font-size=14 [$LINUX]
 			inset="3 0 0 0"
 				
 			bgcolor=none
+
+			minimum-height=28
 			
 			render_bg {
 		        // background fill
@@ -116,7 +118,7 @@ font-size=14 [$LINUX]
 				48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 				49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 				
-				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"	
+				50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown)"	
 			}
 	    }
 	    
@@ -184,7 +186,7 @@ font-size=14 [$LINUX]
 					48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 					49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 										
-					50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_hover)"	
+					50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown_hover)"	
 	      }
 	    }
 	    
@@ -249,7 +251,7 @@ font-size=14 [$LINUX]
 				48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 				49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 				
-				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"	
+				50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown)"	
 			}
 	    }
 	    
@@ -317,7 +319,7 @@ font-size=14 [$LINUX]
 				48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 				49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 				
-				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"	
+				50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown)"	
 			}
 	    }
 	    
@@ -336,6 +338,8 @@ font-size=14 [$LINUX]
 			padding-bottom=1
 				
 			bgcolor=none
+
+			minimum-height=28
 			
 			render_bg {
 		        // background fill
@@ -391,7 +395,7 @@ font-size=14 [$LINUX]
 				48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 				49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 				
-				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"	
+				50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown)"	
 			}
 	    }
 	    
@@ -460,7 +464,7 @@ font-size=14 [$LINUX]
 				48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 				49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 				
-				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"	
+				50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown)"	
 			}
 	    }
 	    
@@ -532,7 +536,7 @@ font-size=14 [$LINUX]
 					48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 					49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 										
-					50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_hover)"	
+					50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown_hover)"	
 	      }
 	    }
 	    
@@ -600,7 +604,7 @@ font-size=14 [$LINUX]
 				48="fill(x0, y1-1, x0+1, y1, grey25)" // bottom left
 				49="fill(x0+2, y1, x1-2, y1+1, grey50)" // single 1px line.	
 				
-				50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"	
+				50="image(x1-14, y0+9, x1-7, y0+20, graphics/dropdown)"	
 			}
 	    }
 	    
