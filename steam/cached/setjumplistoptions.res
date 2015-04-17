@@ -43,8 +43,9 @@
 			region=bottom
 			align=right
 			width=90
+			height=28
 			margin-right=14
-			margin-top=14
+			margin-top=12
 			spacing=8
 		}
 

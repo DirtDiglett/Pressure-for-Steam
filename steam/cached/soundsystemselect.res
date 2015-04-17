@@ -12,8 +12,8 @@
 			region=bottom
 			align=right
 			width=90
-			height=24
-			margin-top=14
+			height=28
+			margin-top=12
 			margin-right=14
 		}
 	}

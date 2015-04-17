@@ -19,9 +19,9 @@
 			region=bottomarea
 			align=right
 			width=94
-			height=24
+			height=28
 			margin-right=14
-			margin-top=14
+			margin-top=12
 			spacing=8
 		}
 	}

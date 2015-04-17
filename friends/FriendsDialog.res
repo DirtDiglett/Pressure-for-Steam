@@ -113,17 +113,11 @@
 			font-style="normal"
 			padding-top=0
 			padding-bottom=-5
-			image="graphics/icon_collapse"
 			inset="-4 -5 0 0"
 			minimum-height=14
 
 			render_bg {}
 		}
-
-			SectionedlistpanelCollapser:selected {
-				image="graphics/icon_expand"
-			}
-
 
 		// Overriding the default styling for these controls.
 		// So far, can't work out a way to move the pagetabs higher from their current position to make the button look.
