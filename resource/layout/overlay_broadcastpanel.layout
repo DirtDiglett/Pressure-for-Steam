@@ -17,7 +17,7 @@
 			}
 
 		highlight {
-			textcolor=lightestGreyHighlight
+			textcolor=lightestGrey
 			font-size=14
 			inset-left=30
 

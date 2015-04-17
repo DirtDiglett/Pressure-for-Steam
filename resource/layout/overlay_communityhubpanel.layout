@@ -31,8 +31,8 @@ font-size=14 [$LINUX]
 
 		PreviewImage {}
 
-				highlight {
-			textcolor=lightestGreyHighlight
+		highlight {
+			textcolor=lightestGrey
 			font-size=14
 		}
 	}
