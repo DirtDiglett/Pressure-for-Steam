@@ -20,7 +20,7 @@
 		}
 
 		date_and_author {
-			textcolor="greyhighlight"
+			textcolor="LightestGreyhighlight"
 			font-size=15
 font-size=14 [$LINUX]
 		}
