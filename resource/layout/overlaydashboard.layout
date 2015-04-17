@@ -15,6 +15,7 @@
 		overlaymain {
 			render_bg {
 				0="fill(x0,y0+112,x1,y1-146, black40)"
+				1="image_tiled(x0,y0,x1,y1, graphics/overlaybg)"
 			}
 		}
 
