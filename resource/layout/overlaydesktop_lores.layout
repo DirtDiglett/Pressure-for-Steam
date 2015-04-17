@@ -62,6 +62,7 @@ font-size=14 [$LINUX]
 			region=overlay
 			width="max"
 			height=50
+			margin-right=60
 		}
 
 		place {
@@ -86,7 +87,7 @@ font-size=14 [$LINUX]
 			control=clock,clocksuffix
 			region=topbar
 			align=top-center
-			y=6
+			y=56
 		}
 
 		place {
