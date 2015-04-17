@@ -20,10 +20,6 @@
 			textcolor=lightestGrey
 			font-size=14
 			inset-left=30
-
-			render {
-				1="image(x0,y0-10,x1,y1, graphics/overlay/broadcast)"
-			}
 		}
 	}
 	
@@ -44,16 +40,7 @@
 		}
 
 		place {
-			control="InstructionText"
-			dir=down
-			x=0
-			y=22
-		}
-
-		
-
-		place {
-			control=TitleText,ShowSettings
+			control=TitleText,ShowSettings,InstructionText
 			width=0
 			height=0
 		}

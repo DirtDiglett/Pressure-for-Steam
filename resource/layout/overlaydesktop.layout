@@ -76,13 +76,22 @@ font-size=14 [$LINUX]
 			x=17
 			y=47
 		}
-		
+
 		place {
 			control=TwoWeeksText,ForeverText
 			start=SessionText
 			x=20
 			dir=right
 			spacing=20
+		}
+
+		place {
+			control=BroadcastDetailPanel
+			start=ForeverText
+			x=14
+			width=max
+			dir=right
+			y=-5
 		}
 		
 		place {
@@ -106,7 +115,7 @@ font-size=14 [$LINUX]
 		place {
 			control=CommunityHubDetailPanel
 			start=FriendsDetailPanel
-			x=24
+			x=16
 			width=220
 			height=26
 		}
@@ -114,7 +123,7 @@ font-size=14 [$LINUX]
 		place {
 			control=GuidesDetailPanel
 			start=CommunityHubDetailPanel
-			x=24
+			x=16
 			width=141
 			height=26
 		}
@@ -122,7 +131,7 @@ font-size=14 [$LINUX]
 		place {
 			control=CommunityDiscussionsDetailPanel
 			start=GuidesDetailPanel
-			x=24
+			x=16
 			width=180
 			height=26
 		}
@@ -130,18 +139,9 @@ font-size=14 [$LINUX]
 		place {
 			control=ScreenshotsDetailPanel
 			start=CommunityDiscussionsDetailPanel
-			x=24
+			x=16
 			width=240
 			height=26
-		}
-		
-		place {
-			controls="BroadcastDetailPanel"
-			start=ScreenshotsDetailPanel
-			x=48
-			y=-10
-			width=280
-			height=40
 		}
 		
 		place {
