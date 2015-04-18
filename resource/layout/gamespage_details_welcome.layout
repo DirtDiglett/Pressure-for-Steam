@@ -43,7 +43,7 @@ font-size=14 [$LINUX]
 		place { 
 			control=bodybasic,bodynofriends,bodyhelp 
 			region=body 
-			y=26
+			y=34
 			width=max
 			dir=down 
 			spacing=2 
