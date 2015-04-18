@@ -1460,7 +1460,7 @@ font-size=14 [$LINUX]
 	"SuperNavMenuDivider" {
 		textcolor="none"
 
-		render {u
+		render {
 			0="fill( x0+6, y0, x1-6, y0+1, black )"
 			1="fill( x0+6, y0+1, x1-6, y0+2, red )"
 		}
