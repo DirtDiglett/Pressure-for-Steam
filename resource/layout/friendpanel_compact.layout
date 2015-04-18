@@ -61,13 +61,13 @@ font-size=14 [$LINUX]
 			}
 
 		inviteLinkStyle {
-			textcolor=Text2
+			textcolor=blue
 			font-style="normal"
 			padding-left=2
 		}
 
 			inviteLinkStyle:hover {
-				textcolor=White
+				textcolor=lightestBlue
 				font-style=underline
 			}
 	}
