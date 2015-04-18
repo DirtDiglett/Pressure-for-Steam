@@ -412,15 +412,15 @@ font-size=14 [$LINUX]
 					0="fill(x0,y0+2,x1-2,y1-2, white)"
 
 					// TOP
-					2="image_scale(x0,y0,x1-3,y0+4, graphics/textEntry/active/topMiddle)"
-					3="image(x1-3,y0,x1,y0+4, graphics/textEntry/active/topRight)"
+					2="image_scale(x0,y0,x1-3,y0+6, graphics/textEntry/active/topMiddle)"
+					3="image(x1-5,y0,x1,y0+6, graphics/textEntry/active/topRight)"
 
 					// RIGHT
-					5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/active/rightMiddle)"
+					5="image_scale(x1-5,y0+4,x1,y1-3, graphics/textEntry/active/rightMiddle)"
 
 					// BOTTOM
-					7="image_scale(x0,y1-2,x1-3,y1+1, graphics/textEntry/active/bottomMiddle)"
-					8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/active/bottomRight)"
+					7="image_scale(x0,y1-5,x1-3,y1+1, graphics/textEntry/active/bottomMiddle)"
+					8="image(x1-6,y1-5,x1,y1+1, graphics/textEntry/active/bottomRight)"
 				}
 			}
 
