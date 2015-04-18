@@ -244,6 +244,10 @@ styles {
 	uparrow {
 		image="graphics/icon_up_default"	
 	}
+
+		uparrow:hover {
+		image="graphics/icon_up_hover"	
+		}
 	
 	rightarrow {
 		image="graphics/icon_right_default"   
@@ -1456,7 +1460,7 @@ font-size=14 [$LINUX]
 	"SuperNavMenuDivider" {
 		textcolor="none"
 
-		render {
+		render {u
 			0="fill( x0+6, y0, x1-6, y0+1, black )"
 			1="fill( x0+6, y0+1, x1-6, y0+2, red )"
 		}
