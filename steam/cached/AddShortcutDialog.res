@@ -1,4 +1,18 @@
 "steam/cached/AddShortcutDialog.res" {
+	styles {
+		ListPanelColumnheader {
+			minimum-height=22
+		}
+
+		"ListPanelColumnheader ListPanelCheckBox" {
+			inset="4 6 0 0"
+		}
+
+		ListPanelCheckBox {
+			inset="3 5 0 0"
+		}
+	}
+
 	layout {
 		region {
 			name="bottom"
