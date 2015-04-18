@@ -4,6 +4,10 @@
 	}
 
 	styles {
+		ListPanelColumnHeader {
+			minimum-height=0
+		}
+
 		CMusicPlayerPanel {
 			bgcolor=darkestGrey
 			minimum-width = 440
