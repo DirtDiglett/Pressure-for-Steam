@@ -34,7 +34,7 @@ Because the skin is still in development, you can only download the skin here on
 3. You should also go ahead and install all of the fonts that are in the `font - INSTALL THESE FIRST` folder.
 	* Windows: Right-Click the font file and choose "Install".
 	* Mac: Double-Click the font file. Click "Install".
-	* Linux: you may need to "install" the font manually instead by copying it to `/usr/share/fonts` (to install it system-wide) or `~/.fonts` (to install it only for the current user) and executing `fc-cache -fv` in a terminal.
+	* Linux: If a graphical font viewer is installed on your system you will most likely be able to install the fonts easily using that program. Otherwise you need to “install” the fonts manually by copying them to `/usr/share/fonts` (to install them system-wide) or `~/.fonts` (to install them only for the current user) and executing `fc-cache -fv` in a terminal.
 4. Open up Steam then open up the Steam Settings Window. Click on the Interface tab, and under the option that says *"Select the skin you wish Steam to use (requires Steam to restart)"*, click on the dropdown, and select *"Pressure-for-Steam-master"*. 
 5. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
 
@@ -46,18 +46,18 @@ Using the GitHub application for Windows from [GitHub](https://windows.github.co
 **Mac**
 You can install the Git application from [GitHub](https://mac.github.com) to keep the repo in sync without having to return to the site each time.
 
-**LINUX**
-If [git](https://git-scm.com/) is installed on your system you can also use that to download Pressure, which will allow you update it more easily. The following guide assumes that git is in your PATH.
+**Linux**
+First you need to make sure git is installed on your system (usually using your distribution’s package manager). Then you can use the usual procedure to “download” and update the skin, which is outlined below:
 
-1. Install the skin using git
-   1. Open a command prompt / terminal.
-   2. Go into your Steam skin folder (you can find it in step 2 of the tutorial above) by executing the command `cd "<your skin folder>"`
-   3. Make sure you have write permissions in the skin folder and execute the command `git clone https://github.com/DirtDiglett/Pressure-for-Steam.git`
+- **Installing the skin using git**
+   1. Open a terminal.
+   2. Go into your Steam skin folder using `cd ~/.local/share/Steam/skins/`
+   3. Run the command `git clone https://github.com/DirtDiglett/Pressure-for-Steam.git`
    4. Now continue with step 3 of the default tutorial above
-2. Update the skin using git
-   1. Open a command prompt / terminal.
-   2. `cd` into your Steam skin folder (you can find it in step 2 of the tutorial above)
-   3. Make sure you have write permissions in the skin folder and execute the command `git pull`
+- **Updating the skin using git**
+   1. Open a terminal.
+   2. Go into your Steam skin folder using `cd ~/.local/share/Steam/skins/`
+   3. Run the command `git pull`
    4. Restart Steam
    
 
