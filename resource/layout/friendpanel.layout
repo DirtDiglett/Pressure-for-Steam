@@ -70,10 +70,12 @@ font-size=14 [$LINUX]
 
 		inviteLinkStyle {
 			textcolor=blue
+			font-style=normal
 		}
 
 			inviteLinkStyle:hover {
 				textcolor=lightestBlue
+				font-style=underline
 			}
 
 		WebStatusStyle {
