@@ -1,15 +1,17 @@
 "resource/layout/gamespage_mini.layout" {
 	styles {
-		"CGamesPage_Mini ListPanelColumnSelectButton" {
-			inset="-3 3 0 0"
-			
+		"CGamesPage_Mini ListPanelColumnSelectButton" {			
 			render {
-				// background fill
-				1="fill( x0, y0 + 1, x1 - 1, y1, none )"
-				2="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-			} 
-			 render_bg {}
+				0="image(x0+4,y0+7,x1,y1, graphics/cog)"
+			}
+			render_bg {}
 		}
+
+			"CGamesPage_Mini ListPanelColumnSelectButton:selected" {			
+				render {
+					0="image(x0+4,y0+7,x1,y1, graphics/cog_active)"
+				}
+			}
 	
 		"CGamesPage_Mini ListPanel" {
 			padding-left=4
@@ -18,7 +20,7 @@
 	
 		"CGamesPage_Mini ListPanelInterior" {	 
 			bgcolor=none
-			inset="3 1 -2 0"
+			inset="0 1 -2 0"
 
 			render {}
 			render_bg {}
@@ -30,46 +32,10 @@
 
 			render_bg {}
 		}
-	
-		ListPanelColumnheader [$OSX] {
-			bgcolor="none"
-			textcolor="white"
-			font-family=semibold
-			font-size=15
-font-size=14 [$LINUX]
-			font-weight=400
-			font-style="regular,normal"
-			inset="1 2 0 0"
-	
-			render_bg {
-				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
-				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-			} 
+
+		ListPanelColumnheader {
+			minimum-height="0"
 		}
-		
-		ListPanelColumnheader [!$OSX] {
-			bgcolor="none"
-			textcolor="white"
-			font-family=semibold
-			font-size=14
-			font-weight=400
-			font-style="regular,normal"
-			inset="0 0 0 0"
-			
-			render_bg {
-				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
-				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-			} 
-		}
-		
-			ListPanelColumnHeader:hover {
-				textcolor="white"
-				
-				render_bg {
-					0="gradient(x0,y0,x1,y1, lighterGrey, grey)"
-					1="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
-				}
-			}
 
 		grouper {
 			bgcolor=none
@@ -289,7 +255,7 @@ font-size=14 [$LINUX]
 		}
 		
 		DetailsBorderPanel {
-			inset="-1 0 0 0"
+			inset="-1 -4 0 0"
 			bgcolor=none
 			
 			render_bg {
@@ -299,7 +265,7 @@ font-size=14 [$LINUX]
 		}
 	}
 
- 	layout {
+	layout {
 		place {
 			control="frame_captiongrip"
 			width=max
@@ -378,5 +344,5 @@ font-size=14 [$LINUX]
 			margin-right=5
 			spacing=1
 		}
- 	}
+	}
 }
