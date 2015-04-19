@@ -5,7 +5,7 @@
 			minimum-height=350
 
 			render_bg {
-				0="image(x0+12,y0+30,x1,y1, graphics/dialogs/about)"
+				0="image(x0+1,y0+26,x1,y1, graphics/dialogs/about)"
 				1="fill( x0, y1-51, x1, y1-50, darkGrey )"
 				2="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				3="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
@@ -42,8 +42,8 @@
 			region=bottom
 			align=right
 			width=90
-			height=24
-			margin-top=14
+			height=28
+			margin-top=12
 			margin-right=14
 		}
 
