@@ -11,6 +11,13 @@
 				3="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
 		}
+
+		label {
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=2
+		}
 	}
 
 	layout {
@@ -20,20 +27,13 @@
 			height=51
 		}
 
-		place [!$OSX]  {
-			control="frame_minimize,frame_close"
-			align=right
-			margin-top=-2
-			margin-right=6
-			spacing=-9
-		}
-
 		place {
 			control="Label2,Label3,Label4,Label1,URLLabel1"
-			x=16
+			//x=23
+			align=right
+			margin-right=23
 			y=190
 			dir=down
-			margin-right=16
 			spacing=4
 		}
 
@@ -44,7 +44,7 @@
 			width=90
 			height=28
 			margin-top=12
-			margin-right=14
+			margin-right=12
 		}
 
 		place {
