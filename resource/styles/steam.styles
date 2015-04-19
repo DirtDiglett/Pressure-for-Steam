@@ -244,6 +244,10 @@ styles {
 	uparrow {
 		image="graphics/icon_up_default"	
 	}
+
+		uparrow:hover {
+		image="graphics/icon_up_hover"	
+		}
 	
 	rightarrow {
 		image="graphics/icon_right_default"   
