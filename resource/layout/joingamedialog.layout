@@ -7,11 +7,11 @@
 		
 		frame {
 			bgcolor=darkestGrey
-			minimum-width=550
-			minimum-height=250
+			minimum-width=498
+			minimum-height=273
 
 			render_bg {
-				0="image(x0+20, y0+60, x1, y1, graphics/dialogs/gameLaunch)"
+				0="image(x0, y0+26, x1, y1, graphics/dialogs/gameLaunch)"
 			}
 		}
 	}
@@ -48,11 +48,8 @@
 		
 		place {
 			controls="ThrobberThrobberThrobber"
-			region=box
-			start=InfoLabel
-			align=left
-			margin-top=15
-			dir=down
+			width=0
+			height=0
 		}
 		
 		place {
@@ -78,9 +75,8 @@
 			controls="OverrideThrottleCheckBox"
 			region=box
 			start=Progress
+			y=10
 			width=max
-			height=15
-			margin-top=10
 			dir=down
 		}
 		
@@ -89,7 +85,6 @@
 			region=box
 			start=OverrideThrottleCheckBox
 			width=max
-			height=15
 			margin-top=10
 			dir=down
 		}
@@ -106,9 +101,9 @@
 			region=bottom
 			align=right
 			width=135
-			height=24
-			margin-top=14
-			margin-right=14
+			height=28
+			margin-top=12
+			margin-right=12
 			spacing=8
 		}
 
