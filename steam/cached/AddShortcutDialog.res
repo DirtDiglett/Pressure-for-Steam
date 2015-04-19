@@ -33,7 +33,8 @@
 			control="Label1"
 			x=16
 			y=30
-			height=18
+			height=0
+			width=0
 		}
 
 		place {
@@ -41,7 +42,7 @@
 			x=1
 			width=max
 			height=max
-			margin-top=56
+			margin-top=25
 			margin-right=1
 			margin-bottom=51
 		}
@@ -50,8 +51,8 @@
 			control="BrowseButton,AddSelectedButton,CloseButton"
 			region=bottom
 			align=right 
-			height=24
-			margin-top=14
+			height=28
+			margin-top=12
 			margin-right=14
 			spacing=8
 		}	
