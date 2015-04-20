@@ -8,13 +8,13 @@
 	styles {
 		nonsteamdetails { 
 			bgcolor=black65
-			minimum-height=300
+			minimum-height=120
 		}
 
 		bodycontent {
 			selectedtextcolor="white"
 			textcolor="white"
-			font-size=14
+			font-size=15
 
 			render_bg {}
 		}
