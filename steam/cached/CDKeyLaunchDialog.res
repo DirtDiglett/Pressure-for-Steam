@@ -32,6 +32,8 @@
 			control="KeyList"
 			width=max
 			height=max
+			x=-16
+			y=16
 			start=ReasonLabel
 			dir=down
 			margin=1
