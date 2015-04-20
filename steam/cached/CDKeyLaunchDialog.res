@@ -22,9 +22,9 @@
 
 		place {
 			control="ReasonLabel"
-			x=8
+			x=16
 			y=36
-			margin-right=8
+			margin-right=16
 			width=max
 		}
 
@@ -32,7 +32,8 @@
 			control="KeyList"
 			width=max
 			height=max
-			y=98
+			start=ReasonLabel
+			dir=down
 			margin=1
 			margin-top=0
 			margin-bottom=51
@@ -47,7 +48,6 @@
 
 		place {
 			control="CopyButton,CloseButton"
-			end-right=LaunchButton
 			region=bottom
 			spacing=8
 			align=right
@@ -58,12 +58,12 @@
 
 		place {
 			control="LaunchButton"
-			x=8
+			end-right=CopyButton
 			region=bottom
 			align=right
 			height=28
 			width=92
-			margin-right=12
+			margin-right=8
 		}
 	}
 }

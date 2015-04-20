@@ -186,20 +186,13 @@
 			bgcolor="darkestGrey"
 
 			render {
-				//0="fill(x0,y0+143,x1,y0+144, darkestGrey)"
 				0="fill(x1-1,y0,x1,y1, darkestGrey)"
 			}
 			render_bg {
-			//	0="fill(x0,y0,x1,y1, darkestGrey)"
 				1="fill( x0, y1-16, x1, y1-15, darkestGrey )"
 				2="fill( x0+1, y1-15, x1-1, y1-14, greyHighlight )"
 				3="gradient( x0+1, y1-14, x1-1, y1-1, grey, lightGreyEnd )"
 			}
-		}
-
-		"CFriendsDialog SectionedListPanel" {
-			font-family=basefont
-			font-style="regular,normal"
 		}
 
 		AddFriendsButton  {
@@ -518,7 +511,7 @@ font-size=14 [$LINUX]
 		place {
 			control="frame_captiongrip"
 			width=max
-			height=38
+			height=50
 			margin=2
 		}
 
