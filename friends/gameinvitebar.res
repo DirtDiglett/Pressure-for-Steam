@@ -1,40 +1,4 @@
 "friends/gameinvitebar.res" {
-	controls {
-		"GameInviteBar" {
-			ControlName="GameInviteBar"
-		}
-		
-		"InviteLabel" {	
-			ControlName="Label"
-			labeltext="#friends_game_invite"
-			mouseinputenabled=0
-		}
-		
-		"GameLabel" {
-			ControlName="Label"
-			labeltext="%game%"
-			mouseinputenabled=0
-		}
-		
-		"ClickHereLabel" {
-			ControlName="Label"
-			labeltext="#friends_game_invite_action"
-			mouseinputenabled=0
-		}
-		
-		"InviteImage" {
-			ControlName="ImagePanel"
-			image="resource/invite"
-			mouseinputenabled=0
-		}
-		
-		"CloseButton" {	
-			ControlName="Button"
-			labeltext="X"
-			command="Close"
-		}
-	}
-	
 	styles {
 		CGameInviteBar {
 			bgcolor=none
@@ -61,19 +25,16 @@
 			bgcolor=none
 			
 			render_bg {
-				0="image(x0,y0,x1,y1,graphics/game_invite_close)"
+				0="image(x0,y0,x1,y1,graphics/chat_bar_close)"
 			}
 		}
 
 			Button:hover {
+				textcolor=none
+				bgcolor=none
+				
 				render_bg {
-					0="image(x0,y0,x1,y1,graphics/game_invite_close)"
-				}
-			}
-		
-			Button:active {
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/game_invite_close)"
+					0="image(x0,y0,x1,y1,graphics/chat_bar_close_hover)"
 				}
 			}
 	}
@@ -101,8 +62,8 @@
 			control="CloseButton" 
 			align=right 
 			margin=6 
-			width=8 
-			height=9 
+			width=32
+			height=33 
 		}
 		
 		place { 

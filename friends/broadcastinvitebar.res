@@ -24,19 +24,16 @@
 			bgcolor=none
 			
 			render_bg {
-				0="image(x0,y0,x1,y1,graphics/game_invite_close)"
+				0="image(x0,y0,x1,y1,graphics/chat_bar_close)"
 			}
 		}
 
 			Button:hover {
+				textcolor=none
+				bgcolor=none
+				
 				render_bg {
-					0="image(x0,y0,x1,y1,graphics/game_invite_close)"
-				}
-			}
-		
-			Button:active {
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/game_invite_close)"
+					0="image(x0,y0,x1,y1,graphics/chat_bar_close_hover)"
 				}
 			}
 	}
@@ -62,8 +59,8 @@
 		place { 
 			control="CloseButton" 
 			align=right 
-			width=8
-			height=9
+			width=32
+			height=33 
 			margin=6			 
 		}
 		
