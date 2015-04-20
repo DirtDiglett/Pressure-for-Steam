@@ -92,11 +92,11 @@ font-size=14 [$LINUX]
 			minimum-height=24
 	
 			render {
-				0="fill(x0,y1-1,x1,y1, darkGrey)"
+				0="fill(x0,y1-2,x1,y1-1, darkGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 			render_bg {
-				1="gradient(x0,y0,x1,y1-1, grey, lightGreyEnd)"
+				1="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
 			} 
 		}
 		
@@ -121,7 +121,7 @@ font-size=14 [$LINUX]
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
-				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
+				2="gradient(x0-22,y1,x1,y1, darkGrey, none)"
 			} 	
 		}
 		
@@ -132,7 +132,7 @@ font-size=14 [$LINUX]
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
-				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
+				2="gradient(x0-22,y1,x1,y1, darkGrey, none)"
 			} 
 		}
 
