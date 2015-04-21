@@ -1,24 +1,24 @@
 "resource/layout/gamespage_mini.layout" {
 	styles {
-		"CGamesPage_Mini ListPanelColumnSelectButton" {			
+		"CGamesPage_Mini ListPanelColumnSelectButton" {
 			render {
 				0="image(x0+4,y0+7,x1,y1, graphics/cog)"
 			}
 			render_bg {}
 		}
 
-			"CGamesPage_Mini ListPanelColumnSelectButton:selected" {			
+			"CGamesPage_Mini ListPanelColumnSelectButton:selected" {
 				render {
 					0="image(x0+4,y0+7,x1,y1, graphics/cog_active)"
 				}
 			}
-	
+
 		"CGamesPage_Mini ListPanel" {
 			padding-left=4
 			padding-right=2
 		}
-	
-		"CGamesPage_Mini ListPanelInterior" {	 
+
+		"CGamesPage_Mini ListPanelInterior" {
 			bgcolor=none
 			inset="0 1 -2 0"
 			minimum-width=800
@@ -26,8 +26,8 @@
 			render {}
 			render_bg {}
 		}
-	
-		"CGamesPage_Mini ListPanelInterior:scrollbar" {	 
+
+		"CGamesPage_Mini ListPanelInterior:scrollbar" {
 			inset="0 0 0 0"
 			bgcolor=none
 
@@ -44,42 +44,42 @@
 			render_bg {
 				0="fill( x0 + 3, y0 + 1, x1 - 3, y1 - 1, none )"
 			}
-			
+
 		}
 
-		CGamesPage_Mini {			
+		CGamesPage_Mini {
 			bgcolor="darkestGrey"
 
 			render_bg {
 				0="gradient( x0, y0, x1, y0+70, grey, lightGreyEnd )"
-				
+
 				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
 
 				3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
 				4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
-				
+
 				5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
 				6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
-				
+
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
-				
+
 				// 1px Dark line
 				8="fill(x0, y0+70, x1, y0+71, darkestGrey)"
-				
-				
+
+
 				11="fill(x0+1, y1-2, x0+2, y1-1, darkestGreyFake)" // Bottom Left Dark Pixel
 				12="fill(x1-2, y1-2, x1-1, y1-1, darkestGreyFake)" // Bottom Right Dark Pixel
-				
+
 				13="fill(x0+2, y1-2, x0+3, y1-1, bottomDarkPixels)" // Bottom Left Fake Anti-Aliased
 				14="fill(x0+1, y1-3, x0+2, y1-2, bottomDarkPixels)" // Bottom Left Fake Anti-Aliased
 
 				15="fill(x1-3, y1-2, x1-2, y1-1, bottomDarkPixels)" // Bottom Right Fake Anti-Aliased
-				16="fill(x1-2, y1-3, x1-1, y1-2, bottomDarkPixels)" // Bottom Right Fake Anti-Aliased	
+				16="fill(x1-2, y1-3, x1-1, y1-2, bottomDarkPixels)" // Bottom Right Fake Anti-Aliased
 			}
-		}	
-		
+		}
+
 		FrameTitle {
 			bgcolor="none"
 			textcolor="lightestGrey"
@@ -91,7 +91,7 @@
 			padding-right="0" [$OSX]
 			inset="2 -3 0 0"
 			inset="0 4 0 0" [$OSX]
-			
+
 			render_bg {}
 		}
 
@@ -103,7 +103,7 @@
 				font-weight=400
 				inset="2 -3 0 0"
 				inset="0 4 0 0" [$OSX]
-				
+
 				render_bg {}
 			}
 
@@ -124,14 +124,14 @@
 					0="image( x0, y0, x1,y1, graphics/supermenus/client/hover )"
 				}
 			}
-			
+
 			"MenuBar MenuButton:selected" {
 				textcolor="none"
 
 				render_bg {
 					0="image( x0, y0, x1,y1, graphics/supermenus/client/active )"
 				}
-			}	
+			}
 
 		MenuBar {
 			bgcolor=none
@@ -149,10 +149,12 @@
 			font-size=15
 font-size=14 [$LINUX]
 			font-weight=400
+			inset-left=0
 			padding-left=4
-			padding-right=20
-			minimum-width=150
-			
+			padding-top=1
+			//padding-right=20
+			minimum-width=123
+
 			render_bg {
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
@@ -167,14 +169,14 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 			font-weight=400
 			minimum-width=150
-			
+
 			render_bg {
 				1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
 				2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
 				3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
 			}
 		}
-		
+
 			// Typed in, as well as hovered.
 			LibrarySearch:hover [!$OSX] {
 				textcolor="darkGreyEnd"
@@ -183,9 +185,9 @@ font-size=14 [$LINUX]
 
 			LibrarySearch:hover [$OSX] {
 				textcolor="darkGreyEnd"
-				padding-left=0	
+				padding-left=0
 			}
-		
+
 			LibrarySearch:active [!$OSX] {
 				render_bg {
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
@@ -222,8 +224,8 @@ font-size=14 [$LINUX]
 			LibrarySearch:empty [!$OSX] {
 				textcolor="lightestGrey"
 				font-family=basefont
-				font-style=italic
-				padding-left=4	
+				font-style=italic	//I don't think this is necessary
+				padding-left=4
 
 				render_bg {
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
@@ -247,7 +249,7 @@ font-size=14 [$LINUX]
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 					}
 				}
-						
+
 			LibrarySearch:empty [$OSX] {
 				textcolor="lightestGrey"
 				font-family=basefont
@@ -258,15 +260,15 @@ font-size=14 [$LINUX]
 					1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/left)"
 					2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/right)"
 					3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/inner)"
-				}	
+				}
 			}
-			
+
 				LibrarySearch:empty:hover [!$OSX] {
 					textcolor="lightGreyEnd"
 					font-style=italic
 					padding-left=4
 				}
-					
+
 				LibrarySearch:empty:hover [$OSX] {
 					textcolor="lightGreyEnd"
 					font-style=italic
@@ -295,7 +297,7 @@ font-size=14 [$LINUX]
 				font-style=italic
 				padding-left=4
 			}
-				
+
 			LibrarySearch:disabled [$OSX] {
 				textcolor="None"
 				font-family=basefont
@@ -304,10 +306,11 @@ font-size=14 [$LINUX]
 			}
 
 		LibrarySearchIcon {
+			image=""
 			render {}
-			render_bg{}
+			render_bg {}
 		}
-		
+
 		NavLabel2 {
 			textcolor="white"
 			font-family=basefont
@@ -327,218 +330,218 @@ font-size=14 [$LINUX]
 			bgcolor=none
 
 			render {}
-			render_bg {}	
+			render_bg {}
 		}
-		
-"CGamesPage_Mini CMiniGameFilterMenuButton" {
+
+		"CGamesPage_Mini CMiniGameFilterMenuButton" {
 			render_bg {
 				// background fill
 				0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 2, grey, lightGreyEnd )" // Background Gradient
-						
+
 				// Dark Borders around
 				1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkGrey )" // Left
 				2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkGrey )" // Top
 				3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkGrey )" // Right
 				4="fill( x0 + 2, y1 - 2, x1 - 2, y1-1, darkGrey )" // Bottom
-		
+
 				// Dark Grey Background Corners & Fake Anti-Aliasing
 				// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 				6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+
 				// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 				9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+
 				// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 				11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
 				12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+
 				// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 				14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
 				15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				16="fill( x0 + 1, y1 - 2, x0 + 2, y1-1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+
 				// Single Pixel Highlight Line.
 				17="fill( x0 + 3, y0 + 1, x1 - 3, y0 + 2, greyHighlight )"
-				
+
 				// Fake Anti-Aliasing for the Single Pixel Highlight
-				18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, greyHighlightFake )" // Top Left		
-				19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, greyHighlightFake )" // Top Left		
+				18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, greyHighlightFake )" // Top Left
+				19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, greyHighlightFake )" // Top Left
 				20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, greyHighlightFake )" // Top Right
 				21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, greyHighlightFake )" // Top Right
-				
+
 				// Fake Anti-Aliasing for the bottom corners.
 				22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixels )" // Bottom Right
 				23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixels )" // Bottom Right
 				24="fill( x0 + 2, y1 - 3, x0 + 3, y1 - 2, bottomDarkPixels )" // Bottom Left
-				25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixels )" // Bottom Left	
-				
-				
+				25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixels )" // Bottom Left
+
+
 				// Drop-shadow
 				45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
 				46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
 				47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
 				48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
 				49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
-				
-			//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"		
+
+			//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown)"
 			}
 		}
-		
+
 			"CGamesPage_Mini CMiniGameFilterMenuButton:hover" {
 				render_bg {
 					// background fill
 					0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 2, greyHighlight, grey )" // Background Gradient
-							
+
 					// Dark Borders around
 					1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkGrey )" // Left
 					2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkGrey )" // Top
 					3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkGrey )" // Right
 					4="fill( x0 + 2, y1 - 2, x1 - 2, y1-1, darkGrey )" // Bottom
-			
+
 					// Dark Grey Background Corners & Fake Anti-Aliasing
 					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 					5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 					6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 					8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 					9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 					11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
 					12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 					14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
 					15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					16="fill( x0 + 1, y1 - 2, x0 + 2, y1-1, darkGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-						
+
 					// Single Pixel Highlight Line.
 					17="fill( x0 + 3, y0 + 1, x1 - 3, y0 + 2, lightestGreyHighlight )"
-					
+
 					// Fake Anti-Aliasing for the Single Pixel Highlight
-					18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, topLightPixelsHighlighted )" // Top Left		
-					19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, topLightPixelsHighlighted )" // Top Left		
+					18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, topLightPixelsHighlighted )" // Top Left
+					19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, topLightPixelsHighlighted )" // Top Left
 					20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, topLightPixelsHighlighted )" // Top Right
 					21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, topLightPixelsHighlighted )" // Top Right
-				
+
 					// Fake Anti-Aliasing for the bottom corners.
 					22="fill( x1 - 3, y1 - 3, x1 - 2, y1 - 2, bottomDarkPixelsHighlighted )" // Bottom Right
 					23="fill( x1 - 2, y1 - 4, x1 - 1, y1 - 3, bottomDarkPixelsHighlighted )" // Bottom Right
 					24="fill( x0 + 2, y1 - 3, x0 + 3, y1 - 2, bottomDarkPixelsHighlighted )" // Bottom Left
-					25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixelsHighlighted )" // Bottom Left	
-					
+					25="fill( x0 + 1, y1 - 4, x0 + 2, y1 - 3, bottomDarkPixelsHighlighted )" // Bottom Left
+
 					// Drop-shadow
 					45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
 					46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
 					47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
 					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
 					49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
-					
-				//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_hover)"		
+
+				//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_hover)"
 				}
 			}
-			
+
 			"CGamesPage_Mini CMiniGameFilterMenuButton:selected" {
 				render_bg {
 					// background fill
 					0 = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 2, darkestGrey )" // Background Gradient
-							
+
 					// Dark Borders around
 					1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
 					2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
 					3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
 					4="fill( x0 + 2, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
-			
+
 					// Dark Grey Background Corners & Fake Anti-Aliasing
 					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 					5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 					6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 					8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 					9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 					11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
 					12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 					14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
 					15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					16="fill( x0 + 1, y1 - 2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// Drop-shadow
 					45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
 					46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
 					47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
 					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
 					49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
-					
-				//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_active)"		
+
+				//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_active)"
 				}
 			}
-			
+
 			"CGamesPage_Mini CMiniGameFilterMenuButton:active" {
 				render_bg {
 					// background fill
 					0 = "fill( x0 + 1, y0 + 1, x1 - 1, y1 - 2, darkestGrey )" // Background Gradient
-							
+
 					// Dark Borders around
 					1="fill( x0, y0 + 2, x0 + 1, y1 - 3, darkestGrey )" // Left
 					2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
 					3="fill( x1 - 1, y0 + 2, x1, y1 - 3, darkestGrey )" // Right
 					4="fill( x0 + 2, y1 - 2, x1 - 2, y1-1, darkestGrey )" // Bottom
-			
+
 					// Dark Grey Background Corners & Fake Anti-Aliasing
 					// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 					5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 					6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 					8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 					9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 					11="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, darkCornerPixels )" // Darkest Pixel
 					12="fill( x1 - 1, y1 - 3, x1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					13="fill( x1 - 2, y1 - 2, x1 - 1, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 					14="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, darkCornerPixels )" // Darkest Pixel
 					15="fill( x0, y1 - 3, x0 + 1, y1 - 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 					16="fill( x0 + 1, y1 - 2, x0 + 2, y1-1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-					
+
 					// Drop-shadow
 					45="fill(x1-2, y1-1, x1-1, y1, grey50)" // bottom right
 					46="fill(x1-1, y1-2, x1, y1-1, grey50)" // bottom right
 					47="fill(x0+1, y1-1, x0+2, y1, grey50)" // bottom left
 					48="fill(x0, y1-2, x0+1, y1-1, grey50)" // bottom left
 					49="fill(x0+2, y1-1, x1-2, y1, grey)" // single 1px line.
-					
-				//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_active)"		
+
+				//	50="image(x1-14, y0+7, x1-7, y0+18, graphics/dropdown_active)"
 				}
 			}
 
 
-		
+
 		DetailsBorderPanel {
 			inset="-1 -4 0 0"
 			bgcolor=none
-			
+
 			render_bg {
 				0="gradient( x0+1, y0+1, x1-2, y0 + 149, none, Almostblack )"
 				1="fill( x0+1, y0 + 149, x1-2, y1, darkestgrey )"
@@ -562,7 +565,7 @@ font-size=14 [$LINUX]
 			margin-top=-1
 			margin-right=44
 		}
-		
+
 		place {
 			control="subnavgroup_library"
 			align=top-center
@@ -572,7 +575,7 @@ font-size=14 [$LINUX]
 			margin-left=9
 			margin-right=9
 		}
-		
+
 		place {
 			control="gameslist"
 			align=left
@@ -585,32 +588,33 @@ font-size=14 [$LINUX]
 		}
 
 		place {
-			control="label_search_icon"
-			width=1
-			height=1
+			control="library_filters"
 			align=left
+			height=24
 			margin-left=9
-			y=38
+			margin-top=38
+			margin-right=9
+			spacing=1
 		}
 
 		place {
 			control="library_search"
-			align=left
-			margin-left=8
-			y=38
+			start=library_filters
+			margin-left=26
+			//y=38
 			height=24
-			width=100
-			end-right=library_filters
+			//width=80
+			//end-right=library_filters
 		}
-		
+
 		place {
-			control="library_filters" 
-			align=right
-			height=24
-			margin-left=10
-			margin-top=38
-			margin-right=8
-			spacing=1
+			control="label_search_icon"
+			width=0
+			height=0
+			//align=left
+			//margin-left=9
+			//y=38
 		}
+
 	}
 }
