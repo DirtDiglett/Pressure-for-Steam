@@ -591,16 +591,16 @@ font-size=14 [$LINUX]
 			control="library_filters"
 			align=left
 			height=24
-			margin-left=10
+			margin-left=9
 			margin-top=38
-			margin-right=8
+			margin-right=9
 			spacing=1
 		}
 
 		place {
 			control="library_search"
 			start=library_filters
-			margin-left=24
+			margin-left=26
 			//y=38
 			height=24
 			//width=80
