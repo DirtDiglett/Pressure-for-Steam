@@ -46,6 +46,8 @@
 			region=bottom
 			align=left
 			height=28
+			margin-top=13
+			margin-left=10
 		}
 
 		place {
@@ -66,6 +68,7 @@
 			height=28
 			width=92
 			margin-right=8
+			margin-top=12
 		}
 	}
 }
