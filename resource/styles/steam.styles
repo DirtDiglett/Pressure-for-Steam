@@ -267,7 +267,7 @@ styles {
 	}	
 	
 	Frame {
-		bgcolor="darkestGrey" // Only affects the login window and Preferences from testing.
+		bgcolor="darkGrey" // Only affects the login window and Preferences from testing.
 		
 		render {
 			// Create the 1px border around every window.
