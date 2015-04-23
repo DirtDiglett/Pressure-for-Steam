@@ -6,8 +6,7 @@
 			height=48
 			margin-left=16
 			margin-right=16
-			margin-bottom=0
-			y=17
+			y=2
 		}
 
 		place {
@@ -15,9 +14,8 @@
 			start=Description
 			y=8
 			width=max
-			height=230
+			height=200
 			margin-right=16
-			margin-top=-15
 			dir=down
 		}
 
@@ -38,6 +36,13 @@
 			width=max
 			margin-right=16
 			dir=right
+		}
+
+		place {
+			control="HideButton"
+			start=TextEntry
+			margin-top=8
+			dir=down
 		}
 	}
 }
