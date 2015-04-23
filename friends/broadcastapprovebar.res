@@ -2,7 +2,7 @@
 	styles {
 		CBroadcastApproveBar {
 			bgcolor=none
-			
+
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
 				1="gradient(x0-9,y0+1,x1,y1-1, orange, darkestOrange)"
@@ -22,58 +22,54 @@
 		Button {
 			bgcolor=none
 			textcolor=none
-			
+
 			render_bg {
-				0="image(x0,y0,x1,y1,graphics/game_invite_close)"
+				0="image(x0,y0,x1,y1,graphics/chat_bar_close)"
 			}
 		}
 
 			Button:hover {
 				render_bg {
-					0="image(x0,y0,x1,y1,graphics/game_invite_close)"
-				}
-			}
-		
-			Button:active {
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/game_invite_close)"
+					0="image(x0,y0,x1,y1,graphics/chat_bar_close_hover)"
 				}
 			}
 
 		URLLabel {
-			textcolor=white
+			textcolor=lightestBlue
 			font-family=basefont
-			font-style="outerglow"
-			font-outerglow-color="130 80 0 255"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
+			font-style=normal
 		}
+
+			URLLabel:hover {
+				textcolor=lightestBlue
+				font-style=underline
+			}
 	}
-	
+
 	layout {
-		place { 
-			control="InviteImage" 
-			x=1 
-			y=15 
-			width=30 
-			height=36 
+		place {
+			control="InviteImage"
+			x=1
+			y=15
+			width=30
+			height=36
 		}
 
-		place { 
+		place {
 			control="GameLabel"
-			width=0 
-			height=0 
+			width=0
+			height=0
 		}
 
-		place { 
+		place {
 			control="InviteLabel,ApproveLabel"
 			margin-left=37
-			margin-top=14 
+			margin-top=15
 			margin-right=2
-			dir=down 
+			dir=down
 			spacing=3
 		}
-		
+
 		place {
 			control="OrLabel,IgnoreLabel"
 			start=ApproveLabel
@@ -84,12 +80,13 @@
 			spacing=4
 		}
 
-		place { 
-			control="CloseButton" 
-			align=right 
-			width=8 
-			height=9
-			margin=6 
+		place {
+			control="CloseButton"
+			align=right
+			width=32
+			height=33
+			margin-right=6
+			margin-top=16
 		}
 	}
 }
