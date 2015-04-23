@@ -1,17 +1,45 @@
-"resource/layout/editfriendsgroupdialog.layout" {
+"resource/layout/editfriendsgroup.layout" {
 	styles {
 		button {
 			minimum-width=90
 		}
 	}
 	
-	layout {
+	layout {		
 		place {
-			control="description"
-			y=48
+			control="Description"
 			width=max
+			height=72
 			margin-left=16
 			margin-right=16
+			y=18
+		}
+		
+		place {
+			control=TagChecks
+			start=Description
+			y=8
+			width=max
+			height=140
+			margin-left=1
+			margin-right=1
+		}
+		
+		place {
+			control="TextEntry"
+			width=240
+			start=TagChecks
+			dir=down
+		}
+
+		place {
+			control="TextEntry,AddTagButton"
+			height=24
+			spacing=10
+			margin=2
+			width=max
+			margin-right=16
+			dir=right
 		}
 		
 		region {

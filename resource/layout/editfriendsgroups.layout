@@ -1,0 +1,64 @@
+"resource/layout/editfriendsgroupdialog.layout" {
+	styles {
+		button {
+			minimum-width=120
+		}
+	}
+	
+	layout {
+		place {
+			control="Description"
+			width=max
+			height=72
+			margin-left=16
+			margin-right=16
+			y=18
+		}
+		
+		place {
+			control=TagChecks
+			start=Description
+			y=8
+			width=max
+			height=140
+			margin-left=-10
+			dir=down
+		}
+		
+		place {
+			control="TextEntry"
+			width=260
+			start=TagChecks
+			y=16
+			dir=down
+		}
+
+		place {
+			control="AddTagButton"
+			start=TextEntry
+			height=24
+			x=8
+			spacing=8
+			width=max
+			margin-right=16
+			dir=right
+		}
+		
+		region {
+			name=bottom
+			align=bottom
+			width=max
+			height=51
+		}
+		
+		place {
+			control="OKButton,CancelButton"
+			region=bottom
+			align=right
+			height=28
+			margin-top=12
+			margin-right=12
+			spacing=8
+		}
+	}
+}
