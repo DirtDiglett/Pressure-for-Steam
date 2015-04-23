@@ -1,33 +1,27 @@
-"resource/layout/editfriendsgroupdialog.layout" {
-	styles {
-		button {
-			minimum-width=120
-		}
-	}
-	
+"resource/layout/editfriendsgroup.layout" {
 	layout {
 		place {
 			control="Description"
 			width=max
-			height=72
+			height=48
 			margin-left=16
 			margin-right=16
-			y=18
+			y=22
 		}
-		
+
 		place {
 			control=TagChecks
 			start=Description
 			y=8
 			width=max
-			height=140
-			margin-left=-10
+			height=210
+			margin-right=16
 			dir=down
 		}
-		
+
 		place {
 			control="TextEntry"
-			width=260
+			width=262
 			start=TagChecks
 			y=16
 			dir=down
@@ -43,14 +37,14 @@
 			margin-right=16
 			dir=right
 		}
-		
+
 		region {
 			name=bottom
 			align=bottom
 			width=max
 			height=51
 		}
-		
+
 		place {
 			control="OKButton,CancelButton"
 			region=bottom
