@@ -1,8 +1,14 @@
 "resource/layout/editfriendsgroupdialog.layout" {
+	styles {
+		button {
+			minimum-width=90
+		}
+	}
+	
 	layout {
 		place {
 			control="description"
-			y=38
+			y=48
 			width=max
 			margin-left=16
 			margin-right=16
@@ -21,7 +27,7 @@
 			align=right
 			height=28
 			margin-top=12
-			margin-right=14
+			margin-right=12
 			spacing=8
 		}
 	}
