@@ -57,7 +57,7 @@ font-size=14 [$LINUX]
 			font-weight=400
 			font-style="regular,normal"
 			inset="1 2 0 0"
-	
+			
 			render_bg {
 				// fill
 				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
@@ -108,6 +108,18 @@ font-size=14 [$LINUX]
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
 			}
+		}
+
+				ListPanelInterior {	 
+			bgcolor= "none" 
+			selectedbgcolor= "blue"
+			textcolor= "white"
+			font-size=15
+font-size=14 [$LINUX]
+			inset= "0 2 0 0"
+
+			render {}
+			render_bg {}
 		}
 	}
 
