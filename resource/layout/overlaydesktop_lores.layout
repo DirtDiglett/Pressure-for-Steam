@@ -68,7 +68,7 @@ font-size=14 [$LINUX]
 		place {
 			controls="BroadcastDetailPanel"
 			region=detailpanels
-			width=330
+			width=250
 			height=240
 			spacing=10
 		}
