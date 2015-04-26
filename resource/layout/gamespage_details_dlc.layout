@@ -185,11 +185,18 @@ font-size=14 [$LINUX]
 			dir=down
 		}
 
+		region {
+			name=bottom
+			align=bottom
+			width=max
+			height=46
+		}
+
 		place {
 			control=moredlc
-			start=latesttimelabel
-			y=16
-			x=-6
+			region=bottom
+			align=top
+			x=11
 			dir=down
 		}
 	}
