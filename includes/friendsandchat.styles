@@ -90,7 +90,7 @@ font-size=14 [$LINUX]
 
 		// used in friends tooltip and friends list for overriding regular styles with custom colors
 	 	friends_offline {
-	 		textcolor="Friends.OfflineColor"
+	 		textcolor="lightestGrey"
 	 	}
 	 	
 	 	friends_online {
