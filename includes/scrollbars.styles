@@ -75,7 +75,7 @@
 			
 			render_bg {
 				0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/top )"
-				1="image_scale( x1 - 10, y0 + 4, x1 - 3, y1 - 4, graphics/scrollbar/middle_vertical )"
+				1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/middle_vertical )"
 				2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/bottom )"
 			}
 		}
@@ -83,7 +83,7 @@
 			"ScrollBarHandle:hover" {
 				render_bg {
 					0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/hover/top )"
-					1="image_scale( x1 - 10, y0 + 4, x1 - 3, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
+					1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
 					2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/hover/bottom )"
 				}
 			}
@@ -91,32 +91,32 @@
 			"ScrollBarHandle:active" {
 				render_bg {
 					0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/hover/top )"
-					1="image_scale( x1 - 10, y0 + 4, x1 - 3, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
+					1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
 					2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/hover/bottom )"
 				}
 			}
 		
 		"SliderHoriz" { //horizontal scrollbar thumb  
 			render_bg {
-				0="image_scale( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/left )"
-				1="image_scale( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/middle_horizontal )"
-				2="image_scale( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/right )"
+				0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/left )"
+				1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/middle_horizontal )"
+				2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/right )"
 			}
 		}
 			
 			"SliderHoriz:hover" {
 				render_bg {
-					0="image_scale( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
-					1="image_scale( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/hover/middle_horizontal )"
-					2="image_scale( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
+					0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
+					1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/hover/middle_horizontal )"
+					2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
 				}
 			}
 			
 			"SliderHoriz:active" {
 				render_bg {
-					0="image_scale( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
-					1="image_scale( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/hover/middle_horizontal )"
-					2="image_scale( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
+					0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
+					1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/hover/middle_horizontal )"
+					2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
 				}
 			}
 		
