@@ -8,6 +8,8 @@
 				1="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				2="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				3="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
+
+				4="image(x0+20, y0+45, x1, y1, resource/icon_warning)"
 			}
 		}
 		
@@ -19,15 +21,16 @@
 	layout {
 		place {
 			control="Warning"
-			x=20
-			y=45
+			x=0
+			y=0
+			width=0
+			height=0
 		}
 		
 		place {
 			control="WarningText"
-			start="Warning"
-			x=5
-			y=5
+			x=90
+			y=50
 			width=max
 			margin-right=15
 			dir=right
