@@ -1,13 +1,5 @@
 "steam/cached/DialogCheckForUpdates.res" {
 	layout {
-		place [!$OSX] {
-			control="frame_minimize,frame_close"
-			align=right
-			margin-top=-2
-			margin-right=6
-			spacing=-9
-		}
-
 		place {
 			control="InfoLabel,InfoLabel2"
 			align=left
@@ -28,9 +20,9 @@
 			control=Button1
 			region=bottom
 			align=right
-			height=24
-			margin-top=14
-			margin-right=14
+			height=28
+			margin-top=12
+			margin-right=12
 		}
 	}
 }

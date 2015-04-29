@@ -20,15 +20,6 @@
 			width=max
 			height=51
 		}
-
-		place [!$OSX]  {
-			control="frame_minimize,frame_close"
-			align=right
-			margin-top=-2
-			margin-right=6
-			spacing=-9
-		}
-
 		place {
 			control="Label1"
 			x=16
@@ -53,7 +44,7 @@
 			align=right 
 			height=28
 			margin-top=12
-			margin-right=14
+			margin-right=12
 			spacing=8
 		}	
 	}

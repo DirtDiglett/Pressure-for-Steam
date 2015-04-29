@@ -26,35 +26,35 @@ Scheme {
 			}
 			
 			frame_minimize {
-				xpos	r90
+				xpos	r84
 				xpos	22 [$OSX]
-				ypos	-2
+				ypos	1
 				ypos	3 [$OSX]
-				wide	34
-				tall	23
+				wide	28
+				tall	20
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
 			
 			frame_maximize {
-				xpos	r63
+				xpos	r57
 				xpos	43 [$OSX]
 				ypos	7
 				ypos	3 [$OSX]
-				wide	26 
-				tall	23
+				wide	28
+				tall	20
 				visible 0 [!$OSX]
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}			
 			
 			frame_close {
-				xpos	r62
+				xpos	r56//r62
 				xpos	1 [$OSX]
-				ypos	-2
+				ypos	1
 				ypos	3 [$OSX]
-				wide	54
-				tall	23
+				wide	48
+				tall	20
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}

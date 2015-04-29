@@ -31,14 +31,6 @@ font-size=14 [$LINUX]
 	}	
 
 	layout {
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
 		region {
 			name=left
 			x=8

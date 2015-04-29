@@ -513,20 +513,29 @@ font-size=14 [$LINUX]
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	
 	layout {
-		place [!$OSX]  { 
-			control="frame_minimize,frame_maximize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-8 
+		place [!$OSX] {
+			control="frame_minimize"
+			align=right
+			margin-right=82
+			height=20
+			width=29
 		}
 
-		place [$WINDOWS]  { 
-			control="frame_minimize,frame_maximize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
+		place [!$OSX] {
+			control=frame_maximize
+			start=frame_minimize
+			dir=right
+			height=20
+			width=26
+		}
+
+
+		place [!$OSX] {
+			control="frame_close"
+			start=frame_maximize
+			dir=right
+			height=20
+			width=48
 		}
 
 		region { 

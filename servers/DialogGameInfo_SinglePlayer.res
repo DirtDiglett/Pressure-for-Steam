@@ -1,13 +1,5 @@
 "Servers/DialogGameInfo_SinglePlayer.res" {
 	layout {
-		place [!$OSX]  { 
-			control="frame_minimize,frame_close" 
-			align=right 
-			margin-top=-2 
-			margin-right=6 
-			spacing=-9 
-		}
-		
 		//Bottom
 		region { 
 			name=bottom 
@@ -19,9 +11,9 @@
 			control="Refresh,Connect,Close" 
 			region=bottom 
 			align=right
-			height=24 
-			margin-top=14
-			margin-right=14
+			height=28
+			margin-top=12
+			margin-right=12
 			spacing=8 
 		}
 	}
