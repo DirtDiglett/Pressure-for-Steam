@@ -8,21 +8,21 @@
 			render_bg {
 				// Creates the top section
 				0="gradient( x0+1, y0+1, x1-1, y0 + 60, grey, lightGreyEnd )"
-				
+
 				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
-				
+
 				3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
 				4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
-				
+
 				5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
 				6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
-				
+
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 			}
 		}
-		
+
 		Button {
 			bgcolor="none"
 			textcolor="none"
