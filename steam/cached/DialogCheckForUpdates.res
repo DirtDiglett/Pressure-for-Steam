@@ -8,14 +8,13 @@
 			dir=down
 			spacing=16
 		}
-		
+	
 		region {
 			name="bottom"
 			align=bottom
 			width=max
 			height=51
 		}
-
 		place {
 			control=Button1
 			region=bottom

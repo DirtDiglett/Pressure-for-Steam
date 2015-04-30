@@ -3,41 +3,38 @@
 		ParentalUnlockDialog {
 			minimum-width = 400
 			minimum-height = 250
-			
+		
 			render_bg {
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
 		}
-
 		Password {
 			bgcolor="none"
 			font-size=40
 			minimum-height=50
 		}
-
 		Hey {
 			textcolor=white
 			font-size=18
 		}
-		
+	
 		Hey2 {
 			textcolor=none
 			font-size=16
 			font-size=15
 			font-size=14 [$LINUX]
 		}
-		
+	
 		Key {
 			bgcolor=none
 			image="graphics/keybg"
 			inset="20 0 0 0"
-
 			render_bg {}
 		}
 	}
-	
+
 	layout {
 		region {
 			name="top"
@@ -46,14 +43,12 @@
 			margin=10
 			margin-top=40
 		}
-
 		region {
 			name="bottom"
 			align=bottom
 			width=max
 			height=51
 		}
-
 		place {
 			control="KeyImage"
 			region="top"
@@ -65,7 +60,6 @@
 			margin-top=-30
 			margin-right=0
 		}
-
 		place {
 			control="Instructions, Instructions2"
 			region="top"
@@ -75,7 +69,7 @@
 			spacing=8
 			dir=down
 		}
-		
+	
 		place {
 			control="Password"
 			region="top"
@@ -83,14 +77,13 @@
 			margin-left=155
 			margin-top="75"
 		}
-
 		place {
 			control="Recovery"
 			region="bottom"
 			margin-left=10
 			margin-top=5
 		}
-		
+	
 		place {
 			control="OK,Cancel"
 			region="bottom"

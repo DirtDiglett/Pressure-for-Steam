@@ -5,36 +5,33 @@
 			font-size=28
 			font-family=headerfont
 		}
-
 		GamesGridIconBorder {
 			bgcolor="none"
 			inset="0 0 0 0"
-		    
+		   
 		    render {}
 		}
-					
+				
 		GGPlaceholderBG {
 			bgcolor=none
 		}
-
 		"GameItem_installed GamesGridPlaceholder" {
 			textcolor="white"
 		}
 	}
-
 	layout {
 		region {
 			name=icon_region
 			width=max
-			height=max 
+			height=max
 		}
-		
+	
 		place {
 			control="background"
 			width=max
 			height=max
 		}
-		
+	
 		place {
 			control="appname"
 			align=center
@@ -42,7 +39,7 @@
 			margin=12
 			margin-top=14
 		}
-		
+	
 		place {
 			control="noappimage_border"
 			region="icon_region"
@@ -53,7 +50,7 @@
 			height=34
 			margin-top=48
 		}
-		
+	
 		place {
 			control="noappimage"
 			region="icon_region"

@@ -3,21 +3,20 @@
 		CMusicPage_Details_Album {
 			bgcolor=none
 			//minimum-height=500
-			
+		
 			render {}
 			render_bg {}
 		}
-		
+	
 		AlbumTitleStyle {
 			bgcolor=black65
 			textcolor=white
 			font-size=48
 			font-family=headerfont
-			font-weight=400	
+			font-weight=400
 			inset="240 20 0 0"
 			padding-bottom=60
 		}
-
 		ArtistStyle {
 			bgcolor=none
 			textcolor=white
@@ -25,20 +24,20 @@
 			font-family=basefont
 			font-weight=600
 		}
-		
+	
 		TracksInfoStyle {
 			bgcolor=none
 			textcolor=lightestGrey
 			font-size=15
 font-size=14 [$LINUX]
 			font-family=basefont
-			font-weight=400 
+			font-weight=400
 			padding-left=0
 			padding-top=0
 			padding-right=10
 			padding-bottom=0
 		}
-		
+	
 		TrackStyle {
 			bgcolor=black65
 			textcolor=Text2
@@ -49,17 +48,17 @@ font-size=14 [$LINUX]
 			padding-top=0
 			padding-bottom=10
 		}
-		
+	
 			TrackStyle:hover {
 				textcolor="text"
 			}
-		
+	
 		CoverStyle {
 			render {
 				0="image(x0-10,y0-10,x1+10,y1+10, graphics/album_shadow)"
 			}
 		}
-		
+	
 		AdditionalActionButtonStyle {
 			textcolor=blue
 			font-size=16
@@ -68,16 +67,16 @@ font-size=14 [$LINUX]
 			font-family=basefont
 			padding-top=0
 			padding-bottom=0
-			
+		
 			render_bg	{}
 		}
-		
+	
 			AdditionalActionButtonStyle:hover {
 				textcolor=lightestBlue
 			}
-		
-		
-		ActionButtonStyle {   
+	
+	
+		ActionButtonStyle {  
 			bgcolor=none
 			textcolor="white"
 			font-family=headerfont
@@ -91,7 +90,6 @@ font-size=14 [$LINUX]
 			padding-left=6
 			padding-right=6
 			minimum-width=200
-
 			render {
 				1="image( x0 + 10, y0 + 10, x1, y1, graphics/icon_play )"
 			}
@@ -100,10 +98,10 @@ font-size=14 [$LINUX]
 				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
-				
-				
+			
+			
 				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
-				
+			
 				//Anti-Alias
 				2="fill(x0+1,y0,x0+2,y0+1, greenButtonAntiAliasedCorners)" // Top Left
 				3="fill(x0,y0+1,x0+1,y0+2, greenButtonAntiAliasedCorners)" // Top Left
@@ -113,7 +111,7 @@ font-size=14 [$LINUX]
 				7="fill(x0+1, y1-1, x0+2, y1, greenButtonAntiAliasedCorners)" // Bottom Left
 				8="fill(x1-2, y1-1, x1-1, y1, greenButtonAntiAliasedCorners)" // Bottom Right
 				9="fill(x1-1, y1-2, x1, y1-1, greenButtonAntiAliasedCorners)" // Bottom Right
-				
+			
 				// 1px Solid Line Top
 				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHighlight)" // Main Line
 				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
@@ -122,28 +120,28 @@ font-size=14 [$LINUX]
 				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
 				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
 				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				
+			
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, greenButtonDarkenedCorners)"
 				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonDarkenedCorners)"
 				19="fill(x0+2,y1-1,x0+3,y1, greenButtonDarkenedCorners)"
-				
+			
 				20="fill(x1-3,y1-1,x1-2,y1, greenButtonDarkenedCorners)"
 				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonDarkenedCorners)"
 				22="fill(x1-1,y1-3,x1,y1-2, greenButtonDarkenedCorners)"
-			}	
+			}
 		}
-			
+		
 			ActionButtonStyle:hover {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
@@ -153,7 +151,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
@@ -162,28 +160,28 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
-				}			
+				}		
 			}
-			
+		
 			ActionButtonStyle:active {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
@@ -193,7 +191,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
@@ -202,27 +200,25 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
-				}			
+				}		
 			}
 	}
-
-	layout {	
-		region { 
+	layout {
+		region {
 			name=album
 			width=max
 			height=max
 			overflow=allow-vertical
 		}
-
 		place {
 			control="CoverImage"
 			align=top
@@ -231,14 +227,12 @@ font-size=14 [$LINUX]
 			y=20
 			x=20
 		}
-
 		place {
 			control=AlbumTitleLabel
 			x=0
 			width=max
 			dir=right
 		}
-
 		place {
 			control=ArtistLabel
 			start=AlbumTitleLabel
@@ -246,27 +240,26 @@ font-size=14 [$LINUX]
 			y=-60
 			x=240
 		}
-
-		place {			
+		place {		
 			control=leftcolumn
 			region=headerregion
 			dir=down
 		}
-		
+	
 		place {
 			control=TracksInfoLabel,PlayTracksButton
 			start=ArtistLabel
 			dir=down
-			spacing=10	
+			spacing=10
 		}
-		
+	
 		place {
 			control=AddTracksToQueueButton,AddTracksToPlaylistButton,PlayAlbumButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumButton,ShowAlbumInSystemButton
 			start=CoverImage
 			dir=down
-			y=10			
+			y=10		
 		}
-		
+	
 		place {
 			control=*MusicPageDetailsTrack
 			start=TracksInfoLabel

@@ -1,43 +1,42 @@
 "resource/layout/musicpage_details_trackitem.layout" {
 	styles {
-		PositionLabelStyle { 
+		PositionLabelStyle {
 			bgcolor=none
 			textcolor=Labeldisabled
 			font-size=14
 			font-family=basefont
-			font-weight=400 
+			font-weight=400
 			padding-top=1
-			padding-bottom=10			
+			padding-bottom=10		
 		}
-		
-		TrackLabelStyle { 
+	
+		TrackLabelStyle {
 			bgcolor=none
 			textcolor=Text2
 			font-size=15
 font-size=14 [$LINUX]
 			font-family=basefont
-			font-weight=400 
+			font-weight=400
 			padding-top=0
-			padding-bottom=10					
+			padding-bottom=10				
 		}
-		
+	
 			TrackLabelStyle:hover {
 				textcolor="text"
 			}
 	}
-	
+
 	layout {
 		region {
 			name=panelregion
 			width=max
 		}
-		
+	
 		place {
 			control="PositionLabel"
 			region="panelregion"
 			width=40
 		}
-
 		place {
 			control="TrackLabel"
 			region="panelregion"

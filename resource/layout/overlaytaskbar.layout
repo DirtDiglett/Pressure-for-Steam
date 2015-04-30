@@ -6,19 +6,18 @@
 font-size=14 [$LINUX]
 			font-family=basefont
 			font-style=none
-			
+		
 			render_bg {}
 		}
-		
+	
 			taskbar:hover {
 				textcolor=lightestBlue
 			}
-		
-		view_friends {}
-
-		online_friends {}		
-	}
 	
+		view_friends {}
+		online_friends {}	
+	}
+
 	layout {
 		region {
 			name=bottom
@@ -26,7 +25,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=145
 		}
-		
+	
 		place {
 			control="bottomarea"
 			region="bottom"
@@ -34,7 +33,7 @@ font-size=14 [$LINUX]
 			width=143
 			height=145
 		}
-		
+	
 		place {
 			controls="WebBrowserButton,SettingsButton,MusicPlayerButton"
 			region=bottom
@@ -43,12 +42,12 @@ font-size=14 [$LINUX]
 			margin-right=66
 			dir=down
 			spacing=5
-		}	
-		
+		}
+	
 		place {
 			control="SteamLogo,FriendPanel,view_friends,online_friends,ScreenshotsButton,TaskbarPanel"
 			width=0
 			height=0
 		}
-	}	
+	}
 }

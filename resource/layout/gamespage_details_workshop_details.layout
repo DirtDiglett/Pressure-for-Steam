@@ -3,9 +3,9 @@
 		WorkshopDetailsPanel.ExtraVerticalSpacing "130"
 		WorkshopDetailsPanel.ExtraHorizontalSpacing "183"
 		RichText.InsetX "2"
-		RichText.InsetY "2" 		
+		RichText.InsetY "2" 	
 	}
-	
+
 	styles {
 		workshop_description {
 			selectedtextcolor="white"
@@ -13,22 +13,20 @@
 			font-size=15
 font-size=14 [$LINUX]
 			font-family=basefont
-
 			render_bg {}
 		}
 	}
-
 	layout {
-		place { 
+		place {
 			control=workshop_description
 			region=body
-			x=0 
-			y=0 
-			width=0 
-			height=0 
+			x=0
+			y=0
+			width=0
+			height=0
 		}
-		
-		place { 
+	
+		place {
 			control=workshop_banner
 			region=body
 			align=left

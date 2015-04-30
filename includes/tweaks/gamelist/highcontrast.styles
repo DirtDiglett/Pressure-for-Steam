@@ -10,84 +10,83 @@
 				selectedtextcolor="darkestGrey"
 				textcolor="lightestGrey"
 			}
-	 		
+	 	
 	 		"GameItem_Uninstalled:selected" {
 				selectedtextcolor="darkestGrey"
 				textcolor="darkestGrey"
 			}
-
 		"GameItem_Installed" {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 		}
-		  
+		 
 			"GameItem_Installed:hover" {
 				selectedtextcolor="trueWhite"
 				textcolor="trueWhite"
 			}
-		
-		
+	
+	
 		"GameItem_Updating" {
 			selectedtextcolor="trueWhite"
 			textcolor="orange"
 		}
-		
+	
 			"GameItem_Updating:hover" {
 				selectedtextcolor="trueWhite"
 				textcolor="lightestOrange"
 			}
-		
+	
 			"GameItem_Updating:selected" {
 	 			selectedtextcolor="trueWhite"
 	 			textcolor="orange"
 	 		}
-		
+	
 		"GameItem_Shortcut" {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 		}
-		  
+		 
 			"GameItem_Shortcut:hover" {
 				selectedtextcolor="trueWhite"
 				textcolor="trueWhite"
 			}
-		
+	
 		"GameItem_Mod" {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 		}
-		  
+		 
 			"GameItem_Mod:hover" {
 				selectedtextcolor="trueWhite"
 				textcolor="trueWhite"
 			}
-		
+	
 		"GameItem_Decrypting" {
 			selectedtextcolor="lightestGreen"
 			textcolor="orange"
 		}
-		
+	
 			"GameItem_Decrypting:hover" {
 				textcolor="lightestOrange"
 				selectedtextcolor="trueWhite"
 			}
-		
+	
 			"GameItem_Decrypting:selected" {
 				textcolor="orange"
 				selectedtextcolor="trueWhite"
-			
-			}
 		
+			}
+	
 		"GameItem_Syncing" {
 			textcolor="orange"
 			selectedtextcolor="trueWhite"
 		}
-		
+	
 			"GameItem_Syncing:hover" {
 				textcolor="lightestOrange"
 				selectedtextcolor="trueWhite"
 			}
-			
+		
 			"GameItem_Syncing:selected" {
 				textcolor="orange"
 				selectedtextcolor="trueWhite"

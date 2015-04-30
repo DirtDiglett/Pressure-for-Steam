@@ -1,6 +1,6 @@
 "resource/layout/subpaneloptionsdownloads.layout" {
 	styles {}
-	
+
 	layout {
 		place {
 			controls="ManageInstalledappsLabel"
@@ -9,7 +9,6 @@
 			width=max
 			dir=down
 		}
-
 		place {
 			controls="ManageInstalledApps"
 			start=ManageInstalledappsLabel
@@ -18,7 +17,7 @@
 			height=28
 			dir=down
 		}
-		
+	
 		place {
 			control="Divider1"
 			start=ManageInstalledApps
@@ -27,14 +26,13 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			controls="RegionLabel"
 			start=Divider1
 			y=16
 			dir=down
 		}
-		
+	
 		place {
 			controls="RegionInfoLabel"
 			start=RegionLabel
@@ -42,7 +40,7 @@
 			width=max
 			dir=down
 		}
-		
+	
 		place {
 			controls="DownloadRegionCombo"
 			start=RegionInfoLabel
@@ -51,7 +49,6 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			control="Divider2"
 			start=DownloadRegionCombo
@@ -60,21 +57,20 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			controls="RestrictionsLabel"
 			start=Divider2
 			y=16
 			dir=down
 		}
-		
+	
 		place {
 			control=ThrottleRatesLabel
 			start="RestrictionsLabel"
 			y=8
 			dir=down
 		}
-		
+	
 		place {
 			controls="ThrottleRates"
 			start=ThrottleRatesLabel
@@ -83,7 +79,6 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			controls="AllowDownloadsDuringGameplayCheckbox,AutoUpdateTimeRestrictCheckbox"
 			start=ThrottleRates
@@ -91,14 +86,13 @@
 			dir=down
 			spacing=-4
 		}
-
 		place {
 			controls="AutoUpdateTimeRestrictStartLabel"
 			start=AutoUpdateTimeRestrictCheckbox
 			y=8
 			dir=down
 		}
-		
+	
 		place {
 			controls="AutoUpdateTimeRestrictStart"
 			start=AutoUpdateTimeRestrictStartLabel
@@ -107,7 +101,6 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			controls="AutoUpdateTimeRestrictEndLabel"
 			start=AutoUpdateTimeRestrictCheckbox
@@ -115,7 +108,7 @@
 			y=8
 			dir=down
 		}
-		
+	
 		place {
 			controls="AutoUpdateTimeRestrictEnd"
 			start=AutoUpdateTimeRestrictEndLabel
@@ -124,7 +117,6 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			control="LibrariesLabel,AllowDownloadsDuringGameplayInfo"
 			width=0

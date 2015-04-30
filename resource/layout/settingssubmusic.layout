@@ -8,22 +8,21 @@
 			font-weight=400
 			font-style="regular,normal"
 			inset= "0 0 0 0"
-	
+
 			render {}
-			render_bg {} 
+			render_bg {}
 		}
 	}
-
 	layout {
 		place {
 			control=LibraryHeader
-			x=18 
+			x=18
 			y=21
 			width=max
 			margin-right=43
 			dir=down
 		}
-		
+	
 		place {
 			control=LibraryList
 			start=LibraryHeader
@@ -33,7 +32,6 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			control=AddLibraryButton
 			start=LibraryList
@@ -41,32 +39,30 @@
 			width=90
 			dir=down
 		}
-		
+	
 		place {
 			control=RemoveLibraryButton,StartCrawlingButton
 			start=AddLibraryButton
 			width=90
 			x=8
 			dir=right
-			spacing=8	
+			spacing=8
 		}
-
 		place {
 			control=LibraryDivider
 			start=AddLibraryButton
 			y=16
-			width=max		
+			width=max	
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			control=DatabaseInfoLabel
 			start=LibraryDivider
 			y=16
 			dir=down
 		}
-		
+	
 		place {
 			control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders,EnableMediaKeysCheckbox
 			start=DatabaseInfoLabel
@@ -74,7 +70,7 @@
 			dir=down
 			spacing=-4
 		}
-		
+	
 		place {
 			control=ResetDatabaseButton
 			start=EnableMediaKeysCheckbox
@@ -82,7 +78,6 @@
 			y=8
 			dir=down
 		}
-
 		place {
 			control=DatabaseDivider
 			start=ResetDatabaseButton
@@ -91,14 +86,13 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			control=PauseMusicHeader
 			start=DatabaseDivider
 			y=16
 			dir=down
 		}
-			
+		
 		place {
 			control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox
 			start=PauseMusicHeader
@@ -106,21 +100,20 @@
 			dir=down
 			spacing=-4
 		}
-		
+	
 		place {
 			control=NotificationHeader
 			start=PauseMusicWhenVoiceChatCheckbox
 			y=16
 			dir=down
 		}
-		
+	
 		place {
 			control=NotificationPlaylistNowPlayingCheckbox
 			start=NotificationHeader
 			y=0
 			dir=down
 		}
-
 		place {
 			control=LoggingHeader
 			start=DatabaseDivider
@@ -128,14 +121,13 @@
 			y=16
 			dir=down
 		}
-		
+	
 		place {
 			control=LoggingCrawlingCheckbox
 			start=LoggingHeader
 			y=0
 			dir=down
 		}
-
 		place {
 			control=DatabaseHeader,VolumeHeader,VolumeSlider,VolumeDivider
 			width=0

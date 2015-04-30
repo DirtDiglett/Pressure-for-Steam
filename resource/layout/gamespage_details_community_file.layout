@@ -3,47 +3,44 @@
 		// The extra space needed vertical beyond the autocomputed size of the blurb contents
 		// this is used in code to make the vertical size of the panel fit the title/author/morelink
 		// and should be updated if you change vertical padding/margins/layout.
-		GameDetailsCommunityFile.ExtraVerticalSpacing "140"  
+		GameDetailsCommunityFile.ExtraVerticalSpacing "140" 
 		GameDetailsCommunityFile.ExtraHorizontalSpacing "180"
 		GameDetailsCommunityFile.MaxTooltipWidth "300"
 		GameDetailsCommunityFile.MaxTooltipHeight "90"
 	}
-	
+
 	styles {
 		CCommunityFilePanel {
 			render_bg {
 				0="fill(x0+1,y0+1,x1,y0+66, black65)"
 			}
 		}
-
 		communityfile_name {
 			textcolor="blue"
 			font-size=15
-			font-size=14 [$LINUX]		
+			font-size=14 [$LINUX]	
 		}
-		
+	
 		communityfile_image_border {
 		   //bgcolor=black65
-		    render_bg {      
+		    render_bg {     
 				// lines around
 				//0="fill(x0,y0,x0+1,y1, black40)"
 				//1="fill(x0,y0,x1,y0+1, black40)"
 				//2="fill(x1-1,y0,x1,y1, black40)"
 				//3="fill(x0,y1-1,x1,y1, black40)"
-
 				4="fill(x0+1,y1-46, x1, y1-1, black65)"
 		    }
-		}	
-    
+		}
+   
 		communityfile_rating_image_background {
 		    render_bg {}
-		}	    
+		}	   
 	}
-
 	layout {
-		
-		place { 
-			region=body 
+	
+		place {
+			region=body
 			control=friendimage
 			x=4
 			y=70
@@ -51,54 +48,53 @@
 			height=40
 			spacing=10
 		}
-
-		place { 
-			region=body 
-			control=communityfile_name 
+		place {
+			region=body
+			control=communityfile_name
 			start=friendimage
 			x=4
 			y=0
 			width=max
 			margin-right=3
-			dir=right 
+			dir=right
 		}
-		
-		place { 
-			region=body 
-			control=communityfile_image_border 
-			x=0 
-			y=0 
+	
+		place {
+			region=body
+			control=communityfile_image_border
+			x=0
+			y=0
 			width=193
-			height=112 
+			height=112
+		}
+	
+		place {
+			region=body
+			control=communityfile_image
+			x=1
+			y=1
+			width=189
+			height=110
 		}
 		
-		place { 
-			region=body 
-			control=communityfile_image 
-			x=1 
-			y=1 
-			width=189
-			height=110 
-		}
-		 
-		place { 
-			region=body 
-			control=communityfile_rating_image_background 
-			x=3 
-			y=89 
+		place {
+			region=body
+			control=communityfile_rating_image_background
+			x=3
+			y=89
 			width=max
 			height=22
 			margin-right=3
 		}
-		
-		place { 
-			region=body 
-			control=communityfile_rating_image 
+	
+		place {
+			region=body
+			control=communityfile_rating_image
 			x=8
-			y=94 
+			y=94
 			width=max
 			height=11
 			margin-right=3
-		}	
+		}
 	}
 }

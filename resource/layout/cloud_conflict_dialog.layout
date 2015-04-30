@@ -1,13 +1,13 @@
 "resource/layout/cloud_conflict_dialog.layout" {
 	controls {}
-	
+
 	styles {
 		intro {
 			textcolor=red
 			font-size=14
 			font-family=semibold
 		}
-		
+	
 		bold {
 			textcolor=text
 			font-size=16
@@ -17,17 +17,17 @@ font-size=14 [$LINUX]
 			font-weight=700
 			font-style=uppercase
 		}
-		
+	
 		text {
 			textcolor=white
 			font-size=14
 		}
-		
+	
 		arrows {
 			inset="0 2 0 -2"
 		}
 	}
-	
+
 	layout {
 		region {
 			name=box
@@ -36,39 +36,39 @@ font-size=14 [$LINUX]
 			margin-top=32
 			margin-bottom=32
 		}
-		
+	
 		region {
 			region=box
-			name=intro 
+			name=intro
 			margin-top=30
 		}
-		
+	
 		region {
 			region=box
 			name=cloud
 			margin-top=130
 		}
-		
+	
 		region {
 			region=box
 			name=local
 			margin-top=220
 		}
-		
+	
 		region {
 			name=bottom
 			align=bottom
 			height=51
 			width=max
 		}
-		
+	
 		place {
 			region=intro
 			control=WarningIcon
 			x=20
 			y=0
 		}
-		
+	
 		place {
 			region=intro
 			controls=TextIntro
@@ -77,28 +77,28 @@ font-size=14 [$LINUX]
 			width=310
 			height=80
 		}
-		
+	
 		place {
 			region=intro
 			controls=TopDivider
 			y=80
 			width=max
 		}
-		
+	
 		place {
 			region=cloud
 			control=CloudFilesIcon
 			x=0
 			y=0
 		}
-		
+	
 		place {
 			region=cloud
 			control=TextCloudFiles
 			x=75
 			y=10
 		}
-		
+	
 		place {
 			region=cloud
 			control=TextCloudFilesTime
@@ -106,14 +106,14 @@ font-size=14 [$LINUX]
 			y=35
 			width=max
 		}
-		
+	
 		place {
 			region=cloud
 			controls=DownloadIcon
 			x=200
 			y=8
 		}
-		
+	
 		place {
 			region=cloud
 			controls=AcceptRemoteButton
@@ -121,36 +121,36 @@ font-size=14 [$LINUX]
 			y=8
 			width=max
 		}
-		
+	
 		place {
 			region=local
 			control=LocalFilesIcon
 			x=0
 			y=0
 		}
-		
+	
 		place {
 			region=local
 			control=TextLocalFiles
 			x=75
 			y=10
 		}
-		
+	
 		place {
 			region=local
 			control=TextLocalFilesTime
-			x=75 
+			x=75
 			y=35
 			width=max
 		}
-		
+	
 		place {
 			region=local
 			controls=UploadIcon
 			x=200
 			y=8
 		}
-		
+	
 		place {
 			region=local
 			controls=AcceptLocalButton
@@ -158,23 +158,23 @@ font-size=14 [$LINUX]
 			y=8
 			width=max
 		}
-		
+	
 		place {
 			region=local
 			controls=BottomDivider
 			y=80
 			width=max
 		}
-		
+	
 		place {
 			region=bottom
 			control=CancelButton
 			align=right
 			height=24
 			margin-top=14
-			margin-right=14	
+			margin-right=14
 		}
-		
+	
 		place {
 			control=TextCancelNote
 			height=0

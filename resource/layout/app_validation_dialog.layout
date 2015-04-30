@@ -1,20 +1,20 @@
 "resource/layout/app_validation_dialog.layout" {
 	controls {
-		app_validation_dialog { 
-			wide=360 
-			tall=216 
+		app_validation_dialog {
+			wide=360
+			tall=216
 		}
-		
+	
 		Label1 {
 			controlname=label
 			labelText="#Steam_ValidatingSteamCaches"
 		}
-		
+	
 		ProgressBar1 {
 			controlname=ProgressBar
 			variable=progress
 		}
-		
+	
 		Button1 {
 			controlname=Button
 			labelText="#vgui_Cancel"
@@ -22,41 +22,40 @@
 			selected=0
 		}
 	}
-	
-	colors {}
-	
-	styles {}
 
+	colors {}
+
+	styles {}
 	layout {
-		place { 
-			controls=Label1 
-			x=20 
-			y=80 
-			width=320 
-			height=24 
-		}
-		
-		place { 
-			controls=ProgressBar1 
-			x=20 
-			y=110 
-			width=320 
+		place {
+			controls=Label1
+			x=20
+			y=80
+			width=320
 			height=24
-		}		
-		
+		}
+	
+		place {
+			controls=ProgressBar1
+			x=20
+			y=110
+			width=320
+			height=24
+		}	
+	
 		region {
 			name=bottom
 			align=bottom
 			height=51
 		}
-		
-		place { 
-			controls=Button1 
+	
+		place {
+			controls=Button1
 			height=24
 			region=bottom
 			align=right
 			margin-top=14
-			margin-right=14 
+			margin-right=14
 		}
 	}
 }

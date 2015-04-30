@@ -1,53 +1,45 @@
 "resource/layout/gamespage_details_dlc.layout" {
 	colors {
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 		GameDetailsDLC.ExtraVerticalSpacing "250"
 	}
-
 	styles {
 		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
-			
+		
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
-			
+		
 			button:hover {
 				textcolor=lightestBlue
 			}
-
-		dlcdetails { 
+		dlcdetails {
 			bgcolor=black65
 		}
-
 		bodycontent {
 			selectedtextcolor="Label"
 			textcolor="Label"
 			font-size=15
 font-size=14 [$LINUX]
-
 			render_bg {}
 		}
-
 		"DLC_Uninstalled" {
 			selectedtextcolor="label"
 			textcolor="labeldisabled"
 		}
-
 		"DLC_Installed" {
 			selectedtextcolor="white"
 			textcolor="text"
 		}
-
 		"mostrecenttime" {
 			padding-top=3
 			minimum-width=256
 		}
-
 		ListPanelColumnheader [$OSX] {
 			bgcolor="none"
 			textcolor="white"
@@ -57,14 +49,14 @@ font-size=14 [$LINUX]
 			font-weight=400
 			font-style="regular,normal"
 			inset="1 2 0 0"
-			
+		
 			render_bg {
 				// fill
 				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-			} 
+			}
 		}
-		
+	
 		ListPanelColumnheader [!$OSX] {
 			bgcolor="none"
 			textcolor= "white"
@@ -73,56 +65,51 @@ font-size=14 [$LINUX]
 			font-weight=400
 			font-style="regular,normal"
 			inset= "0 0 0 0"
-	
+
 			render {
 				0="fill(x0,y1,x1,y1+1, black65)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 			render_bg {
 				1="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
-			} 
+			}
 		}
-		
+	
 		ListPanelColumnHeader:hover {
 			textcolor= "white"
-			
+		
 			render_bg {
 				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 				1="gradient(x0,y0,x1,y1+1, lighterGrey, grey)"
 			}
 		}
-
 		ListPanelDragger {
 			bgcolor= "none"
-
 			render {
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
 			}
 		}
-	
+
 		"Page ListPanelDragger" {
 			bgcolor= "none"
-			
+		
 			render {
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1, darkestGrey )" // left
 			}
 		}
-
-				ListPanelInterior {	 
-			bgcolor= "none" 
+				ListPanelInterior {	
+			bgcolor= "none"
 			selectedbgcolor= "blue"
 			textcolor= "white"
 			font-size=15
 font-size=14 [$LINUX]
 			inset= "0 2 0 0"
-
 			render {}
 			render_bg {}
 		}
 	}
-
 	layout {
 		region {
 			name=body
@@ -130,13 +117,11 @@ font-size=14 [$LINUX]
 			height=max
 			margin=20
 		}
-
 		place {
 			control=headerlabel
 			region=body
 			width=max
 		}
-
 		place {
 			control=latestimage
 			region=body
@@ -144,39 +129,34 @@ font-size=14 [$LINUX]
 			width=257
 			height=120
 		}
-
 		place {
 			control=overlayimage
 			region=body
 			y=35
 			width=257
-			height=120 
+			height=120
 		}
-
 		place {
 			control=latesttimelabel
 			region=body
 			y=168
 			width=257
-			
+		
 		}
-
 		place {
 			control=dlclist
 			region=body
 			width=max
 		}
-
 		place {
 			control=latestimage,dlclist
 			region=body
-			y=35			
+			y=35		
 			height=120
 			dir=right
 			spacing=9
 			margin-right=20
 		}
-
 		place {
 			control=latesttimelabel
 			region=body
@@ -184,14 +164,12 @@ font-size=14 [$LINUX]
 			y=0
 			dir=down
 		}
-
 		region {
 			name=bottom
 			align=bottom
 			width=max
 			height=46
 		}
-
 		place {
 			control=moredlc
 			region=bottom

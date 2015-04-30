@@ -1,15 +1,14 @@
 "resource/layout/gamespage_details_friends_list.layout" {
 	colors {
-		// Note the margin/spacing/width values here must match what is used in placement below 
+		// Note the margin/spacing/width values here must match what is used in placement below
 		// for the image region.  The margin value should be computed by adding the margin of all containing
 		// regions for the images.  All these values also must be positive integers.
 		GameDetailsFriends.ImageAreaMargin "14"
 		GameDetailsFriends.ImageAreaSpacing "4"
 		GameDetailsFriends.ImageWidth "42"
-		
+	
 		Tooltip.Anchor=Parent
 	}
-
 	styles {
 		friendlabelmore {
 			textcolor="greyhighlight"
@@ -17,67 +16,61 @@
 font-size=14 [$LINUX]
 			font-family=basefont
 		    inset="-3 0 0 0"
-
-		    render_bg {}			
-    	}   
-    		   
+		    render_bg {}		
+    	}  
+    		  
 			friendlabelmore:hover {
 				textcolor="white"
 				font-size=15
 font-size=14 [$LINUX]
 				font-family=basefont
 			    inset="-3 0 0 0"
-
-			    render_bg {}			
-	    	}     
-	     
+			    render_bg {}		
+	    	}    
+	    
 		infolabel {
 			textcolor=white
 			font-size=15
 font-size=14 [$LINUX]
-		}	
+		}
 	}
-
 	layout {
-		region { 
-			name=body 
-			width=max 
+		region {
+			name=body
+			width=max
 			height=max
 			margin=0
 		}
-		
-		region { 
-			name=images 
-			region=body 
-			x=0 
-			y=18 
+	
+		region {
+			name=images
+			region=body
+			x=0
+			y=18
 			width=max
-			margin=2 
+			margin=2
 		}
-
-		place { 
+		place {
 			control=*friendimage,friendlabelmore
-			region=images 
+			region=images
 			width=42
 			height=40
 			dir=right
 			spacing=4
-
 		}
-
-		// Only one of the next two will be visible at once		
-		place { 
+		// Only one of the next two will be visible at once	
+		place {
 			control=infolabelplural
-			region=body 
-			y=0 
-			width=max 
+			region=body
+			y=0
+			width=max
 		}
-		
-		place { 
-			control=infolabelsingular 
-			region=body 
-			y=0 
-			width=max 
+	
+		place {
+			control=infolabelsingular
+			region=body
+			y=0
+			width=max
 		}
 	}
 }

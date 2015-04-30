@@ -1,143 +1,140 @@
-window_controls.styles { 
+window_controls.styles {
 	styles {
-// *********************************************** 
+// ***********************************************
 // Resize Grabber
-// ***********************************************			
+// ***********************************************		
 		FrameBRGripPanel {
 			inset="4 4 0 0"
 			image=graphics/window_controls/grabber
 		}
-		
+	
 		FrameBRGripPanel:hover {
 			inset="4 4 0 0"
 			image=graphics/window_controls/grabber
 		}
-
-// ******************************************************************************************************** 
+// ********************************************************************************************************
 // Close Button
 // ********************************************************************************************************
- 
+
 		FrameCloseButton {
 			inset="-6 0 0 0"
 			image=graphics/window_controls/windows/close
 		}
-		
+	
 			FrameCloseButton:hover {
 				image=graphics/window_controls/windows/close_hover
 			}
-			
+		
 			FrameCloseButton:active {
 				image=graphics/window_controls/windows/close_active
 			}
-			
+		
 			FrameCloseButton:disabled {
 				image=graphics/window_controls/windows/close_disabled
 			}
-		
+	
 			FrameCloseButton:framefocus {
 				image=graphics/window_controls/windows/close
 			}
-			
+		
 				FrameCloseButton:framefocus:hover {
 					image=graphics/window_controls/windows/close_hover
 				}
-				
+			
 				FrameCloseButton:framefocus:active {
 					image=graphics/window_controls/windows/close_active
 				}
- 
-// ******************************************************************************************************** 
+
+// ********************************************************************************************************
 // Maximize Button
 // ********************************************************************************************************
 		FrameMaximizeButton {
 			inset="-6 0 0 0"
 			image=graphics/window_controls/windows/maximize
 		}
-		
+	
 			FrameMaximizeButton:hover {
 				image=graphics/window_controls/windows/maximize_hover
 			}
-			
+		
 			FrameMaximizeButton:active {
 				image=graphics/window_controls/windows/maximize_active
 			}
-			
+		
 			FrameMaximizeButton:disabled {
 				image=graphics/window_controls/windows/maximize_disabled
 			}
-		
+	
 			FrameMaximizeButton:framefocus {
 				image=graphics/window_controls/windows/maximize
 			}
-			
+		
 				FrameMaximizeButton:framefocus:hover {
 					image=graphics/window_controls/windows/maximize_hover
 				}
-				
+			
 				FrameMaximizeButton:framefocus:active {
 					image=graphics/window_controls/windows/maximize_active
 				}
-
-// ******************************************************************************************************** 
+// ********************************************************************************************************
 // Restore Button
 // ********************************************************************************************************
 		FrameRestoreButton {
 			inset="-6 0 0 0"
 			image=graphics/window_controls/windows/restore
 		}
-		
+	
 			FrameRestoreButton:hover {
 				image=graphics/window_controls/windows/restore_hover
 			}
-			
+		
 			FrameRestoreButton:active {
 				image=graphics/window_controls/windows/restore_active
 			}
-			
+		
 			FrameRestoreButton:disabled {
 				image=graphics/window_controls/windows/restore_disabled
 			}
-		
+	
 			FrameRestoreButton:framefocus {
 				image=graphics/window_controls/windows/restore
 			}
-			
+		
 				FrameRestoreButton:framefocus:hover {
 					image=graphics/window_controls/windows/restore_hover
 				}
-				
+			
 				FrameRestoreButton:framefocus:active {
 					image=graphics/window_controls/windows/restore_active
 				}
-
-// ******************************************************************************************************** 
+// ********************************************************************************************************
 // Minimize Button
 // ********************************************************************************************************
 		FrameMinimizeButton {
 			inset="-6 0 0 0"
 			image=graphics/window_controls/windows/minimize
 		}
-		
+	
 			FrameMinimizeButton:hover {
 				image=graphics/window_controls/windows/minimize_hover
 			}
-			
+		
 			FrameMinimizeButton:active {
 				image=graphics/window_controls/windows/minimize_active
 			}
-			
+		
 			FrameMinimizeButton:disabled {
 				image=graphics/window_controls/windows/minimize_disabled
 			}
-		
+	
 			FrameMinimizeButton:framefocus {
 				image=graphics/window_controls/windows/minimize
 			}
-			
+		
 				FrameMinimizeButton:framefocus:hover {
 					image=graphics/window_controls/windows/minimize_hover
 				}
-				
+			
 				FrameMinimizeButton:framefocus:active {
 					image=graphics/window_controls/windows/minimize_active
 				}

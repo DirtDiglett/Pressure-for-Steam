@@ -1,5 +1,5 @@
 "resource/layout/overlaydialogsettings.layout" {
-	layout {		
+	layout {	
 		region {
 			name="right"
 			align=right
@@ -9,19 +9,19 @@
 			margin-top=0
 			margin-bottom=51
 		}
-		
+	
 		region {
 			name="bottom"
 			align=bottom
 			width=max
 			height=51
 		}
-		
-		place { 
-			control="OKButton,CancelButton" 
+	
+		place {
+			control="OKButton,CancelButton"
 			region=bottom
 			align=right
-			width=92 
+			width=92
 			height=28
 			margin-top=12
 			margin-right=14

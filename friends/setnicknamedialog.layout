@@ -3,45 +3,44 @@
 		frame {
 			minimum-height=175
 		}
-		
+	
 		Button {
 			minimum-width=92
 		}
 	}
-
 	layout {
-		region { 
-			name="bottomrow" 
-			align=bottom 
-			height=51 
+		region {
+			name="bottomrow"
+			align=bottom
+			height=51
 		}
-		
-		place { 
-			control="OKButton,CloseButton" 
-			region=bottomrow 
-			align=right 
+	
+		place {
+			control="OKButton,CloseButton"
+			region=bottomrow
+			align=right
 			height=28
 			margin-top=12
 			margin-right=14
-			spacing=8 
+			spacing=8
 		}
-		
-		place { 
-			control=Details 
-			y=34 
+	
+		place {
+			control=Details
+			y=34
 			width=max
 			height=40
 			margin=8
 			margin-left=16
 			margin-right=16
 		}
-		
-		place { 
-			control=NicknameEdit 
+	
+		place {
+			control=NicknameEdit
 			y=70
 			width=max
 			height=24
-			margin=16 
+			margin=16
 		}
 	}
 }

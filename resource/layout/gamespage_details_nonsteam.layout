@@ -4,26 +4,21 @@
 		RichText.InsetY "3"
 		GameDetailsNonSteam.ExtraVerticalSpacing "44"
 	}
-
 	styles {
 		nonsteamdetails {
 			bgcolor=black65
 			minimum-height=120
 		}
-
 		bodycontent {
 			selectedtextcolor="white"
 			textcolor="white"
 			font-size=15
-
 			render_bg {}
 		}
-
 		"RichText url" {
 			font-size=14
 		}
 	}
-
 	layout {
 		region {
 			name=body
@@ -32,13 +27,11 @@
 			margin=20
 			margin-bottom=5
 		}
-
 		place {
 			control=headerlabel
 			region=body
 			width=max
 		}
-
 		place {
 			control=bodycontent
 			region=body

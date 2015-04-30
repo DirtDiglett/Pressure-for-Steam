@@ -8,7 +8,6 @@
 			margin-right=16
 			y=2
 		}
-
 		place {
 			control=TagChecks
 			start=Description
@@ -18,7 +17,6 @@
 			margin-right=16
 			dir=down
 		}
-
 		place {
 			control="TextEntry"
 			width=262
@@ -26,7 +24,6 @@
 			y=16
 			dir=down
 		}
-
 		place {
 			control="AddTagButton"
 			start=TextEntry
@@ -37,7 +34,6 @@
 			margin-right=16
 			dir=right
 		}
-
 		place {
 			control="HideButton"
 			start=TextEntry

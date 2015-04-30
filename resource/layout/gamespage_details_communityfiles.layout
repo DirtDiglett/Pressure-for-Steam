@@ -3,43 +3,40 @@
 		GameDetailsCommunityFiles.ExtraVerticalSpacing "150"
 		GameDetailsCommunityFiles.PanelSpacing "15"
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 	}
-
 	styles {
 		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
-			
+		
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
-		
+	
 			button:hover {
 				textcolor=lightestBlue
 			}
-	
-		communityfilesdetails { 
+
+		communityfilesdetails {
 			bgcolor=black65
 		}
-		
+	
 		infolabel {
 			font-size=15
 font-size=14 [$LINUX]
 			textcolor=white
-		}	
+		}
 	}
-
 	layout {
-		region { 
-			name=body 
-			width=max 
+		region {
+			name=body
+			width=max
 			height=max
 			margin=20
 		}
-
 		place {
 			region=body
 			control=workshopdetails
@@ -49,16 +46,16 @@ font-size=14 [$LINUX]
 			dir=right
 			spacing=8
 		}
-		
+	
 		place {
 			control=*communityfile
 			x=23
 			y=105
 			dir=right
 			spacing=4
-		}		
-		
-		place { 
+		}	
+	
+		place {
 			region=body
 			control=viewall
 			align=bottom

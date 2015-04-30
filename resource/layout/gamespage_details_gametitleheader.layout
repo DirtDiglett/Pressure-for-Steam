@@ -2,10 +2,8 @@
 	colors {
 		GameDetailsTitleHeader.HorizontalSpacing=10
 	}
-
 	styles {
 		CDetailsGameTitleHeaderPanel {}
-
 		headertextlarge {
 			bgcolor=none
 			textcolor=white
@@ -13,17 +11,15 @@
 			font-size=48
 		}
 	}
-
 	layout {
-		region { 
-			name="header" 
+		region {
+			name="header"
 			x=0
-			y=0 
-			width=max 
-			height=max 
+			y=0
+			width=max
+			height=max
 		}
-
-		place { 
+		place {
 			control=gametitlelabel
 			region=header
 			align=left-center
@@ -31,7 +27,7 @@
 			margin-right=0
 			dir=right
 		}
-		
+	
 		place {
 			control="iconimage"
 			x=0

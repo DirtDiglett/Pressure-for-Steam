@@ -3,16 +3,15 @@
 		GameDetailsSubHeader.HorizontalSpacing=5
 		GameDetailsSubHeader.VerticalMargin=10
 	}
-
 	styles {
 		gameplayedheader {
 			textcolor=blue
 		}
-	
+
 		CDetailsGameSubHeaderPanel {
 			bgcolor=none
 		}
-		
+	
 		ClientListButton {
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
@@ -20,16 +19,15 @@
 			bgcolor=none
 			inset="10 0 0 0"
 			image=none
-
 			render_bg {}
 			render {}
-		}	
-		
+		}
+	
 			ClientListButton:hover {
 				image="graphics/icon_down_hover"
 			}
-		
-		DetailsButton {   
+	
+		DetailsButton {  
 			bgcolor=none
 			textcolor="Text"
 			font-family=basefont
@@ -38,12 +36,11 @@ font-size=14 [$LINUX]
 			font-weight=400
 			font-style=uppercase
 			inset="-3 0 0 0"
-
 			render_bg {
 				0="gradient( x0, y0, x1, y1, buttonface2, almostblack )"
-			}	
+			}
 		}
-		
+	
 			DetailsButton:hover {
 				bgcolor=none
 				textcolor="TextHover"
@@ -53,12 +50,11 @@ font-size=14 [$LINUX]
 				font-weight=400
 				font-style=uppercase
 				inset="-3 0 0 0"
-
 				render_bg {
 					0="gradient( x0, y0, x1, y1, buttonface2, almostblack )"
-				}	
+				}
 			}
-		
+	
 			DetailsButton:active {
 				bgcolor=none
 				textcolor="White"
@@ -68,13 +64,13 @@ font-size=14 [$LINUX]
 				font-weight=400
 				font-style=uppercase
 				inset="-3 0 0 0"
-				
+			
 				render_bg {
 					0="gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
-				}	
+				}
 			}
-		
-		DetailsLaunchButton [$OSX] {  
+	
+		DetailsLaunchButton [$OSX] { 
 			textcolor=white
 			font-family=headerfont
 			font-size=30
@@ -82,7 +78,7 @@ font-size=14 [$LINUX]
 			padding-left=10
 			padding-right=10
 			inset="25 7 0 0"
-			
+		
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
@@ -91,10 +87,10 @@ font-size=14 [$LINUX]
 				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
-				
-				
+			
+			
 				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
-				
+			
 				//Anti-Alias
 				2="fill(x0+1,y0,x0+2,y0+1, greenButtonAntiAliasedCorners)" // Top Left
 				3="fill(x0,y0+1,x0+1,y0+2, greenButtonAntiAliasedCorners)" // Top Left
@@ -104,7 +100,7 @@ font-size=14 [$LINUX]
 				7="fill(x0+1, y1-1, x0+2, y1, greenButtonAntiAliasedCorners)" // Bottom Left
 				8="fill(x1-2, y1-1, x1-1, y1, greenButtonAntiAliasedCorners)" // Bottom Right
 				9="fill(x1-1, y1-2, x1, y1-1, greenButtonAntiAliasedCorners)" // Bottom Right
-				
+			
 				// 1px Solid Line Top
 				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHighlight)" // Main Line
 				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
@@ -113,19 +109,19 @@ font-size=14 [$LINUX]
 				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
 				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
 				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				
+			
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, greenButtonDarkenedCorners)"
 				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonDarkenedCorners)"
 				19="fill(x0+2,y1-1,x0+3,y1, greenButtonDarkenedCorners)"
-				
+			
 				20="fill(x1-3,y1-1,x1-2,y1, greenButtonDarkenedCorners)"
 				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonDarkenedCorners)"
 				22="fill(x1-1,y1-3,x1,y1-2, greenButtonDarkenedCorners)"
-			}	
+			}
 		}
-		
-		DetailsLaunchButton [!$OSX] {  
+	
+		DetailsLaunchButton [!$OSX] { 
 			textcolor=white
 			font-family=headerfont
 			font-size=30
@@ -136,7 +132,7 @@ font-size=14 [$LINUX]
 			padding-left=10
 			padding-right=10
 			inset="25 1 0 0"
-			
+		
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
@@ -145,10 +141,10 @@ font-size=14 [$LINUX]
 				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
-				
-				
+			
+			
 				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
-				
+			
 				//Anti-Alias
 				2="fill(x0+1,y0,x0+2,y0+1, greenButtonAntiAliasedCorners)" // Top Left
 				3="fill(x0,y0+1,x0+1,y0+2, greenButtonAntiAliasedCorners)" // Top Left
@@ -158,7 +154,7 @@ font-size=14 [$LINUX]
 				7="fill(x0+1, y1-1, x0+2, y1, greenButtonAntiAliasedCorners)" // Bottom Left
 				8="fill(x1-2, y1-1, x1-1, y1, greenButtonAntiAliasedCorners)" // Bottom Right
 				9="fill(x1-1, y1-2, x1, y1-1, greenButtonAntiAliasedCorners)" // Bottom Right
-				
+			
 				// 1px Solid Line Top
 				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHighlight)" // Main Line
 				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
@@ -167,28 +163,28 @@ font-size=14 [$LINUX]
 				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
 				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
 				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				
+			
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, greenButtonDarkenedCorners)"
 				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonDarkenedCorners)"
 				19="fill(x0+2,y1-1,x0+3,y1, greenButtonDarkenedCorners)"
-				
+			
 				20="fill(x1-3,y1-1,x1-2,y1, greenButtonDarkenedCorners)"
 				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonDarkenedCorners)"
 				22="fill(x1-1,y1-3,x1,y1-2, greenButtonDarkenedCorners)"
-			}	
+			}
 		}
-		
-			DetailsLaunchButton:Hover {  
+	
+			DetailsLaunchButton:Hover { 
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
@@ -198,7 +194,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
@@ -207,28 +203,28 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
-				}			
+				}		
 			}
-			
+		
 			DetailsLaunchButton:Selected {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
@@ -238,7 +234,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
@@ -247,29 +243,29 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
 				}
 			}
-			
-			
+		
+		
 			DetailsLaunchButton:Active {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
@@ -279,7 +275,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
@@ -288,19 +284,19 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
 				}
 			}
-				
-		DetailsInstallButton [$OSX] {  
+			
+		DetailsInstallButton [$OSX] { 
 			textcolor=white
 			font-family=headerfont
 			font-size=30
@@ -308,7 +304,7 @@ font-size=14 [$LINUX]
 			padding-left=10
 			padding-right=10
 			inset="25 7 0 0"
-			
+		
 			render {
 				1="image( x0 + 14, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
@@ -317,10 +313,10 @@ font-size=14 [$LINUX]
 				-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonGradientStart, blueButtonGradientEnd)"
-				
-				
+			
+			
 				1="fill(x0+2,y1-1,x1-2,y1, blueButtonGradientEnd)"
-				
+			
 				//Anti-Alias
 				2="fill(x0+1,y0,x0+2,y0+1, blueButtonAntiAliasedCorners)" // Top Left
 				3="fill(x0,y0+1,x0+1,y0+2, blueButtonAntiAliasedCorners)" // Top Left
@@ -330,7 +326,7 @@ font-size=14 [$LINUX]
 				7="fill(x0+1, y1-1, x0+2, y1, blueButtonAntiAliasedCorners)" // Bottom Left
 				8="fill(x1-2, y1-1, x1-1, y1, blueButtonAntiAliasedCorners)" // Bottom Right
 				9="fill(x1-1, y1-2, x1, y1-1, blueButtonAntiAliasedCorners)" // Bottom Right
-				
+			
 				// 1px Solid Line Top
 				10="fill(x0+3, y0, x1-3, y0+1, blueButtonHighlight)" // Main Line
 				11="fill(x0+2, y0, x0+3, y0+1, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
@@ -339,19 +335,19 @@ font-size=14 [$LINUX]
 				14="fill(x1-3, y0, x1-2, y0+1, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
 				15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
 				16="fill(x1-1, y0+2, x1, y0+3, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
-				
+			
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, blueButtonDarkenedCorners)"
 				18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonDarkenedCorners)"
 				19="fill(x0+2,y1-1,x0+3,y1, blueButtonDarkenedCorners)"
-				
+			
 				20="fill(x1-3,y1-1,x1-2,y1, blueButtonDarkenedCorners)"
 				21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonDarkenedCorners)"
 				22="fill(x1-1,y1-3,x1,y1-2, blueButtonDarkenedCorners)"
-			}	
+			}
 		}
-		
-		DetailsInstallButton [!$OSX] {  
+	
+		DetailsInstallButton [!$OSX] { 
 			textcolor=white
 			font-family=headerfont
 			font-size=30
@@ -362,7 +358,7 @@ font-size=14 [$LINUX]
 			padding-left=10
 			padding-right=10
 			inset="25 3 0 0"
-			
+		
 			render {
 				1="image( x0 + 14, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
@@ -371,10 +367,10 @@ font-size=14 [$LINUX]
 				-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonGradientStart, blueButtonGradientEnd)"
-				
-				
+			
+			
 				1="fill(x0+2,y1-1,x1-2,y1, blueButtonGradientEnd)"
-				
+			
 				//Anti-Alias
 				2="fill(x0+1,y0,x0+2,y0+1, blueButtonAntiAliasedCorners)" // Top Left
 				3="fill(x0,y0+1,x0+1,y0+2, blueButtonAntiAliasedCorners)" // Top Left
@@ -384,7 +380,7 @@ font-size=14 [$LINUX]
 				7="fill(x0+1, y1-1, x0+2, y1, blueButtonAntiAliasedCorners)" // Bottom Left
 				8="fill(x1-2, y1-1, x1-1, y1, blueButtonAntiAliasedCorners)" // Bottom Right
 				9="fill(x1-1, y1-2, x1, y1-1, blueButtonAntiAliasedCorners)" // Bottom Right
-				
+			
 				// 1px Solid Line Top
 				10="fill(x0+3, y0, x1-3, y0+1, blueButtonHighlight)" // Main Line
 				11="fill(x0+2, y0, x0+3, y0+1, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
@@ -393,28 +389,28 @@ font-size=14 [$LINUX]
 				14="fill(x1-3, y0, x1-2, y0+1, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
 				15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
 				16="fill(x1-1, y0+2, x1, y0+3, blueButtonHighlightAntiAliasing)" // Anti-Aliasing
-				
+			
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, blueButtonDarkenedCorners)"
 				18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonDarkenedCorners)"
 				19="fill(x0+2,y1-1,x0+3,y1, blueButtonDarkenedCorners)"
-				
+			
 				20="fill(x1-3,y1-1,x1-2,y1, blueButtonDarkenedCorners)"
 				21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonDarkenedCorners)"
 				22="fill(x1-1,y1-3,x1,y1-2, blueButtonDarkenedCorners)"
-			}	
+			}
 		}
-		
-			DetailsInstallButton:Hover {  
+	
+			DetailsInstallButton:Hover { 
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonHoverGradientStart, blueButtonHoverGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonHoverGradientStart, blueButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonHoverGradientStart, blueButtonHoverGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, blueButtonHoverGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, blueButtonHoverAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, blueButtonHoverAntiAliasedCorners)" // Top Left
@@ -424,7 +420,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, blueButtonHoverAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, blueButtonHoverAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, blueButtonHoverAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, blueButtonHoverHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
@@ -433,28 +429,28 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, blueButtonHoverDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonHoverDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, blueButtonHoverDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, blueButtonHoverDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonHoverDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, blueButtonHoverDarkenedCorners)"
-				}		
+				}	
 			}
-			
+		
 			DetailsInstallButton:Selected {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonActiveGradientStart, blueButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, blueButtonActiveGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, blueButtonActiveAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, blueButtonActiveAntiAliasedCorners)" // Top Left
@@ -464,7 +460,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, blueButtonActiveHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
@@ -473,29 +469,29 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, blueButtonActiveDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonActiveDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, blueButtonActiveDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, blueButtonActiveDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonActiveDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, blueButtonActiveDarkenedCorners)"
 				}
 			}
-			
-			
+		
+		
 			DetailsInstallButton:Active {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonActiveGradientStart, blueButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, blueButtonActiveGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, blueButtonActiveAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, blueButtonActiveAntiAliasedCorners)" // Top Left
@@ -505,7 +501,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, blueButtonActiveHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
@@ -514,20 +510,20 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, blueButtonActiveDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonActiveDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, blueButtonActiveDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, blueButtonActiveDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonActiveDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, blueButtonActiveDarkenedCorners)"
 				}
 			}
-		
-		
-		DetailsBuyButton [$OSX] {   
+	
+	
+		DetailsBuyButton [$OSX] {  
 			textcolor=white
 			font-family=headerfont
 			font-size=30
@@ -535,7 +531,6 @@ font-size=14 [$LINUX]
 			padding-left=10
 			padding-right=10
 			inset="25 7 0 0"
-
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/buy/buy_icon )"
 			}
@@ -544,10 +539,10 @@ font-size=14 [$LINUX]
 				-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonGradientStart, yellowButtonGradientEnd)"
-				
-				
+			
+			
 				1="fill(x0+2,y1-1,x1-2,y1, yellowButtonGradientEnd)"
-				
+			
 				//Anti-Alias
 				2="fill(x0+1,y0,x0+2,y0+1, yellowButtonAntiAliasedCorners)" // Top Left
 				3="fill(x0,y0+1,x0+1,y0+2, yellowButtonAntiAliasedCorners)" // Top Left
@@ -557,7 +552,7 @@ font-size=14 [$LINUX]
 				7="fill(x0+1, y1-1, x0+2, y1, yellowButtonAntiAliasedCorners)" // Bottom Left
 				8="fill(x1-2, y1-1, x1-1, y1, yellowButtonAntiAliasedCorners)" // Bottom Right
 				9="fill(x1-1, y1-2, x1, y1-1, yellowButtonAntiAliasedCorners)" // Bottom Right
-				
+			
 				// 1px Solid Line Top
 				10="fill(x0+3, y0, x1-3, y0+1, yellowButtonHighlight)" // Main Line
 				11="fill(x0+2, y0, x0+3, y0+1, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
@@ -566,19 +561,19 @@ font-size=14 [$LINUX]
 				14="fill(x1-3, y0, x1-2, y0+1, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
 				15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
 				16="fill(x1-1, y0+2, x1, y0+3, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
-				
+			
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, yellowButtonDarkenedCorners)"
 				18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonDarkenedCorners)"
 				19="fill(x0+2,y1-1,x0+3,y1, yellowButtonDarkenedCorners)"
-				
+			
 				20="fill(x1-3,y1-1,x1-2,y1, yellowButtonDarkenedCorners)"
 				21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonDarkenedCorners)"
 				22="fill(x1-1,y1-3,x1,y1-2, yellowButtonDarkenedCorners)"
-			}	
+			}
 		}
-		
-		DetailsBuyButton [!$OSX] {   
+	
+		DetailsBuyButton [!$OSX] {  
 			textcolor=white
 			font-family=headerfont
 			font-size=30
@@ -589,7 +584,7 @@ font-size=14 [$LINUX]
 			padding-left=10
 			padding-right=10
 			inset="25 3 0 0"
-			
+		
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/buy/buy_icon )"
 			}
@@ -598,10 +593,10 @@ font-size=14 [$LINUX]
 				-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonGradientStart, yellowButtonGradientEnd)"
-				
-				
+			
+			
 				1="fill(x0+2,y1-1,x1-2,y1, yellowButtonGradientEnd)"
-				
+			
 				//Anti-Alias
 				2="fill(x0+1,y0,x0+2,y0+1, yellowButtonAntiAliasedCorners)" // Top Left
 				3="fill(x0,y0+1,x0+1,y0+2, yellowButtonAntiAliasedCorners)" // Top Left
@@ -611,7 +606,7 @@ font-size=14 [$LINUX]
 				7="fill(x0+1, y1-1, x0+2, y1, yellowButtonAntiAliasedCorners)" // Bottom Left
 				8="fill(x1-2, y1-1, x1-1, y1, yellowButtonAntiAliasedCorners)" // Bottom Right
 				9="fill(x1-1, y1-2, x1, y1-1, yellowButtonAntiAliasedCorners)" // Bottom Right
-				
+			
 				// 1px Solid Line Top
 				10="fill(x0+3, y0, x1-3, y0+1, yellowButtonHighlight)" // Main Line
 				11="fill(x0+2, y0, x0+3, y0+1, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
@@ -620,28 +615,28 @@ font-size=14 [$LINUX]
 				14="fill(x1-3, y0, x1-2, y0+1, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
 				15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
 				16="fill(x1-1, y0+2, x1, y0+3, yellowButtonHighlightAntiAliasing)" // Anti-Aliasing
-				
+			
 				// Bottom Corner Rounding
 				17="fill(x0,y1-3,x0+1,y1-2, yellowButtonDarkenedCorners)"
 				18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonDarkenedCorners)"
 				19="fill(x0+2,y1-1,x0+3,y1, yellowButtonDarkenedCorners)"
-				
+			
 				20="fill(x1-3,y1-1,x1-2,y1, yellowButtonDarkenedCorners)"
 				21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonDarkenedCorners)"
 				22="fill(x1-1,y1-3,x1,y1-2, yellowButtonDarkenedCorners)"
-			}	
+			}
 		}
-		
-			DetailsBuyButton:hover {   
+	
+			DetailsBuyButton:hover {  
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonHoverGradientStart, yellowButtonHoverGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonHoverGradientStart, yellowButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonHoverGradientStart, yellowButtonHoverGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, yellowButtonHoverGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, yellowButtonHoverAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, yellowButtonHoverAntiAliasedCorners)" // Top Left
@@ -651,7 +646,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, yellowButtonHoverAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, yellowButtonHoverAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, yellowButtonHoverAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, yellowButtonHoverHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
@@ -660,28 +655,28 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, yellowButtonHoverDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonHoverDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, yellowButtonHoverDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, yellowButtonHoverDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonHoverDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, yellowButtonHoverDarkenedCorners)"
 				}
 			}
-		
+	
 			DetailsBuyButton:active {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonActiveGradientStart, yellowButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, yellowButtonActiveGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, yellowButtonActiveAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, yellowButtonActiveAntiAliasedCorners)" // Top Left
@@ -691,7 +686,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, yellowButtonActiveHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
@@ -700,29 +695,29 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, yellowButtonActiveDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonActiveDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, yellowButtonActiveDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, yellowButtonActiveDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonActiveDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, yellowButtonActiveDarkenedCorners)"
-				}	
+				}
 			}
-			
-			
+		
+		
 			DetailsBuyButton:Selected {
 				render_bg {
 					// Background
 					-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
 					-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonActiveGradientStart, yellowButtonGradientEnd)"
 					0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
-					
-					
+				
+				
 					1="fill(x0+2,y1-1,x1-2,y1, yellowButtonActiveGradientEnd)"
-					
+				
 					//Anti-Alias
 					2="fill(x0+1,y0,x0+2,y0+1, yellowButtonActiveAntiAliasedCorners)" // Top Left
 					3="fill(x0,y0+1,x0+1,y0+2, yellowButtonActiveAntiAliasedCorners)" // Top Left
@@ -732,7 +727,7 @@ font-size=14 [$LINUX]
 					7="fill(x0+1, y1-1, x0+2, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
 					8="fill(x1-2, y1-1, x1-1, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
 					9="fill(x1-1, y1-2, x1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
-					
+				
 					// 1px Solid Line Top
 					10="fill(x0+3, y0, x1-3, y0+1, yellowButtonActiveHighlight)" // Main Line
 					11="fill(x0+2, y0, x0+3, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
@@ -741,30 +736,28 @@ font-size=14 [$LINUX]
 					14="fill(x1-3, y0, x1-2, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 					16="fill(x1-1, y0+2, x1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					
+				
 					// Bottom Corner Rounding
 					17="fill(x0,y1-3,x0+1,y1-2, yellowButtonActiveDarkenedCorners)"
 					18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonActiveDarkenedCorners)"
 					19="fill(x0+2,y1-1,x0+3,y1, yellowButtonActiveDarkenedCorners)"
-					
+				
 					20="fill(x1-3,y1-1,x1-2,y1, yellowButtonActiveDarkenedCorners)"
 					21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonActiveDarkenedCorners)"
 					22="fill(x1-1,y1-3,x1,y1-2, yellowButtonActiveDarkenedCorners)"
-				}	
+				}
 			}
 	}
-
 	layout {
 		// Y offset here should match the vertical padding value above in the colors section
-		region { 
-			name="header" 
+		region {
+			name="header"
 			x=0
-			y=0			
-			width=max 
+			y=0		
+			width=max
 			height=max
 		}
-
-		place { 
+		place {
 			control=subheaderlabels
 			region=header
 			align=left
@@ -772,8 +765,7 @@ font-size=14 [$LINUX]
 			dir=left
 			end-right=launchbutton
 		}
-
-		place { 
+		place {
 			control=launchbutton,clientlist
 			region=header
 			align=right
@@ -785,8 +777,7 @@ font-size=14 [$LINUX]
 			spacing=0
 			dir=right
 		}
-
-		place { 
+		place {
 			control=clientlist
 			start=launchbutton
 			x=0

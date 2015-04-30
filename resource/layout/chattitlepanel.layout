@@ -7,74 +7,73 @@
 			padding-right=5
 			padding-left=3
 		}
-		
+	
 		menuButtonStyle:hover {
 			render_bg {}
 		}
-		
+	
 		Label {
 			font-family=basefont
 			font-size=15
 			font-size=14 [$LINUX]
 			font-weight=500
 			textcolor=white
-			
+		
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=3
 		}
-		
+	
 		statuslabel {
 			font-family=basefont
 			textcolor=lightestGrey
 			font-size=15
-			
+		
 			font-style="normal,regular,outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=3
 		}
-	
+
 	}
-	
+
 	layout {
-		place {	
-			control="AvatarImage" 
+		place {
+			control="AvatarImage"
 			x=1
 			y=5
 			align=left
 			dir=right
 			spacing=8
 		}
-		
-		place {	
-			control="NameLabel" 
-			x=62 
+	
+		place {
+			control="NameLabel"
+			x=62
 			y=8
-			align=left 
-			dir=right 
-			spacing=0 
+			align=left
+			dir=right
+			spacing=0
 		}
-
 		place {
 			control=MenuButton
 			start=NameLabel
 			x=2
 			y=-4
 		}
-		
-		place { 
-			control="LockImage" 
+	
+		place {
+			control="LockImage"
 			x=44
-			y=10 
+			y=10
 			width=16
 		}
-		
-		place {	
-			control="StatusLabel" 
-			align=left 
-			x=47 
+	
+		place {
+			control="StatusLabel"
+			align=left
+			x=47
 			y=26
 		}
 	}

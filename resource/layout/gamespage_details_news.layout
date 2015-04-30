@@ -5,52 +5,50 @@
 		// spacing of this controls layout.
 		GameDetailsNewsContainer.ExtraVerticalSpacing "114"
 	}
-
 	styles {
-		newsdetails { 
+		newsdetails {
 			bgcolor=black65
 		}
-		
+	
 		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
-			
+		
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
-		
+	
 			button:hover {
 				textcolor=lightestBlue
 			}
 	}
-
 	layout {
-		region { 
-			name=body 
-			width=max 
+		region {
+			name=body
+			width=max
 			height=max
-			margin=20 
+			margin=20
 		}
-		
-		place { 
+	
+		place {
 			control=headerlabel
-			region=body 
+			region=body
 			width=max
 		}
-		
-		place { 
+	
+		place {
 			control=*newsitem
 			region=body
-			y=15 
+			y=15
 			width=max
 			dir=down
 		}
-		
-		place { 
+	
+		place {
 			control=viewall
-			region=body 
+			region=body
 			align=bottom
 			margin-left=-6
 			margin-bottom=5

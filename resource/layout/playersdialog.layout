@@ -1,26 +1,25 @@
 "resource/layout/playersdialog.layout" {
 	layout {
-		place { 
-			control="frame_captiongrip" 
-			width=max 
-			height=54 
+		place {
+			control="frame_captiongrip"
+			width=max
+			height=54
 		}
-
 		//Bottom
 		region {
 			name=bottom
 			align=bottom
 			height=51
 		}
-		
-		place {	
-			control="OKButton,CancelButton" 
-			region=bottom 
+	
+		place {
+			control="OKButton,CancelButton"
+			region=bottom
 			align=right
-			width=92 
+			width=92
 			height=28
 			margin-top=12
-			margin-right=14 
+			margin-right=14
 			spacing=8
 		}
 	}

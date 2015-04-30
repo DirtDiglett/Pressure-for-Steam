@@ -2,14 +2,14 @@
 	styles {
 		highlight {
 			textcolor=Text
-		}	
-		
+		}
+	
 		checkbox {
 			padding-top=0
 			padding-bottom=0
 		}
 	}
-	
+
 	layout {
 		place {
 			controls=DescriptionLabel
@@ -18,25 +18,22 @@
 			margin-top=20
 			margin-right=43
 		}
-
 		place {
 			controls=OverlayHomePageLabel
 			start=DescriptionLabel
 			width=200
 			margin-top=20
-			
+		
 			dir=down
 		}
-
 		place {
 			controls=OverlayHomePage
-			start=OverlayHomePageLabel			
+			start=OverlayHomePageLabel		
 			width=max
 			margin-top=5
 			margin-right=43
-			dir=down			
+			dir=down		
 		}
-
 		place {
 			controls=Divider1
 			region=bottom
@@ -46,7 +43,6 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			controls=ClearAllCookiesButton
 			region=bottom

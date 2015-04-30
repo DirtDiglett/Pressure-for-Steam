@@ -4,12 +4,11 @@
 		// this is used in code to make the vertical size of the panel fit the title/author/morelink
 		// and should be updated if you change vertical padding/margins/layout.
 		GameDetailsNewsItem.ExtraVerticalSpacing "76"
-
 		// Override base style rich text x inset inside this control
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 	}
-	
+
 	styles {
 		title_label {
 			textcolor="white"
@@ -18,32 +17,27 @@
 			padding-top=20
 			font-weight=600
 		}
-
 		date_and_author {
 			textcolor="LightestGreyhighlight"
 			font-size=15
 font-size=14 [$LINUX]
 		}
-
 		newsitem_body {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
-
 			render_bg {}
 		}
-		
+	
 		newsitem_body [$LINUX] {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 			font-family=basefont
 			font-size=14
-
 			render_bg {}
 		}
-
 		"newsitem_body url" {
 			selectedtextcolor="blue"
 			textcolor=blue
@@ -51,24 +45,23 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 			font-style="underline"
 		}
-		
+	
 		"newsitem_body url" [$LINUX] {
 			selectedtextcolor="blue"
 			textcolor=blue
 			font-size=14
 			font-style="underline"
 		}
-
 			"newsitem_body url:hover" {
 				textcolor="lightestBlue"
 			}
-		
+	
 		"newsitem_body bold" {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
-			font-weight=1000	
+			font-weight=1000
 		}
-		
+	
 		more_link {
 			selectedtextcolor="blue"
 			textcolor="blue"
@@ -76,22 +69,21 @@ font-size=14 [$LINUX]
 			font-size=15
 font-size=14 [$LINUX]
 			font-style="none"
-			font-weight=400				
+			font-weight=400			
 		}
-		
+	
 			more_link:hover {
 				font-style="none"
 				textcolor="lightestBlue"
 			}
 	}
-
 	layout {
 		region {
 			name=body
 			width=max
 			margin=0
 		}
-		
+	
 		place {
 			control=newsitem_title
 			region=body
@@ -100,7 +92,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=44
 		}
-		
+	
 		place {
 			control=newsitem_dateandauthor
 			region=body
@@ -108,7 +100,7 @@ font-size=14 [$LINUX]
 			dir=down
 			width=max
 		}
-		
+	
 		place {
 			control=newsitem_body
 			region=body
@@ -116,7 +108,7 @@ font-size=14 [$LINUX]
 			dir=down
 			width=max
 		}
-		
+	
 		place {
 			control=newsitem_more
 			region=body

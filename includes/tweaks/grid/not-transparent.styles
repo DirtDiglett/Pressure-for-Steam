@@ -1,9 +1,8 @@
-"not-transparent.styles" { 
+"not-transparent.styles" {
 	styles {
 		"GameItem_Uninstalled GGPlaceholderBG" {
 			alpha 255
 		}
-
 		"GameItem_Uninstalled GamesGridImage" {
 			alpha 255
 		}

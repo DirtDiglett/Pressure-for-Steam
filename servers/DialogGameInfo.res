@@ -4,31 +4,31 @@
 			minimum-width=620
 			minimum-height=408
 		}
-		
+	
 		LabelDull {
 			textcolor=white
 			font-size=20
 			font-family=headerfont
 		}
-		
+	
 		label {
 			textcolor=lightestGrey
 			font-size=16
 font-size=15
 font-size=14 [$LINUX]
 		}
-		
+	
 		textEntry {
 			textcolor=lightestGrey
 			font-size=16
 font-size=15
 font-size=14 [$LINUX]
 			inset-left=0
-		
+	
 			render {}
 			render_bg{}
 		}
-	}	
+	}
 
 	layout {
 		region {
@@ -40,7 +40,7 @@ font-size=14 [$LINUX]
 			margin-right=416
 			margin-bottom=52
 		}
-		
+	
 		region {
 			name=right
 			align=right
@@ -49,16 +49,14 @@ font-size=14 [$LINUX]
 			margin-top=26
 			margin-bottom=52
 		}
-
 		// Server Name
-		place { 
+		place {
 			control=ServerLabel
 			region=left
 			margin-left=0
 			dir=down
 			spacing=0
 		}
-
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=ServerText
@@ -68,18 +66,17 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
-		
+	
 		// SERVER IP
 		place {
 			control=ServerIPLabel
-			region=left 
+			region=left
 			start=ServerText
 			dir=down
 			spacing=0
-			margin-top=16 
-			margin-left=0 
+			margin-top=16
+			margin-left=0
 		}
-
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=ServerIPText
@@ -90,7 +87,6 @@ font-size=14 [$LINUX]
 			margin-top=-8
 			dir=down
 		}
-
 		// GAME
 		place {
 			control=GameLabel
@@ -101,7 +97,6 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
-
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=GameText
@@ -111,7 +106,6 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
-
 		// MAP
 		place {
 			control=MapLabel
@@ -122,7 +116,6 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
-
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=MapText
@@ -132,9 +125,9 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
-		
+	
 		// PLAYERS
-		place { 
+		place {
 			control=PlayersLabel
 			region=left
 			start=MapText
@@ -143,7 +136,6 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
-
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=PlayersText
@@ -153,7 +145,6 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
-
 		// VAC
 		place {
 			control=Label1
@@ -164,7 +155,6 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
-
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=SecureText
@@ -174,9 +164,9 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
-		
+	
 		// Lag
-		place { 
+		place {
 			control=PingLabel
 			region=left
 			start=SecureText
@@ -185,7 +175,6 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
-
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=PingText
@@ -195,7 +184,7 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
-		
+	
 		place {
 			region=right
 			control="PlayerList"
@@ -204,16 +193,16 @@ font-size=14 [$LINUX]
 			height=max
 			margin-bottom=51
 		}
-		
-		place { 
-			control="AutoRetryAlert,AutoRetryJoin" 
+	
+		place {
+			control="AutoRetryAlert,AutoRetryJoin"
 			region=right
 			start=PlayerList
 			width=max
 			height=24
 			dir=down
 		}
-		
+	
 		place {
 			control=InfoLabel
 			region="bottom"
@@ -223,15 +212,15 @@ font-size=14 [$LINUX]
 			align=left
 			dir=down
 		}
-		
+	
 		//Bottom
 		region {
 			name=bottom
 			align=bottom
 			height=51
 		}
-		
-		place {	
+	
+		place {
 			control="AutoRetry,Connect,Refresh,Close"
 			region=bottom
 			align=right

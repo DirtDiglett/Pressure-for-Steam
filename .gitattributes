@@ -1,9 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
 # Custom for Visual Studio
 *.cs     diff=csharp
-
 # Standard to msysgit
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
@@ -15,13 +13,11 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
-
 # Specific to Steam
 *.res diff=astextplain
 *.layout diff=astextplain
 *.styles diff=astextplain
 *.menu diff=astextplain
-
 *.tga binary
 *.ttf binary
 *.otf binary

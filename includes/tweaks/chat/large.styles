@@ -1,55 +1,54 @@
-"large.styles" { 
+"large.styles" {
 	styles {
 		friends_chat_text {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-
 		friends_chat_text_self {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-		
+	
 		friends_chat_history {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-		
+	
 		friends_chat_event {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-	
+
 		friends_chat_bright_event {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-	
+
 		friends_chat_url {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-		
+	
 		friends_chat_name_ingame {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-		
+	
 		friends_chat_self {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-		
+	
 		friends_chat_name {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-		
+	
 		friends_chat_accountid {
 			font-size=18
 			font-size=17 [$LINUX]
 		}
-		
+	
 		friends_chat_securitylink {
 			font-size=18
 			font-size=17 [$LINUX]

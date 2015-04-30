@@ -1,61 +1,56 @@
 "resource/layout/steamrootdialog_gamespage_list.layout" {
 	colors {
 		ListPanel.PostSectionLeading	12
-	}	
-	
+	}
+
 	styles {
 		URLLabel {
 			textcolor="22 117 141 255"
 		}
-		
+	
 			URLLabel:hover {
 				textcolor=lightestBlue
 			}
-		
+	
 		CGamesListPanel {
 			render {
 				0="gradient(x0,y0+18,x1,y0+24, black40, none)"
 				1="gradient(x0,y1-9,x1,y1-3, none, black40)"
 			}
 		}
-		
+	
 		"CGamesListPanel ListPanelColumnSelectButton" {
 			bgcolor=none
 			padding-left=0
 			padding-right=0
 			inset="13 2 0 0"
-
 			render {
 				0="fill(x0,y0,x1,y0+1, greyHighlight)"
 				1="fill(x0,y1-2,x1,y1-1, grey)"
 				2="fill(x0,y1-1,x1,y1, darkestGrey)"
 				3="image(x0+5,y0+5,x1,y1, graphics/cog)"
-			}   
+			}  
 			render_bg {
 				1="gradient(x0,y0,x1+3,y1+1, grey, lightGreyEnd)"
 			}
 		}
-
 			"CGamesListPanel ListPanelColumnSelectButton:hover" {
 				render_bg {
 					0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 					1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
 				}
 			}
-
-			"CGamesListPanel ListPanelColumnSelectButton:selected" {		 		
+			"CGamesListPanel ListPanelColumnSelectButton:selected" {		 	
 				render {
 					0="image(x0+5,y0+5,x1,y1, graphics/cog_active )"
-				} 
+				}
 				render_bg {
 					0="fill(x0,y0,x1+3,y1+1, darkestGrey)"
 				}
 			}
-
 		"CGamesListPanel ListPanelInterior" {
 			inset="3 0 0 0"
 		}
-
 		ListPanelColumnheader [$OSX] {
 			bgcolor="none"
 			textcolor="white"
@@ -65,14 +60,14 @@
 			font-weight=400
 			font-style="regular,normal"
 			inset="1 2 0 0"
-	
+
 			render_bg {
 				// fill
 				0="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-			} 
+			}
 		}
-		
+	
 		ListPanelColumnheader [!$OSX] {
 			bgcolor="none"
 			textcolor= "white"
@@ -83,7 +78,7 @@
 			font-style="regular,normal"
 			inset= "0 3 0 0"
 			minimum-height=14
-	
+
 			render {
 				0="fill(x0,y1-1,x1,y1, darkestGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
@@ -91,42 +86,39 @@
 			}
 			render_bg {
 				1="gradient(x0,y0,x1,y1+1, grey, lightGreyEnd)"
-			} 
+			}
 		}
-		
+	
 		ListPanelColumnHeader:hover {
 			textcolor= "white"
-
 			render_bg {
 				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 				1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
 			}
 		}
-
 		ListPanelDragger {
 			bgcolor= "none"
 			minimum-height=14
-
 			render {
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1-1, darkGrey )" // left
 			}
 		}
-	
+
 		"Page ListPanelDragger" {
 			bgcolor= "none"
 			minimum-height=14
-			
+		
 			render {
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1, darkGrey )" // left
 			}
 		}
 	}
-	
+
 	layout {
 		// content pages
-		place { 
+		place {
 			control="GamesList"
 			width=max
 			height=max

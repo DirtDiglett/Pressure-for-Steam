@@ -1,4 +1,4 @@
-"listpanels.styles" { 
+"listpanels.styles" {
 	styles {
 		ListPanelCheckBox {
 			textcolor= "Label"
@@ -8,40 +8,40 @@ font-size=14 [$LINUX]
 			font-weight=400
 			inset= "0 5 0 0"
 			image= "graphics/chkUnselStd_Sm"
-		} 
-		
-			ListPanelCheckBox:selected {
-				image= "graphics/chkSelStd_Sm"	
-			}
+		}
 	
+			ListPanelCheckBox:selected {
+				image= "graphics/chkSelStd_Sm"
+			}
+
 			ListPanelCheckBox:focus {
 				bgcolor=none
 				textcolor= "Text"
 				image= "graphics/chkUnselFocus_Sm"
 			}
-		
+	
 			ListPanelCheckBox:selected:focus {
 				bgcolor=none
 				textcolor= "Text"
 				image= "graphics/chkSelFocus_Sm"
 				render_bg {}
 			}
-			
+		
 			ListPanelCheckBox:disabled {
 				bgcolor=none
 				textcolor="TextDisabled"
 				image="graphics/chkUnselDis_Sm"
 			}
-			
+		
 			ListPanelCheckBox:disabled:select {
 				bgcolor=none
 				textcolor= "TextDisabled"
 				//!! bug - this needs to look disabled
 				image= "graphics/chkUnselDis"
 			}
-		
+	
 		// ________________________________________________________________
-		
+	
 		"ListPanelColumnheader ListPanelCheckBox" {
 			textcolor= "Label"
 			font-family=basefont
@@ -51,13 +51,13 @@ font-size=14 [$LINUX]
 			inset= "4 0 0 0"
 			image= "graphics/chkUnSelFocus_Sm"
 		}
-	
-		 
+
+		
 			"ListPanelColumnHeader ListPanelCheckBox:selected" {
 				inset= "4 0 0 0"
-				image= "graphics/chkUnSelStd_Sm"	
+				image= "graphics/chkUnSelStd_Sm"
 			}
-			
+		
 			"ListPanelColumnheader ListPanelCheckBox:focus" {
 				textcolor= "TextHover"
 				font-family=basefont
@@ -67,19 +67,18 @@ font-size=14 [$LINUX]
 				inset= "4 0 0 0"
 				image= "graphics/chkUnSelFocus_Sm"
 			}
-		
+	
 			"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
 				bgcolor=none
 				textcolor= "TextHover"
 				inset= "4 0 0 0"
 				image= "graphics/chkSelFocus_Sm"
-				
+			
 				render_bg {}
 			}
 
-
-		// ________________________________________________________________		
-		
+		// ________________________________________________________________	
+	
 		ListPanelColumnheader {
 			bgcolor="none"
 			textcolor= "white"
@@ -90,54 +89,49 @@ font-size=14 [$LINUX]
 			font-style="regular,normal"
 			inset= "0 -1 0 0"
 			minimum-height=24
-	
+
 			render {
 				0="fill(x0,y1-2,x1,y1-1, darkGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 			render_bg {
 				1="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
-			} 
+			}
 		}
-		
+	
 		ListPanelColumnHeader:hover {
 			textcolor= "white"
-			
+		
 			render_bg {
 				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 				1="gradient(x0,y0,x1,y1, lighterGrey, grey)"
 			}
 		}
-
 		// ________________________________________________________________
-		
+	
 	 	"Csteamrootdialog ListPanelSectionCollapser" {
 			bgcolor=none
 			inset = "-2 1 0 1"
 			padding-left=0
-
 			minimum-height=24
-
-			render_bg {
-				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
-				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
-				2="gradient(x0-22,y1,x1,y1, darkGrey, none)"
-			} 	
-		}
-		
-		"CGamesPage_Mini ListPanelSectionCollapser" {
-			bgcolor=none
-			inset = "0 0 5 0"
-
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
 				2="gradient(x0-22,y1,x1,y1, darkGrey, none)"
 			} 
 		}
-
-		// ________________________________________________________________	
-	 
+	
+		"CGamesPage_Mini ListPanelSectionCollapser" {
+			bgcolor=none
+			inset = "0 0 5 0"
+			render_bg {
+				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
+				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
+				2="gradient(x0-22,y1,x1,y1, darkGrey, none)"
+			}
+		}
+		// ________________________________________________________________
+	
 		ListPanelColumnSelectButton {
 			bgcolor=none
 			inset="13 2 0 0"
@@ -145,118 +139,114 @@ font-size=14 [$LINUX]
 	 		padding-right=0
 	 		minimum-width=8
 	 		minimum-height=8
-			
+		
 			render {
 				0="fill(x0,y1-1,x1,y1, darkGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 				3="image(x0+5,y0+5,x1,y1, graphics/cog)"
-			} 
+			}
 			render_bg {
 				0="gradient(x0,y0,x1,y1-1, grey, lightGreyEnd)"
 			}
 		}
-		
+	
 			ListPanelColumnSelectButton:hover {
 				render_bg {
 					0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 					1="gradient(x0,y0,x1,y1-1, lighterGrey, grey)"
 				}
 			}
-		
+	
 			ListPanelColumnSelectButton:selected {
 				render {
 					5="image( x0 + 5, y0 + 5, x1, y1, graphics/cog_active )"
-				} 
+				}
 				render_bg {
 					0="fill(x0,y0,x1,y1-1, darkestGrey)"
 				}
 			}
+
+
 	
 	
-		
-		
 		// ________________________________________________________________
-	 
+	
 		ListPanelDragger {
 			bgcolor= "none"
 			minimum-height=24
-
 			render {
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1-1, darkGrey )" // left
 			}
 		}
-	
+
 		"Page ListPanelDragger" {
 			bgcolor= "none"
 			minimum-height=24
-			
+		
 			render {
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1, darkGrey )" // left
 			}
 		}
-		
-		
-		ListPanelInterior {	 
-			bgcolor= "none" 
+	
+	
+		ListPanelInterior {	
+			bgcolor= "none"
 			selectedbgcolor= "blue"
 			textcolor= "white"
 			font-size=15
 font-size=14 [$LINUX]
 			inset= "0 0 0 0"
-
 			render {}
 			render_bg {}
 		}
-	
+
 		"CSteamRootDialog ListPanel" {
 			padding-left=2
 			padding-right=2
 		}
-		
+	
 		"Csteamrootdialog ListPanelInterior" {
 			bgcolor=none
 			selectedbgcolor= "blue"
 			inset= "0 0 0 0"
-
 			render_bg {}
 		}
-		
+	
 		"Page ListPanelInterior" {
 			inset= "0 0 0 0"
 			font-size=15
 font-size=14 [$LINUX]
 			bgcolor=none
-			
+		
 			textcolor=green
 			selectedbgcolor= "trueWhite"
 			render_bg {}
 		}
-		
-		// ________________________________________________________________	
-		
-		ListPanelSectionHeader {	 
+	
+		// ________________________________________________________________
+	
+		ListPanelSectionHeader {	
 			textcolor=white
 			font-family=semibold
 			font-style="regular,normal"
 			inset="0 1 0 0"
-
 			minimum-height=24
-						
+					
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0+1, x1, y0+2, greyHighlight)"
 				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
-			} 
-		} 
-		
-			ListPanelSectionHeader:hover {	 
+			}
+		}
+	
+			ListPanelSectionHeader:hover {	
 				textcolor=trueWhite
-			} 
-		
-	// ________________________________________________________________		
-		
+			}
+	
+	// ________________________________________________________________	
+	
 		ListPanel {
 			bgcolor=darkestGrey
 			selectedtextcolor= "trueWhite"
@@ -266,18 +256,17 @@ font-size=14 [$LINUX]
 			font-size=15
 			font-size=14 [$LINUX]
 			font-weight=400
-							
+						
 			render {}
-
-			render_bg {	
+			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
-				
+			
 				// Lines around
 				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
 				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
 				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
 				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
-				
+			
 				// Corner pixels
 				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
 				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
@@ -287,14 +276,14 @@ font-size=14 [$LINUX]
 				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
 				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
 				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
-				
+			
 				// Bottom Pixel Highlight
 				13="fill(x0-1,y1,x0,y1+1, grey25)"
 				14="fill(x0,y1+1,x1,y1+2, grey50)"
 				15="fill(x1,y1,x1+1,y1+1, grey25)"
 			}
 		}
-		
+	
 		"Page ListPanel" {
 			bgcolor=darkestGrey
 			selectedtextcolor= "trueWhite"
@@ -304,18 +293,17 @@ font-size=14 [$LINUX]
 			font-size=15
 			font-size=14 [$LINUX]
 			font-weight=400
-			
+		
 			render {}
-
-			render_bg {	
+			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
-				
+			
 				// Lines around
 				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
 				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
 				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
 				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
-				
+			
 				// Corner pixels
 				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
 				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
@@ -325,30 +313,30 @@ font-size=14 [$LINUX]
 				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
 				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
 				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
-				
+			
 				// Bottom Pixel Highlight
 				13="fill(x0-1,y1,x0,y1+1, grey25)"
 				14="fill(x0,y1+1,x1,y1+2, grey50)"
 				15="fill(x1,y1,x1+1,y1+1, grey25)"
 			}
 		}
-		
+	
 		CheckButtonList:scrollbar {
 			bgcolor=none
 			textcolor="text2"
 			inset="1 1 1 1"
-			
+		
 			render {}
-			
-			render_bg { 
+		
+			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
-				
+			
 				// Lines around
 				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
 				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
 				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
 				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
-				
+			
 				// Corner pixels
 				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
 				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
@@ -358,31 +346,31 @@ font-size=14 [$LINUX]
 				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
 				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
 				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
-				
+			
 				// Bottom Pixel Highlight
 				13="fill(x0-1,y1,x0,y1+1, grey25)"
 				14="fill(x0,y1+1,x1,y1+2, grey50)"
 				15="fill(x1,y1,x1+1,y1+1, grey25)"
 			}
-			
-		} 
 		
+		}
+	
 		"Page CheckButtonList:scrollbar" {
 			bgcolor=none
 			textcolor="text2"
 			inset="1 1 1 1"
-			
-			render {} 
-			
-			render_bg { 
+		
+			render {}
+		
+			render_bg {
 			 	0="fill(x0,y0,x1,y1, darkestGrey)"
-			
+		
 				// Lines around
 				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
 				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
 				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
 				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
-				
+			
 				// Corner pixels
 				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
 				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
@@ -392,60 +380,29 @@ font-size=14 [$LINUX]
 				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
 				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
 				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
-				
+			
 				// Bottom Pixel Highlight
 				13="fill(x0-1,y1,x0,y1+1, grey25)"
 				14="fill(x0,y1+1,x1,y1+2, grey50)"
 				15="fill(x1,y1,x1+1,y1+1, grey25)"
 			}
-			
-		}
 		
+		}
+	
 		CheckButtonList {
 			bgcolor=none
 			textcolor="white"
 			inset="1 1 1 1"
-			
-			render_bg {	 
-				0="fill(x0,y0,x1,y1, darkestGrey)"
-			
-				// Lines around
-				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
-				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
-				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
-				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
-				
-				// Corner pixels
-				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
-				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
-				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
-				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
-				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
-				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
-				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
-				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
-				
-				// Bottom Pixel Highlight
-				13="fill(x0-1,y1,x0,y1+1, grey25)"
-				14="fill(x0,y1+1,x1,y1+2, grey50)"
-				15="fill(x1,y1,x1+1,y1+1, grey25)"
-			 }
-		} 
 		
-		"Page CheckButtonList" {
-			bgcolor=none
-			textcolor="white"
-			inset="1 1 1 1"
-			
-			render_bg {	 
+			render_bg {	
 				0="fill(x0,y0,x1,y1, darkestGrey)"
-			
+		
 				// Lines around
 				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
 				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
 				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
 				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
-				
+			
 				// Corner pixels
 				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
 				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
@@ -455,7 +412,7 @@ font-size=14 [$LINUX]
 				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
 				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
 				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
-				
+			
 				// Bottom Pixel Highlight
 				13="fill(x0-1,y1,x0,y1+1, grey25)"
 				14="fill(x0,y1+1,x1,y1+2, grey50)"
@@ -463,6 +420,37 @@ font-size=14 [$LINUX]
 			 }
 		}
 	
+		"Page CheckButtonList" {
+			bgcolor=none
+			textcolor="white"
+			inset="1 1 1 1"
+		
+			render_bg {	
+				0="fill(x0,y0,x1,y1, darkestGrey)"
+		
+				// Lines around
+				1="fill(x0-1,y0+1,x0,y1-1, black90)" // Left
+				2="fill(x0+1,y0-1,x1-1,y0, black90)" // Top
+				3="fill(x1,y0+1,x1+1,y1-1, black90)" // Right
+				4="fill(x0+1,y1,x1-1,y1+1, black90)" // Bottom
+			
+				// Corner pixels
+				5="fill(x0-1,y0,x0,y0+1, black65)" // Top Left
+				6="fill(x0,y0-1,x0+1,y1, black65)" // Top Left
+				7="fill(x1-1,y0-1,x1,y0, black65)" // Top Right
+				8="fill(x1, y0,x1+1,y0+1,black65)" // Top Right
+				9="fill(x0-1,y1-1,x0,y1, black65)" // Bottom left
+				10="fill(x0,y1,x0+1,y1+1, black65)" // Bottom Left
+				11="fill(x1-1,y1,x1,y1+1, black65)" // Bottom Right
+				12="fill(x1,y1-1,x1+1,y1, black65)" // Bottom Right
+			
+				// Bottom Pixel Highlight
+				13="fill(x0-1,y1,x0,y1+1, grey25)"
+				14="fill(x0,y1+1,x1,y1+2, grey50)"
+				15="fill(x1,y1,x1+1,y1+1, grey25)"
+			 }
+		}
+
 		"CGamesListPanel" {
 			bgcolor= "darkestGrey"
 			selectedtextcolor= "trueWhite"
@@ -475,95 +463,91 @@ font-size=14 [$LINUX]
 			font-weight=400
 			inset= "0 -3 0 0"
 			padding-right=0
-			
+		
 			render {
-				0="fill( x0, y0-1, x1, y0, darkestgrey)" 
+				0="fill( x0, y0-1, x1, y0, darkestgrey)"
 				1="fill( x0, y1-1, x1, y1, darkestgrey)"
 			}
-			
+		
 			render_bg {}
 		}
-		
+	
 		"Page ListPanelInterior:scrollbar" {
 			bgcolor=darkestGrey
 			selectedbgcolor="blue"
 			selectedtextcolor="red"
 			inset="0 0 0 0"
-			
+		
 			render {}
 			render_bg {}
 		}
-		
-		
-		"Csteamrootdialog ListPanelInterior:scrollbar" { 
+	
+	
+		"Csteamrootdialog ListPanelInterior:scrollbar" {
 			bgcolor=none
 			selectedbgcolor="red"
 			inset="0 0 -1 0"
-
-			render {} 
+			render {}
 			render_bg {}
 		}
-		
-		ListPanelInterior:scrollbar { 
+	
+		ListPanelInterior:scrollbar {
 			bgcolor=none
 			selectedtextcolor="red" //test
 			selectedbgcolor="blue"
 			textcolor="text2"
 			inset="0 0 -1 0"
-
 			render {}
 			render_bg {}
-		} 
-		
-		
+		}
+	
+	
 		"ListPanel RichText" {
 			bgcolor=none
 			textcolor= white
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
-			
-			render_bg {} 
+		
+			render_bg {}
 		}
-	
+
 		"ListPanel RichText url" {
 			textcolor= "blue"
 			font-size=15
 font-size=14 [$LINUX]
 			font-style=underline
 		}
-		
+	
 			"ListPanel RichText url:hover" {
 				textcolor=lightestBlue
 			}
-	
+
 		"ListPanel RichTextInterior" {
 			bgcolor=none
-
-			render_bg {} 
+			render_bg {}
 		}
-				
+			
 		ListPanelSectionCollapser {
 			bgcolor=none
-			image= "graphics/icon_collapse" 
+			image= "graphics/icon_collapse"
 			inset= "-4 0 0 0"
 			padding-top=-2
 			padding-bottom=-2
 			padding-left=0
-
 			render_bg {}
 		}
-		
+	
 			ListPanelSectionCollapser:hover {
-				image="graphics/icon_collapse_over" 
+				image="graphics/icon_collapse_over"
+			}
+	
+			ListPanelSectionCollapser:selected {
+				image= "graphics/icon_expand"
 			}
 		
-			ListPanelSectionCollapser:selected {
-				image= "graphics/icon_expand" 
-			}
-			
 			ListPanelSectionCollapser:selected:hover {
-				image= "graphics/icon_expand_over" 
+				image= "graphics/icon_expand_over"
 			}
 	}
 }

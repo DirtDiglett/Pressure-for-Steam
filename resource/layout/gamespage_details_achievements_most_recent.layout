@@ -2,126 +2,117 @@
 	colors {
 		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
 		GameDetailsAchievements.ProgressBarMargins "8"
-		
+	
 		Tooltip.Anchor=Parent
 	}
-	
+
 	styles {
 		mostrecent {
 			minimum-width="300"
 			minimum-height="118"
 		}
-
 		achievementimagebg {
 			bgcolor=none
 			inset="0 0 0 0"
       		image="graphics/achievementbg_recent"
 		}
-
 		// Literally the label that says "Most Recent"
 		mostrecent_label {
 			textcolor="lightestGreyhighlight"
 			font-size=15
 			font-size=14 [$LINUX]
 		}
-		
+	
 		mostrecent_name {
 			textcolor="lightestYellow"
 			font-size=20
 			font-weight=bold
 		}
-
 		mostrecent_unlockedsofar {
 			textcolor=white
 			font-size=15
 			font-size=14 [$LINUX]
 		}
-
 		progressbackground {
 			bgcolor=none
-			
+		
 			render_bg {
 				// lines around
 				0="fill( x0, y0, x1-6, y1, black )"
 				1="fill( x0, y1 -1, x1-6, y1, grey25 )"  // bottom
 			}
 		}
-
 		progressbarimage {
 			bgcolor="green"
-			
+		
 			render = {
 				6="fill(x0,y0,x1,y0+1, lightestGreen)"
 				7="fill(x0, y0+1, x1, y1, green)"
 			}
 		}
 	}
-
 	layout {
-		region { 
-			name=body 
-			width=max 
+		region {
+			name=body
+			width=max
 			height=max
-			margin=0 
+			margin=0
 		}
-
-		place { 
+		place {
 			region=body
 			control=mostrecent_label
 			x=82
 			y=18
 			width=max
 		}
-		
-		place { 
-			region=body 
-			control=mostrecent_name 
+	
+		place {
+			region=body
+			control=mostrecent_name
 			x=82
 			y=29
 			width=190
 			height=25
 		}
-		
-		place { 
+	
+		place {
 			region=body
 			control=mostrecent_unlockedsofar
 			x=82
 			y=54
 			width=max
 		}
-
 		place {
-			region=body 
+			region=body
 			control=mostrecent_background
 			x=0
 			y=6
 			width=70
 			height=70
 		}
-		
-		place { 
-			region=body 
-			control=mostrecent_image 
-			x=0 
-			y=6 
-			width=70 
-			height=70 
+	
+		place {
+			region=body
+			control=mostrecent_image
+			x=0
+			y=6
+			width=70
+			height=70
 		}
-
-		place { 
-			region=body 
-			control=progressbackground 
-			y=92 
-			width=max 
-			height=5 
+		place {
+			region=body
+			control=progressbackground
+			y=92
+			width=max
+			height=5
 		}
-		
-		place { 
-			region=body 
-			control=progressbarimage 
-			y=93 
-			height=2 
-			margin-left=1 
+	
+		place {
+			region=body
+			control=progressbarimage
+			y=93
+			height=2
+			margin-left=1
 			margin-right=1
 		}
 	}

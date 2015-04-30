@@ -2,7 +2,7 @@
 	styles {
 		Frame {
 			minimum-width=480
-			
+		
 			render_bg {
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
@@ -11,10 +11,10 @@
 			}
 		}
 	}
-	
+
 	layout {
-		place { 
-			control="Label3,DontShowAgain" 
+		place {
+			control="Label3,DontShowAgain"
 			x=80
 			y=38
 			width=max
@@ -22,22 +22,21 @@
 			dir=down
 			spacing=4
 		}
-
-		region { 
-			name=bottom 
-			align=bottom 
+		region {
+			name=bottom
+			align=bottom
 			height=51
 			width=max
 		}
-		
-		place {	
-			control="ContinueButton,CancelButton" 
-			region=bottom 
-			align=right 
+	
+		place {
+			control="ContinueButton,CancelButton"
+			region=bottom
+			align=right
 			height=24
 			margin-top=13
 			margin-right=13
-			spacing=8 
+			spacing=8
 		}
 	}
 }

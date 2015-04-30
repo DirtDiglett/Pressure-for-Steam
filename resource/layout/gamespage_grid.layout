@@ -2,46 +2,41 @@
 	controls {
 	// One day this will work :(
 		"grid" {
-			"alignment"						"justify"		// left, right, justify 
+			"alignment"						"justify"		// left, right, justify
 			"interiorspacing"				-1				// minimum interitem spacing, used for both x and y
 			"wheelpct"						50				// mouse wheel -> scroll this percent of an item's dy
 			"tabposition"					1
 		}
 	}
-
 	colors {
 		// values defining the aspect ratio of the images in the grid view
 		GridView.OriginalImageWidth "460"
 		GridView.OriginalImageHeight "215"
-
 		// value defining the extra vertical distance to leave below
 		// the picture for drop shadow room, in px. This value should
 		// match the margin values in the layout statements in the gamespage_grid_*.layout files.
 		GridView.DropShadowLeading "00"
 	}
-
 	styles {
-		WrapPanel {			
+		WrapPanel {		
 			bgcolor="darkestGrey"
 			inset="0 0 0 0"
-			
+		
 			render {
 				0="gradient(x0, y0, x1, y0+6, black65, none)"
 				1="gradient(x0, y1-6, x1, y1, none, black65)"
 			}
-
 			render_bg {
 				0="image_scale(x0,y0,x1,y1, graphics/gamebg)"
 			}
-		}	
+		}
 
 		emptylisttext {
 			textcolor="grey"
 			font-size="14"
-
 			render_bg {}
 		}
-		
+	
 
 		// GameItem_whatever suffix is computed on the fly. (not case sensitive.) possible values:
 		// shortcut
@@ -62,16 +57,14 @@
 			alpha 255
 		}
 	}
-
 	layout {
 		place {
 			control=grid
-			x=1 
-			y=1 
-			width=max 
-			height=max 
+			x=1
+			y=1
+			width=max
+			height=max
 		}
-
 		place {
 			control=emptylisttext
 			x=0

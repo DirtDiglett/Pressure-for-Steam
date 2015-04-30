@@ -2,16 +2,13 @@
 	colors {
 		Friends.OfflineColor "greyHighlight"
 	}
-
 	styles {
 		CFriendPanel:selected {
 			render_bg {}
 		}
-
 		SelfPanel:hover {
 			render_bg {}
 		}
-
 		namestyle {
 			font-family=basefont
 			font-size=16
@@ -23,20 +20,17 @@ font-size=14 [$LINUX]
 			//font-outerglow-offset=1
 			//font-outerglow-filtersize=3
 		}
-
 			// namestyle:hover { //TODO, maybe only for compact
 				// font-style="outline"
 				// font-outline-color="lighterGrey"
 				// font-outline-offset=1
 				// font-outline-filtersize=3
 			// }
-
 		nameInstanceStyle {
 			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=14
 		}
-
 		menuButtonStyle {
 			padding-top=6
 			padding-bottom=4
@@ -45,76 +39,63 @@ font-size=14 [$LINUX]
 			minimum-width=10
 			inset-top=-2
 		}
-
 			menuButtonStyle:hover {
 				render_bg {}
 			}
-
 		controlPanelLinkStyle {
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
 		}
-
 			controlPanelLinkStyle:hover {
 				font-family=basefont
 				font-size=15
 font-size=14 [$LINUX]
 			}
-
 		statusStyle {
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
 		}
-
 		inviteLinkStyle {
 			textcolor=blue
 			font-style=normal
 		}
-
 			inviteLinkStyle:hover {
 				textcolor=lightestBlue
 				font-style=underline
 			}
-
 		WebStatusStyle {
 			image="graphics/icon_status_web"
 			padding-left=2
 			inset-top=2
 		}
-
 		BigPictureStatusStyle {
 			image="graphics/icon_status_bigpic"
 			padding-left=2
 			inset-top=2
 		}
-
 		MobileStatusStyle {
 			image="graphics/icon_status_mobile"
 			padding-left=2
 			inset-top=2
 		}
-
 		WebStatusStyleInGame {
 			image="graphics/icon_status_web_ingame"
 			padding-left=2
 			inset-top=2
 		}
-
 		BigPictureStatusStyleInGame {
 			image="graphics/icon_status_bigpic_ingame"
 			padding-left=2
 			inset-top=2
 		}
-
 		MobileStatusStyleInGame {
 			image="graphics/icon_status_mobile_ingame"
 			padding-left=2
 			inset-top=2
 		}
 	}
-
 	layout {
 		place {
 			control="AvatarOverlayImage"
@@ -123,7 +104,6 @@ font-size=14 [$LINUX]
 			width=40
 			height=40
 		}
-
 		place {
 			control="AvatarImage"
 			x=4
@@ -131,45 +111,38 @@ font-size=14 [$LINUX]
 			width=32
 			height=32
 		}
-
 		place {
 			control="ClanStatusImage"
 			width=10
 			height=18
 		}
-
 		place [$OSX] {
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel"
 			x=46
 			y=5
 		}
-
 		place [!$OSX] {
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel"
 			x=46
 			y=2
 			spacing=2
 		}
-
 		place {
 			control=MenuButton
 			start=FriendsNameInstanceLabel
 			x=2
 			y=-3
 		}
-
 		place {
 			control="StatusLabel"
 			x=46
 			y=16
 		}
-
 		place {
 			control="GameLabel"
 			x=46
 			y=30
 		}
-
 		place {
 			control="BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"
 			start="StatusLabel"
@@ -177,7 +150,6 @@ font-size=14 [$LINUX]
 			height=16
 			margin-left=0
 		}
-
 		// these controls are shown for friendship requests
 		place {
 			control="AcceptLink,IgnoreLink,BlockLink"
@@ -185,7 +157,6 @@ font-size=14 [$LINUX]
 			y=27
 			spacing=10
 		}
-
 		// this control is shown in the invite-to-game dialog in the overlay
 		place {
 			control="InviteToGameButton"
@@ -193,20 +164,17 @@ font-size=14 [$LINUX]
 			y=4
 			margin-right=20
 		}
-
 		place {
 			control="ControlPanelLink"
 			x=46
 			y=27
 		}
-
 		place {
 			control="SuggestedImage,SuggestedLabel"
 			x=46
 			y=19
 			spacing=4
 		}
-
 		place {
 			control="SuggestedInvite,SuggestedIgnore"
 			x=46

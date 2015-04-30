@@ -3,9 +3,9 @@
 		BigLable {
 			textcolor=Text
 			font-size=20
-		}	
+		}
 	}
-		
+	
 	layout {
 		place {
 			control="DialogTitle"
@@ -14,7 +14,6 @@
 			width=360
 			height=24
 		}
-
 		place {
 			control="DialogText"
 			x=16
@@ -22,7 +21,6 @@
 			width=360
 			height=200
 		}
-
 		place {
 			control="PurchaseGameButton"
 			x=194
@@ -30,7 +28,6 @@
 			width=168
 			height=24
 		}
-
 		place {
 			control="AuthorizationButton"
 			x=16
@@ -38,7 +35,6 @@
 			width=168
 			height=24
 		}
-
 		place {
 			control="CancelButton"
 			x=194

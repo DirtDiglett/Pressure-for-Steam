@@ -7,7 +7,6 @@
 			width=max
 			margin-right=23
 		}
-
 		place {
 			control=OpenInstallFolder,BackupButton,DeleteButton,VerifyButton
 			start=DiskUsageLabel
@@ -17,7 +16,6 @@
 			dir=down
 			spacing=8
 		}
-
 		place {
 			control=BuildIDLabel
 			start=VerifyButton

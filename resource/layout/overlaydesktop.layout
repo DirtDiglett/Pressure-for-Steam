@@ -5,29 +5,23 @@
 			font-size=15
 font-size=14 [$LINUX]
 		}
-
 			sidemenu:hover {
 				textcolor=text
 				font-size=15
 font-size=14 [$LINUX]
 			}
-
 		topbar {
 			textcolor=white
 			font-family=headerfont
 			font-size=48
-
 			render_bg {}
 		}
-
 		clocksuffix {
 			textcolor=white
 			font-family=headerfont
 			font-size=48
-
 			render_bg {}
 		}
-
 		timeStrings {
 			textcolor=lightestGrey
 			font-size=15
@@ -35,7 +29,6 @@ font-size=14 [$LINUX]
 			font-family=basefont
 		}
 	}
-
 	layout {
 		region {
 			name=overlay
@@ -44,7 +37,6 @@ font-size=14 [$LINUX]
 			margin-top=10
 			margin-bottom=10
 		}
-
 		// Keeps all the top areas horizontally aligned
 		region {
 			name="topbar"
@@ -55,7 +47,6 @@ font-size=14 [$LINUX]
 			y=74
 			margin-right=85
 		}
-
 		region {
 			name="taskbar"
 			region=overlay
@@ -63,20 +54,17 @@ font-size=14 [$LINUX]
 			width="max"
 			height=145
 		}
-
 		region {
 			name=bottom
 			align=bottom
 			width=max
 			height=145
 		}
-
 		place {
 			control="SessionText"
 			x=17
 			y=47
 		}
-
 		place {
 			control=TwoWeeksText,ForeverText
 			start=SessionText
@@ -84,7 +72,6 @@ font-size=14 [$LINUX]
 			dir=right
 			spacing=20
 		}
-
 		place {
 			control=BroadcastDetailPanel
 			start=ForeverText
@@ -93,7 +80,6 @@ font-size=14 [$LINUX]
 			dir=right
 			y=-5
 		}
-
 		place {
 			control="Clock,ClockSuffix"
 			region=taskbar
@@ -102,7 +88,6 @@ font-size=14 [$LINUX]
 			margin-right=175
 			dir=right
 		}
-
 		place {
 			control=FriendsDetailPanel
 			region=topbar
@@ -111,7 +96,6 @@ font-size=14 [$LINUX]
 			height=26
 			dir=right
 		}
-
 		place {
 			control=CommunityHubDetailPanel
 			start=FriendsDetailPanel
@@ -119,7 +103,6 @@ font-size=14 [$LINUX]
 			width=220
 			height=26
 		}
-
 		place {
 			control=GuidesDetailPanel
 			start=CommunityHubDetailPanel
@@ -127,7 +110,6 @@ font-size=14 [$LINUX]
 			width=141
 			height=26
 		}
-
 		place {
 			control=CommunityDiscussionsDetailPanel
 			start=GuidesDetailPanel
@@ -135,7 +117,6 @@ font-size=14 [$LINUX]
 			width=180
 			height=26
 		}
-
 		place {
 			control=ScreenshotsDetailPanel
 			start=CommunityDiscussionsDetailPanel
@@ -143,7 +124,6 @@ font-size=14 [$LINUX]
 			width=240
 			height=26
 		}
-
 		place {
 			controls="AchievementsDetailPanel"
 			region=bottom
@@ -153,7 +133,6 @@ font-size=14 [$LINUX]
 			margin-left=0
 			spacing=10
 		}
-
 		place {
 			controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,NewsDetailPanel"
 			width=0

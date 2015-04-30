@@ -1,8 +1,8 @@
 "resource/layout/overlay_communityhubpanel.layout" {
 	colors {
 		lightestBlue="137 235 255 255"
-	}	
-	
+	}
+
 	styles {
 		button {
 			textcolor=blue
@@ -13,37 +13,34 @@ font-size=14 [$LINUX]
 			padding-left=24
 			padding-top=0
 			padding-bottom=15
-			
+		
 			render_bg {
 				1="image(x0,y0,x0+26,y1, graphics/overlay/communityhub)"
 			}
 		}
-		
+	
 			button:hover {
 				textcolor=lightestBlue
-				
+			
 				render_bg {
 					1="image(x0,y0,x0+26,y1, graphics/overlay/communityhub_hover)"
-				}				
+				}			
 			}
-
 		DarkRegion {}
-
 		PreviewImage {}
-
 		highlight {
 			textcolor=lightestGrey
 			font-size=14
 		}
 	}
-	
+
 	layout {
 		region {
 			name=box
 			width=max
 			height=max
 		}
-		
+	
 		place {
 			controls=ViewCommunityHub
 			region=box
@@ -51,7 +48,7 @@ font-size=14 [$LINUX]
 			y=0
 			width=190
 		}
-		
+	
 		place {
 			controls=NumContributionsText
 			start=ViewCommunityHub
@@ -59,7 +56,7 @@ font-size=14 [$LINUX]
 			x=30
 			y=-14
 		}
-		
+	
 		place {
 			control="TitleText"
 			width=0

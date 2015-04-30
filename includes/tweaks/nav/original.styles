@@ -1,4 +1,4 @@
-"original.styles" { 
+"original.styles" {
 	styles {
 		CUINavButton {
 			textcolor=darkestGrey
@@ -7,15 +7,12 @@
 			font-outerglow-offset=0
 			font-outerglow-filtersize=3
 		}
-
 			CUINavButton:hover {
 				textcolor="white"
 			}
-
 			CUINavButton:selected {
 				textcolor="trueWhite"
 			}
-
 				CUINavButton:selected:hover {
 					textcolor="trueWhite"
 					font-outerglow-color="lightestGrey"

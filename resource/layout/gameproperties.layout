@@ -1,25 +1,24 @@
 "resource/layout/gameproperties.layout" {
 	layout {
-		place { 
-			control="frame_captiongrip" 
-			width=max 
-			height=54 
+		place {
+			control="frame_captiongrip"
+			width=max
+			height=54
 		}
-
 		//Bottom
-		region { 
-			name=bottom 
-			align=bottom 
+		region {
+			name=bottom
+			align=bottom
 			height=51
 		}
-		
-		place {	
-			control="OKButton" 
-			region=bottom 
+	
+		place {
+			control="OKButton"
+			region=bottom
 			align=right
-			width=92 
+			width=92
 			height=28
-			margin-top=12 
+			margin-top=12
 			margin-right=14
 		}
 	}

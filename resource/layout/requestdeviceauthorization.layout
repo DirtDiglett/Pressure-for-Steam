@@ -3,9 +3,9 @@
 		BigLable {
 			textcolor=Text
 			font-size=20
-		}	
+		}
 	}
-		
+	
 	layout {
 		place {
 			control="DialogTitle"
@@ -14,7 +14,6 @@
 			width=360
 			height=24
 		}
-
 		place {
 			control="ToLabel"
 			x=16
@@ -22,7 +21,6 @@
 			width=360
 			height=24
 		}
-
 		place {
 			control="FromLabel"
 			x=16
@@ -30,7 +28,6 @@
 			width=360
 			height=34
 		}
-
 		place {
 			control="DialogText"
 			x=16
@@ -38,7 +35,6 @@
 			width=350
 			height=96
 		}
-
 		place {
 			control="DescriptionLabel"
 			x=16
@@ -46,7 +42,6 @@
 			width=360
 			height=24
 		}
-
 		place {
 			control="DescriptionEntry"
 			x=16
@@ -54,7 +49,6 @@
 			width=350
 			height=24
 		}
-
 		place {
 			control="SendButton"
 			x=16
@@ -62,7 +56,6 @@
 			width=164
 			height=24
 		}
-
 		place {
 			control="CancelButton"
 			x=200

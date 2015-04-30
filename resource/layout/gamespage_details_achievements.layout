@@ -2,65 +2,60 @@
 	colors {
 		// Extra spacing beyond the flowing elements to account for header and button at the bottom
 		GameDetailsAchievements.ExtraVerticalSpacing "10"
-
 		// This is additional extra vertical spacing when the "You've unlocked everything" label is set
 		// You should test with a game with everything unlocked if you change vertical spacing as this may
 		// need adjustment.
 		GameDetailsAchievements.EverythingExtraSpacing "6"
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 	}
-
 	styles {
 		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
-			
+		
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
-		
+	
 			button:hover {
 				textcolor=lightestBlue
 			}
-
-		achievementsdetails { 
+		achievementsdetails {
 			bgcolor=black65
 			minimum-height=200
 		}
-		
+	
 		// The label for "You've unlocked everything!"
 		everythinglabel {
 			textcolor="white"
 			font-size=15
 			font-size=14 [$LINUX]
-		}	
+		}
 	}
-
 	layout {
-		region { 
-			name=body 
-			width=max 
-			height=max 
+		region {
+			name=body
+			width=max
+			height=max
 			margin=20
 			margin-right=30
 		}
-
-		place { 
-			region=body 
-			control=headerlabel 
-			width=max 
+		place {
+			region=body
+			control=headerlabel
+			width=max
 		}
-		
-		place { 
-			region=body 
-			control=mostrecent_area 
+	
+		place {
+			region=body
+			control=mostrecent_area
 			y=35
-			dir=down 
+			dir=down
 		}
-		
+	
 		place {
 			region=body
 			control=everythinglabel
@@ -68,7 +63,7 @@
 			y=55
 			dir=right
 		}
-		
+	
 		place {
 			control=locked_area
 			start="mostrecent_area"
@@ -76,13 +71,12 @@
 			width=max
 			height=45
 		}
-
-		place { 
-			region=body 
-			control=viewall 
-			align=bottom 
+		place {
+			region=body
+			control=viewall
+			align=bottom
 			margin-left=-6
-			margin-bottom=0 
+			margin-bottom=0
 		}
 	}
 }

@@ -1,8 +1,8 @@
 "resource/layout/dialogsettings_changecontactemailwizard.layout" {
 	controls {}
-	
+
 	styles {}
-	
+
 	layout {
 		region {
 			name=bottom
@@ -10,7 +10,7 @@
 			width=max
 			height=51
 		}
-		
+	
 		place {
 			control="PrevButton,NextButton,CancelButton,FinishButton"
 			height=28

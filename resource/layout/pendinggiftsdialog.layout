@@ -1,11 +1,11 @@
 "resource/layout/pendinggiftsdialog.layout" {
 	layout {
-		place { 
-			control="HTML" 
-			width=max 
-			height=max 
+		place {
+			control="HTML"
+			width=max
+			height=max
 			margin=0
-			margin-top=25 
+			margin-top=25
 		}
 	}
 }

@@ -5,45 +5,40 @@
 				1="gradient_horizontal(x0,y0,x0+10,y1, black25, none)"
 			}
 		}
-
-		DetailsBorderPanel { 
+		DetailsBorderPanel {
 			bgcolor="none"
 			textcolor="red"
 			font-family=basefont
 			font-size=14
 			font-weight=400
-
 			render_bg{}
 		}
-		
+	
 		AlbumOrArtistListStyle {
 			render_bg {}
 		}
-		
+	
 		EmptyDatabaseText {
 			textcolor="Text"
 			font-size="15"
-
 			render_bg {}
 		}
-		
+	
 		CrawlingText {
 			textcolor="white"
 			font-size="15"
-
 			render_bg {}
 		}
-		
+	
 		CMusicPage_Details_Content {
 			inset="0 0 0 1"
-
 			render {}
 			render_bg {
 				0="gradient(x0,y1-6,x1,y1, none, black65)"
 				1="gradient(x0,y0,x1,y0+6, black65, none)"
 			}
 		}
-		
+	
 		// Some overrides for our listpanel
 		"MusicPage_Details_Content ListPanel" {
 			bgcolor="darkestGrey"
@@ -53,81 +48,75 @@ font-size=14 [$LINUX]
 			padding-right=2
 			minimum-width=320
 
-
 			render_bg {}
 		}
-
-		
+	
 		"MusicPage_Details_Content ListPanelInterior" {
 			bgcolor="none"
 			textcolor="white"
 			inset="0 0 0 0"
-			
-
-			render_bg {} 
-		}
 		
-		"MusicPage_Details_Content ListPanelInterior:scrollbar" {	 
+
+			render_bg {}
+		}
+	
+		"MusicPage_Details_Content ListPanelInterior:scrollbar" {	
 			bgcolor=none
 			inset="0 0 -10 0"
 			minimum-width=320
-			
+		
 			render_bg {}
 		}
-		
+	
 		"MusicPage_Details_Content ListPanelDragger" {
 			bgcolor="none"
-			
+		
 			render {}
 			render_bg {}
 		}
-
 		"MusicPage_Details_Content ListPanelColumnHeader" [!$OSX] {
 			bgcolor="none"
 			font-size=14
 			inset="2 2 0 0"
 			minimum-height=0
-
 			render {}
 			render_bg {}
 		}
-		
+	
 		"MusicPage_Details_Content ListPanelColumnHeader" [$OSX] {
 			bgcolor="none"
 			font-size=15
 font-size=14 [$LINUX]
 			inset="2 2 0 0"
-			
+		
 			render {}
-		}	
+		}
 
 		"AlbumOrArtistListStyle ListPanelColumnSelectButton" {
 	   		inset="-3 3 0 0"
-			
+		
 			render {
 		  		5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-			}   
+			}  
 			render_bg {
 				1="fill( x0 + 1, y0, x1 - 1, y1, none )"
 			}
 		}
-		
+	
 		DetailsBorderPanel {
 			bgcolor = "darkestGrey"
-			
+		
 			render {}
-		}	
+		}
 
 		BackgroundImage {
 			bgcolor="darkestGrey"
 			border=0
 		}
-
 		RichText {
 			render_bg {}
 		}
 	}
-
 	layout {
 		region {
 			name="background"
@@ -136,7 +125,6 @@ font-size=14 [$LINUX]
 			width=1024
 			height=1024
 		}
-
 		region {
 			name="list"
 			x=0
@@ -145,7 +133,6 @@ font-size=14 [$LINUX]
 			height=max
 			margin-bottom=0
 		}
-
 		region {
 			name="details"
 			x=320
@@ -155,7 +142,7 @@ font-size=14 [$LINUX]
 			dir=down
 			overflow=scroll-vertical
 		}
-		
+	
 		place {
 			control=EmptyDatabaseText
 			x=0
@@ -164,7 +151,6 @@ font-size=14 [$LINUX]
 			height=max
 			margin=10
 		}
-
 		place {
 			control=CrawlingText
 			x=0
@@ -173,7 +159,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=10
 		}
-		
+	
 		place {
 			control=DetailsBorder
 			x=1
@@ -181,7 +167,6 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 		}
-
 		place {
 			control=AlbumList
 			region=list
@@ -189,7 +174,6 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
-
 		place {
 			control=ArtistList
 			region=list
@@ -197,7 +181,6 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
-
 		place {
 			control=PlaylistList
 			region=list
@@ -205,7 +188,6 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
-
 		place {
 			control=*MusicPageDetailsAlbum
 			region=details
@@ -214,7 +196,6 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=10
 		}
-
 		place {
 			control=*MusicPageDetailsPlaylist
 			region=details
@@ -222,7 +203,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=10
 		}
-		
+	
 		place {
 			control=BackgroundImageA
 			region=background
@@ -231,7 +212,6 @@ font-size=14 [$LINUX]
 			width=1024
 			height=1024
 		}
-
 		place {
 			control=BackgroundImageB
 			region=background
@@ -240,7 +220,6 @@ font-size=14 [$LINUX]
 			width=1024
 			height=1024
 		}
-
 		place {
 			control=BackgroundImageMask
 			region=background

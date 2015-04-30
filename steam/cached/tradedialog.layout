@@ -1,21 +1,21 @@
 "steam/cached/tradedialog.layout" {
 	controls {
-		charityquestiondialog { 
-			title="#steam_tradedialog_title" 
-			wide=890 
-			tall=964 
+		charityquestiondialog {
+			title="#steam_tradedialog_title"
+			wide=890
+			tall=964
 		}
 	}
-	
+
 	styles {}
-	
+
 	layout {
-		place { 
-			controls="HTML" 
-			width=max 
-			height=max 
-			margin=0 
-			margin-top=26 
+		place {
+			controls="HTML"
+			width=max
+			height=max
+			margin=0
+			margin-top=26
 		}
 	}
 }

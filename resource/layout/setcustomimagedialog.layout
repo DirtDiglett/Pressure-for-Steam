@@ -5,16 +5,16 @@
 			minimum-height = 280
 		}
 	}
-	
+
 	layout {
-		region { 
-			name="top" 
-			width=max 
-			height=150 
-			margin=10 
+		region {
+			name="top"
+			width=max
+			height=150
+			margin=10
 			margin-top=54
 		}
-		
+	
 		region {
 			name="middle"
 			y=140
@@ -22,23 +22,22 @@
 			height=150
 			margin=10
 		}
-		
-		region { 
-			name="bottom" 
-			align=bottom 
+	
+		region {
+			name="bottom"
+			align=bottom
 			width=max
-			height=51 
+			height=51
 		}
-
-		place { 
-			control="ChooseAnImage" 
-			region="top" 
-			width=max 
+		place {
+			control="ChooseAnImage"
+			region="top"
+			width=max
 			margin-left=16
 			margin-right=16
 		}
-		
-		place { 
+	
+		place {
 			control="ImagePrescription"
 			region="top"
 			start="ChooseAnImage"
@@ -47,17 +46,16 @@
 			margin-right=16
 			dir=down
 		}
-
-		place { 
+		place {
 			control="ThisFile"
 			region="middle"
-			width=360 
+			width=360
 			margin-left=16
-			margin-top=15 
+			margin-top=15
 			margin-right=16
 		}
-		
-		place { 
+	
+		place {
 			control="Filename"
 			region="middle"
 			start="ThisFile"
@@ -66,16 +64,16 @@
 			margin-top=7
 			margin-right=8
 		}
-		
-		place { 
+	
+		place {
 			control="Browse"
 			region="middle"
-			start="Filename" 
+			start="Filename"
 			align=right
 			margin-right=16
 			dir=right
 		}
-		
+	
 		place {
 			control="TryAgain"
 			region="middle"
@@ -83,10 +81,9 @@
 			margin-left=16
 			dir=right
 		}
-
-		place { 
-			control="OK,Cancel" 
-			region="bottom" 
+		place {
+			control="OK,Cancel"
+			region="bottom"
 			align=right
 			margin-top=14
 			margin-right=14

@@ -1,86 +1,78 @@
 "colors.styles" { // "Pressure" by Dirt Diglett
 	colors {
-// *********************************************** 
+// ***********************************************
 // "Pressure" Colors
 // ***********************************************
  		none="0 0 0 0"
-	 
+	
 		// Greyscale
 		trueWhite="255 255 255 255"
 		white="251 251 251 255"
-
 		lightestGrey="139 139 139 255"
 		lightestGreyHighlight="77 77 77 255"
 		greyHighlight="67 67 67 255"
-		
+	
 		lighterGrey="70 70 70 255"
-		
+	
 		grey="60 60 60 255"
 		lightGreyEnd="42 42 42 255"
 		darkGreyEnd="29 29 29 255"
 		darkestGrey="16 16 16 255"
-
 		darkGrey="26 26 26 255"
-		
+	
 		groupGrey="14 14 14 255"// Group Chat Related Only
-
 		black="0 0 0 255"
 		black90="0 0 0 220" // 90% Opacity
 		black75="0 0 0 191" // 75% Opacity Black
 		black65="0 0 0 165" // 65% Opacity Black
 		black40="0 0 0 102" // 40% Opacity Black
 		black25="0 0 0 65"
-
 		white20="255 255 255 65"
 		white10="255 255 255 25" // 10% Opacity White
-		
+	
 		grey50="60 60 60 165" // 65% Opacity Grey
 		grey25="60 60 60 110" // 25%
 		grey10="60 60 60 25" // 10%"
 		darkestGrey50="8 8 8 100" // 65% Opacity Grey
-		
-		// Greens	
+	
+		// Greens
 		lightestGreen="209 248 48 255"
 		green="175 218 28 255"
 		darkestGreen="136 172 19 255"
-		
+	
 		// Blues
 		lightestBlue="91 225 252 255"
 		blue="47 198 236 255"
 		darkestBlue="35 175 210 255"
-
 		listselectedBlue="51 168 227 255" //Potential Blue to suggest for Selected List/Items?
-
 		// Oranges
 		lightestOrange="255 151 58 255"
 		orange="255 120 0 255"
 		darkestOrange="194 94 6 255"
-		
+	
 		// Reds
 		lightestRed="255 0 0 255"
 		red="209 0 0 255"
 		darkestRed="166 0 0 255"
-		
+	
 		// Golds
 		lightestYellow="231 200 1 255"
 		yellow="210 178 1 255"
 		darkestYellow="160 132 1 255"
-
 		// Normal Button
 		darkCornerPixels = "26 26 26 200"
 		topLightPixels = "62 62 62 255"
 		bottomDarkPixels = "38 38 38 255"
 		greyHighlightFake="67 67 67 127"
 		darkestGreyFake="26 26 26 105"
-		darkGreyFake="26 26 26 105"	
-	
+		darkGreyFake="26 26 26 105"
+
 		// Highlighted Button
 		topLightPixelsHighlighted = "70 70 70 255"
 		bottomDarkPixelsHighlighted = "57 57 57 255"
-		
+	
 		// Disabled Button
 		bottomDarkPixelsDisabled = "24 24 24 255"
-
 		// Colors used for the large buttons such as PLAY INSTALL STREAM etc.
 		// Green
 		greenButtonHighlight = "193 242 31 255"
@@ -89,7 +81,6 @@
 		greenButtonGradientEnd = "163 204 27 255"
 		greenButtonAntiAliasedCorners = "163 204 27 100"
 		greenButtonDarkenedCorners = "163 204 27 191"
-
 			// Green Hover
 			greenButtonHoverHighlight = "203 255 33 255"
 			greenButtonHoverHighlightAntiAliasing = "197 248 32 255"
@@ -97,14 +88,13 @@
 			greenButtonHoverGradientEnd = "186 230 30 255"
 			greenButtonHoverAntiAliasedCorners = "186 230 30 100"
 			greenButtonHoverDarkenedCorners = "186 230 30 191"
-
 			// Green Active
 			greenButtonActiveHighlight = "152 191 25 255"
 			greenButtonActiveHighlightAntiAliasing = "152 191 25 255"
 			greenButtonActiveGradientStart = "152 191 25 255"
 			greenButtonActiveGradientEnd = "145 179 23 255"
 			greenButtonActiveAntiAliasedCorners = "145 179 23 100"
-			greenButtonActiveDarkenedCorners = "145 179 23 191"			
+			greenButtonActiveDarkenedCorners = "145 179 23 191"		
 
 		// blue
 		blueButtonHighlight = "51 214 255 255"
@@ -113,7 +103,6 @@
 		blueButtonGradientEnd = "43 182 217 255"
 		blueButtonAntiAliasedCorners = "43 182 217 100"
 		blueButtonDarkenedCorners = "43 182 217 191"
-
 			// Blue Hover
 			blueButtonHoverHighlight = "97 223 255 255"
 			blueButtonHoverHighlightAntiAliasing = "71 218 255 255"
@@ -121,14 +110,13 @@
 			blueButtonHoverGradientEnd = "48 204 242 255"
 			blueButtonHoverAntiAliasedCorners = "48 204 242 100"
 			blueButtonHoverDarkenedCorners = "48 204 242 191"
-
 			// Blue Active
 			blueButtonActiveHighlight = "43 182 217 255"
 			blueButtonActiveHighlightAntiAliasing = "43 182 217 255"
 			blueButtonActiveGradientStart = "43 182 217 255"
 			blueButtonActiveGradientEnd = "41 171 204 255"
 			blueButtonActiveAntiAliasedCorners = "41 171 204 100"
-			blueButtonActiveDarkenedCorners = "41 171 204 191"	
+			blueButtonActiveDarkenedCorners = "41 171 204 191"
 
 		// yellow
 		yellowButtonHighlight = "51 214 255 255"
@@ -137,7 +125,6 @@
 		yellowButtonGradientEnd = "43 182 217 255"
 		yellowButtonAntiAliasedCorners = "43 182 217 100"
 		yellowButtonDarkenedCorners = "43 182 217 191"
-
 			// yellow Hover
 			yellowButtonHoverHighlight = "97 223 255 255"
 			yellowButtonHoverHighlightAntiAliasing = "71 218 255 255"
@@ -145,15 +132,13 @@
 			yellowButtonHoverGradientEnd = "48 204 242 255"
 			yellowButtonHoverAntiAliasedCorners = "48 204 242 100"
 			yellowButtonHoverDarkenedCorners = "48 204 242 191"
-
 			// yellow Active
 			yellowButtonActiveHighlight = "43 182 217 255"
 			yellowButtonActiveHighlightAntiAliasing = "43 182 217 255"
 			yellowButtonActiveGradientStart = "43 182 217 255"
 			yellowButtonActiveGradientEnd = "41 171 204 255"
 			yellowButtonActiveAntiAliasedCorners = "41 171 204 100"
-			yellowButtonActiveDarkenedCorners = "41 171 204 191"	
-
+			yellowButtonActiveDarkenedCorners = "41 171 204 191"
 
 		// grey
 		greyButtonHighlight = "66 66 66 255"
@@ -162,7 +147,6 @@
 		greyButtonGradientEnd = "45 46 45 255"
 		greyButtonAntiAliasedCorners = "45 46 45 100"
 		greyButtonDarkenedCorners = "45 46 45 191"
-
 			// grey Hover
 			greyButtonHoverHighlight = "79 79 79 255"
 			greyButtonHoverHighlightAntiAliasing = "73 73 73 255"
@@ -170,15 +154,13 @@
 			greyButtonHoverGradientEnd = "58 59 58 255"
 			greyButtonHoverAntiAliasedCorners = "58 59 58 100"
 			greyButtonHoverDarkenedCorners = "58 59 58 191"
-
 			// grey Active
 			greyButtonActiveHighlight = "43 43 43 255"
 			greyButtonActiveHighlightAntiAliasing = "43 43 43 255"
 			greyButtonActiveGradientStart = "43 43 43 255"
 			greyButtonActiveGradientEnd = "33 33 33 255"
 			greyButtonActiveAntiAliasedCorners = "33 33 33 100"
-			greyButtonActiveDarkenedCorners = "33 33 33 191"	
-
+			greyButtonActiveDarkenedCorners = "33 33 33 191"
 
 
 		// Some trickery to use different styling of Notifications in-game or out.
@@ -188,6 +170,5 @@
 		notificationDarkGreyEnd="darkGreyEnd"
 		notificationLighterGrey="lighterGrey"
 		notificationHighlight="greyHighlight"
-
 	}
 }

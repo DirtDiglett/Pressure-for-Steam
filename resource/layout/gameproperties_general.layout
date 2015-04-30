@@ -6,7 +6,7 @@
 			y=30
 			width=120
 		}
-		
+	
 		place {
 			control=HomePageLabel
 			start=HomePageLabelName
@@ -14,7 +14,7 @@
 			margin-right=23
 			dir=right
 		}
-		
+	
 		place {
 			control=DeveloperLabelName
 			start=HomepageLabelName
@@ -22,7 +22,7 @@
 			width=120
 			dir=down
 		}
-		
+	
 		place {
 			control=DeveloperLabel
 			start=DeveloperLabelName
@@ -30,7 +30,7 @@
 			margin-right=23
 			dir=right
 		}
-		
+	
 		place {
 			control=ManualLabelName
 			start=DeveloperLabelName
@@ -38,7 +38,7 @@
 			width=120
 			dir=down
 		}
-		
+	
 		place {
 			control=ManualLabel,NoManualLabel
 			start=ManualLabelName
@@ -46,7 +46,7 @@
 			margin-right=23
 			dir=right
 		}
-		
+	
 		place {
 			control=Divider1
 			start=ManualLabelName
@@ -55,14 +55,14 @@
 			margin-right=23
 			dir=down
 		}
-		
+	
 		place {
 			control=EnableOverlayCheck
 			start=Divider1
 			y=16
 			dir=down
 		}
-		
+	
 		place {
 			controls=LaunchOptionsButton,CreateDesktopShortcutButton
 			start=EnableOverlayCheck
@@ -72,7 +72,7 @@
 			dir=down
 			spacing=16
 		}
-		
+	
 		place {
 			controls=ExternalSignupLabel,ExternalSignupButton
 			width=0

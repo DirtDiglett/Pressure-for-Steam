@@ -7,42 +7,41 @@
 				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
 		}
-		
-		ItemListStyle { 
-			minimum-height="150" 
+	
+		ItemListStyle {
+			minimum-height="150"
 		}
-		
+	
 		BalanceStyle {
 			render_bg {
 				// background fill
 				0="gradient( x0 - 6, y0, x1 + 6, y1, green, darkestGreen)"
-                
+               
 				// lines around
 				1="fill( x0 - 5, y0 - 1, x1 + 5, y0    , lightestGreen )"  // top
 				2="fill( x0 - 5, y1    , x1 + 5, y1 + 1, darkestGreen )"  // bottom
 			}
 			textcolor=darkestGrey
 		}
-		
-		TotalAmtStyle { 
-			minimum-width="70" 
+	
+		TotalAmtStyle {
+			minimum-width="70"
 		}
-		
-		AuthBtnStyle { 
-			minimum-width="100" 
+	
+		AuthBtnStyle {
+			minimum-width="100"
 		}
 	}
-
 	layout {
-		region { 
-			name="main" 
-			width="max" 
-			height=250 
+		region {
+			name="main"
+			width="max"
+			height=250
 			margin-left=10
 			margin-top=40
-			margin-right=10 
+			margin-right=10
 		}
-		
+	
 		region {
 			name="total"
 			region="main"
@@ -51,42 +50,39 @@
 			height=24
 			margin-right=25
 		}
-		
+	
 		region {
 			name="buttons"
 			align="bottom"
 			width="max"
 			height=51
 		}
-
-		place { 
-			control=BalanceDescLabel,BalanceLabel 
+		place {
+			control=BalanceDescLabel,BalanceLabel
 			align=right
-			y=6 
+			y=6
 			margin-right=75
 			dir=left
-			spacing=10 
+			spacing=10
 		}
-
-		place { 
-			control=AuthorizeButton,CancelButton 
-			region=buttons 
-			align=right 
+		place {
+			control=AuthorizeButton,CancelButton
+			region=buttons
+			align=right
 			height=24
-			margin-top=14 
+			margin-top=14
 			margin-right=14
 			dir=left
-			spacing=8 
+			spacing=8
 		}
-
-		place { 
-			control=ReasonLabel,ItemList 
-			region=main 
+		place {
+			control=ReasonLabel,ItemList
+			region=main
 			width=max
-			dir=down 
+			dir=down
 			spacing=15
 		}
-		
+	
 		place {
 			control=TotalLabel,TotalAmtLabel
 			region=total
@@ -95,7 +91,7 @@
 			dir=left
 			spacing=15
 		}
-		
+	
 		place {
 			control=ConvertedTotalLabel,ConvertedTotalAmtLabel
 			region=total

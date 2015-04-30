@@ -6,7 +6,7 @@
 			inset="8 0 0 0"
 		}
 	}
-	
+
 	layout {
 		region {
 			name=bottom
@@ -14,7 +14,7 @@
 			height=51
 			width=max
 		}
-		
+	
 		place {
 			control=StatusLabel
 			region=bottom

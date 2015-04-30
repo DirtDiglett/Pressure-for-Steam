@@ -1,23 +1,22 @@
 "resource/layout/screenshotdeletedialog.layout" {
 	styles {
 		ScreenshotDeleteDialog {
-			minimum-width=325	
+			minimum-width=325
 			minimum-height=180
-			
+		
 			render_bg {
 				1="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				2="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				3="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
-
 				4="image(x0+20, y0+45, x1, y1, resource/icon_warning)"
 			}
 		}
-		
+	
 		label {
 			textcolor=red
 		}
 	}
-	
+
 	layout {
 		place {
 			control="Warning"
@@ -26,7 +25,7 @@
 			width=0
 			height=0
 		}
-		
+	
 		place {
 			control="WarningText"
 			x=90
@@ -35,21 +34,21 @@
 			margin-right=15
 			dir=right
 		}
-		
+	
 		place {
 			control="DeleteFromCloudBox"
 			start="WarningText"
 			dir=down
 		}
-		
+	
 		region {
 			name="bottom"
 			align=bottom
 			width=max
 			height=51
 		}
-		
-		place { 
+	
+		place {
 			control="Delete,Cancel"
 			region=bottom
 			align=right

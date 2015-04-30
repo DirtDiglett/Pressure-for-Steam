@@ -8,20 +8,18 @@
 			}
 		}
 	}
-
 	layout {
-		region { 
+		region {
 			name="bottom"
 			align=bottom
 			height=51
 		}
-
 		place {
 			control=Label1
 			width=0
 			height=0
 		}
-		
+	
 		place {
 			control=HTML
 			y=26
@@ -30,13 +28,12 @@
 			dir=down
 			margin-bottom=51
 		}
-
 		place {
 			control=Label2
 			start=HTML
 			y=8
 		}
-		
+	
 		place {
 			control="AcceptButton,DeclineButton"
 			region=bottom

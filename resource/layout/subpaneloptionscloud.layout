@@ -2,18 +2,18 @@
 	layout {
 		place {
 			control=SteamCloudInfo
-			x=18 
+			x=18
 			y=21
 			width=max
-			margin-right=43	
+			margin-right=43
 		}
-		place { 
-			controls="EnableCloudCheck, EnableScreenshotsCheck" 
+		place {
+			controls="EnableCloudCheck, EnableScreenshotsCheck"
 			start=SteamCloudInfo
 			y=8
 			width=max
-			dir=down 
+			dir=down
 			spacing=-4
-		}		
+		}	
 	}
 }

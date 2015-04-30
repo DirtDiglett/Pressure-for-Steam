@@ -3,30 +3,26 @@
 		button {
 			textcolor=blue
 			font-style="none"
-
 			render_bg{}
 		}
-	
+
 		CGamesListPanel {
 			render {}
 			render_bg {}
 		}
-
 		emptylisttext {
 			textcolor="red"
 			font-size=15
 font-size=14 [$LINUX]
 			inset="16 100 16 16"
-
 			render_bg {
 				0="fill(x0,y0,x0+320,y1, black90)"
 				1="image(x0+130, y0+30, x1, y1, resource/icon_warning)"
 			}
 		}
-
 		CGamesPage_Details {
 			bgcolor="darkestGrey"
-			
+		
 			render {
 				0="gradient_horizontal(x0+320,y0,x0+326,y1, black40, none)"
 				1="gradient(x0,y0,x1,y0+6, black40, none)"
@@ -36,42 +32,38 @@ font-size=14 [$LINUX]
 				0="image_scale(x0,y0,x1,y1, graphics/gamebg)"
 			}
 		}
-
 		// Some overrides for our listpanel
 		"GamesPage_Details ListPanel" {
 			bgcolor="blue"
 			padding-left=4
 			padding-right=0
 			inset="0 1 0 -2"
-			
+		
 			render {}
 			render_bg {}
 		}
-		
+	
 		"GamesPage_Details ListPanelInterior" {
 			bgcolor="darkestGrey"
 			inset="0 0 0 0"
 			minimum-width=320
-
 			render {}
 			render_bg {}
 		}
-		
-			"GamesPage_Details ListPanelInterior:scrollbar" {     
+	
+			"GamesPage_Details ListPanelInterior:scrollbar" {    
 				bgcolor=none
 				inset="0 0 0 0"
-
 				render {}
 				render_bg {}
 			}
-
 		"GamesPage_Details ListPanelDragger" {
 			bgcolor="none"
-			
+		
 			render {}
 			render_bg {}
 		}
-		
+	
 		"GamesPage_Details ListPanelColumnHeader" {
 			bgcolor="none"
 			font-size=11
@@ -79,10 +71,10 @@ font-size=14 [$LINUX]
 			font-weight=800
 			inset="0 0 0 0"
 			minimum-height=1
-			
+		
 			render {}
 		}
-		
+	
 		"CGamesListPanel ListPanelColumnSelectButton" {
        		bgcolor=none
        		padding-left=0
@@ -90,7 +82,7 @@ font-size=14 [$LINUX]
        		inset="13 2 0 0"
        		minimum-width=8
        		minimum-height=8
-        	
+        
         	render {
           		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
         	}
@@ -98,7 +90,7 @@ font-size=14 [$LINUX]
         		0="fill(x0,y0,x1,y1, darkestGrey)"
         	}
 		}
-			
+		
 			"CGamesListPanel ListPanelColumnSelectButton:selected" {
 	       		bgcolor=none
 	       		padding-left=0
@@ -106,22 +98,20 @@ font-size=14 [$LINUX]
 	       		inset="13 2 0 0"
 	        	minimum-width=8
 	       		minimum-height=8
-
 	        	render {
 	          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog_active )"
-	        	}   
+	        	}  
 	        	render_bg {
 	        		0="fill(x0,y0,x1,y1, darkestGrey)"
 	        	}
-			}		
-		
-		
-		headerimage { 
+			}	
+	
+	
+		headerimage {
 			bgcolor="0 0 0 0"
-			
+		
 			render {}
 		}
-
 		rightcolumnheadertext {
 			bgcolor=black65
 			textcolor=none
@@ -129,7 +119,7 @@ font-size=14 [$LINUX]
 			font-size=0
 			inset="0 0 0 0"
 		}
-		
+	
 			rightcolumnheadertext-red {
 				bgcolor=black65
 				textcolor=none
@@ -137,7 +127,7 @@ font-size=14 [$LINUX]
 				font-size=0
 				inset="0 0 0 0"
 			}
-	
+
 			rightcolumnheadertext-green {
 				bgcolor=black65
 				textcolor=none
@@ -145,7 +135,7 @@ font-size=14 [$LINUX]
 				font-size=0
 				inset="0 0 0 0"
 			}
-	
+
 			rightcolumnheadertext-blue {
 				bgcolor=black65
 				textcolor=none
@@ -153,7 +143,6 @@ font-size=14 [$LINUX]
 				font-size=0
 				inset="0 0 0 0"
 			}
-
 		rightcolumnlink {
 			textcolor=blue
 			font-size=15
@@ -161,15 +150,14 @@ font-size=14 [$LINUX]
 			font-style=normal
 			font-family=basefont
 		}
-
 			rightcolumnlink:hover {
 				textcolor=lightestBlue
 			}
-	
+
 			rightcolumnlink:disabled {
 				textcolor=darkestBlue
 			}
-		
+	
 		rightcolumntag {
 			textcolor=Label
 			font-family=basefont
@@ -181,14 +169,12 @@ font-size=14 [$LINUX]
 			padding-bottom=0
 			inset="-9 0 0 0"
 		}
-		
+	
 		DetailsBorderPanel {
 			bgcolor = none
-
 			render {}
 		}
 	}
-
 	layout {
 		region {
 			name="list"
@@ -198,7 +184,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin-bottom=-5
 		}
-		
+	
 		region {
 			name="details"
 			x=320
@@ -211,7 +197,7 @@ font-size=14 [$LINUX]
 			margin-bottom=0
 			overflow=scroll-vertical
 		}
-		
+	
 		region {
 			name="headertext"
 			region=details
@@ -221,7 +207,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin-right=-15
 		}
-		
+	
 		region {
 			name="rightcolumn"
 			region=details
@@ -233,7 +219,7 @@ font-size=14 [$LINUX]
 			margin-bottom=1
 			overflow=allow-vertical
 		}
-		
+	
 		region {
 			name="detailsbody"
 			region=details
@@ -243,7 +229,6 @@ font-size=14 [$LINUX]
 			margin-right=-15
 			overflow=allow-vertical
 		}
-
 		// Empty list text, which goes across regions
 		place {
 			control=emptylisttext
@@ -252,7 +237,6 @@ font-size=14 [$LINUX]
 			width=320
 			height=max
 		}
-
 		// Games list on left
 		place {
 			control=GamesList
@@ -261,8 +245,8 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
-		
-		place { 
+	
+		place {
 			control=welcomedetails
 			region=detailsbody
 			dir=down
@@ -274,9 +258,9 @@ font-size=14 [$LINUX]
 			margin-bottom=10
 			spacing=30
 		}
-		
+	
 		// Body contents
-		place { 
+		place {
 			control=friendsdetails,achievementsdetails,dlcdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
 			region=detailsbody
 			start=welcomedetails
@@ -285,11 +269,11 @@ font-size=14 [$LINUX]
 			margin-left=0
 			margin-top=0
 			margin-right=0
-			margin-bottom=10 
+			margin-bottom=10
 			dir=down
 			spacing=30
 		}
-		
+	
 		// Details border
 		place {
 			control=DetailsBorder
@@ -298,8 +282,7 @@ font-size=14 [$LINUX]
 			width=0
 			height=0
 		}
-
-		// Main header image is at the bottom, then one of three color overlays is visible, and finally the 
+		// Main header image is at the bottom, then one of three color overlays is visible, and finally the
 		// horizontal fade out gradient on the top.  We have an a and a b image, which we crossfade between.
 		place {
 			control=headerimagea
@@ -308,7 +291,7 @@ font-size=14 [$LINUX]
 			width=1024
 			height=550
 		}
-		
+	
 		place {
 			control=headerimageb
 			x=320
@@ -316,7 +299,6 @@ font-size=14 [$LINUX]
 			width=1024
 			height=550
 		}
-
 		// Header text
 		place {
 			control=gametitleheader
@@ -328,7 +310,7 @@ font-size=14 [$LINUX]
 			margin-right=20
 			dir=down
 		}
-		
+	
 		place {
 			control=gamesubheader
 			region=headertext
@@ -340,30 +322,30 @@ font-size=14 [$LINUX]
 			margin-right=20
 			dir=down
 		}
-		
+	
 		place {
 			control=tagslabel
 			region=headertext
 			width=max
 			height=150
 		}
-		
+	
 		// Community Hub, Forums, Related Groups, Store Page, DLC, Community Guides, Write Review
-		region	{ 
-			name="gamedata" 
+		region	{
+			name="gamedata"
 			region=headertext
 			x=20
 			y=120
-			width=max 
-			height=50 
+			width=max
+			height=50
 		}
-		
+	
 		place {
 			control=gamehublink,forumlink,ogglink,storelink,guideslink,dlclink,cdkeylink
 			region="gamedata"
 			spacing=20
 		}
-		
+	
 		place {
 			control=achievementslink,manuallink,newslink,supportlink,recommendlink,linkslabel,*taglink,edittagslink,sendguestpasslink,guidelink
 			region="gamedata"
@@ -374,6 +356,6 @@ font-size=14 [$LINUX]
 			margin-right=0
 			dir=right
 			spacing=2
-		}		
+		}	
 	}
 }

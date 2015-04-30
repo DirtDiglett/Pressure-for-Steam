@@ -2,13 +2,13 @@
 	layout {
 		place {
 			controls="FamilySharingTextState"
-			x=18 
+			x=18
 			y=21
 			width=max
 			margin-right=43
 			dir=down
 		}
-		
+	
 		place {
 			controls="AuthorizeDeviceButton,DeauthorizeDeviceButton,ManageSharingButton"
 			start=FamilySharingTextState
@@ -18,7 +18,7 @@
 			dir=down
 			spacing=8
 		}
-		
+	
 		place {
 			controls="BorrowersList"
 			start=ManageSharingButton
@@ -28,14 +28,13 @@
 			margin-right=43
 			dir=down
 		}
-		
+	
 		place {
 			controls="ShowNotificationsCheck"
 			start=BorrowersList
 			y=8
 			dir=down
 		}
-
 		place {
 			control="Divider1"
 			start=ShowNotificationsCheck
@@ -44,7 +43,6 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			controls="FamilyOptionsText"
 			start=Divider1
@@ -53,7 +51,7 @@
 			margin-right=43
 			dir=down
 		}
-		
+	
 		place {
 			controls="ManageOptionsButton"
 			start=FamilyOptionsText
@@ -62,7 +60,6 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			control="FamilySharingTitle,FamilyOptionsTitle,BorrowersLabel"
 			width=0

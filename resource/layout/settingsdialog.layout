@@ -4,12 +4,12 @@
 			bgcolor=none
 			minimum-width="740"
 			minimum-height="585"
-			
+		
 			render {
 				1="gradient(x0,y0+26, x1, y0+31, black40, none)"
 				2="fill(x0+195,y0+25,x1-1,y0+26, darkGrey)"
 			}
-			render_bg {     
+			render_bg {    
 
       	 		0="fill( x0, y0, x1, y1, darkestGrey )" //grey
   				3="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -17,13 +17,13 @@
 				5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
 		}
-		
+	
 		PropertySheet {
 			bgcolor=none
 			minimum-width="540"
 			minimum-height="505"
 			inset="10 32 0 0"
-			
+		
 			render {
 				0="fill(x0-4,y0+26,x0+10,y1, lightGreyEnd)"
 				1="fill(x0-5,y0+26,x0-4,y1, darkGrey)"
@@ -33,7 +33,6 @@
 				0="fill(x0-10,y0+26,x1-1,y1, lightGreyEnd)"
 			}
 		}
-
 		"SettingsList" {
 			bgcolor=darkestGrey
 			font-size=18
@@ -41,97 +40,89 @@
 			inset="-4 -14 0 0"
 			minimum-width="200"
 			minimum-height="525"
-
 			render {
 				0="fill(x0, y0, x1, y0+1, darkestGrey)"
 			}
 		}
-		
+	
 		ListPanel {
 			render{}
 			render_bg{}
 		}
-		
-		ListPanelInterior {     
-			bgcolor="none" 
+	
+		ListPanelInterior {    
+			bgcolor="none"
 			textcolor="white"
 			font-size=14
 			inset="3 0 0 0"
-
 	   		render {}
 			render_bg {}
-		} 
-		
+		}
+	
 		ListPanelSectionHeader {
 			minimum-height=1
 			render{}
 			render_bg{}
 		}
-
 		"Page ListPanelSectionHeader" {
 		minimum-height=1
 			render {}
 			render_bg {}
 		}
-
 		ListPanelColumnHeader {
 			minimum-height=1
 			render{}
 			render_bg{}
 		}
-
 		"Page ListPanelColumnHeader" {
 		minimum-height=1
 			render {}
 			render_bg {}
 		}
 	}
-	
+
 	layout {
-		region { 
-			name="buttons" 
+		region {
+			name="buttons"
 			align="bottom"
-			width=max 
-			height=51 
+			width=max
+			height=51
 		}
-		
-		region { 
+	
+		region {
 			name="body"
 			margin-left=0
 			margin-top=-20
 			margin-right=-1
 			margin-bottom=51
-		}		
+		}	
 
-		place { 
+		place {
 			control="settingslist,sheet"
-			region=body 
-			width=max 
-			height=max 
-			spacing=0 
+			region=body
+			width=max
+			height=max
+			spacing=0
 		}
-
-		place { 
+		place {
 			control="settingslist"
 			margin-left=1
 			margin-top=25
 			margin-right=0
 		}
-
-		place { 
+		place {
 			control="sheet"
 			margin-left=200
 			margin-top=0
 		}
-
 		place {
 			control="okbutton,cancelbutton"
 			region="buttons"
 		    align=right
-		    width=92 
+		    width=92
 			height=28
 			margin-top=12
-			margin-right=14 
+			margin-right=14
 			spacing=8
 		}
 	}

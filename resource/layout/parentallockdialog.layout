@@ -3,27 +3,24 @@
 		ParentalLockDialog {
 			minimum-width = 400
 			minimum-height = 250
-			
+		
 			render_bg {
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
 		}
-
 		Hey {
 			font-size=18
 		}
-
 		Key {
 			bgcolor=none
 			inset="20 0 0 0"
 			image="graphics/keybg"
-
 			render_bg {}
 		}
 	}
-	
+
 	layout {
 		region {
 			name="top"
@@ -32,7 +29,7 @@
 			margin=10
 			margin-top=40
 		}
-		
+	
 		region {
 			name="middle"
 			y=100
@@ -40,14 +37,13 @@
 			height=150
 			margin=10
 		}
-		
+	
 		region {
 			name="bottom"
 			align=bottom
 			width=max
 			height=51
 		}
-
 		place {
 			control="KeyImage"
 			region="top"
@@ -58,7 +54,7 @@
 			height=max
 			margin-top=-30
 			margin-right=0
-		}	
+		}
 
 		place {
 			control="Instructions"
@@ -66,7 +62,7 @@
 			align=center
 			width=max
 		}
-		
+	
 		place {
 			control="OK,Cancel" region="bottom"
 			align=right

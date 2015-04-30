@@ -5,38 +5,34 @@
 			font-size=18
 			font-family=basefont
 		}
-
 		GamesGridIconBorder {
 			bgcolor="none"
 			inset="0 0 0 0"
-
 		    render {
 		    	1="image( x0, y0, x1, y1, steam/cached/icon_game_frame )"
 		    }
 		}
-					
+				
 		GGPlaceholderBG {
 			bgcolor=none
 		}
-
 		"GameItem_installed GamesGridPlaceholder" {
 			textcolor="grey50"
 		}
 	}
-
 	layout {
 		region {
 			name=icon_region
 			width=max
-			height=max 
+			height=max
 		}
-		
+	
 		place {
 			control="background"
 			width=max
 			height=max
 		}
-		
+	
 		place {
 			control="appname"
 			align=center
@@ -44,7 +40,7 @@
 			margin=12
 			margin-top=14
 		}
-		
+	
 		place {
 			control="noappimage_border"
 			region="icon_region"
@@ -54,9 +50,9 @@
 			width=34
 			height=34
 			margin-top=48
-			
-		}
 		
+		}
+	
 		place {
 			control="noappimage"
 			region="icon_region"

@@ -2,7 +2,6 @@
 	colors {
 		contributiontext="166 188 206 255"
 	}
-
 	styles {
 		headertext {
 			textcolor=Text
@@ -13,7 +12,7 @@ font-size=14 [$LINUX]
 			padding-bottom=1
 			padding-top=0
 		}
-		
+	
 		headertext2 {
 			textcolor=contributiontext
 			font-size=16
@@ -24,7 +23,6 @@ font-size=14 [$LINUX]
 			padding-top=0
 		}
 	}
-
 	layout {
 		region {
 			name="subheaderlabels"
@@ -33,8 +31,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 		}
-
-		place { 
+		place {
 			control=contributioncount,contributionlabel
 			region=subheaderlabels
 			align=right

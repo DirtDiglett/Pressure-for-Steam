@@ -5,32 +5,28 @@
 				0="fill( x0, y0, x1, y1, black75)"
 			}
 		}
-
 		topbar {
 			textcolor=white
 			font-family=headerfont
 			font-size=48
 		}
-
 		OverlayURLLabel {
 			image=graphics/overlay/close
 		}
-		
+	
 			OverlayURLLabel:hover {
 				image=graphics/overlay/close_hover
 			}
-
 		bottomfade {}
 	}
-
 	layout {
-		region { 
+		region {
 			name=bottom
 			align=bottom
 			width=max
 			height=240
 		}
-		
+	
 		region {//unnecessary now that clock/etc moved to overlaydesktop_lores?
 			name=top
 			align=left
@@ -39,21 +35,19 @@
 			width=max
 			height=100
 		}
-		
+	
 		place {
 			control=gamename
 			align=left
 			x=10
 			y=4
 		}
-
 		place {
 			control=CloseButton
 			align=right
 			y=10
 			margin-right=10
 		}
-
 		place {
 			control=PowerMeterDim,BottomFadePanel,TopFadePanel,HotkeyLabel,HotkeyExplain
 			width=0

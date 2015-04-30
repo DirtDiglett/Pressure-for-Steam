@@ -1,15 +1,13 @@
 "steam/cached/SettingsSubInterface.res" {
 	styles {}
-
 	layout {
 		place {
 			control="Label4"
-			x=18 
+			x=18
 			y=21
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			control="LanguageCombo"
 			start=Label4
@@ -18,14 +16,12 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			control="TranslationLabel"
 			start=LanguageCombo
 			y=16
 			dir=down
 		}
-
 		place {
 			control="Divider1"
 			start=TranslationLabel
@@ -34,14 +30,12 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			control="Label2"
 			start=Divider1
 			y=16
 			dir=down
 		}
-
 		place {
 			control="FavoriteWindowCombo"
 			start=Label2
@@ -50,14 +44,12 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			control="Label3"
 			start=FavoriteWindowCombo
 			y=16
 			dir=down
 		}
-
 		place {
 			control="SkinCombo"
 			start=Label3
@@ -66,7 +58,6 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			controls=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck
 			start=SkinCombo
@@ -74,14 +65,12 @@
 			dir=down
 			spacing=-4
 		}
-
 		// Remove option for linux
 		place {
 			control=H264HWAccelCheck
 			width=0
 			height=0
 		}
-
 		// Readd button for Windows
 		place [$WINDOWS] {
 			controls=H264HWAccelCheck
@@ -89,7 +78,7 @@
 			y=-4
 			dir=down
 		}
- 
+
 		// Start divider at UrlBarCheck for Linux
 		place {
 			control="Divider2"
@@ -99,7 +88,6 @@
 			margin-right=43
 			dir=down
 		}
-
 		// Start divider at H264HWAccelCheck for Windows
 		place [$WINDOWS] {
 			control="Divider2"
@@ -109,7 +97,6 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			controls=NotifyAvailableGamesCheck
 			start=Divider2
@@ -118,7 +105,6 @@
 			margin-right=43
 			dir=down
 		}
-
 		place {
 			control="SetJumpListOptionsButton"
 			start=NotifyAvailableGamesCheck
@@ -127,7 +113,6 @@
 			height=28
 			dir=down
 		}
-
 		place {
 			control="Label1"
 			width=0

@@ -1,6 +1,5 @@
 "resource/layout/dialogsettings_managesecuritywizard.layout" {
 	controls {}
-
  	layout {
 		region {
 			name=bottom
@@ -8,7 +7,7 @@
 			height=51
 			width=max
 		}
-		
+	
 		place {
 			control="PrevButton,NextButton,CancelButton,FinishButton"
 			region=bottom
@@ -19,5 +18,5 @@
 			margin-right=14
 			spacing=8
 		}
-	}	
+	}
 }

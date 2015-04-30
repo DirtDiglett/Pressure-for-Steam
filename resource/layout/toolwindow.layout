@@ -2,91 +2,72 @@
 	colors {
 		PropertySheet.FlashTabColor "orange"
 	}
-
 	styles {
 		ToolWindow {
 			render_bg {
 				// Creates the top section
 				0="gradient( x0+1, y0+1, x1-1, y0 + 60, grey, lightGreyEnd )"
-
 				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
-
 				3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
 				4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
-
 				5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
 				6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
-
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
 			}
 		}
-
 		Button {
 			bgcolor="none"
 			textcolor="none"
 			minimum-width=27
 			minimum-height=24
-
 			render_bg {
 				0="image( x0+3, y0+7, x1, y1, graphics/new_tab)"
 			}
 		}
-
 		Button:hover {
 			render_bg {
 				0="image( x0+3, y0+7, x1, y1, graphics/new_tab_hover)"
 			}
 		}
-
 		Button:active {
 			render_bg {
 				0="image( x0+3, y0+7, x1, y1, graphics/new_tab_active)"
 			}
 		}
-
 		Button:selected {
 			render_bg {
 				0="image( x0+3, y0+7, x1, y1, graphics/new_tab_active)"
 			}
 		}
-
 		MenuButton {
 			bgcolor=none
 			minimum-width=24
 			minimum-height=24
 			padding-right=8
 			inset-top=5
-
 			textcolor=yellow
-
 			render_bg {}
 		}
-
 		TabMenuButton {
 			inset-top=5
 		}
-
 		TabMenuButtonFlash {
 			render {}
-
 			render_bg {
 				0="image(x1-9,y0+3,x1-2,y0+11, graphics/alert)"
 			}
 		}
-
 		TabMenuItemFlash {
 			textcolor=darkestGrey
 			font-style=none
-
 			render_bg {
 				0="fill(x0+1,y0,x1-1,y1, orange)"
 				1="fill(x0+1,y0,x0+2,y1, lightestOrange)"
 				2="fill(x1-2,y0,x1-1,y1, lightestOrange)"
 			}
 		}
-
 		PageTab {
 			textcolor = lightestGrey
 			font-family=basefont
@@ -97,7 +78,6 @@
 font-size=14 [$LINUX]
 			font-style="outerglow"
 			minimum-height=30
-
 			render_bg {
 				1="image(x0,y0,x0+3,y0+28,graphics/tabs/inactive/left)"
 				2="image(x1,y0,x1+3,y0+28, graphics/tabs/inactive/right)"
@@ -105,10 +85,8 @@ font-size=14 [$LINUX]
 				3="image_scale(x0+3,y0,x1,y1-2, graphics/tabs/inactive/inner)"
 			}
 		}
-
 		PageTab:selected {
 			textcolor=white
-
 			render_bg {
 				0="fill(x0+1,y0+27,x1-1,y0+30, grey)" // Overlaps the highlight
 				1="fill(x0+1, y0+1, x1+2, y1, grey)"
@@ -121,7 +99,6 @@ font-size=14 [$LINUX]
 			}
 		}
 	}
-
 	layout {
 		place [!$OSX] {
 			control="frame_minimize"
@@ -130,7 +107,6 @@ font-size=14 [$LINUX]
 			height=20
 			width=29
 		}
-
 		place [!$OSX] {
 			control=frame_maximize
 			start=frame_minimize
@@ -139,7 +115,6 @@ font-size=14 [$LINUX]
 			width=26
 		}
 
-
 		place [!$OSX] {
 			control="frame_close"
 			start=frame_maximize
@@ -147,13 +122,11 @@ font-size=14 [$LINUX]
 			height=20
 			width=48
 		}
-
 		place [!$OSX] {
 			control="frame_captiongrip"
 			width=max
 			height=50
 		}
-
 		place {
 			control="ToolWindowSheet"
 			x=0

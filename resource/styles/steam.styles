@@ -1,4 +1,4 @@
-steam.styles { 
+steam.styles {
  	include "includes/colors.styles"
  	include "includes/settings.styles"
  	include "includes/scrollbars.styles"
@@ -7,13 +7,13 @@ steam.styles {
  	include "includes/notifications.styles"
  	include "includes/html.styles"
  	include "includes/friendsandchat.styles"
- 	include "includes/listpanels.styles"	
+ 	include "includes/listpanels.styles"
  	include "includes/tooltip.styles"
  	//include "includes/window_controls.styles"
  	include [$OSX] "includes/osxframebuttons.styles"
  	include [!$OSX] "includes/windowsframebuttons.styles"
- 
-colors {	
+
+colors {
 	// Friends List colors (Having them in an include seems to break it)
 	Friends.InGameColor	   "green"
 	Friends.OnlineColor	   "blue"
@@ -24,41 +24,36 @@ colors {
 	Friends.SectionHeader	 "Label"
 	Friends.NoAvatarOver	  "Text"
 	Friends.IgnoredColor	  "red"
-
 	MessageBox.ButtonHeight		24
-
 	ChatDialog.URLColor	   "blue"
 	ChatOwnTextColor		"white"
 	ChatDialog.HistoryColor	"greyHighlight"
 	ChatGradientTop		 "darkestGrey"
-	ChatGradientBottom		"darkestGrey"	
- 
-	// DEFAULT STEAM BELOW:	   
+	ChatGradientBottom		"darkestGrey"
+
+	// DEFAULT STEAM BELOW:	  
 	launch0 = "none"
 	launch1 = "none"
 	launch2 = "none"
 	launch3 = "none" // Temp Set to none until using
-
 	almostBlack="darkestGrey"
-
 	offwhite="white"
 	dullgreen="darkestGreen"
 	maize="203 191 87 255"
 	darkblue="darkestBlue"
-
 	darkred="red"
 	darkpurple="64 0 64 255"
-	
+
 	dark_blue "darkestBlue"
 	med_blue "blue"
 	bg_blue "blue"
-	
+
 	// control colors
 	bordercolor="133 130 113 255"
 	darkcorner="77 73 71 255"
 	buttontext=Text
 	buttontextactive=Text
-	
+
 	// new control colors
 	ButtonFace="105 102 99 200"
 	ButtonFace2="92 89 86 255" // for use in main client list panel column header, some button states
@@ -68,7 +63,7 @@ colors {
 	ButtonFaceActive="105 102 99  240"  // not sure what this state is...
 	ButtonFaceFocus="105 102 99  240"  //  keyboard focus
 	ButtonFaceActiveFocus="105 102 99  255"  // this is the default choice
-	
+
 	ButtonBorder="112 109 105 255"
 	ButtonBorderSubtle="82 79 77 255"
 	ButtonBorderPage="128 124 120 255"
@@ -77,90 +72,84 @@ colors {
 	ButtonBorderActive="140 135 129 255"
 	ButtonBorderFocus="153 147 141 255"
 	ButtonBorderFocusSubtle="128 122 117 255"
-	
+
 	Text="209 207 205 255"
 	Text2="184 180 176 255"
 	TextDisabled="102 99 96 255"
 	TextHover="229 226 223 255"
 	TextSelected="242 239 235 255"
 	TextentrySelected="240 237 235 235" // color of any selected text
-	TextSelectedBG="64 90 128 255" // background color of any selected text 
+	TextSelectedBG="64 90 128 255" // background color of any selected text
 	TextGlowHover="128 124 120 255"
 	TextGlowSelected="171 169 166 255"
 	TextGlowHoverSm="128 123 120 255"
 	TextGlowSelectedSm="145 142 140 255"
-	
+
 	NavLabel="158 153 149 255"
 	Label="255 255 255 255"
 	Label2="115 111 108 255"
 	LabelDisabled="138 135 132 255"
 	LabelFocus="199 196 194 255"
-	
+
 	ScrollGlyph="204 198 192 255"  // the color of the scroll bar arrows
 	ScrollGlyphDisabled="77 74 72 255"
 	ScrollGlyphFocus="242 242 242 255"
-	
+
 	ScrollBG="77 74 72 255" // the color of the scroll bar gutter
-	
+
 	HeaderClient="57 53 49 255" // the color of the List box header in the main client window
 	HeaderDialog="95 92 90 255" // the color of the list box header in other windows
-	
+
 	TitleBar="86 81 78 50"
 	TitleBarFocus="176 169 162 50"
-	
+
 	Focus="49 66 89 255"  		// background color of any selected menu or list item
 	Focus2="85 121 171 255"		// background color of view buttons and anything else in focus that needs more 'punch'
-	Focus3="62 92 133 255"		// background color of highlighted friends 
+	Focus3="62 92 133 255"		// background color of highlighted friends
 	FocusGrid="85 117 161 240"  	// background color of any grid item
 	Highlight="82 119 171 120" 	// same as focus
 	Highlight1="204 185 88 255"	// installing hover color
-	Highlight2="181 164 78 255" 	// installing color 
+	Highlight2="181 164 78 255" 	// installing color
 	Highlight3="173 69 71 255"		// red for errors, blocked, etc.
-	Highlight5="77 103 140 255" 	// blue 
+	Highlight5="77 103 140 255" 	// blue
 	Highlight5a="83 117 166 255" 	// lighter version of highlight5
 	Highlight5b="59 75 97 255" 	// as highlight5 but darker, for non-focused window borders
-
-	BackgroundStartSubtle="20 20 20 155" 
+	BackgroundStartSubtle="20 20 20 155"
 	BackgroundStartSubtle="31 31 31 45" [$OSX]
 	BackgroundStartSubtlest="23 22 20 100"
 	BackgroundStart="23 22 20 180"
 	BackgroundStartOpaque="36 35 34 255"
-	
+
 	ClientBG="25 25 25 255"
 	DialogBG="25 25 25 255"
-
 	DarkClientBG="36 35 34 255"
 	DarkDialogBG="56 54 53 255"
 	DarkClientBGTransparent="36 35 34 19"
 	DarkDialogBGTransparent="56 55 53 170"
-
 	GameDetailsBlueTransparent="blue"
 	GameDetailsGreenTransparent="green"
 	GameDetailsRedTransparent="red"
-
 	GameDetailsBlue="blue"
 	GameDetailsGreen="green"
 	GameDetailsRed="red"
-
 	PropertySheetBG="74 72 70 255"
 	InteriorColor="64 62 60 255"
-	
+
 	DialogBorder="119 117 115 255" // border color around any dialog
-	
+
 	FillBG1="64 62 60 255" //gradient colors
 	FillBG2="71 69 67 255"
-	
+
 	MenuBG1="92 89 86 255" //gradient colors
 	MenuBG2="61 59 58 255"
-	
+
 	Divider="darkGrey"
 	SuperDivider="61 61 61 255"
 	DarkImageBorder="47 48 43 255"
 	DarkImageOverlay="0 0 0 80"
-
 	// colors pulled from steamscheme.res
 	"ClayBG"	  "70 70 70 255"
-	"ClayButtonBG"	  "87 88 88 255"		
+	"ClayButtonBG"	  "87 88 88 255"	
 	"ClayEnabled"	 "85 88 82 255"
 	"ClayKeyFocus"	  "89 92 77 255"
 	"ClayMouseDown"	 "85 85 85 255"
@@ -180,9 +169,8 @@ colors {
 	"GrayBG"	  "77 73 71 255"
 	"GrayBG2"	 "39 37 35 255"
 	"TempGradientTop" "53 52 51 255"
-
 	ListPanel.TextColor	   grey
-	ListPanel.BgColor	   none  
+	ListPanel.BgColor	   none 
 	ListPanel.SelectedTextColor	 white
 	ListPanel.SelectedBgColor	 blue
 	ListPanel.SelectedOutOfFocusBgColor   blue
@@ -191,106 +179,95 @@ colors {
 	ListPanel.EmptyListInfoTextColor	lightestGrey
 	ListPanel.PerPixelScrolling	 1
 	ListPanel.PostSectionLeading	10
-
 	RichText.InsetX		 1
 	RichText.InsetY		 1
-
 	TextEntry.IMEBGColor		"225 225 225 255"
 	TextEntry.IMEFGColor		"black"
-		
-	GiftOnlyInfo.ImagePanelColor  "GrayBG"	
+	
+	GiftOnlyInfo.ImagePanelColor  "GrayBG"
 
 } // END OF COLORS
-
 styles {
 	Notification {
 		render_bg {
 				0="fill(x0,y0,x1,y1, notificationDarkestGrey)"
-				
+			
 				1="gradient(x0+1,y0+2,x1-1,y1,notificationGrey,notificationLightGreyEnd)"
-				
+			
 				// Single pixel corner fills
 				2="fill(x0+1,y0+1,x0+2,y0+2, notificationDarkGreyEnd)" // Top Left
 				3="fill(x0+1,y1-1,x0+2,y1, notificationDarkGreyEnd)" // Bottom Left
 				4="fill(x1-2,y0+1,x1-1,y0+2, notificationDarkGreyEnd)" // Top Right
 				5="fill(x1-2,y1-1,x1-1,y1, notificationDarkGreyEnd)" // Bottom Right
-				
+			
 				// Anti-aliased grey highlight
 				6="fill(x0+2,y0+1,x0+3,y0+2, notificationLighterGrey)" // Top Left - Highest
 				7="fill(x0+1,y0+2,x0+2,y0+3, notificationLighterGrey)" // Top Left - Lowest
 				8="fill(x1-3, y0+1, x1-2, y0+2, notificationLighterGrey)" // Top Right - Highest
 				9="fill(x1-2,y0+2,x1-1,y0+3, notificationLighterGrey)" // Top Right - Lowest
-				
+			
 				// Single Pixel Highlight
 				10="fill(x0+3,y0+1,x1-3,y0+2, notificationHighlight)"
 		}
 	}
 
-
 	FriendsList {
 		bgcolor=none
-
 		render_bg{}
 	}
-	
-	downarrow {
-		image="graphics/icon_down_default"	
-	}
 
+	downarrow {
+		image="graphics/icon_down_default"
+	}
 		downarrow:hover {
 	  			image="graphics/icon_down_hover"
 		}
-
 	uparrow {
-		image="graphics/icon_up_default"	
+		image="graphics/icon_up_default"
 	}
-
 		uparrow:hover {
-		image="graphics/icon_up_hover"	
-		}
-	
-	rightarrow {
-		image="graphics/icon_right_default"   
-	}
-		
-		rightarrow:hover {
-			image="graphics/icon_right_hover"	
+		image="graphics/icon_up_hover"
 		}
 
+	rightarrow {
+		image="graphics/icon_right_default"  
+	}
+	
+		rightarrow:hover {
+			image="graphics/icon_right_hover"
+		}
 	Divider {
 		bgcolor="none"
-
 		render {
 			0="fill(x0,y0,x1,y0+1, darkGrey)"
 			1="fill(x0,y0+1,x1,y0+2, grey50)"
 		}
-	}	
-	
+	}
+
 	Frame {
 		bgcolor="darkGrey" // Only affects the login window and Preferences from testing.
-		
+	
 		render {
 			// Create the 1px border around every window.
-			0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"	 
-			1="fill( x1 - 1, y0, x1, y1, darkestGrey )" 
+			0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"	
+			1="fill( x1 - 1, y0, x1, y1, darkestGrey )"
 			2="fill( x0, y0, x1, y0 + 1, darkestGrey )"
 			3="fill( x0, y0, x0 + 1, y1, darkestGrey )"
 		}
-	} 
-	
+	}
+
 		Frame:FrameFocus {
 			bgcolor="darkGreyEnd"
-
 			render {
 				// Create the 1px border around every window.
-				0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"	 
-				1="fill( x1 - 1, y0, x1, y1, darkestGrey )" 
+				0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"	
+				1="fill( x1 - 1, y0, x1, y1, darkestGrey )"
 				2="fill( x0, y0, x1, y0 + 1, darkestGrey )"
 				3="fill( x0, y0, x0 + 1, y1, darkestGrey )"
 			}
-		} 
-	
-	
+		}
+
+
 
 	// Frames Titlebar when NOT in focus. (Doesn't seem to affect the main client)
 	FrameTitle {
@@ -305,30 +282,29 @@ font-size=14 [$LINUX]
 		padding-right="0" [$OSX]
 		inset="2 -5 0 0"
 		inset="0 4 0 0" [$OSX]
-		
+	
 		render_bg {
 			0="gradient( x0, y0, x1, y0+24, grey, lightGreyEnd)"
-				
+			
 			1="fill(x0+1, y0, x0+2, y0+1, bottomDarkPixels)" // Top Left Dark Pixel
 			2="fill(x1-2, y0, x1-1, y0+1, bottomDarkPixels)" // Top Right Dark Pixel
-			
+		
 			3="fill(x0+2, y0, x0+3, y0+1, greyHighlightFake)" // Top Left Fake Anti-Aliased
 			4="fill(x0+1, y0+1, x0+2, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
-			
+		
 			5="fill(x1-3, y0, x1-2, y0+1, greyHighlightFake)" // Top Right Fake Anti-Aliased
 			6="fill(x1-2, y0+1, x1-1, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
-			
+		
 			// Create the 1px Highlight on top
 			7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
-		  	
+		  
 		  	8="gradient(x0,y0+24, x1, y0+31, black25, none)"
-		  	
+		  
 		  	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		  	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
 		  	11="fill(x1-1,y0,x1,y0+24, darkestGrey)"
 		}
 	}
-
 		FrameTitle:framefocus {
 			bgcolor="none"
 			textcolor="white"
@@ -338,19 +314,19 @@ font-size=14 [$LINUX]
 			font-weight=400
 			inset="2 -5 0 0"
 			inset="0 4 0 0" [$OSX]
-			
+		
 			render_bg {
 				0="gradient( x0, y0, x1, y0+24, grey, lightGreyEnd)"
-					
+				
 				1="fill(x0+1, y0, x0+2, y0+1, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0, x1-1, y0+1, bottomDarkPixels)" // Top Right Dark Pixel
-				
+			
 				3="fill(x0+2, y0, x0+3, y0+1, greyHighlightFake)" // Top Left Fake Anti-Aliased
 				4="fill(x0+1, y0+1, x0+2, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
-		
+	
 				5="fill(x1-3, y0, x1-2, y0+1, greyHighlightFake)" // Top Right Fake Anti-Aliased
 				6="fill(x1-2, y0+1, x1-1, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
-				
+			
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 			  	8="gradient(x0,y0+24, x1, y0+31, black25, none)"
@@ -358,19 +334,18 @@ font-size=14 [$LINUX]
 			  	11="fill(x1-1,y0,x1,y0+24, darkestGrey)"
 			}
 		}
-	   		
+	   	
 	GraphPanel {
 		bgcolor=none
 		textcolor=Highlight5
 		inset="0 -3 0 0"
-
 		render_bg {
 			// lines around
 			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-			
+		
 			// single pixel fills in the corners
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
 			6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
@@ -386,14 +361,13 @@ font-size=14 [$LINUX]
 			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
 		}
 	}
-	
-	// Used by the WebPanels (Store, Community, etc.)
-	HTML { 
-		bgcolor="none"
 
-		render_bg {} 
+	// Used by the WebPanels (Store, Community, etc.)
+	HTML {
+		bgcolor="none"
+		render_bg {}
 	}
-	
+
 	Label {
 		bgcolor="none"
 		selectedtextcolor="truewhite"
@@ -403,16 +377,16 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 		font-weight=400
 	}
-   
+  
 
-	
+
 	"GameColumn_BigText" {
 		textcolor="green"
 		font-family=basefont
 		font-size=17
 		font-weight=700
 	}
-	
+
 	MainNav {
 		bgcolor="none"
 		selectedtextcolor="trueWhite"
@@ -422,11 +396,10 @@ font-size=14 [$LINUX]
 		font-weight=700
 		font-style="uppercase"
 	}
-
 	Menu {
 		bgcolor="white"
 		inset="0 5 0 5"
-		
+	
 		render {}
 		render_bg {
 			0="gradient(x0, y0, x1, y1, grey, lightGreyEnd)"
@@ -434,14 +407,13 @@ font-size=14 [$LINUX]
 			2="fill(x1-1, y0, x1, y1, darkGreyEnd)" // Right
 			3="fill(x0, y0, x1, y0+1, darkGreyEnd)" // Top
 			4="fill(x0, y1-1, x1, y1, darkGreyEnd)" // Bottom
-			
+		
 			5="fill(x0+1, y0+1, x0+2, y1-1, white10)" // Left
 			6="fill(x1-2, y0+1, x1-1, y1-1, white10)" // Right
 			7="fill(x0+1, y0+1, x1-1, y0+2, greyHighlight)" // Top
 			8="fill(x0+2, y1-2, x1-2, y1-1, white10)" // Bottom
-		}	
+		}
 	}
-
 	MenuBar {
 		bgcolor=dialogbg
 		padding-left=6
@@ -449,35 +421,35 @@ font-size=14 [$LINUX]
 		padding-right=1
 		padding-bottom=-2
 	}
-	
+
 	"Page MenuBar" {
 		bgcolor=none
-	}	
-	
+	}
+
 	"MenuBar MenuButton" {
 		textcolor="buttonborder"
 		padding-right=-2
 		inset="-2 0 2 0"
 	}
-	
+
  	"MenuBar MenuButton:frameFocus" {
 		textcolor="labeldisabled"
 	}
-	
+
 	"MenuBar MenuButton:frameFocus:hover" {
 		bgcolor=none
 		textcolor="texthover"
-				
+			
 		render_bg {}
 	}
-	
+
 	"MenuBar MenuButton:frameFocus:selected" {
 		bgcolor=none
 		textcolor="texthover"
-				
+			
 		render_bg {}
 	}
-	
+
 	MenuButton {
 		bgcolor="none"
 		textcolor="scrollglyph"
@@ -485,23 +457,22 @@ font-size=14 [$LINUX]
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-		
-		render_bg {}   
-	}  
-   
+	
+		render_bg {}  
+	} 
+  
 		MenuButton:hover {
 			textcolor="white"
 		}
-	    
+	   
 		MenuButton:selected {
 			textcolor="white"
 		}
-		
+	
 	EmoticonMenuItemStyle {
 		render {}
 		render_bg {}
 	}
-
 	MenuItem {
 		font-family=basefont
 		textcolor  = white
@@ -514,64 +485,60 @@ font-size=14 [$LINUX]
 		font-outerglow-color="darkestGrey"
 		font-outerglow-offset=1
 		font-outerglow-filtersize=3
-		
+	
 		render_bg {}
 	}
-   
+  
 		MenuItem:selected {
 			bgcolor="none"
 			textcolor="white"
 		}
-	
+
 		MenuItem:hover {
 			textcolor=trueWhite
 			font-style="none"
-			
+		
 			render_bg {
 				0="gradient(x0+1, y0+1, x1-1, y1, blue, darkestBlue)"
 				1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
-			}	
+			}
 		}
-	
+
 		MenuItem:disabled {
 			shadowtextcolor=none
 			textcolor="lightestGrey"
 			font-style="none"
 		}
-		
+	
 			MenuItem:disabled:hover {
 				shadowtextcolor=none
 				textcolor="labeldisabled"
 			}
-   
+  
 	MenuSeparator {
 		bgcolor=none
 		textcolor="none"
 		inset="0 0 0 0"
-		
+	
 		render {
 			0="fill(x0,y0+5,x1,y0+6, darkGrey)"
 			1="fill(x0+1,y0+6,x1-1,y0+7, grey50)"
 		}
 	}
-
 	Page {
 		bgcolor=none
-		
+	
 		render {}
 	}
-
 	"CSteamRootDialog Page" {
 		bgcolor="none"
-
 		render_bg {}
 	}
-
 	"Page RadioButtonList" {
 		bgcolor="DialogBG"
 	}
-	
-// USING HAX TO MAKE PAGES WITH TABS PRETTIER :D	    
+
+// USING HAX TO MAKE PAGES WITH TABS PRETTIER :D	   
 	CInstallAppWizard {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -579,7 +546,6 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-
 	CGamePropertiesDialog {
 		render_bg {
 			0="fill( x0, y0, x1, y1, lightGreyEnd )"
@@ -590,10 +556,10 @@ font-size=14 [$LINUX]
 			5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	  
+	 
 	COverlaySettingsDialog {
 		bgcolor=none
-		
+	
 		render_bg {
 			0="fill( x0, y0, x1, y1, lightGreyEnd)"
 			1="fill( x0, y0, x1, y0+55, grey50 )"
@@ -603,7 +569,7 @@ font-size=14 [$LINUX]
 			5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CPlayersDialog {
 		render_bg {
 			0="fill( x0, y0, x1, y1, lightGreyEnd )"
@@ -613,8 +579,8 @@ font-size=14 [$LINUX]
 			4="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
-	} 
-	
+	}
+
 	CSetNicknameDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -622,7 +588,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CFriendNotificationOptionsDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -630,7 +596,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CGameLaunchParametersDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -638,27 +604,27 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CClanEventDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
-		
+	
 			3="image(x1-120, y0+38, x1, y1, graphics/notifications/announcement)"
 		}
 	}
-	
+
 	CEditTagsDialog {
 		bgcolor=darkGreyEnd
-		
+	
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CServerBrowserDialog {
 		render_bg {
 			0="fill( x0, y0, x1, y1, lightGreyEnd )"
@@ -669,17 +635,17 @@ font-size=14 [$LINUX]
 			5="gradient( x0+1, y1-58, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CManageSecurityWizard {
 		bgcolor=darkGreyEnd
-		
+	
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CSteamCacheWorkDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -687,7 +653,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CSetCustomImageDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -695,7 +661,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CBackupWizard {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -703,7 +669,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CDialogCheckForUpdates {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -711,7 +677,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CRegisterCDKeyWizard {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -719,7 +685,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CAddShortcutDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -727,7 +693,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CEditFriendsGroupsDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -735,7 +701,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CLaunchOptionsDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -743,7 +709,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CDialogGameInfo {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -751,7 +717,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CChangeContactEmailWizard {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -759,7 +725,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CChangePasswordWizard {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -767,7 +733,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CChooseBetaDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -775,7 +741,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CValidateContactEmailWizard {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -783,7 +749,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CSettingsSubStreamingAdvancedHost {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -791,7 +757,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CSettingsSubStreamingAdvancedClient {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -799,7 +765,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CSetJumplistOptions {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -807,7 +773,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CContentManagmentDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -815,7 +781,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CSoundSystemSelect {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -823,7 +789,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	
+
 	CSyncConflictDialog {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -831,7 +797,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	  
+	 
 // END OF HAX
 	PageTab {
 		bgcolor=none
@@ -842,41 +808,38 @@ font-size=14 [$LINUX]
 		font-style="normal"
 		font-weight=400
 		inset="0 0 0 0"
-		
-		render_bg {			
+	
+		render_bg {		
 			0="image(x0,y0,x0+3,y1, graphics/pagetabs/inactive/left)"
 			1="image_scale(x0+3,y0,x1-3,y0+23, graphics/pagetabs/inactive/inner)"
 			2="image(x1-3, y0, x1, y1, graphics/pagetabs/inactive/right)"
 		}
 	}
-
 	 	PageTab:hover {
 			bgcolor=none
 			textcolor="white"
-			
+		
 			render_bg {
 				0="image(x0,y0,x0+3,y1, graphics/pagetabs/hover/left)"
 				1="image_scale(x0+3,y0,x1-3,y0+23, graphics/pagetabs/hover/inner)"
 				2="image(x1-3, y0, x1, y1, graphics/pagetabs/hover/right)"
 			}
 		}
-
 	PageTab:selected {
 		bgcolor="none"
 		textcolor="trueWhite"
-		
+	
 		render_bg {
 			0="gradient(x0+1,y0+2,x1-1,y0+25, grey, lightGreyEnd)"
 			1="image(x0,y0,x0+3,y1, graphics/pagetabs/active/left)"
 			2="image_scale(x0+3,y0,x1-3,y0+24, graphics/pagetabs/active/inner)"
 			3="image(x1-3, y0, x1, y1, graphics/pagetabs/active/right)"
-		}	
+		}
 	}
-
 		PageTab:selected:hover {
 			bgcolor="none"
 			textcolor="trueWhite"
-			
+		
 			render_bg {
 				0="gradient(x0+1,y0+2,x1-1,y0+25, lighterGrey, lightGreyEnd)"
 				1="image(x0,y0,x0+3,y1, graphics/pagetabs/active/left)"
@@ -884,19 +847,17 @@ font-size=14 [$LINUX]
 				3="image(x1-3, y0, x1, y1, graphics/pagetabs/active/right)"
 			}
 		}
-	  
+	 
 	PageTab:Focus {
 		textcolor="Texthover"
 	}
-
 	"PageDragFrame PageTab" {
 		font-size=15
 font-size=14 [$LINUX]
 		font-style="normal"
 		font-style="none"
 	}
-
-	Panel { 
+	Panel {
 		bgcolor="none"
 		textcolor="white"
 		font-family=basefont
@@ -904,17 +865,15 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 		font-weight=400
 	}
-
 		ProgressBox {
 			minimum-height=128
 			minimum-width=384
-
 			render {
 				0="image( x0, y0, x1, y0, graphics/login_splash )"
 			}
 			render_bg {}
 		}
-		
+	
 		"ProgressBox Label" {
 			textcolor=none
 			font-size=15
@@ -923,22 +882,21 @@ font-size=14 [$LINUX]
 			font-weight=300
 			inset="0 0 0 10"
 		}
-		
+	
 		"ProgressBox FrameCloseButton" {
 			render_bg {}
 		}
-		
+	
 		"ProgressBox Button" {
 			bgcolor=none
 			textcolor=none
-			
+		
 			render_bg {}
 		}
-
 		"ProgressBox ProgressBar" {
 			font-size=1
 		}
-	
+
 	ProgressBar {
 		bgcolor="none"
 		selectedtextcolor="white"
@@ -948,29 +906,29 @@ font-size=14 [$LINUX]
 		font-family=basefont
 		font-size=15
 font-size=14 [$LINUX]
-		
+	
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-	
+
 			// TOP
 			1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
 			2="image_scale(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
 			3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
-			
+		
 			// LEFT
 			4="image_scale(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
-		  	
+		  
 			// RIGHT
 			5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
-		  	
+		  
 			// BOTTOM
 			6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
 			7="image_scale(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
 			8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
-		  	
-		}   
+		  
+		}  
 	}
-	
+
 	"Page ProgressBar" {
 		bgcolor="none"
 		selectedtextcolor="white"
@@ -980,55 +938,55 @@ font-size=14 [$LINUX]
 		font-family=basefont
 		font-size=15
 font-size=14 [$LINUX]
-		
+	
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-	
+
 			// TOP
 			1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
 			2="image_scale(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
 			3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
-		  	
+		  
 			// LEFT
 			4="image_scale(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
-		  	
+		  
 			// RIGHT
 			5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
-		  	
+		  
 			// BOTTOM
 			6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
 			7="image_scale(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
-			8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"  	
-		}  
+			8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"  
+		} 
 	}
-	
+
 	PropertyPage {
 		bgcolor="PropertySheetBG"
 	}
-	
+
 	"CFriendsDialog PropertySheet" {
 		bgcolor="none"
 	}
-		
+	
 	RichText {
-		selectedtextcolor="trueWhite"	
-		selectedbgcolor = blue	
+		selectedtextcolor="trueWhite"
+		selectedbgcolor = blue
 		textcolor="white"
 		font-family=basefont
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
 		inset="0 -1 0 0"
-		
+	
 		render_bg {
 			-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
-		}	 
+		}	
 	}
-		 
+		
 	RichTextInterior {
 		bgcolor=none
 	}
-	
+
 	"RichText url" {
 		selectedtextcolor="white"
 		textcolor="blue"
@@ -1036,32 +994,31 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 		font-style=underline
 	}
-	
+
 		"RichText url:hover" {
 			textcolor="lightestBlue"
 		}
-	
+
 	"CFriendPanel RichText URL" {
 		textcolor="blue"
 		font-style=underline
 		font-size=15
 font-size=14 [$LINUX]
 	}
-	
+
 	// style of bold text in a rich text control
 	"RichText bold" {
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=1000
 	}
-	
+
 	"RichText emphasis" {
 		font-size=15
 font-size=14 [$LINUX]
 		font-style=italic
 	}
 
-	
 	SectionedListPanel {
 		bgcolor="none"
 		selectedtextcolor="TextSelected"
@@ -1071,14 +1028,14 @@ font-size=14 [$LINUX]
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-		
+	
 		render_bg {
 			// lines around
 			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, red )"  // top
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-		
+	
 			// single pixel fills in the corners
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
 			6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
@@ -1092,62 +1049,59 @@ font-size=14 [$LINUX]
 			16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
 			17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
 			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-
 			0="gradient( x0 + 1, y0 + 1, x1, y0 + 1, orange, BackgroundStartOpaque)"
 		}
-		inset="1 -1 1 1"  
+		inset="1 -1 1 1" 
 	}
-	
+
 	SectionedlistpanelCollapser {
 		bgcolor=none
 		inset="2 1 0 0"
 		image="graphics/icon_collapse"
-
 		render_bg {}
-	} 
-	
+	}
+
 		SectionedListPanelCollapser:hover {
 			image="graphics/icon_collapse_over"
 		}
-	
+
 		SectionedListPanelCollapser:selected {
 			image="graphics/icon_expand"
 		}
-	
+
 			SectionedListPanelCollapser:selected:hover {
 				image="graphics/icon_expand_over"
 			}
-	
+
 	StatusLabel {
 		font-family=basefont
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-		textcolor="labelfocus"	  
+		textcolor="labelfocus"	 
 	}
-
 		StatusLabel:hover {
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
 			font-weight=400
-			textcolor="white"  
-		}   
+			textcolor="white" 
+		}  
 
 	TreeNode {
 		bgcolor=none
-		
+	
 		render_bg {}
 	}
-	
+
 	TreeNodeImage {
 		bgcolor=none
 	}
-	
+
 	TreeViewSubPanel {
 		bgcolor=none
 	}
-  
+ 
 	TreeNodeText {
 		bgcolor=none
 		selectedtextcolor="TextSelected"
@@ -1156,21 +1110,20 @@ font-size=14 [$LINUX]
 		font-family=basefont
 		font-size=15
 font-size=14 [$LINUX]
-	
+
 		render {}
 		render_bg {}
 	}
-  
+ 
 	TreeView {
 		render_bg {
 			-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
-
 			// lines around
 			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
-			
+		
 			// single pixel fills in the corners
 			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
@@ -1184,30 +1137,27 @@ font-size=14 [$LINUX]
 			16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
 			17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
 			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-		}	 
+		}	
 	}
-
 	// Steam-specific styles
 	GameColumnHeaderFavorites {
 		image="steam/cached/fav_remove"
 	}
-	
+
 	CGamesListFavoritesToggle {
 		image="steam/cached/fav_addTo"
 	}
-	
+
 		CGamesListFavoritesToggle:hover {
 			image="steam/cached/fav_addTo_ovr"
 		}
-	
+
 		CGamesListFavoritesToggle:selected {
 			image="steam/cached/fav_remove"
 		}
-
 			CGamesListFavoritesToggle:selected:hover {
 				image="steam/cached/fav_remove_ovr"
 			}
-
 	WrapPanel {
 		bgcolor=none
 		selectedtextcolor="TextSelected"
@@ -1217,15 +1167,15 @@ font-size=14 [$LINUX]
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-		inset="1 -1 1 1"  
-	
+		inset="1 -1 1 1" 
+
 		render_bg {
 			// lines around
 			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-			
+		
 			// single pixel fills in the corners
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
 			6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
@@ -1239,41 +1189,40 @@ font-size=14 [$LINUX]
 			16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
 			17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
 			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-			
+		
 			// background gradient
 			8="gradient( x0 + 1, y0 + 1, x1, y0 + 240, propertysheetbg, DarkDialogBG )"
 			9="fill( x0, y0 + 240, x1, y1, DarkDialogBG )"
 		}
 	}
-   
+  
 		gamedetails-headerlabel {
 			textcolor="white"
 			font-size="36"
 			font-family=headerfont
 			font-weight=100
 		}
-	
+
 		gamedetails-headerlabel-red {
 			textcolor="white"
 			font-size="36"
 			font-family=headerfont
 			font-weight=100
 		}
-		
+	
 		gamedetails-headerlabel-green {
 			textcolor="white"
 			font-size="36"
 			font-family=headerfont
 			font-weight=100
 		}
-	
+
 		gamedetails-headerlabel-blue {
 			textcolor="white"
 			font-size="36"
 			font-family=headerfont
 			font-weight=100
 		}
-
 	CConsoleHistory {
 		selectedtextcolor="white"
 		textcolor="grey"
@@ -1281,8 +1230,8 @@ font-size=14 [$LINUX]
 		font-family="Menlo" [$OSX]
 		font-size=15
 font-size=14 [$LINUX]
-	}	
-	
+	}
+
 	console_text_error {
 		selectedtextcolor="trueWhite"
 		selectedbgcolor="blue"
@@ -1292,9 +1241,9 @@ font-size=14 [$LINUX]
 font-size=15
 font-size=14 [$LINUX]
 	}
-	
+
 	console_text {
- 		selectedtextcolor="trueWhite"	
+ 		selectedtextcolor="trueWhite"
 		selectedbgcolor="blue"
 		textcolor="white"
  		font-family="Lucida Console"
@@ -1302,7 +1251,7 @@ font-size=14 [$LINUX]
 	  	font-size=15
 font-size=14 [$LINUX]
 	}
-	
+
 	// Controls the HOLD button on Voice Chat...
 	Chat_MenuButton_withChrome {
 		bgcolor=none
@@ -1317,55 +1266,55 @@ font-size=14 [$LINUX]
 		padding-left=3
 		padding-top=2
 		padding-bottom=1
-		
+	
 		render_bg {
 			// background fill
 			0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, grey, lightGreyEnd )" // Background Gradient
-					
+				
 			// Dark Borders around
 			1="fill( x0, y0 + 2, x0 + 1, y1 - 2, darkestGrey )" // Left
 			2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
 			3="fill( x1 - 1, y0 + 2, x1, y1 - 2, darkestGrey )" // Right
 			4="fill( x0 + 2, y1 - 1, x1 - 2, y1, darkestGrey )" // Bottom
-	
+
 			// Dark Grey Background Corners & Fake Anti-Aliasing
 			// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 			6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
+		
 			// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 			8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 			9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
+		
 			// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 			11="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, darkCornerPixels )" // Darkest Pixel
 			12="fill( x1 - 1, y1 - 2, x1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			13="fill( x1 - 2, y1 - 1, x1 - 1, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
+		
 			// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 			14="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, darkCornerPixels )" // Darkest Pixel
 			15="fill( x0, y1 - 2, x0 + 1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			16="fill( x0 + 1, y1 - 1, x0 + 2, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+			
 			// Single Pixel Highlight Line.
 			17="fill( x0 + 3, y0 + 1, x1 - 3, y0 + 2, greyHighlight )"
-			
+		
 			// Fake Anti-Aliasing for the Single Pixel Highlight
-			18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, greyHighlightFake )" // Top Left		
-			19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, greyHighlightFake )" // Top Left		
+			18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, greyHighlightFake )" // Top Left	
+			19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, greyHighlightFake )" // Top Left	
 			20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, greyHighlightFake )" // Top Right
 			21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, greyHighlightFake )" // Top Right
-			
+		
 			// Fake Anti-Aliasing for the bottom corners.
 			22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, bottomDarkPixels )" // Bottom Right
 			23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, bottomDarkPixels )" // Bottom Right
 			24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, bottomDarkPixels )" // Bottom Left
-			25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, bottomDarkPixels )" // Bottom Left			
-		}	
+			25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, bottomDarkPixels )" // Bottom Left		
+		}
 	}
-	
+
 		Chat_MenuButton_withChrome::disabled {
 			bgcolor=none
 			textcolor="grey"
@@ -1376,63 +1325,60 @@ font-size=14 [$LINUX]
 			padding-left=3
 			padding-top=2
 			padding-bottom=1
-			
+		
 			render_bg {
 				// background fill
 				0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, lightGreyEnd, darkGreyEnd )" // Background Gradient
-						
+					
 				// Dark Borders around
 				1="fill( x0, y0 + 2, x0 + 1, y1 - 2, darkestGrey )" // Left
 				2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
 				3="fill( x1 - 1, y0 + 2, x1, y1 - 2, darkestGrey )" // Right
 				4="fill( x0 + 2, y1 - 1, x1 - 2, y1, darkestGrey )" // Bottom
-		
+	
 				// Dark Grey Background Corners & Fake Anti-Aliasing
 				// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 				6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+			
 				// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 				9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+			
 				// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 				11="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, darkCornerPixels )" // Darkest Pixel
 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				13="fill( x1 - 2, y1 - 1, x1 - 1, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-				
+			
 				// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 				14="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, darkCornerPixels )" // Darkest Pixel
 				15="fill( x0, y1 - 2, x0 + 1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				16="fill( x0 + 1, y1 - 1, x0 + 2, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-
 				// Single Pixel Highlight Line.
 				17="fill( x0 + 3, y0 + 1, x1 - 3, y0 + 2, grey25 )"
-				
+			
 				// Fake Anti-Aliasing for the Single Pixel Highlight
-				18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, grey10 )" // Top Left		
-				19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, grey10 )" // Top Left		
+				18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, grey10 )" // Top Left	
+				19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, grey10 )" // Top Left	
 				20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, grey10 )" // Top Right
 				21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, grey10 )" // Top Right
-				
+			
 				// Fake Anti-Aliasing for the bottom corners.
 				22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, bottomDarkPixelsDisabled )" // Bottom Right
 				23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, bottomDarkPixelsDisabled )" // Bottom Right
 				24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, bottomDarkPixelsDisabled )" // Bottom Left
 				25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, bottomDarkPixelsDisabled )" // Bottom Left
 			}
-		}	
-	
+		}
+
    	TabPageCloseButton {
    		padding-right=16
    	}
-
 	SuperNavMenu {
 		padding-left=8
 		padding-right=8
-
 		render {}
 		render_bg {
 			1="fill( x0, y0+0, x0+1, y1, black )"
@@ -1440,7 +1386,6 @@ font-size=14 [$LINUX]
 			2="fill( x0, y1-1, x1, y1, black )"
 		}
 	}
-
 	SuperNavMenuItem {
 		bgcolor=none
 		font-size=15
@@ -1448,28 +1393,24 @@ font-size=14 [$LINUX]
 		font-style="uppercase"
 		padding=4
 	}
-
 	SuperNavMenuItem:selected {
 		textcolor="white"
 	}
-
 		SuperNavMenuItem:hover {
 			textcolor="white"
 		}
-
 	"SuperNavMenuDivider" {
 		textcolor="none"
-
 		render {
 			0="fill( x0+6, y0, x1-6, y0+1, black )"
 			1="fill( x0+6, y0+1, x1-6, y0+2, red )"
 		}
 	}
-	
+
 	"NotifyRemoteClientTitle" {
 		textcolor="LabelDisabled"
 	}
-	
+
 	"NotifyRemoteClientInfo" {
 		textcolor="176 172 165 255"
 	}

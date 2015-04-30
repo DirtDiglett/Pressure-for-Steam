@@ -2,7 +2,6 @@
 	styles {
 		frame {
 			bgcolor=darkGrey
-
 			render_bg {
 				//0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 				//1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
@@ -11,7 +10,7 @@
 			}
 		}
 	}
-	
+
 	layout {
 		region {
 			name=bottom
@@ -19,7 +18,6 @@
 			width=max
 			height=51
 		}
-
 		place {
 			control="InfoLabel,InfoLabel2,HTML"
 			y=36
@@ -30,7 +28,6 @@
 			spacing=10
 			margin-bottom=51
 		}
-
 		place {
 			control="RestartNowButton,Button1"
 			region=bottom

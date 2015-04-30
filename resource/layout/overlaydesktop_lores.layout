@@ -5,30 +5,25 @@
 			font-size=15
 font-size=14 [$LINUX]
 		}
-
 			sidemenu:hover {
 				textcolor=lightestBlue
 				font-size=15
 font-size=14 [$LINUX]
 			}
-
 		topbar {
 			textcolor=white
 			font-family=headerfont
 			font-size=48
 		}
-
 		clocksuffix {
 			textcolor=white
 			font-family=headerfont
 			font-size=48
 		}
-
 		timeStrings {
 			textcolor=white
 		}
 	}
-
 	layout {
 		region {
 			name=overlay
@@ -39,7 +34,6 @@ font-size=14 [$LINUX]
 			margin-right=10
 			margin-bottom=10
 		}
-
 		region {
 			name="detailpanels"
 			region=overlay
@@ -48,7 +42,6 @@ font-size=14 [$LINUX]
 			height=210
 			margin-bottom=100
 		}
-
 		region {
 			name="taskbar"
 			region=overlay
@@ -56,7 +49,6 @@ font-size=14 [$LINUX]
 			width="max"
 			height=75
 		}
-
 		region {
 			name="topbar"
 			region=overlay
@@ -64,7 +56,6 @@ font-size=14 [$LINUX]
 			height=50
 			margin-right=60
 		}
-
 		place {
 			controls="BroadcastDetailPanel"
 			region=detailpanels
@@ -72,7 +63,6 @@ font-size=14 [$LINUX]
 			height=240
 			spacing=10
 		}
-
 		place {
 			controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton"
 			region=overlay
@@ -82,21 +72,18 @@ font-size=14 [$LINUX]
 			spacing=10
 		}
 
-
 		place {
 			control=clock,clocksuffix
 			region=topbar
 			align=top-center
 			y=56
 		}
-
 		place {
 			control="SessionText,TwoWeeksText,ForeverText"
 			y=45
 			x=10
 			dir=down
 		}
-
 		place {
 			control="CloseButton"
 			region=overlay

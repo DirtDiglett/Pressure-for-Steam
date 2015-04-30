@@ -9,7 +9,7 @@
 			margin-left=8
 			margin-right=8
 		}
-	
+
 		place {
 			control="AddServerButton,RefreshQuickButton,RefreshButton,ConnectButton"
 			region="bottom"
@@ -18,7 +18,6 @@
 			margin-right=12
 			spacing=8
 		}
-
 		place {
 			control="Filter,FilterString"
 			region="bottom"
@@ -27,6 +26,6 @@
 			margin-left=4
 			spacing=8
 			end-right="AddServerButton"
-		}		
+		}	
 	}
 }
