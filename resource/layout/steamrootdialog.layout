@@ -433,25 +433,27 @@ font-size=14 [$LINUX]
 		place [!$OSX] {
 			control="frame_minimize"
 			align=right
-			margin-right=82
+			margin-right=81
 			height=20
-			width=29
+			width=28
 		}
+
 		place [!$OSX] {
 			control=frame_maximize
 			start=frame_minimize
 			dir=right
 			height=20
-			width=26
+			width=27
 		}
 
 		place [!$OSX] {
 			control="frame_close"
-			start=frame_maximize
-			dir=right
+			margin-right=6
+			align=right
 			height=20
 			width=48
 		}
+
 		region {
 			name=bottom
 			align=bottom
