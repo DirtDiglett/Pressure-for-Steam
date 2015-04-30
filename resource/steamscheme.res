@@ -35,9 +35,9 @@ Scheme {
 			frame_maximize {
 				xpos	r57
 				xpos	43 [$OSX]
-				ypos	7
+				ypos	1
 				ypos	3 [$OSX]
-				wide	28
+				wide	27
 				tall	20
 				visible 0 [!$OSX]
 				PinCorner	1
