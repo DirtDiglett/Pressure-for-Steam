@@ -417,6 +417,7 @@ font-size=14 [$LINUX]
 			}
 			
 			inbox_button_active:hover [!$OSX] {
+				textcolor=lightestOrange
 				render {}
 				render_bg {
 					1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
@@ -609,7 +610,7 @@ font-size=14 [$LINUX]
 		place [$OSX] {
 			control="account_balance" 
 			align=right
-			height=12
+			height=13
 			margin-top=26 
 			margin-right=71
 			dir=right
@@ -618,8 +619,8 @@ font-size=14 [$LINUX]
 		place [$OSX] {
 			control="InboxButton" 
 			align=right  
-			y=55
-			height=12
+			y=54
+			height=13
 			margin-right=71
 			dir=right
 		}
@@ -640,7 +641,7 @@ font-size=14 [$LINUX]
 			control="online_friends" 
 			align=right
 			y=40
-			height=12
+			height=13
 			margin-right=71
 			dir=right
 		}
@@ -659,8 +660,8 @@ font-size=14 [$LINUX]
 		place [!$OSX] { 
 			control="InboxButton" 
 			align=right  
-			y=63
-			height=12
+			y=62
+			height=13
 			margin-right=59
 			dir=right
 		}
@@ -668,8 +669,8 @@ font-size=14 [$LINUX]
 		place [!$OSX] { 
 			control="account_balance" 
 			align=right 
-			height=12
-			margin-top=32 
+			height=13
+			margin-top=33 
 			margin-right=59  
 			dir=right
 		}
@@ -690,7 +691,7 @@ font-size=14 [$LINUX]
 			control="online_friends" 
 			align=right
 			y=47
-			height=12 
+			height=13
 			margin-right=59			 
 			dir=right			
 		}
@@ -720,9 +721,9 @@ font-size=14 [$LINUX]
 		place {
 			control="frame_captiongrip"
 			width=max
-			height=104
+			height=87
 			margin=2
-			x=100
+			x=0
 		}
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 } // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
