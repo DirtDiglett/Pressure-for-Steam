@@ -100,14 +100,14 @@ font-size=14 [$LINUX]
 		place {
 			control="AvatarOverlayImage"
 			x=0
-			y=5
+			y=4
 			width=40
 			height=40
 		}
 		place {
 			control="AvatarImage"
 			x=4
-			y=9
+			y=8
 			width=32
 			height=32
 		}
