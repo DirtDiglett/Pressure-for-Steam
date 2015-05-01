@@ -78,140 +78,28 @@ font-size=14 [$LINUX]
 	
 		ActionButtonStyle {  
 			bgcolor=none
-			textcolor="white"
-			font-family=headerfont
-			font-size=30
-			font-weight=400
-			font-style=uppercase,outerglow
-			inset="26 1 0 0"
-			font-outerglow-color="97 141 21 255"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=6
-			padding-left=6
-			padding-right=6
+			textcolor=none
 			minimum-width=200
+			minimum-height=200
+
 			render {
-				1="image( x0 + 10, y0 + 10, x1, y1, graphics/icon_play )"
-			}
-			render_bg {
-				// Background
-				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
-				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
-				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
-			
-			
-				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
-			
-				//Anti-Alias
-				2="fill(x0+1,y0,x0+2,y0+1, greenButtonAntiAliasedCorners)" // Top Left
-				3="fill(x0,y0+1,x0+1,y0+2, greenButtonAntiAliasedCorners)" // Top Left
-				4="fill(x1-2, y0, x1-1, y0+1, greenButtonDarkenedCorners)" // Top Right
-				5="fill(x1-1,y0+1,x1,y0+2, greenButtonDarkenedCorners)" // Top Right
-				6="fill(x0, y1-2, x0+1, y1-1, greenButtonAntiAliasedCorners)" // Bottom Left
-				7="fill(x0+1, y1-1, x0+2, y1, greenButtonAntiAliasedCorners)" // Bottom Left
-				8="fill(x1-2, y1-1, x1-1, y1, greenButtonAntiAliasedCorners)" // Bottom Right
-				9="fill(x1-1, y1-2, x1, y1-1, greenButtonAntiAliasedCorners)" // Bottom Right
-			
-				// 1px Solid Line Top
-				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHighlight)" // Main Line
-				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				13="fill(x0, y0+2, x0+1, y0+3, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHighlightAntiAliasing)" // Anti-Aliasing
-			
-				// Bottom Corner Rounding
-				17="fill(x0,y1-3,x0+1,y1-2, greenButtonDarkenedCorners)"
-				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonDarkenedCorners)"
-				19="fill(x0+2,y1-1,x0+3,y1, greenButtonDarkenedCorners)"
-			
-				20="fill(x1-3,y1-1,x1-2,y1, greenButtonDarkenedCorners)"
-				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonDarkenedCorners)"
-				22="fill(x1-1,y1-3,x1,y1-2, greenButtonDarkenedCorners)"
+				0="image(x0,y0,x1,y1, graphics/music/library_play)"
 			}
 		}
 		
 			ActionButtonStyle:hover {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
-				
-				
-					1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
-				
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greenButtonHoverDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greenButtonHoverDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
-				
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-				
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
-				
-					20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
+				render {
+					0="image(x0,y0,x1,y1, graphics/music/library_play_hover)"
 				}		
 			}
 		
 			ActionButtonStyle:active {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-				
-				
-					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
-				
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-				
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-				
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
-				
-					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
+				render {
+					0="image(x0,y0,x1,y1, graphics/music/library_play_hover)"
 				}		
 			}
 	}
+
 	layout {
 		region {
 			name=album
@@ -221,6 +109,14 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control="CoverImage"
+			align=top
+			width=200
+			height=200
+			y=20
+			x=20
+		}
+		place {
+			control=PlayAlbumButton,PlayTracksButton
 			align=top
 			width=200
 			height=200
@@ -247,14 +143,14 @@ font-size=14 [$LINUX]
 		}
 	
 		place {
-			control=TracksInfoLabel,PlayTracksButton
+			control=TracksInfoLabel
 			start=ArtistLabel
 			dir=down
 			spacing=10
 		}
 	
 		place {
-			control=AddTracksToQueueButton,AddTracksToPlaylistButton,PlayAlbumButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumButton,ShowAlbumInSystemButton
+			control=AddTracksToQueueButton,AddTracksToPlaylistButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumButton,ShowAlbumInSystemButton
 			start=CoverImage
 			dir=down
 			y=10		
