@@ -18,7 +18,7 @@
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break
 			bgcolor=none
 			inset="10 0 0 0"
-			image=none
+			image="graphics/icon_down"
 			render_bg {}
 			render {}
 		}
@@ -782,7 +782,7 @@ font-size=14 [$LINUX]
 			start=launchbutton
 			x=0
 			y=0
-			width=40
+			width=20
 			height=40
 			dir=right
 		}
