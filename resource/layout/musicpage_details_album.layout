@@ -2,7 +2,7 @@
 	styles {
 		CMusicPage_Details_Album {
 			bgcolor=none
-			minimum-height=300
+			minimum-height=350
 		
 			render {}
 			render_bg {}
