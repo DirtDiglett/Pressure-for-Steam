@@ -10,7 +10,7 @@
 			width=max
 			height=51
 		}
-	
+
 		place {
 			control="PrevButton,NextButton,CancelButton,FinishButton"
 			height=28

@@ -4,13 +4,13 @@
 			bgcolor=none
 			minimum-width = 296
 			minimum-height = 300
-		
+
 			render_bg {
 				0="gradient( x0, y0, x1, y0+275, grey, lightgreyend)"
 				3="fill( x0, y0 + 275, x1, y1, lightgreyend )"
 			}
-		}	
-	
+		}
+
 		ClientTitle [!$OSX] {
 			bgcolor="none"
 			textcolor="labeldisabled"
@@ -19,7 +19,7 @@
 	  		font-weight=400
 	  		inset="12 6 0 0"
 		}
-	
+
 		ClientTitle [$OSX] {
 			bgcolor="none"
 			textcolor="textdisabled"
@@ -29,7 +29,7 @@ font-size=14 [$LINUX]
 	  		font-weight=400
 	  		inset="0 6 0 0"
 		}
-	
+
 		ClientTitle:FrameFocus [!$OSX] {
 			bgcolor="none"
 			textcolor="label"
@@ -38,8 +38,8 @@ font-size=14 [$LINUX]
    			font-weight=400
    			inset="12 6 0 0"
 		}
-		
-		
+
+
 		ClientTitle:FrameFocus [$OSX] {
 			bgcolor="none"
 			textcolor="texthover"
@@ -49,7 +49,7 @@ font-size=14 [$LINUX]
    			font-weight=400
    			inset="0 6 0 0"
 		}
-		
+
 		LibrarySearch {
 			textcolor="darkestGrey"
 			font-family=basefont
@@ -58,51 +58,51 @@ font-size=14 [$LINUX]
 			padding-left=4
 			padding-right=20
 			minimum-width=150
-		
+
 			render_bg {
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
 				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
 			}
 		}
-	
+
 		LibrarySearch:empty {
 			textcolor="lightestGrey"
 			font-family=basefont
 			font-style=italic
 			padding-left=4
 		}
-	
+
 			LibrarySearch:hover {
 				textcolor="darkGreyEnd"
 				padding-left=4
 			}
-	
+
 			LibrarySearch:empty:hover {
 				textcolor="lightGreyEnd"
 				font-style=italic
 				padding-left=4
 			}
-			
+
 			LibrarySearch:disabled {
 				textcolor="None"
 				font-family=basefont
 				font-style=italic
 				padding-left=4
 			}
-		
+
 		LibrarySearchIcon {
 			bgcolor="none"
 			inset="10 0 0 0"
 			image=""
 			render_bg{}
 		}
-	
+
 		LibrarySearchIcon:disabled {
 			bgcolor="none"
 			inset="10 0 0 0"
 			image=""
-			render_bg{}	
+			render_bg{}
 		}
 		MusicAddButton {
 			textcolor="labelfocus"
@@ -114,15 +114,15 @@ font-size=14 [$LINUX]
 				0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse )"
 			}
 		}
-	
+
 			MusicAddButton:hover {
 				textcolor="white"
-			
+
 				render_bg {
 					0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse_over )"
 				}
-			}		
-	
+			}
+
 		MusicPlayerIcon {
 			bgcolor="none"
 			padding-left=-4
@@ -132,7 +132,7 @@ font-size=14 [$LINUX]
 			image="graphics/icon_music_player"
 			render_bg{}
 		}
-	
+
 			MusicPlayerIcon:hover {
 				bgcolor="none"
 				padding-left=-4
@@ -142,7 +142,7 @@ font-size=14 [$LINUX]
 				image="graphics/icon_music_player_hover"
 				render_bg={}
 			}
-	
+
 			MusicPlayerIcon:selected {
 				bgcolor="none"
 				padding-left=-4
@@ -152,7 +152,7 @@ font-size=14 [$LINUX]
 				image="graphics/icon_music_player_selected"
 				render_bg={}
 			}
-	
+
 		NavLabel2 [!$OSX] {
 			textcolor="labelfocus"
 			font-family=basefont
@@ -170,7 +170,7 @@ font-size=14 [$LINUX]
 			font-style="uppercase"
 			inset="0 2 0 0"
 		}
-	
+
 			NavLabel2:hover {
 				textcolor="texthover"
 				font-style="outerglow,uppercase"
@@ -179,7 +179,7 @@ font-size=14 [$LINUX]
 				font-outerglow-filtersize=3
 				inset="0 2 0 0"
 			}
-	
+
 			NavLabel2:selected {
 				textcolor="white"
 				font-style="outerglow,uppercase"
@@ -188,7 +188,7 @@ font-size=14 [$LINUX]
 				font-outerglow-filtersize=3
 				inset="0 2 0 0"
 			}
-			
+
 		grouper {
 			bgcolor=none
 			render_bg {
@@ -209,7 +209,7 @@ font-size=14 [$LINUX]
 			y=75
 			width=max
 		}
-	
+
 		place {
 			control="subnavgroup_library"
 			align=top-center
@@ -219,7 +219,7 @@ font-size=14 [$LINUX]
 			margin-left=10
 			margin-right=1
 		}
-	
+
 		place {
 			control=label_search_icon
 			region=searchrow

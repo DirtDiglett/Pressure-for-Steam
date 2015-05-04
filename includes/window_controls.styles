@@ -2,11 +2,11 @@
 	styles {
 // ***********************************************
 // Resize Grabber
-// ***********************************************	
+// ***********************************************
 		FrameBRGripPanel {
 			image="graphics/window_controls/grabber"
 		}
-	
+
 		FrameBRGripPanel:hover {
 			image="graphics/window_controls/grabber"
 		}
@@ -21,7 +21,7 @@
 			image= "graphics/window_controls/osx/minimize"
 			render_bg{}
 		}
-		
+
 		FrameMinimizeButton:framefocus [$OSX] {
 			padding-top=3px
 			image= "graphics/window_controls/osx/minimize"
@@ -53,7 +53,7 @@
 				image= "graphics/window_controls/osx/minimize_hover"
 				render_bg{}
 			}
-	
+
 			FrameMinimizeButton:active {
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/minimize_active"
@@ -62,7 +62,7 @@
 			}
 // ***********************************************
 // Maximize
-// ***********************************************	
+// ***********************************************
  	 	FrameMaximizeButton {
 			image= "graphics/window_controls/windows/maximize"
 			render_bg{}
@@ -72,19 +72,19 @@
 				image= "graphics/window_controls/windows/maximize_hover"
 				render_bg{}
 			}
-	
+
 			FrameMaximizeButton:framefocus {
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/maximize"
 				render_bg{}
 			}
-	
+
 				FrameMaximizeButton:framefocus:hover {
 					bgcolor= "none"
 					image= "graphics/window_controls/windows/maximize_hover"
 					render_bg{}
 				}
-	
+
 				FrameMaximizeButton:active {
 					bgcolor= "none"
 					image= "graphics/window_controls/windows/maximize_active"
@@ -103,7 +103,7 @@
 				image= "graphics/window_controls/windows/restore_hover"
 				render_bg {}
 			}
-	
+
 		FrameRestoreButton:framefocus {
 			bgcolor= "none"
 			image= "graphics/window_controls/windows/restore"
@@ -115,7 +115,7 @@
 				image= "graphics/window_controls/windows/restore_hover"
 				render_bg{}
 			}
-	
+
 			FrameRestoreButton:active {
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/restore_active"
@@ -133,7 +133,7 @@
 				image= "graphics/window_controls/windows/close_hover"
 				render_bg{}
 			}
-		
+
 			FrameCloseButton:disabled {
 				bgcolor= "none"
 				image= "graphics/window_controls/windows/close_disabled"

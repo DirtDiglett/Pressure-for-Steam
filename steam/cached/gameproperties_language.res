@@ -6,7 +6,7 @@
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
-			font-style="none"	
+			font-style="none"
 			inset="3 0 0 0"
 			render_bg {
 				0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, grey, lightGreyEnd )" // Background Gradient
@@ -171,7 +171,7 @@ font-size=14 [$LINUX]
 				2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkGrey )" // Top
 				3="fill( x1 - 1, y0 + 2, x1, y1 - 2, darkGrey )" // Right
 				4="fill( x0 + 2, y1 - 1, x1 - 2, y1, darkGrey )" // Bottom
-	
+
 				// Dark Grey Background Corners & Fake Anti-Aliasing
 				// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel

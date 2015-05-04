@@ -4,27 +4,27 @@
 			minimum-width=620
 			minimum-height=408
 		}
-	
+
 		LabelDull {
 			textcolor=white
 			font-size=20
 			font-family=headerfont
 		}
-	
+
 		label {
 			textcolor=lightestGrey
 			font-size=14
 		}
-	
+
 		textEntry {
 			textcolor=lightestGrey
 			font-size=14
 			inset-left=0
-	
+
 			render {}
 			render_bg{}
 		}
-	
+
 	}
 
 	layout {
@@ -37,7 +37,7 @@
 			margin-right=416
 			margin-bottom=52
 		}
-	
+
 		// Server Name
 		place {
 			region=left
@@ -55,7 +55,7 @@
 			margin-top=-4
 			dir=down
 		}
-	
+
 		// SERVER IP
 		place {
 			control=ServerIPLabel
@@ -114,7 +114,7 @@
 			margin-top=-4
 			dir=down
 		}
-	
+
 		// PLAYERS
 		place {
 			region=left
@@ -153,7 +153,7 @@
 			margin-top=-4
 			dir=down
 		}
-	
+
 		// Lag
 		place {
 			control=PingLabel
@@ -173,7 +173,7 @@
 			margin-top=-4
 			dir=down
 		}
-	
+
 		region {
 			name=right
 			align=right
@@ -182,7 +182,7 @@
 			margin-top=26
 			margin-bottom=52
 		}
-	
+
 		place {
 			control="PlayerList"
 			region=right
@@ -191,7 +191,7 @@
 			height=max
 			margin-bottom=51
 		}
-	
+
 		place {
 			control="AutoRetryAlert,AutoRetryJoin"
 			region=right
@@ -200,24 +200,24 @@
 			height=24
 			dir=down
 		}
-	
+
 		place {
 			control=InfoLabel
-			region="bottom"		
+			region="bottom"
 			align=left
 			x=16
 			y=16
 			width=310
 			dir=down
 		}
-	
+
 		//Bottom
 		region {
 			name=bottom
 			align=bottom
 			height=51
 		}
-	
+
 		place {
 			control="AutoRetry,Connect,Refresh,Close"
 			region=bottom
@@ -226,6 +226,6 @@
 			margin-top=13
 			margin-right=13
 			spacing=8
-		}	
+		}
 	}
 }

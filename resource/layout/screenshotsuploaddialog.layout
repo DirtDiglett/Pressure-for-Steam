@@ -3,29 +3,29 @@
 		CScreenshotUploadDialog {
 			minimum-width=465
 			minimum-height=300
-		
+
 			render_bg {
 				1="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				2="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				3="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
-			
+
 				4="image(x0+20,y0+70,x1,y1, graphics/dialogs/screenshotUpload)"
 			}
 		}
 		visibility_options {
 			minimum-width=100
 		}
-	
+
 		SlimProgressBar {
 			textcolor=green
-		
+
 			render {}
 			render_bg {
 			        0="fill( x0, y0, x1, y1, black )"
 			        1="fill(x0,y1,x1,y1+1, grey50)"
-			}     
+			}
 		}
-	
+
 		SlimProgressBarError {
 			textcolor="red"
 		}
@@ -37,21 +37,21 @@
 			x=175
 			y=45
 		}
-	
+
 		place {
 			control="upload_info"
 			x=175
 			y=40
 			width=max
 		}
-	
+
 		place {
 			control="error_info"
 			x=175
 			y=40
 			width=max
 		}
-	
+
 		place {
 			control="upload_progress"
 			y=85
@@ -60,37 +60,37 @@
 			margin-left=175
 			margin-right=25
 		}
-	
+
 		place {
 			control="upload_size"
 			x=175
 			y=70
 		}
-	
+
 		place {
 			control="storage_remaining"
 			x=175
 			y=85
 		}
-	
+
 		place {
 			control="upload_size_info"
 			x=295
 			y=70
 		}
-	
+
 		place {
 			control="storage_remaining_info"
 			x=295
 			y=85
 		}
-	
+
 		place {
 			control="visiblity_label"
 			x=175
 			y=130
 		}
-	
+
 		place {
 			control="visibility_options"
 			start="visiblity_label"
@@ -98,20 +98,20 @@
 			y=-5
 			dir=right
 		}
-	
+
 		place {
 			control="share_to_facebook_check_button"
 			x=175
 			y=160
 		}
-	
+
 		place {
 			control="facebook_logo"
 			start="share_to_facebook_check_button"
 			x=-4
 			y=8
 		}
-	
+
 		place {
 			control="shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label"
 			x=175
@@ -119,13 +119,13 @@
 			margin-left=4
 			width=275
 		}
-	
+
 		region {
 			name="bottom"
 			height=51
 			align=bottom
 		}
-	
+
 		place {
 			control="cancel_button,upload_button"
 			region="bottom"

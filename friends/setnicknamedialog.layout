@@ -3,7 +3,7 @@
 		frame {
 			minimum-height=175
 		}
-	
+
 		Button {
 			minimum-width=92
 		}
@@ -14,7 +14,7 @@
 			align=bottom
 			height=51
 		}
-	
+
 		place {
 			control="OKButton,CloseButton"
 			region=bottomrow
@@ -24,7 +24,7 @@
 			margin-right=14
 			spacing=8
 		}
-	
+
 		place {
 			control=Details
 			y=34
@@ -34,7 +34,7 @@
 			margin-left=16
 			margin-right=16
 		}
-	
+
 		place {
 			control=NicknameEdit
 			y=70

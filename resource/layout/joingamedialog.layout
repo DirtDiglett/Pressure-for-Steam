@@ -4,7 +4,7 @@
 			textcolor=white
 			font-size=18
 		}
-	
+
 		frame {
 			bgcolor=darkestGrey
 			minimum-width=498
@@ -25,7 +25,7 @@
 			margin-right=20
 			margin-bottom=20
 		}
-	
+
 		region {
 			name=ssa
 			width=max
@@ -34,7 +34,7 @@
 			margin-top=215
 			margin-right=20
 		}
-		
+
 		place {
 			controls="InfoLabel"
 			region=box
@@ -44,13 +44,13 @@
 			margin-top=35
 			dir=down
 		}
-	
+
 		place {
 			controls="ThrobberThrobberThrobber"
 			width=0
 			height=0
 		}
-	
+
 		place {
 			controls="ReadyToPlayInfoLabel,ReadyToPlayTimeLabel"
 			region=box
@@ -60,7 +60,7 @@
 			dir=down
 			spacing=8
 		}
-	
+
 		place {
 			controls="Progress"
 			region=box
@@ -69,7 +69,7 @@
 			margin-top=10
 			dir=down
 		}
-	
+
 		place {
 			controls="OverrideThrottleCheckBox"
 			region=box
@@ -78,7 +78,7 @@
 			width=max
 			dir=down
 		}
-	
+
 		place {
 			controls="AutoLaunchCheckBox"
 			region=box
@@ -87,14 +87,14 @@
 			margin-top=10
 			dir=down
 		}
-	
+
 		region {
 			name=bottom
 			align=bottom
 			width=max
 			height=51
 		}
-	
+
 		place {
 			controls="NewsButton,PlayButton"
 			region=bottom
@@ -114,7 +114,7 @@
 			margin-right=145
 			dir=down
 		}
-	
+
 		place {
 			controls="Divider,SSAUpdateLabel,SSAUpdateURL"
 			region=ssa

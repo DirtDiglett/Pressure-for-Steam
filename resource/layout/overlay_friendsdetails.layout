@@ -14,25 +14,25 @@ font-size=14 [$LINUX]
 			padding-top=0
 			padding-bottom=15
 			minimum-width=160
-							
+
 			render_bg {
 				0="image(x0,y0,x0+26,y1, graphics/overlay/friends)"
 			}
 		}
-	
+
 			button:hover {
 				textcolor=lightestBlue
-			
+
 				render {
 					0="image(x0,y0,x0+26,y1, graphics/overlay/friends_hover)"
 				}
 				render_bg {}
 			}
-	
+
 		FriendsGrid {
 			render_bg {}
 		}
-	
+
 		highlight {
 			textcolor=lightestGrey
 			font-size=14
@@ -45,14 +45,14 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 		}
-	
+
 		place {
 			controls=AllFriendsButton
 			region=box
 			x=0
 			y=0
 		}
-	
+
 		place {
 			controls=TextThisManyFriends
 			start=AllFriendsButton

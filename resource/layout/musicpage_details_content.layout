@@ -13,23 +13,23 @@
 			font-weight=400
 			render_bg{}
 		}
-	
+
 		AlbumOrArtistListStyle {
 			render_bg {}
 		}
-	
+
 		EmptyDatabaseText {
 			textcolor="Text"
 			font-size="15"
 			render_bg {}
 		}
-	
+
 		CrawlingText {
 			textcolor="white"
 			font-size="15"
 			render_bg {}
 		}
-	
+
 		CMusicPage_Details_Content {
 			inset="0 0 0 1"
 			render {}
@@ -38,7 +38,7 @@
 				1="gradient(x0,y0,x1,y0+6, black65, none)"
 			}
 		}
-	
+
 		// Some overrides for our listpanel
 		"MusicPage_Details_Content ListPanel" {
 			bgcolor="darkestGrey"
@@ -50,27 +50,27 @@ font-size=14 [$LINUX]
 
 			render_bg {}
 		}
-	
+
 		"MusicPage_Details_Content ListPanelInterior" {
 			bgcolor="none"
 			textcolor="white"
 			inset="0 0 0 0"
-		
+
 
 			render_bg {}
 		}
-	
-		"MusicPage_Details_Content ListPanelInterior:scrollbar" {	
+
+		"MusicPage_Details_Content ListPanelInterior:scrollbar" {
 			bgcolor=none
 			inset="0 0 -10 0"
 			minimum-width=320
-		
+
 			render_bg {}
 		}
-	
+
 		"MusicPage_Details_Content ListPanelDragger" {
 			bgcolor="none"
-		
+
 			render {}
 			render_bg {}
 		}
@@ -82,30 +82,30 @@ font-size=14 [$LINUX]
 			render {}
 			render_bg {}
 		}
-	
+
 		"MusicPage_Details_Content ListPanelColumnHeader" [$OSX] {
 			bgcolor="none"
 			font-size=15
 font-size=14 [$LINUX]
 			inset="2 2 0 0"
-		
+
 			render {}
 		}
 
 		"AlbumOrArtistListStyle ListPanelColumnSelectButton" {
 	   		inset="-3 3 0 0"
-		
+
 			render {
 		  		5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-			}  
+			}
 			render_bg {
 				1="fill( x0 + 1, y0, x1 - 1, y1, none )"
 			}
 		}
-	
+
 		DetailsBorderPanel {
 			bgcolor = "darkestGrey"
-		
+
 			render {}
 		}
 
@@ -142,7 +142,7 @@ font-size=14 [$LINUX]
 			dir=down
 			overflow=scroll-vertical
 		}
-	
+
 		place {
 			control=EmptyDatabaseText
 			x=0
@@ -159,7 +159,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=10
 		}
-	
+
 		place {
 			control=DetailsBorder
 			x=1
@@ -203,7 +203,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=10
 		}
-	
+
 		place {
 			control=BackgroundImageA
 			region=background

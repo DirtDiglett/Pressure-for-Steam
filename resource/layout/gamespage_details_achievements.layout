@@ -14,12 +14,12 @@
 		button {
 			textcolor=blue
 			padding=0
-		
+
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
-	
+
 			button:hover {
 				textcolor=lightestBlue
 			}
@@ -27,7 +27,7 @@
 			bgcolor=black65
 			minimum-height=200
 		}
-	
+
 		// The label for "You've unlocked everything!"
 		everythinglabel {
 			textcolor="white"
@@ -48,14 +48,14 @@
 			control=headerlabel
 			width=max
 		}
-	
+
 		place {
 			region=body
 			control=mostrecent_area
 			y=35
 			dir=down
 		}
-	
+
 		place {
 			region=body
 			control=everythinglabel
@@ -63,7 +63,7 @@
 			y=55
 			dir=right
 		}
-	
+
 		place {
 			control=locked_area
 			start="mostrecent_area"

@@ -16,9 +16,9 @@ Scheme {
 				AutoResize	1
 			}
 			frame_captiongrip {
-				xpos	4
-				ypos	4
-				wide	r20
+				xpos	2
+				ypos	2
+				wide	r2
 				tall	60
 				AutoResize	1
 			}

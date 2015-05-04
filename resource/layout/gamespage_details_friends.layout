@@ -7,12 +7,12 @@
 		button {
 			textcolor=blue
 			padding=0
-		
+
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
-	
+
 			button:hover {
 				textcolor=lightestBlue
 			}
@@ -25,7 +25,7 @@
 			font-size=15
 font-size=14 [$LINUX]
 		}
-	
+
 		friendlabelmore {
 			textcolor="grey"
 			font-size=15
@@ -34,7 +34,7 @@ font-size=14 [$LINUX]
 		    inset="-3 0 0 0"
 		    render_bg {}
 		}
-    		  
+
 		friendlabelmore:hover {
 			textcolor="white"
 			font-size=15
@@ -42,7 +42,7 @@ font-size=14 [$LINUX]
 			font-family=basefont
 		    inset="-3 0 0 0"
 		    render_bg {}
-    	}    
+    	}
 	}
 	layout {
 		region {
@@ -51,13 +51,13 @@ font-size=14 [$LINUX]
 			height=max
 			margin=20
 		}
-	
+
 		place {
 			control=headerlabel
 			region=body
 			width=max
 		}
-	
+
 		place {
 			control=listplayingnow,listplayever
 			region=body
@@ -68,7 +68,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
-	
+
 		place {
 			control=viewall
 			region=body

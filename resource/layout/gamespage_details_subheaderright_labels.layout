@@ -12,7 +12,7 @@ font-size=14 [$LINUX]
 			padding-bottom=1
 			padding-top=0
 		}
-	
+
 		headertext2 {
 			textcolor=contributiontext
 			font-size=16

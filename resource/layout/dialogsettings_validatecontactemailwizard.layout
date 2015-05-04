@@ -10,7 +10,7 @@
 			height=51
 			width=max
 		}
-	
+
 		place {
 			control="PrevButton,NextButton,CancelButton"
 			region=bottom

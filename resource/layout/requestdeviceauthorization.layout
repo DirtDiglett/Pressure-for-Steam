@@ -5,7 +5,7 @@
 			font-size=20
 		}
 	}
-	
+
 	layout {
 		place {
 			control="DialogTitle"

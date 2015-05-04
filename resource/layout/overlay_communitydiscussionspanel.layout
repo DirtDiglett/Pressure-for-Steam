@@ -13,20 +13,20 @@
 			padding-left=24
 			padding-top=0
 			padding-bottom=15
-		
+
 			render_bg {
 				1="image(x0,y0,x0+26,y1, graphics/overlay/discussions)"
 			}
 		}
-	
+
 			button:hover {
 				textcolor=lightestBlue
-			
+
 				render_bg {
 					1="image(x0,y0,x0+26,y1, graphics/overlay/discussions_hover)"
 				}
 			}
-	
+
 		highlight {
 			textcolor=lightestGrey
 			font-size=14
@@ -39,7 +39,7 @@
 			width=max
 			height=max
 		}
-	
+
 		place {
 			controls=ViewCommunityDiscussions
 			region=box
@@ -47,15 +47,15 @@
 			y=0
 			width=max
 		}
-	
+
 		place {
 			controls=NumDiscussionsText
 			start=ViewCommunityDiscussions
 			dir=down
 			x=30
 			y=-14
-		}	
-	
+		}
+
 		place {
 			control="TitleText"
 			width=0

@@ -2,7 +2,7 @@
 	colors {
 		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
 		GameDetailsAchievements.ProgressBarMargins "8"
-	
+
 		Tooltip.Anchor=Parent
 	}
 
@@ -22,7 +22,7 @@
 			font-size=15
 			font-size=14 [$LINUX]
 		}
-	
+
 		mostrecent_name {
 			textcolor="lightestYellow"
 			font-size=20
@@ -35,7 +35,7 @@
 		}
 		progressbackground {
 			bgcolor=none
-		
+
 			render_bg {
 				// lines around
 				0="fill( x0, y0, x1-6, y1, black )"
@@ -44,7 +44,7 @@
 		}
 		progressbarimage {
 			bgcolor="green"
-		
+
 			render = {
 				6="fill(x0,y0,x1,y0+1, lightestGreen)"
 				7="fill(x0, y0+1, x1, y1, green)"
@@ -65,7 +65,7 @@
 			y=18
 			width=max
 		}
-	
+
 		place {
 			region=body
 			control=mostrecent_name
@@ -74,7 +74,7 @@
 			width=190
 			height=25
 		}
-	
+
 		place {
 			region=body
 			control=mostrecent_unlockedsofar
@@ -90,7 +90,7 @@
 			width=70
 			height=70
 		}
-	
+
 		place {
 			region=body
 			control=mostrecent_image
@@ -106,7 +106,7 @@
 			width=max
 			height=5
 		}
-	
+
 		place {
 			region=body
 			control=progressbarimage

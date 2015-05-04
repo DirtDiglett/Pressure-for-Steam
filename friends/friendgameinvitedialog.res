@@ -6,12 +6,12 @@
 				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 			}
-		}	
-	
+		}
+
 		RootMenu {
 			bgcolor=none
 		}
-			
+
 		FriendsTitle  {
 			inset="0 0 0 0"
 		}
@@ -33,7 +33,7 @@ font-size=14 [$LINUX]
 				inset="0 9 0 0"
 			}
 	}
- 
+
  	layout {
  		// the title bar is missing, so increase the size of the grip
 		place {
@@ -42,7 +42,7 @@ font-size=14 [$LINUX]
 			height=38
 			margin=2
 		}
-	
+
 		place {
 			control="buddylist"
 			align=left
@@ -53,14 +53,14 @@ font-size=14 [$LINUX]
 			margin-right=0
 			margin-bottom=51
 		}
-	
+
 		region {
 			name=bottom
 			align=bottom
 			width=max
 			height=51
 		}
-	
+
 		place {
 			control=CloseButton
 			region=bottom
@@ -68,8 +68,8 @@ font-size=14 [$LINUX]
 			height=24
 			margin-top=14
 			margin-right=14
-		
+
 		}
  	}
- 
+
 }

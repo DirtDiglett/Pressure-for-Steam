@@ -13,7 +13,7 @@
 		OverlayURLLabel {
 			image=graphics/overlay/close
 		}
-	
+
 			OverlayURLLabel:hover {
 				image=graphics/overlay/close_hover
 			}
@@ -26,7 +26,7 @@
 			width=max
 			height=240
 		}
-	
+
 		region {//unnecessary now that clock/etc moved to overlaydesktop_lores?
 			name=top
 			align=left
@@ -35,7 +35,7 @@
 			width=max
 			height=100
 		}
-	
+
 		place {
 			control=gamename
 			align=left

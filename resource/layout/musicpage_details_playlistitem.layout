@@ -12,9 +12,9 @@ font-size=14 [$LINUX]
 			padding-bottom=4
 			render_bg {
 				0="fill(x0,y0-2,x1+10,y1+2, black65)"
-			}			
+			}
 		}
-	
+
 		TrackLabelStyle {
 			bgcolor=none
 			textcolor=white
@@ -29,18 +29,18 @@ font-size=14 [$LINUX]
 				0="fill(x0,y0-2,x1,y1+2, black65)"
 			}
 		}
-	
+
 			TrackLabelStyle:hover {
 				textcolor="blue"
 			}
 	}
-	
+
 	layout {
 		region {
 			name=panelregion
 			width=max
 		}
-	
+
 		place {
 			control="PositionLabel"
 			region="panelregion"

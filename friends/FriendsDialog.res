@@ -260,11 +260,11 @@ font-size=14 [$LINUX]
 				font-family=basefont
 				font-style=italic
 				padding-left=4
-			
+
 				render {
 						0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
 				}
-			
+
 				render_bg {
 					6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"

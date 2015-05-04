@@ -26,6 +26,6 @@
 			margin-left=4
 			spacing=8
 			end-right="AddServerButton"
-		}	
+		}
 	}
 }

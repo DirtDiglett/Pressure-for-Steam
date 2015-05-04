@@ -8,7 +8,7 @@
 			margin-right=43
 			dir=down
 		}
-	
+
 		place {
 			controls="AuthorizeDeviceButton,DeauthorizeDeviceButton,ManageSharingButton"
 			start=FamilySharingTextState
@@ -18,7 +18,7 @@
 			dir=down
 			spacing=8
 		}
-	
+
 		place {
 			controls="BorrowersList"
 			start=ManageSharingButton
@@ -28,7 +28,7 @@
 			margin-right=43
 			dir=down
 		}
-	
+
 		place {
 			controls="ShowNotificationsCheck"
 			start=BorrowersList
@@ -51,7 +51,7 @@
 			margin-right=43
 			dir=down
 		}
-	
+
 		place {
 			controls="ManageOptionsButton"
 			start=FamilyOptionsText
