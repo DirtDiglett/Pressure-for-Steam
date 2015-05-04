@@ -15,6 +15,8 @@
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=2
+			padding-right=2
+			padding-left=2
 		}
 	}
 	layout {
