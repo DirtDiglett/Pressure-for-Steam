@@ -94,14 +94,14 @@ font-size=14 [$LINUX]
 		LibrarySearchIcon {
 			bgcolor="none"
 			inset="10 0 0 0"
-			image="none"
+			image=""
 			render_bg{}
 		}
 
 		LibrarySearchIcon:disabled {
 			bgcolor="none"
 			inset="10 0 0 0"
-			image="none"
+			image=""
 			render_bg{}
 		}
 		MusicAddButton {

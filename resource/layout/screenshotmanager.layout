@@ -36,7 +36,8 @@
 		}
 		ThumbnailUploaded {
 			bgcolor="black"
-			image=none
+			image=""
+			textcolor=none
 			render {
 				// lines around
 				1="image(x0+3, y1-39, x1, y1, graphics/screenshot_cloud)"
