@@ -41,6 +41,7 @@ colors {
 			padding-left=0
 			padding-right=0
 			inset="13 2 0 0"
+			minimum-height=14
 			render {
 				0="fill(x0,y0-1,x1,y0+1, darkestGrey)"
 				1="fill(x0,y0+1,x1,y0+2, greyHighlight)"
