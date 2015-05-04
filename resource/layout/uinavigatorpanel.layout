@@ -301,8 +301,8 @@ font-size=14 [$LINUX]
 // ********************************************************************************************************
 	BackButton {
 		bgcolor="none"
-		image=none
-			
+		image=""
+		textcolor=none
 		render_bg {
 			   // background fill
 				0 = "gradient( x0 + 1, y0 + 1, x1, y1 - 2, grey, lightGreyEnd )" // Background Gradient
@@ -460,7 +460,8 @@ font-size=14 [$LINUX]
 			}
 		}
 	ForwardButton {
-		image=none
+		image=""
+		textcolor=none
 		render_bg {
 			// background fill
 			0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, grey, lightGreyEnd )" // Background Gradient
