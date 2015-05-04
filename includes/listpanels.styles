@@ -91,7 +91,7 @@ font-size=14 [$LINUX]
 			minimum-height=24
 
 			render {
-				0="fill(x0,y1-2,x1,y1-1, darkGrey)"
+				0="fill(x0,y1-3,x1,y1, darkGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 			render_bg {
@@ -138,12 +138,13 @@ font-size=14 [$LINUX]
 	 		padding-left=0
 	 		padding-right=0
 	 		minimum-width=8
-	 		minimum-height=8
+	 		minimum-height=24
 
 			render {
-				0="fill(x0,y1-1,x1,y1, darkGrey)"
+				0="fill(x0,y1-3,x1,y1, darkGrey)"
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
-				3="image(x0+5,y0+5,x1,y1, graphics/cog)"
+				2="fill(x0,y0,x0+1,y1-3, darkGrey)"
+				3="image(x0+6,y0+7,x1,y1, graphics/cog)"
 			}
 			render_bg {
 				0="gradient(x0,y0,x1,y1-1, grey, lightGreyEnd)"
@@ -159,7 +160,7 @@ font-size=14 [$LINUX]
 
 			ListPanelColumnSelectButton:selected {
 				render {
-					5="image( x0 + 5, y0 + 5, x1, y1, graphics/cog_active )"
+					5="image( x0 + 6, y0 + 7, x1, y1, graphics/cog_active )"
 				}
 				render_bg {
 					0="fill(x0,y0,x1,y1-1, darkestGrey)"
