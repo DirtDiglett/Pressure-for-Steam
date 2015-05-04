@@ -11,7 +11,7 @@
 			align=bottom
 			height=51
 		}
-	
+
 		place {
 			control="OKButton"
 			region=bottom

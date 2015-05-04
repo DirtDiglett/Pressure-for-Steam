@@ -18,7 +18,7 @@ font-size=14 [$LINUX]
 			name=body
 			width=max
 		}
-	
+
 		place {
 			control=icon
 			region=body
@@ -27,7 +27,7 @@ font-size=14 [$LINUX]
 			width=64
 			height=64
 		}
-	
+
 		place {
 			control=caption
 			region=body
@@ -36,7 +36,7 @@ font-size=14 [$LINUX]
 			y=12
 			dir=right
 		}
-	
+
 		place {
 			control=name
 			region=body

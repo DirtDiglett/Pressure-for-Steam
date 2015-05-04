@@ -8,7 +8,7 @@
 			dir=down
 			spacing=16
 		}
-	
+
 		region {
 			name="bottom"
 			align=bottom

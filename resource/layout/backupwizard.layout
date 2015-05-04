@@ -15,7 +15,7 @@
 			align=bottom
 			height=51
 		}
-	
+
 		place {
 			control="PrevButton,NextButton,FinishButton,CancelButton"
 			region=bottom

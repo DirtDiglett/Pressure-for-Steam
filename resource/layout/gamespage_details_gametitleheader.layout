@@ -27,7 +27,7 @@
 			margin-right=0
 			dir=right
 		}
-	
+
 		place {
 			control="iconimage"
 			x=0

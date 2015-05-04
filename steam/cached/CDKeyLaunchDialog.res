@@ -36,7 +36,7 @@
 			margin-top=0
 			margin-bottom=51
 		}
-	
+
 		place {
 			control="DontShowAgainCheck"
 			region=bottom

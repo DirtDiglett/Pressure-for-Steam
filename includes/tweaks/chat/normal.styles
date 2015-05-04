@@ -8,12 +8,12 @@
 			font-size=16
 			font-size=14 [$LINUX]
 		}
-	
+
 		friends_chat_history {
 			font-size=16
 			font-size=14 [$LINUX]
 		}
-	
+
 		friends_chat_event {
 			font-size=16
 			font-size=14 [$LINUX]
@@ -28,27 +28,27 @@
 			font-size=16
 			font-size=14 [$LINUX]
 		}
-	
+
 		friends_chat_name_ingame {
 			font-size=16
 			font-size=14 [$LINUX]
 		}
-	
+
 		friends_chat_self {
 			font-size=16
 			font-size=14 [$LINUX]
 		}
-	
+
 		friends_chat_name {
 			font-size=16
 			font-size=14 [$LINUX]
 		}
-	
+
 		friends_chat_accountid {
 			font-size=16
 			font-size=14 [$LINUX]
 		}
-	
+
 		friends_chat_securitylink {
 			font-size=16
 			font-size=14 [$LINUX]

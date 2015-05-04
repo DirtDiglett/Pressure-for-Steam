@@ -30,7 +30,7 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 			render_bg {}
 		}
-	
+
 		newsitem_body [$LINUX] {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
@@ -45,7 +45,7 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 			font-style="underline"
 		}
-	
+
 		"newsitem_body url" [$LINUX] {
 			selectedtextcolor="blue"
 			textcolor=blue
@@ -55,13 +55,13 @@ font-size=14 [$LINUX]
 			"newsitem_body url:hover" {
 				textcolor="lightestBlue"
 			}
-	
+
 		"newsitem_body bold" {
 			selectedtextcolor="trueWhite"
 			textcolor="white"
 			font-weight=1000
 		}
-	
+
 		more_link {
 			selectedtextcolor="blue"
 			textcolor="blue"
@@ -69,9 +69,9 @@ font-size=14 [$LINUX]
 			font-size=15
 font-size=14 [$LINUX]
 			font-style="none"
-			font-weight=400			
+			font-weight=400
 		}
-	
+
 			more_link:hover {
 				font-style="none"
 				textcolor="lightestBlue"
@@ -83,7 +83,7 @@ font-size=14 [$LINUX]
 			width=max
 			margin=0
 		}
-	
+
 		place {
 			control=newsitem_title
 			region=body
@@ -92,7 +92,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=44
 		}
-	
+
 		place {
 			control=newsitem_dateandauthor
 			region=body
@@ -100,7 +100,7 @@ font-size=14 [$LINUX]
 			dir=down
 			width=max
 		}
-	
+
 		place {
 			control=newsitem_body
 			region=body
@@ -108,7 +108,7 @@ font-size=14 [$LINUX]
 			dir=down
 			width=max
 		}
-	
+
 		place {
 			control=newsitem_more
 			region=body

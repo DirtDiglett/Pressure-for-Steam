@@ -28,13 +28,13 @@ font-size=14 [$LINUX]
 			height=max
 			margin=20
 		}
-	
+
 		place {
 			control=headerlabel
 			region=body
 			width=max
 		}
-	
+
 		place {
 			control=bodybasic,bodynofriends,bodyhelp
 			region=body

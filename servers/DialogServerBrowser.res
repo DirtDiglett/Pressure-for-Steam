@@ -14,7 +14,7 @@
 			height=51
 			width=max
 		}
-	
+
 		place {
 			control=StatusLabel
 			region=bottom

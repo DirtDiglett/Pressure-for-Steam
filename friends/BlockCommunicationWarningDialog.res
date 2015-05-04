@@ -2,7 +2,7 @@
 	styles {
 		Frame {
 			minimum-width=480
-		
+
 			render_bg {
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
@@ -28,7 +28,7 @@
 			height=51
 			width=max
 		}
-	
+
 		place {
 			control="ContinueButton,CancelButton"
 			region=bottom

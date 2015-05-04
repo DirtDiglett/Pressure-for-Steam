@@ -5,13 +5,13 @@
 			minimum-height=470
 			render_bg {
 				0="fill( x0, y0, x1, y1, lightGreyEnd )"
-			
+
 				3="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				4="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 				5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
-			
+
 				6="fill(x0,y0+26,x1-340, y1-51, darkGreyEnd)"
-			
+
 				7="fill(x1-341, y0+26, x1-340, y1-51, darkestGrey)"
 			}
 		}
@@ -65,13 +65,13 @@
 		publishcharsleft_toomanychars {
 			textcolor=red
 		}
-		WrapPanel {		
+		WrapPanel {
 			bgcolor="none"
 			inset="3 1 0 0"
-					
+
 			render_bg{}
 		}
-	
+
 		gameselector {
 			font-size=15
 font-size=14 [$LINUX]
@@ -81,7 +81,7 @@ font-size=14 [$LINUX]
 			minimum-width=190
 			minimum-height=10
 		}
-	
+
 		ScreenshotLoadingThrobber {
 			bgcolor=black
 			minimum-width=100
@@ -103,7 +103,7 @@ font-size=15
 font-size=14 [$LINUX]
 			font-family=basefont
 		}
-	
+
 		CScreenshotCaptionEntry:empty {
 			bgcolor= "none"
 			selectedtextcolor= "white"
@@ -116,28 +116,28 @@ font-size=14 [$LINUX]
 			padding-left=14
 			inset-left=0
 			inset-top=0
-		
+
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-	
+
 				// TOP
 				1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
 				2="image_tiled(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
 				3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
-			
+
 				// LEFT
 				4="image_tiled(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
-			
+
 				// RIGHT
 				5="image_tiled(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
-			
+
 				// BOTTOM
 				6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
 				7="image_tiled(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
 				8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
 			}
 		}
-	
+
 		TextEntry {
 			inset-left=4
 			inset-top=6
@@ -159,9 +159,9 @@ font-size=14 [$LINUX]
 			margin-top=65
 			margin-right=340
 			margin-bottom=51
-		
+
 		}
-	
+
 		place {
 			control="selectorlabel"
 			region="selectorbar"
@@ -170,7 +170,7 @@ font-size=14 [$LINUX]
 			width=0
 			height=0
 		}
-	
+
 		place {
 			control="game_selector"
 			region="selectorbar"
@@ -187,16 +187,16 @@ font-size=14 [$LINUX]
 			margin-right=6
 			margin-bottom=59
 		}
-	
+
 		place {
 			control="grid"
 			region="list"
 			x=0
 			y=0
 			width=max
-			height=max 
+			height=max
 		}
-	
+
 		place {
 			control="no_screenshots"
 			region="list"
@@ -212,7 +212,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 		}
-	
+
 		place {
 			control="SSDetails"
 			region="details"
@@ -221,7 +221,7 @@ font-size=14 [$LINUX]
 			width=333
 			height=250
 		}
-	
+
 		place {
 			control="SSDate"
 			start="SSDetails"
@@ -230,7 +230,7 @@ font-size=14 [$LINUX]
 			margin-top=4
 			dir=down
 		}
-	
+
 		place {
 			control="SSSize,SSSizeOriginal"
 			start="SSDate"
@@ -248,7 +248,7 @@ font-size=14 [$LINUX]
 			margin-right=3
 			margin-bottom=55
 		}
-	
+
 		place {
 			control="publish_charsleft"
 			region="details"
@@ -265,7 +265,7 @@ font-size=14 [$LINUX]
 			width=1
 			margin-bottom=2
 		}
-	
+
 		place {
 			control="delete_button,details_button,publish_button"
 			start="null_placer"
@@ -277,7 +277,7 @@ font-size=14 [$LINUX]
 			margin-bottom=5
 			spacing=5
 		}
-	
+
 		place {
 			control="spoiler_checkbox"
 			region="details"
@@ -320,21 +320,21 @@ font-size=14 [$LINUX]
 			align="top-center"
 			y=80
 		}
-	
+
 		place {
 			control="multi_img_count"
 			region="details"
 			align="top-center"
 			y=92
 		}
-	
+
 		place {
 			control="multi_img_selected"
 			region=details
 			align="top-center"
 			y=180
 		}
-	
+
 		place {
 			control="multi_img_upload_size,multi_img_upload_size_info"
 			region=details
@@ -342,7 +342,7 @@ font-size=14 [$LINUX]
 			y=205
 			spacing=5
 		}
-	
+
 		place {
 			control="multi_img_storage_remaining,multi_img_storage_remaining_info"
 			region=details
@@ -350,7 +350,7 @@ font-size=14 [$LINUX]
 			y=220
 			spacing=5
 		}
-	
+
 		place {
 			control="multi_img_delete,multi_img_upload"
 			region=details
@@ -364,7 +364,7 @@ font-size=14 [$LINUX]
 			align="top-center"
 			y=140
 		}
-	
+
 		place {
 			control="instr_no_selection_title,instr_no_selection"
 			region="details"

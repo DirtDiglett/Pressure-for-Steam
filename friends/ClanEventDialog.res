@@ -12,14 +12,14 @@
 			x=32
 			y=50
 		}
-	
+
 		place {
 			control="LabelGroup,LabelInfo,LabelEventTitle"
 			x=90
 			y=46
 			dir=down
 		}
-	
+
 		place {
 			control="LabelEventTitle"
 			start=LabelInfo
@@ -28,15 +28,15 @@
 			margin-right=8
 			dir=down
 		}
-	
-	
+
+
 		region {
 			name=bottom
 			align=bottom
 			width=max
 			height=51
 		}
-	
+
 		place {
 			control="ViewEventButton,CloseButton"
 			region=bottom
@@ -47,6 +47,6 @@
 			margin-right=14
 			dir=right
 			spacing=8
-		}	
+		}
 	}
 }

@@ -10,7 +10,7 @@
 		CDetailsGameSubHeaderRightPanel {
 			bgcolor=red
 		}
-		DetailsButton {  
+		DetailsButton {
 			bgcolor=none
 			textcolor="Text"
 			font-family=basefont
@@ -25,7 +25,7 @@ font-size=14 [$LINUX]
 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, gamehubborder )"  // bottom
 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, gamehubborder )"  // left
 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, gamehubborder )"  // right
-			
+
 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, gamehubborder )"
 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, gamehubborder )"
 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, gamehubborder )"
@@ -40,11 +40,11 @@ font-size=14 [$LINUX]
 				16="fill( x1 - 2, y1 - 1, x1 - 1, y1, gamehubborder )"
 			}
 		}
-	
+
 			DetailsButton:hover {
 				textcolor="white"
 			}
-	
+
 			DetailsButton:active {
 				textcolor="white"
 				inset="-2 1 0 0"

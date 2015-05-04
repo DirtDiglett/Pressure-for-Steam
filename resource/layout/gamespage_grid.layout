@@ -18,7 +18,7 @@
 		GridView.DropShadowLeading "00"
 	}
 	styles {
-		WrapPanel {		
+		WrapPanel {
 			bgcolor="none"
 			render {}
 			render_bg {}
@@ -29,7 +29,7 @@
 			font-size="14"
 			render_bg {}
 		}
-	
+
 
 		// GameItem_whatever suffix is computed on the fly. (not case sensitive.) possible values:
 		// shortcut

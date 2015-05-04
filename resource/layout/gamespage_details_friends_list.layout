@@ -6,7 +6,7 @@
 		GameDetailsFriends.ImageAreaMargin "14"
 		GameDetailsFriends.ImageAreaSpacing "4"
 		GameDetailsFriends.ImageWidth "42"
-	
+
 		Tooltip.Anchor=Parent
 	}
 	styles {
@@ -16,18 +16,18 @@
 font-size=14 [$LINUX]
 			font-family=basefont
 		    inset="-3 0 0 0"
-		    render_bg {}		
-    	}  
-    		  
+		    render_bg {}
+    	}
+
 			friendlabelmore:hover {
 				textcolor="white"
 				font-size=15
 font-size=14 [$LINUX]
 				font-family=basefont
 			    inset="-3 0 0 0"
-			    render_bg {}		
-	    	}    
-	    
+			    render_bg {}
+	    	}
+
 		infolabel {
 			textcolor=white
 			font-size=15
@@ -41,7 +41,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
-	
+
 		region {
 			name=images
 			region=body
@@ -58,14 +58,14 @@ font-size=14 [$LINUX]
 			dir=right
 			spacing=4
 		}
-		// Only one of the next two will be visible at once	
+		// Only one of the next two will be visible at once
 		place {
 			control=infolabelplural
 			region=body
 			y=0
 			width=max
 		}
-	
+
 		place {
 			control=infolabelsingular
 			region=body

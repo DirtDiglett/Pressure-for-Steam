@@ -16,7 +16,7 @@
 			font-size=15
 font-size=14 [$LINUX]
 		}
-	
+
 		screenshotslabelmore {
 			textcolor="grey"
 			font-size=15
@@ -25,7 +25,7 @@ font-size=14 [$LINUX]
 		    inset="-3 0 0 0"
 		    render_bg {}
 		}
-	    		  
+
 			screenshotslabelmore:hover {
 				textcolor="white"
 				font-size=15
@@ -33,7 +33,7 @@ font-size=14 [$LINUX]
 				font-family=basefont
 			    inset="-3 0 0 0"
 			    render_bg {}
-			}    
+			}
 	}
 	layout {
 		region {

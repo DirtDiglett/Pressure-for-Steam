@@ -2,7 +2,7 @@
 	styles {
 		frame {
 			bgcolor=darkestGrey
-		
+
 			render{}
 			render_bg{
 				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
@@ -11,12 +11,12 @@
 				3="image(x0+30, y0+50, x1, y1, graphics/dialogs/noConnection)"
 			}
 		}
-	
+
 		label {
 			textcolor=red
 			font-size=24
 		}
-	
+
 		"URLLabel" {
 			font-size=15
 font-size=14 [$LINUX]
@@ -31,7 +31,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=9
 		}
-	
+
 		place {
 			control="Label3,LabelAppearOffline"
 			width=0
@@ -44,7 +44,7 @@ font-size=14 [$LINUX]
 			margin=12
 			margin-top=13
 		}
-	
+
 		place {
 			control="RetryButton,OfflineModeButton"
 			region=bottom
@@ -52,7 +52,7 @@ font-size=14 [$LINUX]
 			height=24
 			spacing=8
 		}
-	
+
 		place {
 			control="QuitButton"
 			region=bottom

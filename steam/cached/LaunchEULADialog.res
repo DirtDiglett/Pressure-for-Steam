@@ -19,7 +19,7 @@
 			width=0
 			height=0
 		}
-	
+
 		place {
 			control=HTML
 			y=26
@@ -33,7 +33,7 @@
 			start=HTML
 			y=8
 		}
-	
+
 		place {
 			control="AcceptButton,DeclineButton"
 			region=bottom

@@ -10,75 +10,75 @@
 		ScrollBar {
 			inset="0 -12 0 -10"
 		}
-	
+
 		ScrollBarButton.up {
 			bgcolor=none
-		
+
 			render_bg {} // Nullifies the default background
 		}
-	
+
 			ScrollBarButton.up:hover {
 				bgcolor=none
 				render_bg {} // Nullifies the default background
 			}
-		
+
 			ScrollBarButton.up:active {
 				render_bg {} // Nullifies the default background
 			}
-	
+
 			ScrollBarButton.up:disabled {
 				render_bg {} // Nullifies the default background
 			}
-	
+
 		ScrollBarButton.down {
 			bgcolor=none
-		
+
 			render_bg {} // Nullifies the default background
 		}
-	
+
 			ScrollBarButton.down:hover {
 				render_bg {} // Nullifies the default background
 			}
-		
+
 			ScrollBarButton.down:active {
 				render_bg {} // Nullifies the default background
 			}
-		
-		
+
+
 			ScrollBarButton.down:disabled {
 				render_bg {} // Nullifies the default background
 			}
-	
+
 		ScrollBarButton.left {
 			bgcolor=none
-		
+
 			render_bg {} // Nullifies the default background
 		}
-	
+
 			ScrollBarButton.left:hover {
 				render_bg {} // Nullifies the default background
 			}
-	
+
 		ScrollBarButton.right {
 			bgcolor=none
-		
+
 			render_bg {} // Nullifies the default background
 		}
-		
+
 			ScrollBarButton.right:hover {
 				render_bg {} // Nullifies the default background
 			}
-	
+
 		ScrollBarHandle { //vertical scrollbar thumb
 			bgcolor=none
-		
+
 			render_bg {
 				0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/top )"
 				1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/middle_vertical )"
 				2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/bottom )"
 			}
 		}
-		  
+
 			"ScrollBarHandle:hover" {
 				render_bg {
 					0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/hover/top )"
@@ -86,7 +86,7 @@
 					2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/hover/bottom )"
 				}
 			}
-		
+
 			"ScrollBarHandle:active" {
 				render_bg {
 					0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/hover/top )"
@@ -94,15 +94,15 @@
 					2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/hover/bottom )"
 				}
 			}
-	
-		"SliderHoriz" { //horizontal scrollbar thumb 
+
+		"SliderHoriz" { //horizontal scrollbar thumb
 			render_bg {
 				0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/left )"
 				1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/middle_horizontal )"
 				2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/right )"
 			}
 		}
-		
+
 			"SliderHoriz:hover" {
 				render_bg {
 					0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
@@ -110,7 +110,7 @@
 					2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
 				}
 			}
-		
+
 			"SliderHoriz:active" {
 				render_bg {
 					0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
@@ -118,55 +118,55 @@
 					2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
 				}
 			}
-	
+
 		ScrollBarSlider { // gutter
 			bgcolor="none"
-		
+
 			render_bg {}
 		}
-	
+
 		ScrollBarSliderHoriz { // gutter
 			bgcolor="none"
-		
+
 			render_bg {}
 		}
-		
+
 		"GamesPage_Details ListPanel ScrollBarSlider" { // gutter in games list detail view
 			bgcolor="none"
-	
+
 			render_bg {}
 		}
-	
+
 		ScrollBarSlider:disabled  {
 			bgcolor="none"
 			render_bg {}
 		}
-	
+
 		"ScrollBar SliderHoriz" { // gutter
 			bgcolor="none"
 		}
-	
+
 		"HTML ScrollBar" {
 			bgcolor="none"
-		
+
 			render_bg {}
 		}
-	
+
 		"HTML ScrollBar.Horizontal" {
 			bgcolor="none"
-		
+
 			render_bg {}
 		}
-	
+
 		"HTML ScrollBarSlider.Horizontal" {
 			bgcolor=none
-		
+
 			render_bg {}
 		}
-	
+
 		"HTML SliderHoriz" {
 			bgcolor=none
 			render_bg {}
-		}	
+		}
 	}
 }

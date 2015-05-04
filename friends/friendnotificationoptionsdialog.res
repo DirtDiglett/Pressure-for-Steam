@@ -5,7 +5,7 @@
 			align=bottom
 			height=51
 		}
-	
+
 		// Manually place this because Valves alignment is out by 1px, really?
 		place {
 			control="ReceiveMessagePlaySoundCheck"
@@ -13,7 +13,7 @@
 			y=254
 			width=max
 		}
-	
+
 		place {
 			control="OKButton,button1"
 			region=bottomarea

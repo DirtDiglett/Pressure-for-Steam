@@ -16,9 +16,9 @@ gameoverlay.styles {
 
 	styles {
 		detailsbox {
-			render_bg {}	
+			render_bg {}
 		}
-	
+
 		detailsboxtitle {
 			textcolor=white
 			font-size=28

@@ -13,7 +13,7 @@
 			y=21
 			width=max
 			margin-right=32
-			dir=down	
+			dir=down
 			spacing=8
 		}
 		place {

@@ -4,41 +4,41 @@
 			textcolor=none
 			image="graphics/overlay/achievement_overlay"
 		}
-	
+
 		button {
 			textcolor=blue
 			font-size=15
 font-size=14 [$LINUX]
 			font-family=basefont
 			padding=0
-		
+
 			render {}
 			render_bg {
 				0="image(x1-5, y1-13, x1, y1, graphics/details_button)"
 			}
 		}
-	
+
 			button:hover {
 				textcolor=lightestBlue
-			
+
 				render {}
 				render_bg {
 					0="image(x1-5, y1-13, x1, y1, graphics/details_button)"
 				}
 			}
-	
+
 		highlight {
 			textcolor=white
 			font-family=headerfont
 			font-size=30
-		
+
 			render_bg {
-			
+
 			}
 		}
 		progressbackground {
 			bgcolor=none
-		
+
 			render_bg {
 				0="fill( x0, y0, x1-6, y1, black )"
 				1="fill( x0, y1 -1, x1-6, y1, grey25 )"
@@ -64,7 +64,7 @@ font-size=14 [$LINUX]
 			x=16
 			y=10
 		}
-	
+
 		place {
 			control=ViewAchievementsButton
 			start=ProgressTextEarned
@@ -80,7 +80,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=5
 		}
-	
+
 		place {
 			control=progressbarimage
 			region=body
@@ -90,7 +90,7 @@ font-size=14 [$LINUX]
 			margin-left=1
 			margin-right=1
 		}
-	
+
 		// This is used to make the overlay for the achievement images. It's temporarily disabled.
 		place {
 			control="TitleText"
@@ -101,7 +101,7 @@ font-size=14 [$LINUX]
 			height=0
 			margin-bottom=15
 		}
-	
+
 		place {
 			control=*achievement
 			region=box
@@ -112,6 +112,6 @@ font-size=14 [$LINUX]
 			margin-bottom=18
 			dir=right
 			spacing=8
-		}	
+		}
 	}
 }

@@ -16,7 +16,7 @@ font-size=14 [$LINUX]
 				1="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 		}
-	
+
 		ListPanelColumnheader [!$OSX] {
 			bgcolor="none"
 			textcolor= "white"
@@ -34,10 +34,10 @@ font-size=14 [$LINUX]
 				1="gradient(x0,y0,x1,y1, grey, lightGreyEnd)"
 			}
 		}
-	
+
 		ListPanelColumnHeader:hover {
 			textcolor= "white"
-		
+
 			render_bg {
 				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 				1="gradient(x0,y0,x1,y1+1, lighterGrey, grey)"
@@ -53,7 +53,7 @@ font-size=14 [$LINUX]
 
 		"Page ListPanelDragger" {
 			bgcolor= "none"
-		
+
 			render {
 				//fill makes dragger visible
 				2="fill( x0, y0, x0 + 1, y1, darkGrey )" // left
@@ -65,7 +65,7 @@ font-size=14 [$LINUX]
 			control="AdvancedHostOptions,AdvancedClientOptions"
 			height=24
 		}
-	
+
 		place {
 			control=DescriptionLabel
 			x=18
@@ -74,7 +74,7 @@ font-size=14 [$LINUX]
 			margin-right=43
 			dir=down
 		}
-	
+
 		place {
 			control=RemoteClientList
 			start=DescriptionLabel
@@ -83,7 +83,7 @@ font-size=14 [$LINUX]
 			margin-right=43
 			dir=down
 		}
-	
+
 		place {
 			control=EnableStreaming
 			start=RemoteClientList
@@ -99,7 +99,7 @@ font-size=14 [$LINUX]
 			margin-right=43
 			dir=down
 		}
-	
+
 		place {
 			control=HostLabel
 			start=HostDivider
@@ -107,7 +107,7 @@ font-size=14 [$LINUX]
 			width=max
 			dir=down
 		}
-	
+
 		place {
 			control=UnsupportedPlatform
 			start=HostLabel
@@ -115,7 +115,7 @@ font-size=14 [$LINUX]
 			width=max
 			dir=down
 		}
-	
+
 		place {
 			control=AdvancedHostOptions
 			start=HostLabel
@@ -123,7 +123,7 @@ font-size=14 [$LINUX]
 			width=340
 			dir=down
 		}
-	
+
 		place {
 			control=ClientDivider
 			start=AdvancedHostOptions
@@ -145,7 +145,7 @@ font-size=14 [$LINUX]
 			y=8
 			dir=down
 		}
-	
+
 		place {
 			control="QualityBalanced,QualityBeautiful"
 			start=QualityFast
@@ -166,6 +166,6 @@ font-size=14 [$LINUX]
 			start=AdvancedClientOptions
 			y=8
 			dir=down
-		}	
+		}
 	}
 }

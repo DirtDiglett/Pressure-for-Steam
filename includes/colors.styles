@@ -4,22 +4,22 @@
 // "Pressure" Colors
 // ***********************************************
  		none="0 0 0 0"
-	
+
 		// Greyscale
 		trueWhite="255 255 255 255"
 		white="251 251 251 255"
 		lightestGrey="139 139 139 255"
 		lightestGreyHighlight="77 77 77 255"
 		greyHighlight="67 67 67 255"
-	
+
 		lighterGrey="70 70 70 255"
-	
+
 		grey="60 60 60 255"
 		lightGreyEnd="42 42 42 255"
 		darkGreyEnd="29 29 29 255"
 		darkestGrey="16 16 16 255"
 		darkGrey="26 26 26 255"
-	
+
 		groupGrey="14 14 14 255"// Group Chat Related Only
 		black="0 0 0 255"
 		black90="0 0 0 220" // 90% Opacity
@@ -29,17 +29,17 @@
 		black25="0 0 0 65"
 		white20="255 255 255 65"
 		white10="255 255 255 25" // 10% Opacity White
-	
+
 		grey50="60 60 60 165" // 65% Opacity Grey
 		grey25="60 60 60 110" // 25%
 		grey10="60 60 60 25" // 10%"
 		darkestGrey50="8 8 8 100" // 65% Opacity Grey
-	
+
 		// Greens
 		lightestGreen="209 248 48 255"
 		green="175 218 28 255"
 		darkestGreen="136 172 19 255"
-	
+
 		// Blues
 		lightestBlue="91 225 252 255"
 		blue="47 198 236 255"
@@ -49,12 +49,12 @@
 		lightestOrange="255 151 58 255"
 		orange="255 120 0 255"
 		darkestOrange="194 94 6 255"
-	
+
 		// Reds
 		lightestRed="255 0 0 255"
 		red="209 0 0 255"
 		darkestRed="166 0 0 255"
-	
+
 		// Golds
 		lightestYellow="231 200 1 255"
 		yellow="210 178 1 255"
@@ -70,7 +70,7 @@
 		// Highlighted Button
 		topLightPixelsHighlighted = "70 70 70 255"
 		bottomDarkPixelsHighlighted = "57 57 57 255"
-	
+
 		// Disabled Button
 		bottomDarkPixelsDisabled = "24 24 24 255"
 		// Colors used for the large buttons such as PLAY INSTALL STREAM etc.
@@ -94,7 +94,7 @@
 			greenButtonActiveGradientStart = "152 191 25 255"
 			greenButtonActiveGradientEnd = "145 179 23 255"
 			greenButtonActiveAntiAliasedCorners = "145 179 23 100"
-			greenButtonActiveDarkenedCorners = "145 179 23 191"		
+			greenButtonActiveDarkenedCorners = "145 179 23 191"
 
 		// blue
 		blueButtonHighlight = "51 214 255 255"

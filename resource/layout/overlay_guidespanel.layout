@@ -1,7 +1,7 @@
 "resource/layout/overlay_guidespanel.layout" {
 	colors {
 		lightestBlue="137 235 255 255"
-	}	
+	}
 
 	styles {
 		button {
@@ -13,20 +13,20 @@ font-size=14 [$LINUX]
 			padding-left=24
 			padding-top=0
 			padding-bottom=15
-		
+
 			render_bg {
 				1="image(x0,y0,x0+26,y1, graphics/overlay/guides)"
 			}
 		}
-	
+
 			button:hover {
 				textcolor=lightestBlue
-			
+
 				render_bg {
 					1="image(x0,y0,x0+26,y1, graphics/overlay/guides_hover)"
 				}
 			}
-	
+
 		highlight {
 			textcolor=lightestGrey
 			font-size=14
@@ -39,7 +39,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 		}
-	
+
 		place {
 			controls=ViewGuides
 			region=box
@@ -47,7 +47,7 @@ font-size=14 [$LINUX]
 			y=0
 			width=max
 		}
-	
+
 		place {
 			controls=NumGuidesText
 			start=ViewGuides
@@ -55,8 +55,8 @@ font-size=14 [$LINUX]
 			x=30
 			y=-14
 		}
-	
-	
+
+
 		place {
 			control="TitleText,*guideitem"
 			width=0

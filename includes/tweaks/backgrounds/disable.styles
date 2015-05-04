@@ -6,10 +6,10 @@
 			}
 		}
 
-		CGamesPage_Grid {		
+		CGamesPage_Grid {
 			bgcolor="darkestGrey"
 			inset="0 0 0 0"
-		
+
 			render {
 				0="gradient(x0, y0, x1, y0+6, black65, none)"
 				1="gradient(x0, y1-6, x1, y1, none, black65)"
@@ -19,7 +19,7 @@
 
 		CGamesPage_Details {
 			bgcolor="darkestGrey"
-		
+
 			render {
 				0="gradient_horizontal(x0+320,y0,x0+326,y1, black40, none)"
 				1="gradient(x0,y0,x1,y0+6, black40, none)"

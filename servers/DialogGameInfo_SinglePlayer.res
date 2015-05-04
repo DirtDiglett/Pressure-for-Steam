@@ -6,7 +6,7 @@
 			align=bottom
 			height=51
 		}
-	
+
 		place {
 			control="Refresh,Connect,Close"
 			region=bottom

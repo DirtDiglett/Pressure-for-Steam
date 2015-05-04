@@ -8,10 +8,10 @@
 		GamesGridIconBorder {
 			bgcolor="none"
 			inset="0 0 0 0"
-		   
+
 		    render {}
 		}
-				
+
 		GGPlaceholderBG {
 			bgcolor=none
 		}
@@ -25,13 +25,13 @@
 			width=max
 			height=max
 		}
-	
+
 		place {
 			control="background"
 			width=max
 			height=max
 		}
-	
+
 		place {
 			control="appname"
 			align=center
@@ -39,7 +39,7 @@
 			margin=12
 			margin-top=14
 		}
-	
+
 		place {
 			control="noappimage_border"
 			region="icon_region"
@@ -50,7 +50,7 @@
 			height=34
 			margin-top=48
 		}
-	
+
 		place {
 			control="noappimage"
 			region="icon_region"

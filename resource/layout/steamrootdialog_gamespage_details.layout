@@ -26,11 +26,11 @@ font-size=14 [$LINUX]
 			padding-left=4
 			padding-right=0
 			inset="0 1 0 -2"
-		
+
 			render {}
 			render_bg {}
 		}
-	
+
 		"GamesPage_Details ListPanelInterior" {
 			bgcolor="darkestGrey"
 			inset="0 0 0 0"
@@ -38,8 +38,8 @@ font-size=14 [$LINUX]
 			render {}
 			render_bg {}
 		}
-	
-			"GamesPage_Details ListPanelInterior:scrollbar" {    
+
+			"GamesPage_Details ListPanelInterior:scrollbar" {
 				bgcolor=none
 				inset="0 0 0 0"
 				render {}
@@ -47,11 +47,11 @@ font-size=14 [$LINUX]
 			}
 		"GamesPage_Details ListPanelDragger" {
 			bgcolor="none"
-		
+
 			render {}
 			render_bg {}
 		}
-	
+
 		"GamesPage_Details ListPanelColumnHeader" {
 			bgcolor="none"
 			font-size=11
@@ -59,10 +59,10 @@ font-size=14 [$LINUX]
 			font-weight=800
 			inset="0 0 0 0"
 			minimum-height=1
-		
+
 			render {}
 		}
-	
+
 		"CGamesListPanel ListPanelColumnSelectButton" {
        		bgcolor=none
        		padding-left=0
@@ -70,7 +70,7 @@ font-size=14 [$LINUX]
        		inset="13 2 0 0"
        		minimum-width=8
        		minimum-height=8
-        
+
         	render {
           		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
         	}
@@ -78,7 +78,7 @@ font-size=14 [$LINUX]
         		0="fill(x0,y0,x1,y1, darkestGrey)"
         	}
 		}
-		
+
 			"CGamesListPanel ListPanelColumnSelectButton:selected" {
 	       		bgcolor=none
 	       		padding-left=0
@@ -88,16 +88,16 @@ font-size=14 [$LINUX]
 	       		minimum-height=8
 	        	render {
 	          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog_active )"
-	        	}  
+	        	}
 	        	render_bg {
 	        		0="fill(x0,y0,x1,y1, darkestGrey)"
 	        	}
-			}	
-	
-	
+			}
+
+
 		headerimage {
 			bgcolor="0 0 0 0"
-		
+
 			render {}
 		}
 		rightcolumnheadertext {
@@ -107,7 +107,7 @@ font-size=14 [$LINUX]
 			font-size=0
 			inset="0 0 0 0"
 		}
-	
+
 			rightcolumnheadertext-red {
 				bgcolor=black65
 				textcolor=none
@@ -145,7 +145,7 @@ font-size=14 [$LINUX]
 			rightcolumnlink:disabled {
 				textcolor=darkestBlue
 			}
-	
+
 		rightcolumntag {
 			textcolor=Label
 			font-family=basefont
@@ -157,7 +157,7 @@ font-size=14 [$LINUX]
 			padding-bottom=0
 			inset="-9 0 0 0"
 		}
-	
+
 		DetailsBorderPanel {
 			bgcolor = none
 			render {}
@@ -172,7 +172,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin-bottom=-5
 		}
-	
+
 		region {
 			name="details"
 			x=320
@@ -185,7 +185,7 @@ font-size=14 [$LINUX]
 			margin-bottom=0
 			overflow=scroll-vertical
 		}
-	
+
 		region {
 			name="headertext"
 			region=details
@@ -195,7 +195,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin-right=-15
 		}
-	
+
 		region {
 			name="rightcolumn"
 			region=details
@@ -207,7 +207,7 @@ font-size=14 [$LINUX]
 			margin-bottom=1
 			overflow=allow-vertical
 		}
-	
+
 		region {
 			name="detailsbody"
 			region=details
@@ -233,7 +233,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
-	
+
 		place {
 			control=welcomedetails
 			region=detailsbody
@@ -246,7 +246,7 @@ font-size=14 [$LINUX]
 			margin-bottom=10
 			spacing=30
 		}
-	
+
 		// Body contents
 		place {
 			control=friendsdetails,achievementsdetails,dlcdetails,clouddetails,screenshotsdetails,communityfilesdetails,newsdetails,nonsteamdetails
@@ -261,7 +261,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=30
 		}
-	
+
 		// Details border
 		place {
 			control=DetailsBorder
@@ -279,7 +279,7 @@ font-size=14 [$LINUX]
 			width=1024
 			height=550
 		}
-	
+
 		place {
 			control=headerimageb
 			x=320
@@ -298,7 +298,7 @@ font-size=14 [$LINUX]
 			margin-right=20
 			dir=down
 		}
-	
+
 		place {
 			control=gamesubheader
 			region=headertext
@@ -310,14 +310,14 @@ font-size=14 [$LINUX]
 			margin-right=20
 			dir=down
 		}
-	
+
 		place {
 			control=tagslabel
 			region=headertext
 			width=max
 			height=150
 		}
-	
+
 		// Community Hub, Forums, Related Groups, Store Page, DLC, Community Guides, Write Review
 		region	{
 			name="gamedata"
@@ -327,13 +327,13 @@ font-size=14 [$LINUX]
 			width=max
 			height=50
 		}
-	
+
 		place {
 			control=gamehublink,forumlink,ogglink,storelink,guideslink,dlclink,cdkeylink
 			region="gamedata"
 			spacing=20
 		}
-	
+
 		place {
 			control=achievementslink,manuallink,newslink,supportlink,recommendlink,linkslabel,*taglink,edittagslink,sendguestpasslink,guidelink
 			region="gamedata"
@@ -344,6 +344,6 @@ font-size=14 [$LINUX]
 			margin-right=0
 			dir=right
 			spacing=2
-		}	
+		}
 	}
 }

@@ -40,33 +40,33 @@ font-size=14 [$LINUX]
 			x=0
 			y=0
 		}
-	
+
 		place {
 			control=totalplaytimevalue
 			start=totalplaytimeheader
 			x=6
 			dir=right
 		}
-	
+
 		place {
 			control=gameplayedheader
 			start=totalplaytimeheader
 			dir=down
 		}
-	
+
 		place {
 			control=gameplayedvalue
 			start=gameplayedheader
 			dir=right
 			x=6
 		}
-	
+
 		place {
 			control=streamheader
 			start=gameplayedheader
 			dir=down
 		}
-	
+
 		place {
 			control=streamvalue
 			start=streamheader

@@ -7,40 +7,40 @@
 				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
 			}
 		}
-	
+
 		CloseButtonSm {
 			bgcolor=none
 			inset="0 0 0 0"
 			image="graphics/tab_close"
 			render_bg{}
 		}
-	
+
 			CloseButtonSm:hover {
 				image="graphics/tab_close_hover"
 				render_bg{}
 			}
-	
+
 		NextButtonSm {
 			bgcolor=none
 			inset="0 0 0 0"
 			image="graphics/icon_down_default"
 			render_bg{}
 		}
-	
+
 			NextButtonSm:hover {
 				bgcolor=none
 				inset="0 0 0 0"
 				image="graphics/icon_down_hover"
 				render_bg{}
 			}
-	
+
 		PrevButtonSm {
 			bgcolor=none
 			inset="0 0 0 0"
 			image="graphics/icon_up_default"
 			render_bg{}
 		}
-	
+
 			PrevButtonSm:hover {
 				bgcolor=none
 				inset="0 0 0 0"
@@ -48,7 +48,7 @@
 				render_bg{}
 			}
 	}
-	
+
 	layout {
 		place {
 			control="FindEntry"
@@ -58,17 +58,17 @@
 			margin-left=24
 			margin-right=26
 		}
-	
+
 		place {
 			control="FindCount"
 			align=right
 			y=8
 			width=70
-			margin-left=6		
+			margin-left=6
 			margin-top=5
 			margin-right=55
 		}
-	
+
 		place {
 			control="Next,Previous,Close"
 			align=right
@@ -77,7 +77,7 @@
 			margin-top=8
 			margin-right=5
 		}
-		
+
 		place {
 			control="SearchThisPage"
 			width=0

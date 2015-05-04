@@ -31,7 +31,7 @@ colors {
 	ChatGradientTop		 "darkestGrey"
 	ChatGradientBottom		"darkestGrey"
 
-	// DEFAULT STEAM BELOW:	  
+	// DEFAULT STEAM BELOW:
 	launch0 = "none"
 	launch1 = "none"
 	launch2 = "none"
@@ -149,7 +149,7 @@ colors {
 	DarkImageOverlay="0 0 0 80"
 	// colors pulled from steamscheme.res
 	"ClayBG"	  "70 70 70 255"
-	"ClayButtonBG"	  "87 88 88 255"	
+	"ClayButtonBG"	  "87 88 88 255"
 	"ClayEnabled"	 "85 88 82 255"
 	"ClayKeyFocus"	  "89 92 77 255"
 	"ClayMouseDown"	 "85 85 85 255"
@@ -170,7 +170,7 @@ colors {
 	"GrayBG2"	 "39 37 35 255"
 	"TempGradientTop" "53 52 51 255"
 	ListPanel.TextColor	   grey
-	ListPanel.BgColor	   none 
+	ListPanel.BgColor	   none
 	ListPanel.SelectedTextColor	 white
 	ListPanel.SelectedBgColor	 blue
 	ListPanel.SelectedOutOfFocusBgColor   blue
@@ -183,7 +183,7 @@ colors {
 	RichText.InsetY		 1
 	TextEntry.IMEBGColor		"225 225 225 255"
 	TextEntry.IMEFGColor		"black"
-	
+
 	GiftOnlyInfo.ImagePanelColor  "GrayBG"
 
 } // END OF COLORS
@@ -191,21 +191,21 @@ styles {
 	Notification {
 		render_bg {
 				0="fill(x0,y0,x1,y1, notificationDarkestGrey)"
-			
+
 				1="gradient(x0+1,y0+2,x1-1,y1,notificationGrey,notificationLightGreyEnd)"
-			
+
 				// Single pixel corner fills
 				2="fill(x0+1,y0+1,x0+2,y0+2, notificationDarkGreyEnd)" // Top Left
 				3="fill(x0+1,y1-1,x0+2,y1, notificationDarkGreyEnd)" // Bottom Left
 				4="fill(x1-2,y0+1,x1-1,y0+2, notificationDarkGreyEnd)" // Top Right
 				5="fill(x1-2,y1-1,x1-1,y1, notificationDarkGreyEnd)" // Bottom Right
-			
+
 				// Anti-aliased grey highlight
 				6="fill(x0+2,y0+1,x0+3,y0+2, notificationLighterGrey)" // Top Left - Highest
 				7="fill(x0+1,y0+2,x0+2,y0+3, notificationLighterGrey)" // Top Left - Lowest
 				8="fill(x1-3, y0+1, x1-2, y0+2, notificationLighterGrey)" // Top Right - Highest
 				9="fill(x1-2,y0+2,x1-1,y0+3, notificationLighterGrey)" // Top Right - Lowest
-			
+
 				// Single Pixel Highlight
 				10="fill(x0+3,y0+1,x1-3,y0+2, notificationHighlight)"
 		}
@@ -230,9 +230,9 @@ styles {
 		}
 
 	rightarrow {
-		image="graphics/icon_right_default"  
+		image="graphics/icon_right_default"
 	}
-	
+
 		rightarrow:hover {
 			image="graphics/icon_right_hover"
 		}
@@ -246,10 +246,10 @@ styles {
 
 	Frame {
 		bgcolor="darkGrey" // Only affects the login window and Preferences from testing.
-	
+
 		render {
 			// Create the 1px border around every window.
-			0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"	
+			0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"
 			1="fill( x1 - 1, y0, x1, y1, darkestGrey )"
 			2="fill( x0, y0, x1, y0 + 1, darkestGrey )"
 			3="fill( x0, y0, x0 + 1, y1, darkestGrey )"
@@ -260,7 +260,7 @@ styles {
 			bgcolor="darkGreyEnd"
 			render {
 				// Create the 1px border around every window.
-				0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"	
+				0="fill( x0, y1 - 1, x1 + 1, y1, darkestGrey )"
 				1="fill( x1 - 1, y0, x1, y1, darkestGrey )"
 				2="fill( x0, y0, x1, y0 + 1, darkestGrey )"
 				3="fill( x0, y0, x0 + 1, y1, darkestGrey )"
@@ -282,24 +282,24 @@ font-size=14 [$LINUX]
 		padding-right="0" [$OSX]
 		inset="2 -5 0 0"
 		inset="0 4 0 0" [$OSX]
-	
+
 		render_bg {
 			0="gradient( x0, y0, x1, y0+24, grey, lightGreyEnd)"
-			
+
 			1="fill(x0+1, y0, x0+2, y0+1, bottomDarkPixels)" // Top Left Dark Pixel
 			2="fill(x1-2, y0, x1-1, y0+1, bottomDarkPixels)" // Top Right Dark Pixel
-		
+
 			3="fill(x0+2, y0, x0+3, y0+1, greyHighlightFake)" // Top Left Fake Anti-Aliased
 			4="fill(x0+1, y0+1, x0+2, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
-		
+
 			5="fill(x1-3, y0, x1-2, y0+1, greyHighlightFake)" // Top Right Fake Anti-Aliased
 			6="fill(x1-2, y0+1, x1-1, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
-		
+
 			// Create the 1px Highlight on top
 			7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
-		  
+
 		  	8="gradient(x0,y0+24, x1, y0+31, black25, none)"
-		  
+
 		  	//9="fill(x0,y0,x1,y0+1, darkestGrey)"
 		  	10="fill(x0,y0,x0+1,y0+24, darkestGrey)"
 		  	11="fill(x1-1,y0,x1,y0+24, darkestGrey)"
@@ -314,19 +314,19 @@ font-size=14 [$LINUX]
 			font-weight=400
 			inset="2 -5 0 0"
 			inset="0 4 0 0" [$OSX]
-		
+
 			render_bg {
 				0="gradient( x0, y0, x1, y0+24, grey, lightGreyEnd)"
-				
+
 				1="fill(x0+1, y0, x0+2, y0+1, bottomDarkPixels)" // Top Left Dark Pixel
 				2="fill(x1-2, y0, x1-1, y0+1, bottomDarkPixels)" // Top Right Dark Pixel
-			
+
 				3="fill(x0+2, y0, x0+3, y0+1, greyHighlightFake)" // Top Left Fake Anti-Aliased
 				4="fill(x0+1, y0+1, x0+2, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
-	
+
 				5="fill(x1-3, y0, x1-2, y0+1, greyHighlightFake)" // Top Right Fake Anti-Aliased
 				6="fill(x1-2, y0+1, x1-1, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
-			
+
 				// Create the 1px Highlight on top
 				7="fill( x0+3, y0, x1-3, y0+1, greyHighlight)"
 			  	8="gradient(x0,y0+24, x1, y0+31, black25, none)"
@@ -334,7 +334,7 @@ font-size=14 [$LINUX]
 			  	11="fill(x1-1,y0,x1,y0+24, darkestGrey)"
 			}
 		}
-	   	
+
 	GraphPanel {
 		bgcolor=none
 		textcolor=Highlight5
@@ -345,7 +345,7 @@ font-size=14 [$LINUX]
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-		
+
 			// single pixel fills in the corners
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
 			6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
@@ -377,7 +377,7 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 		font-weight=400
 	}
-  
+
 
 
 	"GameColumn_BigText" {
@@ -399,7 +399,7 @@ font-size=14 [$LINUX]
 	Menu {
 		bgcolor="white"
 		inset="0 5 0 5"
-	
+
 		render {}
 		render_bg {
 			0="gradient(x0, y0, x1, y1, grey, lightGreyEnd)"
@@ -407,7 +407,7 @@ font-size=14 [$LINUX]
 			2="fill(x1-1, y0, x1, y1, darkGreyEnd)" // Right
 			3="fill(x0, y0, x1, y0+1, darkGreyEnd)" // Top
 			4="fill(x0, y1-1, x1, y1, darkGreyEnd)" // Bottom
-		
+
 			5="fill(x0+1, y0+1, x0+2, y1-1, white10)" // Left
 			6="fill(x1-2, y0+1, x1-1, y1-1, white10)" // Right
 			7="fill(x0+1, y0+1, x1-1, y0+2, greyHighlight)" // Top
@@ -439,14 +439,14 @@ font-size=14 [$LINUX]
 	"MenuBar MenuButton:frameFocus:hover" {
 		bgcolor=none
 		textcolor="texthover"
-			
+
 		render_bg {}
 	}
 
 	"MenuBar MenuButton:frameFocus:selected" {
 		bgcolor=none
 		textcolor="texthover"
-			
+
 		render_bg {}
 	}
 
@@ -457,18 +457,18 @@ font-size=14 [$LINUX]
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-	
-		render_bg {}  
-	} 
-  
+
+		render_bg {}
+	}
+
 		MenuButton:hover {
 			textcolor="white"
 		}
-	   
+
 		MenuButton:selected {
 			textcolor="white"
 		}
-	
+
 	EmoticonMenuItemStyle {
 		render {}
 		render_bg {}
@@ -485,10 +485,10 @@ font-size=14 [$LINUX]
 		font-outerglow-color="darkestGrey"
 		font-outerglow-offset=1
 		font-outerglow-filtersize=3
-	
+
 		render_bg {}
 	}
-  
+
 		MenuItem:selected {
 			bgcolor="none"
 			textcolor="white"
@@ -497,7 +497,7 @@ font-size=14 [$LINUX]
 		MenuItem:hover {
 			textcolor=trueWhite
 			font-style="none"
-		
+
 			render_bg {
 				0="gradient(x0+1, y0+1, x1-1, y1, blue, darkestBlue)"
 				1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
@@ -509,17 +509,17 @@ font-size=14 [$LINUX]
 			textcolor="lightestGrey"
 			font-style="none"
 		}
-	
+
 			MenuItem:disabled:hover {
 				shadowtextcolor=none
 				textcolor="labeldisabled"
 			}
-  
+
 	MenuSeparator {
 		bgcolor=none
 		textcolor="none"
 		inset="0 0 0 0"
-	
+
 		render {
 			0="fill(x0,y0+5,x1,y0+6, darkGrey)"
 			1="fill(x0+1,y0+6,x1-1,y0+7, grey50)"
@@ -527,7 +527,7 @@ font-size=14 [$LINUX]
 	}
 	Page {
 		bgcolor=none
-	
+
 		render {}
 	}
 	"CSteamRootDialog Page" {
@@ -538,7 +538,7 @@ font-size=14 [$LINUX]
 		bgcolor="DialogBG"
 	}
 
-// USING HAX TO MAKE PAGES WITH TABS PRETTIER :D	   
+// USING HAX TO MAKE PAGES WITH TABS PRETTIER :D
 	CInstallAppWizard {
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -556,10 +556,10 @@ font-size=14 [$LINUX]
 			5="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	 
+
 	COverlaySettingsDialog {
 		bgcolor=none
-	
+
 		render_bg {
 			0="fill( x0, y0, x1, y1, lightGreyEnd)"
 			1="fill( x0, y0, x1, y0+55, grey50 )"
@@ -610,14 +610,14 @@ font-size=14 [$LINUX]
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
-	
+
 			3="image(x1-120, y0+38, x1, y1, graphics/notifications/announcement)"
 		}
 	}
 
 	CEditTagsDialog {
 		bgcolor=darkGreyEnd
-	
+
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
@@ -638,7 +638,7 @@ font-size=14 [$LINUX]
 
 	CManageSecurityWizard {
 		bgcolor=darkGreyEnd
-	
+
 		render_bg {
 			0="fill( x0, y1-51, x1, y1-50, darkGrey )"
 			1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
@@ -797,7 +797,7 @@ font-size=14 [$LINUX]
 			2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
 		}
 	}
-	 
+
 // END OF HAX
 	PageTab {
 		bgcolor=none
@@ -808,8 +808,8 @@ font-size=14 [$LINUX]
 		font-style="normal"
 		font-weight=400
 		inset="0 0 0 0"
-	
-		render_bg {		
+
+		render_bg {
 			0="image(x0,y0,x0+3,y1, graphics/pagetabs/inactive/left)"
 			1="image_scale(x0+3,y0,x1-3,y0+23, graphics/pagetabs/inactive/inner)"
 			2="image(x1-3, y0, x1, y1, graphics/pagetabs/inactive/right)"
@@ -818,7 +818,7 @@ font-size=14 [$LINUX]
 	 	PageTab:hover {
 			bgcolor=none
 			textcolor="white"
-		
+
 			render_bg {
 				0="image(x0,y0,x0+3,y1, graphics/pagetabs/hover/left)"
 				1="image_scale(x0+3,y0,x1-3,y0+23, graphics/pagetabs/hover/inner)"
@@ -828,7 +828,7 @@ font-size=14 [$LINUX]
 	PageTab:selected {
 		bgcolor="none"
 		textcolor="trueWhite"
-	
+
 		render_bg {
 			0="gradient(x0+1,y0+2,x1-1,y0+25, grey, lightGreyEnd)"
 			1="image(x0,y0,x0+3,y1, graphics/pagetabs/active/left)"
@@ -839,7 +839,7 @@ font-size=14 [$LINUX]
 		PageTab:selected:hover {
 			bgcolor="none"
 			textcolor="trueWhite"
-		
+
 			render_bg {
 				0="gradient(x0+1,y0+2,x1-1,y0+25, lighterGrey, lightGreyEnd)"
 				1="image(x0,y0,x0+3,y1, graphics/pagetabs/active/left)"
@@ -847,7 +847,7 @@ font-size=14 [$LINUX]
 				3="image(x1-3, y0, x1, y1, graphics/pagetabs/active/right)"
 			}
 		}
-	 
+
 	PageTab:Focus {
 		textcolor="Texthover"
 	}
@@ -873,7 +873,7 @@ font-size=14 [$LINUX]
 			}
 			render_bg {}
 		}
-	
+
 		"ProgressBox Label" {
 			textcolor=none
 			font-size=15
@@ -882,15 +882,15 @@ font-size=14 [$LINUX]
 			font-weight=300
 			inset="0 0 0 10"
 		}
-	
+
 		"ProgressBox FrameCloseButton" {
 			render_bg {}
 		}
-	
+
 		"ProgressBox Button" {
 			bgcolor=none
 			textcolor=none
-		
+
 			render_bg {}
 		}
 		"ProgressBox ProgressBar" {
@@ -906,7 +906,7 @@ font-size=14 [$LINUX]
 		font-family=basefont
 		font-size=15
 font-size=14 [$LINUX]
-	
+
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
 
@@ -914,19 +914,19 @@ font-size=14 [$LINUX]
 			1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
 			2="image_scale(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
 			3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
-		
+
 			// LEFT
 			4="image_scale(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
-		  
+
 			// RIGHT
 			5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
-		  
+
 			// BOTTOM
 			6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
 			7="image_scale(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
 			8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
-		  
-		}  
+
+		}
 	}
 
 	"Page ProgressBar" {
@@ -938,7 +938,7 @@ font-size=14 [$LINUX]
 		font-family=basefont
 		font-size=15
 font-size=14 [$LINUX]
-	
+
 		render_bg {
 			0="fill(x0+2,y0+2,x1-2,y1-2, white)"
 
@@ -946,18 +946,18 @@ font-size=14 [$LINUX]
 			1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
 			2="image_scale(x0+3,y0,x1-3,y0+4, graphics/textEntry/topMiddle)"
 			3="image(x1-3,y0,x1,y0+4, graphics/textEntry/topRight)"
-		  
+
 			// LEFT
 			4="image_scale(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
-		  
+
 			// RIGHT
 			5="image_scale(x1-3,y0+4,x1,y1-3, graphics/textEntry/rightMiddle)"
-		  
+
 			// BOTTOM
 			6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
 			7="image_scale(x0+3,y1-2,x1-3,y1+1, graphics/textEntry/bottomMiddle)"
-			8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"  
-		} 
+			8="image(x1-3,y1-3,x1,y1+1, graphics/textEntry/bottomRight)"
+		}
 	}
 
 	PropertyPage {
@@ -967,7 +967,7 @@ font-size=14 [$LINUX]
 	"CFriendsDialog PropertySheet" {
 		bgcolor="none"
 	}
-	
+
 	RichText {
 		selectedtextcolor="trueWhite"
 		selectedbgcolor = blue
@@ -977,12 +977,12 @@ font-size=14 [$LINUX]
 font-size=14 [$LINUX]
 		font-weight=400
 		inset="0 -1 0 0"
-	
+
 		render_bg {
 			-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
-		}	
+		}
 	}
-		
+
 	RichTextInterior {
 		bgcolor=none
 	}
@@ -1028,14 +1028,14 @@ font-size=14 [$LINUX]
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-	
+
 		render_bg {
 			// lines around
 			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, red )"  // top
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-	
+
 			// single pixel fills in the corners
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
 			6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
@@ -1051,7 +1051,7 @@ font-size=14 [$LINUX]
 			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
 			0="gradient( x0 + 1, y0 + 1, x1, y0 + 1, orange, BackgroundStartOpaque)"
 		}
-		inset="1 -1 1 1" 
+		inset="1 -1 1 1"
 	}
 
 	SectionedlistpanelCollapser {
@@ -1078,19 +1078,19 @@ font-size=14 [$LINUX]
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-		textcolor="labelfocus"	 
+		textcolor="labelfocus"
 	}
 		StatusLabel:hover {
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
 			font-weight=400
-			textcolor="white" 
-		}  
+			textcolor="white"
+		}
 
 	TreeNode {
 		bgcolor=none
-	
+
 		render_bg {}
 	}
 
@@ -1101,7 +1101,7 @@ font-size=14 [$LINUX]
 	TreeViewSubPanel {
 		bgcolor=none
 	}
- 
+
 	TreeNodeText {
 		bgcolor=none
 		selectedtextcolor="TextSelected"
@@ -1114,7 +1114,7 @@ font-size=14 [$LINUX]
 		render {}
 		render_bg {}
 	}
- 
+
 	TreeView {
 		render_bg {
 			-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
@@ -1123,7 +1123,7 @@ font-size=14 [$LINUX]
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
-		
+
 			// single pixel fills in the corners
 			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
@@ -1137,7 +1137,7 @@ font-size=14 [$LINUX]
 			16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
 			17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
 			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-		}	
+		}
 	}
 	// Steam-specific styles
 	GameColumnHeaderFavorites {
@@ -1167,7 +1167,7 @@ font-size=14 [$LINUX]
 		font-size=15
 font-size=14 [$LINUX]
 		font-weight=400
-		inset="1 -1 1 1" 
+		inset="1 -1 1 1"
 
 		render_bg {
 			// lines around
@@ -1175,7 +1175,7 @@ font-size=14 [$LINUX]
 			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
 			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
 			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-		
+
 			// single pixel fills in the corners
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
 			6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
@@ -1189,13 +1189,13 @@ font-size=14 [$LINUX]
 			16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
 			17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
 			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-		
+
 			// background gradient
 			8="gradient( x0 + 1, y0 + 1, x1, y0 + 240, propertysheetbg, DarkDialogBG )"
 			9="fill( x0, y0 + 240, x1, y1, DarkDialogBG )"
 		}
 	}
-  
+
 		gamedetails-headerlabel {
 			textcolor="white"
 			font-size="36"
@@ -1209,7 +1209,7 @@ font-size=14 [$LINUX]
 			font-family=headerfont
 			font-weight=100
 		}
-	
+
 		gamedetails-headerlabel-green {
 			textcolor="white"
 			font-size="36"
@@ -1266,11 +1266,11 @@ font-size=14 [$LINUX]
 		padding-left=3
 		padding-top=2
 		padding-bottom=1
-	
+
 		render_bg {
 			// background fill
 			0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, grey, lightGreyEnd )" // Background Gradient
-				
+
 			// Dark Borders around
 			1="fill( x0, y0 + 2, x0 + 1, y1 - 2, darkestGrey )" // Left
 			2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
@@ -1282,36 +1282,36 @@ font-size=14 [$LINUX]
 			5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 			6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-		
+
 			// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 			8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 			9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-		
+
 			// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 			11="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, darkCornerPixels )" // Darkest Pixel
 			12="fill( x1 - 1, y1 - 2, x1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			13="fill( x1 - 2, y1 - 1, x1 - 1, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-		
+
 			// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 			14="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, darkCornerPixels )" // Darkest Pixel
 			15="fill( x0, y1 - 2, x0 + 1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 			16="fill( x0 + 1, y1 - 1, x0 + 2, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
+
 			// Single Pixel Highlight Line.
 			17="fill( x0 + 3, y0 + 1, x1 - 3, y0 + 2, greyHighlight )"
-		
+
 			// Fake Anti-Aliasing for the Single Pixel Highlight
-			18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, greyHighlightFake )" // Top Left	
-			19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, greyHighlightFake )" // Top Left	
+			18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, greyHighlightFake )" // Top Left
+			19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, greyHighlightFake )" // Top Left
 			20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, greyHighlightFake )" // Top Right
 			21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, greyHighlightFake )" // Top Right
-		
+
 			// Fake Anti-Aliasing for the bottom corners.
 			22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, bottomDarkPixels )" // Bottom Right
 			23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, bottomDarkPixels )" // Bottom Right
 			24="fill( x0 + 2, y1 - 2, x0 + 3, y1 - 1, bottomDarkPixels )" // Bottom Left
-			25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, bottomDarkPixels )" // Bottom Left		
+			25="fill( x0 + 1, y1 - 3, x0 + 2, y1 - 2, bottomDarkPixels )" // Bottom Left
 		}
 	}
 
@@ -1325,46 +1325,46 @@ font-size=14 [$LINUX]
 			padding-left=3
 			padding-top=2
 			padding-bottom=1
-		
+
 			render_bg {
 				// background fill
 				0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, lightGreyEnd, darkGreyEnd )" // Background Gradient
-					
+
 				// Dark Borders around
 				1="fill( x0, y0 + 2, x0 + 1, y1 - 2, darkestGrey )" // Left
 				2="fill( x0 + 2, y0, x1 - 2, y0 + 1, darkestGrey )" // Top
 				3="fill( x1 - 1, y0 + 2, x1, y1 - 2, darkestGrey )" // Right
 				4="fill( x0 + 2, y1 - 1, x1 - 2, y1, darkestGrey )" // Bottom
-	
+
 				// Dark Grey Background Corners & Fake Anti-Aliasing
 				// TOP-LEFT corner pixels (Fake Anti-Aliasing)
 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, darkCornerPixels )" // Darkest Pixel
 				6="fill( x0, y0 + 1, x0 + 1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				7="fill( x0 + 1, y0, x0 + 2, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
+
 				// TOP-RIGHT corner pixels (Fake Anti-Aliasing)
 				8="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, darkCornerPixels )" // Darkest Pixel
 				9="fill( x1 - 1, y0 + 1, x1, y0 + 2, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				10="fill( x1 - 2, y0, x1 - 1, y0 + 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
+
 				// BOTTOM-RIGHT corner pixels (Fake Anti-Aliasing)
 				11="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, darkCornerPixels )" // Darkest Pixel
 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				13="fill( x1 - 2, y1 - 1, x1 - 1, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
-			
+
 				// BOTTOM-LEFT corner pixels (Fake Anti-Aliasing)
 				14="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, darkCornerPixels )" // Darkest Pixel
 				15="fill( x0, y1 - 2, x0 + 1, y1 - 1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				16="fill( x0 + 1, y1 - 1, x0 + 2, y1, darkestGreyFake )" // Partially-Transparent (Fake Anti-Aliasing)
 				// Single Pixel Highlight Line.
 				17="fill( x0 + 3, y0 + 1, x1 - 3, y0 + 2, grey25 )"
-			
+
 				// Fake Anti-Aliasing for the Single Pixel Highlight
-				18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, grey10 )" // Top Left	
-				19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, grey10 )" // Top Left	
+				18="fill( x0 + 1, y0 + 2, x0 + 2, y0 + 3, grey10 )" // Top Left
+				19="fill( x0 + 2, y0 + 1, x0 + 3, y0 + 2, grey10 )" // Top Left
 				20="fill( x1 - 2, y0 + 2, x1 - 1, y0 + 3, grey10 )" // Top Right
 				21="fill( x1 - 3, y0 + 1, x1 - 2, y0 + 2, grey10 )" // Top Right
-			
+
 				// Fake Anti-Aliasing for the bottom corners.
 				22="fill( x1 - 3, y1 - 2, x1 - 2, y1 - 1, bottomDarkPixelsDisabled )" // Bottom Right
 				23="fill( x1 - 2, y1 - 3, x1 - 1, y1 - 2, bottomDarkPixelsDisabled )" // Bottom Right

@@ -22,7 +22,7 @@
 			margin-right=43
 			dir=down
 		}
-	
+
 		place {
 			control=LibraryList
 			start=LibraryHeader
@@ -39,7 +39,7 @@
 			width=90
 			dir=down
 		}
-	
+
 		place {
 			control=RemoveLibraryButton,StartCrawlingButton
 			start=AddLibraryButton
@@ -52,7 +52,7 @@
 			control=LibraryDivider
 			start=AddLibraryButton
 			y=16
-			width=max	
+			width=max
 			margin-right=43
 			dir=down
 		}
@@ -62,7 +62,7 @@
 			y=16
 			dir=down
 		}
-	
+
 		place {
 			control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders,EnableMediaKeysCheckbox
 			start=DatabaseInfoLabel
@@ -70,7 +70,7 @@
 			dir=down
 			spacing=-4
 		}
-	
+
 		place {
 			control=ResetDatabaseButton
 			start=EnableMediaKeysCheckbox
@@ -92,7 +92,7 @@
 			y=16
 			dir=down
 		}
-		
+
 		place {
 			control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox
 			start=PauseMusicHeader
@@ -100,14 +100,14 @@
 			dir=down
 			spacing=-4
 		}
-	
+
 		place {
 			control=NotificationHeader
 			start=PauseMusicWhenVoiceChatCheckbox
 			y=16
 			dir=down
 		}
-	
+
 		place {
 			control=NotificationPlaylistNowPlayingCheckbox
 			start=NotificationHeader
@@ -121,7 +121,7 @@
 			y=16
 			dir=down
 		}
-	
+
 		place {
 			control=LoggingCrawlingCheckbox
 			start=LoggingHeader

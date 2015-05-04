@@ -17,7 +17,7 @@
 			height=28
 			dir=down
 		}
-	
+
 		place {
 			control="Divider1"
 			start=ManageInstalledApps
@@ -32,7 +32,7 @@
 			y=16
 			dir=down
 		}
-	
+
 		place {
 			controls="RegionInfoLabel"
 			start=RegionLabel
@@ -40,7 +40,7 @@
 			width=max
 			dir=down
 		}
-	
+
 		place {
 			controls="DownloadRegionCombo"
 			start=RegionInfoLabel
@@ -63,14 +63,14 @@
 			y=16
 			dir=down
 		}
-	
+
 		place {
 			control=ThrottleRatesLabel
 			start="RestrictionsLabel"
 			y=8
 			dir=down
 		}
-	
+
 		place {
 			controls="ThrottleRates"
 			start=ThrottleRatesLabel
@@ -92,7 +92,7 @@
 			y=8
 			dir=down
 		}
-	
+
 		place {
 			controls="AutoUpdateTimeRestrictStart"
 			start=AutoUpdateTimeRestrictStartLabel
@@ -108,7 +108,7 @@
 			y=8
 			dir=down
 		}
-	
+
 		place {
 			controls="AutoUpdateTimeRestrictEnd"
 			start=AutoUpdateTimeRestrictEndLabel

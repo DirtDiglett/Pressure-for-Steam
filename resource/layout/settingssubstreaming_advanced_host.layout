@@ -17,7 +17,7 @@ layout {
 			dir=down
 			spacing=12
 		}
-	
+
 		place {
 			control="SupportInformationLabel"
 			region="bottom"
@@ -25,7 +25,7 @@ layout {
 			margin-left=14
 			margin-top=14
 		}
-	
+
 		place {
 			control="OKButton"
 			region="bottom"
