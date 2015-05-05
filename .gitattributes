@@ -22,4 +22,6 @@
 *.ttf binary
 *.otf binary
 *.png binary
-config.ini text eol=crlf
+
+#Special for config
+*.ini text eol=crlf
