@@ -8,11 +8,11 @@
 		// Greyscale
 		trueWhite="255 255 255 255"
 		white="251 251 251 255"
-		lightestGrey="139 139 139 255"
+		lightestGrey="194 194 194 255"
 		lightestGreyHighlight="77 77 77 255"
 		greyHighlight="67 67 67 255"
 
-		lighterGrey="70 70 70 255"
+		lighterGrey="100 100 100 255"
 
 		grey="60 60 60 255"
 		lightGreyEnd="42 42 42 255"
