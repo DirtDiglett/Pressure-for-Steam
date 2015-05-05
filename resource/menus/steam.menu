@@ -1,6 +1,6 @@
 "menubar" {
 	Steam [!$OSX] {
-		text = "#steam_menu_file"
+		text="#steam_menu_file"
 		SkinVersion {
 			text="Pressure v1.0.0"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
@@ -74,7 +74,7 @@
 		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		AddFunds {
-			text="Add Funds to Steam Wallet"
+			text="#Overlay_MicroTxnAuth_AddFunds"
 			shellcmd="steam://url/StoreAddFundsPage"
 		}
 		RedeemWalletVoucher {
@@ -277,14 +277,14 @@
 		}
 	}
 	Steam [$OSX] {
-		text = "Me"
+		text="#SteamRootAccount"
 		ViewProfile {
 			text="#steam_menu_account_view_profile"
 			shellcmd="steam://url/SteamIDMyProfile"
 		}
 		EditProfile {
-			text="Edit Profile..."
-			shellcmd="steam://url/steam://url/SteamIDEditPage"
+			text="#Friends_Edit_Profile"
+			shellcmd="steam://url/SteamIDEditPage"
 		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		AccountDetails {
@@ -384,7 +384,7 @@
 		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		SkinVersion {
-			text="Pressure BETA"
+			text="Pressure v1.0.0"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 	}
