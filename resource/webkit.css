@@ -3,49 +3,64 @@ body {
 }
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
-	width: 17px;
-	height: 17px;
-	background: #f1f1f1;
+	width: 11px;
+	height: 11px;
+	background: #111111;
 }
 ::-webkit-scrollbar-button,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb {
-	background: #f1f1f1 center no-repeat;
-	border: none;
-}
-::-webkit-scrollbar-track:horizontal,
-::-webkit-scrollbar-thumb:horizontal {
-	border-left: 0;
-	border-right: 0;
-}
-::-webkit-scrollbar-track:vertical,
-::-webkit-scrollbar-thumb:vertical {
-	border-top: 0;
-	border-bottom: 0;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: #bcbcbc;
-	border: 2px solid #f1f1f1;
-	padding: 0;
-	margin-left: 2px;
-	margin-right: 2px;
-}
-::-webkit-scrollbar-track:vertical {
-	background: #f1f1f1;
+	background: #111111 center no-repeat;
 	border: none;
 }
 ::-webkit-scrollbar-track:horizontal {
-	background: #f1f1f1;
+	border-left: 0;
+	border-right: 0;
+}
+::-webkit-scrollbar-track:vertical {
+	border-top: 0;
+	border-bottom: 0;
+}
+::-webkit-scrollbar-thumb:vertical  {
+	border: 1px solid #111111;
+	border-right: 4px solid #111111;
+	border-radius: 6px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+	border: 1px solid #111111;
+	border-bottom: 4px solid #111111;
+	border-radius: 6px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #111111;
+	padding: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	box-shadow: 0 0 0 1pt #616161 inset;
+}
+::-webkit-scrollbar-track:vertical {
+	background: #111111;
+	border: none;
+}
+::-webkit-scrollbar-track:horizontal {
+	background: #111111;
 }
 
 ::-webkit-scrollbar-button:hover,
 ::-webkit-scrollbar-thumb:hover {
-	background-color: #a8a8a8;
+	box-shadow: 0 0 0 1pt #FFFFFF inset;
 }
 ::-webkit-scrollbar-thumb {
 	background-image: none;
 }
+::-webkit-scrollbar-button {
+	display: none;
+}
+/**
 ::-webkit-scrollbar-button:vertical:decrement {
 	height: 2px;
 	background: #f1f1f1;
@@ -62,3 +77,4 @@ body {
 	width: 2px;
 	background: #f1f1f1;
 }
+*/
