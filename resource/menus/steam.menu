@@ -283,7 +283,7 @@
 			shellcmd="steam://url/SteamIDMyProfile"
 		}
 		EditProfile {
-			text="#Friends_Edit_Profile"
+			text="#steam_menu_set_avatar"
 			shellcmd="steam://url/SteamIDEditPage"
 		}
 		Divider {} // ________________________________________________________________________________________________________________________
