@@ -500,10 +500,10 @@ font-size=14 [$LINUX]
 		place {
 			control="ParentalLockButton"
 			align=left
-			margin-left=8
-			margin-top=30
-			width=16
-			height=16
+			margin-left=12
+			margin-top=24
+			width=41
+			height=23
 		}
 		// Realign the avatar and such on OSX (-8 on the Y axis, -12 on the X axis)
 		place [$OSX] {
