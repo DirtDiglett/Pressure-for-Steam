@@ -73,7 +73,7 @@ font-size=14 [$LINUX]
 			region=main
 			width=max
 			height=max
-			spacing=-5
+			spacing=0
 			margin-right=0
 		}
 	}
