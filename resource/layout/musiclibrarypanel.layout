@@ -2,8 +2,8 @@
 	styles {
 		CMusicLibraryPanel {
 			bgcolor=none
-			minimum-width = 296
-			minimum-height = 300
+			minimum-width=332
+			minimum-height=308
 
 			render_bg {
 				0="gradient( x0, y0, x1, y0+275, grey, lightgreyend)"
@@ -11,53 +11,17 @@
 			}
 		}
 
-		ClientTitle [!$OSX] {
-			bgcolor="none"
-			textcolor="labeldisabled"
-			font-family=basefont
-			font-size=14
-	  		font-weight=400
-	  		inset="12 6 0 0"
-		}
-
-		ClientTitle [$OSX] {
-			bgcolor="none"
-			textcolor="textdisabled"
-			font-family=basefont
-			font-size=15
-font-size=14 [$LINUX]
-	  		font-weight=400
-	  		inset="0 6 0 0"
-		}
-
-		ClientTitle:FrameFocus [!$OSX] {
-			bgcolor="none"
-			textcolor="label"
-			font-family=basefont
-   			font-size=14
-   			font-weight=400
-   			inset="12 6 0 0"
-		}
-
-
-		ClientTitle:FrameFocus [$OSX] {
-			bgcolor="none"
-			textcolor="texthover"
-   			font-family=basefont
-   			font-size=15
-font-size=14 [$LINUX]
-   			font-weight=400
-   			inset="0 6 0 0"
-		}
-
 		LibrarySearch {
 			textcolor="darkestGrey"
 			font-family=basefont
-			font-size=14
+			font-size=15
+font-size=14 [$LINUX]
 			font-weight=400
+			inset-left=0
 			padding-left=4
-			padding-right=20
-			minimum-width=150
+			padding-top=1
+			//padding-right=20
+			minimum-width=156
 
 			render_bg {
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
@@ -231,15 +195,17 @@ font-size=14 [$LINUX]
 		place {
 			control=library_search
 			region=searchrow
-			x=30
+			x=18
 			y=0
-			width=256
+			width=156
 		}
 
 		place {
 			control=library_music_menu,library_music_add_button
 			region=searchrow
-			x=300
+			dir=left
+			start=library_search
+			margin-left=2
 			y=0
 		}
 		place {
@@ -247,7 +213,7 @@ font-size=14 [$LINUX]
 			region=searchrow
 			align=right
 			x=4
-			y=6
+			y=3
 			width=18
 			height=18
 			margin-right=10

@@ -646,7 +646,7 @@
 		//Disk Usage
 		place {
 			control="disk_status_image,disk_status_label"
-			y=106
+			y=96
 			height=40
 			spacing=8
 			align=right
