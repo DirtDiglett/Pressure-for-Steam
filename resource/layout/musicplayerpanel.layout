@@ -6,6 +6,7 @@
 		ListPanelColumnHeader {
 			minimum-height=0
 		}
+
 		CMusicPlayerPanel {
 			bgcolor=darkestGrey
 			minimum-width = 440
@@ -38,7 +39,6 @@
 				21="fill(x0+1,y1-27,x1-1,y1-26, greyHighlight)"
 			}
 		}
-
 
 		MusicListPanelInterior {
 			bgcolor="darkestGrey"
@@ -83,7 +83,6 @@ font-size=14 [$LINUX]
 			}
 		}
 
-
 		ClientTitle [!$OSX] {
 			bgcolor=none
 			textcolor=none
@@ -109,8 +108,8 @@ font-size=14 [$LINUX]
    				font-weight=400
    				inset="0 6 0 0"
 			}
-		CurrentAlbumImageStyle {
 
+		CurrentAlbumImageStyle {
 			render {
 				0="image(x0-4,y0-4,x1+4,y1+4, graphics/album_shadow_mini)"
 			}
@@ -134,12 +133,12 @@ font-size=14 [$LINUX]
 				image=graphics/music/repeat_active
 				render_bg {}
 			}
-
 				RepeatButtonStyle:selected:hover {
 					bgcolor=none
 					image=graphics/music/repeat_active
 					render_bg {}
 				}
+
 		RepeatOnceButtonStyle {
 			bgcolor=none
 			inset="0"
@@ -161,7 +160,6 @@ font-size=14 [$LINUX]
 				image=graphics/music/repeat_active_once
 				render_bg {}
 			}
-
 				RepeatOnceButtonStyle:selected:hover {
 					bgcolor=none
 					image=graphics/music/repeat_active_once
@@ -190,10 +188,9 @@ font-size=14 [$LINUX]
 			image=graphics/music/previous
 			render_bg {}
 		}
-
 			PreviousButtonStyle:hover {
 				bgcolor=none
-				image=graphics/music/previous
+				image=graphics/music/previous_active
 				render_bg {}
 			}
 
@@ -202,10 +199,9 @@ font-size=14 [$LINUX]
 			image=graphics/music/next
 			render_bg {}
 		}
-
 			NextButtonStyle:hover {
 				bgcolor=none
-				image=graphics/music/next
+				image=graphics/music/next_active
 				render_bg {}
 			}
 
@@ -218,7 +214,6 @@ font-size=14 [$LINUX]
 			image=graphics/music/play
 			render_bg {}
 		}
-
 			PlayButtonStyle:hover {
 				bgcolor=none
 				image=graphics/music/play_hover
@@ -231,13 +226,13 @@ font-size=14 [$LINUX]
 
 				render_bg {}
 			}
-
 			PlayButtonStyle:selected {
 				bgcolor=none
 				image=graphics/music/play_active
 
 				render_bg {}
 			}
+
 		PauseButtonStyle {
 			bgcolor=none
 			inset="0 0 0 0"
@@ -247,22 +242,22 @@ font-size=14 [$LINUX]
 			image=graphics/music/pause
 			render_bg {}
 		}
-		PauseButtonStyle:hover {
-			bgcolor=none
-			image=graphics/music/pause_hover
-			render_bg {}
-		}
+			PauseButtonStyle:hover {
+				bgcolor=none
+				image=graphics/music/pause_hover
+				render_bg {}
+			}
+			PauseButtonStyle:active {
+				bgcolor=none
+				image=graphics/music/pause_active
+				render_bg {}
+			}
+			PauseButtonStyle:selected {
+				bgcolor=none
+				image=graphics/music/pause_active
+				render_bg {}
+			}
 
-		PauseButtonStyle:active {
-			bgcolor=none
-			image=graphics/music/pause_active
-			render_bg {}
-		}
-		PauseButtonStyle:selected {
-			bgcolor=none
-			image=graphics/music/pause_active
-			render_bg {}
-		}
 		VolumeButtonStyle {
 			bgcolor=none
 			inset-top=2
@@ -271,7 +266,7 @@ font-size=14 [$LINUX]
 		}
 			VolumeButtonStyle:hover {
 				bgcolor=none
-				image=graphics/music/volume
+				image=graphics/music/volume_hover
 				render_bg {}
 			}
 
@@ -283,7 +278,7 @@ font-size=14 [$LINUX]
 		}
 			VolumeButtonActiveStyle:hover {
 				bgcolor=none
-				image=graphics/music/volume
+				image=graphics/music/volume_hover
 				render_bg {}
 			}
 
@@ -293,43 +288,45 @@ font-size=14 [$LINUX]
 			image=graphics/music/volume_mute
 			render_bg {}
 		}
-		MuteVolumeButtonStyle:hover {
-			bgcolor=none
-			image=graphics/music/volume_mute
-			render_bg {}
-		}
+			MuteVolumeButtonStyle:hover {
+				bgcolor=none
+				image=graphics/music/volume_mute_hover
+				render_bg {}
+			}
 
 		MuteVolumeButtonActiveStyle {
 			bgcolor=none
+			inset-top=2
 			image=graphics/music/volume_mute_active
 			render_bg {}
 		}
-		MuteVolumeButtonActiveStyle:hover {
-			bgcolor=none
-			image=graphics/music/volume_mute_active
-			render_bg {}
-		}
+			MuteVolumeButtonActiveStyle:hover {
+				bgcolor=none
+				image=graphics/music/volume_mute_hover
+				render_bg {}
+			}
 
 		BrowseButtonStyle {
 			bgcolor=none
 			image=graphics/music/details
+			inset-top=-1
 			render_bg {}
 		}
-		BrowseButtonStyle:hover {
-			bgcolor=none
-			image=graphics/music/details
-			render_bg {}
-		}
+			BrowseButtonStyle:hover {
+				bgcolor=none
+				image=graphics/music/details_active
+				render_bg {}
+			}
 
 		StatusStyle	{
 			textcolor="white"
 			font-family=basefont
-			font-size=16
-font-size=15
+			font-size=15
 font-size=14 [$LINUX]
 			font-weight=600
 			render_bg {}
 		}
+
 		StatusStyleDim	{
 			textcolor="White"
 			font-family=basefont
@@ -338,6 +335,7 @@ font-size=14 [$LINUX]
 			font-style=normal
 			render_bg {}
 		}
+
 		InfoLabelStyle	{
 			textcolor="White"
 			font-family=basefont
@@ -345,10 +343,12 @@ font-size=14 [$LINUX]
 
 			render_bg {}
 		}
+
 		TrackListStyle {}
+
 		NoTracksLabelStyle {
 			bgcolor=none
-			image=graphics/music/background
+			image=""
 
 			render_bg {}
 		}
@@ -444,8 +444,10 @@ font-size=14 [$LINUX]
 			align="top-center"
 			x=16
 			y=94
-			margin-right=10
-			margin-bottom=33
+			margin-left=1
+			margin-right=1
+			margin-top=-1
+			margin-bottom=28
 		}
 		place {
 			control="InfoLabel"

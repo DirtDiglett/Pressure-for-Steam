@@ -111,7 +111,6 @@ font-size=14 [$LINUX]
 
 		BackgroundImage {
 			bgcolor="darkestGrey"
-			border=0
 		}
 		RichText {
 			render_bg {}
