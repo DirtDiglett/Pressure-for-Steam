@@ -53,7 +53,7 @@
 		place {
 			control="FindEntry"
 			align=left
-			y=8
+			y=7
 			width=180
 			margin-left=24
 			margin-right=26
@@ -62,7 +62,7 @@
 		place {
 			control="FindCount"
 			align=right
-			y=8
+			y=7
 			width=70
 			margin-left=6
 			margin-top=5
@@ -70,11 +70,11 @@
 		}
 
 		place {
-			control="Next,Previous,Close"
+			control="Previous,Next,Close"
 			align=right
 			width=22
 			height=24
-			margin-top=8
+			margin-top=7
 			margin-right=5
 		}
 
