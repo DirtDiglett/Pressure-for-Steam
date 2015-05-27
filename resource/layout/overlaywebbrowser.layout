@@ -454,7 +454,7 @@ font-size=14 [$LINUX]
 			width=20
 			height=20
 			margin-top=16
-			margin-right=11
+			margin-right=12
 		}
 		place {
 			control="BackButton,ForwardButton"
