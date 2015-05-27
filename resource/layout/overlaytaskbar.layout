@@ -6,6 +6,7 @@
 font-size=14 [$LINUX]
 			font-family=basefont
 			font-style=none
+			padding-right=20
 
 			render_bg {}
 		}
@@ -39,7 +40,7 @@ font-size=14 [$LINUX]
 			region=bottom
 			align=right
 			y=43
-			margin-right=66
+			margin-right=46
 			dir=down
 			spacing=5
 		}
