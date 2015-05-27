@@ -338,7 +338,7 @@ font-size=14 [$LINUX]
 		}
 		TextEntryURL:Hover {}
 		LabelEVCert {
-			bgcolor="html.secureurl"
+			//bgcolor="html.secureurl"
 			textcolor="darkclientbg"
 			font-family=basefont
 			font-size=14
@@ -350,12 +350,13 @@ font-size=14 [$LINUX]
 			bgcolor=none
 			inset="0 0 0 0"
 			image="graphics/html_lock_disabled"
- 			scaling=panel
+ 			//scaling=panel
  			render_bg{}
  		}
 		URLBarSecure {
 			textcolor="green"
-			font-size=14
+			font-size=15
+font-size=14 [$LINUX]
 		}
 		URLBarBrokenSecure {
 			textcolor="Red"
