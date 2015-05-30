@@ -45,14 +45,33 @@ font-size=14 [$LINUX]
 			selectedtextcolor=white
 			selectedbgcolor=blue
 			shadowtextcolor=darkestGrey
-			bgcolor=darkestGrey
+			bgcolor=none
 			textcolor=white
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
+			inset-left=4
+			inset-top=6
+			inset-right=6
 
 			render_bg {
-				0="fill(x0+2,y0,x1+32,y1, darkestGrey)"
+				0="fill(x0+2,y0+2,x1+32,y1-2, darkestGrey)"
+
+				// TOP
+				1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
+				2="image_scale(x0+3,y0,x1+32,y0+4, graphics/textEntry/topMiddle)"
+				3="image(x1+32,y0,x1+35,y0+4, graphics/textEntry/topRight)"
+
+				// LEFT
+				4="image_scale(x0,y0+4,x0+3,y1-3, graphics/textEntry/leftMiddle)"
+
+				// RIGHT
+				5="image_scale(x1+32,y0+4,x1+35,y1-3, graphics/textEntry/rightMiddle)"
+
+				// BOTTOM
+				6="image(x0,y1-3,x0+3,y1+1, graphics/textEntry/bottomLeft)"
+				7="image_scale(x0+3,y1-2,x1+32,y1+1, graphics/textEntry/bottomMiddle)"
+				8="image(x1+32,y1-3,x1+35,y1+1, graphics/textEntry/bottomRight)"
 			}
 
 		}
@@ -379,7 +398,8 @@ font-size=14 [$LINUX]
 			region=bottom
 			align=right
 			width=32
-			height=40
+			height=25
+			margin-top=9
 			end-right=sendbutton
 		}
 
