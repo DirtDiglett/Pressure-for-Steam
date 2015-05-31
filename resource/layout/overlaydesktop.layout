@@ -92,7 +92,7 @@ font-size=14 [$LINUX]
 			control=FriendsDetailPanel
 			region=topbar
 			align=left
-			width=175
+			width=305
 			height=26
 			dir=right
 		}

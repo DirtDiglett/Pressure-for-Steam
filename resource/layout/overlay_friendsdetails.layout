@@ -62,7 +62,14 @@ font-size=14 [$LINUX]
 		}
 
 		place {
-			controls=grid,ViewPlayersButton,TitleText
+			controls=ViewPlayersButton
+			start=AllFriendsButton
+			x=18
+			y=0
+		}
+
+		place {
+			controls=grid,TitleText
 			width=0
 			height=0
 		}
