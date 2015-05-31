@@ -46,7 +46,7 @@ font-size=14 [$LINUX]
 			selectedbgcolor=blue
 			shadowtextcolor=darkestGrey
 			bgcolor=none
-			textcolor=darkestGrey
+			textcolor=white
 			font-family=basefont
 			font-size=15
 font-size=14 [$LINUX]
@@ -55,7 +55,7 @@ font-size=14 [$LINUX]
 			inset-right=6
 
 			render_bg {
-				0="fill(x0+2,y0+2,x1+32,y1-2, white)"
+				0="fill(x0+2,y0+2,x1+32,y1-2, darkestGrey)"
 
 				// TOP
 				1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"
