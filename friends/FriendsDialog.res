@@ -1,12 +1,16 @@
 "Friends/FriendsDialog.res" {
+	colors {
+		PropertySheet.TabGap 1
+	}
 	styles {
 		// Here we force-set the minimum width to ensure that the search bar is not cut off.
 		CFriendsDialog {
 			font-family=basefont
 			font-style="normal"
-			minimum-width=225
+			minimum-width=224
 			minimum-height=400
 		}
+
 		FrameTitle {
 			bgcolor=none
 			textcolor=none
@@ -61,13 +65,15 @@
 					11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
 				}
 			}
+
 		// Used to push the friends section down lower for trickery with the PageTabs.
 		Page {
 			bgcolor=none
 			font-family=basefont
 			font-style="none"
-			inset="0 10 0 0"
+			inset="0 5 0 0"
 		}
+
 		SectionedlistpanelCollapser {
 			font-family=basefont
 			font-style="normal"
@@ -77,6 +83,7 @@
 			minimum-height=14
 			render_bg {}
 		}
+
 		// Overriding the default styling for these controls.
 		// So far, can't work out a way to move the pagetabs higher from their current position to make the button look.
 		PageTab {
@@ -86,38 +93,40 @@
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
-			inset="7 -7 0 0"
+			inset="7 -2 0 0"
 			minimum-width=101
-			minimum-height=34
+			minimum-height=26
 			render_bg {
-				1="gradient(x0+10, y0+3, x1+12, y1-9, grey, lightGreyEnd)"
-				2="fill(x0+10, y0+3, x1+12, y0+4, greyHighlight)"
-				3="fill(x0+10, y0+3, x0+11, y0+4, darkGreyEnd)"
-				4="fill(x1+11, y0+3, x1+12, y0+4, darkGreyEnd)"
-				7="fill(x0+10, y1-10, x0+11, y1-9, darkGrey)"
-				8="fill(x1+11, y1-10, x1+12, y1-9, darkGrey)"
+				1="gradient(x0+10, y0+2, x1+12, y1-2, grey, lightGreyEnd)"
+				2="fill(x0+10, y0+2, x1+12, y0+3, greyHighlight)"
+				3="fill(x0+10, y0+2, x0+11, y0+3, darkGreyEnd)"
+				4="fill(x1+11, y0+2, x1+12, y0+3, darkGreyEnd)"
+				7="fill(x0+10, y1-3, x0+11, y1-2, darkGrey)"
+				8="fill(x1+11, y1-3, x1+12, y1-2, darkGrey)"
 			}
 		}
 			PageTab:hover {
 				textcolor=white
 				render_bg {
-					0="gradient(x0+10, y0+3, x1+12, y1-9, greyHighlight, grey)"
-					1="fill(x0+10, y0+3, x1+12, y0+4, lightestGreyHighlight)"
-					3="fill(x0+10, y0+3, x0+11, y0+4, darkGreyEnd)"
-					4="fill(x1+11, y0+3, x1+12, y0+4, darkGreyEnd)"
-					7="fill(x0+10, y1-10, x0+11, y1-9, darkGrey)"
-					8="fill(x1+11, y1-10, x1+12, y1-9, darkGrey)"
+					0="gradient(x0+10, y0+2, x1+12, y1-2, greyHighlight, grey)"
+					1="fill(x0+10, y0+2, x1+12, y0+3, lightestGreyHighlight)"
+					3="fill(x0+10, y0+2, x0+11, y0+3, darkGreyEnd)"
+					4="fill(x1+11, y0+2, x1+12, y0+3, darkGreyEnd)"
+					7="fill(x0+10, y1-3, x0+11, y1-2, darkGrey)"
+					8="fill(x1+11, y1-3, x1+12, y1-2, darkGrey)"
 				}
 			}
 			PageTab:selected {
 				textcolor=blue
 				render_bg {}
 			}
+
 		"CFriendsDialog SectionedListPanel" {
 		    bgcolor=none
 		    font-family=basefont
 		    render_bg {}
 	    }
+
 	    CFriendsListSectionHeader {
 			textcolor=white
 			font-family=semibold
@@ -129,6 +138,7 @@
 				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
 			}
 	    }
+
 		// The actual whole dialog window itself.
 		FriendsPanel {
 			bgcolor="darkestGrey"
@@ -141,6 +151,7 @@
 				3="gradient( x0+1, y1-14, x1-1, y1-1, grey, lightGreyEnd )"
 			}
 		}
+
 		AddFriendsButton  {
 			textcolor="none"
 			font-family=basefont
@@ -154,10 +165,12 @@ font-size=14 [$LINUX]
 				textcolor="none"
 				render_bg {}
 			}
+
 		RootMenu {
 			bgcolor="none"
 			textcolor="none"
 		}
+
 		// Hide the word "Friends" on the title area.
 		FriendsTitle [$OSX] {
 			bgcolor=none
@@ -173,6 +186,7 @@ font-size=14 [$LINUX]
 				font-size=1
 				font-weight=400
 			}
+
 		"MenuBar MenuButton" {
 			textcolor=none
 			render_bg {
@@ -191,6 +205,7 @@ font-size=14 [$LINUX]
 					0="image( x0, y0, x1,y1, graphics/supermenus/friends/active )"
 				}
 			}
+
 		FriendsSearch {
 			textcolor="darkestGrey"
 			font-family=basefont
@@ -201,20 +216,22 @@ font-size=14 [$LINUX]
 			padding-right=20
 			inset-left=0
 			minimum-width=110
-				render {
-						0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
-				}
+			render {
+				0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
+			}
 			render_bg {
-				6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
+				6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-				15="fill(x0-19,y0+32,x0+187,y0+56, darkestGrey)"// Top->Bottom
-				16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
-				17="fill(x0+187,y0+33,x0+188,y0+55, darkestGrey)" // Right
-				18="fill(x0-19,y0+56,x0+187,y0+57, grey50)"//grey50)"
-				19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
-				20="fill(x0+187, y0+55, x0+188, y0+56, grey50)"
+
+				//begin pagetab background
+				15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+				16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+				17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+				18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+				19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+				20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 			}
 		}
 			// Typed in, as well as hovered.
@@ -224,19 +241,21 @@ font-size=14 [$LINUX]
 			}
 				FriendsSearch:focus {
 					render {
-						0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 					}
 					render_bg {
-						6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-						15="fill(x0-19,y0+32,x0+187,y0+56, darkestGrey)"// Top->Bottom
-						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
-						17="fill(x0+187,y0+33,x0+188,y0+55, darkestGrey)" // Right
-						18="fill(x0-19,y0+56,x0+187,y0+57, grey50)"//grey50)"
-						19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
-						20="fill(x0+187, y0+55, x0+188, y0+56, grey50)"
+
+						//begin pagetab background
+						15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+						16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+						17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+						18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 					}
 				}
 
@@ -262,54 +281,60 @@ font-size=14 [$LINUX]
 				padding-left=4
 
 				render {
-						0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+					0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 				}
 
 				render_bg {
-					6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
+					6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
 					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
 					2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
 					3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
-					15="fill(x0-19,y0+32,x0+187,y0+56, darkestGrey)"// Top->Bottom
-					16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
-					17="fill(x0+187,y0+33,x0+188,y0+55, darkestGrey)" // Right
-					18="fill(x0-19,y0+56,x0+187,y0+57, grey50)"//grey50)"
-					19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
-					20="fill(x0+187, y0+55, x0+188, y0+56, grey50)"
+
+					//begin pagetab background
+					15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+					16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+					17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+					18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+					19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+					20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 				}
 			}
 				FriendsSearch:empty:focus [!$OSX] {
 					render {
-							0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 					}
 					render_bg {
-						6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-						15="fill(x0-19,y0+32,x0+187,y0+56, darkestGrey)"// Top->Bottom
-						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
-						17="fill(x0+187,y0+33,x0+188,y0+55, darkestGrey)" // Right
-						18="fill(x0-19,y0+56,x0+187,y0+57, grey50)"//grey50)"
-						19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
-						20="fill(x0+187, y0+55, x0+188, y0+56, grey50)"
+
+						//begin pagetab background
+						15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+						16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+						17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+						18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 					}
 				}
 				FriendsSearch:empty:active [!$OSX] {
 					render {
-							0="fill(x0-27,y0+64,x1+9999,y0+65, darkestGrey)"
+						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 					}
 					render_bg {
-						6="fill(x0-27, y0-5, x1+9999, y0+64, lightGreyEnd)"
+						6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
 						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
 						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
 						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-						15="fill(x0-19,y0+32,x0+187,y0+56, darkestGrey)"// Top->Bottom
-						16="fill(x0-20,y0+33,x0-19,y0+55, darkestGrey)" // Left
-						17="fill(x0+187,y0+33,x0+188,y0+55, darkestGrey)" // Right
-						18="fill(x0-19,y0+56,x0+187,y0+57, grey50)"//grey50)"
-						19="fill(x0-20, y0+55, x0-19, y0+56, grey50)"
-						20="fill(x0+187, y0+55, x0+188, y0+56, grey50)"
+
+						//begin pagetab background
+						15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+						16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+						17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+						18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 					}
 				}
 				FriendsSearch:empty:focus [$OSX] {
@@ -354,6 +379,7 @@ font-size=14 [$LINUX]
 				font-style=italic
 				padding-left=0
 			}
+
 		// Used as an overlay to round off the buttons
 		FriendsSearchIcon {
 			bgcolor="none"
@@ -410,6 +436,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=0
 		}
+
  		// the title bar is missing, so increase the size of the grip
 		place {
 			control="frame_captiongrip"
@@ -417,6 +444,7 @@ font-size=14 [$LINUX]
 			height=50
 			margin=2
 		}
+
 		place [!$OSX] {
 			control="MenuBar"
 			margin-left=2
@@ -424,12 +452,15 @@ font-size=14 [$LINUX]
 			height=24
 			margin-top=-1
 		}
+
 		place {
 			control="FriendPanelSelf"
 			x=10
 			y=25
 			width=max
+			margin-right=4
 		}
+
 		place {
 			control="friends_search"
 			start="FriendPanelSelf"
@@ -441,6 +472,7 @@ font-size=14 [$LINUX]
 			margin-top=1
 			dir=down
 		}
+
 		place {
 			control="FriendsDialogSheet"
 			align=left
@@ -453,6 +485,7 @@ font-size=14 [$LINUX]
 			margin-right=0
 			margin-bottom=16
 		}
+
 		// Use this for cleverness to make the buttons.
 		place {
 			control="friends_search_icon" // this rounds off the corners for the pagetab buttons; it was never clickable
@@ -462,6 +495,7 @@ font-size=14 [$LINUX]
 			height=0
 			dir=right
 		}
+
 		place {
 			control="addFriendsButton" // this rounds off the corners for the pagetab buttons; it's still clickable
 			width=0
@@ -470,6 +504,7 @@ font-size=14 [$LINUX]
 			margin-left=145
 			dir=right
 		}
+
 		place {
 			control="NoFriendsAddFriendButton"
 			width=141
@@ -477,6 +512,7 @@ font-size=14 [$LINUX]
 			margin-left=6
 			margin-top=83
 		}
+
 		place {
 			control="DownLabel"
 			width=max
