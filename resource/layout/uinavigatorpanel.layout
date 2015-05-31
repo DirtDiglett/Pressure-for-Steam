@@ -72,9 +72,7 @@ font-size=14 [$LINUX]
 			textcolor="Label"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
-			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			font-style=none
 		}
@@ -83,9 +81,9 @@ font-size=14 [$LINUX]
 			textcolor="red"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
-			font-style=uppercase
+			font-style="none"
 			padding-left=0
 		}
 
@@ -94,7 +92,7 @@ font-size=14 [$LINUX]
 			textcolor="green"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			font-style="none"
 			padding-left=5
@@ -303,6 +301,7 @@ font-size=14 [$LINUX]
 		bgcolor="none"
 		image=""
 		textcolor=none
+		font-style="none"
 		render_bg {
 			   // background fill
 				0 = "gradient( x0 + 1, y0 + 1, x1, y1 - 2, grey, lightGreyEnd )" // Background Gradient
@@ -462,6 +461,7 @@ font-size=14 [$LINUX]
 	ForwardButton {
 		image=""
 		textcolor=none
+		font-style="none"
 		render_bg {
 			// background fill
 			0 = "gradient( x0+1, y0 + 1, x1 - 1, y1 - 1, grey, lightGreyEnd )" // Background Gradient
