@@ -8,6 +8,7 @@
 			font-weight=400
 			font-style="regular,normal"
 			inset= "0 0 0 0"
+			minimum-height=0
 
 			render {}
 			render_bg {}
