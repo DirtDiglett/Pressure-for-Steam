@@ -6,5 +6,8 @@
 		"GameItem_Uninstalled GamesGridImage" {
 			alpha 75
 		}
+		"GameItem_Uninstalled GamesGridIcon" {
+			alpha 75
+		}
 	}
 }

@@ -15,6 +15,9 @@
 		GGPlaceholderBG {
 			bgcolor=none
 		}
+		"GameItem_Uninstalled GamesGridPlaceholder" {
+			textcolor=white20
+		}
 		"GameItem_installed GamesGridPlaceholder" {
 			textcolor="white"
 		}

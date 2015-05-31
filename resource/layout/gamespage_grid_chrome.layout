@@ -1,8 +1,17 @@
 "resource/layout/gamespage_grid_chrome.layout" {
 	styles {
 		ChromeBorderItem {
-			bgcolor= black75
+			bgcolor=none
+			render_bg {
+				0="gradient(x0, y0, x1, y0+13, none, black40)" //5 above the buttons
+				1="gradient(x0, y0+13, x1, y0+57, black40, black65)" //5 above to 5 below
+				2="gradient(x0, y0+57, x1, y1, black65, black90)" //5 below the buttons
+			}
 		}
+			"GameItem_Uninstalled ChromeBorderItem" {	//Does _notinstalled exist too?
+				bgcolor=black75
+			}
+
 		GridNavDivider {
 			bgcolor=none
 			textcolor=none
@@ -18,7 +27,7 @@
 			inset="22 7 0 0"
 
 			render {
-				1="image( x0 + 9, y0 + 12, x1, y1, graphics/gamedetails/install/install_icon )"
+				1="image( x0 + 9, y0 + 11, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
 			render_bg {
 				// Background
@@ -72,7 +81,7 @@
 			inset="22 3 0 0"
 
 			render {
-				1="image( x0 + 9, y0 + 12, x1, y1, graphics/gamedetails/install/install_icon )"
+				1="image( x0 + 9, y0 + 11, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
 			render_bg {
 				// Background
@@ -248,10 +257,10 @@
 			font-style="none"
 			padding-right=10
 			padding-left=10
-			inset="22 7 0 0"
+			inset="20 7 0 0"
 
 			render {
-				1="image( x0 + 10, y0 + 7, x1, y1, graphics/gamedetails/play/play_icon )"
+				1="image( x0 + 8, y0 + 6, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
 			render_bg {
 				// Background
@@ -302,10 +311,10 @@
 			font-outerglow-filtersize=6
 			padding-right=10
 			padding-left=10
-			inset="22 3 0 0"
+			inset="20 3 0 0"
 
 			render {
-				1="image( x0 + 10, y0 + 7, x1, y1, graphics/gamedetails/play/play_icon )"
+				1="image( x0 + 8, y0 + 6, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
 			render_bg {
 				// Background
@@ -478,7 +487,7 @@
 			inset="22 7 0 0"
 
 			render {
-				1="image( x0 + 10, y0 + 10, x1, y1, graphics/gamedetails/details/details_icon )"
+				1="image( x0 + 10, y0 + 9, x1, y1, graphics/gamedetails/details/details_icon )"
 			}
 			render_bg {
 				// Background
@@ -528,7 +537,7 @@
 			inset="22 3 0 0"
 
 			render {
-				1="image( x0 + 10, y0 + 10, x1, y1, graphics/gamedetails/details/details_icon )"
+				1="image( x0 + 10, y0 + 9, x1, y1, graphics/gamedetails/details/details_icon )"
 			}
 			render_bg {
 				// Background
@@ -692,9 +701,10 @@
 		CUIDetailsButton:disabled {
 			image=graphics/details_d
 		}
-			"GameItem_Updating CUINavButton:hover" {
-				textcolor="White"
-			}
+
+		"GameItem_Updating CUINavButton:hover" {
+			textcolor="White"
+		}
 	}
 	layout {
 		region {
@@ -703,7 +713,7 @@
 			x=0
 			y=210
 			width=max
-			height=78
+			height=70
 			margin-bottom=0
 		}
 
@@ -721,11 +731,11 @@
 			control="launch,details"
 			region="actions"
 			align=top-center
-			height=40
+			height=34
 			margin-left=8
 			margin-top=18
 			margin-right=8
-			margin-bottom=24
+			margin-bottom=18
 			spacing=16
 		}
 
