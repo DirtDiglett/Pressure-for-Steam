@@ -1,10 +1,11 @@
 "resource/layout/htmlfindbar.layout" {
 	styles {
 		FindEntry {
+			inset-left=0
 			render_bg{
 				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
-				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-				3="image_tiled(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+				2="image(x1-8, y0, x1-2, y0+25, graphics/search/right)"
+				3="image_tiled(x0+3, y0, x1-8, y0+25, graphics/search/inner)"
 			}
 		}
 
@@ -14,7 +15,6 @@
 			image="graphics/tab_close"
 			render_bg{}
 		}
-
 			CloseButtonSm:hover {
 				image="graphics/tab_close_hover"
 				render_bg{}
@@ -26,7 +26,6 @@
 			image="graphics/icon_down_default"
 			render_bg{}
 		}
-
 			NextButtonSm:hover {
 				bgcolor=none
 				inset="0 0 0 0"
@@ -40,7 +39,6 @@
 			image="graphics/icon_up_default"
 			render_bg{}
 		}
-
 			PrevButtonSm:hover {
 				bgcolor=none
 				inset="0 0 0 0"
