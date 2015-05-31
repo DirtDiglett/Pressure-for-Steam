@@ -36,7 +36,7 @@
 		Menu.TextInset "6"
 
 		PropertySheet.TransitionEffectTime "0"	 // time to change from one tab to another
-		PropertySheet.TabGap 1
+		PropertySheet.TabGap -2
 		PropertySheet.FlashTabColor "255 114 76 255"
 
 		SectionedListPanel.CollapserWidth 10

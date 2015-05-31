@@ -29,8 +29,8 @@
 	  TabCloseButton {
 		render_bg {}
 
-		inset="-4 3 0 0" [$OSX]
-		inset="-7 3 0 0"  // Adjusted for windows to match screenshots
+		inset="-9 2 0 0" [$OSX]
+		inset="-12 2 0 0"  // Adjusted for windows to match screenshots
 		image  = "graphics/tab_close"
     }
 		TabCloseButton:hover {
