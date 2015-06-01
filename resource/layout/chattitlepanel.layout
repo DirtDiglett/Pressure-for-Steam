@@ -1,22 +1,22 @@
 "resource/layout/chattitlepanel.layout" {
 	styles {
 		menuButtonStyle {
-			minimum-width=10
 			padding-top=6
 			padding-bottom=4
 			padding-right=5
-			padding-left=3
+			padding-left=2
+			minimum-width=10
+			inset-top=-2
 		}
-
-		menuButtonStyle:hover {
-			render_bg {}
-		}
+			menuButtonStyle:hover {
+				render_bg {}
+			}
 
 		Label {
 			font-family=basefont
-			font-size=15
-			font-size=14 [$LINUX]
-			font-weight=500
+			font-size=16
+font-size=15 [$LINUX]
+			font-weight=600
 			textcolor=white
 
 			font-style="outerglow"
@@ -29,6 +29,7 @@
 			font-family=basefont
 			textcolor=lightestGrey
 			font-size=15
+font-size=14 [$LINUX]
 
 			font-style="normal,regular,outerglow"
 			font-outerglow-color="darkestGrey"
@@ -42,39 +43,36 @@
 		place {
 			control="AvatarImage"
 			x=1
-			y=5
+			y=4
 			align=left
 			dir=right
 			spacing=8
 		}
 
 		place {
-			control="NameLabel"
-			x=62
-			y=8
-			align=left
-			dir=right
-			spacing=0
+			control="LockImage"
+			width=10
+			height=20
 		}
+		place {
+			control="LockImage,NameLabel"
+			x=46
+			y=2
+			spacing=2
+		}
+
 		place {
 			control=MenuButton
 			start=NameLabel
 			x=2
-			y=-4
-		}
-
-		place {
-			control="LockImage"
-			x=44
-			y=10
-			width=16
+			y=-3
 		}
 
 		place {
 			control="StatusLabel"
 			align=left
-			x=47
-			y=26
+			x=46
+			y=30
 		}
 	}
 }

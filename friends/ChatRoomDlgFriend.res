@@ -335,7 +335,7 @@
 
 		place {
 			control="TitlePanel"
-			x=6
+			x=5
 			y=7
 			width=max
 			height=52
