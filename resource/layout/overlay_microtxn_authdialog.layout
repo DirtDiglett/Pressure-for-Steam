@@ -31,6 +31,30 @@
 		AuthBtnStyle {
 			minimum-width="100"
 		}
+		
+		RefundTextStyle
+		{
+			textcolor="label2"
+			selectedtextcolor="label2"
+			scrollbar="0"
+			font-size=14			
+			render_bg {}
+		}
+		
+		RefundTextLinkStyle
+		{
+			textcolor="label2"
+			font-size=14
+			font-style=underline
+		}
+		
+		SeparatorStyle
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, label2 )"
+			}
+		}		
 	}
 	layout {
 		region {
@@ -99,6 +123,27 @@
 			margin-top=12
 			spacing=15
 			dir=left
+		}
+		
+		place {
+			control=RefundText
+			start=Separator
+			width=max
+			height=50
+			margin-top=7
+			dir=down
+			spacing=0
+		}
+		
+		place {
+			control=Separator
+			start=total
+			width=max
+			height=1
+			margin-left=10
+			margin-right=10
+			dir=down
+			spacing=0
 		}
 	}
 }
