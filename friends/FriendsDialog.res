@@ -465,10 +465,10 @@ font-size=14 [$LINUX]
 			control="friends_search"
 			start="FriendPanelSelf"
 			//y=85
-			width=192 // should be max but right side is buggy if window size is changed using right-side handle of window border (only if box is empty)
+			width=189 // should be max but right side is buggy if window size is changed using right-side handle of window border (only if box is empty)
 			height=25
 			margin-left=18
-			margin-right=8
+			margin-right=7
 			margin-top=1
 			dir=down
 		}
