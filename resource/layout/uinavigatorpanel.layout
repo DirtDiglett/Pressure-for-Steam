@@ -2096,23 +2096,6 @@ font-size=14 [$LINUX]
 			spacing=0
 			dir=right
 		}
-		place {
-			control="PageLoadThrobber"
-			align=right
-			start=URLBar
-			y=0
-			width=24
-			height=24
-			margin-right=197
-		}
-
-		place {
-			control="URLStatusImage"
-			align=right
-			y=40
-			height=38
-			margin-right=200
-		}
 
 		place {
 			control="EVCert"
@@ -2128,6 +2111,27 @@ font-size=14 [$LINUX]
 			margin-right=221
 			dir=right
 		}
+
+		place {
+			control="PageLoadThrobber"
+			start=URLBar
+			align=right
+			y=0
+			width=24
+			height=24
+			margin-right=197
+		}
+
+		place {
+			control="URLStatusImage"
+			start=URLBar
+			align=right
+			y=2
+			width=20
+			height=20
+			margin-right=199
+		}
+
 // ********************************************************************************************************
 // Library Controls
 // ********************************************************************************************************

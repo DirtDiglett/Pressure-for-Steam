@@ -449,14 +449,6 @@ font-size=14 [$LINUX]
 		}
 		///// Web Controls /////
 		place {
-			control="URLStatusImage"
-			align=right
-			width=20
-			height=20
-			margin-top=16
-			margin-right=12
-		}
-		place {
 			control="BackButton,ForwardButton"
 			x=7
 			y=14
@@ -464,6 +456,7 @@ font-size=14 [$LINUX]
 			height=25
 			spacing=-1
 		}
+
 		place {
 			control="ReloadButton,StopButton,HomeButton"
 			start="ForwardButton"
@@ -472,14 +465,15 @@ font-size=14 [$LINUX]
 			height=25
 			spacing=0
 		}
+
 		place {
 			control="URLBar"
 			start="HomeButton"
-			height=24
 			width=max
-			margin-right=43
-			dir=right
+			height=24
+			margin-right=28
 		}
+
 		place {
 			control="PageLoadThrobber"
 			start=URLBar
@@ -487,8 +481,19 @@ font-size=14 [$LINUX]
 			y=0
 			width=24
 			height=24
-			margin-right=10
+			margin-right=3
 		}
+
+		place {
+			control="URLStatusImage"
+			start=URLBar
+			align=right
+			y=2
+			width=20
+			height=20
+			margin-right=5
+		}
+
 		place {
 			control=EVCert
 			width=0

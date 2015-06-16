@@ -372,6 +372,7 @@ font-size=14 [$LINUX]
 			margin-right=1
 			margin-bottom=0
 		}
+
 		place {
 			control="StatusText"
 			align=bottom
@@ -379,14 +380,7 @@ font-size=14 [$LINUX]
 			margin-left=9
 			margin-bottom=1
 		}
-		place {
-			control="PageLoadThrobber"
-			align=right
-			width=20
-			height=20
-			margin-top=28
-			margin-right=10
-		}
+
 		place {
 			control="BackButton,ForwardButton"
 			x=7
@@ -395,6 +389,7 @@ font-size=14 [$LINUX]
 			height=25
 			spacing=-1
 		}
+
 		place {
 			control="ReloadButton,StopButton"
 			start="ForwardButton"
@@ -403,6 +398,7 @@ font-size=14 [$LINUX]
 			height=25
 			spacing=0
 		}
+
 		place {
 			control="URLBar"
 			start="StopButton"
@@ -410,15 +406,29 @@ font-size=14 [$LINUX]
 			height=24
 			margin-right=9
 		}
+
 		place {
-			control="URLStatusImage"
+			control="PageLoadThrobber"
+			start=URLBar
 			align=right
-			y=26
-			height=38
+			y=0
+			width=24
+			height=24
 			margin-right=10
 		}
+
 		place {
-			control="EVCert,PageLoadThrobber"
+			control="URLStatusImage"
+			start=URLBar
+			align=right
+			y=2
+			width=20
+			height=20
+			margin-right=12
+		}
+
+		place {
+			control="EVCert"
 			x=0
 			y=0
 			width=0
