@@ -56,8 +56,9 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control="LockImage,NameLabel"
-			x=46
-			y=2
+			start=AvatarImage
+			x=5
+			y=-3
 			spacing=2
 		}
 
@@ -65,14 +66,15 @@ font-size=14 [$LINUX]
 			control=MenuButton
 			start=NameLabel
 			x=2
-			y=-3
+			y=-2
 		}
 
 		place {
 			control="StatusLabel"
+			start=AvatarImage
 			align=left
-			x=46
-			y=30
+			x=5
+			y=26
 		}
 	}
 }
