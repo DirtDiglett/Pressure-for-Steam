@@ -73,13 +73,13 @@
 		}
 		ListPanelColumnheader [!$OSX] {
 			bgcolor="none"
-			textcolor= "white"
+			textcolor="white"
 			font-family=semibold
 			font-size=15
 			font-size=14 [$LINUX]
 			font-weight=400
 			font-style="regular,normal"
-			inset= "-2 3 0 0"
+			inset="-2 3 0 0"
 			minimum-height=14
 
 			render {
@@ -92,7 +92,7 @@
 			}
 		}
 			ListPanelColumnHeader:hover {
-				textcolor= "white"
+				textcolor="white"
 				render_bg {
 					0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
 					1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
@@ -100,7 +100,7 @@
 			}
 
 		ListPanelDragger {
-			bgcolor= "none"
+			bgcolor="none"
 			minimum-height=14
 			render {
 				//fill makes dragger visible
@@ -109,7 +109,7 @@
 		}
 
 		"Page ListPanelDragger" {
-			bgcolor= "none"
+			bgcolor="none"
 			minimum-height=14
 
 			render {
