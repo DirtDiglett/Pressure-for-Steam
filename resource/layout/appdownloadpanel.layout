@@ -359,7 +359,7 @@
 			region="column2"
 			align=left
 			x=0
-			y=92
+			y=76
 			spacing=4
 		}
 		place {
