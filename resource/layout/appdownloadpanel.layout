@@ -23,7 +23,7 @@
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=normal
 			padding-left=0
 			padding-top=0
@@ -38,7 +38,7 @@ font-size=14 [$LINUX]
 				textcolor="lightestBlue"
 				font-family=basefont
 				font-size=15
-font-size=14 [$LINUX]
+				font-size=14 [$LINUX]
 				font-style=normal
 			}
 			links:disabled {
@@ -46,14 +46,14 @@ font-size=14 [$LINUX]
 			}
 		label {
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 		}
 		// For the "Auto-Updates Enabled"
 		settingslink {
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=regular
 			render_bg {
 				0="image(x1+3, y0+3, x1+17, y1, graphics/auto_downloads)"
@@ -63,7 +63,7 @@ font-size=14 [$LINUX]
 			textcolor="lightestBlue"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=regular
 			padding-left=0
 			padding-top=0
@@ -80,7 +80,15 @@ font-size=14 [$LINUX]
 			bgcolor=none
 			textcolor="lightestGrey"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
+			font-style="regular"
+		}
+		// The "Paused" label
+		label3 {
+			bgcolor=none
+			textcolor="lightestGrey"
+			font-size=15
+			font-size=14 [$LINUX]
 			font-style="regular"
 		}
 		// Name of the game/app
@@ -347,11 +355,19 @@ font-size=14 [$LINUX]
 			spacing=4
 		}
 		place {
+			control="pausereasonlabel,pausereasonfield"
+			region="column2"
+			align=left
+			x=0
+			y=76
+			spacing=4
+		}
+		place {
 			control="timeremaininglabel,timeremainingfield"
 			region="column2"
 			align=left
 			x=0
-			y=89
+			y=92
 			spacing=4
 		}
 		place {
