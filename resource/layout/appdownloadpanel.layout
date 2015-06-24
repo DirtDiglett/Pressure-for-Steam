@@ -8,89 +8,98 @@
 				1="fill(x0,y0+1,x1,y0+8, lightGreyEnd)"
 				2="fill(x0,y0+1,x1,y0+2, grey25)"
 			}
+
 			render_bg {
 				1="gradient(x0,y1,x1,y1+6, black40, none)"
 				2="fill(x0,y0,x1,y1, lightGreyEnd)"
 				3="fill(x0,y0,x1,y0+1, greyHighlight)"
 			}
 		}
+
 		panelStyleHighlight {
 			render_bg {
 				0="fill(x0,y0,x1,y1+10, black65)"
 			}
 		}
+
 		links {
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
-			font-size=14 [$LINUX]
+font-size=14 [$LINUX]
 			font-style=normal
 			padding-left=0
 			padding-top=0
 			padding-bottom=0
+			padding-right=18
 
 			render_bg {
-				0="image(x1+3,y0+2,x1+17,y1, graphics/news)"
+				0="image(x1-15,y0+2,x1-1,y1, graphics/news)"
 			}
 		}
-
 			links:hover {
 				textcolor="lightestBlue"
 				font-family=basefont
 				font-size=15
-				font-size=14 [$LINUX]
+font-size=14 [$LINUX]
 				font-style=normal
 			}
 			links:disabled {
 				textcolor="grey"
 			}
+
 		label {
 			font-size=15
-			font-size=14 [$LINUX]
+font-size=14 [$LINUX]
 		}
+
 		// For the "Auto-Updates Enabled"
 		settingslink {
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
-			font-size=14 [$LINUX]
-			font-style=regular
-			render_bg {
-				0="image(x1+3, y0+3, x1+17, y1, graphics/auto_downloads)"
-			}
-		}
-		settingslink:hover {
-			textcolor="lightestBlue"
-			font-family=basefont
-			font-size=15
-			font-size=14 [$LINUX]
+font-size=14 [$LINUX]
 			font-style=regular
 			padding-left=0
 			padding-top=0
 			padding-bottom=0
+			padding-right=18
+			render_bg {
+				0="image(x1-15, y0+3, x1-1, y1, graphics/auto_downloads)"
+			}
 		}
-		settingslink:disabled {
-			textcolor="grey50"
-		}
+			settingslink:hover {
+				textcolor="lightestBlue"
+				font-family=basefont
+				font-size=15
+	font-size=14 [$LINUX]
+				font-style=regular
+			}
+			settingslink:disabled {
+				textcolor="grey50"
+			}
+
 		rightcolumnlink:hover {
 			textcolor=none
 		}
+
 		// The "Downloaded" label
 		label2 {
 			bgcolor=none
 			textcolor="lightestGrey"
 			font-size=15
-			font-size=14 [$LINUX]
+font-size=14 [$LINUX]
 			font-style="regular"
 		}
-		// The "Paused" label
+
 		label3 {
 			bgcolor=none
-			textcolor="lightestGrey"
+			textcolor=blue
 			font-size=15
-			font-size=14 [$LINUX]
-			font-style="regular"
+font-size=14 [$LINUX]
+			font-style="uppercase italic"
 		}
+
 		// Name of the game/app
 		ModuleHeading {
 			bgcolor="none"
@@ -102,23 +111,29 @@
 			font-outerglow-offset=1
 			font-style="outerglow"
 		}
+
 		// Contains the "Update Required" text.
 		ModuleHeading2 {
 			bgcolor="none"
 			textcolor="orange"
 			font-family=basefont
-			font-size="15"
+			font-size=16
+font-size=15 [$LINUX]
+			font-weight=600
 		}
+
 		// Doesn't seem to be used for anything?
 		panelBgColorActive {
 			bgcolor=none
 		}
+
 		gameImagePanel {
 			inset="0 0 0 0"
 			render {
 				0="image(x0,y0+3,x1,y1, graphics/download_overlay)"
 			}
 		}
+
 		gameImagePanelHighlight {
 			bgcolor=none
 			inset="0 0 0 0"
@@ -176,84 +191,85 @@
 				22="fill(x1-1,y1-3,x1,y1-2, greenButtonDarkenedCorners)"
 			}
 		}
-		DetailsLaunchButton:Hover {
-			render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
+			DetailsLaunchButton:Hover {
+				render_bg {
+						// Background
+						-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
+						-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
+						0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
 
 
-					1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
+						1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greenButtonHoverDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greenButtonHoverDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
+						//Anti-Alias
+						2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
+						3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
+						4="fill(x1-2, y0, x1-1, y0+1, greenButtonHoverDarkenedCorners)" // Top Right
+						5="fill(x1-1,y0+1,x1,y0+2, greenButtonHoverDarkenedCorners)" // Top Right
+						6="fill(x0, y1-2, x0+1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
+						7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
+						8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
+						9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+						// 1px Solid Line Top
+						10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
+						11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+						12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+						13="fill(x0, y0+2, x0+1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+						14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+						15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+						16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
+						// Bottom Corner Rounding
+						17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
+						18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
+						19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
 
-					20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
+						20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
+						21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
+						22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
+				}
 			}
-		}
-		DetailsLaunchButton:Active {
-			render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+			DetailsLaunchButton:Active {
+				render_bg {
+						// Background
+						-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+						-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
+						0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
 
 
-					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
+						1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+						//Anti-Alias
+						2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
+						3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
+						4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
+						5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
+						6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+						7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+						8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+						9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+						// 1px Solid Line Top
+						10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
+						11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+						12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+						13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+						14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+						15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+						16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
+						// Bottom Corner Rounding
+						17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
+						18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
+						19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
 
-					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
+						20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
+						21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
+						22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
+				}
 			}
-		}
+
 		topOfQueueButton {
 			render {
 				1="image( x0+4, y0+5, x1, y1, graphics/move_top )"
@@ -274,6 +290,7 @@
 			}
 		}
 	}
+
 	layout {
 		region {
 			name="bottom"
@@ -282,21 +299,25 @@
 			width="max"
 			height=6
 		}
+
 		region {
 			name="column1"
 			x=11
 		}
+
 		region {
 			name="column2"
 			x=210
 			width=max
 		}
+
 		region {
 			name="column4"
 			x=700
 			width=max
 			overflow=allow-horizontal
 		}
+
 		place {
 			control="downloadprogressbar"
 			region=bottom
@@ -306,6 +327,7 @@
 			margin-right=16
 			dir=right
 		}
+
 		// left-mid column
 		place {
 			control="namelabel"
@@ -313,6 +335,7 @@
 			x=5
 			y=5
 		}
+
 		place {
 			control="gameimage"
 			region="column1"
@@ -323,53 +346,61 @@
 			height=85
 			dir=down
 		}
+
 		place {
 			control="updatetypelabel"
 			region="column2"
 			align=left
 			x=-5
-			y=44
+			y=43			//line 1
 		}
+
 		place {
 			control="downloadtotallabel,downloadtotalfield"
 			region="column2"
 			align=left
-			y=60
-			spacing=4
-		}
-		place {
-			control="starttimelabel,starttimefield"
-			region="column2"
-			align=left
 			x=0
-			y=76
-			dir="right"
+			margin-top=60	//line 2
 			spacing=4
 		}
+
 		place {
 			control="timecompletedlabel,timecompletedfield"
 			region="column2"
 			align=left
 			x=0
-			margin-top=71
+			margin-top=75	//line 3
 			spacing=4
 		}
+
 		place {
 			control="pausereasonlabel,pausereasonfield"
 			region="column2"
 			align=left
 			x=0
-			y=76
+			margin-top=75	//line 3
 			spacing=4
 		}
+
+		place {
+			control="starttimelabel,starttimefield"
+			region="column2"
+			align=left
+			x=0
+			margin-top=75	//line 3
+			dir="right"
+			spacing=4
+		}
+
 		place {
 			control="timeremaininglabel,timeremainingfield"
 			region="column2"
 			align=left
 			x=0
-			y=92
+			margin-top=90	//line 4
 			spacing=4
 		}
+
 		place {
 			control="launchbutton,topofqueuebutton,removefromqueuebutton"
 			region="column4"
@@ -381,22 +412,25 @@
 			dir=right
 			spacing=10
 		}
+
 		place {
 			control="newslink"
 			region="column4"
 			align=right
-			margin-top=73
-			margin-right=34
+			margin-top=75	//line 3
+			margin-right=16
 			spacing=10
 		}
+
 		place {
 			control="settingslink"
 			region=column4
 			align=right
-			margin-top=89
-			margin-right=34
+			margin-top=90	//line 4
+			margin-right=16
 			dir=right
 		}
+
 		place {
 			control="workshopbanner"
 			width=0
