@@ -9,11 +9,12 @@
 			bgcolor=darkestgrey
 			inset="0 0 0 0"
 	  	}
+
 		throttleLabel {
-			bgcolor	   none
-			font-size   "13"
-			textcolor   "white"
-			padding-top	"0"
+			bgcolor=none
+			font-size="13"
+			textcolor="white"
+			padding-top="0"
 			font-style="outerglow,regular"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -21,10 +22,10 @@
 	    }
 
 		throttleValue {
-			bgcolor	   none
-			font-size   "13"
-			textcolor   "orange"
-			padding-top	"0"
+			bgcolor=none
+			font-size="13"
+			textcolor="orange"
+			padding-top="0"
 			font-style="outerglow,uppercase"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=2
@@ -36,38 +37,37 @@
 	   	}
 
 		bigtext {
-		 font-family=basefont
-		 font-size=18
-		 font-style="outerglow,regular"
-		 font-outerglow-color="darkestGrey"
-		 font-outerglow-offset=1
-		 font-outerglow-filtersize=4
-		 font-weight=700
-		 textcolor="white"
-
+			font-family=basefont
+			font-size=18
+			font-style="outerglow,regular"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=4
+			font-weight=700
+			textcolor="white"
 		}
+
 		bigtextlabel {
-		 font-family=basefont
-		 font-size=18
-		 font-style="outerglow,regular"
-		 font-outerglow-color="darkestGrey"
-		 font-outerglow-offset=1
-		 font-outerglow-filtersize=4
-		 textcolor="lightestGrey"
+			font-family=basefont
+			font-size=18
+			font-style="outerglow,regular"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=4
+			textcolor="lightestGrey"
 		}
 
 		bigtextHeader {
-		 font-family=basefont
-		 font-size=18
-		 textcolor="red"
+			font-family=basefont
+			font-size=18
+			textcolor="red"
 		}
 
-
 		bigTextNumbers {
-		 font-family=basefont
-		 font-size="17"
-		 textcolor="green"
-		 font-style="regular"
+			font-family=basefont
+			font-size="17"
+			textcolor="green"
+			font-style="regular"
 		}
 
 		PauseButton [$OSX] {
@@ -129,7 +129,6 @@
 				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 			}
 		}
-
 		PauseButton [!$OSX] {
 			inset="25 3 0 0"
 			font-family=headerfont
@@ -189,7 +188,6 @@
 				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 			}
 		}
-
 			PauseButton:Hover {
 				render_bg {
 					// Background
@@ -231,7 +229,6 @@
 					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 				}
 			}
-
 			PauseButton:Selected {
 				render_bg {
 					// Background
@@ -273,8 +270,6 @@
 					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 				}
 			}
-
-
 			PauseButton:Active {
 				render_bg {
 					// Background
@@ -375,7 +370,6 @@
 				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 			}
 		}
-
 		ResumeButton [!$OSX]{
 			inset="25 3 0 0"
 			font-family=headerfont
@@ -434,7 +428,6 @@
 				23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 			}
 		}
-
 			ResumeButton:Hover {
 				render_bg {
 					// Background
@@ -476,7 +469,6 @@
 					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 				}
 			}
-
 			ResumeButton:Selected {
 				render_bg {
 					// Background
@@ -518,8 +510,6 @@
 					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 				}
 			}
-
-
 			ResumeButton:Active {
 				render_bg {
 					// Background
@@ -561,6 +551,7 @@
 					23="gradient(x0+1,y1,x1-1,y1+4, black40, none)"
 				}
 			}
+
 		infoGraphic {
 			bgcolor   "none"
 			textcolor "green"
@@ -584,6 +575,7 @@
 			height=500
 			margin-top=0
 		}
+		
 		//Universal Pause/Resume Button
 		place {
 			control="pauseresumeallbutton"
@@ -601,56 +593,39 @@
 			height=0
 			width=0
 		}
+		
 		place {
-			control="download_rate_value"
+			control="download_rate_value,download_rate"
 			x=12
-			spacing=8
+			spacing=3
 			height=30
 			y=16
 		}
 
 		place {
-			control="download_rate"
-			start="download_rate_value"
-			x=3
-			height=30
-		}
-		place {
-			control="peak_download_rate_value"
+			control="peak_download_rate_value,peak_download_rate"
 			x=12
-			spacing=8
+			spacing=3
 			height=30
 			y=46
 		}
 
 		place {
-			control="peak_download_rate"
-			start="peak_download_rate_value"
-			x=3
-			height=30
-		}
-		place {
-			control="total_downloaded_value"
+			control="total_downloaded_value,total_downloaded"
 			x=12
-			spacing=8
+			spacing=3
 			height=30
 			y=76
 		}
 
-		place {
-			control="total_downloaded"
-			start="total_downloaded_value"
-			x=3
-			height=30
-		}
 		//Disk Usage
 		place {
 			control="disk_status_image,disk_status_label"
-			y=96
+			y=90
 			height=40
 			spacing=8
 			align=right
-			margin-right=16
+			margin-right=12
 		}
 
 		// Blackout/Throttling Values - Right

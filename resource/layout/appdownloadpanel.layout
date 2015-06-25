@@ -92,7 +92,7 @@ font-size=14 [$LINUX]
 			font-style="regular"
 		}
 
-		label3 {
+		label3 {	//this looks really awkward no matter what you do, because Valve made the strings that use it all lowercase
 			bgcolor=none
 			textcolor=blue
 			font-size=15
