@@ -181,8 +181,8 @@ colors {
 	ListPanel.PostSectionLeading	10
 	RichText.InsetX		 1
 	RichText.InsetY		 1
-	TextEntry.IMEBGColor		"225 225 225 255"
-	TextEntry.IMEFGColor		"black"
+	TextEntry.IMEBGColor		"255 255 255 0"
+	TextEntry.IMEFGColor		"DarkImageOverlay"
 
 	GiftOnlyInfo.ImagePanelColor  "GrayBG"
 
