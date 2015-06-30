@@ -22,6 +22,7 @@ Because the skin is still in development, you can only download the skin here on
 	* Windows: the `Program Files (x86)/Steam/skins` folder
 	* Mac: right-click `Steam.app` and choose `show package contents` then go to - `/Contents/MacOS/skins`
 	* Linux: the `~/.local/share/Steam/skins/` folder
+   * Ubuntu: the `~/.steam/skins` folder
 3. You should also go ahead and install all of the fonts that are in the `font - INSTALL THESE FIRST` folder.
 	* Windows: Right-Click the font file and choose "Install".
 	* Mac: Double-Click the font file. Click "Install".
