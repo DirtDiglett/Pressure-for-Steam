@@ -144,7 +144,7 @@ font-size=14 [$LINUX]
 
 		ViewModsButton {
 			inset-left=20
-			minimum-width=64
+			minimum-width=124
 			render {
 				1="image( x0 + 8, y0 + 9, x1, y1, graphics/icon_workshop )"
 			}
