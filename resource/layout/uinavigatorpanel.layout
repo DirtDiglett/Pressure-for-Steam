@@ -154,6 +154,7 @@ font-size=14 [$LINUX]
 		zoomslider {
 			inset="0 2 0 0"
 			textcolor=white
+			render_bg {}
 		}
 
 			zoomslider:hover {

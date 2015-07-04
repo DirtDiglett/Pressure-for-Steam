@@ -31,6 +31,9 @@
 			font-outerglow-offset=2
 			font-outerglow-filtersize=4
 		}
+			throttleValue:hover {
+				textcolor="lightestOrange"
+			}
 
 		container {
 			bgcolor="none"
@@ -80,13 +83,13 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
 
-			padding-right=10
-			padding-left=10
+			padding-right=8
+			padding-left=8
 
 			textcolor=white
 
 			render {
-				1="image( x0 + 6, y0 + 10, x1, y1, graphics/pause )"
+				1="image( x0 + 6, y0 + 8, x1, y1, graphics/pause )"
 			}
 			render_bg {
 				// Background
@@ -139,13 +142,13 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
 
-			padding-right=10
-			padding-left=5
+			padding-right=8
+			padding-left=3
 
 			textcolor=white
 
 			render {
-				1="image( x0 + 6, y0 + 10, x1, y1, graphics/pause )"
+				1="image( x0 + 6, y0 + 8, x1, y1, graphics/pause )"
 			}
 			render_bg {
 				// Background
@@ -322,13 +325,13 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
 
-			padding-right=10
-			padding-left=10
+			padding-right=8
+			padding-left=8
 
 			textcolor=white
 
 			render {
-				1="image( x0 + 6, y0 + 10, x1, y1, graphics/Resume )"
+				1="image( x0 + 6, y0 + 8, x1, y1, graphics/Resume )"
 			}
 			render_bg {
 				// Background
@@ -380,13 +383,13 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=6
 
-			padding-right=10
-			padding-left=5
+			padding-right=8
+			padding-left=3
 
 			textcolor=white
 
 			render {
-				1="image( x0 + 6, y0 + 10, x1, y1, graphics/Resume )"
+				1="image( x0 + 6, y0 + 8, x1, y1, graphics/Resume )"
 			}
 			render_bg {
 				// Background
@@ -556,9 +559,7 @@
 			bgcolor="none"
 			textcolor="green"
 			inset="0 0 0 0"
-			render_bg {
-				// no background
-			}
+			render_bg {} // no background
 
 			render {
 				0="fill( x0, y0, x1, y1-10, black40 )"
@@ -566,55 +567,78 @@
 				2="gradient_horizontal(x0,y0,x0+50,y1, black, none)"
 			}
 		}
+
 		DiscGraphPanel {
 			bgcolor="none"
 			textcolor="blue"
 			inset="0 0 0 0"
-			render_bg {
-				// no background
-			}
+			render_bg {} // no background
 
 			render {
-				0="fill( x0, y0, x1, y1-10, black40 )"
-				1="gradient( x0, y1-10, x1, y1, black40, black65 )"
-				2="gradient_horizontal(x0,y0,x0+50,y1, black, none)"
+				//the following covered by NetGraphPanel's render
+				//0="fill( x0, y0, x1, y1-10, black40 )"
+				//1="gradient( x0, y1-10, x1, y1, black40, black65 )"
+				//2="gradient_horizontal(x0,y0,x0+50,y1, black, none)"
 			}
 		}
+
+		NetLegendPanel {
+			render_bg {
+				0="fill(x0+2, y0+5, x1-7, y1-3, green)"
+				1="fill(x0, y0+3, x1-5, y1-1, black40)"
+			}
+		}
+
+		DiskLegendPanel {
+			render_bg {
+				1="fill(x0, y0+3, x1-5, y1-1, black40)"
+				0="fill(x0+2, y0+5, x1-7, y1-3, blue)"
+			}
+		}
+
 	}
 
 	layout {
-	region { name=head	dir=down x=10 y=10 height=max	width=max	margin-right=0	}
-		//Download Speed Graph
+		//Background Graphs (Net speed and Disk usage)
 		place {
 			control="net_graphpanel"
 			width=max
 			height=500
 			margin-top=0
 		}
-		//Disk Usage Graph
 		place {
 			control="disc_graphpanel"
 			width=max
 			height=500
-			margin-top=0
+			margin-top=3
 		}
-		//Graph Legend NULLED
-		place {
-			control="net_legend_panel,net_legend_label,disk_legend_panel,disk_legend_label" 
-			x=-100
-			y=-100
-			width=0
-			height=0
-		}
+
 		//Universal Pause/Resume Button
 		place {
 			control="pauseresumeallbutton"
-			height=43
+			height=39
 			align=right
-			y=37
+			y=41
 			margin-right=12
 		}
-		// Network Usage Header NULLED
+
+		//Graph legends
+		place {
+			control="net_legend_panel,disk_legend_panel"
+			width=15
+			//height=9
+		}
+		place {
+			control="net_legend_label,net_legend_panel,disk_legend_label,disk_legend_panel"
+			align=right
+			height=14
+			spacing=2
+			y=85
+			margin-right=6
+		}
+
+
+		//invisible
 		place {
 			control="header"
 			x=0
@@ -622,54 +646,59 @@
 			height=0
 			width=0
 		}
+
 		//Network Values
-		place {
-			control="download_rate_value,download_rate"
-			x=12
-			spacing=4
-			height=30
-			y=14
-		}
-		place {
-			control="peak_download_rate_value,peak_download_rate"
-			x=12
-			spacing=4
-			height=30
-			y=39
-		}
 		place {
 			control="total_downloaded_value,total_downloaded"
 			x=12
-			spacing=4
+			spacing=5
 			height=30
-			y=64
+			y=7
 		}
+
+		place {
+			control="download_rate_value,download_rate"
+			x=12
+			spacing=5
+			height=30
+			y=32
+		}
+
+		place {
+			control="peak_download_rate_value,peak_download_rate"
+			x=12
+			spacing=5
+			height=30
+			y=57
+		}
+
 		//Disk Usage
 		place {
 			control="disk_status_value,disk_status_label"
 			x=12
-			y=89
+			spacing=5
 			height=30
-			spacing=4
+			y=82
 		}
 
 		// Blackout/Throttling Values - Right
 		place {
 			control="blackout_label,blackout_value"
-			y=65
-			spacing=4
+			y=7
+			spacing=3
 			align=right
-			height=30
-			margin-right=12
+			height=14
+			margin-right=13
 		}
 
 		place {
 			control="throttling_label,throttling_value"
-			y=80
-			spacing=4
+			y=21
+			spacing=3
 			align=right
-			height=30
-			margin-right=12
+			height=14
+			margin-right=13
 		}
 	}
 }
+
