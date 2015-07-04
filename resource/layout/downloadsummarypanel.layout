@@ -563,6 +563,7 @@
 			render {
 				0="fill( x0, y0, x1, y1-10, black40 )"
 				1="gradient( x0, y1-10, x1, y1, black40, black65 )"
+				2="gradient_horizontal(x0,y0,x0+50,y1, black, none)"
 			}
 		}
 		DiscGraphPanel {
@@ -576,6 +577,7 @@
 			render {
 				0="fill( x0, y0, x1, y1-10, black40 )"
 				1="gradient( x0, y1-10, x1, y1, black40, black65 )"
+				2="gradient_horizontal(x0,y0,x0+50,y1, black, none)"
 			}
 		}
 	}
@@ -646,7 +648,7 @@
 		place {
 			control="disk_status_value,disk_status_label"
 			x=12
-			y=88
+			y=89
 			height=30
 			spacing=4
 		}
