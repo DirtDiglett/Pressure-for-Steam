@@ -88,7 +88,7 @@ font-size=14 [$LINUX]
 font-size=15 [$LINUX]
 			font-weight=600
 		}
-		
+
 		// Doesn't seem to be used for anything?
 		panelBgColorActive {
 			bgcolor=none
@@ -102,13 +102,6 @@ font-size=15 [$LINUX]
 			}
 		}
 
-		SmRemoveButton {
-			textcolor=none
-			render {
-				1="image( x0+4, y0+5, x1, y1, graphics/remove_download )"
-			}
-		}
-
 		graphdownloadrate {
 			font-family=basefont
 			font-size="14"
@@ -118,12 +111,10 @@ font-size=15 [$LINUX]
 
 		SmPauseButton {
 			font-family=basefont
-			font-size=16
-font-size=15
-font-size=14 [$LINUX]
-			font-weight=400
+			font-size=1
 			textcolor="none"
 			bgcolor=none
+			minimum-width=34
 			render {
 				1="image( x0 + 5, y0 + 4, x1, y1, graphics/pause )"
 			}
@@ -131,20 +122,28 @@ font-size=14 [$LINUX]
 
 		SmResumeButton {
 			font-family=basefont
-			font-size=16
-font-size=15
-font-size=14 [$LINUX]
-			font-weight=400
+			font-size=1
 			textcolor="none"
 			bgcolor=none
+			minimum-width=34
 			render {
 				1="image( x0 + 5, y0 + 4, x1, y1, graphics/resume )"
 			}
 		}
 
+		SmRemoveButton {
+			textcolor=none
+			font-size=1
+			minimum-width=34
+			render {
+				1="image( x0 + 5, y0 + 4, x1, y1, graphics/remove_download )"
+			}
+		}
+
 		ViewModsButton {
 			inset-left=20
-			minimum-width=124
+			//minimum-width=124
+			inset-right=7
 			render {
 				1="image( x0 + 8, y0 + 9, x1, y1, graphics/icon_workshop )"
 			}
@@ -260,11 +259,15 @@ font-size=14 [$LINUX]
 			spacing=4
 		}
 
+		place {	//this probably doesn't work, so the minimum-width in the styles will have to do
+			control="pauseresumebutton"
+			width=34
+		}
 		place {
 			control="viewmodsbutton,pauseresumebutton"
 			region="column4"
 			align=right
-			width=33
+			//width=33
 			height=33
 			margin-top=20
 			margin-right=16

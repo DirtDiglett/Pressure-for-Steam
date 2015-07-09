@@ -2,7 +2,6 @@
 	controls {}
 
 	styles {
-
 		COverlayBroadcastChatDialog {
 			inset="0 0 0 0"
 
@@ -26,7 +25,6 @@
 			}
 		}
 
-
 		label {
 			font-size=15
 font-size=14 [$LINUX]
@@ -45,7 +43,7 @@ font-size=14 [$LINUX]
 		    selectedtextcolor  = "white"
 		    selectedbgcolor  = "blue"
 		    shadowtextcolor  = "darkestGrey"  // this is the cursor color
-
+			minimum-width=395	//fixes bug on window startup where the chatbox is really tiny until selected... I think.
 		    inset-left=4
 		    inset-top=6
 		    inset-right=6
@@ -71,6 +69,7 @@ font-size=14 [$LINUX]
 		    }
 
 	    }
+
 		CEmoticonButton {
 			//32 x 25
 
@@ -78,7 +77,6 @@ font-size=14 [$LINUX]
 				0="image(x0,y0,x1,y1, graphics/emote_button)"
 			}
 		}
-
 			CEmoticonButton:hover {
 				//32 x 25
 
@@ -87,22 +85,8 @@ font-size=14 [$LINUX]
 				}
 			}
 
-		EmoticonMenuItemStyle {
-			font-size=24
-			inset="-9 0 0 0"
-		}
-
-		EmoticonMenuItemStyle:hover {
-			textcolor=white
-		}
-
-		EmoticonMenuItemStyle:selected {
-			textcolor=white
-		}
-
 		GridMenu {
-			font-size=16
-font-size=15
+			font-size=15
 font-size=14 [$LINUX]
 		}
 	}
@@ -130,7 +114,6 @@ font-size=14 [$LINUX]
 			margin-bottom=75
 			margin-left=8
 		}
-
 
 		place {
 			control="TextEntry"
@@ -168,7 +151,6 @@ font-size=14 [$LINUX]
 			margin-right=8
 			margin-bottom=6
 		}
-
 
 		place {
 			control="StatusLabel"

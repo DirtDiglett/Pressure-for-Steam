@@ -2,7 +2,7 @@
 	styles {
 		CDialogGameInfo {
 			minimum-width=620
-			minimum-height=408
+			minimum-height=467	//this seems to be ignored
 		}
 
 		LabelDull {
@@ -13,18 +13,19 @@
 
 		label {
 			textcolor=lightestGrey
-			font-size=14
+			font-size=15
+font-size=14 [$LINUX]
 		}
 
 		textEntry {
 			textcolor=lightestGrey
-			font-size=14
+			font-size=15
+font-size=14 [$LINUX]
 			inset-left=0
 
 			render {}
 			render_bg{}
 		}
-
 	}
 
 	layout {
@@ -189,25 +190,17 @@
 			align=right
 			width=max
 			height=max
-			margin-bottom=51
+			margin-bottom=53
 		}
 
 		place {
 			control="AutoRetryAlert,AutoRetryJoin"
 			region=right
 			start=PlayerList
+			margin-top=3
+			spacing=3
 			width=max
-			height=24
-			dir=down
-		}
-
-		place {
-			control=InfoLabel
-			region="bottom"
-			align=left
-			x=16
-			y=16
-			width=310
+			height=20
 			dir=down
 		}
 
@@ -219,11 +212,21 @@
 		}
 
 		place {
+			control=InfoLabel
+			region="bottom"
+			align=left
+			x=16
+			y=17
+			width=310
+			dir=down
+		}
+
+		place {
 			control="AutoRetry,Connect,Refresh,Close"
 			region=bottom
 			align=right
-			height=24
-			margin-top=13
+			height=28
+			margin-top=12
 			margin-right=13
 			spacing=8
 		}
