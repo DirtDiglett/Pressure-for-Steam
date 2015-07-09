@@ -2,7 +2,7 @@
 	styles {
 		CDialogGameInfo {
 			minimum-width=620
-			minimum-height=408
+			minimum-height=417
 		}
 
 		LabelDull {
@@ -13,15 +13,13 @@
 
 		label {
 			textcolor=lightestGrey
-			font-size=16
-font-size=15
+			font-size=15
 font-size=14 [$LINUX]
 		}
 
 		textEntry {
 			textcolor=lightestGrey
-			font-size=16
-font-size=15
+			font-size=15
 font-size=14 [$LINUX]
 			inset-left=0
 
@@ -191,7 +189,7 @@ font-size=14 [$LINUX]
 			align=right
 			width=max
 			height=max
-			margin-bottom=51
+			margin-bottom=3
 		}
 
 		place {
@@ -203,16 +201,6 @@ font-size=14 [$LINUX]
 			dir=down
 		}
 
-		place {
-			control=InfoLabel
-			region="bottom"
-			x=16
-			y=16
-			width=310
-			align=left
-			dir=down
-		}
-
 		//Bottom
 		region {
 			name=bottom
@@ -221,11 +209,21 @@ font-size=14 [$LINUX]
 		}
 
 		place {
+			control=InfoLabel
+			region="bottom"
+			align=left
+			x=16
+			y=17
+			width=310
+			dir=down
+		}
+
+		place {
 			control="AutoRetry,Connect,Refresh,Close"
 			region=bottom
 			align=right
 			height=28
-			margin-top=13
+			margin-top=12
 			margin-right=13
 			spacing=8
 		}

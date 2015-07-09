@@ -151,7 +151,7 @@ font-size=15 [$LINUX]
 			padding-left=10
 			padding-right=10
 			render {
-				1="image( x0+4, y0+5, x1, y1, graphics/game_small )"
+				1="image( x0 + 5, y0 + 5, x1, y1, graphics/game_small )"
 			}
 			render_bg {
 				// Background
@@ -272,13 +272,13 @@ font-size=15 [$LINUX]
 
 		topOfQueueButton {
 			render {
-				1="image( x0+4, y0+5, x1, y1, graphics/move_top )"
+				1="image( x0 + 5, y0 + 4, x1, y1, graphics/move_top )"
 			}
 		}
 
 		SmRemoveButton {
 			render {
-				1="image( x0+4, y0+5, x1, y1, graphics/remove_download )"
+				1="image( x0 + 5, y0 + 4, x1, y1, graphics/remove_download )"
 			}
 		}
 
@@ -286,7 +286,7 @@ font-size=15 [$LINUX]
 			textcolor=green
 			render_bg {
 				0="fill( x0, y0, x1, y1, black )"
-				1="fill(x0,y1,x1,y1+1, grey25)"
+				1="fill( x0, y1, x1, y1+1, grey25 )"
 			}
 		}
 	}
@@ -405,7 +405,7 @@ font-size=15 [$LINUX]
 			control="launchbutton,topofqueuebutton,removefromqueuebutton"
 			region="column4"
 			align=right
-			width=33
+			width=34
 			height=33
 			margin-top=20
 			margin-right=16
