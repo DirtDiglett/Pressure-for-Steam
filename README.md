@@ -29,12 +29,13 @@ Because the skin is still in development, you can only download the skin here on
 	* Linux: If a graphical font viewer is installed on your system you will most likely be able to install the fonts easily using that program. Otherwise you need to “install” the fonts manually by copying them to `/usr/share/fonts` (to install them system-wide) or `~/.fonts` (to install them only for the current user) and executing `fc-cache -fv` in a terminal.
 4. Open up Steam then open up the Steam Settings Window. Click on the Interface tab, and under the option that says *"Select the skin you wish Steam to use (requires Steam to restart)"*, click on the dropdown, and select *"Pressure-for-Steam-master"*.
 5. Now go ahead and restart the Steam client. The skin should now be applied. Have fun! :smile:
+
 ### Pro Tip™: Keep Pressure up-to-date via git
-**Windows**
+#### Windows
 Using the GitHub application for Windows from [GitHub](https://windows.github.com) you'll be able to keep the skin up-to-date all the time.
-**Mac**
+#### Mac
 You can install the Git application from [GitHub](https://mac.github.com) to keep the repo in sync without having to return to the site each time.
-**Linux**
+#### Linux
 First you need to make sure git is installed on your system (usually using your distribution’s package manager). Then you can use the usual procedure to “download” and update the skin, which is outlined below:
 - **Installing the skin using git**
    1. Open a terminal.
