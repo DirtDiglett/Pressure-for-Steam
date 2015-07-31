@@ -2,7 +2,7 @@
 	styles {
 		CDialogGameInfo {
 			minimum-width=620
-			minimum-height=467	//this seems to be ignored
+			minimum-height=477	//this seems to be ignored
 		}
 
 		LabelDull {
@@ -41,8 +41,8 @@ font-size=14 [$LINUX]
 
 		// Server Name
 		place {
-			region=left
 			control=ServerLabel
+			region=left
 			margin-left=0
 			dir=down
 			spacing=0
@@ -62,10 +62,10 @@ font-size=14 [$LINUX]
 			control=ServerIPLabel
 			region=left
 			start=ServerText
-			margin-left=0
-			margin-top=16
 			dir=down
 			spacing=0
+			margin-left=0
+			margin-top=16
 		}
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
@@ -73,8 +73,8 @@ font-size=14 [$LINUX]
 			region=left
 			start=ServerIPLabel
 			width=max
-			margin-top=-8
 			margin-left=-2
+			margin-top=-8
 			dir=down
 		}
 		// GAME
@@ -118,8 +118,8 @@ font-size=14 [$LINUX]
 
 		// PLAYERS
 		place {
-			region=left
 			control=PlayersLabel
+			region=left
 			start=MapText
 			margin-left=0
 			margin-top=16
@@ -128,8 +128,8 @@ font-size=14 [$LINUX]
 		}
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
-			region=left
 			control=PlayersText
+			region=left
 			start=PlayersLabel
 			width=max
 			margin-top=-4
@@ -137,8 +137,8 @@ font-size=14 [$LINUX]
 		}
 		// VAC
 		place {
-			region=left
 			control=Label1
+			region=left
 			start=PlayersText
 			margin-left=0
 			margin-top=16
@@ -190,18 +190,18 @@ font-size=14 [$LINUX]
 			align=right
 			width=max
 			height=max
-			margin-bottom=53
+			margin-bottom=63
 		}
 
 		place {
 			control="AutoRetryAlert,AutoRetryJoin"
 			region=right
 			start=PlayerList
-			margin-top=3
-			spacing=3
+			dir=down
+			spacing=6
 			width=max
 			height=20
-			dir=down
+			margin-top=7
 		}
 
 		//Bottom
