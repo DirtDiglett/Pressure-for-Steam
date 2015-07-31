@@ -465,7 +465,7 @@ font-size=14 [$LINUX]
 // NULL ZONE - Nullify certain controls.
 // ********************************************************************************************************
 		place {
-			control="add_game, account_URL, universe_label, account_balance_seperator, fullscreen,New"
+			control="add_game, account_URL, universe_label, account_balance_seperator, fullscreen, New, startvr, exitvr"
 			region=bottom
 			x=0
 			y=-50
