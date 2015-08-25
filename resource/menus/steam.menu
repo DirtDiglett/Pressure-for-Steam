@@ -2,7 +2,7 @@
 	Steam [!$OSX] {
 		text="#steam_menu_file"
 		SkinVersion {
-			text="Pressure v1.0.2"
+			text="Pressure v1.0.3"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 		About {
