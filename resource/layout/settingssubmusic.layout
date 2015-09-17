@@ -131,8 +131,10 @@
 		}
 		place {
 			control=DatabaseHeader,VolumeHeader,VolumeSlider,VolumeDivider
+			start=NotificationPlaylistNowPlayingCheckbox
 			width=0
 			height=0
+			y=90
 		}
 	}
 }
