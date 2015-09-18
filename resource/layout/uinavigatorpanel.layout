@@ -2236,12 +2236,20 @@ font-size=14 [$LINUX]
  	  		margin-top=81
  	  		margin-right=0
  	  	}
+ 	  	place {
+ 	  		control=phonereminderbar
+ 	  		width=max
+ 	  		height=80
+ 	  		margin-left=0
+ 	  		margin-top=81
+ 	  		margin-right=0
+ 	  	}
 // ********************************************************************************************************
 // "Pages" - These controls place down things like the GameDetails page.
 // ********************************************************************************************************
 		place {
 			control=DownloadsPage
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=-1
@@ -2252,7 +2260,7 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control=GamesPage_List
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=-1
@@ -2263,7 +2271,7 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control=GamesPage_Details
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=-1
@@ -2280,7 +2288,7 @@ font-size=14 [$LINUX]
 			margin-left=-1
 			margin-right=0
 			margin-bottom=0
-			start=emailreminderbar
+			start=phonereminderbar
 			dir=down
 		}
 		place {
@@ -2295,7 +2303,7 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control=BroadcastPage
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=0
@@ -2328,7 +2336,7 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control=ConsolePage
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=0
@@ -2339,7 +2347,7 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control=MediaPage
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=-1
@@ -2350,7 +2358,7 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control=ToolsPage
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=-1
@@ -2361,7 +2369,7 @@ font-size=14 [$LINUX]
 		}
 		place {
 			control=MusicPage_Details
-			start=emailreminderbar
+			start=phonereminderbar
 			width=max
 			height=max
 			margin-left=-1
