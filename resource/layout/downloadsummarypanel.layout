@@ -19,6 +19,10 @@
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=4
+
+			render_bg {
+				1="fill(x0-1, y0-2, x1+1, y1+2, black40)"
+			}
 	    }
 
 		throttleValue {
@@ -30,6 +34,10 @@
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=2
 			font-outerglow-filtersize=4
+
+			render_bg {
+				1="fill(x0-3, y0-2, x1+3, y1+2, black40)"
+			}
 		}
 			throttleValue:hover {
 				textcolor="lightestOrange"
@@ -48,6 +56,10 @@
 			font-outerglow-filtersize=4
 			font-weight=700
 			textcolor="white"
+			
+			render_bg {
+				1="fill(x0-2, y0+5, x1+5, y1-5, black40)"
+			}
 		}
 
 		bigtextlabel {
@@ -58,6 +70,10 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=4
 			textcolor="lightestGrey"
+
+			render_bg {
+				1="fill(x0, y0+5, x1+2, y1-5, black40)"
+			}
 		}
 
 		bigtextHeader {
@@ -584,15 +600,15 @@
 
 		NetLegendPanel {
 			render_bg {
-				0="fill(x0+2, y0+5, x1-7, y1-3, green)"
-				1="fill(x0, y0+3, x1-5, y1-1, black40)"
+				0="fill(x0-2, y0-2, x1-3, y1+2, black40)"
+				1="fill(x0+2, y0+5, x1-7, y1-3, green)"
 			}
 		}
 
 		DiskLegendPanel {
 			render_bg {
-				1="fill(x0, y0+3, x1-5, y1-1, black40)"
-				0="fill(x0+2, y0+5, x1-7, y1-3, blue)"
+				0="fill(x0-2, y0-2, x1-3, y1+2, black40)"
+				1="fill(x0+2, y0+5, x1-7, y1-3, blue)"
 			}
 		}
 
