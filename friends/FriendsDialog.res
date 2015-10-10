@@ -93,7 +93,7 @@
 			font-outerglow-color="darkGreyEnd"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
-			inset="7 -2 0 0"
+			inset="7 0 0 0"
 			minimum-width=101
 			minimum-height=26
 			render_bg {
@@ -131,7 +131,7 @@
 			textcolor=white
 			font-family=semibold
 			font-style="regular,normal"
-			inset="0 0 0 0"
+			inset="0 2 0 0"
 			render_bg {
 				0="gradient(x0-22, y0+1, x1, y1, grey, lightGreyEnd)"
 				1="fill(x0-22, y0, x1, y0+1, greyHighlight)"
