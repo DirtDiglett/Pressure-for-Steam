@@ -80,7 +80,7 @@
 			dir=down
 		}
 		place {
-			controls="AllowDownloadsDuringGameplayCheckbox,AutoUpdateTimeRestrictCheckbox"
+			controls="AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,AutoUpdateTimeRestrictCheckbox"
 			start=ThrottleRates
 			y=16
 			dir=down
@@ -118,7 +118,7 @@
 			dir=down
 		}
 		place {
-			control="LibrariesLabel,AllowDownloadsDuringGameplayInfo"
+			control="LibrariesLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo"
 			width=0
 			height=0
 		}
