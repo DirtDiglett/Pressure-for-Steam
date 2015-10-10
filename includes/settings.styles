@@ -5,8 +5,8 @@
 		// Fonts
 		// ***********************************************
 
-		basefont = "Noto Sans"
-		semibold = "Noto Sans"
+		basefont = "Roboto"
+		semibold = "Roboto"
 
 		headerfont = "Bebas Neue Bold"
 		// ***********************************************
