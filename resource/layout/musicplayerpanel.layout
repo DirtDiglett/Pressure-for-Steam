@@ -456,7 +456,8 @@ font-size=14 [$LINUX]
 			y=94
 			width=max
 			margin-right=10
-			margin-bottom=8
+			margin-top=-1
+			margin-bottom=7
 		}
 		place { control=SeekBar region=transport x=0 y=50 height=18 width=260 }
 	}
