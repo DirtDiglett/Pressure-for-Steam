@@ -8,7 +8,6 @@
 			controlname="Label"
 			labelText="no selected control"
 		}
-
 		parent_label {
 			controlname="Label"
 			labelText="Parents"
