@@ -12,7 +12,7 @@
 		}
 		emptylisttext {
 			textcolor="red"
-			font-size=15
+			font-size=14
 font-size=14 [$LINUX]
 			inset="16 100 16 16"
 			render_bg {

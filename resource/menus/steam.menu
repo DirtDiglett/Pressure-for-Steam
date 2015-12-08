@@ -18,6 +18,10 @@
 			text="#steam_menu_account_details"
 			shellcmd="steam://url/StoreAccount/"
 		}
+		NewForYou {
+			text="#SteamUI_GameProperties_UpdateNews"
+			shellcmd="steam://open/newforyou"
+		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		BigPictureMode {
 			text="#steam_menu_bigpicturemode"
