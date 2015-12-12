@@ -2,12 +2,25 @@
 	Steam [!$OSX] {
 		text="#steam_menu_file"
 		SkinVersion {
-			text="Pressure v1.0.5"
+			text="Pressure v1.0.6"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 		About {
 			text="#steam_about"
 			command="About"
+		}
+		Divider {} // ________________________________________________________________________________________________________________________
+		CheckForUpdates	{	
+			text="#steam_menu_checkforupdates"		
+			command="CheckForUpdates" 
+		}
+		UpdateVideoDrivers [$WINDOWS] {
+			text="#steam_menu_updatevendorgraphicscard"		
+			command="CheckForVideoDriverUpdates" 
+		}
+		CheckForVideoDriverUpdates [$WINDOWS] {	
+			text="#steam_menu_checkforvideodriverupdates"	
+			command="CheckForVideoDriverUpdates" 
 		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		ChangeUser {
@@ -403,7 +416,7 @@
 		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		SkinVersion {
-			text="Pressure v1.0.5"
+			text="Pressure v1.0.6"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 	}
