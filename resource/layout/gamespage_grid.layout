@@ -25,8 +25,8 @@
 		}
 
 		emptylisttext {
-			textcolor="grey"
-			font-size="14"
+			textcolor="white"
+			font-size="15"
 			render_bg {}
 		}
 
