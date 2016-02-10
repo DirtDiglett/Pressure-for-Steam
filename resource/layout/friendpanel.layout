@@ -37,7 +37,7 @@ font-size=15 [$LINUX]
 
 		menuButtonStyle {
 			minimum-width=14
-			padding-top=5
+			padding-top=4
 			padding-bottom=2
 			padding-right=5
 			padding-left=1
@@ -138,7 +138,7 @@ font-size=14 [$LINUX]
 		place [!$OSX] {
 			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton"
 			x=45
-			y=2
+			y=3
 			spacing=2
 			margin-right=3
 		}
@@ -146,13 +146,13 @@ font-size=14 [$LINUX]
 		place {
 			control="StatusLabel"
 			x=45
-			y=16
+			y=17
 		}
 
 		place {
 			control="GameLabel"
 			x=45
-			y=30
+			y=31
 		}
 
 		place {
