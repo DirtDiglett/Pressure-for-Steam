@@ -26,10 +26,18 @@
 			width=max
 			dir=down
 		}
+		
+		place [!$OSX&&!$LINUX] {
+			controls=EnableSCTenfootOverlayCheck
+			region=top
+			start=EnableOverlayCheck
+			dir=down
+			height=20
+		}
 
 		place {
 			controls=HotKeySelectorLabel
-			start=EnableOverlayCheck
+			start=EnableSCTenfootOverlayCheck
 			y=10
 			dir=down
 		}
@@ -92,7 +100,7 @@
 		place {
 			controls="PingRateLabel"
 			start=SetScreenshotFolderButton
-			y=50
+			y=30
 			width=max
 			dir=down
 		}
