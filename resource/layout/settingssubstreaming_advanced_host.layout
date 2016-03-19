@@ -8,75 +8,16 @@ layout {
 		}
 
 		place {
-			control="DescriptionLabel,DynamicallyAdjustResolution,EnableHardwareEncoding"
+			control="DescriptionLabel,EnableHardwareEncoding,EnableDWMCapture,EnableTrafficPriorityLabel,EnableTrafficPriority"
 			align=top
 			width=max
 			margin-left=32
-			margin-top=33
-			margin-right=27
-			dir=down
-			spacing=-2
-		}
-		
-		place {
-			control="EnableHardwareEncodingNVIDIA"
-			start=EnableHardwareEncoding
-			align=top
-			width=max
-			margin-left=20
-			margin-top=-2
+			margin-top=42
 			margin-right=32
 			dir=down
-			spacing=-2
+			spacing=12
 		}
-		
-		place {
-			control="EnableHardwareEncodingNVFBCH264"
-			start=EnableHardwareEncodingNVIDIA
-			align=top
-			width=max
-			margin-left=20
-			margin-top=-2
-			margin-right=37
-			dir=down
-			spacing=-2
-		}
-		
-		place {
-			control="EnableHardwareEncodingAMD,EnableHardwareEncodingIntel"
-			start=EnableHardwareEncodingNVFBCH264
-			align=top
-			width=max
-			margin-left=-20
-			margin-top=-2
-			margin-right=32
-			dir=down
-			spacing=-2
-		}
-		place {
-			control="SoftwareEncodingThreadsLabel,SoftwareEncodingThreads"
-			start=EnableHardwareEncodingIntel
-			align=top
-			width=max
-			margin-left=-20
-			margin-top=-2
-			margin-right=27
-			spacing=3
-			dir=down
-		}
-		
-		place {
-			control="EnableTrafficPriorityLabel,EnableTrafficPriority"
-			start=SoftwareEncodingThreads
-			align=top
-			width=max
-			margin-left=0
-			margin-top=2
-			margin-right=27
-			spacing=0
-			dir=down
-		}
-		
+
 		place {
 			control="SupportInformationLabel"
 			region="bottom"
