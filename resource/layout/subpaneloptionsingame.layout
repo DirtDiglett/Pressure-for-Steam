@@ -1,9 +1,9 @@
 "resource/layout/subpaneloptionsingame.layout" {
 	styles {
 		Page {
-			render_bg {
-				0="fill(x0+18,y0+305,x1-43,y0+306, black65)"
-				1="fill(x0+18,y0+306,x1-43,y0+307, grey50)"
+			render_bg { // Moves the 2nd Divider (change y0 displacement)
+				0="fill(x0+18,y0+315,x1-43,y0+316, black65)"
+				1="fill(x0+18,y0+316,x1-43,y0+317, grey50)"
 			}
 		}
 	}
@@ -12,7 +12,7 @@
 		place {
 			controls=DescriptionLabel
 			x=18
-			y=21
+			y=10
 			width=max
 			margin-right=43
 			dir=down
@@ -22,22 +22,23 @@
 		place {
 			controls=EnableOverlayCheck
 			start=DescriptionLabel
-			y=16
+			y=10
 			width=max
 			dir=down
 		}
 		
 		place [!$OSX&&!$LINUX] {
-			controls=EnableSCTenfootOverlayCheck
+			controls=EnableSCTenfootOverlayCheck,EnableVRDesktopGameTheaterCheck
 			region=top
 			start=EnableOverlayCheck
 			dir=down
 			height=20
+			spacing=4
 		}
 
 		place [!$OSX&&!$LINUX] {
 			controls=HotKeySelectorLabel
-			start=EnableSCTenfootOverlayCheck
+			start=EnableVRDesktopGameTheaterCheck
 			y=10
 			dir=down
 		}
