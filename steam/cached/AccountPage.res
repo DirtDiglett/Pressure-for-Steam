@@ -56,7 +56,7 @@
 			dir=down
 		}
 		place {
-			control="VACStatusLabel"
+			control="VACStatusLabel, VacInfoLink"
 			start="Label2"
 			x=6
 			dir=right
