@@ -89,6 +89,10 @@
 			text="#Steam_ManageGuestPasses"
 			command="ManageGuestPasses"
 		}
+		CheckForUpdates {
+			text="#steam_menu_checkforupdates"
+			command="CheckForUpdates"
+		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		Support {
 			text="#steam_menu_support"
