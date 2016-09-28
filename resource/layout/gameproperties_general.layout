@@ -74,6 +74,12 @@
 		}
 
 		place {
+			controls=FamilySharingUnsupportedLabel
+			margin-top=462
+			margin-left=20
+		}
+		
+		place {
 			controls=ExternalSignupLabel,ExternalSignupButton
 			width=0
 			height=0
