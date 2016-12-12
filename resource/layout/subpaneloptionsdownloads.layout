@@ -4,7 +4,7 @@
 	layout {
 		place {
 			controls="ManageInstalledappsLabel"
-			y=25
+			y=12
 			x=18
 			width=max
 			dir=down
@@ -21,7 +21,7 @@
 		place {
 			control="Divider1"
 			start=ManageInstalledApps
-			y=16
+			y=10
 			width=max
 			margin-right=43
 			dir=down
@@ -29,7 +29,7 @@
 		place {
 			controls="RegionLabel"
 			start=Divider1
-			y=16
+			y=10
 			dir=down
 		}
 
@@ -52,7 +52,7 @@
 		place {
 			control="Divider2"
 			start=DownloadRegionCombo
-			y=16
+			y=10
 			width=max
 			margin-right=43
 			dir=down
@@ -60,7 +60,7 @@
 		place {
 			controls="RestrictionsLabel"
 			start=Divider2
-			y=16
+			y=10
 			dir=down
 		}
 
@@ -80,7 +80,7 @@
 			dir=down
 		}
 		place {
-			controls="AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,AutoUpdateTimeRestrictCheckbox"
+			controls="AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox,AutoUpdateTimeRestrictCheckbox"
 			start=ThrottleRates
 			y=16
 			dir=down
@@ -114,6 +114,28 @@
 			start=AutoUpdateTimeRestrictEndLabel
 			y=4
 			width=120
+			height=28
+			dir=down
+		}
+		place {
+			control="Divider3"
+			start=AutoUpdateTimeRestrictStart
+			y=10
+			width=max
+			margin-right=43
+			dir=down
+		}
+		place {
+			control="FlushDownloadConfigLabel"
+			start=Divider3
+			y=10
+			dir=down
+		}
+		place {
+			control="FlushDownloadConfig"
+			start=FlushDownloadConfigLabel
+			y=4
+			width=340
 			height=28
 			dir=down
 		}
