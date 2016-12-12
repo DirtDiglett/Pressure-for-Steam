@@ -57,7 +57,7 @@
 		}
 
 		place {
-			control=EnableOverlayCheck
+			control=EnableOverlayCheck,EnableDesktopGameTheater
 			start=Divider1
 			y=16
 			dir=down
@@ -65,7 +65,7 @@
 
 		place {
 			controls=LaunchOptionsButton,CreateDesktopShortcutButton
-			start=EnableOverlayCheck
+			start=EnableDesktopGameTheater
 			y=16
 			width=340
 			height=28
@@ -73,6 +73,12 @@
 			spacing=16
 		}
 
+		place {
+			controls=FamilySharingUnsupportedLabel
+			margin-top=462
+			margin-left=20
+		}
+		
 		place {
 			controls=ExternalSignupLabel,ExternalSignupButton
 			width=0

@@ -52,5 +52,14 @@
 			margin-top=15
 			dir=down
 		}
+		place {
+			controls=ClearWebCacheButton
+			region=bottom
+			start=ClearAllCookiesButton
+			width=240
+			height=28
+			margin-top=15
+			dir=down
+		}
 	}
 }

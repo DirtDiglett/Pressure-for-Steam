@@ -1,7 +1,7 @@
 "resource/layout/subpaneloptionscloud.layout" {
 	layout {
 		place {
-			controls="FamilySharingTextState"
+			controls="FamilySharingInfoText"
 			x=18
 			y=21
 			width=max
@@ -10,8 +10,8 @@
 		}
 
 		place {
-			controls="AuthorizeDeviceButton,DeauthorizeDeviceButton,ManageSharingButton"
-			start=FamilySharingTextState
+			controls="AuthorizedDeviceCheck,ManageSharingLabel"
+			start=FamilySharingInfoText
 			y=8
 			width=340
 			height=28
@@ -21,7 +21,7 @@
 
 		place {
 			controls="BorrowersList"
-			start=ManageSharingButton
+			start=ManageSharingLabel
 			y=16
 			width=max
 			height=140
@@ -53,7 +53,7 @@
 		}
 
 		place {
-			controls="ManageOptionsButton"
+			controls="ManageOptionsLabel"
 			start=FamilyOptionsText
 			y=8
 			width=340
