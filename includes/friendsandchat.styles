@@ -57,6 +57,13 @@ font-size=14 [$LINUX]
 			textcolor="Friends.InGameColor"
 		}
 
+		friends_chat_name_golden {
+			selectedtextcolor="trueWhite"
+			selectedbgcolor="blue"
+			textcolor="Friends.GoldenColor"
+			font-weight=600
+		}
+
 		friends_chat_self {
 			selectedtextcolor="trueWhite"
 			selectedbgcolor="blue"
@@ -95,6 +102,10 @@ font-size=14 [$LINUX]
 
 	 	friends_ingame {
 	 		textcolor="Friends.InGameColor"
+	 	}
+
+		friends_golden {
+	 		textcolor="Friends.GoldenColor"
 	 	}
 
 	 	friends_ignored {

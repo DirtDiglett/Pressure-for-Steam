@@ -18,6 +18,7 @@ colors {
 	Friends.InGameColor	   "green"
 	Friends.OnlineColor	   "blue"
 	Friends.OfflineColor	  "white"
+	Friends.GoldenColor	  "lightestYellow"
 	Friends.PanelDefault	  "Label"
 	Friends.PanelOver	   "Text"
 	Friends.PanelSelected	 "ClientBG"
