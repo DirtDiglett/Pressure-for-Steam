@@ -94,6 +94,19 @@
 			spacing=-6
 		}
 		place {
+			control="LabelGroupEvents"
+			start=ReceiveMessagePlaySoundCheck
+			y=16
+			dir=down
+		}
+		place {
+			control="EventsAndAnnouncementsNotifyCheck,EventsAndAnnouncementsPlaySoundCheck"
+			start=LabelGroupEvents
+			y=4
+			dir=down
+			spacing=-6
+		}
+		place {
 			control="Label4"
 			start=Divider1
 			x=240
