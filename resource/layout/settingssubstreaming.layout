@@ -87,8 +87,15 @@ font-size=14 [$LINUX]
 		place {
 			control=EnableStreaming
 			start=RemoteClientList
-			y=8
-			width=max
+			y=16
+			dir=down
+		}
+		place {
+			control=SetPIN
+			start=RemoteClientList
+			x=240
+			y=16
+			width=200
 			dir=down
 		}
 		place {
