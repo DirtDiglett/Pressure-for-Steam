@@ -83,6 +83,8 @@
 		place {
 			control="Label6"
 			start=FriendOnlinePlaySoundCheck
+			width=max
+			margin-right=43
 			y=16
 			dir=down
 		}
