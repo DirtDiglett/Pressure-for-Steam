@@ -75,6 +75,7 @@
 			region=box
 			start=Progress
 			y=10
+			x=-2
 			width=max
 			dir=down
 		}
