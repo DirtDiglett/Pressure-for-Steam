@@ -56,9 +56,9 @@
 			region=box
 			start=InfoLabel
 			width=max
-			margin-top=10
+			margin-top=5
 			dir=down
-			spacing=8
+			spacing=4
 		}
 
 		place {
@@ -66,7 +66,7 @@
 			region=box
 			start=ReadyToPlayTimeLabel
 			width=max
-			margin-top=10
+			margin-top=5
 			dir=down
 		}
 
@@ -75,6 +75,7 @@
 			region=box
 			start=Progress
 			y=10
+			x=-2
 			width=max
 			dir=down
 		}
@@ -84,7 +85,7 @@
 			region=box
 			start=OverrideThrottleCheckBox
 			width=max
-			margin-top=10
+			margin-top=5
 			dir=down
 		}
 

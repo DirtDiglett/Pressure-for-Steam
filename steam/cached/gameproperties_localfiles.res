@@ -8,7 +8,7 @@
 			margin-right=23
 		}
 		place {
-			control=OpenInstallFolder,BackupButton,DeleteButton,VerifyButton
+			control=OpenInstallFolder,MoveInstallFolder,BackupButton,DeleteButton,VerifyButton
 			start=DiskUsageLabel
 			y=16
 			width=340

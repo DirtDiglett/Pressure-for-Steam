@@ -83,12 +83,27 @@
 		place {
 			control="Label6"
 			start=FriendOnlinePlaySoundCheck
+			width=max
+			margin-right=43
 			y=16
 			dir=down
 		}
 		place {
 			control="ReceiveMessageNotifyCheck,ReceiveMessagePlaySoundCheck"
 			start=Label6
+			y=4
+			dir=down
+			spacing=-6
+		}
+		place {
+			control="LabelGroupEvents"
+			start=ReceiveMessagePlaySoundCheck
+			y=16
+			dir=down
+		}
+		place {
+			control="EventsAndAnnouncementsNotifyCheck,EventsAndAnnouncementsPlaySoundCheck"
+			start=LabelGroupEvents
 			y=4
 			dir=down
 			spacing=-6
