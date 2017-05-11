@@ -23,7 +23,6 @@
 			start=DescriptionLabel
 			width=200
 			margin-top=20
-
 			dir=down
 		}
 		place {
@@ -35,9 +34,17 @@
 			dir=down
 		}
 		place {
+			controls=ClientBrowserAuthHomePage
+			start=OverlayHomePage
+			width=max
+			margin-top=15
+			margin-right=43
+			dir=down
+		}
+		place {
 			controls=Divider1
 			region=bottom
-			start=OverlayHomePage
+			start=ClientBrowserAuthHomePage
 			width=max
 			margin-top=15
 			margin-right=43
