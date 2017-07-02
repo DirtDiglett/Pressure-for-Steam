@@ -156,7 +156,7 @@
 			textcolor="none"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			render {}
 			render_bg {}
@@ -210,7 +210,7 @@ font-size=14 [$LINUX]
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			padding-left=4
 			padding-right=20
@@ -258,23 +258,8 @@ font-size=14 [$LINUX]
 						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 					}
 				}
-
-				FriendsSearch:focus [$OSX] {
-					render_bg {
-						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
-						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
-					}
-				}
-				FriendsSearch:active [$OSX] {
-					render_bg {
-						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
-						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
-					}
-				}
 			// Default State when nothing in it.
-			FriendsSearch:empty [!$OSX] {
+			FriendsSearch:empty {
 				textcolor="lightestGrey"
 				font-family=basefont
 				font-style=italic
@@ -299,7 +284,7 @@ font-size=14 [$LINUX]
 					20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 				}
 			}
-				FriendsSearch:empty:focus [!$OSX] {
+				FriendsSearch:empty:focus {
 					render {
 						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 					}
@@ -318,7 +303,7 @@ font-size=14 [$LINUX]
 						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 					}
 				}
-				FriendsSearch:empty:active [!$OSX] {
+				FriendsSearch:empty:active {
 					render {
 						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 					}
@@ -337,47 +322,16 @@ font-size=14 [$LINUX]
 						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 					}
 				}
-				FriendsSearch:empty:focus [$OSX] {
-					render_bg {
-						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
-						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
-					}
-				}
-				FriendsSearch:empty:active [$OSX] {
-					render_bg {
-						1="image(x0-19, y0-1, x0+3, y0+24, graphics/search/active/left)"
-						2="image(x1-14, y0-1, x1-2, y0+24, graphics/search/active/right)"
-						3="image_scale(x0+3, y0-1, x1-14, y0+24, graphics/search/active/inner)"
-					}
-				}
-			FriendsSearch:empty [$OSX] {
-				textcolor="lightestGrey"
-				font-family=basefont
-				font-style=italic
-				padding-left=0
-			}
-				FriendsSearch:empty:hover [!$OSX] {
+				FriendsSearch:empty:hover {
 					textcolor="lightGreyEnd"
 					font-style=italic
 					padding-left=4
 				}
-				FriendsSearch:empty:hover [$OSX] {
-						textcolor="lightGreyEnd"
-						font-style=italic
-						padding-left=0
-				}
-			FriendsSearch:disabled [!$OSX] {
+			FriendsSearch:disabled {
 				textcolor="None"
 				font-family=basefont
 				font-style=italic
 				padding-left=4
-			}
-			FriendsSearch:disabled [$OSX] {
-				textcolor="None"
-				font-family=basefont
-				font-style=italic
-				padding-left=0
 			}
 
 		// Used as an overlay to round off the buttons
@@ -408,7 +362,7 @@ font-size=14 [$LINUX]
 			font-family=semibold
 			font-style="regular"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			inset="0 -3 0 0"
 			minimum-width=800	// if window is made larger than this, it looks different from if it's smaller
