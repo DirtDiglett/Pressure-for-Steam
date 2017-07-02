@@ -1,0 +1,92 @@
+"resource/layout/subpaneloptionscontroller.layout"
+{
+	styles
+	{
+		highlight
+		{
+			textcolor=Text
+		}	
+		
+		checkbox
+		{
+			padding-top=0
+			padding-bottom=0
+		}
+	}
+	
+	layout {
+		place {
+			controls=TitleLabel
+			width=max
+			margin-top=20
+			margin-left=20
+			margin-right=43
+		}
+		place {
+			controls=DescriptionLabel
+			region=top
+			start=TitleLabel
+			width=max
+			height=40
+			dir=down
+			margin-top=15
+		}		
+		place {
+			controls=GeneralSettingsButton
+			region=top
+			start=DescriptionLabel
+			width=240
+			height=28
+			margin-top=15
+			dir=down
+		}
+		place {
+			controls=Divider1
+			region=top
+			start=GeneralSettingsButton
+			width=max
+			height=28
+			margin-top=15
+			margin-right=43
+			dir=down
+		}		
+		place {
+			controls=DescriptionBindingLabel
+			region=top
+			start=Divider1
+			width=max
+			height=40
+			margin-top=0
+			margin-right=43
+			dir=down
+		}			
+		place {
+			controls=BigPictureConfigButton
+			region=top
+			start=DescriptionBindingLabel
+			width=240
+			height=28
+			margin-top=15
+			dir=down
+			
+		}	
+		place {
+			controls=DesktopConfigButton
+			region=top
+			start=BigPictureConfigButton
+			width=240
+			height=28
+			margin-top=15
+			dir=down
+		}			
+		place {
+			controls=GuideConfigButton
+			region=top
+			start=DesktopConfigButton
+			width=240
+			height=28
+			margin-top=15
+			dir=down
+		}								
+	}
+}
