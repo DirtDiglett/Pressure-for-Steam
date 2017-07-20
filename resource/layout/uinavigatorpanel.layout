@@ -1,11 +1,11 @@
 "resource/layout/uinavigatorpanel.layout" {
 	styles {
 
-		LabelEVCert [!$OSX] {
+		LabelEVCert {
 			textcolor="darkestGrey"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			inset-left=4
 			inset-top=0
@@ -18,18 +18,6 @@ font-size=14 [$LINUX]
 				3="fill(x0+1,y1-1,x1,y1, darkestGrey)"
 				4="fill(x0+1,y1,x1,y1+1, grey25)"
 			}
-		}
-
-		LabelEVCert [$OSX] {
-			bgcolor="none"
-			textcolor="none"
-			font-family=basefont
-			font-size=15
-font-size=14 [$LINUX]
-			font-weight=400
-			inset-left=3
-			inset-top=3
-			inset-right=4
 		}
 
 		URLStatusImage {
