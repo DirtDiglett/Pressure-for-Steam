@@ -8,7 +8,7 @@
 			font-size=14 [$LINUX]
 			font-weight=400
 			inset-left=4
-			inset-top=0
+			inset-top=1
 			inset-right=4
 
 			render_bg {
@@ -18,6 +18,10 @@
 				3="fill(x0+1,y1-1,x1,y1, darkestGrey)"
 				4="fill(x0+1,y1,x1,y1+1, grey25)"
 			}
+		}
+
+		LabelEVCert [$OSX] {
+			inset-top=3
 		}
 
 		URLStatusImage {
@@ -266,7 +270,7 @@ font-size=14 [$LINUX]
 			font-size=15
 font-size=14 [$LINUX]
 			inset-left=4
-			inset-top=0
+			inset-top=1
 
 			render_bg {
 				0="fill(x0,y0+2,x1,y1-2, lighterGrey)"
