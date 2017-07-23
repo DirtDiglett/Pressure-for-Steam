@@ -14,10 +14,10 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 # Specific to Steam
-*.res diff=astextplain
-*.layout diff=astextplain
-*.styles diff=astextplain
-*.menu diff=astextplain
+*.res text=auto
+*.layout text=auto
+*.styles text=auto
+*.menu text=auto
 *.tga binary
 *.ttf binary
 *.otf binary

@@ -98,6 +98,10 @@
 		    text="#steam_menu_systeminfo"
 		    command="SystemInfo"
 		}
+		CheckForUpdates {
+		    text="#steam_menu_checkforupdates"
+		    command="CheckForUpdates"
+		}
 		Divider {} // ________________________________________________________________________________________________________________________
 		Settings {
 			text="#steam_menu_settings"
