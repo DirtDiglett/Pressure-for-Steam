@@ -19,34 +19,28 @@
 		place {
 			control="TranslationLabel"
 			start=LanguageCombo
-			y=16
-			dir=down
-		}
-		place {
-			control="Divider1"
-			start=TranslationLabel
-			y=16
-			width=max
-			margin-right=43
-			dir=down
-		}
-		place {
-			control="Label2"
-			start=Divider1
-			y=16
+			y=8
 			dir=down
 		}
 		place {
 			control="FavoriteWindowCombo"
-			start=Label2
-			y=4
+			start=TranslationLabel
+			y=20
 			width=340
 			height=28
 			dir=down
 		}
 		place {
-			control="Label3"
+			control="Divider3"
 			start=FavoriteWindowCombo
+			y=12
+			width=max
+			margin-right=43
+			dir=down
+		}
+		place {
+			control="Label3"
+			start=Divider3
 			y=16
 			dir=down
 		}
@@ -59,7 +53,7 @@
 			dir=down
 		}
 		place {
-			controls=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck
+			controls=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck
 			start=SkinCombo
 			y=10
 			dir=down
