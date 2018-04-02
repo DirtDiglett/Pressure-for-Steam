@@ -3,7 +3,7 @@
 		CDialogSettings {
 			bgcolor=none
 			minimum-width="740"
-			minimum-height="585"
+			minimum-height="600"
 
 			render {
 				1="gradient(x0,y0+26, x1, y0+31, black40, none)"
