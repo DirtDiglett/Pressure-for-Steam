@@ -16,7 +16,6 @@ font-size=14 [$LINUX]
 			}
 
 		view_friends {}
-		online_friends {}
 	}
 
 	layout {
@@ -46,7 +45,7 @@ font-size=14 [$LINUX]
 		}
 
 		place {
-			control="SteamLogo,FriendPanel,view_friends,online_friends,ScreenshotsButton,TaskbarPanel"
+			control="SteamLogo,view_friends,ScreenshotsButton,TaskbarPanel"
 			width=0
 			height=0
 		}
