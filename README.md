@@ -3,11 +3,11 @@ Pressure for Steam
 Pressure is a skin for Valve's Steam client that seeks to improve the visuals and aesthetics of Steam beyond the default skin.
 
 Pressure for Steam is currently a Work-In-Progress so expect it to change a lot between now and the official public release of the skin. Pressure is currently in BETA so expect bugs. Please report them on the Issues page.
-### IMPORTANT
+###IMPORTANT
 It is extremely important you follow the instructions below, and absolutely critical that you install ALL the fonts in the fonts folder or this skin will not look as intended. FontFabric have generously given me permission to include it in the Git Download so you can install it there or via their website.
 You must also ensure that you are using the current BETA version of Steam, as otherwise this skin will not work correctly. You can do this by going into Steam Settings, Choose Account on the left and on the right click "Change..." under the BETA Participation and opt-in to Steam Beta. After restarting Steam you'll be ready for Pressure.
 
-### Images (As of 4th April 2015)
+###Images (As of 4th April 2015)
 Here are a couple images of the skin. The look and feel of the skin can change at any time, so what you see in these images might not be what you see when you download the skin.
 * [**Game Details**](http://hydra.tf/pressure/images/pressure.png)
 * [**Grid View**](http://hydra.tf/pressure/images/pressure-grid.png)
