@@ -39,6 +39,14 @@ font-size=14 [$LINUX]
 			margin-bottom=52
 		}
 
+		region {
+			name=right
+			align=right
+			width=400
+			height=max
+			margin-top=26
+			margin-bottom=52
+		}
 		// Server Name
 		place {
 			control=ServerLabel
@@ -64,8 +72,8 @@ font-size=14 [$LINUX]
 			start=ServerText
 			dir=down
 			spacing=0
-			margin-left=0
 			margin-top=16
+			margin-left=0
 		}
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
@@ -175,18 +183,9 @@ font-size=14 [$LINUX]
 			dir=down
 		}
 
-		region {
-			name=right
-			align=right
-			width=400
-			height=max
-			margin-top=26
-			margin-bottom=52
-		}
-
 		place {
-			control="PlayerList"
 			region=right
+			control="PlayerList"
 			align=right
 			width=max
 			height=max
@@ -197,11 +196,9 @@ font-size=14 [$LINUX]
 			control="AutoRetryAlert,AutoRetryJoin"
 			region=right
 			start=PlayerList
-			dir=down
-			spacing=6
 			width=max
-			height=20
-			margin-top=7
+			height=24
+			dir=down
 		}
 
 		//Bottom
